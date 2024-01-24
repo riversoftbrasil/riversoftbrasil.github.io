@@ -1,6 +1,8 @@
 ---
 toc: false
 layout: notas
+sidebar:
+  exclude: true
 ---
 ## STCP OFTP Server e STCP OFTP Client
 

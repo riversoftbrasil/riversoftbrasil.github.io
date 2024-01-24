@@ -2,6 +2,8 @@
 title: Changelog
 toc: false
 layout: default
+sidebar:
+  exclude: true
 ---
 
 <div class="mt-6"></div>

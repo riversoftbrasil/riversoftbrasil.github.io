@@ -1,7 +1,8 @@
 ---
 title: Changelog
 sidebar:
-    hide: hide
+  exclude: true
+
 ---
 <div class="mt-6"></div>
 {{< feature-card
