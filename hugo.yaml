@@ -1,5 +1,6 @@
 # Hugo configuration file
 title: Riversoft
+baseURL: https://learn.riversoft.com.br/
 
 # import hextra as module
 module:
@@ -18,39 +19,61 @@ markup:
 
 menu:
   main:
-    - name: Docs
-      pageRef: /docs
-      weight: 1
-    - name: About
-      pageRef: /about
-      weight: 2
-    - name: Contact ↗
-      url: "https://github.com/imfing"
-      weight: 3
-    - name: Search
-      weight: 4
-      params:
-        type: search
-    - name: GitHub
+    # - name: Docs
+    #   pageRef: /docs
+    #   weight: 1
+    # - name: About
+    #   pageRef: /about
+    #   weight: 2
+    # - name: Contact ↗
+    #   url: "https://github.com/imfing"
+    #   weight: 3
+    # - name: Search
+    #   weight: 4
+    #   params:
+    #     type: search
+    # # - name: GitHub
+    #   weight: 5
+    #   url: "https://github.com/imfing/hextra-starter-template"
+    #   params:
+    #     icon: github
+    # - name: Twitter
+    #   weight: 6
+    #   url: "https://twitter.com/"
+    #   params:
+    #     icon: x-twitter
+    - name: Website
       weight: 5
-      url: "https://github.com/imfing/hextra-starter-template"
+      url: "https://www.riversoft.com.br/"
       params:
-        icon: github
-    - name: Twitter
-      weight: 6
-      url: "https://twitter.com/"
-      params:
-        icon: x-twitter
+        icon: globe-alt
 
 params:
   navbar:
-    displayTitle: true
-    displayLogo: false
+    displayTitle: false
+    displayLogo: true
+    logo:
+      path: images/logo-river.png
+      dark: images/logo-river-dark.png
+      link: /changelog
+      width: 155
 
   footer:
-    displayCopyright: false
+    displayCopyright: true
     displayPoweredBy: true
+    width: normal
+
+  displayUpdatedDate: true
+  dateFormat: "January 2, 2006"
 
   editURL:
-    enable: true
-    base: "https://github.com/imfing/hextra-starter-template/edit/main/content"
+    enable: false
+    base: "https://riversoftbrasil.github.io/edit/main/content"
+
+  theme:
+    # light | dark | system
+    default: system
+    displayToggle: true
+  
+  defaultContentLanguage: en
+  

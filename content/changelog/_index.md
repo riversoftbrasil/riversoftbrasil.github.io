@@ -1,9 +1,8 @@
 ---
 title: Changelog
-toc: false
-layout: notas
+sidebar:
+    hide: hide
 ---
-
 <div class="mt-6"></div>
 {{< feature-card
     title="STCP OFTP Server e STCP OFTP Client"
