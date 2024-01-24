@@ -2,7 +2,7 @@
 title: Changelog
 sidebar:
   exclude: true
-
+excludeSearch: true
 ---
 <div class="mt-6"></div>
 {{< feature-card

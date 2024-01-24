@@ -4,6 +4,7 @@ toc: false
 layout: default
 sidebar:
   exclude: true
+excludeSearch: true
 ---
 
 <div class="mt-6"></div>

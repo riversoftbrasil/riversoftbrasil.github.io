@@ -1,9 +1,9 @@
 ---
-title: Changelog
+title: Inicio
 toc: false
 layout: default
 ---
-
+<!-- 
 <div class="mt-6"></div>
 {{< feature-card
     title="STCP OFTP Server e STCP OFTP Client"
@@ -29,7 +29,7 @@ layout: default
     subtitle="Consulta la información sobre las nuevas características, correcciones y actualizaciones más recientes lanzadas para los productos."
     link="changelog/dirl"
 >}}
-
+ -->
 
 <!-- {{< hextra/feature-grid >}} -->
 <!-- {{< /hextra/feature-grid >}} -->

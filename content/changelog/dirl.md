@@ -3,6 +3,7 @@ toc: false
 layout: notas
 sidebar:
   exclude: true
+excludeSearch: true
 ---
 ## STCP Directlink
 
