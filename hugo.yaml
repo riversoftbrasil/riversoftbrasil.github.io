@@ -55,10 +55,11 @@ params:
     logo:
       path: images/logo-river.png
       dark: images/logo-river-dark.png
-      link: /changelog
+      # link: /
       width: 155
 
   footer:
+    enable: true
     displayCopyright: true
     displayPoweredBy: true
     width: normal
@@ -75,5 +76,11 @@ params:
     default: system
     displayToggle: true
   
-  defaultContentLanguage: en
-  
+defaultContentLanguage: pt-br
+languages:
+  pt-br:
+    languageName: Português
+    weight: 1
+  es-es:
+    languageName: Español
+    weight: 2

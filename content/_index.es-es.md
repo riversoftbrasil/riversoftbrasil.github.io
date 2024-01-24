@@ -8,7 +8,7 @@ layout: default
 {{< feature-card
     title="STCP OFTP Server e STCP OFTP Client"
     icon="cog"
-    subtitle="Confira as informações sobre os novos recursos, correções e atualizações mais recentes lançadas para os produtos."
+    subtitle="Consulta la información sobre las nuevas características, correcciones y actualizaciones más recientes lanzadas para los productos."
     link="changelog/stw"
 >}}
 
@@ -17,7 +17,7 @@ layout: default
 {{< feature-card
     title="STCP OFTP Web Admin"
     icon="cloud"
-    subtitle="Confira as informações sobre os novos recursos, correções e atualizações mais recentes lançadas para os produtos."
+    subtitle="Consulta la información sobre las nuevas características, correcciones y actualizaciones más recientes lanzadas para los productos."
     link="changelog/stwadm"
 >}}
 
@@ -26,7 +26,7 @@ layout: default
 {{< feature-card
     title="STCP Directlink"
     icon="code"
-    subtitle="Confira as informações sobre os novos recursos, correções e atualizações mais recentes lançadas para os produtos."
+    subtitle="Consulta la información sobre las nuevas características, correcciones y actualizaciones más recientes lanzadas para los productos."
     link="changelog/dirl"
 >}}
 
