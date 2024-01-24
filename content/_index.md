@@ -1,7 +1,7 @@
 ---
 title: Changelog
 toc: false
-layout: notas
+layout: default
 ---
 
 <div class="mt-6"></div>

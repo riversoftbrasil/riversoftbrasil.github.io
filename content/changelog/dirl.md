@@ -4,28 +4,28 @@ layout: notas
 ---
 ## STCP Directlink
 
-### {{< icon "clock" >}} Versão 6.5.12 (lançada em janeiro de 2024)
+### {{< icon "clock" >}} &nbsp;  Versão 6.5.12 (lançada em janeiro de 2024)
 
 - Correção da vulnerabilidade SSH Terrapin Truncation Weakness (CVE-2023-48795) na interface SFTP.
 - Implementação da possibilidade de configuração dos algoritmos de criptografia e MAC na interface SFTP.
 
-### {{< icon "clock" >}} Versão 6.5.10 (lançada em outubro de 2023)
+### {{< icon "clock" >}} &nbsp;  Versão 6.5.10 (lançada em outubro de 2023)
 
 - Correção da vulnerabilidade SSH Weak MAC Algorithms na interface SFTP.
 - Correção do problema que ocultava o botão de envio quando as opções do formulário estavam desabilitadas no portal.
 
-### {{< icon "clock" >}} Versão 6.5.7 (lançada em agosto de 2023)
+### {{< icon "clock" >}} &nbsp;  Versão 6.5.7 (lançada em agosto de 2023)
 
 - Implementação da validação da requisição http/s que verifica se o host e a uri configurada são iguais (Unvalidated Redirection).
 - Melhorias no tratamento de host no diretório estático.
 - Correção do problema com o SecureLink que ficava inválido quando o timezone era referenciado com +XXX.
 
-### {{< icon "clock" >}} Versão 6.5.7 (lançada em agosto de 2023)
+### {{< icon "clock" >}} &nbsp;  Versão 6.5.7 (lançada em agosto de 2023)
 
 - Implementação da validação da requisição http/s que verifica se o host e a uri configurada são iguais (Unvalidated Redirection).
 - Melhorias no tratamento de host no diretório estático.
 
-### {{< icon "clock" >}} Versão 6.5.6 (lançada em agosto de 2023)
+### {{< icon "clock" >}} &nbsp;  Versão 6.5.6 (lançada em agosto de 2023)
 
 - Correção do problema que gerava o erro 400 no envio do SecureLink.
 - Implementação da autenticação de acesso a um bucket AWS S3 por meio de RolesAnywhere.
@@ -34,7 +34,7 @@ layout: notas
 - Implementação do backup na interface do client blob.
 - Melhorias no tratamento dos parâmetros do agendamento quando existe uma agenda aguardando execução.
 
-### {{< icon "clock" >}} Versão 6.5.4 (lançada em abril de 2023)
+### {{< icon "clock" >}} &nbsp;  Versão 6.5.4 (lançada em abril de 2023)
 
 - Correção do problema em que a aplicação era interrompida quando executada com no modo noservice (Windows).
 - Melhorias na sincronização de acesso aos arquivos de configuração do STCP no Windows.
@@ -47,7 +47,7 @@ layout: notas
 - Melhorias no processo de agendamento já em execução quando os parâmteros da agenda são alterados
 - Correção do processo de agendamento por data e intervalo que apresentava erro quando o dia da semana não estava setado (somente Windows).
 
-### {{< icon "clock" >}} Versão 6.3.0 (lançada em março de 2023)
+### {{< icon "clock" >}} &nbsp;  Versão 6.3.0 (lançada em março de 2023)
 
 - Implementação do suporte nativo para Bucket Oracle Cloud (object_storage).
 - Implementação do comando de supervisão para leitura das informações do usuário.
@@ -60,18 +60,18 @@ layout: notas
 - Suporte para acesso às chaves (segredos) no cofre do AWS KMS (Secrets Manager).
 - Suporte para acesso às chaves (segredos) no cofre do GCP KMS (Secrets Manager).
 
-### {{< icon "clock" >}} Versão 5.0.1 (lançada em novembro de 2022)
+### {{< icon "clock" >}} &nbsp;  Versão 5.0.1 (lançada em novembro de 2022)
 
 - Correção do tratamento do parâmetro idCodeProfile que apresentava erro quando estava em branco na configuração do usuário (Windows).
 - Ajustes na mensagem de expiração do token para leitura do Pin.
 
-### {{< icon "clock" >}} Versão 5.0.0 (lançada em outubro de 2022)
+### {{< icon "clock" >}} &nbsp;  Versão 5.0.0 (lançada em outubro de 2022)
 
 - Correção do problema em que a transferência não era iniciada quando o agendamento estava marcado para Transmissão com recepção (Windows).
 - Correção do problema relacionado à gravação da mensagem de log para fim de transferência pela API.
 - Implementação do suporte ao módulo para acesso ao serviço de armazenamento de Blobs do Azure.
 
-### {{< icon "clock" >}} Versão 4.0.4 (lançada em outubro de 2022)
+### {{< icon "clock" >}} &nbsp;  Versão 4.0.4 (lançada em outubro de 2022)
 
 - Correção da mensagem de log no fim da transferência com erro pela API que não estava sendo gravada.
 - Correção dois nome do arquivo no SFTP que estva com dois separadores de diretório
@@ -83,7 +83,7 @@ layout: notas
 - Correção do problema em que a aplicação era interrompia quando não localizava os tipos de arquivos global e de usuário.
 - Correção dos parâmetros de execução de comando externo.
 
-### {{< icon "clock" >}} Versão 3.7.6 (lançada em outubro de 2022)
+### {{< icon "clock" >}} &nbsp;  Versão 3.7.6 (lançada em outubro de 2022)
 
 - Melhorias e ajustes do layout para Mobile [Flutter].
 - Correção dos templates de notificação/páginas que não estavam sendo acessados corretamente.
