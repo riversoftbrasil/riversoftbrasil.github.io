@@ -1,6 +1,6 @@
 ---
 title: Segurança
-layout: notas
+layout: default
 sidebar:
   exclude: true
 ---

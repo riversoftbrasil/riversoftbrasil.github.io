@@ -1,5 +1,4 @@
 ---
-title: STCP Directlink
 linkTitle: STCP Directlink
 layout: docs
 cascade:

@@ -3,7 +3,7 @@ linkTitle: Arquivo de configuração
 layout: docs
 sidebar:
   exclude: false
-weight: 22
+weight: 2
 prev: /docs/getting-started
 next: /docs/guide/organize-files
 ---

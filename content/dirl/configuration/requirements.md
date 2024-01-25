@@ -3,7 +3,7 @@ linkTitle: Requisitos
 layout: docs
 sidebar:
   exclude: false
-weight: 21
+weight: 1
 prev: /docs/getting-started
 next: /docs/guide/organize-files
 ---

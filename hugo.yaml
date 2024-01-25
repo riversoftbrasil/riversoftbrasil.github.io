@@ -61,7 +61,7 @@ params:
     type: flexsearch
     flexsearch:
       # index page by: content | summary | heading | title
-      index: heading
+      index: content
 
   footer:
     enable: true
