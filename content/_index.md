@@ -6,7 +6,7 @@ layout: hextra-home
 
 <!-- {{< hextra/hero-badge >}}
   <div class="w-2 h-2 rounded-full bg-primary-400"></div>
-  <span>Free, open source</span>
+  <span>Free, open badgeurce</span>
   {{< icon name="arrow-circle-right" attributes="height=14" >}}
 {{< /hextra/hero-badge >}} -->
 
@@ -25,74 +25,82 @@ layout: hextra-home
 </div>
 
 <div class="mb-6 mx-auto text-center">
-{{< hextra/hero-button text="Começar agora" link="dirl" >}}
+{{< hextra/hero-button text="Começar agora" link="docs" >}}
 </div>
 
 <div class="mt-6"></div>
 
-{{< feature-grid >}}
+{{< feature-grid >}} 
 
     {{< feature-card
         title="STCP Gemini Server"
         icon="lightning-bolt"
         subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce gravida justo vel urna commodo, vel malesuada nisi semper. "
-        link="/changelog/stw"
+        badge="EM BREVE"
+        link=""
     >}}
 
     {{< feature-card
         title="STCP Gemini Client"
         icon="terminal"
         subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce gravida justo vel urna commodo, vel malesuada nisi semper. "
-        link="/changelog/stw"
+        badge="EM BREVE"
+        
     >}}
 
     {{< feature-card
         title="STCP Directlink"
         icon="code"
         subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce gravida justo vel urna commodo, vel malesuada nisi semper. "
-        link="/changelog/stw"
+        link="docs/stcpdirectlink"
     >}}
 
     {{< feature-card
         title="STCP OFTP Server"
         icon="cog"
         subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce gravida justo vel urna commodo, vel malesuada nisi semper. "
-        link="/changelog/stw"
+        badge="EM BREVE"
+        link=""
     >}}
 
     {{< feature-card
         title="STCP OFTP Client"
         icon="desktop-computer"
         subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce gravida justo vel urna commodo, vel malesuada nisi semper. "
-        link="/changelog/stw"
+        badge="EM BREVE"
+        link=""
     >}}
 
     {{< feature-card
         title="STCP OFTP Web Admin"
         icon="cloud"
         subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce gravida justo vel urna commodo, vel malesuada nisi semper."
-        link="/changelog/stwadm"
+        badge="EM BREVE"
+        link=""
     >}}
 
     {{< feature-card
         title="STCP Change Password"
         icon="shield-exclamation"
         subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce gravida justo vel urna commodo, vel malesuada nisi semper."
-        link="/changelog/stwadm"
+        badge="EM BREVE"
+        link=""
     >}}
 
     {{< feature-card
         title="STCP Rename"
-        icon="cloud"
+        icon="color-swatch"
         subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce gravida justo vel urna commodo, vel malesuada nisi semper."
-        link="/changelog/stwadm"
+        badge="EM BREVE"
+        link=""
     >}}
 
     {{< feature-card
         title="STCP Signer"
         icon="finger-print"
         subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce gravida justo vel urna commodo, vel malesuada nisi semper."
-        link="/changelog/stwadm"
+        badge="EM BREVE"
+        link=""
     >}}
 
 {{< /feature-grid >}}

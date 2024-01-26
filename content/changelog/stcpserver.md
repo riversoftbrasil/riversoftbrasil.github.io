@@ -1,11 +1,16 @@
 ---
+linkTitle: STCP OFTP Server 
 toc: false
-layout: notas
+layout: docs
+toc: false
+cascade:
+  type: docs
 sidebar:
-  exclude: true
+  exclude: false
 excludeSearch: true
+weight: 1
 ---
-## STCP OFTP Server e STCP OFTP Client
+## STCP OFTP Server / STCP OFTP Client
 
 #### {{< icon "clock" >}} &nbsp;  Versão 5.3.12.0 (lançada em agosto de 2023)
 

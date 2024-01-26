@@ -1,9 +1,13 @@
 ---
+linkTitle: STCP OFTP Web Admin
 toc: false
-layout: notas
+layout: docs
+cascade:
+  type: docs
 sidebar:
-  exclude: true
+  exclude: false
 excludeSearch: true
+weight: 2
 ---
 ## STCP OFTP Web Admin
 

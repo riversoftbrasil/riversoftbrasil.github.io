@@ -1,5 +1,5 @@
 # Hugo configuration file
-title: Riversoft
+title: Riversoft - Documentação
 baseURL: https://learn.riversoft.com.br
 
 # import hextra as module
@@ -18,13 +18,26 @@ markup:
     noClasses: false
 
 menu:
+  sidebar:
+    - name: Referências
+      params:
+        type: separator
+      weight: 1
+    - name: "Erros e Eventos"
+      pageRef: "/events"
+      weight: 2
+    # - name: "Protocolo OFTP ↗"
+    - name: "Protocolo OFTP"
+      url: "/odette"
+      weight: 3
+
   main:
     - name: Inicio
       pageRef: /
       weight: 1
     - name: Docs
       weight: 2
-      pageRef: /dirl
+      pageRef: /docs
     - name: Segurança
       pageRef: /security
       weight: 3
@@ -81,11 +94,11 @@ params:
     default: system
     displayToggle: true
   
-defaultContentLanguage: pt-br
-languages:
-  pt-br:
-    languageName: Português
-    weight: 1
-  es-es:
-    languageName: Español
-    weight: 2
+# defaultContentLanguage: pt-br
+# languages:
+#   pt-br:
+#     languageName: Português
+#     weight: 1
+#   es-es:
+#     languageName: Español
+#     weight: 2

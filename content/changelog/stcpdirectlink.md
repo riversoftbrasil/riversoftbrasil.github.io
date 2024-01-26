@@ -1,9 +1,13 @@
 ---
+linkTitle: STCP OFTP Directlink
 toc: false
-layout: notas
+layout: docs
+cascade:
+  type: docs
 sidebar:
-  exclude: true
+  exclude: false
 excludeSearch: true
+weight: 3
 ---
 ## STCP Directlink
 

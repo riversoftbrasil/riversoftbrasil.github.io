@@ -1,0 +1,87 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 100;
+  src: url('/fonts/plus-jakarta-sans-v8-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('/fonts/plus-jakarta-sans-v8-latin-700.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+
+/* Colors for dark theme */
+.dark {
+  --primary-hue: -165deg;
+}
+
+/* Fonts */
+h1, .content h1,
+.content h2,
+.content h3,
+.content h3 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Cards */
+.hextra-cards,
+.hextra-feature-card,
+.hextra-card {
+  border-radius: 0.29rem;
+}
+
+.img-grid {
+  grid-template-columns: repeat(auto-fill, minmax(max(250px, calc((100% - 1rem * 2) / var(--rows))), 1fr));
+  width: 100%;
+  height: 100%; 
+}
+
+.badge-so  {
+    text-align: right;
+    span {
+      font-size: 0.65rem;
+      background-color: #e5e7eb;
+      padding: 4px 8px;
+      border-radius: 0.7rem;
+      text-align: center;
+      color: rgb(93, 93, 93);
+      opacity: 0.75;
+    }
+}
+
+/*--------------------------------------------------------
+                          Table Styling
+----------------------------------------------------------*/ 
+
+/* Table headers formatting */
+.content table:not(.code-block table) th {
+  border-right-width: 0px;
+  border-left-width: 0px; 
+  border-top: none;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+  font-size: 0.9rem;
+  font-weight: 700;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Table headers formatting for dark mode */
+html[class~="dark"] .content table:not(.code-block table) th {
+  color: rgb(193, 193, 196);
+}
+
+/* Remove internal borders */
+.content table:not(.code-block table) td {
+  margin: 0px;
+  border-width: 0px;
+  --tw-border-opacity: 0;
+}
+
+/* Text in cells */
+.content table:not(.code-block table) tr {
+  font-size: 0.9rem;
+  text-align: left;
+  border-width: 0px;
+  color: rgb(0, 0, 0);
+}
+/* Text in cells for dark mode */
+html[class~="dark"] .content table:not(.code-block table) tr {
+    color: #ececfe;
+}
