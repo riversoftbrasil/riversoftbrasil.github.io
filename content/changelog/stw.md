@@ -6,6 +6,10 @@ sidebar:
 ---
 ## STCP OFTP Server e STCP OFTP Client
 
+#### {{< icon "clock" >}} &nbsp;  Versão 5.3.13.0 (lançada em agosto de 2023)
+
+- teste git actions
+
 #### {{< icon "clock" >}} &nbsp;  Versão 5.3.12.0 (lançada em agosto de 2023)
 
 - Implementação do parâmetro SendTokenIdGlobal, no STCP (versão client) para envio do TokenID/Hash e versão do agente de maneira global (não vinculado a um perfil específico).
