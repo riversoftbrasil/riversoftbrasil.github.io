@@ -11,7 +11,7 @@ sidebar:
 - Correção da vulnerabilidade SSH Terrapin Truncation Weakness (CVE-2023-48795) na interface SFTP.
 - Implementação da possibilidade de configuração dos algoritmos de criptografia e MAC na interface SFTP.
 
-### {{< icon "clock" >}} &nbsp;  Versão 6.5.10 (lançada em outubro de 2023)
+### {{< icon "clock" >}} &nbsp;  Versão 6.5.8 (lançada em setembro de 2023)
 
 - Correção da vulnerabilidade SSH Weak MAC Algorithms na interface SFTP.
 - Correção do problema que ocultava o botão de envio quando as opções do formulário estavam desabilitadas no portal.
@@ -21,11 +21,6 @@ sidebar:
 - Implementação da validação da requisição http/s que verifica se o host e a uri configurada são iguais (Unvalidated Redirection).
 - Melhorias no tratamento de host no diretório estático.
 - Correção do problema com o SecureLink que ficava inválido quando o timezone era referenciado com +XXX.
-
-### {{< icon "clock" >}} &nbsp;  Versão 6.5.7 (lançada em agosto de 2023)
-
-- Implementação da validação da requisição http/s que verifica se o host e a uri configurada são iguais (Unvalidated Redirection).
-- Melhorias no tratamento de host no diretório estático.
 
 ### {{< icon "clock" >}} &nbsp;  Versão 6.5.6 (lançada em agosto de 2023)
 
