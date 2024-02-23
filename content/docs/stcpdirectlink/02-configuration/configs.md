@@ -49,7 +49,7 @@ next: /docs/guide/organize-files
  Parâmetros                            | Descrição
  ---------                             | -------------
  smsEnable                             | Habilita o serviço de envio do SMS
- smsProvider                           | Tipo de broker SMS (esafer | zenvia | twilio)
+ smsProvider                           | Tipo de broker SMS (esafer, zenvia e twilio)
  smsEndpoint                           | Endpoint do serviço de broker de SMS
  smsAuthUser                           | Usuário para autenticação no serviço de SMS
  smsAuthPswd                           | Senha para autenticação no serviço de SMS
@@ -120,12 +120,12 @@ next: /docs/guide/organize-files
  oauthTokenMethodJWT                   | Método de assinatura do JWT (ex.: HS256)
  oauthTokenExpireSeconds               | Tempo de expiração do token JWT (ex.: 3600)
 
-### Parâmetros de login SSO 
+### Parâmetros de login SSO
 
  Parâmetros                            | Descrição
  ---------                             | -------------
  ssoProviders                          | Conjunto de provedores de SSO
- ssoType                               | Tipo do provedor de autenticação (ex: oauth2 | ldap | jwt)
+ ssoType                               | Tipo do provedor de autenticação (ex: oauth2, ldap e jwt)
  ssoName                               | Nome do provedor de autenticação para oauth2 deve ser usado: google | microsoft | apple
  ssoEnable                             | Habilita/desabilita o provedor de SSO
  ssoClientId                           | Client id de autenticação
@@ -156,20 +156,23 @@ next: /docs/guide/organize-files
 
 ### Comentários
 
- ##### ***Secrets***
-
+ #### ***Secrets***
+<br>
      As informações sensiveis (segredo/senhas) poderão também ser lidas de um arquivo texto ou através de uma váriável de ambiente. Conforme a sintaxe abaixo:
-    
+
+ ```json
        "applConfigPassPhrase":"file:[nome do arquivo]"
        "applConfigPassPhrase":"env:[nome da variável]"
- 
+
        "appSecret":"file:[nome do arquivo]"
        "appSecret":"env:[nome da variável]"
+```
+ #### ***ciphers***
 
- ##### ***ciphers***
-
+<br>
      É possível especificar quais suites podem ser negociadas ou deixar o campo vazio para que todas as suites sejam selecionadas. As suites disponíveis são:
 
+```
      TLS_RSA_WITH_3DES_EDE_CBC_SHA
      TLS_RSA_WITH_AES_128_CBC_SHA
      TLS_RSA_WITH_AES_256_CBC_SHA
@@ -189,12 +192,47 @@ next: /docs/guide/organize-files
      TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
      TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256
      TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256
+```
 
-     Para especificar mais de uma suite elas devem ser separadas pelo caracter dois pontos(:).  
-
-     Exemplo de cifra segura para compatibilidade PCI:
+Para especificar mais de uma suite elas devem ser separadas pelo caracter dois pontos(:).
+<br>
+<br>
+Exemplo de cifra segura para compatibilidade PCI:
+<br>
+```json
       "serverTLSCipherSuites":"TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384:TLS_AES_128_GCM_SHA256:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_256_GCM_SHA384:TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA"
+```
 
- ##### ***Caminhos absolutos ou relativos***
- 
-     Quando a aplicação for executada como serviço (windows), os parâmetros de diretórios e templates devem ser informados com o caminho absoluto (path completo).
+ #### ***Caminhos absolutos ou relativos***
+
+Quando a aplicação for executada como serviço (windows), os parâmetros de diretórios e templates devem ser informados com o caminho absoluto (path completo).
+
+Suponha que o arquivo **documento.txt** esteja localizado na seguinte estrutura de diretório:
+
+``` bash
+/home/usuario/documentos/documento.txt
+```
+
+{{< callout type="info" >}}
+  Um **caminho absoluto** é especificado desde o diretório raiz do sistema de arquivos. No Linux, o diretório raiz é representado por `/`.
+{{< /callout >}}
+
+Nesse exemplo, `/` é o diretório raiz do sistema de arquivos.
+
+{{< callout type="info" >}}
+ Um **caminho relativo** é especificado em relação ao diretório atual em que você está trabalhando.
+{{< /callout >}}
+
+Por exemplo, se você estiver no diretório `/home/usuario/`, o caminho relativo para o **documento.txt** será:
+
+```bash
+documentos/documento.txt
+```
+
+Outro exemplo, se você estiver em `/home/`, o caminho relativo será:
+
+```bash
+usuario/documentos/documento.txt
+```
+
+Isso se deve ao fato de que você está indicando que o arquivo **documento.txt** está dentro do diretório **usuario**, que, por sua vez, está dentro de **home**.
