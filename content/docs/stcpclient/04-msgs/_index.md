@@ -5,13 +5,13 @@ cascade:
   type: docs
 sidebar:
   exclude: false
-weight: 5
-prev: /docs
-next: /odette
+weight: 4
+prev:
+next:
 ---
 # Mensagens e códigos de erros
 
-## **Códigos de eventos gerados no arquivo de mensagens**
+## Códigos de eventos gerados no arquivo de mensagens
 
 Mensagem | Descrição
 :---     | :---
@@ -19,18 +19,18 @@ MSG0001  | [MSG0001] %s - %s - Erro: configurar conversao de caracteres '%s' [co
 MSG0002  | [MSG0002] %s - %s - Erro: configurar conversao de caracteres '%s' [codigo:%u]
 MSG0003  | [MSG0003] %s - %s - Erro: arquivo duplicado '%s'
 MSG0004  | [MSG0004] %s - %s - Erro: remover o arquivo '%s' [codigo:%u]
-MSG0005  | [MSG0005] LOCAL - <STCP> - NAO DEFINIDA
+MSG0005  | [MSG0005] LOCAL - `<STCP>` - NAO DEFINIDA
 MSG0006  | [MSG0006] %s - %s - Erro: remover o arquivo '%s' [codigo:%u]
 MSG0007  | [MSG0007] %s - %s - Verificado restart para arquivo de recepcao '%s'
-MSG0008  | [MSG0008] LOCAL - <STCP> - Erro: nao foi possivel criar o objeto ODETTE
-MSG0009  | [MSG0009] LOCAL - <STCP> - Erro: alocacao do UCB para usuario
-MSG0010  | [MSG0010] LOCAL - <STCP> - Excedido o limite de '%d' conexoes para o usuario '%s'
+MSG0008  | [MSG0008] LOCAL - `<STCP>`  - Erro: nao foi possivel criar o objeto ODETTE
+MSG0009  | [MSG0009] LOCAL - `<STCP>`  - Erro: alocacao do UCB para usuario
+MSG0010  | [MSG0010] LOCAL - `<STCP>`  - Excedido o limite de '%d' conexoes para o usuario '%s'
 MSG0011  | [MSG0011] %s - %s - Arquivo ja esta sendo transmitido '%s'
 MSG0012  | [MSG0012] %s - %s - Erro: abrir diretorio de pendencias '%s' [codigo:%u]
 MSG0013  | [MSG0013] %s - %s - Erro: remover arquivo do diretório de pendencias '%s' [codigo:%u]
 MSG0014  | [MSG0014] %s - %s - Erro: mover arquivo para diretório de backup '%s' '%s' [codigo:%u]
 MSG0015  | [MSG0015] %s - %s - Erro: configurar parametros de transmissao maxrecsize '%d' origem '%s' destino '%s' [codigo:%u]
-MSG0016  | [MSG0016] LOCAL - <STCP> - NAO DEFINIDA
+MSG0016  | [MSG0016] LOCAL - `<STCP>`  - NAO DEFINIDA
 MSG0017  | [MSG0017] %s - %s - Erro: configurar conversao de caracteres '%s' [codigo:%u]
 MSG0018  | [MSG0018] %s - %s - Erro: obter o tamanho do arquivo '%s' [codigo:%u]
 MSG0019  | [MSG0019] %s - %s - Inicio de transmissao '%s'
@@ -47,7 +47,7 @@ MSG0029  | [MSG0029] %s - %s - Erro: criar referencia no diretorio de pendencias
 MSG0030  | [MSG0030] %s - %s - Erro: remover o arquivo '%s' [codigo:%u]
 MSG0031  | [MSG0031] %s - %s - Fim de transmissao com sucesso '%s' bytes transmitidos '%u'
 MSG0032  | [MSG0032] %s - %s - NAO DEFINIDA
-MSG0033  | [MSG0033] LOCAL - <STCP> - NAO DEFINIDA
+MSG0033  | [MSG0033] LOCAL - `<STCP>`  - NAO DEFINIDA
 MSG0034  | [MSG0034] %s - %s - Erro: execucao da linha de comando '%s' [codigo:%u]
 MSG0035  | [MSG0035] %s - %s - Inicio de recepcao '%s'
 MSG0036  | [MSG0036] %s - %s - Fim de recepcao com erro '%s' [codigo:%u]
@@ -55,17 +55,17 @@ MSG0037  | [MSG0037] %s - %s - Erro: remover arquivo '%s' [codigo:%u]
 MSG0038  | [MSG0038] %s - %s - Erro: mover arquivo '%s' para '%s' [codigo:%u]
 MSG0039  | [MSG0039] %s - %s - Fim de recepcao com sucesso '%s' bytes recebidos '%u'
 MSG0040  | [MSG0040] %s - %s - Erro: execucao da linha de comando '%s' [codigo:%u]
-MSG0041  | [MSG0041] LOCAL - <STCP> - Inicio do processo de cancelamento das conexoes
-MSG0042  | [MSG0042] LOCAL - <STCP> - Erro: processo de cancelamento das conexoes
-MSG0043  | [MSG0043] LOCAL - <STCP> - Fim do servico '%s' para '%s - Versao %s'
-MSG0044  | [MSG0044] LOCAL - <STCP> - Inicio do servico '%s' para '%s - Versao %s'
-MSG0045  | [MSG0045] LOCAL - <STCP> - Erro: alocacao de memoria para os usuarios
-MSG0046  | [MSG0046] LOCAL - <STCP> - Inicio do login no servidor '%s'
-MSG0047  | [MSG0047] LOCAL - <STCP> - Erro: fazer o login no servidor '%s' [codigo:%u]
-MSG0048  | [MSG0048] LOCAL - <STCP> - Sucesso do login no servidor '%s'
-MSG0049  | [MSG0049] LOCAL - <STCPAGENDA> - Verificado diretorio de transmissao do usuario '%s' situacao '%d'
-MSG0050  | [MSG0050] LOCAL - <STCP> - NAO DEFINIDA
-MSG0051  | [MSG0051] LOCAL - <STCP> - NAO DEFINIDA
+MSG0041  | [MSG0041] LOCAL - `<STCP>`  - Inicio do processo de cancelamento das conexoes
+MSG0042  | [MSG0042] LOCAL - `<STCP>`  - Erro: processo de cancelamento das conexoes
+MSG0043  | [MSG0043] LOCAL - `<STCP>`  - Fim do servico '%s' para '%s - Versao %s'
+MSG0044  | [MSG0044] LOCAL - `<STCP>`  - Inicio do servico '%s' para '%s - Versao %s'
+MSG0045  | [MSG0045] LOCAL - `<STCP>`  - Erro: alocacao de memoria para os usuarios
+MSG0046  | [MSG0046] LOCAL - `<STCP>`  - Inicio do login no servidor '%s'
+MSG0047  | [MSG0047] LOCAL - `<STCP>`  - Erro: fazer o login no servidor '%s' [codigo:%u]
+MSG0048  | [MSG0048] LOCAL - `<STCP>`  - Sucesso do login no servidor '%s'
+MSG0049  | [MSG0049] LOCAL - `<STCPAGENDA>`  - Verificado diretorio de transmissao do usuario '%s' situacao '%d'
+MSG0050  | [MSG0050] LOCAL - `<STCP>`  - NAO DEFINIDA
+MSG0051  | [MSG0051] LOCAL - `<STCP>`  - NAO DEFINIDA
 MSG0052  | [MSG0052] %s - %s - Erro: configurar o objeto ODETTE [codigo:%u]
 MSG0053  | [MSG0053] %s - %s - Erro: configurar parametros extras do objeto ODETTE [codigo:%u]
 MSG0054  | [MSG0054] %s - %s - Erro: tentar conexao sainte [codigo:%u]
@@ -81,90 +81,90 @@ MSG0063  | [MSG0063] %s - %s - Inicio de sessao sainte '%s'
 MSG0064  | [MSG0064] %s - %s - Fim de sessao sainte '%s'
 MSG0065  | [MSG0065] %s - %s - Fim de conexao sainte '%s'
 MSG0066  | [MSG0066] %s - %s - Fim da thread de conexao sainte %08X - %08X
-MSG0067  | [MSG0067] LOCAL - <STCPCLI> - NAO DEFINIDA
-MSG0068  | [MSG0068] LOCAL - <STCPCLI> - NAO DEFINIDA
-MSG0069  | [MSG0069] LOCAL - <STCPCLI> - NAO DEFINIDA
-MSG0070  | [MSG0070] LOCAL - <STCPAGENDA> - Verificando agenda automatica '%s' tipo '%d' modo '%d' agenda '%d/%d-%d-%d:%d' as '%d/%d-%d-%d:%d'
-MSG0071  | [MSG0071] LOCAL - <STCPCLI> - Erro: criacao da thread (stcpCliService)
+MSG0067  | [MSG0067] LOCAL - `<STCPCLI>`  - NAO DEFINIDA
+MSG0068  | [MSG0068] LOCAL - `<STCPCLI>`   - NAO DEFINIDA
+MSG0069  | [MSG0069] LOCAL - `<STCPCLI>`  - NAO DEFINIDA
+MSG0070  | [MSG0070] LOCAL - `<STCPAGENDA>`  - Verificando agenda automatica '%s' tipo '%d' modo '%d' agenda '%d/%d-%d-%d:%d' as '%d/%d-%d-%d:%d'
+MSG0071  | [MSG0071] LOCAL - `<STCPCLI>`  - Erro: criacao da thread (stcpCliService)
 MSG0072  | [MSG0072] %s - %s - Lendo arquivo de configuracao de formato '%s', secao '%s'
-MSG0073  | [MSG0073] LOCAL - <STCP> - NAO DEFINIDA
-MSG0074  | [MSG0074] LOCAL - <STCPLOG> - %s - %s - Erro: abertura do arquivo de log '%s'
-MSG0075  | [MSG0075] %s - <STCPMON> - Usuario '%s' autenticado para monitoracao '%s'
-MSG0076  | [MSG0076] %s - <STCPMON> - Erro: usuario '%s' nao foi autenticado para monitoracao '%s'
-MSG0077  | [MSG0077] %s - <STCPMON> - Erro: recepcao de monitoracao [codigo:%u, %u] '%s'
-MSG0078  | [MSG0078] %s - <STCPMON> - Timeout na recepcao de monitoracao '%s'
-MSG0079  | [MSG0079] %s - <STCPMON> - Cancelamento ou erro ao aguardar conexao de monitoracao [codigo:%u]
-MSG0080  | [MSG0080] %s - <STCPMON> - Inicio de conexao de monitoracao '%s'
-MSG0081  | [MSG0081] %s - <STCPMON> - Fim de conexao de monitoracao '%s'
-MSG0082  | [MSG0082] %s - <STCPMON> - Inicio da thread de monitoracao %08X - %08X
-MSG0083  | [MSG0083] %s - <STCPMON> - Fim da thread de monitoracao %08X - %08X
-MSG0084  | [MSG0084] %s - <STCPSRV> - Erro: configurar o objeto ODETTE [codigo:%u]
-MSG0085  | [MSG0085] %s - <STCPSRV> - Erro: configurar os parametros extra do objeto ODETTE [codigo:%u]
-MSG0086  | [MSG0086] %s - <STCPSRV> - Cancelamento ou erro ao aguardar conexao entrante %08X - %08X [codigo:%u]
+MSG0073  | [MSG0073] LOCAL - `<STCP>`  - NAO DEFINIDA
+MSG0074  | [MSG0074] LOCAL - `<STCPLOG>`  - %s - %s - Erro: abertura do arquivo de log '%s'
+MSG0075  | [MSG0075] %s - `<STCPMON>`  - Usuario '%s' autenticado para monitoracao '%s'
+MSG0076  | [MSG0076] %s - `<STCPMON>`  - Erro: usuario '%s' nao foi autenticado para monitoracao '%s'
+MSG0077  | [MSG0077] %s - `<STCPMON>`  - Erro: recepcao de monitoracao [codigo:%u, %u] '%s'
+MSG0078  | [MSG0078] %s - `<STCPMON>`  - Timeout na recepcao de monitoracao '%s'
+MSG0079  | [MSG0079] %s - `<STCPMON>`  - Cancelamento ou erro ao aguardar conexao de monitoracao [codigo:%u]
+MSG0080  | [MSG0080] %s - `<STCPMON>`  - Inicio de conexao de monitoracao '%s'
+MSG0081  | [MSG0081] %s - `<STCPMON>`  - Fim de conexao de monitoracao '%s'
+MSG0082  | [MSG0082] %s - `<STCPMON>`  - Inicio da thread de monitoracao %08X - %08X
+MSG0083  | [MSG0083] %s - `<STCPMON>`  - Fim da thread de monitoracao %08X - %08X
+MSG0084  | [MSG0084] %s - `<STCPSRV>`  - Erro: configurar o objeto ODETTE [codigo:%u]
+MSG0085  | [MSG0085] %s - `<STCPSRV>`  - Erro: configurar os parametros extra do objeto ODETTE [codigo:%u]
+MSG0086  | [MSG0086] %s - `<STCPSRV>`  - Cancelamento ou erro ao aguardar conexao entrante %08X - %08X [codigo:%u]
 MSG0087  | [MSG0087] %s - %s - Inicio de conexao entrante '%s'
 MSG0088  | [MSG0088] %s - %s - Erro: acesso rejeitado usuario ja esta conectado
 MSG0089  | [MSG0089] %s - %s - Erro: acesso rejeitado usuario esta bloqueado
 MSG0090  | [MSG0090] %s - %s - Erro: configurar o objeto ODETTE [codigo:%u]
 MSG0091  | [MSG0091] %s - %s - Erro: configurar a conversao de caracteres '%s' [codigo:%u]
 MSG0092  | [MSG0092] %s - %s - Erro: acesso rejeitado no logon local para conexao entrante [codigo:%u]
-MSG0093  | [MSG0093] LOCAL - <STCP> - NAO DEFINIDA
+MSG0093  | [MSG0093] LOCAL - `<STCP>`  - NAO DEFINIDA
 MSG0094  | [MSG0094] %s - %s - Inicio de sessao entrante '%s'
 MSG0095  | [MSG0095] %s - %s - Fim de sessao entrante '%s'
 MSG0096  | [MSG0096] %s - %s - Fim de conexao entrante '%s'
-MSG0097  | [MSG0097] %s - <STCPSRV> - Inicio da thread conexao entrante %08X - %08X
+MSG0097  | [MSG0097] %s - `<STCPSRV>`  - Inicio da thread conexao entrante %08X - %08X
 MSG0098  | [MSG0098] %s - %s - Fim de conexao entrante com erro '%s' [codigo:%u]
-MSG0099  | [MSG0099] %s - <STCPSRV> - Fim da thread conexao entrante %08X - %08X
-MSG0100  | [MSG0100] LOCAL - <STCPSRV> - NAO DEFINIDA
-MSG0101  | [MSG0101] LOCAL - <STCP> - NAO DEFINIDA
-MSG0102  | [MSG0102] LOCAL - <STCPSRV> - Erro: alocacao de UCB para rede '%s'
-MSG0103  | [MSG0103] LOCAL - <STCPSRV> - Erro: criacao da thread (stcpSrvServer) para rede '%s'
-MSG0104  | [MSG0104] %s - <STCPSRV> - Fim de conexao entrante com erro '%s' [codigo:%u]
-MSG0105  | [MSG0105] %s - <STCPSRV> - Erro: acesso rejeitado usuario '%s' nao cadastrado
-MSG0106  | [MSG0106] %s - <STCPSRV> - Erro: acesso rejeitado usuario '%s' invalido para '%s'
-MSG0107  | [MSG0107] LOCAL - <STCP> - %s - Erro: alocacao de memoria para o nome do arquivo de debug '%s'
-MSG0108  | [MSG0108] LOCAL - <STCP> - %s - Erro: abertura do arquivo de debug '%s' [codigo:%u]
-MSG0109  | [MSG0109] LOCAL - <STCP> - Fim do processo de cancelamento das conexoes
-MSG0110  | [MSG0110] LOCAL - <STCP> - Erro: arquivo de configuracao CTCP.INI/CTCP.AUX nao existe
-MSG0111  | [MSG0111] LOCAL - <STCPAGENDA> - Iniciado agenda automatica '%s' usuario '%s' modo '%c' sessoes '%d' filtro '%s' comando '%s'
+MSG0099  | [MSG0099] %s - `<STCPSRV>`  - Fim da thread conexao entrante %08X - %08X
+MSG0100  | [MSG0100] LOCAL - `<STCPSRV>`  - NAO DEFINIDA
+MSG0101  | [MSG0101] LOCAL - `<STCP>`  - NAO DEFINIDA
+MSG0102  | [MSG0102] LOCAL - `<STCPSRV>`  - Erro: alocacao de UCB para rede '%s'
+MSG0103  | [MSG0103] LOCAL - `<STCPSRV>`  - Erro: criacao da thread (stcpSrvServer) para rede '%s'
+MSG0104  | [MSG0104] %s - `<STCPSRV>`  - Fim de conexao entrante com erro '%s' [codigo:%u]
+MSG0105  | [MSG0105] %s - `<STCPSRV>`  - Erro: acesso rejeitado usuario '%s' nao cadastrado
+MSG0106  | [MSG0106] %s - `<STCPSRV>`  - Erro: acesso rejeitado usuario '%s' invalido para '%s'
+MSG0107  | [MSG0107] LOCAL - `<STCP>`  - %s - Erro: alocacao de memoria para o nome do arquivo de debug '%s'
+MSG0108  | [MSG0108] LOCAL - `<STCP>`  - %s - Erro: abertura do arquivo de debug '%s' [codigo:%u]
+MSG0109  | [MSG0109] LOCAL - `<STCP>`  - Fim do processo de cancelamento das conexoes
+MSG0110  | [MSG0110] LOCAL - `<STCP>`  - Erro: arquivo de configuracao CTCP.INI/CTCP.AUX nao existe
+MSG0111  | [MSG0111] LOCAL - `<STCPAGENDA>`  - Iniciado agenda automatica '%s' usuario '%s' modo '%c' sessoes '%d' filtro '%s' comando '%s'
 MSG0112  | [MSG0112] %s - %s - Erro: conexao automatica nao esta habilitada
-MSG0113  | [MSG0113] LOCAL - <STCP> - Configuracao '%s' maximo de sessoes '%d'
-MSG0114  | [MSG0114] LOCAL - <STCP> - Versao de Demonstracao com limite de '%d' sessoes simultaneas
+MSG0113  | [MSG0113] LOCAL - `<STCP>`  - Configuracao '%s' maximo de sessoes '%d'
+MSG0114  | [MSG0114] LOCAL - `<STCP>`  - Versao de Demonstracao com limite de '%d' sessoes simultaneas
 MSG0115  | [MSG0115] %s - %s - Erro: nome do arquivo invalido '%s'
-MSG0116  | [MSG0116] LOCAL - <STCPAGENDA> - Erro: abrir diretorio de transmissao '%s' do usuario '%s' [codigo:%u]
+MSG0116  | [MSG0116] LOCAL - `<STCPAGENDA>`  - Erro: abrir diretorio de transmissao '%s' do usuario '%s' [codigo:%u]
 MSG0117  | [MSG0117] %s - %s - Erro: abrir diretorio de transmissao '%s' [codigo:%u]
 MSG0118  | [MSG0118] %s - %s - Erro: abrir diretorio de formatos '%s' [codigo:%u]
 MSG0119  | [MSG0119] %s - %s - Erro: recepcao do arquivo '%s' bloqueada pelo filtro '%s'
 MSG0120  | [MSG0120] %s - %s - Erro: recepcao do arquivo '%s' bloqueada pelo tamanho '%d' > '%d'
-MSG0121  | [MSG0121] LOCAL - <STCPAGENDA> - Erro: execucao da linha de comando '%s' da agenda '%s' [codigo:%u]
-MSG0122  | [MSG0122] LOCAL - <STCP> - Erro: compilar expressao regular(regex) '%s' [codigo:%u]
+MSG0121  | [MSG0121] LOCAL - `<STCPAGENDA>`  - Erro: execucao da linha de comando '%s' da agenda '%s' [codigo:%u]
+MSG0122  | [MSG0122] LOCAL - `<STCP>`  - Erro: compilar expressao regular(regex) '%s' [codigo:%u]
 MSG0123  | [MSG0123] %s - %s - Erro: transmissao do arquivo '%s' bloqueada pelo filtro '%s'
 MSG0124  | [MSG0124] %s - %s - Erro: transmissao do arquivo '%s' bloqueada pelo tamanho '%d' > '%d'
 MSG0125  | [MSG0125] %s - %s - Erro: conexao bloqueada '%s' pelo filtro '%s'
-MSG0126  | [MSG0126] LOCAL - <STCPCLI> - Erro: acesso rejeitado usuario '%s' nao cadastrado
+MSG0126  | [MSG0126] LOCAL - `<STCPCLI>`  - Erro: acesso rejeitado usuario '%s' nao cadastrado
 MSG0127  | [MSG0127] %s - %s - Erro: execucao da linha de comando '%s' [codigo:%u]
 MSG0128  | [MSG0128] %s - %s - Erro: execucao da linha de comando '%s' [codigo:%u]
-MSG0129  | [MSG0129] LOCAL - <STCP> - Nao foi possivel carregar o configurador %s - [codigo:%u]
+MSG0129  | [MSG0129] LOCAL - `<STCP>`  - Nao foi possivel carregar o configurador %s - [codigo:%u]
 MSG0130  | [MSG0130] %s - %s - %s '%s'
-MSG0131  | [MSG0131] %s - <STCPMON> - Erro: modificar senha para '%s', usuario ou senha invalida - '%s'
-MSG0132  | [MSG0132] %s - <STCPMON> - Erro: comando nao definido '%d' - '%s'
-MSG0133  | [MSG0133] %s - <STCPMON> - Erro: parametros invalidos - '%s'
-MSG0134  | [MSG0134] LOCAL - <STCP> - Erro: numero de serie nao foi informado ou esta incorreto '%s'
-MSG0135  | [MSG0135] LOCAL - <STCP> - Numero de serie: '%-.8s-%-.4s-%-.4s-%-.4s-%.12s-%-.4s' - ID: '%-04X-%-04X'
-MSG0136  | [MSG0136] LOCAL - <STCPAGENDA> - Erro: criacao da thread (stcpSchedService)
-MSG0137  | [MSG0137] LOCAL - <STCP> - Erro: funcao SetConsoleCtrlHandler
-MSG0138  | [MSG0138] LOCAL - <STCP> - Erro: criacao do semaforo (sema_usu)
-MSG0139  | [MSG0139] LOCAL - <STCP> - Erro: criacao do semaforo (sema_filename)
-MSG0140  | [MSG0140] LOCAL - <STCP> - Deseja encerrar o serviço '%s'?
-MSG0141  | [MSG0141] LOCAL - <STCP> - Deseja reiniciar o serviço '%s'?
-MSG0142  | [MSG0142] LOCAL - <STCP> - Deseja iniciar a conexão '%s'?
-MSG0143  | [MSG0143] LOCAL - <STCP> - Usuário inválido
-MSG0144  | [MSG0144] LOCAL - <STCP> - Senha inválida
-MSG0145  | [MSG0145] LOCAL - <STCP> - Usuário deve ser um Administrador ou\nMembro do grupo CONADMIN
-MSG0146  | [MSG0146] LOCAL - <STCP> - Usuário e/ou Senha inválido(s)
-MSG7001  | [MSG7001] LOCAL - <STCPREN> - Erro: quantidade de parametros e insuficiente - '%d'
-MSG7002  | [MSG7002] LOCAL - <STCPREN> - Erro: nome do arquivo invalido - '%s'
-MSG7003  | [MSG7003] LOCAL - <STCPREN> - Erro: arquivo de regras '%s' nao tem definicao para arquivo '%s'
-MSG7004  | [MSG7004] LOCAL - <STCPREN> - Erro: servico de log nao foi aberto
+MSG0131  | [MSG0131] %s - `<STCPMON>`  - Erro: modificar senha para '%s', usuario ou senha invalida - '%s'
+MSG0132  | [MSG0132] %s - `<STCPMON>`  - Erro: comando nao definido '%d' - '%s'
+MSG0133  | [MSG0133] %s - `<STCPMON>`  - Erro: parametros invalidos - '%s'
+MSG0134  | [MSG0134] LOCAL - `<STCP>`  - Erro: numero de serie nao foi informado ou esta incorreto '%s'
+MSG0135  | [MSG0135] LOCAL - `<STCP>`  - Numero de serie: '%-.8s-%-.4s-%-.4s-%-.4s-%.12s-%-.4s' - ID: '%-04X-%-04X'
+MSG0136  | [MSG0136] LOCAL - `<STCPAGENDA>`  - Erro: criacao da thread (stcpSchedService)
+MSG0137  | [MSG0137] LOCAL - `<STCP>`  - Erro: funcao SetConsoleCtrlHandler
+MSG0138  | [MSG0138] LOCAL - `<STCP>`  - Erro: criacao do semaforo (sema_usu)
+MSG0139  | [MSG0139] LOCAL - `<STCP>`  - Erro: criacao do semaforo (sema_filename)
+MSG0140  | [MSG0140] LOCAL - `<STCP>`  - Deseja encerrar o serviço '%s'?
+MSG0141  | [MSG0141] LOCAL - `<STCP>`  - Deseja reiniciar o serviço '%s'?
+MSG0142  | [MSG0142] LOCAL - `<STCP>`  - Deseja iniciar a conexão '%s'?
+MSG0143  | [MSG0143] LOCAL - `<STCP>`  - Usuário inválido
+MSG0144  | [MSG0144] LOCAL - `<STCP>`  - Senha inválida
+MSG0145  | [MSG0145] LOCAL - `<STCP>`  - Usuário deve ser um Administrador ou\nMembro do grupo CONADMIN
+MSG0146  | [MSG0146] LOCAL - `<STCP>`  - Usuário e/ou Senha inválido(s)
+MSG7001  | [MSG7001] LOCAL - `<STCPREN>`  - Erro: quantidade de parametros e insuficiente - '%d'
+MSG7002  | [MSG7002] LOCAL - `<STCPREN>`  - Erro: nome do arquivo invalido - '%s'
+MSG7003  | [MSG7003] LOCAL - `<STCPREN>`  - Erro: arquivo de regras '%s' nao tem definicao para arquivo '%s'
+MSG7004  | [MSG7004] LOCAL - `<STCPREN>`  - Erro: servico de log nao foi aberto
 MSG7005  | [MSG7005] LOCAL - %s - Erro: regra '%s' com parametro invalido no arquivo '%s'
 MSG7006  | [MSG7006] LOCAL - %s - Inicio do STCPREN para o arquivo '%s'
 MSG7007  | [MSG7007] LOCAL - %s - Erro: copia do arquivo de '%s' para '%s' [codigo:%u]
@@ -173,155 +173,155 @@ MSG7009  | [MSG7009] LOCAL - %s - Copia do arquivo de '%s' para '%s' origem '%s'
 MSG7010  | [MSG7010] LOCAL - %s - Erro: remover o arquivo '%s' [codigo:%u]
 MSG7011  | [MSG7011] LOCAL - %s - Erro: executar o comando '%s %s'[codigo:%u]
 MSG7012  | [MSG7012] LOCAL - %s - Erro: executar o comando '%s %s'[codigo:%u]
-MSG7013  | [MSG7013] LOCAL - <STCPREN> - Erro: conectar recurso '%s' [codigo:%u]
-MSG7014  | [MSG7014] LOCAL - <STCPREN> - Erro: desconectar recurso '%s' [codigo:%u]
-MSG8001  | [MSG8001] LOCAL - <STCPCFG> - Não foi informado o nome do tipo de arquivo
-MSG8002  | [MSG8002] LOCAL - <STCPCFG> - Não foi informado o nome do perfil
-MSG8002  | [MSG8002] LOCAL - <STCPCFG> - Não foi informado o nome do usuário
-MSG8003  | [MSG8003] LOCAL - <STCPCFG> - Não foi informada a senha
-MSG8004  | [MSG8004] LOCAL - <STCPCFG> - Não foi confirmada a senha
-MSG8005  | [MSG8005] LOCAL - <STCPCFG> - Não foi informado o nome do arquivo do Trace dos dados enviados
-MSG8006  | [MSG8006] LOCAL - <STCPCFG> - Não foi informado o nome do arquivo do Trace dos dados recebidos
-MSG8007  | [MSG8007] LOCAL - <STCPCFG> - Não foi informado o nome do arquivo de Debug
-MSG8008  | [MSG8008] LOCAL - <STCPCFG> - Não foi informada a string de discagem do modem
-MSG8009  | [MSG8009] LOCAL - <STCPCFG> - Não foi informada a string de inicialização do modem
-MSG8010  | [MSG8010] LOCAL - <STCPCFG> - Não foi informada a string de desconexão do modem
-MSG8011  | [MSG8011] LOCAL - <STCPCFG> - Não foi informada a mensagem de conexão
-MSG8012  | [MSG8012] LOCAL - <STCPCFG> - Não foi informada a mensagem de confirmação
-MSG8013  | [MSG8013] LOCAL - <STCPCFG> - Não foi informada a mensagem de ocupado
-MSG8014  | [MSG8014] LOCAL - <STCPCFG> - Não foi informada a mensagem de erro
-MSG8015  | [MSG8015] LOCAL - <STCPCFG> - Não foi informada a mensagem de sem tom de discagem
-MSG8016  | [MSG8016] LOCAL - <STCPCFG> - Não foi informada a mensagem de sem portadora
-MSG8017  | [MSG8017] LOCAL - <STCPCFG> - Não foi informado os parâmetros do PAD
-MSG8018  | [MSG8018] LOCAL - <STCPCFG> - Não foi confirmada a nova senha
-MSG8019  | [MSG8019] LOCAL - <STCPCFG> - Erro: criar o diretório '%s' [codigo:%u]
-MSG8020  | [MSG8020] LOCAL - <STCPCFG> - Não foi informada a linha de comando
-MSG8021  | [MSG8021] LOCAL - <STCPCFG> - Linha de comando inválida
-MSG8022  | [MSG8022] LOCAL - <STCPCFG> - Erro: gravação do arquivo CTCP.INI
-MSG8023  | [MSG8023] LOCAL - <STCPCFG> - O tipo 'default' não pode ser removido.
-MSG8024  | [MSG8024] LOCAL - <STCPCFG> - Não foi informado o nome do serviço.
-MSG8025  | [MSG8025] LOCAL - <STCPCFG> - Não foi informado o diretório de controle
-MSG8026  | [MSG8026] LOCAL - <STCPCFG> - Não foi informado o diretório de dados
-MSG8027  | [MSG8027] LOCAL - <STCPCFG> - Confirmação da senha está incorreta
-MSG8028  | [MSG8028] LOCAL - <STCPCFG> - O diretório de sistema informado é diferente do atual.\nCertifique-se que o serviço STCP OFTP está paralisado\nantes de prosseguir com a modificação.\n\nDeseja continuar ?
-MSG8029  | [MSG8029] LOCAL - <STCPCFG> - O diretório de dados informado é diferente do atual.\nCertifique-se que o serviço STCP OFTP está paralisado\nantes de prosseguir com a modificação.\n\nDeseja continuar ?
-MSG8030  | [MSG8030] LOCAL - <STCPCFG> - Não foi informado o número serial corretamente
-MSG8031  | [MSG8031] LOCAL - <STCPCFG> - OnButtonDirsys SHGetMalloc
-MSG8032  | [MSG8032] LOCAL - <STCPCFG> - Diretório inválido
-MSG8033  | [MSG8033] LOCAL - <STCPCFG> - OnButtonDirdat SHGetMalloc
-MSG8034  | [MSG8034] LOCAL - <STCPCFG> - Número de sessões inválidos
-MSG8035  | [MSG8035] LOCAL - <STCPCFG> - O checkpoint não pode ser igual a zero
-MSG8036  | [MSG8036] LOCAL - <STCPCFG> - Não foi informado o endereço IP
-MSG8037  | [MSG8037] LOCAL - <STCPCFG> - Não foi informado a porta IP
-MSG8038  | [MSG8038] LOCAL - <STCPCFG> - Não foi informado o endereço X25 remoto
-MSG8039  | [MSG8039] LOCAL - <STCPCFG> - Não foi informado o endereço DTE
-MSG8040  | [MSG8040] LOCAL - <STCPCFG> - Não foi informado o Número de Identificação do Usuário (NIU)
-MSG8041  | [MSG8041] LOCAL - <STCPCFG> - Não foi informado o número a ser discado.
-MSG8042  | [MSG8042] LOCAL - <STCPCFG> - Não foi informada a identificação do Odette
-MSG8043  | [MSG8043] LOCAL - <STCPCFG> - Porta IP já foi configurada em outra seção
-MSG8044  | [MSG8044] LOCAL - <STCPCFG> - Não foi informado usuario para monitoração
-MSG8045  | [MSG8045] LOCAL - <STCPCFG> - Não foi informada senha para monitoração
-MSG8046  | [MSG8046] LOCAL - <STCPCFG> - Não foi confirmada senha para monitoração
-MSG8047  | [MSG8047] LOCAL - <STCPCFG> - Tamanho inicial do buffer não pode ser menor que 128 ou maior que 99999
-MSG8048  | [MSG8048] LOCAL - <STCPCFG> - Os créditos não podem ser menor que 1 ou maior que 999
-MSG8049  | [MSG8049] LOCAL - <STCPCFG> - Erro: carga dos arquivos da Rede Dial-Up
-MSG8050  | [MSG8050] LOCAL - <STCPCFG> - Não foi possível abrir ou encontrar a biblioteca RAS
-MSG8051  | [MSG8051] LOCAL - <STCPCFG> - Erro: carga das funções de acesso remoto
-MSG8052  | [MSG8052] LOCAL - <STCPCFG> - Não foi informado o modo de verificação
-MSG8053  | [MSG8053] LOCAL - <STCPCFG> - Não foi informado o prefixo ou sufixo
-MSG8054  | [MSG8054] LOCAL - <STCPCFG> - Não foi informada a expressão regular
-MSG8055  | [MSG8055] LOCAL - <STCPCFG> - Não foi informado o tamanho do registro
-MSG8056  | [MSG8056] LOCAL - <STCPCFG> - O diretório informado '%s' não existe.\n\nDeseja criá-lo ?
-MSG8057  | [MSG8057] LOCAL - <STCPCFG> - Não foi informada a senha do Odette
-MSG8058  | [MSG8058] LOCAL - <STCPCFG> - Não foi confirmada a senha do Odette
-MSG8059  | [MSG8059] LOCAL - <STCPCFG> - O tamanho do buffer não pode ser menor que 128 ou maior que 99999
-MSG8060  | [MSG8060] LOCAL - <STCPCFG> - Timeout para pacotes não pode ser igual a zero
-MSG8061  | [MSG8061] LOCAL - <STCPCFG> - Timeout de espera de pacote não pode ser igual a zero
-MSG8062  | [MSG8062] LOCAL - <STCPCFG> - Timeout de espera de caracter não pode ser igual a zero
-MSG8063  | [MSG8063] LOCAL - <STCPCFG> - Número máximo de tentativas não pode ser igual a zero
-MSG8064  | [MSG8064] LOCAL - <STCPCFG> - Não foi informado o endereço DTE remoto
-MSG8065  | [MSG8065] LOCAL - <STCPCFG> - Não foi informado a mensagem de conexão do PAD
-MSG8066  | [MSG8066] LOCAL - <STCPCFG> - Não foi confirmada a senha
-MSG8067  | [MSG8067] LOCAL - <STCPCFG> - Não foi informado o Endereço IP
-MSG8068  | [MSG8068] LOCAL - <STCPCFG> - Porta IP inválida
-MSG8069  | [MSG8069] LOCAL - <STCPCFG> - Nome não foi informado
-MSG8070  | [MSG8070] LOCAL - <STCPCFG> - Nome da agenda já existe
-MSG8071  | [MSG8071] LOCAL - <STCPCFG> - Não foi informado o Usuário
-MSG8072  | [MSG8072] LOCAL - <STCPCFG> - Não foi informado o Comando
-MSG8073  | [MSG8073] LOCAL - <STCPCFG> - Não foi informado o Endereço IP
-MSG8074  | [MSG8074] LOCAL - <STCPCFG> - Porta IP inválida
-MSG8075  | [MSG8075] LOCAL - <STCPCFG> - Não foi informado o Usuário
-MSG8076  | [MSG8076] LOCAL - <STCPCFG> - Não foi informado a placa X25
-MSG8077  | [MSG8077] LOCAL - <STCPCFG> - Não foi informado a porta X25
-MSG8078  | [MSG8078] LOCAL - <STCPCFG> - Não foi informada a string de espera de conexão
-MSG8079  | [MSG8079] LOCAL - <STCPCFG> - O tipo de arquivo '%s' já existe
-MSG8080  | [MSG8080] LOCAL - <STCPCFG> - Nome do perfil '%s' já existe
-MSG8080  | [MSG8080] LOCAL - <STCPCFG> - Nome do usuário '%s' já existe
-MSG8081  | [MSG8081] LOCAL - <STCPCFG> - Erro: alterar a senha no sistema [codigo:%u]
-MSG8082  | [MSG8082] LOCAL - <STCPCFG> - Erro: arquivo '%s' não existe ou não possui permissão de acesso
-MSG8083  | [MSG8083] LOCAL - <STCPCFG> - O serviço '%s' foi desativado com sucesso.
-MSG8084  | [MSG8084] LOCAL - <STCPCFG> - O serviço '%s' foi ativado com sucesso.
-MSG8085  | [MSG8085] LOCAL - <STCPCFG> - Você tem certeza que deseja remover o Perfil '%s'\ne todos os seus sub-diretórios ?
-MSG8085  | [MSG8085] LOCAL - <STCPCFG> - Você tem certeza que deseja remover o Usuário '%s'\ne todos os seus sub-diretórios ?
-MSG8086  | [MSG8086] LOCAL - <STCPCFG> - Remover tipo de arquivo '%s' ?
-MSG8087  | [MSG8087] LOCAL - <STCPCFG> - Remover Rede '%s' ?
-MSG8088  | [MSG8088] LOCAL - <STCPCFG> - O usuário '%s' já existe.
-MSG8089  | [MSG8089] LOCAL - <STCPCFG> - Remover perfil '%s' ?
-MSG8089  | [MSG8089] LOCAL - <STCPCFG> - Remover usuário '%s' ?
-MSG8090  | [MSG8090] LOCAL - <STCPCFG> - Não foi possível criar o diretório '%s' [codigo:%u]
-MSG8091  | [MSG8091] LOCAL - <STCPCFG> - Erro: %d ao remover o arquivo '%s'
-MSG8092  | [MSG8092] LOCAL - <STCPCFG> - Erro: %d ao remover o diretorio '%s'
-MSG8093  | [MSG8093] LOCAL - <STCPCFG> - Erro: criar o grupo STCPGRP [codigo:%u]
-MSG8094  | [MSG8094] LOCAL - <STCPCFG> - Erro: criar usuário
-MSG8095  | [MSG8095] LOCAL - <STCPCFG> - Erro: criar usuário %s [codigo:%u]
-MSG8096  | [MSG8096] LOCAL - <STCPCFG> - Erro: adicionar o usuário '%s' ao grupo STCPGRP [codigo:%u]
-MSG8097  | [MSG8097] LOCAL - <STCPCFG> - Erro: remover o usuário %s [codigo:%u]
-MSG8098  | [MSG8098] LOCAL - <STCPCFG> - Remover agenda '%s' ?
-MSG8099  | [MSG8099] LOCAL - <STCPCFG> - Nome da agenda '%s' já existe
-MSG8100  | [MSG8100] LOCAL - <STCPCFG> - O serviço '%s' já existe instalado
-MSG8101  | [MSG8101] LOCAL - <STCPCFG> - Não existe diretório de origem '%s'
-MSG8102  | [MSG8102] LOCAL - <STCPCFG> - Erro: adicionar o grupo [codigo:%u]
-MSG8103  | [MSG8103] LOCAL - <STCPCFG> - Erro: configurar info no grupo [codigo:%u]
-MSG8104  | [MSG8104] LOCAL - <STCPCFG> - Erro: adicionar usuário [codigo:%u]
-MSG8105  | [MSG8105] LOCAL - <STCPCFG> - Erro: adicionar usuário no grupo [codigo:%u]
-MSG8106  | [MSG8106] LOCAL - <STCPCFG> - Erro: remover o usuário [codigo:%u]
-MSG8107  | [MSG8107] LOCAL - <STCPCFG> - Erro: remover o grupo [codigo:%u]
-MSG8108  | [MSG8108] LOCAL - <STCPCFG> - O serviço '%s' está ativo.\n\nDeseja desativalo agora ?\n
-MSG8109  | [MSG8109] LOCAL - <STCPCFG> - O serviço '%s' não está ativo.\n\nDeseja ativá-lo agora ?\n
-MSG8110  | [MSG8110] LOCAL - <STCPCFG> - Existe uma versão anterior do STCP OFTP instalada em sua máquina.\nRecomendamos que seja feito uma cópia de segurança antes de prosseguir.\n\nDeseja continuar com a atualização ?
-MSG8111  | [MSG8111] LOCAL - <STCPCFG> - Existe(m) arquivo(s) no diretório de entrada e/ou saída\n\nVocê tem certeza que deseja remover o Perfil '%s'\ne todos os seus sub-diretórios ?
-MSG8111  | [MSG8111] LOCAL - <STCPCFG> - Existe(m) arquivo(s) no diretório de entrada e/ou saída\n\nVocê tem certeza que deseja remover o Usuário '%s'\ne todos os seus sub-diretórios ?
-MSG8112  | [MSG8112] LOCAL - <STCPCFG> - O serviço '%s' não foi removido corretamente [codigo:%u].\n\nExecute a seguinte linha de comando:\n\n--> '%s %s delservice' <--
-MSG8113  | [MSG8113] LOCAL - <STCPCFG> - O serviço '%s' não foi instalado corretamente [codigo:%u].\n\nExecute a seguinte linha de comando:\n\n--> '%s %s addservice' <--
-MSG8114  | [MSG8114] LOCAL - <STCPCFG> - Erro: colocar os direitos no grupo STCPGRP [codigo:%u]
-MSG8115  | [MSG8115] LOCAL - <STCPCFG> - Não foi informada a nova senha
-MSG8116  | [MSG8116] LOCAL - <STCPCFG> - Erro: arquivo de configuração '%s' não existe
-MSG8117  | [MSG8117] LOCAL - <STCPCFG> - Usuário '%s' criado com sucesso
-MSG8118  | [MSG8118] LOCAL - <STCPCFG> - Erro: criar usuário '%s' [codigo:0x%X]
-MSG8119  | [MSG8119] LOCAL - <STCPCFG> - Erro: criar usuário '%s' já existe
-MSG8120  | [MSG8120] LOCAL - <STCPCFG> - Usuário '%s' removido com sucesso
-MSG8121  | [MSG8121] LOCAL - <STCPCFG> - Erro: remover usuário '%s' [codigo:0x%X]
-MSG8122  | [MSG8122] LOCAL - <STCPCFG> - Erro: remover usuário '%s' não existe
-MSG8123  | [MSG8123] LOCAL - <STCPCFG> - Usuário '%s' modificado com sucesso
-MSG8124  | [MSG8124] LOCAL - <STCPCFG> - Erro: modificar usuário '%s' não existe
-MSG8125  | [MSG8125] LOCAL - <STCPCFG> - Usuário '%s' modificado com sucesso
-MSG8126  | [MSG8126] LOCAL - <STCPCFG> - Erro: modificar senha do usuario '%s'
-MSG8127  | [MSG8127] LOCAL - <STCPCFG> - Erro: modificar usuário '%s' não existe
-MSG8128  | [MSG8128] LOCAL - <STCPCFG> - Erro: não foi possível criar o atalho na área de trabalho
-MSG8129  | [MSG8129] LOCAL - <STCPCFG> - Erro: não foi possível remover o atalho da área de trabalho
-MSG8130  | [MSG8130] LOCAL - <STCPCFG> - Erro: não foi possível localizar o diretório da área de trabalho
-MSG9001  | [MSG9001] LOCAL - <STCPCTL> - Erro: não foi informado o endereço IP
-MSG9002  | [MSG9002] LOCAL - <STCPCTL> - Erro: porta IP inválida
-MSG9003  | [MSG9003] LOCAL - <STCPCTL> - Erro: não foi informado o usuário
-MSG9004  | [MSG9004] LOCAL - <STCPCTL> - Erro: não foi confirmada a senha
-MSG9005  | [MSG9005] LOCAL - <STCPCTL> - Erro: execução da linha de comando '%s' [codigo:%u]
-MSG9006  | [MSG9006] LOCAL - <STCPCTL> - Erro: diretório inválido ou profile não definido
-MSG9007  | [MSG9007] LOCAL - <STCPCTL> - Erro: remover o diretório %s [codigo:0x%X]
-MSG9008  | [MSG9008] LOCAL - <STCPCTL> - Erro: programa '%s' não autorizado [codigo:0x%X]
-MSG9009  | [MSG9009] LOCAL - <STCPCTL> - Erro: remover o arquivo '%s' [codigo:0x%X]
+MSG7013  | [MSG7013] LOCAL - `<STCPREN>`  - Erro: conectar recurso '%s' [codigo:%u]
+MSG7014  | [MSG7014] LOCAL - `<STCPREN>`  - Erro: desconectar recurso '%s' [codigo:%u]
+MSG8001  | [MSG8001] LOCAL - `<STCPCFG>`  - Não foi informado o nome do tipo de arquivo
+MSG8002  | [MSG8002] LOCAL - `<STCPCFG>`  - Não foi informado o nome do perfil
+MSG8002  | [MSG8002] LOCAL - `<STCPCFG>`  - Não foi informado o nome do usuário
+MSG8003  | [MSG8003] LOCAL - `<STCPCFG>`  - Não foi informada a senha
+MSG8004  | [MSG8004] LOCAL - `<STCPCFG>`  - Não foi confirmada a senha
+MSG8005  | [MSG8005] LOCAL - `<STCPCFG>`  - Não foi informado o nome do arquivo do Trace dos dados enviados
+MSG8006  | [MSG8006] LOCAL - `<STCPCFG>`  - Não foi informado o nome do arquivo do Trace dos dados recebidos
+MSG8007  | [MSG8007] LOCAL - `<STCPCFG>`  - Não foi informado o nome do arquivo de Debug
+MSG8008  | [MSG8008] LOCAL - `<STCPCFG>`  - Não foi informada a string de discagem do modem
+MSG8009  | [MSG8009] LOCAL - `<STCPCFG>`  - Não foi informada a string de inicialização do modem
+MSG8010  | [MSG8010] LOCAL - `<STCPCFG>`  - Não foi informada a string de desconexão do modem
+MSG8011  | [MSG8011] LOCAL - `<STCPCFG>`  - Não foi informada a mensagem de conexão
+MSG8012  | [MSG8012] LOCAL - `<STCPCFG>`  - Não foi informada a mensagem de confirmação
+MSG8013  | [MSG8013] LOCAL - `<STCPCFG>`  - Não foi informada a mensagem de ocupado
+MSG8014  | [MSG8014] LOCAL - `<STCPCFG>`  - Não foi informada a mensagem de erro
+MSG8015  | [MSG8015] LOCAL - `<STCPCFG>`  - Não foi informada a mensagem de sem tom de discagem
+MSG8016  | [MSG8016] LOCAL - `<STCPCFG>`  - Não foi informada a mensagem de sem portadora
+MSG8017  | [MSG8017] LOCAL - `<STCPCFG>`  - Não foi informado os parâmetros do PAD
+MSG8018  | [MSG8018] LOCAL - `<STCPCFG>`  - Não foi confirmada a nova senha
+MSG8019  | [MSG8019] LOCAL - `<STCPCFG>`  - Erro: criar o diretório '%s' [codigo:%u]
+MSG8020  | [MSG8020] LOCAL - `<STCPCFG>`  - Não foi informada a linha de comando
+MSG8021  | [MSG8021] LOCAL - `<STCPCFG>`  - Linha de comando inválida
+MSG8022  | [MSG8022] LOCAL - `<STCPCFG>`  - Erro: gravação do arquivo CTCP.INI
+MSG8023  | [MSG8023] LOCAL - `<STCPCFG>`  - O tipo 'default' não pode ser removido.
+MSG8024  | [MSG8024] LOCAL - `<STCPCFG>`  - Não foi informado o nome do serviço.
+MSG8025  | [MSG8025] LOCAL - `<STCPCFG>`  - Não foi informado o diretório de controle
+MSG8026  | [MSG8026] LOCAL - `<STCPCFG>`  - Não foi informado o diretório de dados
+MSG8027  | [MSG8027] LOCAL - `<STCPCFG>`  - Confirmação da senha está incorreta
+MSG8028  | [MSG8028] LOCAL - `<STCPCFG>`  - O diretório de sistema informado é diferente do atual.\nCertifique-se que o serviço STCP OFTP está paralisado\nantes de prosseguir com a modificação.\n\nDeseja continuar ?
+MSG8029  | [MSG8029] LOCAL - `<STCPCFG>`  - O diretório de dados informado é diferente do atual.\nCertifique-se que o serviço STCP OFTP está paralisado\nantes de prosseguir com a modificação.\n\nDeseja continuar ?
+MSG8030  | [MSG8030] LOCAL - `<STCPCFG>`  - Não foi informado o número serial corretamente
+MSG8031  | [MSG8031] LOCAL - `<STCPCFG>`  - OnButtonDirsys SHGetMalloc
+MSG8032  | [MSG8032] LOCAL - `<STCPCFG>`  - Diretório inválido
+MSG8033  | [MSG8033] LOCAL - `<STCPCFG>`  - OnButtonDirdat SHGetMalloc
+MSG8034  | [MSG8034] LOCAL - `<STCPCFG>`  - Número de sessões inválidos
+MSG8035  | [MSG8035] LOCAL - `<STCPCFG>`  - O checkpoint não pode ser igual a zero
+MSG8036  | [MSG8036] LOCAL - `<STCPCFG>`  - Não foi informado o endereço IP
+MSG8037  | [MSG8037] LOCAL - `<STCPCFG>`  - Não foi informado a porta IP
+MSG8038  | [MSG8038] LOCAL - `<STCPCFG>`  - Não foi informado o endereço X25 remoto
+MSG8039  | [MSG8039] LOCAL - `<STCPCFG>`  - Não foi informado o endereço DTE
+MSG8040  | [MSG8040] LOCAL - `<STCPCFG>`  - Não foi informado o Número de Identificação do Usuário (NIU)
+MSG8041  | [MSG8041] LOCAL - `<STCPCFG>`  - Não foi informado o número a ser discado.
+MSG8042  | [MSG8042] LOCAL - `<STCPCFG>`  - Não foi informada a identificação do Odette
+MSG8043  | [MSG8043] LOCAL - `<STCPCFG>`  - Porta IP já foi configurada em outra seção
+MSG8044  | [MSG8044] LOCAL - `<STCPCFG>`  - Não foi informado usuario para monitoração
+MSG8045  | [MSG8045] LOCAL - `<STCPCFG>`  - Não foi informada senha para monitoração
+MSG8046  | [MSG8046] LOCAL - `<STCPCFG>`  - Não foi confirmada senha para monitoração
+MSG8047  | [MSG8047] LOCAL - `<STCPCFG>`  - Tamanho inicial do buffer não pode ser menor que 128 ou maior que 99999
+MSG8048  | [MSG8048] LOCAL - `<STCPCFG>`  - Os créditos não podem ser menor que 1 ou maior que 999
+MSG8049  | [MSG8049] LOCAL - `<STCPCFG>`  - Erro: carga dos arquivos da Rede Dial-Up
+MSG8050  | [MSG8050] LOCAL - `<STCPCFG>`  - Não foi possível abrir ou encontrar a biblioteca RAS
+MSG8051  | [MSG8051] LOCAL - `<STCPCFG>`  - Erro: carga das funções de acesso remoto
+MSG8052  | [MSG8052] LOCAL - `<STCPCFG>`  - Não foi informado o modo de verificação
+MSG8053  | [MSG8053] LOCAL - `<STCPCFG>`  - Não foi informado o prefixo ou sufixo
+MSG8054  | [MSG8054] LOCAL - `<STCPCFG>`  - Não foi informada a expressão regular
+MSG8055  | [MSG8055] LOCAL - `<STCPCFG>`  - Não foi informado o tamanho do registro
+MSG8056  | [MSG8056] LOCAL - `<STCPCFG>`  - O diretório informado '%s' não existe.\n\nDeseja criá-lo ?
+MSG8057  | [MSG8057] LOCAL - `<STCPCFG>`  - Não foi informada a senha do Odette
+MSG8058  | [MSG8058] LOCAL - `<STCPCFG>`  - Não foi confirmada a senha do Odette
+MSG8059  | [MSG8059] LOCAL - `<STCPCFG>`  - O tamanho do buffer não pode ser menor que 128 ou maior que 99999
+MSG8060  | [MSG8060] LOCAL - `<STCPCFG>`  - Timeout para pacotes não pode ser igual a zero
+MSG8061  | [MSG8061] LOCAL - `<STCPCFG>`  - Timeout de espera de pacote não pode ser igual a zero
+MSG8062  | [MSG8062] LOCAL - `<STCPCFG>`  - Timeout de espera de caracter não pode ser igual a zero
+MSG8063  | [MSG8063] LOCAL - `<STCPCFG>`  - Número máximo de tentativas não pode ser igual a zero
+MSG8064  | [MSG8064] LOCAL - `<STCPCFG>`  - Não foi informado o endereço DTE remoto
+MSG8065  | [MSG8065] LOCAL - `<STCPCFG>`  - Não foi informado a mensagem de conexão do PAD
+MSG8066  | [MSG8066] LOCAL - `<STCPCFG>`  - Não foi confirmada a senha
+MSG8067  | [MSG8067] LOCAL - `<STCPCFG>`  - Não foi informado o Endereço IP
+MSG8068  | [MSG8068] LOCAL - `<STCPCFG>`  - Porta IP inválida
+MSG8069  | [MSG8069] LOCAL - `<STCPCFG>`  - Nome não foi informado
+MSG8070  | [MSG8070] LOCAL - `<STCPCFG>`  - Nome da agenda já existe
+MSG8071  | [MSG8071] LOCAL - `<STCPCFG>`  - Não foi informado o Usuário
+MSG8072  | [MSG8072] LOCAL - `<STCPCFG>`  - Não foi informado o Comando
+MSG8073  | [MSG8073] LOCAL - `<STCPCFG>`  - Não foi informado o Endereço IP
+MSG8074  | [MSG8074] LOCAL - `<STCPCFG>`  - Porta IP inválida
+MSG8075  | [MSG8075] LOCAL - `<STCPCFG>`  - Não foi informado o Usuário
+MSG8076  | [MSG8076] LOCAL - `<STCPCFG>`  - Não foi informado a placa X25
+MSG8077  | [MSG8077] LOCAL - `<STCPCFG>`  - Não foi informado a porta X25
+MSG8078  | [MSG8078] LOCAL - `<STCPCFG>`  - Não foi informada a string de espera de conexão
+MSG8079  | [MSG8079] LOCAL - `<STCPCFG>`  - O tipo de arquivo '%s' já existe
+MSG8080  | [MSG8080] LOCAL - `<STCPCFG>`  - Nome do perfil '%s' já existe
+MSG8080  | [MSG8080] LOCAL - `<STCPCFG>`  - Nome do usuário '%s' já existe
+MSG8081  | [MSG8081] LOCAL - `<STCPCFG>`  - Erro: alterar a senha no sistema [codigo:%u]
+MSG8082  | [MSG8082] LOCAL - `<STCPCFG>`  - Erro: arquivo '%s' não existe ou não possui permissão de acesso
+MSG8083  | [MSG8083] LOCAL - `<STCPCFG>`  - O serviço '%s' foi desativado com sucesso.
+MSG8084  | [MSG8084] LOCAL - `<STCPCFG>`  - O serviço '%s' foi ativado com sucesso.
+MSG8085  | [MSG8085] LOCAL - `<STCPCFG>`  - Você tem certeza que deseja remover o Perfil '%s'\ne todos os seus sub-diretórios ?
+MSG8085  | [MSG8085] LOCAL - `<STCPCFG>`  - Você tem certeza que deseja remover o Usuário '%s'\ne todos os seus sub-diretórios ?
+MSG8086  | [MSG8086] LOCAL - `<STCPCFG>`  - Remover tipo de arquivo '%s' ?
+MSG8087  | [MSG8087] LOCAL - `<STCPCFG>`  - Remover Rede '%s' ?
+MSG8088  | [MSG8088] LOCAL - `<STCPCFG>`  - O usuário '%s' já existe.
+MSG8089  | [MSG8089] LOCAL - `<STCPCFG>`  - Remover perfil '%s' ?
+MSG8089  | [MSG8089] LOCAL - `<STCPCFG>`  - Remover usuário '%s' ?
+MSG8090  | [MSG8090] LOCAL - `<STCPCFG>`  - Não foi possível criar o diretório '%s' [codigo:%u]
+MSG8091  | [MSG8091] LOCAL - `<STCPCFG>`  - Erro: %d ao remover o arquivo '%s'
+MSG8092  | [MSG8092] LOCAL - `<STCPCFG>`  - Erro: %d ao remover o diretorio '%s'
+MSG8093  | [MSG8093] LOCAL - `<STCPCFG>`  - Erro: criar o grupo STCPGRP [codigo:%u]
+MSG8094  | [MSG8094] LOCAL - `<STCPCFG>`  - Erro: criar usuário
+MSG8095  | [MSG8095] LOCAL - `<STCPCFG>`  - Erro: criar usuário %s [codigo:%u]
+MSG8096  | [MSG8096] LOCAL - `<STCPCFG>`  - Erro: adicionar o usuário '%s' ao grupo STCPGRP [codigo:%u]
+MSG8097  | [MSG8097] LOCAL - `<STCPCFG>`  - Erro: remover o usuário %s [codigo:%u]
+MSG8098  | [MSG8098] LOCAL - `<STCPCFG>`  - Remover agenda '%s' ?
+MSG8099  | [MSG8099] LOCAL - `<STCPCFG>`  - Nome da agenda '%s' já existe
+MSG8100  | [MSG8100] LOCAL - `<STCPCFG>`  - O serviço '%s' já existe instalado
+MSG8101  | [MSG8101] LOCAL - `<STCPCFG>`  - Não existe diretório de origem '%s'
+MSG8102  | [MSG8102] LOCAL - `<STCPCFG>`  - Erro: adicionar o grupo [codigo:%u]
+MSG8103  | [MSG8103] LOCAL - `<STCPCFG>`  - Erro: configurar info no grupo [codigo:%u]
+MSG8104  | [MSG8104] LOCAL - `<STCPCFG>`  - Erro: adicionar usuário [codigo:%u]
+MSG8105  | [MSG8105] LOCAL - `<STCPCFG>`  - Erro: adicionar usuário no grupo [codigo:%u]
+MSG8106  | [MSG8106] LOCAL - `<STCPCFG>`  - Erro: remover o usuário [codigo:%u]
+MSG8107  | [MSG8107] LOCAL - `<STCPCFG>`  - Erro: remover o grupo [codigo:%u]
+MSG8108  | [MSG8108] LOCAL - `<STCPCFG>`  - O serviço '%s' está ativo.\n\nDeseja desativalo agora ?\n
+MSG8109  | [MSG8109] LOCAL - `<STCPCFG>`  - O serviço '%s' não está ativo.\n\nDeseja ativá-lo agora ?\n
+MSG8110  | [MSG8110] LOCAL - `<STCPCFG>`  - Existe uma versão anterior do STCP OFTP instalada em sua máquina.\nRecomendamos que seja feito uma cópia de segurança antes de prosseguir.\n\nDeseja continuar com a atualização ?
+MSG8111  | [MSG8111] LOCAL - `<STCPCFG>`  - Existe(m) arquivo(s) no diretório de entrada e/ou saída\n\nVocê tem certeza que deseja remover o Perfil '%s'\ne todos os seus sub-diretórios ?
+MSG8111  | [MSG8111] LOCAL - `<STCPCFG>`  - Existe(m) arquivo(s) no diretório de entrada e/ou saída\n\nVocê tem certeza que deseja remover o Usuário '%s'\ne todos os seus sub-diretórios ?
+MSG8112  | [MSG8112] LOCAL - `<STCPCFG>`  - O serviço '%s' não foi removido corretamente [codigo:%u].\n\nExecute a seguinte linha de comando:\n\n--> '%s %s delservice'
+MSG8113  | [MSG8113] LOCAL - `<STCPCFG>`  - O serviço '%s' não foi instalado corretamente [codigo:%u].\n\nExecute a seguinte linha de comando:\n\n--> '%s %s addservice'
+MSG8114  | [MSG8114] LOCAL - `<STCPCFG>`  - Erro: colocar os direitos no grupo STCPGRP [codigo:%u]
+MSG8115  | [MSG8115] LOCAL - `<STCPCFG>`  - Não foi informada a nova senha
+MSG8116  | [MSG8116] LOCAL - `<STCPCFG>`  - Erro: arquivo de configuração '%s' não existe
+MSG8117  | [MSG8117] LOCAL - `<STCPCFG>`  - Usuário '%s' criado com sucesso
+MSG8118  | [MSG8118] LOCAL - `<STCPCFG>`  - Erro: criar usuário '%s' [codigo:0x%X]
+MSG8119  | [MSG8119] LOCAL - `<STCPCFG>`  - Erro: criar usuário '%s' já existe
+MSG8120  | [MSG8120] LOCAL - `<STCPCFG>`  - Usuário '%s' removido com sucesso
+MSG8121  | [MSG8121] LOCAL - `<STCPCFG>`  - Erro: remover usuário '%s' [codigo:0x%X]
+MSG8122  | [MSG8122] LOCAL - `<STCPCFG>`  - Erro: remover usuário '%s' não existe
+MSG8123  | [MSG8123] LOCAL - `<STCPCFG>`  - Usuário '%s' modificado com sucesso
+MSG8124  | [MSG8124] LOCAL - `<STCPCFG>`  - Erro: modificar usuário '%s' não existe
+MSG8125  | [MSG8125] LOCAL - `<STCPCFG>`  - Usuário '%s' modificado com sucesso
+MSG8126  | [MSG8126] LOCAL - `<STCPCFG>`  - Erro: modificar senha do usuario '%s'
+MSG8127  | [MSG8127] LOCAL - `<STCPCFG>`  - Erro: modificar usuário '%s' não existe
+MSG8128  | [MSG8128] LOCAL - `<STCPCFG>`  - Erro: não foi possível criar o atalho na área de trabalho
+MSG8129  | [MSG8129] LOCAL - `<STCPCFG>`  - Erro: não foi possível remover o atalho da área de trabalho
+MSG8130  | [MSG8130] LOCAL - `<STCPCFG>`  - Erro: não foi possível localizar o diretório da área de trabalho
+MSG9001  | [MSG9001] LOCAL - `<STCPCTL>`  - Erro: não foi informado o Endereço IP.
+MSG9002  | [MSG9002] LOCAL - `<STCPCTL>`  - Erro: porta IP inválida
+MSG9003  | [MSG9003] LOCAL - `<STCPCTL>`  - Erro: não foi informado o usuário
+MSG9004  | [MSG9004] LOCAL - `<STCPCTL>`  - Erro: não foi confirmada a senha
+MSG9005  | [MSG9005] LOCAL - `<STCPCTL>`  - Erro: execução da linha de comando '%s' [codigo:%u]
+MSG9006  | [MSG9006] LOCAL - `<STCPCTL>`  - Erro: diretório inválido ou profile não definido
+MSG9007  | [MSG9007] LOCAL - `<STCPCTL>`  - Erro: remover o diretório %s [codigo:0x%X]
+MSG9008  | [MSG9008] LOCAL - `<STCPCTL>`  - Erro: programa '%s' não autorizado [codigo:0x%X]
+MSG9009  | [MSG9009] LOCAL - `<STCPCTL>`  - Erro: remover o arquivo '%s' [codigo:0x%X]
 
 ----
-## **Códigos de erro geral**
+## Códigos de erro geral
 
 Código | Descrição
 :---   | :---
@@ -364,7 +364,7 @@ Código | Descrição
 183    | Arquivo duplicado ao executar função "MOVE". Verificar arquivo duplicado na pasta de destino.
 
 ----
-## **Códigos de erro de transferência do protocolo Odette**
+## Códigos de erro de transferência do protocolo Odette
 
 Código | Descrição
 :---   | :---
@@ -382,7 +382,7 @@ Código | Descrição
 499    | Código não especificado: um erro foi detectado, mas não pode ser adequadamente descrito pelos códigos disponíveis.
 
 ----
-## **Códigos de erro de sessão do protocolo Odette**
+## Códigos de erro de sessão do protocolo Odette
 
 Código | Descrição
 :---   | :---
@@ -399,7 +399,7 @@ Código | Descrição
 599    | Código não especificado: um erro foi detectado, mas não pode ser adequadamente descrito pelos códigos disponíveis.
 
 ----
-## **Códigos de erro da transferência**
+## Códigos de erro da transferência
 
 Código | Descrição
 :---   | :---
@@ -448,7 +448,7 @@ Código | Descrição
 1265   | Null.
 
 ----
-## **Códigos de erro genérico da interface de comunicação**
+## Códigos de erro genérico da interface de comunicação
 
 Código | Descrição
 :---   | :---
@@ -458,7 +458,7 @@ Código | Descrição
 6804   | Biblioteca de comunicação inválida ou corrompida.
 
 ----
-## **Códigos de erro da interface de comunicação TCP/IP (RAS)**
+## Códigos de erro da interface de comunicação TCP/IP (RAS)
 
 Código | Descrição
 :---   | :---
@@ -594,7 +594,7 @@ Código | Descrição
 9805   | O usuário para autenticação do RAS não foi configurado.
 
 ----
-## **Códigos de erro da interface de comunicação TCP/IP**
+## Códigos de erro da interface de comunicação TCP/IP
 
 Código | Descrição
 :---   | :---
@@ -658,7 +658,7 @@ Código | Descrição
 10902  | O tipo do servidor proxy configurado não é suportado.
 
 ----
-## **Códigos de erro da interface de comunicação X.25**
+## Códigos de erro da interface de comunicação X.25
 
 Código | Descrição
 :---   | :---
@@ -710,7 +710,7 @@ Código | Descrição
 15902  | Erro no encapsulamento do pacote.
 
 ----
-## **Códigos de erro da interface de comunicação Serial**
+## Códigos de erro da interface de comunicação Serial
 
 Código | Descrição
 :---   | :---
@@ -742,7 +742,7 @@ Código | Descrição
 17673  | Processo cancelado pelo usuário.
 
 ----
-## **Códigos de erro da interface de comunicação TCP/IP (Criptografia Nativa)**
+## Códigos de erro da interface de comunicação TCP/IP (Criptografia Nativa)
 
 Código| Descrição
 :---  | :---
@@ -760,7 +760,7 @@ Código| Descrição
 18902 | Falha interna.
 
 ----
-## **Códigos de erro da interface de comunicação TCP/IP (Proxy)**
+## Códigos de erro da interface de comunicação TCP/IP (Proxy)
 
 Código| Descrição
 :---  | :---
@@ -805,7 +805,7 @@ Código| Descrição
 19515 | Falha interna.
 
 ----
-## **Códigos de erro da interface de comunicação TCP/IP (Criptografia SSL3)**
+## Códigos de erro da interface de comunicação TCP/IP (Criptografia SSL3)
 
 Código| Descrição
 :---  | :---
@@ -826,4 +826,3 @@ Código| Descrição
 20857 | Diretório dos arquivos de certificados inválido ou não existe.
 20858 | Contexto de conexão SSL3 inválido.
 20859 | Falha ao configurar o descritor da conexão SSL3.
-
