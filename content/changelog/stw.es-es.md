@@ -6,11 +6,20 @@ sidebar:
 ---
 ## STCP OFTP Server e STCP OFTP Client
 
+#### {{< icon "clock" >}} &nbsp;  Versão 5.3.14.0 (lançada em fevereiro de 2024)
+
+- Melhorias no processo de cancelamento da conexão ao utilizar os protocolos OFTP, SFTP, FTP e FTPS.
+- Implementação do parâmetro MaxBufSize no protocolo SFTP.
+- Correção do problema que gerava o erro de código 22902 no envio do arquivo quando utilizado o protocolo FTPS.
+- Correção do problema que gerava o erro de código 411 nas transferências de arquivos com tamanho maior que 2GB, utilizando o protocolo FTP/FTPS e quando com opção ‘Verificar tamanho’ marcada como ‘Sim’.
+- Correção do problema que impedia o fim da conexão (Server x Server) ao utilizar o protocolo OFTP, encerrando o processo de comunicação somente por timeout.
+- Atualização das bibliotecas de uso geral.
+
 #### {{< icon "clock" >}} &nbsp;  Versão 5.3.12.0 (lançada em agosto de 2023)
 
 - Implementação do parâmetro SendTokenIdGlobal, no STCP (versão client) para envio do TokenID/Hash e versão do agente de maneira global (não vinculado a um perfil específico).
 - Implementação do backup de arquivo no configurador do STCP ao utilizar o serviço de armazenamento de objetos (Amazon S3 e Blobs do Microsoft Azure).
-- Melhorias na biblioteca se segurança (APIOSSL.DLL) para validação da cadeia de certificação completa ao utilizar um certificado CA na interface de rede com comunicação segura (TLS).
+- Melhorias na biblioteca de segurança (APIOSSL.DLL) para validação da cadeia de certificação completa ao utilizar um certificado CA na interface de rede com comunicação segura (TLS).
 
 #### {{< icon "clock" >}} &nbsp;  Versão 5.3.11.0 (lançada em maio de 2023)
 
