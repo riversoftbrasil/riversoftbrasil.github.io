@@ -1,22 +1,22 @@
 ---
-linkTitle: Logout (bearer)
+linkTitle: Primeiro Acesso
 layout: docs
 sidebar:
   exclude: false
 weight: 4
 prev:
 next:
-slug: logout-bearer
+slug: first-acess
 ---
 
-## Logout (bearer)
+## Primeiro Acesso
 
-Esta requisição deve ser utilizada para o registro de logout do usuário da plataforma.
+Esta requisição deve ser utilizada para obtenção do link para alteração de senha da plataforma no primeiro acesso.
 
 <br>
 
 <div style="
-  background-color: #04AA6D; /* Green */
+  background-color: #307F98; /* Blue */
   border: none;
   border-radius: 60px;
   color: white;
@@ -24,17 +24,18 @@ Esta requisição deve ser utilizada para o registro de logout do usuário da pl
   text-align: center;
   display: inline-block;
   letter-spacing: 1px;
+  align-items: center;
+  justify-content: center;
 
 ">
-<h5 style="color: white;">POST</h5>
+<h5 style="color: white;">GET</h5>
 </div>
 
 
-
-**Logout utilizando a autenticação no modo Bearer**
+**Obter o link de alteração de senha do primeiro acesso**
 
 ```
-https://<domain>/directlink/v1/auth/logout
+https://<domain>/directlink/v1/auth/firstaccess
 ```
 
 
@@ -42,12 +43,18 @@ Esta requisição deve ser utilizada para obter o token de autorização
 
 **Parameters**
 
+### Query
+
+| Nome      | Descrição |
+| ----------- | ----------- |
+| *u**   | Nome do usuário cadastrado na plataforma |
+
+
 
 ### Header
 
 |    Nome   | Descrição | |
 | ----------- | ----------- | -------- |
-| *Authorization**   | Bearer `<token>` |
 | *Content_type**  |  application/json |
 
 
@@ -96,6 +103,19 @@ Esta requisição deve ser utilizada para obter o token de autorização
 </details>
 
 <details>
+<summary style="color: #B95E04; cursor: pointer;">403: Forbidden   (Usuário não é o primeiro acesso)</summary>
+
+```json
+{
+    "status": 403,
+    "description": "Forbidden",
+    "apiver": "v1 (3.6.0)",
+    "time": "2022-06-13 19:12:14.840185 -0300 -03 m=+24430.733336090"
+}
+```
+</details>
+
+<details>
 <summary style="color: #D33D3D; cursor: pointer;">500: Internal Server Error   (Falha interna)</summary>
 
 ```json
@@ -107,5 +127,4 @@ Esta requisição deve ser utilizada para obter o token de autorização
 }
 ```
 </details>
-
 

@@ -1,22 +1,22 @@
 ---
-linkTitle: Logout (basic)
+linkTitle: Esqueceu a senha
 layout: docs
 sidebar:
   exclude: false
-weight: 3
+weight: 5
 prev:
 next:
-slug: logout-basic
+slug: forgot-password
 ---
 
-## Logout (basic)
+## Esqueceu a senha
 
-Esta requisição deve ser utilizada para o registro de logout do usuário da plataforma.
+Esta requisição deve ser utilizada para obtenção do link para alteração de senha da plataforma.
 
 <br>
 
 <div style="
-  background-color: #04AA6D; /* Green */
+  background-color: #307F98; /* Blue */
   border: none;
   border-radius: 60px;
   color: white;
@@ -24,36 +24,39 @@ Esta requisição deve ser utilizada para o registro de logout do usuário da pl
   text-align: center;
   display: inline-block;
   letter-spacing: 1px;
+  align-items: center;
+  justify-content: center;
 
 ">
-<h5 style="color: white;">POST</h5>
+<h5 style="color: white;">GET</h5>
 </div>
 
 
-
-**Logou utilizando a autenticação no modo Basic**
+**Obter o link de alteração de senha**
 
 ```
-https://<domain>/directlink/v1/auth/login
+https://<domain>/directlink/v1/auth/forget
 ```
-
-
-Esta requisição deve ser utilizada para obter o token de autorização
 
 **Parameters**
+
+### Query
+
+|   Nome    | Descrição | |
+| ----------- | ----------- | -------- |
+| *u**   | Nome do usuário cadastrado na plataforma |
 
 
 
 ### Header
 
-|    Nome   | Descrição |
-| ----------- | ----------- |
-| *Authorization**   | Basic base64(username:password) |
+|   Nome    |  Descrição| |
+| ----------- | ----------- | -------- |
 | *Content_type**  |  application/json |
 
 
 
-### Responses
+**Responses**
 
 <br>
 <details style="color: green; cursor: pointer;">
@@ -62,11 +65,11 @@ Esta requisição deve ser utilizada para obter o token de autorização
 ```json
 {
     "status": 0,
-    "description": "handlerAuthLogout:succsessfully",
+    "description": "handlerAuthForget:succsessfully",
     "apiver": "v1 (3.6.0)",
-    "user": "",
-    "bearer": "",
-    "time": "2022-06-13 17:54:10.137992 -0300 -03 m=+19746.016009415"
+    "user": "USER1",
+    "linkURL": "https://<domain>/directlink/v1/auth/change?lang=pt&k=B6PhQo1gVaksHm-E4JGwuqWkZj6MT6srC74-wZ2Fsw9MXDduhfs-Nw3utpRFV4l6eTY4Tr-lOCDR0eoKG7Y2u3FRQiSm1TO_F_KD0cfWX2_QWASF1rvrx4KRiw0t_PKum5qMNqEWEBqB9d9RJd8Opz4SPfILjaoRBtPuMQOsxkIbO2pn6-tuC5I_AyisBOaGMR3MOnYXVWwr6e3bKvFIqCY6",
+    "time": "2022-06-13 19:23:45.771553 -0300 -03 m=+25121.666310551"
 }
 ```
 </details>
@@ -98,6 +101,19 @@ Esta requisição deve ser utilizada para obter o token de autorização
 </details>
 
 <details>
+<summary style="color: #B95E04; cursor: pointer;">403: Forbidden   (Usuário não é o primeiro acesso)</summary>
+
+```json
+{
+    "status": 403,
+    "description": "Forbidden",
+    "apiver": "v1 (3.6.0)",
+    "time": "2022-06-13 19:12:14.840185 -0300 -03 m=+24430.733336090"
+}
+```
+</details>
+
+<details>
 <summary style="color: #D33D3D; cursor: pointer;">500: Internal Server Error   (Falha interna)</summary>
 
 ```json
@@ -108,6 +124,5 @@ Esta requisição deve ser utilizada para obter o token de autorização
     "time": "2022-06-13 17:56:45.233594 -0300 -03 m=+19901.111646777"
 }
 ```
-</details>
 
 

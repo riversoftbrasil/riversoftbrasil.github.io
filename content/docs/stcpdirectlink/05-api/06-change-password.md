@@ -1,22 +1,22 @@
 ---
-linkTitle: Primeiro Acesso
+linkTitle: Alteração de senha
 layout: docs
 sidebar:
   exclude: false
-weight: 5
+weight: 6
 prev:
 next:
-slug: first-acess
+slug: change-password
 ---
 
-## Primeiro Acesso
+## Alteração de senha
 
-Esta requisição deve ser utilizada para obtenção do link para alteração de senha da plataforma no primeiro acesso.
+Esta requisição deve ser utilizada para alteração de senha do usuário na plataforma.
 
 <br>
 
 <div style="
-  background-color: #307F98; /* Blue */
+  background-color: #04AA6D; /* Green */
   border: none;
   border-radius: 60px;
   color: white;
@@ -24,38 +24,36 @@ Esta requisição deve ser utilizada para obtenção do link para alteração de
   text-align: center;
   display: inline-block;
   letter-spacing: 1px;
-  align-items: center;
-  justify-content: center;
 
 ">
-<h5 style="color: white;">GET</h5>
+<h5 style="color: white;">POST</h5>
 </div>
 
 
-**Obter o link de alteração de senha do primeiro acesso**
+**Alteração de senha do usuário**
 
 ```
-https://<domain>/directlink/v1/auth/firstaccess
+https://<domain>/directlink/v1/auth/change
 ```
-
-
-Esta requisição deve ser utilizada para obter o token de autorização
 
 **Parameters**
 
 ### Query
 
-| Nome      | Descrição |
-| ----------- | ----------- |
-| *u**   | Nome do usuário cadastrado na plataforma |
+|   Parâmetro    | Descrição | |
+| ----------- | ----------- | -------- |
+| *k**   | Token de alteração de senha retornado na resposta das funções: *[Primeiro acesso](/docs/stcpdirectlink/05-api/first-acess/)* ou *[Esqueceu a senha](/docs/stcpdirectlink/05-api/forgot-password/)*|
+| p | Pin (código de segurança) que será enviado para o email do usuário que está cadastrado na plataforma |
+| z | Nova senha |
 
 
 
 ### Header
 
-|    Nome   | Descrição | |
+|   Parâmetro    | Descrição | |
 | ----------- | ----------- | -------- |
 | *Content_type**  |  application/json |
+
 
 
 ### Responses
@@ -67,11 +65,11 @@ Esta requisição deve ser utilizada para obter o token de autorização
 ```json
 {
     "status": 0,
-    "description": "handlerAuthLogout:succsessfully",
+    "description": "handlerAuthForget:succsessfully",
     "apiver": "v1 (3.6.0)",
-    "user": "",
-    "bearer": "",
-    "time": "2022-06-13 17:54:10.137992 -0300 -03 m=+19746.016009415"
+    "user": "USER1",
+    "linkURL": "https://<domain>/directlink/v1/auth/change?lang=pt&k=B6PhQo1gVaksHm-E4JGwuqWkZj6MT6srC74-wZ2Fsw9MXDduhfs-Nw3utpRFV4l6eTY4Tr-lOCDR0eoKG7Y2u3FRQiSm1TO_F_KD0cfWX2_QWASF1rvrx4KRiw0t_PKum5qMNqEWEBqB9d9RJd8Opz4SPfILjaoRBtPuMQOsxkIbO2pn6-tuC5I_AyisBOaGMR3MOnYXVWwr6e3bKvFIqCY6",
+    "time": "2022-06-13 19:23:45.771553 -0300 -03 m=+25121.666310551"
 }
 ```
 </details>
@@ -127,4 +125,5 @@ Esta requisição deve ser utilizada para obter o token de autorização
 }
 ```
 </details>
+
 

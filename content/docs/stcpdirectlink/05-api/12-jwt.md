@@ -2,8 +2,8 @@
 linkTitle: Diagrama de autenticação utilizando JWT
 layout: docs
 sidebar:
-  exclude: false
-weight: 18
+  exclude: true
+weight: 12
 prev: /docs/getting-started
 next: /docs/guide/organize-files
 slug: diagrama-de-autenticacao-utilizando-jwt
