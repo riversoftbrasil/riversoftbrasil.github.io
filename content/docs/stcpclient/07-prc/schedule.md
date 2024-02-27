@@ -9,7 +9,9 @@ weight: 3
 prev:
 next:
 ---
-# Configuração da agenda de execução automática do Riversoft STCP OFTP Client no Windows e Windows Server
+# Configurar um agendamento
+
+Nesta seção veremos como configurar a execução automática do Riversoft STCP OFTP Client no **Windows** e **Windows Server**.
 
 Para executar automaticamente a aplicação de transferência de arquivos, devemos realizar os seguintes passos de configuração das tarefas agendadas do sistema operacional:
 
@@ -18,7 +20,6 @@ Para executar automaticamente a aplicação de transferência de arquivos, devem
 2. Clique em **Criar Tarefa** no painel **Ações**.
 
 ![](clt-agenda-01.png)
-
 
 ## Configurações
 

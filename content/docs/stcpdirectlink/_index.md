@@ -5,7 +5,7 @@ cascade:
   type: docs
 sidebar:
   exclude: false
-weight: 0
+weight: 3
 prev:
 next: /01-install
 ---
