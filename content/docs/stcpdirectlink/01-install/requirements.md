@@ -1,6 +1,5 @@
 ---
 linkTitle: Requisitos
-title: Requisitos
 layout: docs
 sidebar:
   exclude: false
