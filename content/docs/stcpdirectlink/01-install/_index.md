@@ -10,7 +10,7 @@ next: /dirl/install/requirements
 ---
 ## Distribuição dos pacotes para instalação
 
-O STCP Directlink é distribuido através de um arquivo zip (stcpdirectlink-version.zip) que deverá ser descompactado na pasta de sua preferência (ex.: /usr/local ou C:/Arquivos de Programa) ou nas plataformas linux (RedHat, Centos, Rocky, Oracle, Amazon e etc.) através do gerenciador de pacotes yum.
+O STCP Directlink é distribuido através de um arquivo zip (stcpdirectlink-`<version>`.zip) que deverá ser descompactado na pasta de sua preferência (ex.: /usr/local ou C:/Arquivos de Programa) ou nas plataformas linux (RedHat, Centos, Rocky, Oracle, Amazon e etc.) através do gerenciador de pacotes yum.
 
 ## Instalação pelo gerenciador de pacotes yum yab
 A instalação no sistema operacional Linux pode ser realizada através do gerenciador de pacotes ***yum***, o seguinte comando deve ser utilizado:

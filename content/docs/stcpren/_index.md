@@ -36,7 +36,7 @@ As regras de validação e das ações (renomeio, cópia, backup, etc) deverão 
 * Validação de diretório por expressão regular
 * Conversão maiúscula e minúscula do nome do arquivo
 
-## **8. Glossário**
+## Glossário
 
 **E**
 
@@ -102,8 +102,7 @@ Este é um formato de nome de arquivo que é usado para especificar a localizaç
 **VPN**
 É uma rede de comunicação privada normalmente utilizada por uma empresa ou um conjunto de empresas e/ou instituições, construída em cima de uma rede de comunicação pública, por exemplo, a Internet.
 
------------
-## **9. Referências**
+## Referências
 
 Disponível em: (<http://www.tech-faq.com/lang/pt/ppp.shtml>). Acesso em: 20 de julho de 2007.
 

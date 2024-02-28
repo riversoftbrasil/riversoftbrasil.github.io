@@ -26,14 +26,19 @@ Parâmetro                       | Descrição
 
 ``` bash
 STCPDirectLinkSrv-go.exe -installService
-
+```
+```
 STCPDirectLinkSrv-go.exe -config c:/stcpdirectlink/config.json -installService
-
+```
+```
 STCPDirectLinkSrv-go.exe -removeService
-
+```
+```
 STCPDirectLinkSrv-go.exe -config c:/stcpdirectlink/config.json -removeService
-
+```
+```
 STCPDirectLinkSrv-go.exe -noService
-
+```
+```
 STCPDirectLinkSrv-go.exe -config c:/stcpdirectlink/config.json -noService
 ```

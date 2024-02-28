@@ -21,7 +21,7 @@ O STCP Directlink é uma aplicação que, ao ser integrada aos produtos STCP OFT
 
 ## Por que usar?
 
-Todo o processo de transferência ,através do STCP Directlink, pode ser totalmente rastreado, com as informações de usuário, data e hora em que os eventos ocorreram, filtro de arquivos, filtro de horário, roteamento e muito mais.
+Todo o processo de transferência, através do STCP Directlink, pode ser totalmente rastreado, com as informações de usuário, data e hora em que os eventos ocorreram, filtro de arquivos, filtro de horário, roteamento e muito mais.
 
 ## Recursos
 Entre alguns dos recursos disponíveis no STCP Directlink estão:

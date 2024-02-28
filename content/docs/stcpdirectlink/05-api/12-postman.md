@@ -4,8 +4,6 @@ layout: docs
 sidebar:
   exclude: false
 weight: 13
-prev: /docs/getting-started
-next: /docs/guide/organize-files
 slug: exemplos-postman
 ---
 
