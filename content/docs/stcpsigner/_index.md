@@ -2,7 +2,7 @@
 linkTitle: STCP Signer
 layout: docs
 sidebar:
-  exclude: false
+  exclude: true
 weight: 6
 prev:
 next:

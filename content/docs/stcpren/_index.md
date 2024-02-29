@@ -2,7 +2,7 @@
 linkTitle: STCP Rename
 layout: docs
 sidebar:
-  exclude: false
+  exclude: true
 weight: 7
 prev:
 next:
