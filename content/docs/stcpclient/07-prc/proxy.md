@@ -8,6 +8,7 @@ sidebar:
 weight: 1
 prev:
 next:
+slug: configurar-servidor-proxy
 ---
 # Configurar um servidor proxy para conexão
 
@@ -30,10 +31,10 @@ Clique no botão **Lê Configuração Proxy do IE** para obter as informações 
 
 ![](clt-proxy-03.png)
 
-```
+{{< callout type="info" >}}
 Autenticação Basic é comumente utilizada com servidores Squid, Wingate e outros.
 Autenticação NTLM é comumente utilizada com servidores ISA, MS-Proxy.
-```
+{{< /callout >}}
 
 **Notas:**
 {{< callout type="info" >}}

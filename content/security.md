@@ -3,7 +3,7 @@ linkTitle: Segurança
 ---
 # Segurança
 
-## Como é a segurança do STCP
+## Como é a segurança do STCP?
 
 O STCP implementa a segurança em dois níveis: autenticação do usuário pela aplicação e a criptografia dos dados.
 

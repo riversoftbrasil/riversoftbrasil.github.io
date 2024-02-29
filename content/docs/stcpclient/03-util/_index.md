@@ -32,18 +32,18 @@ Para transmitir, os arquivos devem ser disponibilizados no subdiretório “**SA
 
 A sintaxe para executar o STCP OFTP através de linha de comando é a seguinte:
 
-```bash
-STCPCLT.EXE <Arquivo de configuração> [-p –r –t –m –f –w]**
+```
+STCPCLT.EXE <Arquivo de configuração> [-p –r –t –m –f –w]
 ```
 Parâmetro | Descrição
 :-----    | :----
-<arquivo de configuração>| Define o nome do arquivo de configuração de instalação “CTCP.INI” com o caminho completo.
--p < nome do perfil>      | Define o nome do perfil de conexão.
--r <número de tentativas>| Define a quantidade de tentativas de conexão.
--t < intervalo de tentativas>| Define o intervalo em segundos entre as tentativas.
--m < modo> | Define o modo de transferência a ser executado: B, S ou R. /B = Transmissão e recepção /S = Somente transmissão /R = Somente recepção
--f < filtro de arquivos>| Define o filtro de arquivos através da utilização de expressão regular.
--w < Fecha caixa de dialogo>| Define se a caixa de dialogo será fechada automaticamente no final da execução: 0 ou 1. /0 = Fecha caixa de diálogo /1 = Não fecha a caixa de diálogo
+`<arquivo de configuração>`| Define o nome do arquivo de configuração de instalação “CTCP.INI” com o caminho completo.
+-p `<nome do perfil>`      | Define o nome do perfil de conexão.
+-r `<número de tentativas>`| Define a quantidade de tentativas de conexão.
+-t `<intervalo de tentativas>`| Define o intervalo em segundos entre as tentativas.
+-m `<modo>` | Define o modo de transferência a ser executado: B, S ou R. /B = Transmissão e recepção /S = Somente transmissão /R = Somente recepção
+-f `<filtro de arquivos>`| Define o filtro de arquivos através da utilização de expressão regular.
+-w `<Fecha caixa de dialogo>`| Define se a caixa de dialogo será fechada automaticamente no final da execução: 0 ou 1. /0 = Fecha caixa de diálogo /1 = Não fecha a caixa de diálogo
 
 Exemplo:
 

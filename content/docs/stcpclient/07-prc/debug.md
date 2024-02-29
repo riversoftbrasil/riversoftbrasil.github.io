@@ -9,6 +9,7 @@ sidebar:
 weight: 2
 prev:
 next:
+slug: nivel-de-debug
 ---
 Em alguns casos, para se obter uma análise mais detalhada de problemas relacionados ao intercâmbio de arquivos, torna-se necessária a depuração dos processos de conexão e transferência, realizadas pelo STCP
 OFTP Client.

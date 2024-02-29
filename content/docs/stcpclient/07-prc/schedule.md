@@ -8,6 +8,7 @@ sidebar:
 weight: 3
 prev:
 next:
+slug: configurar-agendamento
 ---
 # Configurar um agendamento
 

@@ -21,7 +21,7 @@ O arquivo de auditoria é armazenado no subdiretório de controle **LOG** com a 
 Sequência| Tamanho| Formato| Descrição
 :---     | :---   | :---   | :---
 1        | 14     | N      | Data e hora da ocorrência (YYYYMMDDhhmmss).
-2        | 4      | N      | Código da operação relacionada a este registro: /0000 – Início de sessão de entrada /0001 – Fim de sessão de entrada /0002 – Início de sessão de saída /0003 – Fim de sessão de saída /0004 – Início de transmissão do arquivo /0005 – Fim de transmissão do arquivo /0006 – Início de recepção do arquivo /0007 – Fim de recepção do arquivo
+2        | 4      | N      | Código da operação relacionada a este registro: <br> /0000 – Início de sessão de entrada <br>/0001 – Fim de sessão de entrada <br> /0002 – Início de sessão de saída <br> /0003 – Fim de sessão de saída <br> /0004 – Início de transmissão do arquivo <br> /0005 – Fim de transmissão do arquivo <br> /0006 – Início de recepção do arquivo <br> /0007 – Fim de recepção do arquivo
 3        | 30     | X      | Nome do Perfil
 4        | 16     | X      | Nome do processo de comunicação
 5        | 8      | X      | Código do processo

@@ -1,5 +1,5 @@
 ---
-linkTitle: Obter token oauth2
+linkTitle: Obter token OAuth2
 layout: docs
 sidebar:
   exclude: false
@@ -34,7 +34,7 @@ Esta requisição deve ser utilizada para obter o token(bearer) de autorização
 https://<domain>/directlink/v1/oauth2/token
 ```
 
-**Oauth2 token**
+**OAuth2 token**
 
 Esta requisição deve ser utilizada para obter o token de autorização
 

@@ -8,6 +8,7 @@ sidebar:
 weight: 4
 prev:
 next:
+slug: notificacao-email
 ---
 ## Objetivo
 
@@ -27,7 +28,7 @@ Link para [download](https://www.riversoft.com.br/produtos/pub/stcp-notifica.zip
 
 Os parâmetros básicos a serem configurados nesse arquivo são:
 
-```
+```vb.net
 1. '* -------------------------------------------------------------------------------
 2. '* Configuracao diretorios e perfil
 3. '*
@@ -46,7 +47,7 @@ Esses parâmetros definem os diretórios de instalação da aplicação e nome d
 | appDir     | Diretório de instalação da aplicação. |
 | appPerfil  |       Nome do perfil utilizado.       |
 
-```
+```vb.net
 1. '* -------------------------------------------------------------------------------
 2. '* Configuracao do e-mail
 3. '*
@@ -88,14 +89,14 @@ endereços de e-mails configurados.
 
 Neste tipo de notificação, os logs de envio e recebimento de arquivos são enviados no corpo do email de maneira consolidada, registrando os eventos de inicio e fim de conexão com sucesso ou erro, início e fim de transmissão com sucesso ou erro e início e fim de recepção com sucesso ou erro
 
-{{< callout type="warnirg" >}}
+{{< callout >}}
   O prefixo [ALERTA ERRO] será inserido automaticamente no assunto do e-mail
   enviado, caso um evento de erro seja registrado.
 {{< /callout >}}
 
 Após as configurações e testes do script serem realizados, acesse o _STCP OFTP Client Config_, na guia Perfis, selecione o perfil desejado e clique no botão _Propriedades_. Na janela _Propriedades do Perfil_, guia _Avançadas I_, preencha o campo _Executar comando no fim da conexão_, conforme exemplo abaixo:
 
-```
+```powershell
 1. cscript //B C:\STCPCLT\Program\stcp-notifica.vbs TRANSF
 ```
 

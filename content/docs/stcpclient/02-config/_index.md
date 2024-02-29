@@ -22,12 +22,13 @@ Clique no programa **Riversoft STCP OFTP Client Config**.
 Na guia Geral, preencha os campos com as informações descritas abaixo.
 
 | Campos                |                                                                                                                        Descrição                                                                                                                         |
-| :-------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| :-------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Nome                  |                                                          Este campo informa o nome do serviço do STCP OFTP Client. Obs.: Para a versão STCP OFTP Client, este parâmetro não pode ser modificado                                                          |
 | Descrição             |                                                       Este campo informa a descrição do serviço do STCP OFTP Client. Obs.: Para a versão STCP OFTP Client, este parâmetro não pode ser modificado.                                                       |
 | Diretório de controle | Este campo informa o nome do diretório de instalação do STCP OFTP Client, onde serão armazenadas as configurações dos Perfis, logs e arquivos de depuração da comunicação. Obs.: Para a versão STCP OFTP Client, este parâmetro não pode ser modificado. |
 | Diretório de dados    |                    Preencha este campo com o diretório onde a estrutura de subdiretórios para envio e recepção dos arquivos de cada Perfil deverá ser criada. Obs.: Esta configuração deve ser alterada antes da criação dos Perfis.                     |
 | Número de série       |                                                              Preencha este campo com o número de série que foi disponibilizado por e-mail. Obs.: O preenchimento deste campo é obrigatório.                                                              |
+---
 
 ## Configuração de Perfis
 
@@ -79,7 +80,7 @@ Na guia **Odette**, preencha os seguintes campos.
 | Outros                                |                                       As opções definidas neste grupo serão utilizadas localmente pelo STCP OFTP Client para controlar o tempo de inatividade e a geração do arquivo de depuração da comunicação.                                       |
 | Tempo máximo de inatividade           |                                                               Preencha este campo com o tempo máximo de inatividade de comunicação entre o STCP OFTP Client Server e o computador remoto                                                                |
 | Nível de debug                        |      Preencha este campo com o nível de detalhamento das informações que serão gravadas no arquivo de depuração. Para obter no mesmo arquivo de depuração a informação dos diferentes níveis, preencha este campo com a soma dos níveis desejados.      |
-
+---
 Para cada tentativa de conexão será criado um novo arquivo de depuração no diretório DEBUG com a seguinte sintaxe:
 
 ```
@@ -87,7 +88,7 @@ ODTDEB.<Protocolo>.<Perfil>.YYYYMMDDhhmmssnnn
 ```
 
 | Informação |        Significado        |
-| :--------- | :-----------------------: |
+| :--------- | :-----------------------|
 | Protocolo  | TCPIP, X25, SERIAL ou PAD |
 | Perfil     | Nome do perfil utilizado  |
 | YYYY       |            Ano            |
@@ -97,6 +98,7 @@ ODTDEB.<Protocolo>.<Perfil>.YYYYMMDDhhmmssnnn
 | mm         |          Minuto           |
 | ss         |         Segundos          |
 | nnn        |   Milésimos de segundos   |
+---
 
 A tabela a seguir contém a relação entre o nível de detalhamento e as informações que serão geradas.
 
@@ -110,6 +112,7 @@ A tabela a seguir contém a relação entre o nível de detalhamento e as inform
 | 16    |   Grava as informações dos eventos ocorridos (Somente se ocorrer algum erro).    |
 | 32    |                     Grava as informações dos sub-registros.                      |
 | 63    |                 Grava as informações completas (Debug completo)                  |
+---
 
 {{< callout type="warning" >}}
 Obs.: Somente habilite esta opção quando for solicitado por pessoal especializado.
@@ -198,6 +201,7 @@ Na guia **Geral**, configure os seguintes campos.
 | Número de tentativas de transferência |                                                                                                                                     Preencha este campo com o número máximo de tentativas de conexão que este Perfil irá executar em caso de falha                                                                                                                                     |
 | Intervalo entre tentativas            |                                                                                                                                  Preencha este campo com o intervalo mínimo (segundos) de espera para a realização de uma nova tentativa de conexão.                                                                                                                                   |
 | Solicitar usuário e senha             |                                                                                                                                                        Esta opção assinalada irá solicitar usuário e senha ao executar o STCP.                                                                                                                                                         |
+---
 
 Ainda na guia **Geral**, clique no botão **Configurar** para configurar a opção de protocolo
 selecionada anteriormente.
@@ -212,6 +216,7 @@ selecionada anteriormente.
 | SFTP – TCP/IP |               Configura o STCP OFTP Server para utilizar o protocolo de comunicação SFTP.               |
 | S3 – AWS      |            Configura o STCP OFTP Server para utilizar o protocolo de comunicação S3, da AWS.            |
 | BLOB – AZURE  |        Configura o STCP OFTP Server para utilizar o protocolo de comunicação Blob, da Microsoft.        |
+---
 
 
 Clique [aqui](https://docs.aws.amazon.com/pt_br/AmazonS3/latest/userguide/Welcome.html) para mais informações sobre o **Amazon Simple Storage Service (S3)**.
@@ -230,7 +235,7 @@ Se o protocolo selecionado foi **OFTP – TCP/IP**, configure as seguintes opç�
 | Porta IP           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     Preencha este campo com a porta TCP/IP do servidor STCP OFTP Server.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | Endereço IP        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         Preencha este campo com o endereço TCP/IP ou nome (DNS) da Interface local STCP OFTP Client.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | Porta IP           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Preencha este campo com a porta TCP/IP da Interface local STCP OFTP Client.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| Comunicação segura | Grava as informações de mudanças do estado do protocolo. Nativa (Básica) Configura a comunicação segura com criptografia com nível de segurança básico. Obs.: Antes de habilitar esta opção confirme se o servidor com quem você deseja se comunicar suporta esta característica. Nativa (Média) Configura a comunicação segura com criptografia com nível de segurança médio. Obs.: Antes de habilitar esta opção confirme se o servidor com quem você deseja se comunicar suporta esta característica. Nativa (Alta) Configura a comunicação segura com criptografia com nível de segurança alto. Obs.: Antes de habilitar esta opção confirme se o servidor com quem você deseja se comunicar suporta esta característica. SSL3 Configura a comunicação segura com criptografia e certificação digital, com a utilização da padronização definida na RFC2246 (TLS1/SSL3). O TLS1/SSL3 é comumente encontrado nos servidores de sites seguros (HTTPS) e oferece o maior grau de segurança atualmente disponível. Obs.: Antes de habilitar esta opção confirme se o servidor com quem você deseja se comunicar suporta esta característica. |
+| Comunicação segura | Grava as informações de mudanças do estado do protocolo. <br> **Nativa (Básica):** Configura a comunicação segura com criptografia com nível de segurança básico. <br> `Obs.:` Antes de habilitar esta opção confirme se o servidor com quem você deseja se comunicar suporta esta característica. <br> <br> **Nativa (Média):** Configura a comunicação segura com criptografia com nível de segurança médio. <br> `Obs.:` Antes de habilitar esta opção confirme se o servidor com quem você deseja se comunicar suporta esta característica. <br> <br>  **Nativa (Alta):** Configura a comunicação segura com criptografia com nível de segurança alto. <br> `Obs.:` Antes de habilitar esta opção confirme se o servidor com quem você deseja se comunicar suporta esta característica. <br> <br> **SSL3:** Configura a comunicação segura com criptografia e certificação digital, com a utilização da padronização definida na RFC2246 (TLS1/SSL3). O TLS1/SSL3 é comumente encontrado nos servidores de sites seguros (HTTPS) e oferece o maior grau de segurança atualmente disponível. <br> `Obs.:` Antes de habilitar esta opção confirme se o servidor com quem você deseja se comunicar suporta esta característica. |
 | Compatibilidade    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             Esta opção possibilita compatibilizar o STCP OFTP Client com diferentes produtos que existem atualmente no mercado.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | RFC2204            |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        Esta opção de compatibilidade permite a comunicação do STCP OFTP Client com outros produtos que seguem a recomendação RFC2204.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | RFC1006/RFC1086    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       Esta opção de compatibilidade permite a comunicação do STCP OFTP Client através de gateways de comunicação TCP-IP/X.25, que seguem a recomendação RFC1006/1086.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
@@ -272,6 +277,7 @@ Na guia **Proxy**, configure as seguintes opções para o protocolo OFTP – TCP
 | Senha                       |                                                         Preencha este campo com a senha informada no campo Senha para validação.                                                         |
 | Confirmar                   |                                                         Preencha este campo com a senha informada no campo Senha para validação.                                                         |
 | Lê configuração Proxy do IE |                  Pressione este botão para ler as configurações de Proxy configuradas no Internet Explorer. Obs.: As informações de autenticação não serão lidas do IE.                  |
+--------
 
 Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alterar as configurações
 
@@ -301,6 +307,7 @@ Na guia **Proxy**, configure as seguintes opções:
 | Senha                       |                                  Preencha este campo com a senha do usuário autorizado a utilizar o serviço de Proxy                                  |
 | Confirmar                   |                                        Preencha este campo com a senha informada no campo Senha para validação                                        |
 | Lê configuração Proxy do IE | Pressione este botão para ler as configurações de Proxy configuradas no Internet Explorer. Obs.: As informações de autenticação não serão lidas do IE |
+--------
 
 Na guia **Formulários**, configure as seguintes opções.
 
@@ -315,6 +322,7 @@ Na guia **Formulários**, configure as seguintes opções.
 | Download de Arquivos |                            Parâmetros de configuração do formulário para recebimento de arquivos.                            |
 | Upload de Arquivos   |                               Parâmetros de configuração do formulário para envio de arquivos                                |
 | Remover Arquivos     |                              Parâmetros de configuração do formulário para remoção de arquivos.                              |
+----------
 
 Clique no botão **Configurar** para acessar as opções de Login
 
@@ -326,7 +334,8 @@ Configure os seguintes campos:
 
 | Campos                                                  |                                                                                                                         Descrição                                                                                                                         |
 | :------------------------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| Método, URI, Parâmetro de entrada e Mensagem de sucesso | Estas informações fazem parte dos parâmetros de configuração do formulário para acesso HTTP. Através destes é feita a integração do STCP com um site remoto, a fim de automatizar o processo de Transmissão e/ou Recepção de arquivos via protocolo HTTP. |
+| Método <br> <br> URI <br><br>Parâmetro de entrada <br><br> Mensagem de sucesso | Estas informações fazem parte dos parâmetros de configuração do formulário para acesso HTTP. Através destes é feita a integração do STCP com um site remoto, a fim de automatizar o processo de Transmissão e/ou Recepção de arquivos via protocolo HTTP. |
+----------
 
 Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alterar as configurações.
 
@@ -340,7 +349,8 @@ Configure os seguintes campos:
 
 | Campos                                                  |                                                                                                                         Descrição                                                                                                                         |
 | :------------------------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| Método, URI, Parâmetro de entrada e Mensagem de sucesso | Estas informações fazem parte dos parâmetros de configuração do formulário para acesso HTTP. Através destes é feita a integração do STCP com um site remoto, a fim de automatizar o processo de Transmissão e/ou Recepção de arquivos via protocolo HTTP. |
+| Método <br><br> URI <br><br> Parâmetro de entrada <br><br> Mensagem de sucesso | Estas informações fazem parte dos parâmetros de configuração do formulário para acesso HTTP. Através destes é feita a integração do STCP com um site remoto, a fim de automatizar o processo de Transmissão e/ou Recepção de arquivos via protocolo HTTP. |
+--------
 
 Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alterar as configurações.
 
@@ -354,8 +364,8 @@ Configure os seguintes campos:
 
 | Campos                                                  |                                                                                                                         Descrição                                                                                                                         |
 | :------------------------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| Método, URI, Parâmetro de entrada e Mensagem de sucesso | Estas informações fazem parte dos parâmetros de configuração do formulário para acesso HTTP. Através destes é feita a integração do STCP com um site remoto, a fim de automatizar o processo de Transmissão e/ou Recepção de arquivos via protocolo HTTP. |
-
+| Método <br><br> URI <br><br> Parâmetro de entrada <br><br> Mensagem de sucesso | Estas informações fazem parte dos parâmetros de configuração do formulário para acesso HTTP. Através destes é feita a integração do STCP com um site remoto, a fim de automatizar o processo de Transmissão e/ou Recepção de arquivos via protocolo HTTP. |
+---
 Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alterar as configurações.
 
 Clique no botão **Configurar** para acessar as opções de Download de Arquivos.
@@ -368,8 +378,8 @@ Configure os seguintes campos:
 
 | Campos                                                  |                                                                                                                         Descrição                                                                                                                         |
 | :------------------------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| Método, URI, Parâmetro de entrada e Mensagem de sucesso | Estas informações fazem parte dos parâmetros de configuração do formulário para acesso HTTP. Através destes é feita a integração do STCP com um site remoto, a fim de automatizar o processo de Transmissão e/ou Recepção de arquivos via protocolo HTTP. |
-
+| Método <br><br> URI <br><br> Parâmetro de entrada <br><br> Mensagem de sucesso | Estas informações fazem parte dos parâmetros de configuração do formulário para acesso HTTP. Através destes é feita a integração do STCP com um site remoto, a fim de automatizar o processo de Transmissão e/ou Recepção de arquivos via protocolo HTTP. |
+---
 Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alterar as configurações.
 
 Clique no botão **Configurar** para acessar as opções de Upload de Arquivos.
@@ -381,9 +391,9 @@ Configure os seguintes campos:
 ![](clt-config-22.png)
 
 | Campos                                                                                             |                                                                                                                         Descrição                                                                                                                         |
-| :------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| Método, URI, Parâmetro de entrada, Parâmetro de Arquivo, Parâmetro de Rodapé e Mensagem de sucesso | Estas informações fazem parte dos parâmetros de configuração do formulário para acesso HTTP. Através destes é feita a integração do STCP com um site remoto, a fim de automatizar o processo de Transmissão e/ou Recepção de arquivos via protocolo HTTP. |
-
+| :------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Método <br> <br> URI <br> <br> Parâmetro de entrada <br> <br> Parâmetro de Arquivo <br> <br> Parâmetro de Rodapé <br> <br> Mensagem de sucesso | Estas informações fazem parte dos parâmetros de configuração do formulário para acesso HTTP. Através destes é feita a integração do STCP com um site remoto, a fim de automatizar o processo de Transmissão e/ou Recepção de arquivos via protocolo HTTP. |
+-------
 Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alterar as configurações.
 
 Clique no botão **Configurar** para acessar as opções de Remover Arquivos.
@@ -395,9 +405,9 @@ Configure os seguintes campos:
 ![](clt-config-16.png)
 
 | Campos                                                  |                                                                                                                         Descrição                                                                                                                         |
-| :------------------------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| Método, URI, Parâmetro de entrada e Mensagem de sucesso | Estas informações fazem parte dos parâmetros de configuração do formulário para acesso HTTP. Através destes é feita a integração do STCP com um site remoto, a fim de automatizar o processo de Transmissão e/ou Recepção de arquivos via protocolo HTTP. |
-
+| :------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Método <br> URI <br> <br>  Parâmetro de entrada <br> <br> Mensagem de sucesso | Estas informações fazem parte dos parâmetros de configuração do formulário para acesso HTTP. Através destes é feita a integração do STCP com um site remoto, a fim de automatizar o processo de Transmissão e/ou Recepção de arquivos via protocolo HTTP. |
+---
 Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alterar as configurações.
 
 Na guia **Avançadas**, configure as seguintes opções
@@ -405,8 +415,9 @@ Na guia **Avançadas**, configure as seguintes opções
 ![](clt-config-23.png)
 
 | Campos             |                                      Descrição                                      |
-| :----------------- | :---------------------------------------------------------------------------------: |
+| :----------------- | :--------------------------------------------------------------------------------- |
 | Máscara de arquivo | Através de expressão regular, esta opção serve para filtrar o que se deseja baixar. |
+-----
 
 ### Configurações Protocolo FTP - TCP/IP
 
@@ -415,11 +426,11 @@ Se o protocolo selecionado foi **FTP – TCP/IP**, configure as seguintes opçõ
 ![](clt-config-24.png)
 
 | Campo                    |                                                                                                                                                                                                  Descrição                                                                                                                                                                                                   |
-| :----------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| :----------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Endereço IP              |                                                                                                                                                             Preencha este campo com o endereço TCP/IP ou nome (DNS) do servidor STCP OFTP Server                                                                                                                                                             |
-| Porta IP                 |                                                                                                                                              Preencha este campo com a porta TCP/IP do servidor STCP OFTP Server. Obs.: A porta padrão do protocolo FTP é a 21.                                                                                                                                              |
-| SSL3                     | Configura a comunicação segura com criptografia e certificação digital, com a utilização da padronização definida na RFC2246 (TLS1/SSL3). O TLS1/SSL3 é comumente encontrado nos servidores de sites seguros (HTTPS) e oferece o maior grau de segurança atualmente disponível. Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica. |
-| AUTH TLS                 |                                                                                                                                                         Habilita o processo de autenticação criptografado, garantindo a segurança na troca de senha.                                                                                                                                                         |
+| Porta IP                 |                                                                                                                                              Preencha este campo com a porta TCP/IP do servidor STCP OFTP Server. <br> <br> `Obs.:` A porta padrão do protocolo FTP é a 21.                                                                                                                                              |
+| SSL3                     | Configura a comunicação segura com criptografia e certificação digital, com a utilização da padronização definida na RFC2246 (TLS1/SSL3). O TLS1/SSL3 é comumente encontrado nos servidores de sites seguros (HTTPS) e oferece o maior grau de segurança atualmente disponível. <br> <br>  `Obs.:` Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica. |
+| AUTH TLS                 |                                                                                                                                                        Habilita o processo de autenticação criptografado, garantindo a segurança na troca de senha.                                                                                                                                                         |
 | AUTH SSL                 |                                                                                                                                                        Habilita o envio de um comando explícito para o servidor FTP a fim de utilizar a segurança SSL                                                                                                                                                        |
 | Tamanho máximo do buffer |                                                                                                                                          Preencha este campo com o tamanho máximo dos blocos de dados que serão transferidos. O intervalo válido é de 1 até 65535.                                                                                                                                           |
 
@@ -428,7 +439,7 @@ Na guia **Proxy**, configure as seguintes opções:
 ![](clt-config-25.png)
 
 | Campo       |                                                Descrição                                                 |
-| :---------- | :------------------------------------------------------------------------------------------------------: |
+| :---------- | :------------------------------------------------------------------------------------------------------ |
 | Habilitar   |                    Esta opção assinalada habilita a utilização de um servidor Proxy.                     |
 | Endereço IP |             Preencha este campo com o endereço TCP/IP ou nome (DNS) do servidor STCP Proxy.              |
 | Porta IP    |                        Preencha este campo com a porta TCP/IP do servidor Proxy.                         |
@@ -441,15 +452,15 @@ Na guia **TLS**, configure as seguintes opções:
 
 ![](clt-config-26.png)
 
-| Campo                        |                                                                                                                                              Descrição                                                                                                                                               |
-| :--------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| Campo                        |                                                                                                                                       Descrição                                                                                                                                               |
+| :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Chave Privativa              |                   As opções deste grupo estão relacionadas às chaves pública e privada utilizadas pelo protocolo TLS1/SSL3 para autenticação e criptografia dos dados. Obs.: O arquivo da chave privativa deve estar no formato PKCS#12 e os certificados, no formato DER ou PEM.                    |
 | Chave                        |                                                                                              Preencha este campo com o nome do arquivo (caminho completo) onde se encontra instalada a chave privativa.                                                                                              |
 | Certificado                  |                                                                          Preencha este campo com o nome do arquivo (caminho completo) onde se encontra instalado o certificado digital (X509) associado à chave privativa.                                                                           |
 | Senha                        |                                                                                                              Preencha este campo com a senha que protege o arquivo de chave privativa.                                                                                                               |
 | Confirmar                    |                                                                                                               Preencha este campo com a senha informada no campo senha para validação.                                                                                                               |
-| Certificados CA (Autoridade) | As opções deste grupo estão relacionadas aos certificados digitais das autoridades certificadoras (CA) que servirão para validar a autenticidade do certificado apresentado pelo servidor. Obs.: O arquivo da chave privativa deve estar no formato PKCS#12 e os certificados no formato DER ou PEM. |
-| Campo                        |                                                    IssuerCN: Emissor do certificado. IssuerDN: Detalhes sobre o emissor. SubjectCN: Para quem foi emitido o certificado. SubjectDN: Detalhes sobre o usuário para quem foi emitido o certificado.                                                    |
+| Certificados CA (Autoridade) | As opções deste grupo estão relacionadas aos certificados digitais das autoridades certificadoras (CA) que servirão para validar a autenticidade do certificado apresentado pelo servidor. <br> `Obs.:` O arquivo da chave privativa deve estar no formato PKCS#12 e os certificados no formato DER ou PEM. |
+| Campo                        |  **IssuerCN:** Emissor do certificado. <br> **IssuerDN:** Detalhes sobre o emissor. <br> **SubjectCN:** Para quem foi emitido o certificado. <br> **SubjectDN:** Detalhes sobre o usuário para quem foi emitido o certificado.                                                    |
 | Valor                        |                                                      O valor deste campo está relacionado aos certificados digitais das autoridades certificadoras (CA) que servirão para validar a autenticidade do certificado apresentado pelo servidor FTP.                                                      |
 
 Na guia **Avançadas**, configure as seguintes opções.
@@ -457,7 +468,7 @@ Na guia **Avançadas**, configure as seguintes opções.
 ![](clt-config-27.png)
 
 | Campo                |                                                         Descrição                                                          |
-| :------------------- | :------------------------------------------------------------------------------------------------------------------------: |
+| :------------------- | :------------------------------------------------------------------------------------------------------------------------ |
 | Diretório remoto     |                              Configura o diretório remoto de onde se deseja baixar o arquivo.                              |
 | Diretório de backup  | Configura o diretório de backup, que controla o processo de download e o torna eficaz, evitando a duplicidade de arquivos. |
 | Extensão de backup   |                          Configura uma extensão para arquivo de backup no servidor remoto (FTP).                           |
@@ -541,6 +552,7 @@ A associação entre um **Tipo de arquivo** e o arquivo propriamente dito pode s
 | 1    |                         Através do nome do arquivo e o nome do tipo.                         |
 | 2    | Parte do nome do arquivo e os valores definidos na propriedades de Prefixo e Sufixo do tipo. |
 | 3    |              O nome do arquivo e os valores definidos em uma expressão regular.              |
+---
 
 {{< callout type="info" >}}
   Obs.: Para informações mais detalhadas sobre expressão regular (RegEx), acesse
@@ -565,6 +577,7 @@ Clique em **OK** para salvar as configurações.
 | Campo                        |                                                       Descrição                                                        |
 | :--------------------------- | :--------------------------------------------------------------------------------------------------------------------: |
 | Nome do novo tipo de arquivo | Preencha este campo com o nome desejado para o novo tipo. Obs.: Não utilize caracteres especiais ou espaços em branco. |
+-------
 
 Na guia **Geral**, preencha e configure os seguintes campos.
 
@@ -595,6 +608,7 @@ Na guia **Geral**, preencha e configure os seguintes campos.
 | Sobrepor                       |                                                                                        Esta opção permite habilitar ou inibir a sobreposição do arquivo quando já existir um arquivo com o mesmo nome                                                                                        |
 | Inibir EERP                    |                                    Esta opção permite habilitar ou inibir o envio do comando Odette EERP (End to End Response) ao final da recepção do arquivo com sucesso. Obs.: Somente utilize esta opção se o servidor suportar esta característica.                                     |
 | EERP libera                    |                                       Esta opção permite habilitar ou inibir o tratamento do arquivo recebido somente após o envio do Odette EERP (End to End Response). Obs.: Somente utilize esta opção se o servidor suportar esta característica.                                        |
+----------------
 
 Na guia **Avançadas**, selecione as seguintes propriedades do tipo de arquivo.
 
@@ -606,6 +620,7 @@ Na guia **Avançadas**, selecione as seguintes propriedades do tipo de arquivo.
 | Ler o arquivo                                                     |                                                        Preencha este campo com o nome de um programa externo que será executado para realizar a leitura do arquivo.                                                        |
 | Gravar o arquivo                                                  |                                                       Preencha este campo com o nome de um programa externo que será executado para realizar a gravação do arquivo.                                                        |
 | Backup arquivo transmitido                                        |                                                                     Esta opção assinalada habilita o backup dos arquivos transmitidos para este tipo.                                                                      |
+---------------
 
 Validar o arquivo antes de transmitir:
 
