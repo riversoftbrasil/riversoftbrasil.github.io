@@ -1,5 +1,5 @@
 ---
-linkTitle: STCP Ren
+linkTitle: STCP Rename
 layout: docs
 sidebar:
   exclude: false
@@ -104,9 +104,9 @@ Este é um formato de nome de arquivo que é usado para especificar a localizaç
 
 ## Referências
 
-Disponível em: (<http://www.tech-faq.com/lang/pt/ppp.shtml>). Acesso em: 20 de julho de 2007.
-
-Disponível em: (<http://cartilha.cert.br/glossario/>). Acesso em: 20 de julho de 2007.
-
-Disponível em: (<http://www.iwebtool.com/what_is_unc.html>). Acesso em: 20 de julho de 2007.
+Disponível em: (<http://www.tech-faq.com/lang/pt/ppp.shtml>). *Acesso em: 20 de julho de 2007*
+<br>
+Disponível em: (<http://cartilha.cert.br/glossario/>). *Acesso em: 20 de julho de 2007*
+<br>
+Disponível em: (<http://www.iwebtool.com/what_is_unc.html>). *Acesso em: 20 de julho de 2007*
 
