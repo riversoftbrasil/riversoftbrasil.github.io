@@ -912,7 +912,8 @@ Padrão                     | Restaura configuração padrão para o período de
 
 Pressionar o botão **OK** para gravar as configurações ou **Cancelar** para abandonar sem alterar as configurações.
 
-**Definição das variáveis internas do STCP OFTP Server**
+## Definição das variáveis internas do STCP OFTP Server
+
 As variáveis internas do STCP OFTP Server podem ser utilizadas como parâmetros para os comandos externos.
 
 Variável  | Descrição
@@ -945,7 +946,7 @@ Executar comando para:| Valor padrão do parâmetro.
 **Agenda**            | Nome da agenda.
 **Eventos (LOG)**     | Linha com detalhes do evento.
 
-**Geração da chave privativa e certificado de autenticação SSL3**
+## Geração da chave privativa e certificado de autenticação SSL3
 
 Os seguintes procedimentos devem ser executados para a geração da chave privativa e do certificado digital a serem utilizados na comunicação SSL3.
 
@@ -977,7 +978,7 @@ req –new –x509 –key c:\stcpodt\keys\stcp_interprint.key –out c:\stcpodt\
 
 ![](./imagem1/img76.png)
 
-### Configuração da interface de transferência do STCP OFTP Server Enterprise / Lite para comunicação SSL3
+## Configuração da interface de transferência do STCP OFTP Server Enterprise / Lite para comunicação SSL3
 
 1. Para acessar o configurador do STCP OFTP Server Enterprise/Lite, clique em **Iniciar** e depois, em **Riversoft STCP OFTP Server Config**.
 2. Acesse a guia **Redes** para adicionar as interfaces que ficarão disponíveis para o serviço de transferência e adicione uma interface do serviço de transferência.
@@ -997,7 +998,7 @@ req –new –x509 –key c:\stcpodt\keys\stcp_interprint.key –out c:\stcpodt\
 
 ![](./imagem1/img80.png)
 
-### Estrutura dos diretórios
+## Estrutura dos diretórios
 
 O STCP OFTP Server, após a sua instalação e configuração, irá criar a seguinte árvore de diretórios onde serão armazenadas as informações de configuração, logs e controle.
 

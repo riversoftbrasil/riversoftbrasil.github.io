@@ -4,7 +4,7 @@ layout: docs
 cascade:
   type: docs
 sidebar:
-  exclude: true
+  exclude: false
 weight: 2
 prev:
 next:
