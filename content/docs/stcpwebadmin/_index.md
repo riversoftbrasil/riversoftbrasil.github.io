@@ -6,7 +6,7 @@ toc: true
 cascade:
   type: docs
 sidebar:
-  exclude: true
+  exclude: false
 weight: 4
 prev:
 next:

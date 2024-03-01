@@ -37,7 +37,7 @@ Tudo o que você precisa saber para sua jornada nas soluções Riversoft.
 
 ### Guias passo a passo
 {{< cards >}}
-  {{< card link="/database" title="Banco de dados" icon="database" >}}
+  {{< card link="" title="Banco de dados" icon="database" >}}
   {{< card link="/conection" title="Conectividade" icon="link" >}}
   {{< card link="/security" title="Segurança" icon="lock-closed" >}}
   {{< card link="" title="Logs e Debug" icon="eye" >}}

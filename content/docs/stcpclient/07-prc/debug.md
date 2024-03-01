@@ -1,6 +1,6 @@
 ---
 linkTitle: Debug
-title: Habilitar ou Alterar o nível de Debug no STCP OFTP Client
+title: Habilitar ou Alterar o nível de Debug 
 layout: docs
 cascade:
   type: docs

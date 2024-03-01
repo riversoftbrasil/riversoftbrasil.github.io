@@ -11,9 +11,9 @@ next:
 ---
 
 {{< cards >}}
-  {{< card link="configurar-agendamento" title="Execução automática do Client no Windows (Agendamento)" icon="" >}}
-  {{< card link="notificacao-email" title="Notificação por e-mail" icon="" >}}
-  {{< card link="configurar-servidor-proxy" title="Configurar servidor Proxy para conexão" icon="" >}}
-  {{< card link="nivel-de-debug" title="Habilitar/Alterar nível de Debug" icon="" >}}
-  {{< card link="log" title="Arquivos de Log" icon="" >}}
+  {{< card link="configurar-agendamento" title="Execução automática" icon="calendar" >}}
+  {{< card link="notificacao-email" title="Notificação por e-mail" icon="mail" >}}
+  {{< card link="configurar-servidor-proxy" title="Servidor Proxy para conexão" icon="server" >}}
+  {{< card link="nivel-de-debug" title="Habilitar ou alterar nível de Debug" icon="eye" >}}
+  {{< card link="log" title="Arquivos de Log" icon="clock" >}}
 {{< /cards >}}
