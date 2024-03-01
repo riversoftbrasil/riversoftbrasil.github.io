@@ -19,17 +19,20 @@ markup:
 
 menu:
   sidebar:
-    - name: Referências
+    - name: Referências e Informações
       params:
         type: separator
       weight: 1
-    - name: "Erros e Eventos"
-      pageRef: "/events"
+    - name: "Banco de dados homologados"
+      pageRef: "/database"
       weight: 2
     # - name: "Protocolo OFTP ↗"
+    - name: "Erros e Eventos"
+      url: "/events"
+      weight: 3
     - name: "Protocolo OFTP"
       url: "/odette"
-      weight: 3
+      weight: 4
 
   main:
     - name: Inicio
@@ -68,7 +71,7 @@ params:
       dark: images/logo-river-dark.png
       # link: /
       width: 155
-  
+
   search:
     enable: true
     type: flexsearch
@@ -93,7 +96,7 @@ params:
     # light | dark | system
     default: system
     displayToggle: true
-  
+
 # defaultContentLanguage: pt-br
 # languages:
 #   pt-br:
