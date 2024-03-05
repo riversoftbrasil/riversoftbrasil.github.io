@@ -7,9 +7,11 @@ sidebar:
   exclude: false
 weight: 6
 prev: /docs
-next:
+next: /security
 ---
-# O Protocolo OFTP (ODETTE File Transfer Protocol)
+# Origem
+
+*Protocolo OFTP (ODETTE File Transfer Protocol)*
 
 Este protocolo foi especificado pelo Grupo de Trabalho 4 da Organização ODETTE (Organization for Data Exchange by Tele Transmission in Europe), nos anos 80, para atender a indústria automotiva européia e padronizar a forma de comunicação entre as diferentes empresas da cadeia produtiva (supply-chain) do setor.
 

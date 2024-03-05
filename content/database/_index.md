@@ -5,8 +5,8 @@ cascade:
   type: docs
 sidebar:
   exclude: false
-prev: /docs/stcprename
-next: /events
+prev: /docs
+next: /odette
 ---
 # STCP – Servidor banco de dados homologados
 
@@ -23,8 +23,8 @@ Em caso de dúvidas ou maiores informações, entre em contato com a equipe de s
 
 <!-- RIVERSOFT INTEGRAÇÃO E DESENVOLVIMENTO DE SOFTWARE LTDA -->
 <!-- Rua Marechal Deodoro, 480, 1º andar, Jardim Santa Lucia - Pouso Alegre - MG- CEP 37553-405 -->
-`Telefone` (35) 3421-2221
-<br>
+<!-- `Telefone` (35) 3421-2221 -->
+
 `E-mail` suporte@riversoft.com.br
 <br>
 `Web` http://www.riversoft.com.br

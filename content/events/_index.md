@@ -6,12 +6,10 @@ cascade:
 sidebar:
   exclude: false
 weight: 5
+next: /security
 prev: /docs
-next: /odette
 ---
-# Mensagens e códigos de erros
-
-## **Códigos de eventos gerados no arquivo de mensagens**
+## Códigos de eventos gerados no arquivo de mensagens
 
 Mensagem | Descrição
 :---     | :---

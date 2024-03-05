@@ -37,11 +37,18 @@ Tudo o que você precisa saber para sua jornada nas soluções Riversoft.
 
 ### Guias passo a passo
 {{< cards >}}
-  {{< card link="" title="Banco de dados" icon="database" >}}
   {{< card link="/conection" title="Conectividade" icon="link" >}}
-  {{< card link="/security" title="Segurança" icon="lock-closed" >}}
   {{< card link="" title="Logs e Debug" icon="eye" >}}
   {{< card link="" title="Automação" icon="cube" >}}
+{{< /cards >}}
+
+### Referências e Informações
+
+{{< cards >}}
+  {{< card link="/database" title="Banco de dados" icon="database" >}}
+  {{< card link="/odette" title="Protcolo OFTP" icon="lock-closed" >}}
+  {{< card link="/security" title="Segurança" icon="lock-closed" >}}
+  {{< card link="/events" title="Códigos de Erros e Eventos" icon="x-circle" >}}
 {{< /cards >}}
 
 
