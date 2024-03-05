@@ -211,11 +211,11 @@ selecionada anteriormente.
 | Protocolo     |                                                Descrição                                                |
 | :------------ | :-----------------------------------------------------------------------------------------------------: |
 | OFTP - TCP/IP | Configura o STCP OFTP Server para utilizar o protocolo de comunicação TCP/IP através de uma rede local. |
-| HTTP – TCP/IP |               Configura o STCP OFTP Server para utilizar o protocolo de comunicação HTTP.               |
-| FTP – TCP/IP  |               Configura o STCP OFTP Server para utilizar o protocolo de comunicação FTP.                |
-| SFTP – TCP/IP |               Configura o STCP OFTP Server para utilizar o protocolo de comunicação SFTP.               |
-| S3 – AWS      |            Configura o STCP OFTP Server para utilizar o protocolo de comunicação S3, da AWS.            |
-| BLOB – AZURE  |        Configura o STCP OFTP Server para utilizar o protocolo de comunicação Blob, da Microsoft.        |
+| HTTP – TCP/IP |               Configura o STCP OFTP Client para utilizar o protocolo de comunicação HTTP.               |
+| FTP – TCP/IP  |               Configura o STCP OFTP Client para utilizar o protocolo de comunicação FTP.                |
+| SFTP – TCP/IP |               Configura o STCP OFTP Client para utilizar o protocolo de comunicação SFTP.               |
+| S3 – AWS      |            Configura o STCP OFTP Client para utilizar o protocolo de comunicação S3, da AWS.            |
+| Blob – Azure  |        Configura o STCP OFTP Client para utilizar o protocolo de comunicação Blob, da Microsoft.        |
 ---
 
 

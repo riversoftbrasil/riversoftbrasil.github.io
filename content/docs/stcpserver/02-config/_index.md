@@ -12,11 +12,11 @@ next:
 # Como configurar o STCP OFTP Server
 
 O Programa de configuração do STCP OFTP Server foi instalado na pasta selecionada durante o processo de instalação e pode ser acessado através do menu **Iniciar**. Caso você não tenha alterado a pasta padrão execute os seguintes passos:
-1. No menu **Iniciar, Todos os Programas, selecione Riversoft STCP OFTP Server (Enterprise/Lite) 4.0.0.**
+1. No menu **Iniciar, Todos os Programas, selecione Riversoft STCP OFTP Server (Enterprise/Lite)**.
 2. Clique no programa **Riversoft STCP OFTP Server Config.**
 3. Na guia **Geral**, preencha os campos com as informações descritas abaixo.
 
-![](./imagem1/img8.png)
+![](guia-geral.png)
 
 Campos | Descrição
 :----  | :----
@@ -33,14 +33,12 @@ Número de série| Preencha este campo com o número de série que está localiz
 Na guia **Redes**, você poderá adicionar, remover ou modificar os parâmetros das interfaces de redes controladas pelo serviço STCP OFTP Server.
 4. Clique em **Adicionar**.
 
-![](./imagem1/img9.png)
+![](redes.png)
 
 O STCP OFTP Server permite a configuração de múltiplas interfaces de redes com o mesmo ou diferentes protocolos de comunicação (**TCP/IP, SSL3, X.25,  PAD, SERIAL etc.**).
 **Obs.: As configurações de Redes somente serão utilizadas para as conexões entrantes (inbound).**
 
 5. Selecione um serviço de rede e clique em **OK**.
-
-![](./imagem1/img10.png)
 
 Protocolo     | Descrição
 :---------    | :-----
@@ -57,7 +55,7 @@ OFTP – SERIAL | Configura o STCP OFTP Server para utilizar diretamente uma por
 
 6. Na guia **Geral**, preencha as seguintes opções de configuração para o protocolo **OFTP: TCP/IP_1**.
 
-![](./imagem1/img11.png)
+![](redes-guia-geral.png)
 
 Campos | Descrição
 :----  | :----
@@ -67,7 +65,7 @@ Desabilitar| Esta opção assinalada desabilita a interface de rede.
 
 7. Na guia **TCP/IP**, configure as seguintes opções para o protocolo **OFTP: TCP/IP_1**.
 
-![](./imagem1/img12.png)
+![](tcp_ip-configs.png)
 
 Campos     | Descrição
 :----      | :----
@@ -90,7 +88,7 @@ Compressão GZIP| Esta opção assinalada habilita a utilização da compressão
 
 8. Na guia **Odette**, configure as seguintes opções para o protocolo **OFTP: TCP/IP_1**.
 
-![](./imagem1/img13.png)
+![](odette.png)
 
 Campos         | Descrição
 :--------      | :-----
@@ -102,9 +100,9 @@ Outros         | As opções definidas neste grupo serão utilizadas localmente 
 Tempo máximo de inatividade| Preencha este campo com o tempo máximo de inatividade de comunicação entre o STCP OFTP Server e o computador remoto.
 Nível de debug | Preencha este campo com o nível de detalhamento das informações que serão gravadas no arquivo de depuração. Para obter no mesmo arquivo de depuração a informação dos diferentes níveis, preencha este campo com a soma dos níveis desejados. /Obs.: Veja a tabela dos níveis de debug na configuração dos usuários.
 
-9. Na guia **SSL3**, configure as seguintes opções para o protocolo **OFTP – TCP/IP**.
+9. Na guia **TLS**, configure as seguintes opções para o protocolo **OFTP – TCP/IP**.
 
-![](./imagem1/img14.png)
+![](tls.png)
 
 Campos         | Descrição
 :------------  | :------
@@ -125,13 +123,13 @@ Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alt
 10. Na guia **Usuários**, você poderá adicionar, remover, modificar ou copiar os parâmetros de configuração de um usuário do serviço STCP OFTP Server.
 11. Clique em **Adicionar**.
 
-![](./imagem1/img15.png)
+![](usuarios.png)
 
 Para um novo usuário adicionado, automaticamente, será criada uma estrutura de subdiretórios para o envio e recepção dos arquivos, dentro do **Diretório de Dados** que foi previamente configurado na guia **Geral**.
 
 12. Preencha os campos com as informações descritas abaixo e clique em **OK**.
 
-![](./imagem1/img16.png)
+![](configs-usuarios.png)
 
 Campos | Descrição
 :---   | :---
@@ -144,7 +142,7 @@ Pressione o botão **OK** para gravar as configurações ou **Cancelar** para ab
 
 13. Na guia **Odette**, preencha os campos com as informações descritas abaixo.
 
-![](./imagem1/img17.png)
+![](guia-odette-usuario.png)
 
 Campos | Descrição
 :---   | :---
@@ -197,7 +195,7 @@ Nível | Descrição
 
 14. Na guia **Geral**, configure as seguintes opções descritas abaixo.
 
-![](./imagem1/img18.png)
+![](guia-geral-usuario.png)
 
 Campos    | Descrição
 :---      | :---
@@ -214,34 +212,36 @@ Protocolo| Este campo seleciona o tipo de protocolo de comunicação que este us
 
 15. Selecione a opção de **Protocolo** desejada e clique em **Configurar**.
 
-![](./imagem1/img19.png)
+![](protocolo-usuario.png)
 
-Protocolo     | Descrição
-:---          | :---
-OFTP - TCP/IP | Configura o STCP OFTP Server para utilizar o protocolo de comunicação TCP/IP através de uma rede local.
-OFTP - TCP/IP - DISCADO| Configura o STCP OFTP Server para utilizar o protocolo de comunicação TCP/IP através de uma rede de acesso discado (dialup).
-OFTP – X.25   | Configura o STCP OFTP Server para utilizar o protocolo de comunicação X.25 através de uma rede de acesso dedicada.  /Obs.: Para utilizar esta opção, você deve ter instalado um cartão de comunicação WCK2000 fornecido pela Net Open (www.netopen.com.br).
-OFTP – PAD    | Configura o STCP OFTP Server para utilizar o protocolo de comunicação PAD (X.28) através de uma rede de acesso dedicada.
-OFTP – PAD - DISCADO| Configura o STCP OFTP Server para utilizar o protocolo de comunicação PAD (X.28) através de uma rede de acesso discada.
-OFTP – SERIAL | Configura o STCP OFTP Server para utilizar diretamente uma porta serial. Obs.: Esta opção não usa protocolo TCP/IP.
-OFTP – SERIAL – DISCADO| Configura o STCP OFTP Server para utilizar uma porta serial com um modem ou uma placa de Fax/Modem.  /Obs.: Esta opção não usa protocolo TCP/IP.
-HTTP – TCP/IP | Configura o STCP OFTP Server para utilizar o protocolo de comunicação HTTP.
-FTP – TCP/IP  | Configura o STCP OFTP Server para utilizar o protocolo de comunicação FTP.
-SFTP – TCP/IP | Configura o STCP OFTP Server para utilizar o protocolo de comunicação SFTP.
+| Protocolo     |                                                Descrição                                                |
+| :------------ | :-----------------------------------------------------------------------------------------------------: |
+| OFTP - TCP/IP | Configura o STCP OFTP Server para utilizar o protocolo de comunicação TCP/IP através de uma rede local. |
+| HTTP – TCP/IP |               Configura o STCP OFTP  para utilizar o protocolo de comunicação HTTP.               |
+| FTP – TCP/IP  |               Configura o STCP OFTP Server para utilizar o protocolo de comunicação FTP.                |
+| SFTP – TCP/IP |               Configura o STCP OFTP Server para utilizar o protocolo de comunicação SFTP.               |
+| S3 – AWS      |            Configura o STCP OFTP Server para utilizar o protocolo de comunicação S3, da AWS.            |
+| Blob – Azure  |        Configura o STCP OFTP Server para utilizar o protocolo de comunicação Blob, da Microsoft.        |
+---
+
+{{< callout type="info">}}
+Clique [aqui](https://docs.aws.amazon.com/pt_br/AmazonS3/latest/userguide/Welcome.html) para mais informações sobre o **Amazon Simple Storage Service (S3)**.
+{{< /callout >}}
+
+{{< callout type="info" >}}
+  Clique [aqui](https://azure.microsoft.com/pt-br/products/storage/blobs) para mais informações sobre o **Armazenamento de Blobs do Azure**.
+{{< /callout >}}
 
 16. Se o protocolo selecionado foi **OFTP – TCP/IP**, configure as seguintes opções na guia **TCP/IP**.
 
-![](./imagem1/img20.png)
+![](oftp-usuario.png)
 
 Campos     | Descrição
 :---       | :---
 Endereço IP| Preencha este campo com o endereço TCP/IP ou nome (DNS) do servidor STCP OFTP Server.
 Porta IP   | Preencha este campo com a porta TCP/IP do servidor STCP OFTP Server.
 Comunicação Segura| Esta opção assinalada habilita a utilização de criptografia na comunicação com o servidor STCP OFTP Server. Você pode escolher entre a opção Nativa ou SSL3. /Obs.: Antes de habilitar esta opção, leia atentamente o capítulo sobre Segurança.
-Nativa (Básica)| Configura a comunicação segura com criptografia com nível de segurança básico. /Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica.
-Nativa (Média)| Configura a comunicação segura com criptografia com nível de segurança médio. Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica.
-Nativa (Alta)| Configura a comunicação segura com criptografia com nível de segurança médio. /Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica.
-SSL3         | Configura a comunicação segura com criptografia e certificação digital, com a utilização da padronização definida na RFC2246 (TLS1/SSL3). O TLS1/SSL3 é comumente encontrado nos servidores de sites seguros (HTTPS) e oferece o maior grau de segurança atualmente disponível. /Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica.
+TLS         | Configura a comunicação segura com criptografia e certificação digital, com a utilização da padronização definida na RFC2246 (TLS1/SSL3). O TLS1/SSL3 é comumente encontrado nos servidores de sites seguros (HTTPS) e oferece o maior grau de segurança atualmente disponível. /Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica.
 Compatibilidade| Esta opção possibilita compatibilizar o STCP OFTP Server com diferentes produtos atualmente existentes no mercado.
 RFC2204      | Esta opção de compatibilidade permite a comunicação do STCP OFTP Server com outros produtos que seguem a recomendação RFC2204.
 RFC1006/RFC1086| Esta opção de compatibilidade permite a comunicação do STCP OFTP Server através de gateways de comunicação TCP-IP/X.25, que seguem a recomendação RFC1006/1086.
@@ -250,9 +250,9 @@ X25/Router| Esta opção de compatibilidade permite a comunicação do STCP OFTP
 XFB*/SSL  | Habilita a compatibilidade do STCP com o XFB em conexões seguras SSL.
 Compressão GZIP| Esta opção assinalada habilita a utilização da compressão GZIP onthe-fly (durante a transferência). /Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica.
 
-17. Na guia **SSL3**, configure as seguintes opções para o protocolo **OFTP – TCP/IP**.
+17. Na guia **TLS**, configure as seguintes opções para o protocolo **OFTP – TCP/IP**.
 
-![](./imagem1/img21.png)
+![](tls-usuario.png)
 
 Campos | Descrição
 :---   | :---
@@ -269,7 +269,7 @@ Debug      | Esta opção permite criar um arquivo de depuração.
 
 18. Na guia **Proxy**, configure as seguintes opções para o protocolo **OFTP – TCP/IP**.
 
-![](./imagem1/img22.png)
+![](proxy-usuarios.png)
 
 Campos | Descrição
 :---   | :---
@@ -292,18 +292,18 @@ Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alt
 
 19. Se o protocolo selecionado foi **HTTP – TCP/IP**, configure as seguintes opções na guia **TCP/IP**.
 
-![](./imagem1/img23.png)
+![](http-tcp-ip.png)
 
 Campos |Descrição
 :---   | :---
 Endereço IP| Preencha este campo com o endereço TCP/IP ou nome (DNS) do servidor STCP OFTP Server.
 Porta IP| Preencha este campo com a porta TCP/IP do servidor STCP OFTP Server.
-SSL3   | Configura a comunicação segura com criptografia e certificação digital, com a utilização da padronização definida na RFC2246 (TLS1/SSL3). O TLS1/SSL3 é comumente encontrado nos servidores de sites seguros (HTTPS) e oferece o maior grau de segurança atualmente disponível. /Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica.
+TLS   | Configura a comunicação segura com criptografia e certificação digital, com a utilização da padronização definida na RFC2246 (TLS1/SSL3). O TLS1/SSL3 é comumente encontrado nos servidores de sites seguros (HTTPS) e oferece o maior grau de segurança atualmente disponível. /Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica.
 Tamanho máximo do buffer| Preencha este campo com o tamanho máximo dos blocos de dados que serão transferidos. O intervalo válido é de 1 até 65535.
 
 20. Na guia **Proxy**, configure as seguintes opções.
 
-![](./imagem1/img24.png)
+![](proxy-usuarios-http.png)
 
 Campos   | Descrição
 :---     | :---
@@ -317,7 +317,7 @@ Lê configuração Proxy do IE| Pressione este botão para ler as configuraçõe
 
 21. Na guia **Formulários**, configure as seguintes opções.
 
-![](./imagem1/img25.png)
+![](formularios-usuarios.png)
 
 Campos | Descrição
 :---   | :---
@@ -331,7 +331,7 @@ Remover Arquivos| Parâmetros de configuração do formulário para remoção de
 
 22. Clique no botão **Configurar** para acessar as opções de Login.
 
-![](./imagem1/img26.png)
+![](login-options.png)
 
 23. Configure os seguintes campos.
 
@@ -339,13 +339,13 @@ Remover Arquivos| Parâmetros de configuração do formulário para remoção de
 
 Campos | Descrição
 :---   | :---
-Método Uri Parâmetro de entrada Mensagem de sucesso| Estas informações fazem parte dos parâmetros de configuração do formulário para acesso HTTP. Através destes é feita a integração do STCP com um site remoto, a fim de automatizar o processo de Transmissão e/ou Recepção de arquivos via protocolo HTTP.
+Método <br> Uri <br> Parâmetro de entrada <br> Mensagem de sucesso| Estas informações fazem parte dos parâmetros de configuração do formulário para acesso HTTP. Através destes é feita a integração do STCP com um site remoto, a fim de automatizar o processo de Transmissão e/ou Recepção de arquivos via protocolo HTTP.
 
 Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alterar as configurações.
 
 24. Clique no botão **Configurar** para acessar as opções de Logout.
 
-![](./imagem1/img28.png)
+![](logout-usuarios.png)
 
 25. Configure os seguintes campos.
 
@@ -353,32 +353,29 @@ Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alt
 
 Campos | Descrição
 :---   | :---
-Método Uri Parâmetro de entrada Mensagem de sucesso| Estas informações fazem parte dos parâmetros de configuração do formulário para acesso HTTP. Através destes é feita a integração do STCP com um site remoto, a fim de automatizar o processo de Transmissão e/ou Recepção de arquivos via protocolo HTTP.
+Método <br> Uri <br> Parâmetro de entrada <br> Mensagem de sucesso| Estas informações fazem parte dos parâmetros de configuração do formulário para acesso HTTP. Através destes é feita a integração do STCP com um site remoto, a fim de automatizar o processo de Transmissão e/ou Recepção de arquivos via protocolo HTTP.
 
 Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alterar as configurações.
 
 26. Clique no botão **Configurar** para acessar as opções de Listar Arquivos.
 
-
-![](./imagem1/img30.png)
+![](listar-arquivos.png)
 
 27. Configure os seguintes campos.
 
-![](./imagem1/img31.png)
-
 Campos | Descrição
 :---   | :---
-Método Uri Parâmetro de entrada Mensagem de sucesso| Estas informações fazem parte dos parâmetros de configuração do formulário para acesso HTTP. Através destes é feita a integração do STCP com um site remoto, a fim de automatizar o processo de Transmissão e/ou Recepção de arquivos via protocolo HTTP.
+Método <br> Uri <br> Parâmetro de entrada <br> Mensagem de sucesso| Estas informações fazem parte dos parâmetros de configuração do formulário para acesso HTTP. Através destes é feita a integração do STCP com um site remoto, a fim de automatizar o processo de Transmissão e/ou Recepção de arquivos via protocolo HTTP.
 
 Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alterar as configurações.
 
 28. Clique no botão **Configurar** para acessar as opções de Download de Arquivos.
 
-![](./imagem1/img32.png)
+![](download-de-arquivos.png)
 
 29. Configure os seguintes campos.
 
-![](./imagem1/img33.png)
+![](download-de-arquivos.png)
 
 Campos | Descrição
 :---   | :---
@@ -392,7 +389,7 @@ Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alt
 
 31. Configure os seguintes campos.
 
-![](./imagem1/img35.png)
+![](upload-de-arquivos.png)
 
 Campos | Descrição
 :---   | :---
@@ -406,17 +403,17 @@ Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alt
 
 33. Configure os seguintes campos.
 
-![](./imagem1/img37.png)
+![](remover-arquivos.png)
 
 Campos | Descrição
 :---   | :---
-Método Uri Parâmetro de entrada Mensagem de sucesso| Estas informações fazem parte dos parâmetros de configuração do formulário para acesso HTTP. Através destes é feita a integração do STCP com um site remoto, a fim de automatizar o processo de Transmissão e/ou Recepção de arquivos via protocolo HTTP.
+Método <br> Uri <br> Parâmetro de entrada <br> Mensagem de sucesso| Estas informações fazem parte dos parâmetros de configuração do formulário para acesso HTTP. Através destes é feita a integração do STCP com um site remoto, a fim de automatizar o processo de Transmissão e/ou Recepção de arquivos via protocolo HTTP.
 
 Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alterar as configurações.
 
 34. Na guia **Avançadas**, configure as seguintes opções.
 
-![](./imagem1/img38.png)
+![](avancadas.png)
 
 Campos | Descrição
 :---   | :---

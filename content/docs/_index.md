@@ -16,12 +16,12 @@ Tudo o que você precisa saber para sua jornada nas soluções Riversoft.
 
 ### Windows
 {{< cards >}}
-  {{< card link="" title="STCP OFTP Server" icon="cog" >}}
-  {{< card link="./stcpclient" title="STCP OFTP Client" icon="desktop-computer" >}}
-  {{< card link="" title="STCP OFTP Web Admin" icon="cloud" >}}
-  {{< card link="" title="STCP Change Password" icon="shield-exclamation" >}}
-  {{< card link="" title="STCP Rename" icon="color-swatch" >}}
-  {{< card link="" title="STCP Signer" icon="finger-print" >}}
+  {{< card link="../callout" title="STCP OFTP Server" icon="cog" >}}
+  {{< card link="../callout" title="STCP OFTP Client" icon="desktop-computer" >}}
+  {{< card link="../callout" title="STCP OFTP Web Admin" icon="cloud" >}}
+  {{< card link="../callout" title="STCP Change Password" icon="shield-exclamation" >}}
+  {{< card link="../callout" title="STCP Rename" icon="color-swatch" >}}
+  {{< card link="../callout" title="STCP Signer" icon="finger-print" >}}
 {{< /cards >}}
 
 ### Linux
@@ -38,8 +38,8 @@ Tudo o que você precisa saber para sua jornada nas soluções Riversoft.
 ### Guias passo a passo
 {{< cards >}}
   {{< card link="/conection" title="Conectividade" icon="link" >}}
-  {{< card link="" title="Logs e Debug" icon="eye" >}}
-  {{< card link="" title="Automação" icon="cube" >}}
+  {{< card link="../callout" title="Logs e Debug" icon="eye" >}}
+  {{< card link="../callout" title="Automação" icon="cube" >}}
 {{< /cards >}}
 
 ### Referências e Informações

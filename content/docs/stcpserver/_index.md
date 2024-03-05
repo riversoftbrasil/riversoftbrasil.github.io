@@ -26,7 +26,7 @@ O STCP OFTP Server pode ser utilizado por diferentes aplicações para:
 * Integração com VANS (Embratel, Proceda, Interchange e outras)
 * Outras aplicações
 
-### Quais as vantagens
+### Quais as vantagens?
 
 O STCP OFTP Server oferece as seguintes vantagens:
 
@@ -40,7 +40,7 @@ O STCP OFTP Server oferece as seguintes vantagens:
 O STCP OFTP Server oferece as seguintes características:
 
 * Protocolo de transferência OFTP (ODETTE File Transfer Protocol)
-* Autenticação através do protocolo OFTP
+* Autenticação através do protocolo *OFTP*
 * Autenticação através de certificado digital X.509 (SSL3)
 * Criptografia RSA, 3DES, DES, AES (SSL3)
 * Multiprotocolo de comunicação TCP, SSL3, X.25, PAD e Discado

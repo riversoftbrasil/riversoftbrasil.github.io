@@ -4,6 +4,8 @@ layout: docs
 sidebar:
   exclude: false
 weight: 1
+next:
+prev: 
 ---
 # Distribuição do link para instalação
 
