@@ -5,8 +5,8 @@ layout: docs
 sidebar:
   exclude: false
 weight: 1
-prev: /dirl
-next: /dirl/install/requirements
+prev: /dirl/
+next: /dirl/01-install/requirements
 ---
 ## Distribuição dos pacotes para instalação
 

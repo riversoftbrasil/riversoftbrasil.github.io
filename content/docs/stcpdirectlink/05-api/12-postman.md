@@ -5,6 +5,7 @@ sidebar:
   exclude: false
 weight: 13
 slug: exemplos-postman
+prev: /upload-json
 ---
 
 ## Requisições de exemplo utilizando o Postman

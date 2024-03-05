@@ -4,8 +4,8 @@ layout: docs
 sidebar:
   exclude: false
 weight: 3
-prev:
-next:
+prev: /login
+next: /first-acess
 slug: logout
 ---
 
@@ -29,29 +29,22 @@ Esta requisição deve ser utilizada para o registro de logout do usuário da pl
 <h5 style="color: white;">POST</h5>
 </div>
 
-
-
-**Logou utilizando a autenticação no modo Basic**
+**Logout utilizando a autenticação no modo Basic**
 
 ```
 https://<domain>/directlink/v1/auth/login
 ```
 
-
 Esta requisição deve ser utilizada para obter o token de autorização
 
 **Parameters**
-
-
 
 ### Header
 
 |    Nome   | Descrição |
 | ----------- | ----------- |
-| *Authorization**   | Basic base64(username:password) |
+| *Authorization**   | Basic base64 (username:password) |
 | *Content_type**  |  application/json |
-
-
 
 ### Responses
 

@@ -4,8 +4,9 @@ layout: docs
 sidebar:
   exclude: false
 weight: 2
-prev: /dirl/install
-next: /dirl/install/structure
+prev: /dirl/01-install
+next: /dirl/01-install/structure
+slug: requirements
 ---
 ## Requisitos para instalação
 

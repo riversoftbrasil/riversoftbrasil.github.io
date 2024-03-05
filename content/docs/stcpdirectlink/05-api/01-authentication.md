@@ -4,8 +4,8 @@ layout: docs
 sidebar:
   exclude: false
 weight: 1
-prev: /docs/getting-started
-next: /docs/guide/organize-files
+prev: /05-api/
+next: /login
 slug: authentication
 ---
 
@@ -53,6 +53,8 @@ Esta requisição deve ser utilizada para obter o token de autorização
 | *grant_type**      | password |
 | *username**      | nome do usuário na plataforma |
 | *password**      | senha do usuário na plataforma |
+
+<!-- *required -->
 
 {{< callout type="info" >}}
  O campo body, deve ser formatado em query string como exemplo: grant_type=*password&username*=`usuario`&password=`senha`
@@ -119,7 +121,7 @@ Esta requisição deve ser utilizada para obter o token de autorização
 
 {{% /details %}} -->
 
-A solicitação do token de autorização para acesso as interfaces disponíveis utiliza o padrão oauth2 Resource Owner Password Credential Grant (Autorização para o proprietário do recurso).
+A solicitação do token de autorização para acesso as interfaces disponíveis utiliza o padrão *oauth2*, Resource Owner Password Credential Grant (Autorização para o proprietário do recurso).
 
 ### Requisição (exemplo)
 

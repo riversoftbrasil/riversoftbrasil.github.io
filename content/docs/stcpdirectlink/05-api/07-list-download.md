@@ -4,8 +4,8 @@ layout: docs
 sidebar:
   exclude: false
 weight: 7
-prev: /docs/getting-started
-next: /docs/guide/organize-files
+prev: /change-password
+next: /list-backup-download
 slug: list-download
 ---
 

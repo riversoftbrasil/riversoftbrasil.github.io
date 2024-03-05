@@ -7,7 +7,7 @@ sidebar:
   exclude: false
 weight: 3
 prev:
-next: /01-install
+next: /01-install/requirements/
 ---
 # Introdução
 

@@ -4,8 +4,8 @@ layout: docs
 sidebar:
   exclude: false
 weight: 10
-prev: /docs/getting-started
-next: /docs/guide/organize-files
+prev: /download
+next: /upload-json
 slug: upload-multipart
 ---
 

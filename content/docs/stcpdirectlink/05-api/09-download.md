@@ -4,9 +4,9 @@ layout: docs
 sidebar:
   exclude: false
 weight: 9
-prev: /docs/getting-started
-next: /docs/guide/organize-files
-slug: download
+prev: /list-backup-download
+next: /upload-multipart
+slug: download-de-arquivos
 ---
 
 ## Download de arquivos

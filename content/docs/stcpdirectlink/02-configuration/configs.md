@@ -4,7 +4,7 @@ layout: docs
 sidebar:
   exclude: false
 weight: 2
-prev: /docs/getting-started
+prev: /docs/stcpdirectlink/01-install/structure
 next: /docs/guide/organize-files
 ---
 

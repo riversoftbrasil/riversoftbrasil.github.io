@@ -4,14 +4,14 @@ layout: docs
 sidebar:
   exclude: false
 weight: 2
-prev: /docs/getting-started
-next: /docs/guide/organize-files
+prev: /authentication
+next: /logout
 slug: login
 ---
 
 ## Login
 
-Esta requisição deve ser utilizada para o registro de login do usuário e obtenção do token(bearer) de autorização de acesso as funções da plataforma.
+Esta requisição deve ser utilizada para o registro de login do usuário e obtenção do token (bearer) de autorização de acesso as funções da plataforma.
 
 
 <br>
@@ -49,7 +49,7 @@ Esta requisição deve ser utilizada para obter o token de autorização
 
 |    Nome   | Descrição |
 | ----------- | ----------- | -------- |
-| *Authorization**   | Basic base64(username:password) |
+| *Authorization**   | Basic base64 (username:password) |
 | *Content_type**  |  application/json |
 
 
@@ -57,7 +57,7 @@ Esta requisição deve ser utilizada para obter o token de autorização
 
 <br>
 <details style="color: green; cursor: pointer;">
-<summary>200: OK   (Sucesso)</summary>
+<summary>200: OK (Sucesso)</summary>
 
 ```json
 {

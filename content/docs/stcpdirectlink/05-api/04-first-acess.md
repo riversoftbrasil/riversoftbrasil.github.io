@@ -4,8 +4,8 @@ layout: docs
 sidebar:
   exclude: false
 weight: 4
-prev:
-next:
+prev: /logout
+next: /forgot-password
 slug: first-acess
 ---
 
