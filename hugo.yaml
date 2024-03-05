@@ -18,24 +18,24 @@ markup:
     noClasses: false
 
 menu:
-  sidebar:
-    - name: Referências e Informações
-      params:
-        type: separator
-      weight: 1
-    - name: "Banco de dados homologados"
-      pageRef: "/database"
-      weight: 2
-    # - name: "Protocolo OFTP ↗"
-    - name: "Erros e Eventos"
-      url: "/events"
-      weight: 3
-    - name: "Protocolo OFTP"
-      url: "/odette"
-      weight: 4
+  # sidebar:
+  #   # - name: Referências e Informações
+  #   #   params:
+  #   #     type: separator
+  #   #   weight: 1
+  #   # - name: "Banco de dados homologados"
+  #   #   pageRef: "/database"
+  #   #   weight: 2
+  #   # - name: "Protocolo OFTP ↗"
+  #   # - name: "Erros e Eventos"
+  #   #   url: "/events"
+  #   #   weight: 3
+  #   - name: "Protocolo OFTP"
+  #     url: "/odette"
+  #     weight: 4
 
   main:
-    - name: Inicio
+    - name: Início
       pageRef: /
       weight: 1
     - name: Docs
