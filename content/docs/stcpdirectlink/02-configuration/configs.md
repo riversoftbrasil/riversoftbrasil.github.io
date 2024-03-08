@@ -22,7 +22,7 @@ next: /docs/guide/organize-files
  ---                                   | ----
  uploadEnable                          | Habilita o serviço de upload
  uploadMaxFileSize                     | Tamanho máximo do arquivo
- uploadValidateJSON                    | Habilita validação estrutural se o arquivo e do tipo JSON
+ uploadValidateJSON                    | Habilita validação estrutural e se o arquivo é do tipo JSON
 
 ### Parâmetros de email
 
@@ -33,11 +33,11 @@ next: /docs/guide/organize-files
  emailServerPort                       | Porta do serviço de email
  emailAuthUser                         | Usuário para autenticação no serviço de email
  emailAuthPswd                         | Senha para autenticação no serviço de email
- emailAuthType                         | Tipo de autenticação do serviço de email (ex.: plain | login)
+ emailAuthType                         | Tipo de autenticação do serviço de email (ex.: plain - login)
  emailTemplatesPath                    | Diretório de templates de emails e assuntos
  emailSendFrom                         | Endereço de email que gera a notificação
  emailReplyTo                          | Endereço de email para retorno de resposta da notificação
- emailFormatMimeFrom                   | String de formatação MIME do campo "From:" (ex: "From: <emailfrom>" | "From: <user> via STCPDirectLink <<emailfrom>>")
+ emailFormatMimeFrom                   | String de formatação MIME do campo **From:** (ex: From: `<emailfrom>` -- From: `<user>` via STCPDirectLink `<emailfrom>`)
  emailSendConfirmationEnable           | Habilita o envio da notificação de confirmação do download (ex: true ou false)
  emailSendConfirmationToSenderEnable   | Habilita o envio da notificação de confirmação do download para quem enviou o arquivo (ex: true ou false)
  emailSendRetryMaximum                 | Quantidade máximo de tentativas de envio do email
@@ -98,7 +98,7 @@ next: /docs/guide/organize-files
  cfgUser                               | Usuário de autenticação do serviço
  cfgPswd                               | Senha de autenticação do serviço
  cfgInstanceName                       | Nome da instância utilizada
- cfgMethod                             | Método de acesso ao serviço autenticação (obs.: **stcpgeminidb** - nome do tipo de banco de dados: mysql ou mssql)
+ cfgMethod                             | Método de acesso ao serviço autenticação (obs.: **stcpgeminidb** - nome do tipo de banco de dados: **mysql** ou **mssql**)
 
 ### Parâmetros de log
 
@@ -200,7 +200,9 @@ Para especificar mais de uma suite elas devem ser separadas pelo caracter dois p
 Exemplo de cifra segura para compatibilidade PCI:
 <br>
 ```json
-      "serverTLSCipherSuites":"TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384:TLS_AES_128_GCM_SHA256:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_256_GCM_SHA384:TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA"
+{
+"serverTLSCipherSuites":"TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384:TLS_AES_128_GCM_SHA256:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_256_GCM_SHA384:TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA"
+}
 ```
 
  #### ***Caminhos absolutos ou relativos***

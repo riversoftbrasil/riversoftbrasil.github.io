@@ -8,7 +8,7 @@ prev: /dirl/install/structure
 next: /dirl/configuration/requirements
 ---
 # Configuração
-As configurações de inicialização da aplicação serão armazenadas em um arquivo texto no formato JSON.
+As configurações de inicialização da aplicação serão armazenadas em um arquivo texto no formato **JSON**.
 
 A aplicação irá utilizar o arquivo de configuração ***config.json*** existente no diretório ***configs*** ou através do parâmetro: `-config \<nome do arquivo de configuração>` informado na linha de comando.
 
