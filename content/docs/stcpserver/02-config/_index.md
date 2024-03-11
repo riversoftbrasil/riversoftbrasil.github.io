@@ -8,6 +8,7 @@ sidebar:
 weight: 2
 prev:
 next:
+slug: config
 ---
 # Como configurar o STCP OFTP Server
 
@@ -165,9 +166,9 @@ Tempo máximo de inatividade| Preencha este campo com o tempo máximo de inativi
 Nível de debug| Preencha este campo com o nível de detalhamento das informações que serão gravadas no arquivo de depuração. Para obter no mesmo arquivo de depuração a informação dos diferentes níveis, preencha este campo com a soma dos níveis desejados.
 
 Para cada tentativa de conexão será criado um novo arquivo de depuração no subdiretório **DEBUG** com a seguinte sintaxe:
-
-**ODTDEB.< Protocolo>.< Perfil>.YYYMMDDhhmmssnnn.**
-
+```
+ODTDEB.< Protocolo>.< Perfil>.YYYMMDDhhmmssnnn.
+```
 Protocolo | TCPIP, X25, SERIAL ou PAD Perfil Nome do perfil utilizado
 :---:     | :---:
 YYYY      | Ano
@@ -345,11 +346,11 @@ Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alt
 
 24. Clique no botão **Configurar** para acessar as opções de Logout.
 
-![](logout-usuarios.png)
+![](formularios-usuarios-http.png)
 
 25. Configure os seguintes campos.
 
-![](./imagem1/img29.png)
+![](logout-usuarios.png)
 
 Campos | Descrição
 :---   | :---
@@ -359,9 +360,11 @@ Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alt
 
 26. Clique no botão **Configurar** para acessar as opções de Listar Arquivos.
 
-![](listar-arquivos.png)
+![](formularios-usuarios-http.png)
 
 27. Configure os seguintes campos.
+
+![](listar-arquivos.png)
 
 Campos | Descrição
 :---   | :---
@@ -371,7 +374,7 @@ Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alt
 
 28. Clique no botão **Configurar** para acessar as opções de Download de Arquivos.
 
-![](download-de-arquivos.png)
+![](formularios-usuarios-http.png)
 
 29. Configure os seguintes campos.
 
@@ -385,7 +388,7 @@ Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alt
 
 30. Clique no botão **Configurar** para acessar as opções de Upload de Arquivos.
 
-![](./imagem1/img34.png)
+![](formularios-usuarios-http.png)
 
 31. Configure os seguintes campos.
 
@@ -399,7 +402,7 @@ Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alt
 
 32. Clique no botão **Configurar** para acessar as opções de Remover Arquivos.
 
-![](./imagem1/img36.png)
+![](formularios-usuarios-http.png)
 
 33. Configure os seguintes campos.
 
@@ -421,20 +424,22 @@ Máscara de arquivo| Através de expressão regular, esta opção serve para fil
 
 35. Se o protocolo selecionado foi **FTP – TCP/IP**, configure as seguintes opções na guia **TCP/IP**.
 
-![](./imagem1/img39.png)
+![](guia-ftp-usuario.png)
 
 Campos | Descrição
 :---   | :---
 Endereço IP| Preencha este campo com o endereço TCP/IP ou nome (DNS) do servidor STCP OFTP Server.
 Porta IP| Preencha este campo com a porta TCP/IP do servidor STCP OFTP Server. Obs.: A porta padrão do protocolo FTP é a 21.
-SSL3  | Configura a comunicação segura com criptografia e certificação digital, com a utilização da padronização definida na RFC2246 (TLS1/SSL3). O TLS1/SSL3 é comumente encontrado nos servidores de sites seguros (HTTPS) e oferece o maior grau de segurança atualmente disponível. /Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica.
+TLS  | Configura a comunicação segura com criptografia e certificação digital, com a utilização da padronização definida na RFC2246 (TLS1/SSL3). O TLS1/SSL3 é comumente encontrado nos servidores de sites seguros (HTTPS) e oferece o maior grau de segurança atualmente disponível. /Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica.
 AUTH TLS| Habilita o processo de autenticação criptografado, garantindo a segurança na troca de senha.
 AUTH SSL| Habilita o envio de um comando explícito para o servidor FTP a fim de utilizar a segurança SSL.
 Tamanho máximo do buffer| Preencha este campo com o tamanho máximo dos blocos de dados que serão transferidos. O intervalo válido é de 1 até 65535.
+FTP Passivo | XXXXXXXXXXXXXXXX.
+------------------
 
 36. Na guia **Proxy**, configure as seguintes opções:
 
-![](./imagem1/img40.png)
+![](ftp-proxy.png)
 
 Campos     | Descrição
 :---       | :---
@@ -446,9 +451,9 @@ Usuário    | Preencha este campo com o nome do usuário autorizado a utilizar o
 Senha      |  Preencha este campo com a senha do usuário autorizado a utilizar o serviço de Proxy.
 Confirmar  | Preencha este campo com a senha informada no campo Senha para validação.
 
-37. Na guia **SSL3**, configure as seguintes opções:
+37. Na guia **TLS**, configure as seguintes opções:
 
-![](./imagem1/img41.png)
+![](guia-tls-usuarios.png)
 
 Campos         | Descrição
 :---           | :---
@@ -462,7 +467,7 @@ Valor          | O valor deste campo está relacionado aos certificados digitais
 
 38. Na guia **Avançadas**, configure as seguintes opções:
 
-![](./imagem1/img42.png)
+![](guia-avancadas-ftp-usuarios.png)
 
 Campos | Descrição
 :---   | :---
@@ -479,7 +484,7 @@ Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alt
 
 39. Se o protocolo selecionado foi **SFTP – TCP/IP**, configure as seguintes opções na guia **TCP/IP**.
 
-![](./imagem1/img43.png)
+![](guia-sftp-usuario.png)
 
 Campos      | Descrição
 :---        | :---
@@ -490,7 +495,7 @@ Tamanho máximo do buffer| Preencha este campo com o tamanho máximo dos blocos 
 
 40. Na guia **Proxy**, configure as seguintes opções.
 
-![](./imagem1/img44.png)
+![](guia-proxy-sftp.png)
 
 Campos     | Descrição
 :---       | :---
@@ -502,9 +507,9 @@ Usuário    | Preencha este campo com o nome do usuário autorizado a utilizar o
 Senha      | Preencha este campo com a senha do usuário autorizado a utilizar o serviço de Proxy.
 Confirmar  | Preencha este campo com a senha informada no campo Senha para validação.
 
-41. Na guia **SSL3**, configure as seguintes opções.
+41. Na guia **TLS**, configure as seguintes opções.
 
-![](./imagem1/img45.png)
+![](tls-sftp.png)
 
 Campos   | Descrição
 :---     | :---
@@ -515,7 +520,7 @@ FingerPrint| Assinatura digital da chave privativa.
 
 42. Na guia **Avançadas**, configure as seguintes opções.
 
-![](./imagem1/img46.png)
+![](avancadas-sftp.png)
 
 Campos             | Descrição
 :---               | :---
@@ -528,7 +533,7 @@ Diretório remoto   | Configura o diretório remoto para onde se deseja subir o 
 Diretório temporário| Configura o diretório temporário, que garante a integridade dos arquivos durante o upload.
 Extensão temporária| Configura uma extensão temporária para arquivo no servidor remoto (SFTP).
 
-43. Na guia **HTTP**, configure as seguintes opções.
+<!-- 43. Na guia **HTTP**, configure as seguintes opções.
 
 ![](./imagem1/img47.png)
 
@@ -541,11 +546,11 @@ Userdata | Preencha este campo com os dados extras associados à identificação
 Modo de transferência| Esta opção permite selecionar o modo de transferência que será utilizado para comunicação com o servidor, são eles: Both (transmissão e recepção de arquivos), Sender (somente transmissão de arquivos) e Receiver (somente recepção de arquivos).
 Tamanho máximo do buffer| Preencha este campo com o tamanho máximo dos blocos de dados que serão transferidos. O intervalo válido é de 1 até 65535.
 Tempo máximo de inatividade| Preencha este campo com o tempo máximo de inatividade de comunicação entre o STCP OFTP Server e o computador remoto.
-Nível de Debug| Preencha este campo com o nível de detalhamento das informações que serão gravadas no arquivo de depuração. Para obter no mesmo arquivo de depuração a informação dos diferentes níveis, preencha este campo com a soma dos níveis desejados. /Obs.: Veja a tabela dos níveis de debug na configuração dos usuários.
+Nível de Debug| Preencha este campo com o nível de detalhamento das informações que serão gravadas no arquivo de depuração. Para obter no mesmo arquivo de depuração a informação dos diferentes níveis, preencha este campo com a soma dos níveis desejados. /Obs.: Veja a tabela dos níveis de debug na configuração dos usuários. -->
 
-44. Na guia **FTP**, configure as seguintes opções.
+43. Na guia **FTP**, configure as seguintes opções.
 
-![](./imagem1/img48.png)
+![](guia-ftp.png)
 
 Campos   | Descrição
 :---     | :---
@@ -558,9 +563,9 @@ Tamanho máximo do buffer| Preencha este campo com o tamanho máximo dos blocos 
 Tempo máximo de inatividade| Preencha este campo com o tempo máximo de inatividade de comunicação entre o STCP OFTP Server e o computador remoto.
 Nível de Debug| Preencha este campo com o nível de detalhamento das informações que serão gravadas no arquivo de depuração. Para obter no mesmo arquivo de depuração a informação dos diferentes níveis, preencha este campo com a soma dos níveis desejados. /Obs.: Veja a tabela dos níveis de debug na configuração dos usuários.
 
-45. Na guia **SFTP**, configure as seguintes opções.
+44. Na guia **SFTP**, configure as seguintes opções.
 
-![](./imagem1/img49.png)
+![](guia-sftp.png)
 
 Campos   | Descrição
 :---     | :---
@@ -573,9 +578,9 @@ Tamanho máximo do buffer| Preencha este campo com o tamanho máximo dos blocos 
 Tempo máximo de inatividade| Preencha este campo com o tempo máximo de inatividade de comunicação entre o STCP OFTP Server e o computador remoto.
 Nível de Debug| Preencha este campo com o nível de detalhamento das informações que serão gravadas no arquivo de depuração. Para obter no mesmo arquivo de depuração a informação dos diferentes níveis, preencha este campo com a soma dos níveis desejados. Obs.: Veja a tabela dos níveis de debug na configuração dos usuários.
 
-46. Na guia **Avançadas I**, configure as seguintes opções para o usuário.
+45. Na guia **Avançadas I**, configure as seguintes opções para o usuário.
 
-![](./imagem1/img51.png)
+![](avancadas-I.png)
 
 Campos              | Descrição
 :---                | :---
@@ -591,9 +596,9 @@ Término           | Término do intervalo do período de conexão.
 Dias da semana    | Informa os dias da semana em que a conexão poderá ocorrer.
 Padrão            | Restaura configuração padrão para o período de conexão.
 
-47. Na guia **Avançadas II**, configure as seguintes opções para o usuário.
+46. Na guia **Avançadas II**, configure as seguintes opções para o usuário.
 
-![](./imagem1/img42.png)
+![](avancadas-II.png)
 
 Campos | Descrição
 :---   | :---
@@ -610,14 +615,14 @@ Filtro de arquivos| Preencha este campo com uma expressão regular para validar 
 Tamanho máximo| Preencha este campo com o tamanho máximo que um arquivo pode ter para ser transferido.
 Criar referência de arquivo recebido| Esta opção controla a duplicidade de arquivo, criando uma referência do arquivo no diretório Restart.
 
-48. Na guia **Agendamento**, você poderá adicionar, remover, modificar ou copiar os parâmetros de configuração de um agendamento do serviço STCP OFTP Server.
-49. Clique em **Adicionar**.
+47. Na guia **Agendamento**, você poderá adicionar, remover, modificar ou copiar os parâmetros de configuração de um agendamento do serviço STCP OFTP Server.
+48. Clique em **Adicionar**.
 
-![](./imagem1/img53.png)
+![](agendamento.png)
 
-50. Na guia **Geral**, preencha os campos com as informações descritas abaixo.
+49. Na guia **Geral**, preencha os campos com as informações descritas abaixo.
 
-![](./imagem1/img54.png)
+![](agendamento-geral.png)
 
 Campos              | Descrição
 :---                | :---
@@ -642,7 +647,7 @@ Comando             | Preencha este campo com o nome da aplicação (executável
 
 51. Na guia **Avançadas**, configure o período do agendamento.
 
-![](./imagem1/img55.png)
+![](avancadas-agendamento.png)
 
 Campos         | Descrição
 :---           | :---
@@ -654,7 +659,7 @@ Pressione o botão **OK** para gravar as alterações ou **Cancelar** para retor
 
 52. Na guia **Avançadas**, preencha os campos com as informações descritas.
 
-![](./imagem1/img56.png)
+![](guia-avancadas.png)
 
 Campos            | Descrição
 :---              | :---
@@ -669,13 +674,13 @@ Máximo de tentativas| Número de tentativas de processar o arquivo.
 Controle de log   | As opções deste grupo controlam as propriedades de configuração dos Logs do sistema.
 Controle de autenticação| As opções deste grupo controlam o tipo de autenticação utilizado pelo STCP OFTP Server para validar um usuário. A autenticação está disponível pelo Sistema Operacional e a do STCP. /Obs.: Recomendamos a utilização da autenticação STCP.
 
-53. Em seguida, clique em **Controle de Log....**
+53. Em seguida, clique em **Controle de Log**
 
-![](./imagem1/img57.png)
+![](avancadas-controle-log.png)
 
 54. Na guia **Geral**, preencha os seguintes campos.
 
-![](./imagem1/img58.png)
+![](avancadas-controle-log-geral.png)
 
 Campos | Descrição
 :---   | :---
@@ -710,13 +715,13 @@ Nível do Evento | Descrição
 
 Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alterar as configurações.
 
-55. Clique em **Controle de Autenticação....**
+55. Clique em **Controle de Autenticação**
 
-![](./imagem1/img59.png)
+![](avancadas-controle-autenticacao.png)
 
 56. Na guia **Geral**, preencha os seguintes campos.
 
-![](./imagem1/img60.png)
+![](avancadas-controle-autenticacao-geral.png)
 
 Campos | Descrição
 :---   | :---
@@ -725,15 +730,18 @@ Tipo   | Tipos de autenticação suportados pelo STCP OFTP Server: SO(Windows), 
 
 57. Na guia **SO(Windows)**, preencha os seguintes campos.
 
-![](./imagem1/img61.png)
+![](avancadas-controle-autenticacao-sowindows.png)
+
 
 Campos  | Descrição
+:---   | :---
 Domínio | Domínio do sistema operacional.
 Prefixo |Prefixo para mascarar o usuário.
+-----
 
 58. Na guia **STCP**, habilite ou desabilite as seguintes opções.
 
-![](./imagem1/img62.png)
+![](avancadas-controle-autenticacao-stcp.png)
 
 Campos    | Descrição
 :---      | :---
@@ -749,15 +757,16 @@ Pelo menos um caractere especial| Esta opção assinalada força a criação de 
 
 59. Na guia **Securld/RSA**, preencha o seguinte campo.
 
-![](./imagem1/img63.png)
+![](avancadas-controle-autenticacao-rsa.png)
 
 Campos | Descrição
 :---   | ---
 Arquivo de configuração| Parâmetro que informa as configurações para autenticação Securld/RSA.
+------
 
 60. Na guia **LDAP**, preencha o seguinte campo.
 
-![](./imagem1/img64.png)
+![](avancadas-controle-autenticacao-ldap.png)
 
 Campos     | Descrição
 :---       | :---
@@ -772,13 +781,13 @@ Pressione o botão **OK** para gravar as configurações ou **Cancelar** para ab
 
 61. Na guia **Usuários**, selecione o usuário e clique em **Propriedades**.
 
-![](./imagem1/img65.png)
+![](usuarios-propriedades.png)
 
 Após adicionar corretamente o Usuário, é necessário configurar os **Tipos de Arquivos.  Obs.: Ao pressionar o botão OK, somente as configurações da guia Geral e Avançadas serão gravadas.**
 
 62. Na guia **Tipos de arquivos**, clique em **Adicionar**.
 
-![](./imagem1/img66.png)
+![](tipos-de-arquivos.png)
 
 A configuração de um **Tipo de Arquivo** possibilita alterar algumas características na transferência do arquivo, tais como: conversão do nome ou formato do arquivo, conversão da codificação dos dados, inicialização de uma aplicação ou bat, entre outras.
 
@@ -806,7 +815,7 @@ Default  | —   | —      | —     | —    | TXTTXT | Sim
 
 63. Informe o Nome do novo tipo de arquivo e clique em **OK**.
 
-![](./imagem1/img67.png)
+![](tipo-de-arquivo-nome.png)
 
 Campos | Descrição
 :---   | :---
@@ -814,7 +823,7 @@ Nome do novo tipo de arquivo| Preencha este campo com o nome desejado para o nov
 
 64. Na guia **Geral**, configure as seguintes opções.
 
-![](./imagem1/img68.png)
+![](tipo-de-arquivo-geral.png)
 
 Campos | Descrição
 :---   | :---
@@ -852,11 +861,13 @@ Pressione o botão **OK** para gravar as configurações ou **Cancelar** para ab
 
 A utilização do timestamp externo do arquivo tem o seguinte formato:
 
-**< nome do arquivo>.YYYYMMDDhhmmssnnn**
+```
+<nome do arquivo>.YYYYMMDDhhmmssnnn
+```
 
-< nome do arquivo>| Nome do arquivo sem caracteres especiais ou espaços.
+`<nome do arquivo>`| Nome do arquivo sem caracteres especiais ou espaços.
 :---              | :---
-***YYYY**         | Ano
+**YYYY**         | Ano
 **MM**            | Mês
 **DD**            | Dia
 **Hh**            | Hora
@@ -866,7 +877,7 @@ A utilização do timestamp externo do arquivo tem o seguinte formato:
 
 65. Na guia **Avançadas**, configure as seguintes opções para o tipo de arquivo.
 
-![](./imagem1/img69.png)
+![](tipo-de-arquivo-avancadas.png)
 
 Campos | Descrição
 :---   | :---
@@ -958,7 +969,10 @@ genrsa -out[unidade_disco][diretorio_instalação_stcp]\keys\[nome_da_chave].key
 ```
 
 Exemplo:
+
+```
 genrsa –out c:\stcpodt\keys\stcp_abcde.key 1024
+```
 
 ![](./imagem1/img75.png)
 
@@ -969,8 +983,10 @@ req –new –x509 –key [unidade_disco][diretório_instalação_stcp]\keys\[no
 ```
 
 Exemplo:
-req –new –x509 –key c:\stcpodt\keys\stcp_interprint.key –out c:\stcpodt\certs\stcp_abcde.cer –days 1825 –config ./openssl.cnf
 
+```
+req –new –x509 –key c:\stcpodt\keys\stcp_interprint.key –out c:\stcpodt\certs\stcp_abcde.cer –days 1825 –config ./openssl.cnf
+```
 4. Preencha as informações solicitadas para concluir o processo de geração do Certificado Digital:
 
 ![](./imagem1/img76.png)
