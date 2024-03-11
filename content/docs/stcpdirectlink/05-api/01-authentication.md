@@ -1,12 +1,15 @@
 ---
 linkTitle: Obter token OAuth2
 layout: docs
+cascade:
+  type: docs
 sidebar:
   exclude: false
 weight: 1
-prev: /05-api/
+prev: /05-api
 next: /login
-slug: authentication
+slug: token-oauth2
+draft: false
 ---
 
 ## Token de autorização

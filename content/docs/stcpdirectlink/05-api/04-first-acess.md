@@ -1,12 +1,15 @@
 ---
 linkTitle: Primeiro Acesso
 layout: docs
+cascade:
+  type: docs
 sidebar:
   exclude: false
 weight: 4
 prev: /logout
 next: /forgot-password
 slug: first-acess
+draft: false
 ---
 
 ## Primeiro Acesso

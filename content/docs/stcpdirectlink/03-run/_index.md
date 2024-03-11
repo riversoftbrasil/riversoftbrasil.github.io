@@ -1,11 +1,15 @@
 ---
 linkTitle: Como executar
 layout: docs
+cascade:
+  type: docs
 sidebar:
   exclude: false
 weight: 3
-# prev: /04-portal/
-# next: /
+prev: /docs/stcpdirectlink/02-configuration
+next: /docs/stcpdirectlink/04-portal/
+slug: como-executar
+draft: false
 ---
 ## Linha de comando
 

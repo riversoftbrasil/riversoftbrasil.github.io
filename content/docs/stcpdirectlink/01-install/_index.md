@@ -1,12 +1,14 @@
 ---
 linkTitle: Instalação
-title: Instalação
 layout: docs
+cascade:
+  type: docs
 sidebar:
   exclude: false
 weight: 1
-prev: /dirl/
-next: /dirl/01-install/requirements
+prev: /docs/stcpdirectlink/
+next: /docs/stcpdirectlink/01-install/requirements
+draft: false
 ---
 ## Distribuição dos pacotes para instalação
 

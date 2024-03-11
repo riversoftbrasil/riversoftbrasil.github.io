@@ -1,12 +1,15 @@
 ---
 linkTitle: Login
 layout: docs
+cascade:
+  type: docs
 sidebar:
   exclude: false
 weight: 2
-prev: /authentication
+prev: /01-authentication
 next: /logout
 slug: login
+draft: false
 ---
 
 ## Login

@@ -1,12 +1,15 @@
 ---
-linkTitle: Requisitos
+linkTitle: Requisitos instalação
 layout: docs
+cascade:
+  type: docs
 sidebar:
   exclude: false
 weight: 2
-prev: /dirl/01-install
+prev: /docs/stcpdirectlink/01-install
 next: /dirl/01-install/structure
-slug: requirements
+slug: requisitos-instalacao
+draft: false
 ---
 ## Requisitos para instalação
 

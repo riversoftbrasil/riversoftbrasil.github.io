@@ -6,10 +6,11 @@ cascade:
 sidebar:
   exclude: false
 weight: 3
-prev:
-next: /01-install/requirements/
+prev: /docs/
+next: /docs/stcpdirectlink/01-install
+# slug: stcpdirectlink
 ---
-# Introdução
+<!-- # Introdução -->
 
 ## O que é o STCP Directlink?
 
@@ -40,13 +41,13 @@ Entre alguns dos recursos disponíveis no STCP Directlink estão:
 - Utiliza TLS 1.2/1.3 para atender às necessidades de intercâmbio de informações de forma segura através da Internet.
 - Total suporte à utilização de certificados digitais.
 - Autenticidade, Confidencialidade, Integridade e Rastreabilidade na troca de arquivos, atendendo requisitos vigentes da **LGPD/GDPR**​.
-- Baseado na tecnologia de criptografia (Assimétrica e Simétrica).
+- Baseado na tecnologia de criptografia **(Assimétrica e Simétrica)**.
 - Garante a autenticidade (Algoritmos **RSA/DSA**).
 - Garante a confidencialidade (Algoritmos **AES/AES128/AES256**).
 - Garante a integridade (Algoritmos **SHA1/SHA256/SHA384**).
 - Políticas de segurança no controle de autenticação.
 - Restrições de **tamanho** e **tipo de arquivo**.
 - Auditoria e rastreabilidade.
-- Autenticação robusta (OAuth, JWT)
-- Suporte Single Sign-On (SSO)
+- Autenticação robusta **(OAuth, JWT)**
+- Suporte Single Sign-On **(SSO)**
 

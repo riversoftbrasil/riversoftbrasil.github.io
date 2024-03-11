@@ -1,11 +1,13 @@
 ---
 linkTitle: API Rest
 layout: docs
+cascade:
+  type: docs
 sidebar:
   exclude: false
 weight: 5
-# prev: /docs/getting-started
-# next: /docs/guide/organize-files
+prev: /04-portal
+next: /01-authentication
 slug: api-rest
 ---
 

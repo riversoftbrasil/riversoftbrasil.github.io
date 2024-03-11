@@ -1,12 +1,15 @@
 ---
 linkTitle: Esqueceu a senha
 layout: docs
+cascade:
+  type: docs
 sidebar:
   exclude: false
 weight: 5
 prev: /first-acess
 next: /change-password
-slug: forgot-password
+slug: recuperar-senha
+draft: false
 ---
 
 ## Esqueceu a senha

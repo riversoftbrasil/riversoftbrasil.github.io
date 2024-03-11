@@ -1,12 +1,15 @@
 ---
 linkTitle: Downloads de arquivos (usuário e backup)
 layout: docs
+cascade:
+  type: docs
 sidebar:
   exclude: false
 weight: 9
 prev: /list-backup-download
 next: /upload-multipart
-slug: download-de-arquivos
+slug: download-de-arquivos-usuario
+draft: false
 ---
 
 ## Download de arquivos

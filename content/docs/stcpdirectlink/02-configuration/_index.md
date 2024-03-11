@@ -1,11 +1,14 @@
 ---
 linkTitle: Configuração
 layout: docs
+cascade:
+  type: docs
 sidebar:
   exclude: false
 weight: 2
-prev: /dirl/install/structure
-next: /dirl/configuration/requirements
+prev: /docs/stcpdirectlink/01-install/
+next: /docs/stcpdirectlink/02-configuration/requirements
+# slug: configuracao
 ---
 # Configuração
 As configurações de inicialização da aplicação serão armazenadas em um arquivo texto no formato **JSON**.

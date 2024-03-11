@@ -1,11 +1,15 @@
 ---
 linkTitle: Arquivo de configuração
 layout: docs
+cascade:
+  type: docs
 sidebar:
   exclude: false
 weight: 2
-prev: /docs/stcpdirectlink/01-install/structure
-next: /docs/guide/organize-files
+prev: /docs/stcpdirectlink/02-configuration/requirements
+next: /docs/stcpdirectlink/03-run/
+slug: arquivo-configuracao
+draft: false
 ---
 
 ### Parâmetros de download

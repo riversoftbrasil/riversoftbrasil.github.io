@@ -4,7 +4,7 @@ layout: docs
 sidebar:
   exclude: false
 weight: 10
-prev: /download
+prev: /09-download
 next: /upload-json
 slug: upload-multipart
 ---

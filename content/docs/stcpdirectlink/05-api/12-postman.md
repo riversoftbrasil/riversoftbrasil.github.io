@@ -1,11 +1,15 @@
 ---
 linkTitle: Exemplos Postman
 layout: docs
+cascade:
+  type: docs
 sidebar:
   exclude: false
 weight: 13
-slug: exemplos-postman
 prev: /upload-json
+# next:
+slug: exemplos-postman
+draft: false
 ---
 
 ## Requisições de exemplo utilizando o Postman

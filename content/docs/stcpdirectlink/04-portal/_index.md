@@ -1,11 +1,15 @@
 ---
 linkTitle: Portal Web
 layout: docs
+cascade:
+  type: docs
 sidebar:
   exclude: false
 weight: 4
 prev: /03-run
-next: /upload
+next: /authentication
+# slug:
+draft: false
 ---
 
 ## Portal Web

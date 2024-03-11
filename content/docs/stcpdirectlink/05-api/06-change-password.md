@@ -1,12 +1,15 @@
 ---
 linkTitle: Alteração de senha
 layout: docs
+cascade:
+  type: docs
 sidebar:
   exclude: false
 weight: 6
 prev: /forgot-password
 next: /list-download
-slug: change-password
+slug: alterar-senha
+draft: false
 ---
 
 ## Alteração de senha

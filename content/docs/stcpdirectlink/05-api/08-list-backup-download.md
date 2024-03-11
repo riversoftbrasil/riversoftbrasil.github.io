@@ -1,12 +1,15 @@
 ---
 linkTitle: Lista de arquivos backup para download (basic e bearer)
 layout: docs
+cascade:
+  type: docs
 sidebar:
   exclude: false
 weight: 8
 prev: /list-download
 next: /download-de-arquivos
-slug: list-backup-download
+slug: lista-backup-download
+draft: false
 ---
 
 ## Lista de arquivos backup para download (basic)

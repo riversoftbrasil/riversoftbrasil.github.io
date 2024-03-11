@@ -1,11 +1,15 @@
 ---
 linkTitle: Receber arquivos
 layout: docs
+cascade:
+  type: docs
 sidebar:
   exclude: false
 weight: 3
 prev: /upload
-next: /05-api/
+next: /05-api
+slug: download-arquivos
+draft: false
 ---
 
 ## Download (Receber)

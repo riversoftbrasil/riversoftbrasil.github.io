@@ -1,11 +1,12 @@
 ---
-linkTitle: Requisitos
+linkTitle: Requisitos configuração
 layout: docs
 sidebar:
   exclude: false
 weight: 1
-prev: /docs/getting-started
+prev: /docs/stcpdirectlink/02-configuration/
 next: /docs/guide/organize-files
+slug: requisitos-configuracao
 ---
 ## Requisitos para configuração da aplicação
 

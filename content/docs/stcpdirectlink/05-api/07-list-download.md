@@ -1,12 +1,15 @@
 ---
 linkTitle: Lista de arquivos para download (basic e bearer)
 layout: docs
+cascade:
+  type: docs
 sidebar:
   exclude: false
 weight: 7
 prev: /change-password
 next: /list-backup-download
-slug: list-download
+slug: lista-arquivos-download
+draft: false
 ---
 
 ## Lista de arquivos para download (basic)

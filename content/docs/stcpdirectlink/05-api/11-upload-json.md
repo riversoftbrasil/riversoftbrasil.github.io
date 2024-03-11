@@ -1,13 +1,15 @@
 ---
 linkTitle: Upload de arquivo json (basic e bearer)
 layout: docs
+cascade:
+  type: docs
 sidebar:
   exclude: false
 weight: 11
 prev: /upload-multipart
 next: /postman
-slug: upload-json
-
+slug: upload-arquivo-json
+draft: false
 ---
 
 ## Upload de arquivo json (basic)

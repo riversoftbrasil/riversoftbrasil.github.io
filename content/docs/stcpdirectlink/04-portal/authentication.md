@@ -1,11 +1,15 @@
 ---
 linkTitle: Autenticação
 layout: docs
+cascade:
+  type: docs
 sidebar:
   exclude: false
 weight: 1
-prev: /03-run/
+prev: /docs/stcpdirectlink/04-portal/
 next: /upload/
+slug: autenticacao-portal
+draft: false
 ---
 
 ## Autenticação

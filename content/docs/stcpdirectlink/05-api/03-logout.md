@@ -1,12 +1,15 @@
 ---
 linkTitle: Logout (basic e bearer)
 layout: docs
+cascade:
+  type: docs
 sidebar:
   exclude: false
 weight: 3
 prev: /login
 next: /first-acess
 slug: logout
+draft: false
 ---
 
 ## Logout (basic)

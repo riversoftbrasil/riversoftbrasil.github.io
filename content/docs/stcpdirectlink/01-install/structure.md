@@ -1,11 +1,15 @@
 ---
 linkTitle: Estrutura de diretórios
 layout: docs
+cascade:
+  type: docs
 sidebar:
   exclude: false
 weight: 3
-prev: /dirl/install/requirements
-next: /dirl/configuration
+prev: /stcpdirectlink/01-install/requirements
+next: /docs/stcpdirectlink/02-configuration/
+slug: estrutura-diretorios
+draft: false
 ---
 
 ## Estrutura dos diretórios
