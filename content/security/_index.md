@@ -85,7 +85,7 @@ Estes são os passos realizados para a troca de chaves:
 
 O STCP OFTP Client possibilita a configuração do conjunto de algoritmos a serem utilizados para codificação na criptografia, assinatura digital e hash.
 
-![](seg-02.png "STCO OFTP Core")
+![](seg-02.png "STCP OFTP Core")
 
 O **STCP OFTP Client** tem uma arquitetura modular e possibilita a configuração de diferentes tipos de comunicação.
 
