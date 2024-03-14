@@ -43,7 +43,7 @@ Entre alguns dos recursos disponíveis no STCP Directlink estão:
 - Conector **AWS Simple Storage Service (S3)**
 - Conector **Microsoft Azure Blob Storage**
 - Conector Oracle Cloud Object Storage
-- [Google Cloud Storage](https://cloud.google.com/storage?hl=pt-BR)
+- [Google Cloud Storage](https://cloud.google.com/)
 - API para **download** e **upload** de arquivos
 - Link seguro para compartilhamento de arquivos
 - Portal Web para **upload** e **download** de arquivos
