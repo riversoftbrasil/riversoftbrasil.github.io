@@ -1,6 +1,5 @@
 ---
 linkTitle: Debug
-title: Habilitar ou Alterar o nível de Debug 
 layout: docs
 cascade:
   type: docs
@@ -8,9 +7,12 @@ sidebar:
   exclude: false
 weight: 2
 prev:
-next:
+next: 
 slug: nivel-de-debug
+draft: false
 ---
+# Habilitar ou Alterar o nível de Debug
+
 Em alguns casos, para se obter uma análise mais detalhada de problemas relacionados ao intercâmbio de arquivos, torna-se necessária a depuração dos processos de conexão e transferência, realizadas pelo STCP
 OFTP Client.
 

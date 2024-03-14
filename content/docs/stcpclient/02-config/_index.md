@@ -6,8 +6,8 @@ cascade:
 sidebar:
   exclude: false
 weight: 2
-prev:
-next:
+prev: /docs/stcpclient/01-install-clt/
+next: /docs/stcpclient/03-util/
 ---
 # Configuração
 

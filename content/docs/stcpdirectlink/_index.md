@@ -4,7 +4,7 @@ layout: docs
 cascade:
   type: docs
 sidebar:
-  exclude: false
+  exclude: true
 weight: 3
 prev: /docs/
 next: /docs/stcpdirectlink/01-install

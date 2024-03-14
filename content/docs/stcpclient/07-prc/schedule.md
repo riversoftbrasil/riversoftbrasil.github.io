@@ -9,6 +9,7 @@ weight: 3
 prev:
 next:
 slug: configurar-agendamento
+draft: false
 ---
 # Configurar um agendamento
 

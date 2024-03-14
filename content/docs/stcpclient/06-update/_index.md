@@ -6,8 +6,8 @@ cascade:
 sidebar:
   exclude: false
 weight: 6
-prev:
-next:
+prev: /docs/stcpclient/05-seg/
+next: /docs/stcpclient/07-prc/
 ---
 # Atualização de Versão
 

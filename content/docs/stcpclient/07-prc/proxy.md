@@ -6,9 +6,10 @@ cascade:
 sidebar:
   exclude: false
 weight: 1
-prev:
-next:
+prev: /docs/stcpclient/07-prc/
+next: /docs/stcpclient/07-prc/debug
 slug: configurar-servidor-proxy
+draft: false
 ---
 # Configurar um servidor proxy para conexão
 

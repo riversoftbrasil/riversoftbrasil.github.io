@@ -6,7 +6,7 @@ cascade:
 sidebar:
   exclude: false
 weight: 6
-prev: /docs
+prev: /database
 next: /security
 ---
 # Origem

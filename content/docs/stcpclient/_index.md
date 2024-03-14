@@ -6,8 +6,10 @@ cascade:
 sidebar:
   exclude: true
 weight: 1
-prev:
-next:
+prev: /docs
+next: /docs/stcpclient/01-install-clt/
+# slug:
+draft: false
 ---
 # Introdução
 

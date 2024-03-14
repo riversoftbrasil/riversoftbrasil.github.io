@@ -6,8 +6,8 @@ cascade:
 sidebar:
   exclude: false
 weight: 7
-prev:
-next:
+prev: /docs/stcpclient/06-update/
+next: /docs/stcpclient/07-prc/proxy
 ---
 
 {{< cards >}}

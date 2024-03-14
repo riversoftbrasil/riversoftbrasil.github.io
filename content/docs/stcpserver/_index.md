@@ -6,8 +6,9 @@ cascade:
 sidebar:
   exclude: true
 weight: 2
-prev:
-next:
+prev: /docs/stcpclient
+next: /01-install-srv
+# slug:
 ---
 # Introdução
 

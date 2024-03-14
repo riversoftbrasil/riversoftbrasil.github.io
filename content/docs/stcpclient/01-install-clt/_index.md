@@ -4,8 +4,8 @@ layout: docs
 sidebar:
   exclude: false
 weight: 1
-next:
-prev: 
+prev: /docs/stcpclient/
+next: /docs/stcpclient/02-config/
 ---
 # Distribuição do link para instalação
 

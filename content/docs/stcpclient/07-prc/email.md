@@ -9,6 +9,7 @@ weight: 4
 prev:
 next:
 slug: notificacao-email
+draft: false
 ---
 ## Objetivo
 

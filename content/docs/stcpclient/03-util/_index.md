@@ -6,8 +6,9 @@ cascade:
 sidebar:
   exclude: false
 weight: 3
-prev:
-next:
+prev: /docs/stcpclient/02-config/
+next: /docs/stcpclient/04-audit/
+# slug:
 ---
 # Utilização
 

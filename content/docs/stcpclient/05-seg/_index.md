@@ -6,8 +6,8 @@ cascade:
 sidebar:
   exclude: false
 weight: 5
-prev:
-next:
+prev: /docs/stcpclient/04-audit
+next: /docs/stcpclient/06-update
 ---
 ## Como é a segurança do STCP OFTP Client?
 

@@ -1,6 +1,5 @@
 ---
 linkTitle: Arquivos de Log
-title: Arquivos de Log da Aplicação
 layout: docs
 cascade:
   type: docs
@@ -8,8 +7,12 @@ sidebar:
   exclude: false
 weight: 5
 prev:
-next:
+next: /docs/stcpserver
+slug: arquivos-log
+draft: false
 ---
+# Arquivos de Log da Aplicação
+
 Os logs do STCP OFTP estão divididos em duas categorias:
 
 ## Logs do Sistema

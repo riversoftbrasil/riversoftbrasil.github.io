@@ -6,8 +6,8 @@ cascade:
 sidebar:
   exclude: false
 weight: 4
-prev:
-next:
+prev: /docs/stcpclient/03-util/
+next: /docs/stcpclient/05-seg/
 ---
 # Arquivo de auditoria
 
