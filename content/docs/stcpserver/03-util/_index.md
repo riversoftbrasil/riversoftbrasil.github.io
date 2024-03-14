@@ -6,8 +6,10 @@ cascade:
 sidebar:
   exclude: false
 weight: 3
-prev:
-next:
+prev: /docs/stcpserver/02-config
+next: /docs/stcpserver/04-prc
+# slug:
+draft: false
 ---
 # Como utilizar o STCP OFTP Server
 
@@ -47,4 +49,4 @@ Exemplo:
 ```shell
 C:/STCPODT/CTCPSVC.EXE C:/STCPCLT/CTCP.INI –noservice
 ```
-No exemplo acima, será executada o STCP OFTP Server como uma aplicação.
+No exemplo acima, o STCP OFTP Server será executado como uma **aplicação**.

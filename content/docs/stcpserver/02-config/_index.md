@@ -6,13 +6,15 @@ cascade:
 sidebar:
   exclude: false
 weight: 2
-prev:
-next:
+prev: /docs/stcpserver/01-install-srv
+next: /docs/stcpserver/03-util
 slug: config
+draft: false
 ---
-# Como configurar o STCP OFTP Server
+# Como configurar o STCP OFTP Server?
 
-O Programa de configuração do STCP OFTP Server foi instalado na pasta selecionada durante o processo de instalação e pode ser acessado através do menu **Iniciar**. Caso você não tenha alterado a pasta padrão execute os seguintes passos:
+O Programa de configuração do STCP OFTP Server foi instalado na pasta selecionada (Ex: C:\STCPODT) durante o processo de instalação e pode ser acessado através do menu **Iniciar**. Caso você não tenha alterado a pasta padrão execute os seguintes passos:
+
 1. No menu **Iniciar, Todos os Programas, selecione Riversoft STCP OFTP Server (Enterprise/Lite)**.
 2. Clique no programa **Riversoft STCP OFTP Server Config.**
 3. Na guia **Geral**, preencha os campos com as informações descritas abaixo.
@@ -34,7 +36,7 @@ Número de série| Preencha este campo com o número de série que está localiz
 Na guia **Redes**, você poderá adicionar, remover ou modificar os parâmetros das interfaces de redes controladas pelo serviço STCP OFTP Server.
 4. Clique em **Adicionar**.
 
-![](redes.png)
+![](guia-redes.png)
 
 O STCP OFTP Server permite a configuração de múltiplas interfaces de redes com o mesmo ou diferentes protocolos de comunicação (**TCP/IP, SSL3, X.25,  PAD, SERIAL etc.**).
 **Obs.: As configurações de Redes somente serão utilizadas para as conexões entrantes (inbound).**
@@ -920,7 +922,7 @@ Padrão                     | Restaura configuração padrão para o período de
 
 Pressionar o botão **OK** para gravar as configurações ou **Cancelar** para abandonar sem alterar as configurações.
 
-## Definição das variáveis internas do STCP OFTP Server
+## Variáveis internas do STCP OFTP Server
 
 As variáveis internas do STCP OFTP Server podem ser utilizadas como parâmetros para os comandos externos.
 
@@ -954,27 +956,27 @@ Executar comando para:| Valor padrão do parâmetro.
 **Agenda**            | Nome da agenda.
 **Eventos (LOG)**     | Linha com detalhes do evento.
 
-## Geração da chave privativa e certificado de autenticação SSL3
+## Geração da chave privativa e certificado de autenticação TLS
 
 Os seguintes procedimentos devem ser executados para a geração da chave privativa e do certificado digital a serem utilizados na comunicação SSL3.
 
 1. No prompt de comando, execute a aplicação openssl.exe (Ex.: C:\STCPODT\Program\openssl.exe) para iniciar o processo de geração do par de chaves assimétricas (privada/pública).
 
-![](./imagem1/img74.png)
+<!-- ![](./imagem1/img74.png) -->
 
 2. Utilize o comando abaixo para gerar a chave privativa que será utilizada para criptografia da conexão.
 
-```ini
+```bash
 genrsa -out[unidade_disco][diretorio_instalação_stcp]\keys\[nome_da_chave].key 1024
 ```
 
 Exemplo:
 
-```
+```bash
 genrsa –out c:\stcpodt\keys\stcp_abcde.key 1024
 ```
 
-![](./imagem1/img75.png)
+<!-- ![](./imagem1/img75.png) -->
 
 3. O próximo passo é gerar o Certificado Digital associado à chave gerada anteriormente. Para isso, utilize o comando abaixo.
 
@@ -987,32 +989,144 @@ Exemplo:
 ```
 req –new –x509 –key c:\stcpodt\keys\stcp_interprint.key –out c:\stcpodt\certs\stcp_abcde.cer –days 1825 –config ./openssl.cnf
 ```
-4. Preencha as informações solicitadas para concluir o processo de geração do Certificado Digital:
+4. Preencha as informações solicitadas para concluir o processo de geração do Certificado Digital.
 
-![](./imagem1/img76.png)
+<!-- ![](./imagem1/img76.png) -->
 
-## Configuração da interface de transferência do STCP OFTP Server Enterprise / Lite para comunicação SSL3
+## Configuração para comunicação TLS
 
 1. Para acessar o configurador do STCP OFTP Server Enterprise/Lite, clique em **Iniciar** e depois, em **Riversoft STCP OFTP Server Config**.
 2. Acesse a guia **Redes** para adicionar as interfaces que ficarão disponíveis para o serviço de transferência e adicione uma interface do serviço de transferência.
 
-![](./imagem1/img77.png)
+![](guia-redes.png)
 
-3. Clique em **Adicionar** e selecione o protocolo OFTP – TCP/IP.
+3. Clique em **Adicionar** e selecione o protocolo **OFTP – TCP/IP**.
 4. Clique em **OK** para entrar nas configurações.
 
-![](./imagem1/img78.png)
+![](protocolo-oftp.png)
 
 5. Clique na guia **TCP/IP** e configure os parâmetros apresentados.
 
-![](./imagem1/img79.png)
+![](tcp-ip-redes.png)
 
-6. Clique na guia **SSL3 (Openssl)**, configure os parâmetros apresentados abaixo e pressione o botão **OK** para finalizar.
+6. Clique na guia **TLS**, configure os parâmetros apresentados abaixo e pressione o botão **OK** para finalizar.
 
-![](./imagem1/img80.png)
+![](redes-guia-tls.png)
 
 ## Estrutura dos diretórios
 
-O STCP OFTP Server, após a sua instalação e configuração, irá criar a seguinte árvore de diretórios onde serão armazenadas as informações de configuração, logs e controle.
+Após a instalação e configuração da aplicação, irá criar a seguinte árvore de diretórios onde serão armazenadas as informações de configuração, logs e controle.
 
-![](./imagem1/img81.png)
+{{< filetree/container >}}
+  {{< filetree/folder name="STCPODT" >}}
+
+    {{< filetree/folder name="`<USUÁRIO>`" state="closed" >}}
+      {{< filetree/folder name="CONTROLE" state="closed" >}}
+      {{< /filetree/folder >}}
+
+      {{< filetree/folder name="ENTRADA" state="closed" >}}
+        {{< filetree/folder name="RESTART" state="closed" >}}
+        {{< /filetree/folder >}}
+      {{< /filetree/folder >}}
+
+      {{< filetree/folder name="FORMATO" state="closed" >}}
+        {{< filetree/file name="default" >}}
+      {{< /filetree/folder >}}
+
+      {{< filetree/folder name="LOG" state="closed" >}}
+      {{< /filetree/folder >}}
+
+      {{< filetree/folder name="SAIDA" state="closed" >}}
+        {{< filetree/folder name="BACKUP" state="closed" >}}
+        {{< /filetree/folder >}}
+
+        {{< filetree/folder name="PENDENTE" state="closed" >}}
+        {{< /filetree/folder >}}
+      {{< /filetree/folder >}}
+
+      {{< filetree/folder name="TEMP" state="closed" >}}
+      {{< /filetree/folder >}}
+
+
+    {{< /filetree/folder >}}
+
+    {{< filetree/folder name="Certs" state="closed" >}}
+    {{< /filetree/folder >}}
+
+    {{< filetree/folder name="Debug" state="closed" >}}
+    {{< /filetree/folder >}}
+
+    {{< filetree/folder name="Keys" state="closed" >}}
+    {{< /filetree/folder >}}
+
+    {{< filetree/folder name="Samples" state="closed" >}}
+      {{< filetree/file name="LicencaSTCP.rtf" >}}
+    {{< /filetree/folder >}}
+
+    {{< filetree/folder name="Trastab" state="closed" >}}
+      {{< filetree/file name="ANSI2E.TAB" >}}
+      {{< filetree/file name="ASC2EBC.TAB" >}}
+      {{< filetree/file name="E2ANSI.TAB" >}}
+      {{< filetree/file name="EBC2ASC.TAB" >}}
+      {{< filetree/file name="ODTA2E.TAB" >}}
+      {{< filetree/file name="ODTE2A.TAB" >}}
+      {{< filetree/file name="STDA2E.TAB" >}}
+      {{< filetree/file name="STDE2E.TAB" >}}
+    {{< /filetree/folder >}}
+
+    {{< filetree/folder name="Program" state="closed" >}}
+      {{< filetree/file name="Riversoft STCP OFTP Server Console" >}}
+      {{< filetree/file name="Riversoft STCP OFTP Log Viewer (Text)" >}}
+      {{< filetree/file name="Riversoft STCP OFTP Rename Config" >}}
+      {{< filetree/file name="Riversoft STCP OFTP Server Manager" >}}
+      {{< filetree/file name="Riversoft STCP OFTP Updater" >}}
+      {{< filetree/file name="Riversoft STCP OFTP Server Config" >}}
+      {{< filetree/file name="apitcp.dll" >}}
+      {{< filetree/file name="apiossl.dll" >}}
+      {{< filetree/file name="netlink.dll" >}}
+      {{< filetree/file name="STCPUpdClt_x64.exe" >}}
+      {{< filetree/file name="STCPUpdClt_x86.exe" >}}
+      {{< filetree/file name="STCPUbbCad.exe" >}}
+      {{< filetree/file name="stcpsigner.exe" >}}
+      {{< filetree/file name="STCPRenCfg.exe" >}}
+      {{< filetree/file name="stcpren_3_2.exe" >}}
+      {{< filetree/file name="stcppswd.exe" >}}
+      {{< filetree/file name="stcpmon.exe" >}}
+      {{< filetree/file name="STCPConfigurationManager.exe" >}}
+      {{< filetree/file name="STCPLogViewer.exe" >}}
+      {{< filetree/file name="stcplogagent.exe" >}}
+      {{< filetree/file name="STCPFileConv.exe" >}}
+      {{< filetree/file name="STCPFileConcat.exe" >}}
+      {{< filetree/file name="ctcpsvc.exe" >}}
+      {{< filetree/file name="STCPConsole.exe" >}}
+      {{< filetree/file name="stcpchangeparam.exe" >}}
+      {{< filetree/file name="StcpCfg.exe" >}}
+      {{< filetree/file name="stcplogodbcv2.dll" >}}
+      {{< filetree/file name="stcplogtxt.dll" >}}
+      {{< filetree/file name="stcplogodbc.dll" >}}
+      {{< filetree/file name="stcpauthwin.dll" >}}
+      {{< filetree/file name="stcptokenhash.dll" >}}
+      {{< filetree/file name="openssl.cnf" >}}
+      {{< filetree/file name="openssl.exe" >}}
+      {{< filetree/file name="stcpemail.vbs" >}}
+      {{< filetree/file name="STCPEMAILEVT.VBS" >}}
+      {{< filetree/file name="STCPUpdClt_x64.lib" >}}
+      {{< filetree/file name="STCPUpdClt_x86.lib" >}}
+    {{< /filetree/folder >}}
+
+    {{< filetree/folder name="Log" state="closed" >}}
+    {{< /filetree/folder >}}
+
+    {{< filetree/folder name="Temp" state="closed" >}}
+    {{< /filetree/folder >}}
+
+    {{< filetree/file name="stcpconsole.ini" >}}
+    {{< filetree/file name="stcprenfiles.ini" >}}
+    {{< filetree/file name="`<USER>`.ini" >}}
+    {{< filetree/file name="CTCPSCHED.ini" >}}
+    {{< filetree/file name="CTCP.ini" >}}
+
+  {{< /filetree/folder >}}
+
+{{< /filetree/container >}}
+

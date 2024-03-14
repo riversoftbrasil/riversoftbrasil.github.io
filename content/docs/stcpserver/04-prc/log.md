@@ -1,7 +1,15 @@
 ---
 linkTitle: Arquivos de log
-slug: arquivos-log
+layout: docs
+cascade:
+  type: docs
+sidebar:
+  exclude: false
 weight: 2
+prev: /docs/stcpserver/04-prc
+next:
+slug: arquivos-log
+draft: false
 ---
 # Arquivos de log
 

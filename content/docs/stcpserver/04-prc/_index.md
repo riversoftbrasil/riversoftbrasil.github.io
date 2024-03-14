@@ -6,8 +6,9 @@ cascade:
 sidebar:
   exclude: false
 weight: 4
-prev:
-next:
+prev: /docs/stcpserver/03-util
+next: /docs/stcpserver/04-prc/log
+slug: procedimentos
 ---
 {{< cards >}}
   {{< card link="certificado-ca" title="Certificado CA" icon="lock-closed" >}}

@@ -1,7 +1,15 @@
 ---
 linkTitle: Atualização de versão
-slug: atualizacao
-weight: 3
+layout: docs
+cascade:
+  type: docs
+sidebar:
+  exclude: false
+weight: 2
+prev:
+next:
+slug: atualizacao-stcpserver
+draft: false
 ---
 # Atualização de versão
 

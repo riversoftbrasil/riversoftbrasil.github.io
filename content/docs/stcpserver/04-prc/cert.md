@@ -1,6 +1,15 @@
 ---
 linkTitle: Certificado Digital
+layout: docs
+cascade:
+  type: docs
+sidebar:
+  exclude: false
+weight: 3
+prev:
+next:
 slug: certificado-ca
+draft: false
 ---
 ## Configuração para uso de certificado digital emitido por uma autoridade certificadora (CA)
 

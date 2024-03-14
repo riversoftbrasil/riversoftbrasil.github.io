@@ -6,8 +6,10 @@ cascade:
 sidebar:
   exclude: false
 weight: 1
-prev:
-next:
+prev: /docs/stcpserver
+next: /docs/stcpserver/02-config
+# slug:
+draft: false
 ---
 ## Como instalar o STCP OFTP Server
 
