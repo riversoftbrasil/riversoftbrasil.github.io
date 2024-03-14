@@ -10,7 +10,7 @@ slug: requisitos-configuracao
 ---
 ## Requisitos para configuração da aplicação
 
-- Editor de texto
+- Editor de texto (Ex: [VSCode](https://code.visualstudio.com/), [Notepad++](https://notepad-plus-plus.org/downloads/))
 - Informações do relay de email
 - Informações da interface de rede
 - Informações do banco de dados

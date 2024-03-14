@@ -4,7 +4,7 @@ layout: docs
 cascade:
   type: docs
 sidebar:
-  exclude: true
+  exclude: false
 weight: 3
 prev: /docs/
 next: /docs/stcpdirectlink/01-install
@@ -24,22 +24,34 @@ O STCP Directlink é uma aplicação que, ao ser integrada aos produtos STCP OFT
 
 Todo o processo de transferência, através do STCP Directlink, pode ser totalmente rastreado, com as informações de usuário, data e hora em que os eventos ocorreram, filtro de arquivos, filtro de horário, roteamento e muito mais.
 
+Com o Riversoft® STCPDirectLink é possível realizar o **upload** de um arquivo e **notificar através de email ou sms (celular)** um contato para receber o **link seguro** para download.
+
+{{< callout type="info" >}}
+  O **link seguro** para **download** identifica qual a **conta de email** ou **número do celular** está vinculado ao arquivo e só permite o **download** com a utilização de um **código de segurança**.
+{{< /callout >}}
+
+{{< callout type="" >}}
+O código de segurança é encaminhado somente para o **email** ou **celular** vinculado ao arquivo e tem um **tempo de vida**.
+{{< /callout >}}
+
+Para possibilitar a integração de forma ágil, o STCP DirectLink disponibiliza uma [API](/docs/stcpdirectlink/05-api/) (Application Program Interface) no padrão [RestFull](https://restfulapi.net/) através do protocolo **https**.
+
 ## Recursos
 Entre alguns dos recursos disponíveis no STCP Directlink estão:
 
 - SFTP Server
-- Conector AWS Simple Storage Service (S3)
-- Conector Microsoft Azure Blob Storage
+- Conector **AWS Simple Storage Service (S3)**
+- Conector **Microsoft Azure Blob Storage**
 - Conector Oracle Cloud Object Storage
-- Google Cloud Storage
+- [Google Cloud Storage](https://cloud.google.com/storage?hl=pt-BR)
 - API para **download** e **upload** de arquivos
 - Link seguro para compartilhamento de arquivos
 - Portal Web para **upload** e **download** de arquivos
 
 ## Segurança e conformidade
 
-- Utiliza TLS 1.2/1.3 para atender às necessidades de intercâmbio de informações de forma segura através da Internet.
-- Total suporte à utilização de certificados digitais.
+- Utiliza **TLS 1.2/1.3** para atender às necessidades de intercâmbio de informações de forma segura através da Internet.
+- Total suporte à utilização de **certificados digitais**.
 - Autenticidade, Confidencialidade, Integridade e Rastreabilidade na troca de arquivos, atendendo requisitos vigentes da **LGPD/GDPR**​.
 - Baseado na tecnologia de criptografia **(Assimétrica e Simétrica)**.
 - Garante a autenticidade (Algoritmos **RSA/DSA**).
