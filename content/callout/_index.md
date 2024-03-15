@@ -1,8 +1,16 @@
 ---
 linkTitle: Em breve
-title: "Aguarde: em breve, toda a informação que você precisa!"
+layout: docs
+cascade:
+  type: docs
+sidebar:
+  exclude: true
+# weight:
+prev: /docs
+# next:
+# slug: em-breve
 ---
-
+# Aguarde: em breve, toda a informação que você precisa!
 Estamos trabalhando para ajudá-lo a aproveitar ao máximo nossa plataforma!
 
 <br>
