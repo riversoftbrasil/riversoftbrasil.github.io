@@ -18,5 +18,4 @@ lastmod: 2024-03-14
   {{< card link="notificacao-email" title="Notificação por e-mail" icon="mail" >}}
   {{< card link="configurar-servidor-proxy" title="Servidor Proxy para conexão" icon="server" >}}
   {{< card link="nivel-de-debug" title="Habilitar ou alterar nível de Debug" icon="eye" >}}
-  {{< card link="arquivos-log" title="Arquivos de Log" icon="clock" >}}
 {{< /cards >}}

@@ -6,11 +6,11 @@ cascade:
   type: docs
 sidebar:
   exclude: false
-prev: /docs
+prev: /odette
 next: /events
 slug: seguranca-stcp
 draft: false
-# lastmod: 
+# lastmod:
 ---
 <!-- # Segurança -->
 ## Como é a segurança do STCP?

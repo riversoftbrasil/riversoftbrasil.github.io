@@ -7,11 +7,11 @@ cascade:
 sidebar:
   exclude: false
 weight: 5
-next: /security
-prev: /docs
+prev: /security
+next: /where
 slug:
 draft: false
-# lastmod: 
+# lastmod:
 ---
 ## Códigos de eventos gerados no arquivo de mensagens
 

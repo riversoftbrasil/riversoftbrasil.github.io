@@ -15,30 +15,12 @@ lastmod: 2024-02-26
 
 O STCP OFTP Server é um servidor de transferência de arquivos seguro e multiprotocolo para aplicações de e-business e troca de informações corporativas, baseado na especificação [OFTP (ODETTE File Transfer Protocol)](/odette).
 
-### Onde usar?
+## Onde usar, e quais vantagens?
 
-O STCP OFTP Server pode ser utilizado por diferentes aplicações para:
+Saiba onde utilizar a aplicação e quais as suas vantagens na seção <a href="/utils" target="_blank">uso e vantagens do STCP</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;
 
-* Integração com parceiros para transferência de informações
-* Integração de sistemas através de transferência de arquivos
-* Integração com bancos para transferência de cobrança, pagamento, extratos e outros
-* Integração com montadoras para transferência de ordens de embarque e produção
-* Integração com associações comerciais para transferência de lista negra
-* Integração com atacadistas para transferência de pedidos de compras
-* Integração com VANS (Embratel, Proceda, Interchange e outras)
-* Outras aplicações
+## Características
 
-### Quais as vantagens?
-
-O STCP OFTP Server oferece as seguintes vantagens:
-
-* Facilidade de integração com as aplicações existentes
-* Automatização do processo de envio/recepção de arquivos
-* Execução através de agendamento
-* Aumento da segurança no transporte dos arquivos
-* Compatibilidade com outros produtos que seguem a especificação OFTP (RFC2204)
-
-### Características
 O STCP OFTP Server oferece as seguintes características:
 
 * Protocolo de transferência OFTP (ODETTE File Transfer Protocol)
@@ -55,8 +37,11 @@ O STCP OFTP Server oferece as seguintes características:
 * Número ilimitado de usuários (Versão Enterprise) ou até 10 (dez) usuários (Versão Lite)
 * Versões Windows NT/2000/2003/XP
 
-### Requisitos de software e hardware
-O STCP OFTP Server necessita dos seguintes requisitos de software e hardware para a sua instalação:
+## Requisitos de software e hardware
+
+Confira os requisitos de software e hardware da aplicação na seção <a href="/requirements" target="_blank">Requisitos</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;.
+
+<!-- O STCP OFTP Server necessita dos seguintes requisitos de software e hardware para a sua instalação:
 
 * Processador 500MHz x86 ou x64 ou superior
 * 1 Gb ou superior de memória RAM
@@ -73,5 +58,5 @@ O STCP OFTP Server necessita dos seguintes requisitos de software e hardware par
 
 {{< callout type="info" >}}
 **Opcional
-{{< /callout >}}
+{{< /callout >}} -->
 

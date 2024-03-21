@@ -49,8 +49,10 @@ Tudo o que você precisa saber para sua jornada nas soluções Riversoft.
 {{< cards >}}
   {{< card link="/database" title="Banco de dados" icon="database" >}}
   {{< card link="/odette" title="Protcolo OFTP" icon="lock-closed" >}}
-  {{< card link="/security" title="Segurança" icon="lock-closed" >}}
+  {{< card link="/security" title="Segurança" icon="shield-check" >}}
   {{< card link="/events" title="Códigos de Erros e Eventos" icon="x-circle" >}}
+  {{< card link="/utils" title="Uso e vantagens do STCP" icon="question-mark-circle" >}}
+  {{< card link="/requirements" title="Requisitos de Software e Hardware" icon="queue-list" >}}
 {{< /cards >}}
 
 
