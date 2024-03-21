@@ -10,6 +10,8 @@ sidebar:
 weight: 1
 prev:
 next: /dirl/install
+# draft: false
+lastmod: 2024-03-05
 ---
 
 Tudo o que você precisa saber para sua jornada nas soluções Riversoft.

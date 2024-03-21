@@ -1,11 +1,17 @@
 ---
 linkTitle: STCP Rename
+title: Introdução
 layout: docs
+toc: true
+cascade:
+  type: docs
 sidebar:
-  exclude: true
+  exclude: false
 weight: 7
 prev:
 next:
+draft: false
+lastmod: 2024-02-28
 ---
 ## Introdução
 

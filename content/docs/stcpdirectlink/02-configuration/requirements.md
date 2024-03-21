@@ -1,12 +1,17 @@
 ---
 linkTitle: Requisitos configuração
 layout: docs
+toc: true
+cascade:
+  type: docs
 sidebar:
   exclude: false
 weight: 1
 prev: /docs/stcpdirectlink/02-configuration/
 next: /docs/guide/organize-files
 slug: requisitos-configuracao
+draft: false
+lastmod: 2024-02-23
 ---
 ## Requisitos para configuração da aplicação
 

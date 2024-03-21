@@ -1,6 +1,7 @@
 ---
 linkTitle: Arquivos de Log
 layout: docs
+toc: true
 cascade:
   type: docs
 sidebar:
@@ -10,6 +11,7 @@ prev:
 next: /docs/stcpserver
 slug: arquivos-log
 draft: false
+# lastmod:
 ---
 # Arquivos de Log da Aplicação
 

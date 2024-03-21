@@ -1,11 +1,15 @@
 ---
 linkTitle: Execução
 layout: docs
+cascade:
+  type: docs
 sidebar:
   exclude: false
 weight: 4
 prev:
 next:
+draft: false
+lastmod: 2024-02-28
 ---
 ## Como executar o STCPSigner
 

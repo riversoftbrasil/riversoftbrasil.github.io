@@ -1,6 +1,7 @@
 ---
 linkTitle: Arquivo de configuração
 layout: docs
+toc: true
 cascade:
   type: docs
 sidebar:
@@ -10,6 +11,7 @@ prev: /docs/stcpdirectlink/02-configuration/requirements
 next: /docs/stcpdirectlink/03-run/
 slug: arquivo-configuracao
 draft: false
+lastmod: 2024-01-26
 ---
 
 ### Parâmetros de download

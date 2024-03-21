@@ -1,6 +1,7 @@
 ---
 linkTitle: Instalação
 layout: docs
+toc: true
 cascade:
   type: docs
 sidebar:
@@ -9,6 +10,7 @@ weight: 1
 prev: /docs/stcpdirectlink/
 next: /docs/stcpdirectlink/01-install/requirements
 draft: false
+lastmod: 2024-03-14
 ---
 ## Distribuição dos pacotes para instalação
 

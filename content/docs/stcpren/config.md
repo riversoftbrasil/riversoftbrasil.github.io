@@ -1,13 +1,20 @@
 ---
 linkTitle: Configuração
+title: Configuração
 layout: docs
+toc: true
+cascade:
+  type: docs
 sidebar:
   exclude: false
 weight: 3
 prev:
 next:
+draft: false
+slug: config
+lastmod: 2024-02-28
 ---
-## Configuração
+<!-- # Configuração -->
 
 A configuração das regras de validação do nome de arquivo e as ações executadas pelo STCPRen podem ser criadas com o auxílio do programa STCPRenCfg.EXE ou de um editor de texto, por exemplo, “NOTEPAD.EXE”.
 

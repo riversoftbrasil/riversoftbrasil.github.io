@@ -1,6 +1,7 @@
 ---
 linkTitle: Mensagens e códigos de erros
 layout: docs
+toc: true
 cascade:
   type: docs
 sidebar:
@@ -8,6 +9,9 @@ sidebar:
 weight: 5
 next: /security
 prev: /docs
+slug:
+draft: false
+# lastmod: 
 ---
 ## Códigos de eventos gerados no arquivo de mensagens
 

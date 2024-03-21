@@ -1,6 +1,7 @@
 ---
 linkTitle: Protocolo OFTP
 layout: docs
+toc: false
 cascade:
   type: docs
 sidebar:
@@ -8,6 +9,9 @@ sidebar:
 weight: 6
 prev: /database
 next: /security
+slug: protocolo-oftp
+draft: false
+# lastmod: 
 ---
 # Origem
 

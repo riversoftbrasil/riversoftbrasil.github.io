@@ -1,6 +1,7 @@
 ---
 linkTitle: Arquivo de auditoria
 layout: docs
+toc: true
 cascade:
   type: docs
 sidebar:
@@ -8,10 +9,14 @@ sidebar:
 weight: 4
 prev: /docs/stcpclient/03-util/
 next: /docs/stcpclient/05-seg/
+draft: false
+lastmod: 2024-03-14
 ---
-# Arquivo de auditoria
+## Registro de Sessões e Transferências
 
-O STCP OFTP Client gera um arquivo diário de auditoria contendo as informações correspondentes ao início e final da sessão, início e final da transferência. Através destes arquivos é possível criar relatórios e estatísticas de utilização do serviço.
+O STCP OFTP Client gera um arquivo diário de auditoria contendo as informações correspondentes ao início e final da sessão, início e final da transferência.
+
+Através destes arquivos é possível criar **relatórios** e **estatísticas** de utilização do serviço.
 
 O arquivo de auditoria é armazenado no subdiretório de controle **LOG** com a seguinte nomenclatura: **YYYYMMDD.log.txt**, cada linha do arquivo é um registro de formato fixo, contendo as informações descritas a seguir:
 

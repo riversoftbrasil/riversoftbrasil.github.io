@@ -1,6 +1,7 @@
 ---
 linkTitle: Configurar servidor Proxy
 layout: docs
+toc: true
 cascade:
   type: docs
 sidebar:
@@ -10,6 +11,7 @@ prev: /docs/stcpclient/07-prc/
 next: /docs/stcpclient/07-prc/debug
 slug: configurar-servidor-proxy
 draft: false
+# lastmod: 
 ---
 # Configurar um servidor proxy para conexão
 

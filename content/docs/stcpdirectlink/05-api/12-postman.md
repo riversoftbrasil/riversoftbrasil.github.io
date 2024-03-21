@@ -10,6 +10,7 @@ prev: /upload-json
 # next:
 slug: exemplos-postman
 draft: false
+lastmod: 2024-02-23
 ---
 
 ## Requisições de exemplo utilizando o Postman

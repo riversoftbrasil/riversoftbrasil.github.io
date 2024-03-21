@@ -1,15 +1,17 @@
 ---
 linkTitle: STCP OFTP Client
+toc: true
 layout: docs
 cascade:
   type: docs
 sidebar:
-  exclude: true
+  exclude: false
 weight: 1
 prev: /docs
 next: /docs/stcpclient/01-install-clt/
 # slug:
 draft: false
+lastmod: 2024-02-26
 ---
 # Introdução
 

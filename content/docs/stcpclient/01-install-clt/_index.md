@@ -1,13 +1,18 @@
 ---
 linkTitle: Instalação
 layout: docs
+toc: true
+cascade:
+  type: docs
 sidebar:
   exclude: false
 weight: 1
 prev: /docs/stcpclient/
 next: /docs/stcpclient/02-config/
+draft: false
+lastmod: 2024-03-14
 ---
-# Distribuição do link para instalação
+## Distribuição do link para instalação
 
 O STCP OFTP Client é distribuído através de um link para download que contém o programa **SETUP.EXE**. Os seguintes passos devem ser executados para iniciar o processo de instalação:
 

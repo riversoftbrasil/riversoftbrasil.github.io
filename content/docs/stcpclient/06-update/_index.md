@@ -1,6 +1,8 @@
 ---
 linkTitle: Atualização
+# title: Atualização de Versão
 layout: docs
+toc: true
 cascade:
   type: docs
 sidebar:
@@ -8,8 +10,10 @@ sidebar:
 weight: 6
 prev: /docs/stcpclient/05-seg/
 next: /docs/stcpclient/07-prc/
+draft: false
+lastmod: 2024-03-14
 ---
-# Atualização de Versão
+## Atualização de Versão
 
 Ao atualizar o STCP OFTP Client, para que não seja necessária a reconfiguração da aplicação e dos perfis já existentes, deverá ser feito um backup do arquivo de configuração da aplicação **CTCP.INI**, dos diretórios dos perfis (Ex.: **O0055RIVERSOFT**) e dos arquivos de configuração dos perfis (Ex.: **O0055RIVERSOFT.INI**) presentes no diretório de instalação da aplicação (Ex.: **C:\STCPCLT**).
 

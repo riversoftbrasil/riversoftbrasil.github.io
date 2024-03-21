@@ -4,11 +4,12 @@ layout: docs
 cascade:
   type: docs
 sidebar:
-  exclude: true
+  exclude: false
 weight: 2
 prev: /docs/stcpclient
 next: /01-install-srv
 # slug:
+lastmod: 2024-02-26
 ---
 # Introdução
 

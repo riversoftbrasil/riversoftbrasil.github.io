@@ -1,11 +1,17 @@
 ---
 linkTitle: Códigos e eventos
 layout: docs
+toc: true
+cascade:
+  type: docs
 sidebar:
   exclude: false
 weight: 5
 prev:
 next:
+slug: msgs-stcpren
+draft: false
+# lastmod: 
 ---
 ## Códigos de Eventos
 

@@ -10,6 +10,7 @@ prev: /docs/stcpserver
 next: /docs/stcpserver/02-config
 # slug:
 draft: false
+lastmod: 2024-03-05
 ---
 ## Como instalar o STCP OFTP Server
 

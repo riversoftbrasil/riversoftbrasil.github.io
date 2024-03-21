@@ -10,6 +10,7 @@ prev: /authentication/
 next: /download
 slug: upload-arquivos
 draft: false
+lastmod: 2024-02-23
 ---
 
 ## Upload (Envio)

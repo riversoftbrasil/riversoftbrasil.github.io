@@ -8,6 +8,7 @@ sidebar:
   exclude: false
 excludeSearch: true
 weight: 3
+slug: changelog-dirl
 ---
 ## STCP Directlink
 

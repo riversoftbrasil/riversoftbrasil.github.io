@@ -1,6 +1,7 @@
 ---
 linkTitle: STCP Directlink
 layout: docs
+toc: true
 cascade:
   type: docs
 sidebar:
@@ -9,6 +10,8 @@ weight: 3
 prev: /docs/
 next: /docs/stcpdirectlink/01-install
 # slug: stcpdirectlink
+draft: false
+lastmod: 2024-03-11
 ---
 <!-- # Introdução -->
 

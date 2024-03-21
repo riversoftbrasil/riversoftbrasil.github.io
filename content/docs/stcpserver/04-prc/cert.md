@@ -10,6 +10,7 @@ prev:
 next:
 slug: certificado-ca
 draft: false
+lastmod: 2024-03-01
 ---
 ## Configuração para uso de certificado digital emitido por uma autoridade certificadora (CA)
 

@@ -9,6 +9,9 @@ cascade:
 sidebar:
   exclude: false
 excludeSearch: true
+slug: changelog
+draft: false
+lastmod: 2024-01-26
 ---
 Confira as informações sobre os novos recursos, correções e atualizações mais recentes lançadas para os produtos STCP.
 

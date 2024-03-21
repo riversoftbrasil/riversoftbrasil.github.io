@@ -2,6 +2,10 @@
 title: Inicio
 toc: false
 layout: hextra-home
+# prev:
+# next:
+# slug: inicio
+# lastmod: 2024-03-21
 ---
 
 <!-- {{< hextra/hero-badge >}}

@@ -1,13 +1,20 @@
 ---
 linkTitle: Execução
+title: Execução
 layout: docs
+toc: true
+cascade:
+  type: docs
 sidebar:
   exclude: false
 weight: 3
 prev:
 next:
+draft: false
+slug: execucao
+lastmod: 2024-02-28
 ---
-## Execução
+<!-- # Execução -->
 
 ### Linha de comando
 

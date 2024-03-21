@@ -10,6 +10,7 @@ prev: /upload-multipart
 next: /postman
 slug: upload-arquivo-json
 draft: false
+lastmod: 2024-02-23
 ---
 
 ## Upload de arquivo json (basic)

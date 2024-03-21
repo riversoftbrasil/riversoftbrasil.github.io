@@ -1,6 +1,5 @@
 ---
 linkTitle: Instalação
-title: Instalação
 layout: docs
 toc: true
 cascade:
@@ -10,7 +9,11 @@ sidebar:
 weight: 1
 prev:
 next:
+draft: false
+lastmod: 2024-02-27
 ---
+# Instalação
+
 Abra o link de instalação e extraia os arquivos do produto para iniciar o processo.
 
 ### Criação do Banco de Dados Riversoft STCP OFTP Web Admin

@@ -1,11 +1,16 @@
 ---
 linkTitle: Utilização
 layout: docs
+toc: true
+cascade:
+  type: docs
 sidebar:
   exclude: false
 weight: 4
 prev:
 next:
+draft: false
+slug: utilizacao-stcpren
 ---
 
 ## Utilização

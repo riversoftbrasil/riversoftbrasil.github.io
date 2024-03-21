@@ -1,6 +1,7 @@
 ---
 linkTitle: Notificação por e-mail
 layout: docs
+toc: true
 cascade:
   type: docs
 sidebar:
@@ -10,6 +11,7 @@ prev:
 next:
 slug: notificacao-email
 draft: false
+# lastmod:
 ---
 ## Objetivo
 

@@ -1,6 +1,7 @@
 ---
 linkTitle: Portal Web
 layout: docs
+toc: true
 cascade:
   type: docs
 sidebar:
@@ -10,6 +11,7 @@ prev: /03-run
 next: /authentication
 # slug:
 draft: false
+lastmod: 2024-02-23
 ---
 
 ## Portal Web
@@ -18,5 +20,4 @@ O Riversoft® STCP DirectLink têm um portal web que possibilita o processo de u
 
 ![](authentication-dirl.png "Portal de autenticação")
 
-<!-- <img src="authentication-dirl.png" alt="Portal de autenticação" height="3000px" width="2500px;"> -->
 

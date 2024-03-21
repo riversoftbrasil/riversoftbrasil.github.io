@@ -1,11 +1,15 @@
 ---
 linkTitle: STCP Signer
 layout: docs
+cascade:
+  type: docs
 sidebar:
-  exclude: true
+  exclude: false
 weight: 6
 prev:
 next:
+draft: false
+lastmod: 2024-03-19
 ---
 O STCPSigner é um módulo utilizado para garantir a integridade, autenticidade, confidencialidade e inviolabilidade de um arquivo através da tecnologia de assinatura digital e da criptografia.
 
@@ -25,7 +29,7 @@ O STCPSigner utiliza a interface Microsoft CRYPTOAPI para acesso aos dispositivo
 
 * Assinatura digital com certificado digital X509
 * Criptografia com chaves RC2, DES, 3DES, AES (Somente Vista)
-* Compatível com CRYPTOAPI (Microsoft)
+* Compatível com **CRYPTOAPI (Microsoft)**
 * Compatível com a RFC2315/Carta Circular 3.123 do Banco Central do Brasil
 * Compatível com certificados ICP Brasil
 * Inclusão do certificado de assinatura no envelope PKCS#7

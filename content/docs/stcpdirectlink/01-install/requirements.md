@@ -1,6 +1,7 @@
 ---
 linkTitle: Requisitos instalação
 layout: docs
+toc: true
 cascade:
   type: docs
 sidebar:
@@ -10,6 +11,7 @@ prev: /docs/stcpdirectlink/01-install
 next: /dirl/01-install/structure
 slug: requisitos-instalacao
 draft: false
+lastmod: 2024-03-08
 ---
 ## Requisitos para instalação
 

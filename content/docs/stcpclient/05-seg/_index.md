@@ -1,6 +1,7 @@
 ---
 linkTitle: Segurança
 layout: docs
+toc: true
 cascade:
   type: docs
 sidebar:
@@ -8,6 +9,8 @@ sidebar:
 weight: 5
 prev: /docs/stcpclient/04-audit
 next: /docs/stcpclient/06-update
+draft: true
+lastmod: 2024-03-14
 ---
 ## Como é a segurança do STCP OFTP Client?
 

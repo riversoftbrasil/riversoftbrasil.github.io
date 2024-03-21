@@ -10,6 +10,7 @@ prev: /docs/stcpserver/01-install-srv
 next: /docs/stcpserver/03-util
 slug: config
 draft: false
+lastmod: 2024-03-14
 ---
 # Como configurar o STCP OFTP Server?
 

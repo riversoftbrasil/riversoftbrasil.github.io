@@ -8,6 +8,7 @@ sidebar:
   exclude: false
 excludeSearch: true
 weight: 2
+slug: changelog-stcpadmin
 ---
 ## STCP OFTP Web Admin
 

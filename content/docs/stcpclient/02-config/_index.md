@@ -1,6 +1,7 @@
 ---
 linkTitle: Configuração
 layout: docs
+toc: true
 cascade:
   type: docs
 sidebar:
@@ -8,8 +9,10 @@ sidebar:
 weight: 2
 prev: /docs/stcpclient/01-install-clt/
 next: /docs/stcpclient/03-util/
+draft: false
+lastmod: 2024-03-14
 ---
-# Configuração
+## Configuração
 
 O programa de configuração do STCP OFTP Client foi instalado na pasta selecionada durante o processo de instalação e pode ser acessado através do menu Iniciar. Caso você não tenha alterado a pasta padrão, execute os seguintes passos:
 

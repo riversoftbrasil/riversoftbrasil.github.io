@@ -10,6 +10,7 @@ prev: /docs/stcpserver/02-config
 next: /docs/stcpserver/04-prc
 # slug:
 draft: false
+lastmod: 2024-02-26
 ---
 # Como utilizar o STCP OFTP Server
 

@@ -1,6 +1,7 @@
 ---
 linkTitle: Execução automática
 layout: docs
+toc: true
 cascade:
   type: docs
 sidebar:
@@ -10,6 +11,7 @@ prev:
 next:
 slug: configurar-agendamento
 draft: false
+lastmod: 2024-02-26
 ---
 # Configurar um agendamento
 

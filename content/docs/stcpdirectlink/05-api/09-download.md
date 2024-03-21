@@ -10,6 +10,7 @@ prev: /list-backup-download
 next: /upload-multipart
 slug: download-de-arquivos-usuario
 draft: false
+lastmod: 2024-02-27
 ---
 
 ## Download de arquivos

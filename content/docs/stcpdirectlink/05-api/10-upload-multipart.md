@@ -1,12 +1,16 @@
 ---
 linkTitle: Upload de arquivo multipart (basic e bearer)
 layout: docs
+cascade:
+  type: docs
 sidebar:
   exclude: false
 weight: 10
 prev: /09-download
 next: /upload-json
 slug: upload-multipart
+draft: false
+lastmod: 2024-02-23
 ---
 
 

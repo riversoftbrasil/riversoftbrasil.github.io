@@ -9,6 +9,8 @@ sidebar:
 weight: 6
 prev:
 next:
+draft: false
+lastmod: 2024-02-27
 ---
 # Configuração do Riversoft STCP OFTP Web Admin no IIS7/7.5
 

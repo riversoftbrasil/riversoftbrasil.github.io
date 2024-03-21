@@ -1,13 +1,16 @@
 ---
 linkTitle: Teste de Conectividade Conectividade
 layout: docs
+toc: true
 cascade:
   type: docs
 sidebar:
   exclude: false
-toc: true
 prev: /docs
-next: /callout
+# next: /
+slug: testes-conectividade
+draft: false
+lastmod: 2024-03-05
 ---
 ## Telnet
 

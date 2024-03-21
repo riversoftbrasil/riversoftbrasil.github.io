@@ -10,6 +10,7 @@ prev: /list-download
 next: /download-de-arquivos
 slug: lista-backup-download
 draft: false
+lastmod: 2024-02-23
 ---
 
 ## Lista de arquivos backup para download (basic)

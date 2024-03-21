@@ -9,6 +9,8 @@ weight: 4
 prev: /docs/stcpserver/03-util
 next: /docs/stcpserver/04-prc/log
 slug: procedimentos
+draft: false
+lastmod: 2024-03-01
 ---
 {{< cards >}}
   {{< card link="certificado-ca" title="Certificado CA" icon="lock-closed" >}}

@@ -1,6 +1,7 @@
 ---
 linkTitle: Como executar
 layout: docs
+toc: true
 cascade:
   type: docs
 sidebar:
@@ -10,6 +11,7 @@ prev: /docs/stcpdirectlink/02-configuration
 next: /docs/stcpdirectlink/04-portal/
 slug: como-executar
 draft: false
+lastmod: 2024-01-26
 ---
 ## Linha de comando
 

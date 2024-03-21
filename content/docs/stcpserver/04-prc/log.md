@@ -10,6 +10,7 @@ prev: /docs/stcpserver/04-prc
 next:
 slug: arquivos-log
 draft: false
+lastmod: 2024-03-01
 ---
 # Arquivos de log
 

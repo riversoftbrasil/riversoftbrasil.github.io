@@ -1,6 +1,7 @@
 ---
 linkTitle: Utilização
 layout: docs
+toc: true
 cascade:
   type: docs
 sidebar:
@@ -9,8 +10,10 @@ weight: 3
 prev: /docs/stcpclient/02-config/
 next: /docs/stcpclient/04-audit/
 # slug:
+draft: false
+lastmod: 2024-10-14
 ---
-# Utilização
+## Utilização
 
 O STCP OFTP Client cria um conjunto individual de subdiretórios para cada Perfil configurado no serviço para controle das transferências e integração com as aplicações externas, conforme mostra figura abaixo:
 

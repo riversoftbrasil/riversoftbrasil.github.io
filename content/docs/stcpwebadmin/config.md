@@ -1,6 +1,5 @@
 ---
 linkTitle: Configuração
-title: Configuração do Riversoft STCP OFTP Web Admin
 layout: docs
 toc: true
 cascade:
@@ -10,7 +9,11 @@ sidebar:
 weight: 2
 prev:
 next:
+draft: false
+lastmod: 2024-02-27
 ---
+# Configuração do Riversoft STCP OFTP Web Admin
+
 Para o correto funcionamento da ferramenta, deverão ser configurados os seguintes arquivos:
 
 Configure o acesso ao Banco de Dados da ferramenta no arquivo **C:\Inetpub\wwwroot\STCPWEB_ADMIN\conf\stcpweb_db.inc**:

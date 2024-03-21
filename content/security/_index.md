@@ -1,15 +1,18 @@
 ---
 linkTitle: Segurança
 layout: docs
+toc: true
 cascade:
   type: docs
 sidebar:
   exclude: false
 prev: /docs
 next: /events
+slug: seguranca-stcp
+draft: false
+# lastmod: 
 ---
 <!-- # Segurança -->
-
 ## Como é a segurança do STCP?
 
 O STCP implementa a segurança em dois níveis: autenticação do usuário pela aplicação e a criptografia dos dados.

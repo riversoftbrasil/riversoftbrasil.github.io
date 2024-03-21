@@ -1,5 +1,5 @@
 ---
-linkTitle: STCP OFTP Server 
+linkTitle: STCP OFTP Server
 toc: false
 layout: docs
 toc: false
@@ -9,6 +9,7 @@ sidebar:
   exclude: false
 excludeSearch: true
 weight: 1
+slug: changelog-stcpserver
 ---
 ## STCP OFTP Server / STCP OFTP Client
 

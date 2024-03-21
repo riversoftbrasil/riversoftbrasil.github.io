@@ -1,13 +1,16 @@
 ---
 linkTitle: Instalação
-title: Como instalar o STCPSigner?
 layout: docs
 sidebar:
   exclude: false
 weight: 2
 prev:
 next:
+draft: false
+lastmod: 2024-02-28
 ---
+# Como instalar o STCPSigner?
+
 1. Insira o CD na unidade de leitura.
 
 2. Em **Iniciar**, escolha a opção **Executar**.

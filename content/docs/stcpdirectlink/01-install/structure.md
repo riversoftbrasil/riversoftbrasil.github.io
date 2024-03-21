@@ -1,6 +1,7 @@
 ---
 linkTitle: Estrutura de diretórios
 layout: docs
+toc: true
 cascade:
   type: docs
 sidebar:
@@ -10,6 +11,7 @@ prev: /stcpdirectlink/01-install/requirements
 next: /docs/stcpdirectlink/02-configuration/
 slug: estrutura-diretorios
 draft: false
+lastmod: 2024-01-26
 ---
 
 ## Estrutura dos diretórios

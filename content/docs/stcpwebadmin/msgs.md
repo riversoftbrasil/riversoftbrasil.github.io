@@ -1,16 +1,18 @@
 ---
 linkTitle: Mensagens do Sistema
-title: Mensagens dos sistema
 layout: docs
 toc: true
 cascade:
   type: docs
 sidebar:
   exclude: false
+weight: 4
 prev:
 next:
-weight: 4
+draft: false
+lastmod: 2024-02-27
 ---
+# Mensagens dos sistema
 
 Mensagem | Procedimento
 :---     | :---

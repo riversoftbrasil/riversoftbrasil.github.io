@@ -10,6 +10,7 @@ prev:
 next:
 slug: atualizacao-stcpserver
 draft: false
+lastmod: 2024-03-01
 ---
 # Atualização de versão
 
