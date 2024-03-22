@@ -11,7 +11,7 @@ weight: 1
 prev:
 next: /dirl/install
 # draft: false
-lastmod: 2024-03-05
+lastmod: 2024-03-22
 ---
 
 Tudo o que você precisa saber para sua jornada nas soluções Riversoft.
@@ -40,8 +40,13 @@ Tudo o que você precisa saber para sua jornada nas soluções Riversoft.
 ### Guias passo a passo
 {{< cards >}}
   {{< card link="/conection" title="Conectividade" icon="link" >}}
-  {{< card link="../callout" title="Logs e Debug" icon="eye" >}}
+  {{< card link="/debug" title="Debug" icon="eye" >}}
   {{< card link="../callout" title="Automação" icon="cube" >}}
+  {{< card link="/schedule" title="Execução automática" icon="calendar-days" >}}
+  {{< card link="/email" title="Notificação por e-mail" icon="mail" >}}
+  {{< card link="/proxy" title="Servidor Proxy para conexão" icon="server" >}}
+  {{< card link="/cert" title="Certificação" icon="key" >}}
+  {{< card link="/update" title="Atualização" icon="arrow-up" >}}
 {{< /cards >}}
 
 ### Referências e Informações
@@ -53,7 +58,7 @@ Tudo o que você precisa saber para sua jornada nas soluções Riversoft.
   {{< card link="/events" title="Códigos de Erros e Eventos" icon="x-circle" >}}
   {{< card link="/utils" title="Uso e vantagens do STCP" icon="question-mark-circle" >}}
   {{< card link="/requirements" title="Requisitos de Software e Hardware" icon="queue-list" >}}
+  {{< card link="/os-homologated" title="SO Homologados" icon="document-check" >}}
+  {{< card link="/logs" title="Arquivos de Log" icon="clock" >}}
 {{< /cards >}}
-
-
 

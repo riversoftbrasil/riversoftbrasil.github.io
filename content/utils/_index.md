@@ -1,5 +1,5 @@
 ---
-linkTitle: Onde usar?
+linkTitle: Uso e vantagens STCP
 # title:
 layout: docs
 toc: true
@@ -9,7 +9,7 @@ sidebar:
   exclude: true
 weight: 6
 prev: /events
-next:
+next: /requirements
 # slug:
 # draft:
 lastmod: 2024-03-21

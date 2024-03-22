@@ -8,11 +8,11 @@ cascade:
 sidebar:
   exclude: false
 weight:
-prev:
-next:
+prev: /utils
+next: /os-homologated
 # slug:
 draft:
-lastmod:
+lastmod: 2024-03-21
 ---
 ## STCP OFTP Server
 
