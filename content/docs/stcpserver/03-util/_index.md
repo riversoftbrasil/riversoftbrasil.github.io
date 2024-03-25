@@ -48,6 +48,6 @@ Parâmetro  | Descrição
 Exemplo:
 
 ```shell
-C:/STCPODT/CTCPSVC.EXE C:/STCPCLT/CTCP.INI –noservice
+C:\STCPODT\Program\ctcpsvc.exe C:\STCPODT\CTCP.INI –noservice
 ```
 No exemplo acima, o STCP OFTP Server será executado como uma **aplicação**.
