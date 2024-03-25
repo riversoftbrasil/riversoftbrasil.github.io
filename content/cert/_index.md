@@ -6,8 +6,8 @@ cascade:
 sidebar:
   exclude: false
 weight: 3
-prev:
-next:
+prev: /proxy
+next: /update
 slug: certificado-ca
 draft: false
 lastmod: 2024-03-01

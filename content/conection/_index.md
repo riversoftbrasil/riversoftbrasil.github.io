@@ -7,7 +7,7 @@ cascade:
 sidebar:
   exclude: false
 prev: /docs
-# next: /
+next: /debug
 slug: testes-conectividade
 draft: false
 lastmod: 2024-03-05

@@ -8,7 +8,7 @@ sidebar:
   exclude: false
 weight: 2
 prev: /conection
-next:
+next: /callout
 slug: nivel-de-debug
 draft: false
 lastmod:

@@ -58,7 +58,6 @@ Tudo o que você precisa saber para sua jornada nas soluções Riversoft.
   {{< card link="/events" title="Códigos de Erros e Eventos" icon="x-circle" >}}
   {{< card link="/utils" title="Uso e vantagens do STCP" icon="question-mark-circle" >}}
   {{< card link="/requirements" title="Requisitos de Software e Hardware" icon="queue-list" >}}
-  {{< card link="/os-homologated" title="SO Homologados" icon="document-check" >}}
   {{< card link="/logs" title="Arquivos de Log" icon="clock" >}}
 {{< /cards >}}
 

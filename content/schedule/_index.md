@@ -7,7 +7,7 @@ cascade:
 sidebar:
   exclude: false
 weight: 3
-prev:
+prev: /docs
 next: /email
 # slug:
 draft: false

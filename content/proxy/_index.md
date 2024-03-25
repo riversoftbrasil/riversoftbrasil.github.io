@@ -7,8 +7,8 @@ cascade:
 sidebar:
   exclude: false
 weight: 1
-prev:
-next: 
+prev: /email
+next: /cert
 slug: configurar-servidor-proxy
 draft: false
 lastmod:

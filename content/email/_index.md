@@ -8,7 +8,7 @@ sidebar:
   exclude: false
 weight: 4
 prev: /schedule
-next:
+next: /proxy
 slug: notificacao-email
 draft: false
 lastmod: 2024-03-22

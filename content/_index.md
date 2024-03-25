@@ -63,17 +63,14 @@ layout: hextra-home
         title="STCP OFTP Server"
         icon="cog"
         subtitle="Servidor de transferência de arquivos seguro e multiprotocolo para aplicações de e-business e troca de informações corporativas, baseado na especificação OFTP."
-        badge="EM BREVE"
-        link=""
+        link="docs/stcpserver"
     >}}
 
     {{< feature-card
         title="STCP OFTP Client"
         icon="desktop-computer"
         subtitle="Client é um cliente de transferência de arquivos seguro e multiprotocolo para aplicações de e-business e troca de informações corporativas, baseado na especificação OFTP."
-        link=""
-        badge="EM BREVE"
-
+        link="docs/stcpclient"
     >}}
 
     {{< feature-card
