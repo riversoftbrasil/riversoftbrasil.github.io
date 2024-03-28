@@ -17,11 +17,11 @@ draft: false
 
 O STCP implementa a segurança em dois níveis: autenticação do usuário pela aplicação e a criptografia dos dados.
 
-## Autenticação do usuário pela aplicação (ODETTE ID)
+### Autenticação do usuário pela aplicação (ODETTE ID)
 
 A autenticação do usuário é realizada pela aplicação através do reconhecimento de um usuário com até 26 (vinte e seis) caracteres e senha com até 8 (oito) caracteres antes do início da transferência.
 
-## Criptografia
+### Criptografia
 
 Criptografia é a codificação dos dados com o objetivo de proteger o seu conteúdo das pessoas indesejadas. Os algoritmos matemáticos usados para proteger os dados são chamados de codificadores.
 

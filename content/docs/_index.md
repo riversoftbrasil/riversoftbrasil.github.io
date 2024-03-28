@@ -18,8 +18,8 @@ Tudo o que você precisa saber para sua jornada nas soluções Riversoft.
 
 ### Windows
 {{< cards >}}
-  {{< card link="../callout" title="STCP OFTP Server" icon="cog" >}}
-  {{< card link="../callout" title="STCP OFTP Client" icon="desktop-computer" >}}
+  {{< card link="/docs/stcpserver" title="STCP OFTP Server" icon="cog" >}}
+  {{< card link="/docs/stcpclient" title="STCP OFTP Client" icon="desktop-computer" >}}
   {{< card link="../callout" title="STCP OFTP Web Admin" icon="cloud" >}}
   {{< card link="../callout" title="STCP Change Password" icon="shield-exclamation" >}}
   {{< card link="../callout" title="STCP Rename" icon="color-swatch" >}}
@@ -53,11 +53,12 @@ Tudo o que você precisa saber para sua jornada nas soluções Riversoft.
 
 {{< cards >}}
   {{< card link="/database" title="Banco de dados" icon="database" >}}
-  {{< card link="/odette" title="Protcolo OFTP" icon="lock-closed" >}}
+  {{< card link="/protocols" title="Protocolos de Rede" icon="lock-closed" >}}
   {{< card link="/security" title="Segurança" icon="shield-check" >}}
   {{< card link="/events" title="Códigos de Erros e Eventos" icon="x-circle" >}}
   {{< card link="/utils" title="Uso e vantagens do STCP" icon="question-mark-circle" >}}
   {{< card link="/requirements" title="Requisitos de Software e Hardware" icon="queue-list" >}}
   {{< card link="/logs" title="Arquivos de Log" icon="clock" >}}
+  {{< card link="/variables" title="Variáveis internas do STCP" icon="code-bracket-square" >}}
 {{< /cards >}}
 
