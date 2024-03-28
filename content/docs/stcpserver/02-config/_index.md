@@ -10,15 +10,35 @@ prev: /docs/stcpserver/01-install-srv
 next: /docs/stcpserver/03-util
 slug: config
 draft: false
-lastmod: 2024-03-14
+lastmod: 2024-03-28
 ---
-# Como configurar o STCP OFTP Server?
+## Configurador
 
-O Programa de configuração do STCP OFTP Server foi instalado na pasta selecionada (Ex: C:\STCPODT) durante o processo de instalação e pode ser acessado através do menu **Iniciar**. Caso você não tenha alterado a pasta padrão execute os seguintes passos:
+O programa de configuração do STCP OFTP Server foi instalado na pasta selecionada durante o processo de instalação e pode ser acessado através do menu **Iniciar**. Caso você não tenha alterado a pasta padrão, execute os seguintes passos:
 
-1. No menu **Iniciar, Todos os Programas, selecione Riversoft STCP OFTP Server (Enterprise/Lite)**.
-2. Clique no programa **Riversoft STCP OFTP Server Config.**
-3. Na guia **Geral**, preencha os campos com as informações descritas abaixo.
+{{< icon "rectangle-group" >}}&nbsp; No menu **Iniciar**, **Todos os Programas**, selecione **Riversoft STCP OFTP Client**.
+
+{{< icon "cog-8-tooth" >}} &nbsp; Clique no programa **Riversoft STCP OFTP Client Config**.
+
+O programa de configuração pode ser acessado também na pasta **Program** da aplicação, conforme exemplo de estrutura abaixo:
+
+```
+*:\STCPODT\Program\Riversoft STCP OFTP Server Config
+```
+
+{{< filetree/container >}}
+  {{< filetree/folder name="`Unidade de Instalação`" >}}
+    {{< filetree/folder name="STCPODT" state="open" >}}
+       {{< filetree/folder name="Program" state="open" >}}
+        {{< filetree/file name="Riversoft STCP OFTP Server Config" >}}
+      {{< /filetree/folder >}}
+    {{< /filetree/folder >}}
+  {{< /filetree/folder >}}
+{{< /filetree/container >}}
+
+## Preencher informações
+
+Preencha os campos com as informações descritas abaixo.
 
 ![](guia-geral.png)
 
@@ -32,32 +52,43 @@ Senha  | Preencha este campo com a senha do usuário que deve ser utilizado pelo
 Confirmar| Preencha este campo com a senha do usuário para ser validada.
 Diretório de controle| Este campo informa o nome do diretório de instalação do STCP OFTP Server onde serão armazenadas as configurações dos usuários, logs e arquivos de depuração da comunicação. /Obs.: Para a versão STCP OFTP Server, este parâmetro não pode ser modificado.
 Diretório de dados| Preencha este campo com o diretório, onde a estrutura de subdiretórios para envio e recepção dos arquivos de cada usuário deverá ser criada.  /Obs.: Esta configuração deve ser alterada antes da criação dos usuários.
-Número de série| Preencha este campo com o número de série que está localizado no "Contrato de Licença de Uso" ou na parte traseira da embalagem do CD. /Obs.: O preenchimento deste campo é obrigatório.
+Número de série*| Preencha este campo com o número de série que está localizado no "Contrato de Licença de Uso" ou na parte traseira da embalagem do CD. <br>
+----
 
-Na guia **Redes**, você poderá adicionar, remover ou modificar os parâmetros das interfaces de redes controladas pelo serviço STCP OFTP Server.
-4. Clique em **Adicionar**.
+{{< callout type="warning" >}}
+ *Obs.: O preenchimento deste campo é obrigatório.
+{{< /callout >}}
+
+## Redes
+
+Nesta guia, você poderá adicionar, remover ou modificar os parâmetros das interfaces de redes controladas pelo serviço do STCP OFTP Server.
+
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Clique em **Adicionar**.
 
 ![](guia-redes.png)
 
-O STCP OFTP Server permite a configuração de múltiplas interfaces de redes com o mesmo ou diferentes protocolos de comunicação (**TCP/IP, SSL3, X.25,  PAD, SERIAL etc.**).
-**Obs.: As configurações de Redes somente serão utilizadas para as conexões entrantes (inbound).**
 
-5. Selecione um serviço de rede e clique em **OK**.
+> O STCP OFTP Server permite a configuração de múltiplas interfaces de redes com o mesmo ou diferentes protocolos de comunicação **(TCP/IP, SFTP, HTTPS e TLS)**
+
+{{< callout type="info" >}}
+*Obs.: As configurações de Redes somente serão utilizadas para as conexões entrantes (inbound).
+{{< /callout >}}
+
+
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp; Selecione um serviço de rede e clique em **OK**.
 
 Protocolo     | Descrição
 :---------    | :-----
 OFTP - TCP/IP | Configura o STCP OFTP Server para utilizar o protocolo de comunicação TCP/IP.
-OFTP – X.25   | Configura o STCP OFTP Server para utilizar o protocolo de comunicação X.25. /Obs.: Para utilizar esta opção você deve ter instalado um cartão de comunicação WCK2000 fornecido pela Net Open (www.netopen.com.br).
-OFTP – SERIAL – DISCADO | Configura o STCP OFTP Server para utilizar uma porta serial com um modem ou uma placa de Fax/Modem.  /Obs.: Esta opção não usa protocolo TCP/IP.
-OFTP – PAD   | Configura o STCP OFTP Server para utilizar o protocolo de comunicação PAD (X.28).
+API DirectLink - HTTP/S | Configura o STCP Server para comunicar com com a API do Directlink. <br>  <a href="/docs/stcpdirectlink/05-api/" target="_blank">Acesse a seção da API do Directlink para mais informações</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;.
+SFTP DirectLink – TCP/IP | Configura o STCP Server para se comunicar via protocolo SFTP com o Directlink.
 Monitor – TCP/IP | Habilita a rede para monitoração do STCP através do protocolo TCP/IP.
-Monitor X.25 | Habilita a rede para monitoração do STCP através do protocolo X.25.
-Monitor – SERIAL – DISCADO | Habilita a rede para monitoração do STCP através do protocolo SERIAL - DISCADO.
-Monitor - PAD| Habilita a rede para monitoração do STCP através do protocolo PAD.
-OFTP – SERIAL | Configura o STCP OFTP Server para utilizar diretamente uma porta serial. /Obs.: Esta opção não usa protocolo TCP/IP.
+Monitor Directlink - TCP/IP | Habilita a rede para monitoração do Directlink através do protocolo TCP/IP.
+----
 
+### OFTP
 
-6. Na guia **Geral**, preencha as seguintes opções de configuração para o protocolo **OFTP: TCP/IP_1**.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Na guia **Geral**, preencha as seguintes opções de configuração:
 
 ![](redes-guia-geral.png)
 
@@ -67,7 +98,7 @@ Nome   | Campo com o nome da interface de rede configurada.
 Descrição| Preencha este campo com a descrição da interface de rede.
 Desabilitar| Esta opção assinalada desabilita a interface de rede.
 
-7. Na guia **TCP/IP**, configure as seguintes opções para o protocolo **OFTP: TCP/IP_1**.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp; Na guia **TCP/IP**, configure as seguintes opções para o protocolo **OFTP: TCP/IP_1**.
 
 ![](tcp_ip-configs.png)
 
@@ -76,21 +107,20 @@ Campos     | Descrição
 Endereço IP| Preencha este campo com o endereço TCP/IP ou nome (DNS) da interface local para a qual o serviço STCP OFTP Server deve ser disponibilizado. /Obs.: Utilize o endereço 0.0.0.0 para habilitar o serviço sobre todas as interfaces de rede.
 Porta IP   | Preencha este campo com a porta IP da interface local para a qual o serviço STCP OFTP Server deve ser disponibilizado. /Obs.: A porta padrão do serviço OFTP é a 3305.
 Comunicação Segura| Esta opção assinalada habilita a utilização de criptografia na comunicação com o servidor STCP OFTP Server, você pode escolher entre a opção Nativa ou SSL3. /Obs.: Antes de habilitar esta opção, leia atentamente o capítulo sobre Segurança.
-Nativa (Básica)| Configura a comunicação segura com criptografia com nível de segurança básico. /Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica.
-Nativa (Média)| Configura a comunicação segura com criptografia com nível de segurança médio. /Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica.
-Nativa (Alta)| Configura a comunicação segura com criptografia com nível de segurança alto. /Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica.
-SSL3       | Configura a comunicação segura com criptografia e certificação digital, com a utilização da padronização definida na RFC2246 (TLS1/SSL3). O TLS1/SSL3 é comumente encontrado nos servidores de sites seguros (HTTPS) e oferece o maior grau de segurança atualmente disponível. /Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica.
+TLS       | Configura a comunicação segura com criptografia e certificação digital, com a utilização da padronização definida na RFC2246 (TLS1/SSL3). O TLS1/SSL3 é comumente encontrado nos servidores de sites seguros (HTTPS) e oferece o maior grau de segurança atualmente disponível. /Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica.
 Compatibilidade| Esta opção possibilita compatibilizar o STCP OFTP Server com diferentes produtos atualmente existentes no mercado.
 RFC2204    | Esta opção de compatibilidade permite a comunicação do STCP OFTP Server com outros produtos que seguem a recomendação RFC2204.
 RFC1006/RFC1086| Esta opção de compatibilidade permite a comunicação do STCP OFTP Server através de gateways de comunicação TCP-IP/X.25, que seguem a recomendação RFC1006/1086.
 RVS*       | Esta opção de compatibilidade permite a comunicação do STCP OFTP Server com o produto RVS*. /Obs.: Esta opção não deve ser habilitada quando o servidor RVS* for uma versão do mainframe (grande porte).
-X25/Router | Esta opção de compatibilidade permite a comunicação do STCP OFTP Server através de roteadores com suporte à comunicação X.25 através de socket. /Obs.: Consulte a Riversoft sobre esta configuração se você estiver em dúvidas.
+X.25/Router | Esta opção de compatibilidade permite a comunicação do STCP OFTP Server através de roteadores com suporte à comunicação X.25 através de socket. /Obs.: Consulte a Riversoft sobre esta configuração se você estiver em dúvidas.
 XFB*/SSL   | Habilita a compatibilidade do STCP com o XFB em conexões seguras SSL.
 Compressão GZIP| Esta opção assinalada habilita a utilização da compressão GZIP onthe-fly (durante a transferência).  /Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica.
 
-***As marcas citadas são propriedade dos seus respectivos donos.**
+{{< callout type="info" >}}
+  \*As marcas citadas são propriedade dos seus respectivos donos.
+{{< /callout >}}
 
-8. Na guia **Odette**, configure as seguintes opções para o protocolo **OFTP: TCP/IP_1**.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">3</span> &nbsp; Na guia **Odette**, configure as seguintes opções para o protocolo **OFTP: TCP/IP_1**.
 
 ![](odette.png)
 
@@ -104,7 +134,7 @@ Outros         | As opções definidas neste grupo serão utilizadas localmente 
 Tempo máximo de inatividade| Preencha este campo com o tempo máximo de inatividade de comunicação entre o STCP OFTP Server e o computador remoto.
 Nível de debug | Preencha este campo com o nível de detalhamento das informações que serão gravadas no arquivo de depuração. Para obter no mesmo arquivo de depuração a informação dos diferentes níveis, preencha este campo com a soma dos níveis desejados. /Obs.: Veja a tabela dos níveis de debug na configuração dos usuários.
 
-9. Na guia **TLS**, configure as seguintes opções para o protocolo **OFTP – TCP/IP**.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">4</span> &nbsp; Na guia **TLS**, configure as seguintes opções para o protocolo **OFTP – TCP/IP**.
 
 ![](tls.png)
 
@@ -124,14 +154,21 @@ Debug          | Esta opção permite gerar um arquivo de depuração na pasta D
 
 Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alterar as configurações.
 
-10. Na guia **Usuários**, você poderá adicionar, remover, modificar ou copiar os parâmetros de configuração de um usuário do serviço STCP OFTP Server.
-11. Clique em **Adicionar**.
+## Usuários
+
+Na guia **Usuários**, você poderá adicionar, remover, modificar ou copiar os parâmetros de configuração de um usuário do serviço STCP OFTP Server.
+
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Clique em **Adicionar**.
 
 ![](usuarios.png)
 
-Para um novo usuário adicionado, automaticamente, será criada uma estrutura de subdiretórios para o envio e recepção dos arquivos, dentro do **Diretório de Dados** que foi previamente configurado na guia **Geral**.
+{{< callout type="info" >}}
+  Para um novo usuário adicionado, automaticamente, será criada uma estrutura de subdiretórios para o envio e recepção dos arquivos, dentro do **Diretório de Dados** que foi previamente configurado na guia **Geral**.
+{{< /callout >}}
 
-12. Preencha os campos com as informações descritas abaixo e clique em **OK**.
+<br>
+
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp; Preencha os campos com as informações descritas abaixo e clique em **OK**.
 
 ![](configs-usuarios.png)
 
@@ -144,7 +181,7 @@ Descrição| Preencha este campo com a descrição de sua livre escolha.
 
 Pressione o botão **OK** para gravar as configurações ou **Cancelar** para abandonar sem alterar as configurações.
 
-13. Na guia **Odette**, preencha os campos com as informações descritas abaixo.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">3</span> &nbsp; Na guia **Odette**, preencha os campos com as informações descritas abaixo.
 
 ![](guia-odette-usuario.png)
 
@@ -172,7 +209,7 @@ Para cada tentativa de conexão será criado um novo arquivo de depuração no s
 ```
 ODTDEB.< Protocolo>.< Perfil>.YYYMMDDhhmmssnnn.
 ```
-Protocolo | TCPIP, X25, SERIAL ou PAD Perfil Nome do perfil utilizado
+Protocolo | TCP/IP, TLS, SFTP ou HTTP/S
 :---:     | :---:
 YYYY      | Ano
 MM        | Mês
@@ -195,9 +232,9 @@ Nível | Descrição
 16    | Grava as informações dos eventos ocorridos.
 32    | Grava as informações dos sub-registros.
 
-> Obs.: Somente habilite esta opção quando for solicitado por pessoal especializado.
+> Obs.: Somente habilite esta opção quando for solicitado por equipe especializada.
 
-14. Na guia **Geral**, configure as seguintes opções descritas abaixo.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">4</span> &nbsp; Na guia **Geral**, configure as seguintes opções descritas abaixo.
 
 ![](guia-geral-usuario.png)
 
@@ -214,7 +251,7 @@ Senha nunca expira| Esta opção assinalada impede que a senha expire.
 Conexão automática| Esta opção assinalada habilita este usuário a iniciar uma conexão.
 Protocolo| Este campo seleciona o tipo de protocolo de comunicação que este usuário irá utilizar para conexão. Após selecionar, pressione o botão Configurar para acessar a tela de configuração específica do protocolo de comunicação.
 
-15. Selecione a opção de **Protocolo** desejada e clique em **Configurar**.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">5</span> &nbsp; Selecione a opção de **Protocolo** desejada e clique em **Configurar**.
 
 ![](protocolo-usuario.png)
 
@@ -236,7 +273,9 @@ Clique [aqui](https://docs.aws.amazon.com/pt_br/AmazonS3/latest/userguide/Welcom
   Clique [aqui](https://azure.microsoft.com/pt-br/products/storage/blobs) para mais informações sobre o **Armazenamento de Blobs do Azure**.
 {{< /callout >}}
 
-16. Se o protocolo selecionado foi **OFTP – TCP/IP**, configure as seguintes opções na guia **TCP/IP**.
+### Protocolo OFTP
+
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Configure as seguintes opções na guia **TCP/IP**.
 
 ![](oftp-usuario.png)
 
@@ -254,13 +293,13 @@ X25/Router| Esta opção de compatibilidade permite a comunicação do STCP OFTP
 XFB*/SSL  | Habilita a compatibilidade do STCP com o XFB em conexões seguras SSL.
 Compressão GZIP| Esta opção assinalada habilita a utilização da compressão GZIP onthe-fly (durante a transferência). /Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica.
 
-17. Na guia **TLS**, configure as seguintes opções para o protocolo **OFTP – TCP/IP**.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp; Na guia **TLS**, configure as seguintes opções para o protocolo **OFTP – TCP/IP**.
 
 ![](tls-usuario.png)
 
 Campos | Descrição
 :---   | :---
-Chave Privativa| As opções deste grupo estão relacionadas às chaves pública e privada, utilizadas pelo protocolo TLS1/SSL3 para autenticação e criptografia dos dados. /Obs.: O arquivo da chave privativa deve estar no formato PKCS#12 e os certificados, no formato DER ou PEM.
+Chave Privativa| As opções deste grupo estão relacionadas às chaves pública e privada, utilizadas pelo protocolo TLS para autenticação e criptografia dos dados. /Obs.: O arquivo da chave privativa deve estar no formato PKCS#12 e os certificados, no formato DER ou PEM.
 Chave  | Preencha este campo com o nome do arquivo (caminho completo) onde se encontra instalada a chave privativa.
 Certificado| Preencha este campo com o nome do arquivo (caminho completo) onde se encontra instalado o certificado digital (X509) associado à chave privativa.
 Senha  |Preencha este campo com a senha que protege o arquivo da chave privativa.
@@ -271,7 +310,7 @@ Diretório| Preencha este campo com o nome do diretório (caminho completo) onde
 Algoritmos | Preencha este campo com os nomes dos algoritmos suportados para assinatura digital, hashing e criptografia dos dados. /Obs.: Caso este campo não seja configurado, o protocolo TLS1/SSL3 irá selecionar automaticamente.
 Debug      | Esta opção permite criar um arquivo de depuração.
 
-18. Na guia **Proxy**, configure as seguintes opções para o protocolo **OFTP – TCP/IP**.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">3</span> &nbsp; Na guia **Proxy**, configure as seguintes opções para o protocolo **OFTP – TCP/IP**.
 
 ![](proxy-usuarios.png)
 
@@ -290,11 +329,13 @@ NTLM     | Marque esta opção se o seu servidor Proxy suporta o modo de autenti
 Usuário  | Preencha este campo com o nome do usuário autorizado a utilizar o serviço de Proxy.
 Senha    | Preencha este campo com a senha do usuário autorizado a utilizar o serviço de Proxy.
 Confirmar |Preencha este campo com a senha informada no campo Senha para validação.
-Lê configuração Proxy do IE |Pressione este botão para ler as configurações de Proxy configuradas no Internet Explorer. Obs.: As informações de autenticação não serão lidas do IE.
+Lê configuração Proxy do IE |Pressione este botão para ler as configurações de Proxy configuradas no Internet Explorer. <br> Obs.: As informações de autenticação não serão lidas do IE.
 
 Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alterar as configurações.
 
-19. Se o protocolo selecionado foi **HTTP – TCP/IP**, configure as seguintes opções na guia **TCP/IP**.
+### Protocolo HTTP
+
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Configure as seguintes opções na guia **TCP/IP**.
 
 ![](http-tcp-ip.png)
 
@@ -305,7 +346,7 @@ Porta IP| Preencha este campo com a porta TCP/IP do servidor STCP OFTP Server.
 TLS   | Configura a comunicação segura com criptografia e certificação digital, com a utilização da padronização definida na RFC2246 (TLS1/SSL3). O TLS1/SSL3 é comumente encontrado nos servidores de sites seguros (HTTPS) e oferece o maior grau de segurança atualmente disponível. /Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica.
 Tamanho máximo do buffer| Preencha este campo com o tamanho máximo dos blocos de dados que serão transferidos. O intervalo válido é de 1 até 65535.
 
-20. Na guia **Proxy**, configure as seguintes opções.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp; Na guia **Proxy**, configure as seguintes opções.
 
 ![](proxy-usuarios-http.png)
 
@@ -317,9 +358,11 @@ Porta IP |  Preencha este campo com a porta TCP/IP do servidor Proxy.
 Usuário  | Preencha este campo com o nome do usuário autorizado a utilizar o serviço de Proxy.
 Senha    | Preencha este campo com a senha do usuário autorizado a utilizar o serviço de Proxy.
 Confirmar| Preencha este campo com a senha informada no campo Senha para validação.
-Lê configuração Proxy do IE| Pressione este botão para ler as configurações de Proxy configuradas no Internet Explorer. /Obs.: As informações de autenticação não serão lidas do IE.
+Lê configuração Proxy do IE| Pressione este botão para ler as configurações de Proxy configuradas no Internet Explorer.<br> Obs.: As informações de autenticação não serão lidas do IE.
 
-21. Na guia **Formulários**, configure as seguintes opções.
+#### Formulários
+
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Na guia **Formulários**, configure as seguintes opções.
 
 ![](formularios-usuarios.png)
 
@@ -333,13 +376,15 @@ Download de Arquivos| Parâmetros de configuração do formulário para recebime
 Upload de Arquivos| Parâmetros de configuração do formulário para envio de arquivos.
 Remover Arquivos| Parâmetros de configuração do formulário para remoção de arquivos.
 
-22. Clique no botão **Configurar** para acessar as opções de Login.
+#### Login
+
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Clique no botão **Configurar** para acessar as opções de Login.
 
 ![](login-options.png)
 
-23. Configure os seguintes campos.
+Configure os seguintes campos.
 
-![](./imagem1/img27.png)
+<!-- ![](./imagem1/img27.png) -->
 
 Campos | Descrição
 :---   | :---
@@ -347,11 +392,13 @@ Método <br> Uri <br> Parâmetro de entrada <br> Mensagem de sucesso| Estas info
 
 Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alterar as configurações.
 
-24. Clique no botão **Configurar** para acessar as opções de Logout.
+#### Logout
+
+Clique no botão **Configurar** para acessar as opções de Logout.
 
 ![](formularios-usuarios-http.png)
 
-25. Configure os seguintes campos.
+Configure os seguintes campos.
 
 ![](logout-usuarios.png)
 
@@ -361,11 +408,13 @@ Método <br> Uri <br> Parâmetro de entrada <br> Mensagem de sucesso| Estas info
 
 Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alterar as configurações.
 
-26. Clique no botão **Configurar** para acessar as opções de Listar Arquivos.
+#### Listar Arquivos
+
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Clique no botão **Configurar** para acessar as opções de Listar Arquivos.
 
 ![](formularios-usuarios-http.png)
 
-27. Configure os seguintes campos.
+Configure os seguintes campos.
 
 ![](listar-arquivos.png)
 
@@ -375,11 +424,13 @@ Método <br> Uri <br> Parâmetro de entrada <br> Mensagem de sucesso| Estas info
 
 Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alterar as configurações.
 
-28. Clique no botão **Configurar** para acessar as opções de Download de Arquivos.
+#### Download de arquivos
+
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Clique no botão **Configurar** para acessar as opções de Download de Arquivos.
 
 ![](formularios-usuarios-http.png)
 
-29. Configure os seguintes campos.
+Configure os seguintes campos.
 
 ![](download-de-arquivos.png)
 
@@ -389,11 +440,13 @@ Método Uri Parâmetro de entrada Mensagem de sucesso| Estas informações fazem
 
 Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alterar as configurações.
 
-30. Clique no botão **Configurar** para acessar as opções de Upload de Arquivos.
+#### Upload de arquivos
+
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Clique no botão **Configurar** para acessar as opções de Upload de Arquivos.
 
 ![](formularios-usuarios-http.png)
 
-31. Configure os seguintes campos.
+Configure os seguintes campos.
 
 ![](upload-de-arquivos.png)
 
@@ -403,11 +456,13 @@ Método Uri Parâmetro de arquivo Parâmetro de rodapé Mensagem de sucesso| Est
 
 Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alterar as configurações.
 
-32. Clique no botão **Configurar** para acessar as opções de Remover Arquivos.
+#### Remover Arquivos
+
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp;Clique no botão **Configurar** para acessar as opções de Remover Arquivos.
 
 ![](formularios-usuarios-http.png)
 
-33. Configure os seguintes campos.
+Configure os seguintes campos.
 
 ![](remover-arquivos.png)
 
@@ -417,7 +472,9 @@ Método <br> Uri <br> Parâmetro de entrada <br> Mensagem de sucesso| Estas info
 
 Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alterar as configurações.
 
-34. Na guia **Avançadas**, configure as seguintes opções.
+<!-- <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;"></span> &nbsp; -->
+
+Na guia **Avançadas**, configure as seguintes opções.
 
 ![](avancadas.png)
 
@@ -425,7 +482,9 @@ Campos | Descrição
 :---   | :---
 Máscara de arquivo| Através de expressão regular, esta opção serve para filtrar o que se deseja baixar.
 
-35. Se o protocolo selecionado foi **FTP – TCP/IP**, configure as seguintes opções na guia **TCP/IP**.
+### Protocolo FTP
+
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Configure as seguintes opções na guia **TCP/IP**.
 
 ![](guia-ftp-usuario.png)
 
@@ -440,7 +499,7 @@ Tamanho máximo do buffer| Preencha este campo com o tamanho máximo dos blocos 
 FTP Passivo | XXXXXXXXXXXXXXXX.
 ------------------
 
-36. Na guia **Proxy**, configure as seguintes opções:
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp; Na guia **Proxy**, configure as seguintes opções:
 
 ![](ftp-proxy.png)
 
@@ -454,7 +513,7 @@ Usuário    | Preencha este campo com o nome do usuário autorizado a utilizar o
 Senha      |  Preencha este campo com a senha do usuário autorizado a utilizar o serviço de Proxy.
 Confirmar  | Preencha este campo com a senha informada no campo Senha para validação.
 
-37. Na guia **TLS**, configure as seguintes opções:
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">3</span> &nbsp; Na guia **TLS**, configure as seguintes opções:
 
 ![](guia-tls-usuarios.png)
 
@@ -468,7 +527,7 @@ Certificados CA (Autoridade)| As opções deste grupo estão relacionadas aos ce
 Campo          | IssuerCN: Emissor do certificado. IssuerDN: Detalhes sobre o emissor. SubjectCN: Para quem foi emitido o certificado. SubjectDN: Detalhes sobre o usuário para quem foi emitido o certificado.
 Valor          | O valor deste campo está relacionado aos certificados digitais das autoridades certificadoras (CA) que servirão para validar a autenticidade do certificado apresentado pelo servidor FTP.
 
-38. Na guia **Avançadas**, configure as seguintes opções:
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">4</span> &nbsp; Na guia **Avançadas**, configure as seguintes opções:
 
 ![](guia-avancadas-ftp-usuarios.png)
 
@@ -485,7 +544,9 @@ Extensão temporária | Configura uma extensão temporária para arquivo no serv
 
 Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alterar as configurações.
 
-39. Se o protocolo selecionado foi **SFTP – TCP/IP**, configure as seguintes opções na guia **TCP/IP**.
+### Protocolo SFTP
+
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Configure as seguintes opções na guia **TCP/IP**.
 
 ![](guia-sftp-usuario.png)
 
@@ -496,7 +557,7 @@ Porta IP    | Preencha este campo com a porta TCP/IP do servidor STCP OFTP Serve
 SSL3        | Configura a comunicação segura com criptografia e certificação digital, com a utilização da padronização definida na RFC2246 (TLS1/SSL3). O TLS1/SSL3 é comumente encontrado nos servidores de sites seguros (HTTPS) e oferece o maior grau de segurança atualmente disponível. /Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica.
 Tamanho máximo do buffer| Preencha este campo com o tamanho máximo dos blocos de dados que serão transferidos. O intervalo válido é de 1 até 65535.
 
-40. Na guia **Proxy**, configure as seguintes opções.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp; Na guia **Proxy**, configure as seguintes opções.
 
 ![](guia-proxy-sftp.png)
 
@@ -510,7 +571,7 @@ Usuário    | Preencha este campo com o nome do usuário autorizado a utilizar o
 Senha      | Preencha este campo com a senha do usuário autorizado a utilizar o serviço de Proxy.
 Confirmar  | Preencha este campo com a senha informada no campo Senha para validação.
 
-41. Na guia **TLS**, configure as seguintes opções.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">3</span> &nbsp; Na guia **TLS**, configure as seguintes opções.
 
 ![](tls-sftp.png)
 
@@ -521,7 +582,7 @@ Senha    | Preencha este campo com a senha que protege o arquivo de chave privat
 Confirmar| Preencha este campo com a senha informada no campo Senha para validação.
 FingerPrint| Assinatura digital da chave privativa.
 
-42. Na guia **Avançadas**, configure as seguintes opções.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">4</span> &nbsp; Na guia **Avançadas**, configure as seguintes opções.
 
 ![](avancadas-sftp.png)
 
@@ -551,7 +612,7 @@ Tamanho máximo do buffer| Preencha este campo com o tamanho máximo dos blocos 
 Tempo máximo de inatividade| Preencha este campo com o tempo máximo de inatividade de comunicação entre o STCP OFTP Server e o computador remoto.
 Nível de Debug| Preencha este campo com o nível de detalhamento das informações que serão gravadas no arquivo de depuração. Para obter no mesmo arquivo de depuração a informação dos diferentes níveis, preencha este campo com a soma dos níveis desejados. /Obs.: Veja a tabela dos níveis de debug na configuração dos usuários. -->
 
-43. Na guia **FTP**, configure as seguintes opções.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">5</span> &nbsp; Na guia **FTP**, configure as seguintes opções.
 
 ![](guia-ftp.png)
 
@@ -566,7 +627,7 @@ Tamanho máximo do buffer| Preencha este campo com o tamanho máximo dos blocos 
 Tempo máximo de inatividade| Preencha este campo com o tempo máximo de inatividade de comunicação entre o STCP OFTP Server e o computador remoto.
 Nível de Debug| Preencha este campo com o nível de detalhamento das informações que serão gravadas no arquivo de depuração. Para obter no mesmo arquivo de depuração a informação dos diferentes níveis, preencha este campo com a soma dos níveis desejados. /Obs.: Veja a tabela dos níveis de debug na configuração dos usuários.
 
-44. Na guia **SFTP**, configure as seguintes opções.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">6</span> &nbsp; Na guia **SFTP**, configure as seguintes opções.
 
 ![](guia-sftp.png)
 
@@ -581,7 +642,7 @@ Tamanho máximo do buffer| Preencha este campo com o tamanho máximo dos blocos 
 Tempo máximo de inatividade| Preencha este campo com o tempo máximo de inatividade de comunicação entre o STCP OFTP Server e o computador remoto.
 Nível de Debug| Preencha este campo com o nível de detalhamento das informações que serão gravadas no arquivo de depuração. Para obter no mesmo arquivo de depuração a informação dos diferentes níveis, preencha este campo com a soma dos níveis desejados. Obs.: Veja a tabela dos níveis de debug na configuração dos usuários.
 
-45. Na guia **Avançadas I**, configure as seguintes opções para o usuário.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">7</span> &nbsp; Na guia **Avançadas I**, configure as seguintes opções para o usuário.
 
 ![](avancadas-I.png)
 
@@ -599,7 +660,7 @@ Término           | Término do intervalo do período de conexão.
 Dias da semana    | Informa os dias da semana em que a conexão poderá ocorrer.
 Padrão            | Restaura configuração padrão para o período de conexão.
 
-46. Na guia **Avançadas II**, configure as seguintes opções para o usuário.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">8</span> &nbsp; Na guia **Avançadas II**, configure as seguintes opções para o usuário.
 
 ![](avancadas-II.png)
 
@@ -618,12 +679,15 @@ Filtro de arquivos| Preencha este campo com uma expressão regular para validar 
 Tamanho máximo| Preencha este campo com o tamanho máximo que um arquivo pode ter para ser transferido.
 Criar referência de arquivo recebido| Esta opção controla a duplicidade de arquivo, criando uma referência do arquivo no diretório Restart.
 
-47. Na guia **Agendamento**, você poderá adicionar, remover, modificar ou copiar os parâmetros de configuração de um agendamento do serviço STCP OFTP Server.
-48. Clique em **Adicionar**.
+## Agendamento
+
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Você poderá adicionar, remover, modificar ou copiar os parâmetros de configuração de um agendamento do serviço STCP OFTP Server.
+
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp; Clique em **Adicionar**.
 
 ![](agendamento.png)
 
-49. Na guia **Geral**, preencha os campos com as informações descritas abaixo.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">3</span> &nbsp; Na guia **Geral**, preencha os campos com as informações descritas abaixo.
 
 ![](agendamento-geral.png)
 
@@ -648,7 +712,7 @@ Tamanho máximo      | Preencha este campo com o tamanho máximo que um arquivo 
 Executar Comando    | Esta opção assinalada habilita a execução de um comando externo (executável ou bat).
 Comando             | Preencha este campo com o nome da aplicação (executável ou bat) a ser executada por este agendamento.
 
-51. Na guia **Avançadas**, configure o período do agendamento.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">4</span> &nbsp; Na guia **Avançadas**, configure o período do agendamento.
 
 ![](avancadas-agendamento.png)
 
@@ -660,7 +724,9 @@ Limpar         | Clique em Limpar para desabilitar a data de início e de térmi
 
 Pressione o botão **OK** para gravar as alterações ou **Cancelar** para retornar sem gravar as alterações.
 
-52. Na guia **Avançadas**, preencha os campos com as informações descritas.
+## Avançadas
+
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Preencha os campos com as informações descritas.
 
 ![](guia-avancadas.png)
 
@@ -677,11 +743,11 @@ Máximo de tentativas| Número de tentativas de processar o arquivo.
 Controle de log   | As opções deste grupo controlam as propriedades de configuração dos Logs do sistema.
 Controle de autenticação| As opções deste grupo controlam o tipo de autenticação utilizado pelo STCP OFTP Server para validar um usuário. A autenticação está disponível pelo Sistema Operacional e a do STCP. /Obs.: Recomendamos a utilização da autenticação STCP.
 
-53. Em seguida, clique em **Controle de Log**
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp; Em seguida, clique em **Controle de Log**
 
 ![](avancadas-controle-log.png)
 
-54. Na guia **Geral**, preencha os seguintes campos.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">3</span> &nbsp; Na guia **Geral**, preencha os seguintes campos.
 
 ![](avancadas-controle-log-geral.png)
 
@@ -718,11 +784,11 @@ Nível do Evento | Descrição
 
 Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alterar as configurações.
 
-55. Clique em **Controle de Autenticação**
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">4</span> &nbsp; Clique em **Controle de Autenticação**
 
 ![](avancadas-controle-autenticacao.png)
 
-56. Na guia **Geral**, preencha os seguintes campos.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">5</span> &nbsp; Na guia **Geral**, preencha os seguintes campos.
 
 ![](avancadas-controle-autenticacao-geral.png)
 
@@ -731,7 +797,7 @@ Campos | Descrição
 Interface de Autenticação (DLL)| Parâmetro que informa a biblioteca utilizada para configurar a interface de autenticação do STCP.
 Tipo   | Tipos de autenticação suportados pelo STCP OFTP Server: SO(Windows), STCP (Autenticação Nativa da aplicação), Securld/RSA, LDAP.
 
-57. Na guia **SO(Windows)**, preencha os seguintes campos.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">6</span> &nbsp; Na guia **SO(Windows)**, preencha os seguintes campos.
 
 ![](avancadas-controle-autenticacao-sowindows.png)
 
@@ -742,7 +808,7 @@ Domínio | Domínio do sistema operacional.
 Prefixo |Prefixo para mascarar o usuário.
 -----
 
-58. Na guia **STCP**, habilite ou desabilite as seguintes opções.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">7</span> &nbsp; Na guia **STCP**, habilite ou desabilite as seguintes opções.
 
 ![](avancadas-controle-autenticacao-stcp.png)
 
@@ -758,7 +824,7 @@ Pelo menos um caractere maiúsculo| Esta opção assinalada força a criação d
 Pelo menos um dígito| Esta opção assinalada força a criação de senhas com pelo menos um caractere numérico.
 Pelo menos um caractere especial| Esta opção assinalada força a criação de senhas com pelo menos um caractere especial.
 
-59. Na guia **Securld/RSA**, preencha o seguinte campo.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">8</span> &nbsp; Na guia **Securld/RSA**, preencha o seguinte campo.
 
 ![](avancadas-controle-autenticacao-rsa.png)
 
@@ -767,7 +833,7 @@ Campos | Descrição
 Arquivo de configuração| Parâmetro que informa as configurações para autenticação Securld/RSA.
 ------
 
-60. Na guia **LDAP**, preencha o seguinte campo.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">9</span> &nbsp; Na guia **LDAP**, preencha o seguinte campo.
 
 ![](avancadas-controle-autenticacao-ldap.png)
 
@@ -782,13 +848,15 @@ Método     | Métodos utilizados pelo protocolo LDAP: LDAP_AUTH_SIMPLE, LDAP_AU
 
 Pressione o botão **OK** para gravar as configurações ou **Cancelar** para abandonar sem alterar as configurações.
 
-61. Na guia **Usuários**, selecione o usuário e clique em **Propriedades**.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">10</span> &nbsp; Na guia **Usuários**, selecione o usuário e clique em **Propriedades**.
 
 ![](usuarios-propriedades.png)
 
 Após adicionar corretamente o Usuário, é necessário configurar os **Tipos de Arquivos.  Obs.: Ao pressionar o botão OK, somente as configurações da guia Geral e Avançadas serão gravadas.**
 
-62. Na guia **Tipos de arquivos**, clique em **Adicionar**.
+## Tipos de Arquivos
+
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Clique em **Adicionar**.
 
 ![](tipos-de-arquivos.png)
 
@@ -816,7 +884,7 @@ TEST.2   | 2   | —      | TEST  | —    |TXT.TEST /TXT.TXT| Sim /Não
 TEST.3   | 3   | —      | —     | T.T  |TXT.TXT /TXTTXT| Sim /Não
 Default  | —   | —      | —     | —    | TXTTXT | Sim
 
-63. Informe o Nome do novo tipo de arquivo e clique em **OK**.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp; Informe o Nome do novo tipo de arquivo e clique em **OK**.
 
 ![](tipo-de-arquivo-nome.png)
 
@@ -824,7 +892,7 @@ Campos | Descrição
 :---   | :---
 Nome do novo tipo de arquivo| Preencha este campo com o nome desejado para o novo tipo. /Obs.: Não utilize caracteres especiais ou espaços em branco.
 
-64. Na guia **Geral**, configure as seguintes opções.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">3</span> &nbsp; Na guia **Geral**, configure as seguintes opções.
 
 ![](tipo-de-arquivo-geral.png)
 
@@ -878,7 +946,7 @@ A utilização do timestamp externo do arquivo tem o seguinte formato:
 **ss**            | Segundos
 **nnn**           | Milésimos de segundos
 
-65. Na guia **Avançadas**, configure as seguintes opções para o tipo de arquivo.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">4</span> &nbsp; Na guia **Avançadas**, configure as seguintes opções para o tipo de arquivo.
 
 ![](tipo-de-arquivo-avancadas.png)
 
@@ -923,41 +991,7 @@ Padrão                     | Restaura configuração padrão para o período de
 
 Pressionar o botão **OK** para gravar as configurações ou **Cancelar** para abandonar sem alterar as configurações.
 
-## Variáveis internas do STCP OFTP Server
-
-As variáveis internas do STCP OFTP Server podem ser utilizadas como parâmetros para os comandos externos.
-
-Variável  | Descrição
-:---      | :---
-$DEFPARAM | Variável que contém o valor padrão para o comando externo.
-$DIRSYS   | Variável que contém o nome do diretório de controle.
-$DIRDATA  | Variável que contém o nome do diretório de dados.
-$LUSERID  | Variável que contém o nome do usuário.
-$LFNAME   | Variável que contém o nome completo do arquivo local.
-$OFNAME   | Variável que contém o nome do arquivo ODETTE.
-$OFTYPE   | Variável que contém o tipo de registro do arquivo ODETTE.
-$OFRECLEN | Variável que contem o tamanho do registro do arquivo ODETTE.
-$OFSIZE   | Variável que contém o tamanho aproximado do arquivo ODETTE.
-$OFDATE   | Variável que contém a data do arquivo ODETTE.
-$OFTIME   | Variável que contém a hora do arquivo ODETTE.
-$OFUSERDATA| Variável que contém o userdata do arquivo ODETTE.
-$OFORIGINATOR| Variável que contém a origem do arquivo ODETTE.
-$OFDESTINATION| Variável que contém o destino do arquivo ODETTE.
-
-**Definição do valor padrão do parâmetro**
-
-Executar comando para:| Valor padrão do parâmetro.
-:---                  | :---
-**Início da conexão** | Nome do diretório de dados do usuário.
-**Fim da conexão**    | Nome do diretório de dados do usuário.
-**Fim da transmissão do arquivo**| Nome completo do arquivo.
-**Fim da recepção do arquivo**| Nome completo do arquivo.
-**Ler o arquivo**     | Nome completo do arquivo.
-**Gravar o arquivo**  | Nome completo do arquivo.
-**Agenda**            | Nome da agenda.
-**Eventos (LOG)**     | Linha com detalhes do evento.
-
-## Geração da chave privativa e certificado de autenticação TLS
+## Chave privativa e Certificado de autenticação TLS
 
 Os seguintes procedimentos devem ser executados para a geração da chave privativa e do certificado digital a serem utilizados na comunicação SSL3.
 
