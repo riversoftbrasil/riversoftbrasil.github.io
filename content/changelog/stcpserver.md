@@ -9,7 +9,7 @@ sidebar:
   exclude: false
 excludeSearch: true
 weight: 1
-slug: changelog-stcpserver
+slug: stcpserver
 ---
 ## STCP OFTP Server / STCP OFTP Client
 
