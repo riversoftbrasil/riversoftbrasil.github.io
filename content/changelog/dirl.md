@@ -6,6 +6,10 @@ sidebar:
 ---
 ## STCP Directlink
 
+### {{< icon "clock" >}} &nbsp;  Versão 6.5.16 (lançada em março de 2024)
+
+- Correção do problema que gerava erro de validação no upload de arquivo (API) quando era utilizado mais de um e-mail e com espaços em branco.
+
 ### {{< icon "clock" >}} &nbsp;  Versão 6.5.12 (lançada em janeiro de 2024)
 
 - Correção da vulnerabilidade SSH Terrapin Truncation Weakness (CVE-2023-48795) na interface SFTP.
