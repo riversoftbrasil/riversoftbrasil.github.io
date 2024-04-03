@@ -10,13 +10,13 @@ prev: /docs/stcpserver
 next: /docs/stcpserver/02-config
 # slug:
 draft: false
-lastmod: 2024-03-05
+lastmod: 2024-04-02
 ---
-## Como instalar o STCP OFTP Server
+## Distribuição dos pacotes para instalação
 
-O STCP OFTP Server é distribuído através de um link de instalação, que será distribuído pele Equipe de Sustentação da Riversoft.
+O pacote de instalação será distribuído através de um link pela Equipe de Sustentação da Riversoft.
 
-Os seguintes passos devem ser executados para iniciar o processo de instalação:
+Após extrair o  zip com o executável, os seguintes passos devem ser executados:
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Clique no executável para iniciar o processo de instalação.
 

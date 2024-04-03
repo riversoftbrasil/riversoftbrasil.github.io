@@ -46,12 +46,12 @@ Campos | Descrição
 :----  | :----
 Nome   | Este campo informa o nome do serviço do STCP OFTP Server.
 Descrição| Este campo informa a descrição do serviço do STCP OFTP Server.
-Utilizar login| Esta opção assinalada habilita a utilização de uma conta do sistema operacional pelo serviço STCP OFTP Server. /Obs.: Sempre que o diretório de dados selecionado for uma unidade de rede, esta opção deverá ser habilitada.
+Utilizar login| Esta opção assinalada habilita a utilização de uma conta do sistema operacional pelo serviço STCP OFTP Server. <br> Obs.: Sempre que o diretório de dados selecionado for uma unidade de rede, esta opção deverá ser habilitada.
 Usuário| Preencha este campo com o nome do usuário que deve ser utilizado pelo serviço STCP OFTP Server.
 Senha  | Preencha este campo com a senha do usuário que deve ser utilizado pelo serviço STCP OFTP Server.
 Confirmar| Preencha este campo com a senha do usuário para ser validada.
-Diretório de controle| Este campo informa o nome do diretório de instalação do STCP OFTP Server onde serão armazenadas as configurações dos usuários, logs e arquivos de depuração da comunicação. /Obs.: Para a versão STCP OFTP Server, este parâmetro não pode ser modificado.
-Diretório de dados| Preencha este campo com o diretório, onde a estrutura de subdiretórios para envio e recepção dos arquivos de cada usuário deverá ser criada.  /Obs.: Esta configuração deve ser alterada antes da criação dos usuários.
+Diretório de controle| Este campo informa o nome do diretório de instalação do STCP OFTP Server onde serão armazenadas as configurações dos usuários, logs e arquivos de depuração da comunicação. <br> Obs.: Para a versão STCP OFTP Server, este parâmetro não pode ser modificado.
+Diretório de dados| Preencha este campo com o diretório, onde a estrutura de subdiretórios para envio e recepção dos arquivos de cada usuário deverá ser criada.  <br> Obs.: Esta configuração deve ser alterada antes da criação dos usuários.
 Número de série*| Preencha este campo com o número de série que está localizado no "Contrato de Licença de Uso" ou na parte traseira da embalagem do CD. <br>
 ----
 
@@ -68,7 +68,7 @@ Nesta guia, você poderá adicionar, remover ou modificar os parâmetros das int
 ![](guia-redes.png)
 
 
-> O STCP OFTP Server permite a configuração de múltiplas interfaces de redes com o mesmo ou diferentes protocolos de comunicação **(TCP/IP, SFTP, HTTPS e TLS)**
+> O STCP OFTP Server oferece a capacidade de configurar múltiplas interfaces de redes com diferentes protocolos de comunicação, como TCP/IP, além da opção de implementar medidas de segurança adicionais através de protocolos como SFTP, HTTPS e TLS.
 
 {{< callout type="info" >}}
 *Obs.: As configurações de Redes somente serão utilizadas para as conexões entrantes (inbound).
@@ -82,8 +82,8 @@ Protocolo     | Descrição
 OFTP - TCP/IP | Configura o STCP OFTP Server para utilizar o protocolo de comunicação TCP/IP.
 API DirectLink - HTTP/S | Configura o STCP Server para comunicar com com a API do Directlink. <br>  <a href="/docs/stcpdirectlink/05-api/" target="_blank">Acesse a seção da API do Directlink para mais informações</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;.
 SFTP DirectLink – TCP/IP | Configura o STCP Server para se comunicar via protocolo SFTP com o Directlink.
-Monitor – TCP/IP | Habilita a rede para monitoração do STCP através do protocolo TCP/IP.
-Monitor Directlink - TCP/IP | Habilita a rede para monitoração do Directlink através do protocolo TCP/IP.
+Monitor – TCP/IP | Habilita a rede para supervisão do STCP através do protocolo TCP/IP.
+Monitor Directlink - TCP/IP | Habilita a rede para supervisão do Directlink através do protocolo TCP/IP.
 ----
 
 ### OFTP
@@ -104,17 +104,17 @@ Desabilitar| Esta opção assinalada desabilita a interface de rede.
 
 Campos     | Descrição
 :----      | :----
-Endereço IP| Preencha este campo com o endereço TCP/IP ou nome (DNS) da interface local para a qual o serviço STCP OFTP Server deve ser disponibilizado. /Obs.: Utilize o endereço 0.0.0.0 para habilitar o serviço sobre todas as interfaces de rede.
-Porta IP   | Preencha este campo com a porta IP da interface local para a qual o serviço STCP OFTP Server deve ser disponibilizado. /Obs.: A porta padrão do serviço OFTP é a 3305.
-Comunicação Segura| Esta opção assinalada habilita a utilização de criptografia na comunicação com o servidor STCP OFTP Server, você pode escolher entre a opção Nativa ou SSL3. /Obs.: Antes de habilitar esta opção, leia atentamente o capítulo sobre Segurança.
-TLS       | Configura a comunicação segura com criptografia e certificação digital, com a utilização da padronização definida na RFC2246 (TLS1/SSL3). O TLS1/SSL3 é comumente encontrado nos servidores de sites seguros (HTTPS) e oferece o maior grau de segurança atualmente disponível. /Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica.
+Endereço IP| Preencha este campo com o endereço TCP/IP ou nome (DNS) da interface local para a qual o serviço STCP OFTP Server deve ser disponibilizado. <br> Obs.: Utilize o endereço 0.0.0.0 para habilitar o serviço sobre todas as interfaces de rede.
+Porta IP   | Preencha este campo com a porta IP da interface local para a qual o serviço STCP OFTP Server deve ser disponibilizado. <br> Obs.: A porta padrão do serviço OFTP é a 3305.
+Comunicação Segura| Esta opção assinalada habilita a utilização de criptografia na comunicação com o servidor STCP OFTP Server, você pode escolher entre a opção Nativa ou TLS. <br> Obs.: Antes de habilitar esta opção, leia atentamente o capítulo sobre Segurança.
+TLS       | Configura a comunicação segura com criptografia e certificação digital, com a utilização da padronização definida na RFC2246 (TLS1/SSL3). O TLS1/SSL3 é comumente encontrado nos servidores de sites seguros (HTTPS) e oferece o maior grau de segurança atualmente disponível. <br> Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica.
 Compatibilidade| Esta opção possibilita compatibilizar o STCP OFTP Server com diferentes produtos atualmente existentes no mercado.
 RFC2204    | Esta opção de compatibilidade permite a comunicação do STCP OFTP Server com outros produtos que seguem a recomendação RFC2204.
 RFC1006/RFC1086| Esta opção de compatibilidade permite a comunicação do STCP OFTP Server através de gateways de comunicação TCP-IP/X.25, que seguem a recomendação RFC1006/1086.
-RVS*       | Esta opção de compatibilidade permite a comunicação do STCP OFTP Server com o produto RVS*. /Obs.: Esta opção não deve ser habilitada quando o servidor RVS* for uma versão do mainframe (grande porte).
-X.25/Router | Esta opção de compatibilidade permite a comunicação do STCP OFTP Server através de roteadores com suporte à comunicação X.25 através de socket. /Obs.: Consulte a Riversoft sobre esta configuração se você estiver em dúvidas.
+RVS*       | Esta opção de compatibilidade permite a comunicação do STCP OFTP Server com o produto RVS*. <br> Obs.: Esta opção não deve ser habilitada quando o servidor RVS* for uma versão do mainframe (grande porte).
+X.25/Router | Esta opção de compatibilidade permite a comunicação do STCP OFTP Server através de roteadores com suporte à comunicação X.25 através de socket. <br> Obs.: Consulte a Riversoft sobre esta configuração se você estiver em dúvidas.
 XFB*/SSL   | Habilita a compatibilidade do STCP com o XFB em conexões seguras SSL.
-Compressão GZIP| Esta opção assinalada habilita a utilização da compressão GZIP onthe-fly (durante a transferência).  /Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica.
+Compressão GZIP| Esta opção assinalada habilita a utilização da compressão GZIP onthe-fly (durante a transferência).  <br> Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica.
 
 {{< callout type="info" >}}
   \*As marcas citadas são propriedade dos seus respectivos donos.
@@ -126,13 +126,13 @@ Compressão GZIP| Esta opção assinalada habilita a utilização da compressão
 
 Campos         | Descrição
 :--------      | :-----
-Características| As opções definidas neste grupo serão utilizadas pelo STCP OFTP Server na comunicação com o servidor Odette. /Obs.: Não modifique estas características sem ler atentamente o que significa cada uma delas e ter certeza que realmente deseja fazê-lo.
+Características| As opções definidas neste grupo serão utilizadas pelo STCP OFTP Server na comunicação com o servidor Odette. <br> Obs.: Não modifique estas características sem ler atentamente o que significa cada uma delas e ter certeza que realmente deseja fazê-lo.
 Créditos       | Preencha este campo com a quantidade de blocos de dados que serão transferidos até aguardar uma nova autorização para envio. O intervalo válido é de 1 até 99.
-Special Logic  | Esta opção assinalada habilita o controle do regime de comunicação lógica especial. Somente deve ser habilitado para comunicação através do protocolo PAD ou SERIAL. /Obs.: Não habilite esta opção quando não for utilizado o Protocolo PAD ou SERIAL.
+Special Logic  | Esta opção assinalada habilita o controle do regime de comunicação lógica especial. Somente deve ser habilitado para comunicação através do protocolo PAD ou SERIAL. <br> Obs.: Não habilite esta opção quando não for utilizado o Protocolo PAD ou SERIAL.
 Tamanho máximo do buffer| Preencha este campo com o tamanho máximo dos blocos de dados que serão transferidos. O intervalo válido é de 1 até 65535.
 Outros         | As opções definidas neste grupo serão utilizadas localmente pelo STCP OFTP Server para controlar o tempo de inatividade e a geração do arquivo de depuração da comunicação.
 Tempo máximo de inatividade| Preencha este campo com o tempo máximo de inatividade de comunicação entre o STCP OFTP Server e o computador remoto.
-Nível de debug | Preencha este campo com o nível de detalhamento das informações que serão gravadas no arquivo de depuração. Para obter no mesmo arquivo de depuração a informação dos diferentes níveis, preencha este campo com a soma dos níveis desejados. /Obs.: Veja a tabela dos níveis de debug na configuração dos usuários.
+Nível de debug | Preencha este campo com o nível de detalhamento das informações que serão gravadas no arquivo de depuração. Para obter no mesmo arquivo de depuração a informação dos diferentes níveis, preencha este campo com a soma dos níveis desejados. <br> Obs.: Veja a tabela dos níveis de debug na configuração dos usuários.
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">4</span> &nbsp; Na guia **TLS**, configure as seguintes opções para o protocolo **OFTP – TCP/IP**.
 
@@ -140,17 +140,281 @@ Nível de debug | Preencha este campo com o nível de detalhamento das informaç
 
 Campos         | Descrição
 :------------  | :------
-Chave Privativa| As opções deste grupo estão relacionadas às chaves pública e privada utilizadas pelo protocolo TLS1/SSL3 para autenticação e criptografia dos dados. /Obs.: O arquivo da chave privativa deve estar no formato PKCS#12 e os certificados, no formato DER ou PEM.
+Chave Privativa| As opções deste grupo estão relacionadas às chaves pública e privada utilizadas pelo protocolo TLS1/SSL3 para autenticação e criptografia dos dados. <br> Obs.: O arquivo da chave privativa deve estar no formato PKCS#12 e os certificados, no formato DER ou PEM.
 Chave          | Preencha este campo com o nome do arquivo (caminho completo) onde se encontra instalada a chave privativa.
 Certificado    | Preencha este campo com o nome do arquivo (caminho completo) onde se encontra instalado o certificado digital (X509) associado à chave privativa.
 Senha          | Preencha este campo com a senha que protege o arquivo de chave privativa.
 Confirmar      | Preencha este campo com a senha informada no campo senha para validação.
-Certificados CA (Autoridade)| As opções deste grupo estão relacionadas aos certificados digitais das autoridades certificadoras (CA) que servirão para validar a autenticidade do certificado apresentado pelo servidor. /Obs.: O arquivo da chave privativa deve estar no formato PKCS#12 e os certificados no formato DER ou PEM.
+Certificados CA (Autoridade)| As opções deste grupo estão relacionadas aos certificados digitais das autoridades certificadoras (CA) que servirão para validar a autenticidade do certificado apresentado pelo servidor. <br> Obs.: O arquivo da chave privativa deve estar no formato PKCS#12 e os certificados no formato DER ou PEM.
 Arquivo        | Preencha este campo com o nome do arquivo (caminho completo) onde se encontra instalado o certificado digital (X509) contendo a chave pública que assina o certificado apresentado pelo servidor.
 Diretório      | Preencha este campo com o nome do diretório (caminho completo) onde se encontram instalados os certificados digitais (X509) contendo a chave pública que assina o certificado apresentado pelo servidor.
-Algoritmos     | Preencha este campo com os nomes dos algoritmos suportados para assinatura digital, hashing e criptografia dos dados. /Obs.: Caso este campo não seja configurado, o protocolo TLS1/SSL3 será selecionado automaticamente. Veja também pág. 95.
+Algoritmos     | Preencha este campo com os nomes dos algoritmos suportados para assinatura digital, hashing e criptografia dos dados. <br> Obs.: Caso este campo não seja configurado, o protocolo TLS será selecionado automaticamente.
 Debug          | Esta opção permite gerar um arquivo de depuração na pasta Debug do diretório de instalação do STCP.
 
+
+Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alterar as configurações.
+
+### API DirectLink
+
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Na guia **Geral**, preencha as seguintes opções de configuração:
+
+![](redes-api-01.png)
+
+Campos | Descrição
+:----  | :----
+Nome   | Campo com o nome da interface de rede configurada.
+Descrição| Preencha este campo com a descrição da interface de rede.
+Desabilitar| Esta opção assinalada desabilita a interface de rede.
+
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp; Na guia **TCP/IP**, configure as seguintes opções:
+
+![](redes-api-02.png)
+
+Campos     | Descrição
+:----      | :----
+Endereço IP| Preencha este campo com o endereço TCP/IP ou nome (DNS) da interface local para a qual o serviço STCP OFTP Server deve ser disponibilizado. <br> Obs.: Utilize o endereço 0.0.0.0 para habilitar o serviço sobre todas as interfaces de rede.
+Porta IP   | Preencha este campo com a porta IP da interface local para a qual o serviço STCP OFTP Server deve ser disponibilizado. <br> Obs.: A porta padrão do serviço OFTP é a 3305.
+Comunicação Segura| Esta opção assinalada habilita a utilização de criptografia na comunicação com o servidor STCP OFTP Server, você pode escolher entre a opção Nativa ou TLS. <br> Obs.: Antes de habilitar esta opção, leia atentamente o capítulo sobre Segurança.
+TLS       | Configura a comunicação segura com criptografia e certificação digital, com a utilização da padronização definida na RFC2246 (TLS1/SSL3). O TLS1/SSL3 é comumente encontrado nos servidores de sites seguros (HTTPS) e oferece o maior grau de segurança atualmente disponível. <br> Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica.
+Compatibilidade| Esta opção possibilita compatibilizar o STCP OFTP Server com diferentes produtos atualmente existentes no mercado.
+RFC2204    | Esta opção de compatibilidade permite a comunicação do STCP OFTP Server com outros produtos que seguem a recomendação RFC2204.
+RFC1006/RFC1086| Esta opção de compatibilidade permite a comunicação do STCP OFTP Server através de gateways de comunicação TCP-IP/X.25, que seguem a recomendação RFC1006/1086.
+RVS*       | Esta opção de compatibilidade permite a comunicação do STCP OFTP Server com o produto RVS*. <br> Obs.: Esta opção não deve ser habilitada quando o servidor RVS* for uma versão do mainframe (grande porte).
+X.25/Router | Esta opção de compatibilidade permite a comunicação do STCP OFTP Server através de roteadores com suporte à comunicação X.25 através de socket. <br> Obs.: Consulte a Riversoft sobre esta configuração se você estiver em dúvidas.
+XFB*/SSL   | Habilita a compatibilidade do STCP com o XFB em conexões seguras SSL.
+Compressão GZIP| Esta opção assinalada habilita a utilização da compressão GZIP onthe-fly (durante a transferência).  <br> Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica.
+
+{{< callout type="info" >}}
+  \*As marcas citadas são propriedade dos seus respectivos donos.
+{{< /callout >}}
+
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">3</span> &nbsp; Na guia **TLS**, configure as seguintes opções:
+
+![](redes-api-03.png)
+
+Campos         | Descrição
+:------------  | :------
+Chave Privativa| As opções deste grupo estão relacionadas às chaves pública e privada utilizadas pelo protocolo TLS para autenticação e criptografia dos dados. <br> Obs.: O arquivo da chave privativa deve estar no formato PKCS#12 e os certificados, no formato DER ou PEM.
+Chave          | Preencha este campo com o nome do arquivo (caminho completo) onde se encontra instalada a chave privativa.
+Certificado    | Preencha este campo com o nome do arquivo (caminho completo) onde se encontra instalado o certificado digital (X509) associado à chave privativa.
+Senha          | Preencha este campo com a senha que protege o arquivo de chave privativa.
+Confirmar      | Preencha este campo com a senha informada no campo senha para validação.
+Certificados CA (Autoridade)| As opções deste grupo estão relacionadas aos certificados digitais das autoridades certificadoras (CA) que servirão para validar a autenticidade do certificado apresentado pelo servidor. <br> Obs.: O arquivo da chave privativa deve estar no formato PKCS#12 e os certificados no formato DER ou PEM.
+Arquivo        | Preencha este campo com o nome do arquivo (caminho completo) onde se encontra instalado o certificado digital (X509) contendo a chave pública que assina o certificado apresentado pelo servidor.
+Diretório      | Preencha este campo com o nome do diretório (caminho completo) onde se encontram instalados os certificados digitais (X509) contendo a chave pública que assina o certificado apresentado pelo servidor.
+Algoritmos     | Preencha este campo com os nomes dos algoritmos suportados para assinatura digital, hashing e criptografia dos dados. <br> Obs.: Caso este campo não seja configurado, o protocolo TLS será selecionado automaticamente.
+Debug          | Esta opção permite gerar um arquivo de depuração na pasta Debug do diretório de instalação do STCP.
+----
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">4</span> &nbsp; Na guia **API**, configure as seguintes opções:
+
+![](redes-api-04.png)
+
+Campos         | Descrição
+:------------  | :------
+URL de acesso  | Preencha este campo com a URL de requisição.
+Estáticas      | Preencha este campo com o diretório (caminho completo) onde se encontram páginas estáticas do Directlink.
+Templates      | Preencha este campo com o diretório (caminho completo) onde se encontram os templates do Directlink.
+Versão TLS     | Preencha estes campos com a versão mínima e máxima escolhida do TLS.
+Headers Customizados (json)  | Preencha este campo com os headers customizados no formato json.
+Log requisições HTTP/S    | Preencha este campo com o nome do arquivo (caminho completo) onde se encontra o log das requisções https.
+
+
+Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alterar as configurações.
+
+### SFTP DirectLink
+
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Na guia **Geral**, configure as seguintes opções:
+
+![](redes-sftpdirl-01.png)
+
+Campos | Descrição
+:----  | :----
+Nome   | Campo com o nome da interface de rede configurada.
+Descrição| Preencha este campo com a descrição da interface de rede.
+Desabilitar| Esta opção assinalada desabilita a interface de rede.
+-----
+
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp; Na guia **TCP/IP**, configure as seguintes opções:
+
+![](redes-sftpdirl-02.png)
+
+Campos     | Descrição
+:----      | :----
+Endereço IP| Preencha este campo com o endereço TCP/IP ou nome (DNS) da interface local para a qual o serviço STCP OFTP Server deve ser disponibilizado. <br> Obs.: Utilize o endereço 0.0.0.0 para habilitar o serviço sobre todas as interfaces de rede.
+Porta IP   | Preencha este campo com a porta IP da interface local para a qual o serviço STCP OFTP Server deve ser disponibilizado. <br> Obs.: A porta padrão do serviço OFTP é a 3305.
+Comunicação Segura| Esta opção assinalada habilita a utilização de criptografia na comunicação com o servidor STCP OFTP Server, você pode escolher entre a opção Nativa ou TLS. <br> Obs.: Antes de habilitar esta opção, leia atentamente o capítulo sobre Segurança.
+TLS       | Configura a comunicação segura com criptografia e certificação digital, com a utilização da padronização definida na RFC2246 (TLS). O TLS é comumente encontrado nos servidores de sites seguros (HTTPS) e oferece o maior grau de segurança atualmente disponível. <br> Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica.
+Compatibilidade| Esta opção possibilita compatibilizar o STCP OFTP Server com diferentes produtos atualmente existentes no mercado.
+RFC2204    | Esta opção de compatibilidade permite a comunicação do STCP OFTP Server com outros produtos que seguem a recomendação RFC2204.
+RFC1006/RFC1086| Esta opção de compatibilidade permite a comunicação do STCP OFTP Server através de gateways de comunicação TCP-IP/X.25, que seguem a recomendação RFC1006/1086.
+RVS*       | Esta opção de compatibilidade permite a comunicação do STCP OFTP Server com o produto RVS*. <br> Obs.: Esta opção não deve ser habilitada quando o servidor RVS* for uma versão do mainframe (grande porte).
+X.25/Router | Esta opção de compatibilidade permite a comunicação do STCP OFTP Server através de roteadores com suporte à comunicação X.25 através de socket. <br> Obs.: Consulte a Riversoft sobre esta configuração se você estiver em dúvidas.
+XFB*/SSL   | Habilita a compatibilidade do STCP com o XFB em conexões seguras SSL.
+Compressão GZIP| Esta opção assinalada habilita a utilização da compressão GZIP onthe-fly (durante a transferência).  <br> Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica.
+----
+
+{{< callout type="info" >}}
+  \*As marcas citadas são propriedade dos seus respectivos donos.
+{{< /callout >}}
+
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">3</span> &nbsp; Na guia **SSH/SFTP**, configure as seguintes opções:
+
+![](redes-sftpdirl-03.png)
+
+Campos         | Descrição
+:------------  | :------
+Chave Privativa| Este grupo está relacionado à chave privada utilizada pelo protocolo para autenticação e criptografia dos dados.
+Chave          | Preencha este campo com o nome do arquivo (caminho completo) onde se encontra instalada a chave privativa.
+Senha          | Preencha este campo com a senha que protege o arquivo de chave privativa.
+Confirma      | Preencha este campo com a senha informada no campo senha para validação.
+Chaves autorizadas     | As opções deste grupo estão relacionadas à chave autorizada para validação da conexão.
+Arquivo     | Preencha este campo com o caminho do arquivo da chave autorizada para validação da conexão.
+Métodos de autenticação     | Preencha este campo com o(s) método(s) que serão utilizados para conexão.
+Máximo de conexões      | Preencha este campo com a quantidade máxima de conexões.
+Máximo de arquivos abertos    | Preencha este campo com a quantidade máxima de arquivos que serão abertos nas conexões.
+Máximo de arquivos listados   | Preencha este campo com a quantidade máxima de arquivos que serão listados nas conexões.
+Permissão de arquivo  (padrão)  | Preencha este campo com a permissão dos arquivos (Read, Write, Execute).
+Tempo de inatividade    | Preencha este campo com o tempo (em segundos) de inatividade da conexão.
+Nível de debug   | Preencha este campo com o nível de detalhamento das informações que serão gravadas no arquivo de depuração.
+----
+
+Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alterar as configurações.
+
+### Monitor - TCP/IP
+
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Na guia **Geral**, configure as seguintes opções:
+
+![](monitor-01.png)
+
+Campos | Descrição
+:----  | :----
+Nome   | Campo com o nome da interface de rede configurada.
+Descrição| Preencha este campo com a descrição da interface de rede.
+Desabilitar| Esta opção assinalada desabilita a interface de rede.
+---
+
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp; Na guia **TCP/IP**, configure as seguintes opções:
+
+![](monitor-02.png)
+
+Campos     | Descrição
+:----      | :----
+Endereço IP| Preencha este campo com o endereço TCP/IP ou nome (DNS) da interface local para a qual o serviço STCP OFTP Server deve ser disponibilizado. <br> Obs.: Utilize o endereço 0.0.0.0 para habilitar o serviço sobre todas as interfaces de rede.
+Porta IP   | Preencha este campo com a porta IP da interface local para a qual o serviço STCP OFTP Server deve ser disponibilizado. <br> Obs.: A porta padrão do serviço OFTP é a 3305.
+Comunicação Segura| Esta opção assinalada habilita a utilização de criptografia na comunicação com o servidor STCP OFTP Server, você pode escolher entre a opção Nativa ou TLS. <br> Obs.: Antes de habilitar esta opção, leia atentamente o capítulo sobre Segurança.
+TLS       | Configura a comunicação segura com criptografia e certificação digital, com a utilização da padronização definida na RFC2246 (TLS). O TLS é comumente encontrado nos servidores de sites seguros (HTTPS) e oferece o maior grau de segurança atualmente disponível. <br> Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica.
+Compatibilidade| Esta opção possibilita compatibilizar o STCP OFTP Server com diferentes produtos atualmente existentes no mercado.
+RFC2204    | Esta opção de compatibilidade permite a comunicação do STCP OFTP Server com outros produtos que seguem a recomendação RFC2204.
+RFC1006/RFC1086| Esta opção de compatibilidade permite a comunicação do STCP OFTP Server através de gateways de comunicação TCP-IP/X.25, que seguem a recomendação RFC1006/1086.
+RVS*       | Esta opção de compatibilidade permite a comunicação do STCP OFTP Server com o produto RVS*. <br> Obs.: Esta opção não deve ser habilitada quando o servidor RVS* for uma versão do mainframe (grande porte).
+X.25/Router | Esta opção de compatibilidade permite a comunicação do STCP OFTP Server através de roteadores com suporte à comunicação X.25 através de socket. <br> Obs.: Consulte a Riversoft sobre esta configuração se você estiver em dúvidas.
+XFB*/SSL   | Habilita a compatibilidade do STCP com o XFB em conexões seguras SSL.
+Compressão GZIP| Esta opção assinalada habilita a utilização da compressão GZIP onthe-fly (durante a transferência).  <br> Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica.
+----
+
+{{< callout type="info" >}}
+  \*As marcas citadas são propriedade dos seus respectivos donos.
+{{< /callout >}}
+
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">3</span> &nbsp; Na guia **TLS**, configure as seguintes opções:
+
+![](monitor-03.png)
+
+Campos         | Descrição
+:------------  | :------
+Chave Privativa| As opções deste grupo estão relacionadas às chaves pública e privada utilizadas pelo protocolo TLS para autenticação e criptografia dos dados. <br> Obs.: O arquivo da chave privativa deve estar no formato PKCS#12 e os certificados, no formato DER ou PEM.
+Chave          | Preencha este campo com o nome do arquivo (caminho completo) onde se encontra instalada a chave privativa.
+Certificado    | Preencha este campo com o nome do arquivo (caminho completo) onde se encontra instalado o certificado digital (X509) associado à chave privativa.
+Senha          | Preencha este campo com a senha que protege o arquivo de chave privativa.
+Confirmar      | Preencha este campo com a senha informada no campo senha para validação.
+Certificados CA (Autoridade)| As opções deste grupo estão relacionadas aos certificados digitais das autoridades certificadoras (CA) que servirão para validar a autenticidade do certificado apresentado pelo servidor. <br> Obs.: O arquivo da chave privativa deve estar no formato PKCS#12 e os certificados no formato DER ou PEM.
+Arquivo        | Preencha este campo com o nome do arquivo (caminho completo) onde se encontra instalado o certificado digital (X509) contendo a chave pública que assina o certificado apresentado pelo servidor.
+Diretório      | Preencha este campo com o nome do diretório (caminho completo) onde se encontram instalados os certificados digitais (X509) contendo a chave pública que assina o certificado apresentado pelo servidor.
+Algoritmos     | Preencha este campo com os nomes dos algoritmos suportados para assinatura digital, hashing e criptografia dos dados. <br> Obs.: Caso este campo não seja configurado, o protocolo TLS será selecionado automaticamente.
+Debug          | Esta opção permite gerar um arquivo de depuração na pasta Debug do diretório de instalação do STCP.
+----
+
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">4</span> &nbsp; Na guia **Monitor**, configure as seguintes opções:
+
+![](monitor-04.png)
+
+Campos         | Descrição
+:------------  | :------
+Usuário   | Preencha este campo com o nome do usuário da rede de supervisão.
+Senha  | Preencha este campo com a senha do usuário que deve ser utilizada pelo rede de supervisão.
+Confirmar      | Preencha este campo com a senha informada no campo senha para validação.
+Intervalo de requisições | Esta opção assinalada o tempo (em segundos) de intervalo entre as requisições feitas.
+Executar comando externo | Esta opção habilita a execução de um comando externo dentro do STCP <br> Exemplo: ````notepad````Abrir bloco de notas no Windows.
+----
+
+Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alterar as configurações.
+
+### Monitor - DirectLink
+
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Na guia **Geral**, configure as seguintes opções:
+
+![](monitordirl-01.png)
+
+Campos | Descrição
+:----  | :----
+Nome   | Campo com o nome da interface de rede configurada.
+Descrição| Preencha este campo com a descrição da interface de rede.
+Desabilitar| Esta opção assinalada desabilita a interface de rede.
+---
+
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp; Na guia **TCP/IP**, configure as seguintes opções:
+
+![](monitordirl-02.png)
+
+Campos     | Descrição
+:----      | :----
+Endereço IP| Preencha este campo com o endereço TCP/IP ou nome (DNS) da interface local para a qual o serviço STCP OFTP Server deve ser disponibilizado. <br> Obs.: Utilize o endereço 0.0.0.0 para habilitar o serviço sobre todas as interfaces de rede.
+Porta IP   | Preencha este campo com a porta IP da interface local para a qual o serviço STCP OFTP Server deve ser disponibilizado. <br> Obs.: A porta padrão do serviço OFTP é a 3305.
+Comunicação Segura| Esta opção assinalada habilita a utilização de criptografia na comunicação com o servidor STCP OFTP Server, você pode escolher entre a opção Nativa ou TLS. <br> Obs.: Antes de habilitar esta opção, leia atentamente o capítulo sobre Segurança.
+TLS       | Configura a comunicação segura com criptografia e certificação digital, com a utilização da padronização definida na RFC2246 (TLS). O TLS é comumente encontrado nos servidores de sites seguros (HTTPS) e oferece o maior grau de segurança atualmente disponível. <br> Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica.
+Compatibilidade| Esta opção possibilita compatibilizar o STCP OFTP Server com diferentes produtos atualmente existentes no mercado.
+RFC2204    | Esta opção de compatibilidade permite a comunicação do STCP OFTP Server com outros produtos que seguem a recomendação RFC2204.
+RFC1006/RFC1086| Esta opção de compatibilidade permite a comunicação do STCP OFTP Server através de gateways de comunicação TCP-IP/X.25, que seguem a recomendação RFC1006/1086.
+RVS*       | Esta opção de compatibilidade permite a comunicação do STCP OFTP Server com o produto RVS*. <br> Obs.: Esta opção não deve ser habilitada quando o servidor RVS* for uma versão do mainframe (grande porte).
+X.25/Router | Esta opção de compatibilidade permite a comunicação do STCP OFTP Server através de roteadores com suporte à comunicação X.25 através de socket. <br> Obs.: Consulte a Riversoft sobre esta configuração se você estiver em dúvidas.
+XFB*/SSL   | Habilita a compatibilidade do STCP com o XFB em conexões seguras SSL.
+Compressão GZIP| Esta opção assinalada habilita a utilização da compressão GZIP onthe-fly (durante a transferência).  <br> Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica.
+----
+
+{{< callout type="info" >}}
+  \*As marcas citadas são propriedade dos seus respectivos donos.
+{{< /callout >}}
+
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">3</span> &nbsp; Na guia **TLS**, configure as seguintes opções:
+
+![](monitordirl-03.png)
+
+Campos         | Descrição
+:------------  | :------
+Chave Privativa| As opções deste grupo estão relacionadas às chaves pública e privada utilizadas pelo protocolo TLS para autenticação e criptografia dos dados. <br> Obs.: O arquivo da chave privativa deve estar no formato PKCS#12 e os certificados, no formato DER ou PEM.
+Chave          | Preencha este campo com o nome do arquivo (caminho completo) onde se encontra instalada a chave privativa.
+Certificado    | Preencha este campo com o nome do arquivo (caminho completo) onde se encontra instalado o certificado digital (X509) associado à chave privativa.
+Senha          | Preencha este campo com a senha que protege o arquivo de chave privativa.
+Confirmar      | Preencha este campo com a senha informada no campo senha para validação.
+Certificados CA (Autoridade)| As opções deste grupo estão relacionadas aos certificados digitais das autoridades certificadoras (CA) que servirão para validar a autenticidade do certificado apresentado pelo servidor. <br> Obs.: O arquivo da chave privativa deve estar no formato PKCS#12 e os certificados no formato DER ou PEM.
+Arquivo        | Preencha este campo com o nome do arquivo (caminho completo) onde se encontra instalado o certificado digital (X509) contendo a chave pública que assina o certificado apresentado pelo servidor.
+Diretório      | Preencha este campo com o nome do diretório (caminho completo) onde se encontram instalados os certificados digitais (X509) contendo a chave pública que assina o certificado apresentado pelo servidor.
+Algoritmos     | Preencha este campo com os nomes dos algoritmos suportados para assinatura digital, hashing e criptografia dos dados. <br> Obs.: Caso este campo não seja configurado, o protocolo TLS será selecionado automaticamente.
+Debug          | Esta opção permite gerar um arquivo de depuração na pasta Debug do diretório de instalação do STCP.
+----
+
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">4</span> &nbsp; Na guia **Monitor**, configure as seguintes opções:
+
+![](monitordirl-04.png)
+
+Campos         | Descrição
+:------------  | :------
+Usuário   | Preencha este campo com o nome do usuário da rede de supervisão.
+Senha  | Preencha este campo com a senha do usuário que deve ser utilizada pelo rede de supervisão.
+Confirmar      | Preencha este campo com a senha informada no campo senha para validação.
+Intervalo de requisições | Esta opção assinalada o tempo (em segundos) de intervalo entre as requisições feitas.
+Executar comando externo | Esta opção habilita a execução de um comando externo dentro do STCP <br> Exemplo: ````notepad````Abrir bloco de notas no Windows.
+----
 
 Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alterar as configurações.
 
@@ -174,8 +438,8 @@ Na guia **Usuários**, você poderá adicionar, remover, modificar ou copiar os 
 
 Campos | Descrição
 :---   | :---
-Nome   | Preencha este campo com o nome desejado para este usuário, que corresponde à identificação ODETTE (OID) do parceiro. /Obs.: Não utilize caracteres especiais.
-Senha  | Preencha este campo com a senha de autenticação associada ao usuário. /Obs.: Tamanho máximo de oito (8) caracteres.
+Nome   | Preencha este campo com o nome desejado para este usuário, que corresponde à identificação ODETTE (OID) do parceiro. <br> Obs.: Não utilize caracteres especiais.
+Senha  | Preencha este campo com a senha de autenticação associada ao usuário. <br> Obs.: Tamanho máximo de oito (8) caracteres.
 Confirmar| Preencha este campo com a senha de autenticação associada ao usuário para validação.
 Descrição| Preencha este campo com a descrição de sua livre escolha.
 
@@ -190,10 +454,10 @@ Campos | Descrição
 OID (Odette ID)| Preencha este campo com a identificação Odette associada a este usuário. Este campo poderá ter no máximo 25 (vinte e cinco) caracteres.
 Senha  | Preencha este campo com a senha associada à identificação Odette. Este campo poderá ter no máximo oito (8) caracteres.
 Confirmar | Preencha este campo com a senha informada no campo Senha para validação.
-Userdata| Preencha este campo com os dados extras associados à identificação Odette informada. /Obs.: Preencha este campo somente se for requerido pelo servidor.
-Características| As opções definidas neste grupo serão utilizadas pelo STCP OFTP Server na comunicação com o servidor Odette. /Obs.: Não modifique estas características sem ler atentamente o que significa cada uma delas e ter certeza de que realmente deseja fazê-lo.
+Userdata| Preencha este campo com os dados extras associados à identificação Odette informada. <br> Obs.: Preencha este campo somente se for requerido pelo servidor.
+Características| As opções definidas neste grupo serão utilizadas pelo STCP OFTP Server na comunicação com o servidor Odette. <br> Obs.: Não modifique estas características sem ler atentamente o que significa cada uma delas e ter certeza de que realmente deseja fazê-lo.
 Modo de transferência| Esta opção permite selecionar o modo de transferência que será utilizado para comunicação com o servidor, são eles: Both (transmissão e recepção de arquivos), Sender (somente transmissão de arquivos) e Receiver (somente recepção de arquivos).
-Créditos| Preencha este campo com a quantidade de blocos de dados que serão transferidos até aguardar uma nova autorização para envio. /Obs.: O intervalo válido é de 1 até 99.
+Créditos| Preencha este campo com a quantidade de blocos de dados que serão transferidos até aguardar uma nova autorização para envio. <br> Obs.: O intervalo válido é de 1 até 99.
 Tamanho máximo do buffer| Preencha este campo com o tamanho máximo dos blocos de dados que serão transferidos. O intervalo válido é de 1 até 65535.
 Compressão| Esta opção assinalada habilita a compressão dos dados (padrão Odette) de uma transferência.
 Restart| Esta opção assinalada habilita o controle de recuperação automática na interrupção de uma transferência. Com esta opção habilitada, o STCP OFTP Server irá recuperar a transferência do ponto de interrupção.
@@ -245,8 +509,8 @@ Alterar senha| Esta opção permite alterar a senha do Usuário criado.
 Email     | Este email deve estar associado à Caixa Postal e serve para o sistema de notificação.
 Máximo de sessões| Este campo informa a quantidade máxima de sessões simultâneas de transferência que podem ser ativadas.
 Bloquear usuário| Esta opção assinalada bloqueia temporariamente este usuário de realizar as operações de transferência.
-Backup arquivos transmitidos| Esta opção assinalada habilita temporariamente este usuário a mover os arquivos transmitidos com sucesso para o subdiretório de backup.  /Obs.: Os arquivos movidos para o diretório de backup contêm uma extensão no final do nome com a seguinte característica: YYYYMMDDhhmmss, onde YYYY é o ano, MM é o mês, DD é o dia, hh é a hora, mm são os segundos do término da transferência.
-Nome longo para arquivos| Esta opção assinalada habilita temporariamente este usuário a transferir arquivos com nome maior que 26 (vinte e seis) posições.  /Obs.: Não habilite esta opção se você não tiver absoluta certeza de que o parceiro remoto é outro STCP OFTP Server e que esteja também com esta característica habilitada.
+Backup arquivos transmitidos| Esta opção assinalada habilita temporariamente este usuário a mover os arquivos transmitidos com sucesso para o subdiretório de backup. <br> Obs.: Os arquivos movidos para o diretório de backup contêm uma extensão no final do nome com a seguinte característica: YYYYMMDDhhmmss, onde YYYY é o ano, MM é o mês, DD é o dia, hh é a hora, mm são os segundos do término da transferência.
+Nome longo para arquivos| Esta opção assinalada habilita temporariamente este usuário a transferir arquivos com nome maior que 26 (vinte e seis) posições. <br> Obs.: Não habilite esta opção se você não tiver absoluta certeza de que o parceiro remoto é outro STCP OFTP Server e que esteja também com esta característica habilitada.
 Senha nunca expira| Esta opção assinalada impede que a senha expire.
 Conexão automática| Esta opção assinalada habilita este usuário a iniciar uma conexão.
 Protocolo| Este campo seleciona o tipo de protocolo de comunicação que este usuário irá utilizar para conexão. Após selecionar, pressione o botão Configurar para acessar a tela de configuração específica do protocolo de comunicação.
@@ -283,15 +547,15 @@ Campos     | Descrição
 :---       | :---
 Endereço IP| Preencha este campo com o endereço TCP/IP ou nome (DNS) do servidor STCP OFTP Server.
 Porta IP   | Preencha este campo com a porta TCP/IP do servidor STCP OFTP Server.
-Comunicação Segura| Esta opção assinalada habilita a utilização de criptografia na comunicação com o servidor STCP OFTP Server. Você pode escolher entre a opção Nativa ou SSL3. /Obs.: Antes de habilitar esta opção, leia atentamente o capítulo sobre Segurança.
-TLS         | Configura a comunicação segura com criptografia e certificação digital, com a utilização da padronização definida na RFC2246 (TLS1/SSL3). O TLS1/SSL3 é comumente encontrado nos servidores de sites seguros (HTTPS) e oferece o maior grau de segurança atualmente disponível. /Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica.
+Comunicação Segura| Esta opção assinalada habilita a utilização de criptografia na comunicação com o servidor STCP OFTP Server. Você pode escolher entre a opção Nativa ou SSL3. <br> Obs.: Antes de habilitar esta opção, leia atentamente o capítulo sobre Segurança.
+TLS         | Configura a comunicação segura com criptografia e certificação digital, com a utilização da padronização definida na RFC2246 (TLS1/SSL3). O TLS1/SSL3 é comumente encontrado nos servidores de sites seguros (HTTPS) e oferece o maior grau de segurança atualmente disponível. <br> Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica.
 Compatibilidade| Esta opção possibilita compatibilizar o STCP OFTP Server com diferentes produtos atualmente existentes no mercado.
 RFC2204      | Esta opção de compatibilidade permite a comunicação do STCP OFTP Server com outros produtos que seguem a recomendação RFC2204.
 RFC1006/RFC1086| Esta opção de compatibilidade permite a comunicação do STCP OFTP Server através de gateways de comunicação TCP-IP/X.25, que seguem a recomendação RFC1006/1086.
-RVS*| Esta opção de compatibilidade permite a comunicação do STCP OFTP Server com o produto RVS*. /Obs.: Esta opção não deve ser habilitada quando o servidor RVS* for uma versão do mainframe (grande porte).  * As marcas citadas são propriedade dos seus respectivos donos.
-X25/Router| Esta opção de compatibilidade permite a comunicação do STCP OFTP Server através de roteadores com suporte à comunicação X.25 através de socket. /Obs.: Consulte a Riversoft sobre esta configuração se você estiver em dúvida.
+RVS*| Esta opção de compatibilidade permite a comunicação do STCP OFTP Server com o produto RVS*. <br> Obs.: Esta opção não deve ser habilitada quando o servidor RVS* for uma versão do mainframe (grande porte).  * As marcas citadas são propriedade dos seus respectivos donos.
+X25/Router| Esta opção de compatibilidade permite a comunicação do STCP OFTP Server através de roteadores com suporte à comunicação X.25 através de socket. <br> Obs.: Consulte a Riversoft sobre esta configuração se você estiver em dúvida.
 XFB*/SSL  | Habilita a compatibilidade do STCP com o XFB em conexões seguras SSL.
-Compressão GZIP| Esta opção assinalada habilita a utilização da compressão GZIP onthe-fly (durante a transferência). /Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica.
+Compressão GZIP| Esta opção assinalada habilita a utilização da compressão GZIP onthe-fly (durante a transferência).<br> Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica.
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp; Na guia **TLS**, configure as seguintes opções para o protocolo **OFTP – TCP/IP**.
 
@@ -299,15 +563,15 @@ Compressão GZIP| Esta opção assinalada habilita a utilização da compressão
 
 Campos | Descrição
 :---   | :---
-Chave Privativa| As opções deste grupo estão relacionadas às chaves pública e privada, utilizadas pelo protocolo TLS para autenticação e criptografia dos dados. /Obs.: O arquivo da chave privativa deve estar no formato PKCS#12 e os certificados, no formato DER ou PEM.
+Chave Privativa| As opções deste grupo estão relacionadas às chaves pública e privada, utilizadas pelo protocolo TLS para autenticação e criptografia dos dados. <br> Obs.: O arquivo da chave privativa deve estar no formato PKCS#12 e os certificados, no formato DER ou PEM.
 Chave  | Preencha este campo com o nome do arquivo (caminho completo) onde se encontra instalada a chave privativa.
 Certificado| Preencha este campo com o nome do arquivo (caminho completo) onde se encontra instalado o certificado digital (X509) associado à chave privativa.
 Senha  |Preencha este campo com a senha que protege o arquivo da chave privativa.
 Confirmar| Preencha este campo com a senha informada no campo Senha para validação.
-Certificados CA (Autoridade)| As opções deste grupo estão relacionadas aos certificados digitais das autoridades certificadoras (CA) que servirão para validar a autenticidade do certificado apresentado pelo servidor. /Obs.: O arquivo da chave privativa deve estar no formato PKCS#12 e os certificados, no formato DER ou PEM.
+Certificados CA (Autoridade)| As opções deste grupo estão relacionadas aos certificados digitais das autoridades certificadoras (CA) que servirão para validar a autenticidade do certificado apresentado pelo servidor. <br> Obs.: O arquivo da chave privativa deve estar no formato PKCS#12 e os certificados, no formato DER ou PEM.
 Arquivo  | Preencha este campo com o nome do arquivo (caminho completo) onde se encontra instalado o certificado digital (X509) contendo a chave pública que assina o certificado apresentado pelo servidor.
 Diretório| Preencha este campo com o nome do diretório (caminho completo) onde se encontram instalados os certificados digitais (X509) contendo a chave pública que assina o certificado apresentado pelo servidor.
-Algoritmos | Preencha este campo com os nomes dos algoritmos suportados para assinatura digital, hashing e criptografia dos dados. /Obs.: Caso este campo não seja configurado, o protocolo TLS1/SSL3 irá selecionar automaticamente.
+Algoritmos | Preencha este campo com os nomes dos algoritmos suportados para assinatura digital, hashing e criptografia dos dados. <br> Obs.: Caso este campo não seja configurado, o protocolo TLS1/SSL3 irá selecionar automaticamente.
 Debug      | Esta opção permite criar um arquivo de depuração.
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">3</span> &nbsp; Na guia **Proxy**, configure as seguintes opções para o protocolo **OFTP – TCP/IP**.
@@ -320,7 +584,7 @@ Servidor Proxy| As opções deste grupo possibilitam a configuração da comunic
 Habilitar| Esta opção assinalada habilita a utilização de um servidor Proxy.
 SOCKS4   | Esta opção habilita a utilização de um servidor Proxy em conformidade com a especificação SOCKS4.
 SOCKS5   | Esta opção habilita a utilização de um servidor Proxy em conformidade com a recomendação RFC1928 (SOCKS5) e RFC1929. Obs.: O processo de autenticação utilizado é o definido na RFC1929.
-HTTP     | Esta opção habilita a utilização de um servidor Proxy em conformidade com a recomendação RFC2817 (HTTP). /Obs.: O processo de autenticação utilizado é o Basic.
+HTTP     | Esta opção habilita a utilização de um servidor Proxy em conformidade com a recomendação RFC2817 (HTTP). <br> Obs.: O processo de autenticação utilizado é o Basic.
 Endereço IP| Preencha este campo com o endereço TCP/IP ou nome (DNS) do servidor STCP Proxy.
 Porta IP | Preencha este campo com a porta TCP/IP do servidor Proxy.
 Autenticação| As opções deste grupo possibilitam a configuração do usuário e senha que serão informados ao servidor Proxy.
@@ -343,7 +607,7 @@ Campos |Descrição
 :---   | :---
 Endereço IP| Preencha este campo com o endereço TCP/IP ou nome (DNS) do servidor STCP OFTP Server.
 Porta IP| Preencha este campo com a porta TCP/IP do servidor STCP OFTP Server.
-TLS   | Configura a comunicação segura com criptografia e certificação digital, com a utilização da padronização definida na RFC2246 (TLS1/SSL3). O TLS1/SSL3 é comumente encontrado nos servidores de sites seguros (HTTPS) e oferece o maior grau de segurança atualmente disponível. /Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica.
+TLS   | Configura a comunicação segura com criptografia e certificação digital, com a utilização da padronização definida na RFC2246 (TLS1/SSL3). O TLS1/SSL3 é comumente encontrado nos servidores de sites seguros (HTTPS) e oferece o maior grau de segurança atualmente disponível. <br> Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica.
 Tamanho máximo do buffer| Preencha este campo com o tamanho máximo dos blocos de dados que serão transferidos. O intervalo válido é de 1 até 65535.
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp; Na guia **Proxy**, configure as seguintes opções.
@@ -492,7 +756,7 @@ Campos | Descrição
 :---   | :---
 Endereço IP| Preencha este campo com o endereço TCP/IP ou nome (DNS) do servidor STCP OFTP Server.
 Porta IP| Preencha este campo com a porta TCP/IP do servidor STCP OFTP Server. Obs.: A porta padrão do protocolo FTP é a 21.
-TLS  | Configura a comunicação segura com criptografia e certificação digital, com a utilização da padronização definida na RFC2246 (TLS1/SSL3). O TLS1/SSL3 é comumente encontrado nos servidores de sites seguros (HTTPS) e oferece o maior grau de segurança atualmente disponível. /Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica.
+TLS  | Configura a comunicação segura com criptografia e certificação digital, com a utilização da padronização definida na RFC2246 (TLS1/SSL3). O TLS1/SSL3 é comumente encontrado nos servidores de sites seguros (HTTPS) e oferece o maior grau de segurança atualmente disponível. <br> Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica.
 AUTH TLS| Habilita o processo de autenticação criptografado, garantindo a segurança na troca de senha.
 AUTH SSL| Habilita o envio de um comando explícito para o servidor FTP a fim de utilizar a segurança SSL.
 Tamanho máximo do buffer| Preencha este campo com o tamanho máximo dos blocos de dados que serão transferidos. O intervalo válido é de 1 até 65535.
@@ -523,7 +787,7 @@ Chave Privativa| As opções deste grupo estão relacionadas às chaves pública
 Chave          | Preencha este campo com o nome do arquivo (caminho completo) onde se encontra instalada a chave privativa. Certificado    | Preencha este campo com o nome do arquivo (caminho completo) onde se encontra instalado o certificado digital (X509) associado à chave privativa.
 Senha          | Preencha este campo com a senha que protege o arquivo de chave privativa.
 Confirmar      | Preencha este campo com a senha informada no campo senha para validação.
-Certificados CA (Autoridade)| As opções deste grupo estão relacionadas aos certificados digitais das autoridades certificadoras (CA) que servirão para validar a autenticidade do certificado apresentado pelo servidor. /Obs.: O arquivo da chave privativa deve estar no formato PKCS#12 e os certificados no formato DER ou PEM.
+Certificados CA (Autoridade)| As opções deste grupo estão relacionadas aos certificados digitais das autoridades certificadoras (CA) que servirão para validar a autenticidade do certificado apresentado pelo servidor. <br> Obs.: O arquivo da chave privativa deve estar no formato PKCS#12 e os certificados no formato DER ou PEM.
 Campo          | IssuerCN: Emissor do certificado. IssuerDN: Detalhes sobre o emissor. SubjectCN: Para quem foi emitido o certificado. SubjectDN: Detalhes sobre o usuário para quem foi emitido o certificado.
 Valor          | O valor deste campo está relacionado aos certificados digitais das autoridades certificadoras (CA) que servirão para validar a autenticidade do certificado apresentado pelo servidor FTP.
 
@@ -554,7 +818,7 @@ Campos      | Descrição
 :---        | :---
 Endereço IP | Preencha este campo com o endereço TCP/IP ou nome (DNS) do servidor STCP OFTP Server.
 Porta IP    | Preencha este campo com a porta TCP/IP do servidor STCP OFTP Server.
-SSL3        | Configura a comunicação segura com criptografia e certificação digital, com a utilização da padronização definida na RFC2246 (TLS1/SSL3). O TLS1/SSL3 é comumente encontrado nos servidores de sites seguros (HTTPS) e oferece o maior grau de segurança atualmente disponível. /Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica.
+SSL3        | Configura a comunicação segura com criptografia e certificação digital, com a utilização da padronização definida na RFC2246 (TLS1/SSL3). O TLS1/SSL3 é comumente encontrado nos servidores de sites seguros (HTTPS) e oferece o maior grau de segurança atualmente disponível. <br> Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica.
 Tamanho máximo do buffer| Preencha este campo com o tamanho máximo dos blocos de dados que serão transferidos. O intervalo válido é de 1 até 65535.
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp; Na guia **Proxy**, configure as seguintes opções.
@@ -621,11 +885,11 @@ Campos   | Descrição
 FTP ID   |Identificação de acesso ao FTP.
 Senha    | Senha de acesso ao FTP.
 Confirmar| Preencha este campo com a senha informada no campo Senha para validação.
-Userdata | Preencha este campo com os dados extras associados à identificação Odette informada. /Obs.: Preencha este campo somente se for requerido pelo servidor.
+Userdata | Preencha este campo com os dados extras associados à identificação Odette informada. <br> Obs.: Preencha este campo somente se for requerido pelo servidor.
 Modo de transferência| Esta opção permite selecionar o modo de transferência que será utilizado para comunicação com o servidor, são eles: Both (transmissão e recepção de arquivos), Sender (somente transmissão de arquivos) e Receiver (somente recepção de arquivos).
 Tamanho máximo do buffer| Preencha este campo com o tamanho máximo dos blocos de dados que serão transferidos. O intervalo válido é de 1 até 65535
 Tempo máximo de inatividade| Preencha este campo com o tempo máximo de inatividade de comunicação entre o STCP OFTP Server e o computador remoto.
-Nível de Debug| Preencha este campo com o nível de detalhamento das informações que serão gravadas no arquivo de depuração. Para obter no mesmo arquivo de depuração a informação dos diferentes níveis, preencha este campo com a soma dos níveis desejados. /Obs.: Veja a tabela dos níveis de debug na configuração dos usuários.
+Nível de Debug| Preencha este campo com o nível de detalhamento das informações que serão gravadas no arquivo de depuração. Para obter no mesmo arquivo de depuração a informação dos diferentes níveis, preencha este campo com a soma dos níveis desejados. <br> Obs.: Veja a tabela dos níveis de debug na configuração dos usuários.
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">6</span> &nbsp; Na guia **SFTP**, configure as seguintes opções.
 
@@ -636,7 +900,7 @@ Campos   | Descrição
 SFTP ID  | Identificação de acesso ao SFTP.
 Senha    | Senha de acesso ao SFTP.
 Confirmar| Preencha este campo com a senha informada no campo Senha para validação.
-Userdata | Preencha este campo com os dados extras associados à identificação Odette informada. /Obs.: Preencha este campo somente se for requerido pelo servidor.
+Userdata | Preencha este campo com os dados extras associados à identificação Odette informada. <br> Obs.: Preencha este campo somente se for requerido pelo servidor.
 Modo de transferência| Esta opção permite selecionar o modo de transferência que será utilizado para comunicação com o servidor, são eles: Both (transmissão e recepção de arquivos), Sender (somente transmissão de arquivos) e Receiver (somente recepção de arquivos).
 Tamanho máximo do buffer| Preencha este campo com o tamanho máximo dos blocos de dados que serão transferidos. O intervalo válido é de 1 até 65535.
 Tempo máximo de inatividade| Preencha este campo com o tempo máximo de inatividade de comunicação entre o STCP OFTP Server e o computador remoto.
@@ -651,9 +915,9 @@ Campos              | Descrição
 Controle da conexão | As opções definidas neste grupo serão utilizadas pelo STCP OFTP Server para validar as informações da conexão (endereço IP, porta, endereço X.25, certificado SSL3 etc.).
 Filtro da conexão   | Preencha este campo com uma expressão regular para validar as informações da conexão.
 Executar comando no início da conexão|Preencha este campo com o nome de um comando externo (programa ou bat) que deve ser executado no início da conexão, imediatamente, após a identificação do usuário e antes de transferir (enviar ou receber) os arquivos.
-Aguardar término da execução do comando| Esta opção assinalada habilita o STCP OFTP Server a aguardar o encerramento do comando externo. /Obs.: Utilize esta opção com cautela. Caso a aplicação necessite realizar operações complexas, mantenha esta opção desabilitada.
+Aguardar término da execução do comando| Esta opção assinalada habilita o STCP OFTP Server a aguardar o encerramento do comando externo. <br> Obs.: Utilize esta opção com cautela. Caso a aplicação necessite realizar operações complexas, mantenha esta opção desabilitada.
 Executar comando no fim da conexão| Preencha este campo com o nome de um comando externo (programa ou bat) que deve ser executado ao final da conexão.
-Aguardar término da execução do comando| Esta opção assinalada habilita o STCP OFTP Server a aguardar o encerramento do comando externo. /Obs.: Utilize esta opção com cautela. Caso a aplicação necessite realizar operações complexas, mantenha esta opção desabilitada.
+Aguardar término da execução do comando| Esta opção assinalada habilita o STCP OFTP Server a aguardar o encerramento do comando externo. <br> Obs.: Utilize esta opção com cautela. Caso a aplicação necessite realizar operações complexas, mantenha esta opção desabilitada.
 Período de conexão| Início e término de uma conexão.
 Início            | Início do intervalo do período de conexão.
 Término           | Término do intervalo do período de conexão.
@@ -696,17 +960,17 @@ Campos              | Descrição
 Desabilitar         | Esta opção assinalada desabilita a execução do agendamento.
 Nome                | Preencha este campo com o nome desejado para a nova agenda.
 Descrição           | Preencha este campo com a descrição da nova agenda.
-Agenda              |Este grupo de opções possibilita selecionar o modo de operação da agenda.  /Obs.: É possível desativar os campos que não sejam necessários para utilização no modo desejado.
+Agenda              |Este grupo de opções possibilita selecionar o modo de operação da agenda.  <br> Obs.: É possível desativar os campos que não sejam necessários para utilização no modo desejado.
 Por data & hora     | Esta opção habilita o modo de funcionamento da agenda programado para a data e hora especificadas.
 Por data & intervalo| Esta opção habilita o modo de funcionamento da agenda programado para a data especificada e intervalo de tempo contínuo.
 Por intervalo       | Esta opção habilita o modo de funcionamento da agenda programado somente por intervalo de tempo continuo.
 Iniciar conexão de saída para:| Este grupo de opções possibilita selecionar o modo de funcionamento da conexão para transferência. Obs.: Somente será iniciada uma conexão para o usuário que tenha habilitado e configurado a conexão automática.
-Recepção            | Esta opção assinalada habilita a recepção de arquivos durante a execução do agendamento. /Obs.: Caso esta opção esteja habilitada, uma conexão será estabelecida para verificar se existe novo arquivo para receber.
-Transmissão         | Esta opção assinalada habilita a transmissão de arquivos durante a execução deste agendamento. /Obs.: Caso esta opção esteja habilitada e não exista arquivo para transmitir, a conexão não será estabelecida.
-Transmissão com recepção| Esta opção assinalada habilita a transmissão e recepção de arquivos durante a execução deste agendamento. /Obs.: Caso esta opção esteja habilitada e não exista arquivo para transmitir, a conexão não será estabelecida.
+Recepção            | Esta opção assinalada habilita a recepção de arquivos durante a execução do agendamento. <br> Obs.: Caso esta opção esteja habilitada, uma conexão será estabelecida para verificar se existe novo arquivo para receber.
+Transmissão         | Esta opção assinalada habilita a transmissão de arquivos durante a execução deste agendamento. <br> Obs.: Caso esta opção esteja habilitada e não exista arquivo para transmitir, a conexão não será estabelecida.
+Transmissão com recepção| Esta opção assinalada habilita a transmissão e recepção de arquivos durante a execução deste agendamento. <br> Obs.: Caso esta opção esteja habilitada e não exista arquivo para transmitir, a conexão não será estabelecida.
 Usuário             | Selecione o usuário associado ao agendamento da conexão de saída neste campo.
-Sessões             | Preencha este campo com a quantidade de sessões de transferência que devem ser ativadas. /Obs.: Esta quantidade deve ser inferior ou igual à quantidade de sessões configurada para o usuário.
-Controle de arquivos na Transmissão e Recepção            | As opções definidas neste grupo serão utilizadas pelo STCP OFTP Server no tratamento das transferências (transmissão e recepção) deste agendamento. /Obs.: Estas configurações irão sobrepor as definidas para o usuário.
+Sessões             | Preencha este campo com a quantidade de sessões de transferência que devem ser ativadas. <br> Obs.: Esta quantidade deve ser inferior ou igual à quantidade de sessões configurada para o usuário.
+Controle de arquivos na Transmissão e Recepção            | As opções definidas neste grupo serão utilizadas pelo STCP OFTP Server no tratamento das transferências (transmissão e recepção) deste agendamento. <br> Obs.: Estas configurações irão sobrepor as definidas para o usuário.
 Filtro de Arquivos  | Preencha este campo com uma expressão regular para validar o nome do arquivo.
 Tamanho máximo      | Preencha este campo com o tamanho máximo que um arquivo pode ter para ser transferido.
 Executar Comando    | Esta opção assinalada habilita a execução de um comando externo (executável ou bat).
@@ -732,7 +996,7 @@ Pressione o botão **OK** para gravar as alterações ou **Cancelar** para retor
 
 Campos            | Descrição
 :---              | :---
-Máximo de sessões | Este campo informa a quantidade máxima de sessões simultâneas de transferência que podem ser ativadas pelo serviço. /Obs.: Limitado a dez (10) sessões simultâneas na versão STCP OFTP Server Lite.
+Máximo de sessões | Este campo informa a quantidade máxima de sessões simultâneas de transferência que podem ser ativadas pelo serviço. <br> Obs.: Limitado a dez (10) sessões simultâneas na versão STCP OFTP Server Lite.
 Check Point       | Preencha este campo com o múltiplo da quantidade de dados recebidos para que o STCP OFTP Server force uma gravação física do arquivo. No caso de uma interrupção da transferência, a sua recuperação ocorrerá a partir da última posição de check point corretamente gravada.
 Desabilitar       | Desabilita o Controle da agenda.
 Intervalo de varredura| Preencha este campo com o intervalo mínimo de processamento da agenda em milésimos de segundos.
@@ -741,7 +1005,7 @@ Tempo máximo de lock| Tempo máximo que o arquivo permanece bloqueado.
 Tempo de espera para uma nova tentativa| Tempo de espera para nova tentativa de processar o arquivo.
 Máximo de tentativas| Número de tentativas de processar o arquivo.
 Controle de log   | As opções deste grupo controlam as propriedades de configuração dos Logs do sistema.
-Controle de autenticação| As opções deste grupo controlam o tipo de autenticação utilizado pelo STCP OFTP Server para validar um usuário. A autenticação está disponível pelo Sistema Operacional e a do STCP. /Obs.: Recomendamos a utilização da autenticação STCP.
+Controle de autenticação| As opções deste grupo controlam o tipo de autenticação utilizado pelo STCP OFTP Server para validar um usuário. A autenticação está disponível pelo Sistema Operacional e a do STCP. <br> Obs.: Recomendamos a utilização da autenticação STCP.
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp; Em seguida, clique em **Controle de Log**
 
@@ -763,7 +1027,7 @@ Rejeitar       | Não registra nos arquivos de log ou no Banco de dados do STCP.
 Comando para conexão ao banco de dados (ODBC)| String de conexão à fonte de dados ODBC. Informe DNS, usuário e senha.
 Senha    | Digite a senha para acesso ao banco de dados.
 Confirmar| Preencha este campo com a senha informada no campo Senha para validação.
-Gravar arquivo de mensagem por usuário| Esta opção assinalada habilita a geração do arquivo de mensagens dos eventos para cada usuário. /Obs.: O arquivo de mensagens será gerado no subdiretório LOG de cada usuário.
+Gravar arquivo de mensagem por usuário| Esta opção assinalada habilita a geração do arquivo de mensagens dos eventos para cada usuário. <br> Obs.: O arquivo de mensagens será gerado no subdiretório LOG de cada usuário.
 
 **Tabela com a descrição do Nível do evento**
 
@@ -840,9 +1104,9 @@ Arquivo de configuração| Parâmetro que informa as configurações para autent
 Campos     | Descrição
 :---       | :---
 Endereço IP| Preencha este campo com o endereço TCP/IP ou nome (DNS) do servidor STCP OFTP Server.
-Porta IP   | Preencha este campo com a porta TCP/IP do servidor STCP OFTP Server. /Obs.: A porta padrão do serviço LDAP é a 389.
-Comunicação segura| Esta opção assinalada habilita a utilização de criptografia na comunicação com o servidor STCP OFTP Server. /Obs.: Antes de habilitar esta opção, leia atentamente o capítulo sobre Segurança.
-SSL3       | Configura a comunicação segura com criptografia e certificação digital, com a utilização da padronização definida na RFC2246 (TLS1/SSL3). O TLS1/SSL3 é comumente encontrado nos servidores de sites seguros (HTTPS) e oferece o maior grau de segurança atualmente disponível. /Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica.
+Porta IP   | Preencha este campo com a porta TCP/IP do servidor STCP OFTP Server. <br> Obs.: A porta padrão do serviço LDAP é a 389.
+Comunicação segura| Esta opção assinalada habilita a utilização de criptografia na comunicação com o servidor STCP OFTP Server. <br> Obs.: Antes de habilitar esta opção, leia atentamente o capítulo sobre Segurança.
+SSL3       | Configura a comunicação segura com criptografia e certificação digital, com a utilização da padronização definida na RFC2246 (TLS1/SSL3). O TLS1/SSL3 é comumente encontrado nos servidores de sites seguros (HTTPS) e oferece o maior grau de segurança atualmente disponível. <br> Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica.
 Domínio    | Domínio do servidor de autenticação.
 Método     | Métodos utilizados pelo protocolo LDAP: LDAP_AUTH_SIMPLE, LDAP_AUTH_DIGEST, LDAP_AUTH_DPA, LDAP_AUTH_MSN, LDAP_AUTH_NEGOTIATE, LDAP_AUTH_NTLM, LDAP_AUTH_SICILY, LDAP_AUTH_SSPI
 
@@ -890,7 +1154,7 @@ Default  | —   | —      | —     | —    | TXTTXT | Sim
 
 Campos | Descrição
 :---   | :---
-Nome do novo tipo de arquivo| Preencha este campo com o nome desejado para o novo tipo. /Obs.: Não utilize caracteres especiais ou espaços em branco.
+Nome do novo tipo de arquivo| Preencha este campo com o nome desejado para o novo tipo. <br> Obs.: Não utilize caracteres especiais ou espaços em branco.
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">3</span> &nbsp; Na guia **Geral**, configure as seguintes opções.
 
@@ -898,33 +1162,33 @@ Nome do novo tipo de arquivo| Preencha este campo com o nome desejado para o nov
 
 Campos | Descrição
 :---   | :---
-Verificar nome do arquivo por:| As opções definidas neste grupo serão utilizadas pelo STCP OFTP Server para definir a forma de associação do nome do arquivo com o tipo: Padrão (Default), Prefixo/Sufixo, Nome do tipo, Expressão regular. /Obs.: O nome do tipo associa o nome do arquivo ao nome do tipo de arquivo criado.
+Verificar nome do arquivo por:| As opções definidas neste grupo serão utilizadas pelo STCP OFTP Server para definir a forma de associação do nome do arquivo com o tipo: Padrão (Default), Prefixo/Sufixo, Nome do tipo, Expressão regular. <br> Obs.: O nome do tipo associa o nome do arquivo ao nome do tipo de arquivo criado.
 Prefixo| Preencha este campo com o prefixo do nome do arquivo que deve ser associado a este tipo.
 Sufixo | Preencha este campo com o sufixo do nome do arquivo que deve ser associado a este tipo.
 Expressão Regular (Regex)| Preencha este campo com a expressão regular que deve ser associada a este tipo.
 Características da Transmissão| As opções definidas neste grupo serão utilizadas pelo STCP OFTP Server para definir as características do arquivo na transmissão.
 Desabilitar| Esta opção permite desabilitar ou habilitar o tratamento do tipo de arquivo na transmissão.
-Formato do registro| Esta opção permite selecionar o formato do registro do arquivo, são eles: Não Formatado, Fixo e Variável.  /Obs.: Somente utilize Fixo ou Variável quando o servidor Odette for uma versão de mainframe (grande porte) e esta característica estiver habilitada.
+Formato do registro| Esta opção permite selecionar o formato do registro do arquivo, são eles: Não Formatado, Fixo e Variável.  <br> Obs.: Somente utilize Fixo ou Variável quando o servidor Odette for uma versão de mainframe (grande porte) e esta característica estiver habilitada.
 Tamanho| Preencha este campo com a quantidade de caracteres (bytes) que compõem o registro.  Obs.: Somente utilize esta opção quando o formato do registro for Fixo ou Variável.
 Executar comando externo| Preencha este campo com o nome do comando externo (programa ou bat).
 Comando a ser executado| Preencha este campo com o nome de uma aplicação ou arquivo de lote (bat) a ser executado após o envio, com sucesso, do arquivo.
 Tabela conversão de dados| Esta opção permite selecionar a tabela de conversão dos dados na transmissão, são elas: Nenhuma, ANSI2E.TAB, ASC2EBC.TAB (converte de ASCII para EBCDIC), E2ANSI.TAB, EBC2ASC.TAB (converte de EBCDIC para ASCII), ODTA2E.TAB, ODTE2A.TAB, STDA2E.TAB e STDE2A.TAB.
-Origem| Preencha este campo com a identificação Odette (OID) de origem do arquivo.  /Obs.: Quando o usuário é criado, este campo contém a identificação local.
+Origem| Preencha este campo com a identificação Odette (OID) de origem do arquivo.  <br> Obs.: Quando o usuário é criado, este campo contém a identificação local.
 Converte nome arquivo| Esta opção permite selecionar a conversão do nome do arquivo antes de transmitir, são elas: Não, maiúscula ou minúscula.
-Destino| Preencha este campo com o a identificação Odette (OID) do destino deste arquivo.  /Obs.: Quando o usuário é criado, este campo contém a identificação remota.
-Userdata| Preencha este campo com os dados extras associados à identificação Odette informada. /Obs.: Preencha este campo somente se for requerido pelo servidor.
-Remover CR+LF| Esta opção permite habilitar ou desabilitar a remoção dos caracteres CR (Carriage Return) e LF (Line Feed) na transmissão do arquivo. /Obs.: Somente utilize esta opção quando o formato do registro for Fixo ou Variável.
+Destino| Preencha este campo com o a identificação Odette (OID) do destino deste arquivo.  <br> Obs.: Quando o usuário é criado, este campo contém a identificação remota.
+Userdata| Preencha este campo com os dados extras associados à identificação Odette informada. <br> Obs.: Preencha este campo somente se for requerido pelo servidor.
+Remover CR+LF| Esta opção permite habilitar ou desabilitar a remoção dos caracteres CR (Carriage Return) e LF (Line Feed) na transmissão do arquivo. <br> Obs.: Somente utilize esta opção quando o formato do registro for Fixo ou Variável.
 Remover Timestamp| Esta opção permite habilitar ou desabilitar a remoção do timestamp externo do nome do arquivo.
 Desabilitar| Esta opção permite desabilitar ou habilitar o tratamento do tipo de arquivo na recepção.
 Executar comando externo| Preencha este campo com o nome do comando externo (programa ou bat).
 Comando a ser executado| Preencha este campo com o nome de uma aplicação ou arquivo de lote (bat) a ser executado após a recepção com sucesso do arquivo.
 Tabela conversão de dados| Esta opção permite selecionar a tabela de conversão dos dados na recepção, são elas: Nenhuma, ASC2EBC.TAB (converte de ASCII para EBCDIC)  e EBC2ASC.TAB (converte de EBCDIC para ASCII).
 Converte nome arquivo| Esta opção permite selecionar a conversão do nome do arquivo antes de transmitir, são elas: Não, maiúscula ou minúscula.
-Inserir CR+LF| Esta opção permite habilitar ou desabilitar a inserção dos caracteres CR (Carriage Return) e LF (Line Feed) na recepção do arquivo. /Obs.: Somente utilize esta opção quando o formato do registro for Fixo ou Variável.
+Inserir CR+LF| Esta opção permite habilitar ou desabilitar a inserção dos caracteres CR (Carriage Return) e LF (Line Feed) na recepção do arquivo. <br> Obs.: Somente utilize esta opção quando o formato do registro for Fixo ou Variável.
 Inserir Timestamp| Esta opção permite habilitar ou desabilitar a inserção do timestamp externo no nome do arquivo.
 Sobrepor arquivo| Esta opção permite habilitar ou inibir a sobreposição do arquivo quando já existir um arquivo com o mesmo nome.
-Inibir EERP| Esta opção permite habilitar ou desabilitar o envio do comando Odette EERP (End to End Response) ao final da recepção do arquivo com sucesso. /Obs.: Somente utilize esta opção se o servidor suportar esta característica.
-EERP libera| Esta opção permite habilitar ou desabilitar o tratamento do arquivo recebido somente após o envio do Odette EERP (End to End Response). /Obs.: Somente utilize esta opção se o servidor suportar esta característica.
+Inibir EERP| Esta opção permite habilitar ou desabilitar o envio do comando Odette EERP (End to End Response) ao final da recepção do arquivo com sucesso. <br> Obs.: Somente utilize esta opção se o servidor suportar esta característica.
+EERP libera| Esta opção permite habilitar ou desabilitar o tratamento do arquivo recebido somente após o envio do Odette EERP (End to End Response). <br> Obs.: Somente utilize esta opção se o servidor suportar esta característica.
 
 Pressione o botão **OK** para gravar as configurações ou **Cancelar** para abandonar sem alterar as configurações.
 
@@ -953,7 +1217,7 @@ A utilização do timestamp externo do arquivo tem o seguinte formato:
 Campos | Descrição
 :---   | :---
 Marcar no arquivo recebido| Esta opção permite habilitar/desabilitar a inserção da data e hora
-com data e hora local os atributos de:| local no arquivo recebido para os atributos correspondentes. /Obs.: A data e a hora do protocolo ODETTE serão utilizadas nos atributos desabilitados.
+com data e hora local os atributos de:| local no arquivo recebido para os atributos correspondentes. <br> Obs.: A data e a hora do protocolo ODETTE serão utilizadas nos atributos desabilitados.
 Ler o arquivo| Preencha este campo com o nome de um programa externo que será executado para realizar a leitura do arquivo.
 Gravar o arquivo| Preencha este campo com o nome de um programa externo que será executado para realizar a gravação do arquivo.
 

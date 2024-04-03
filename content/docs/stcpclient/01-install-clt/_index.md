@@ -14,7 +14,9 @@ lastmod: 2024-03-27
 ---
 ## Distribuição dos pacotes para instalação
 
-O pacote de instalação será distribuído através de um link pela Equipe de Sustentação da Riversoft. Para iniciar o processo, siga os passos abaixo:
+O pacote de instalação será distribuído através de um link pela Equipe de Sustentação da Riversoft.
+
+Após extrair o  zip com o executável, os seguintes passos devem ser executados:
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Clique em **Avançar**
 

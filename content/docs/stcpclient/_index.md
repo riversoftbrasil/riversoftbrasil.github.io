@@ -26,7 +26,7 @@ Saiba onde utilizar a aplicação na seção <a href="/utils" target="_blank">Us
 - Autenticação através do protocolo OFTP
 - Autenticação através de certificado digital X.509 (TLS)
 - Criptografia RSA, 3DES, DES, AES (TLS)
-- Multiprotocolo de comunicação TCP, TLS, X.25, PAD e Discado
+- Multiprotocolo de comunicação **TCP/IP** (OFTP, HTTPS, FTP e SFTP), **S3** (AWS) e **Blob** (Azure)
 - Transferência de todos os tipos de arquivos
 - Registros de logs de auditoria (bilhetagem) e eventos
 - Recuperação de transferência interrompida
