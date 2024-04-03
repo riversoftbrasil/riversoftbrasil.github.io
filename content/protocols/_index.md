@@ -11,7 +11,7 @@ prev: /database
 next: /security
 slug: protocolo-oftp
 draft: false
-lastmod: 2024-03-28
+lastmod: 2024-04-02
 ---
 ## OFTP
 
@@ -41,3 +41,25 @@ O navegador envia um pedido de acesso a uma página, e o servidor retorna uma re
 Já o HTTPS (Hyper Text Transfer Secure — Protocolo de Transferência de Hipertexto Seguro) funciona exatamente como o HTTP, porém, existe uma camada de proteção a mais. Isso significa que os sites que utilizam esse protocolo são de acesso seguro.
 
 O protocolo HTTPS é comumente usado por sites com sistemas de pagamentos. Esse tipo de site depende de proteção que garanta a integridade dos dados, informações de conta e cartão de créditos dos usuários. A segurança é feita por meio de uma certificação digital, que cria uma criptografia para impedir ameaças e ataques virtuais.
+
+## FTP
+
+Significa Protocolo de Transferência de Arquivos (do inglês File Transfer Protocol). É a forma mais simples para transferir dados entre dois computadores utilizando a rede.
+
+O protocolo FTP funciona com dois tipos de conexão: a do cliente (computador que faz o pedido de conexão) e do servidor (computador que recebe o pedido de conexão e fornece o arquivo ou documento solicitado pelo cliente).
+
+O FTP é útil caso o usuário perca o acesso ao painel de controle do seu site. Assim sendo,essa ferramenta pode ser usada para realizar ajustes página, adicionar ou excluir arquivos, ou ainda solucionar qualquer outra questão no site.
+
+
+## SFTP
+
+Simple Transfer Protocol (Protocolo de Transferência Simples de Arquivos) consiste no protocolo FTP acrescido de uma camada de proteção para arquivos transferidos.
+
+Nele, a troca de informações é feita por meio de pacotes com a tecnologia SSH (Secure Shell – Bloqueio de Segurança), que autenticam e protegem a conexão entre cliente e servidor. O usuário define quantos arquivos serão transmitidos simultaneamente e define um sistema de senhas para reforçar a segurança.
+
+
+## Referência
+
+<!-- [Protocolos de rede](https://www.opservices.com.br/protocolos-de-rede/) -->
+
+<a href="https://www.opservices.com.br/protocolos-de-rede/" target="_blank">Protocolos de rede</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;.
