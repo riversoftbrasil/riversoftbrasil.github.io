@@ -36,9 +36,9 @@ O programa de configuração pode ser acessado também na pasta **Program** da a
   {{< /filetree/folder >}}
 {{< /filetree/container >}}
 
-## Preencher informações
+## Informações gerais
 
-Preencha os campos com as informações descritas abaixo.
+Na guia **Geral** preencha os campos com as informações descritas abaixo.
 
 ![](guia-geral.png)
 
