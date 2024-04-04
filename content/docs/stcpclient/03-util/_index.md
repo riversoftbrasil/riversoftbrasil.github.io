@@ -11,7 +11,7 @@ prev: /docs/stcpclient/02-config/
 next: /docs/stcpclient/04-audit/
 # slug:
 draft: false
-lastmod: 2024-10-14
+lastmod: 2024-04-01
 ---
 ## Utilização
 
@@ -51,8 +51,8 @@ Parâmetro | Descrição
 
 Exemplo:
 
-```bash
-C:/STCPCLT/STCPCLT.EXE C:/STCPCLT/CTCP.INI –p TESTE
+```pshell
+C:\STCPCLT\STCPCLT.EXE C:\STCPCLT\CTCP.INI –p TESTE
 ```
 No exemplo acima, será executada a conexão para o Perfil TESTE para envio e recepção.
 
