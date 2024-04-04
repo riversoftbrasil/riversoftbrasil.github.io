@@ -7,12 +7,12 @@ sidebar:
   exclude: false
 weight: 3
 prev: /docs/stcpserver/02-config
-next: /docs/stcpserver/04-prc
+next: /docs/stcpdirectlink
 # slug:
 draft: false
 lastmod: 2024-02-26
 ---
-# Como utilizar o STCP OFTP Server
+## Utilização
 
 O STCP OFTP Server para cada usuário configurado no serviço cria um conjunto individual de subdiretórios para controle das transferências e integração com as aplicações externas, conforme mostra figura abaixo:
 
@@ -31,11 +31,11 @@ O STCP OFTP Server para cada usuário configurado no serviço cria um conjunto i
 
 Para transmitir, os arquivos devem ser disponibilizados no subdiretório "**SAIDA** e os arquivos recebidos estarão no subdiretório "**ENTRADA**".
 
-### Como executar o STCP OFTP Server através da linha de comando
+## Linha de comando
 
-A sintaxe para executar o STCP OFTP Server através da linha de comando é a seguinte:
+A sintaxe para executar o STCP OFTP Server através de uma linha de comando é a seguinte:
 
-```shell
+```pshell
 CTCPSVC.EXE <Arquivo de configuração> [-addservice|-delservice|-noservice]
 ```
 Parâmetro  | Descrição
@@ -47,7 +47,7 @@ Parâmetro  | Descrição
 
 Exemplo:
 
-```shell
+```pshell
 C:\STCPODT\Program\ctcpsvc.exe C:\STCPODT\CTCP.INI –noservice
 ```
 No exemplo acima, o STCP OFTP Server será executado como uma **aplicação**.

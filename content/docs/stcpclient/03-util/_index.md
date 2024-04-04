@@ -32,9 +32,9 @@ TEMP                  | Subdiretório de uso geral.
 
 Para transmitir, os arquivos devem ser disponibilizados no subdiretório “**SAIDA**” e os arquivos recebidos estarão no subdiretório “**ENTRADA**”.
 
-### Execução através da linha de comando
+## Linha de comando
 
-A sintaxe para executar o STCP OFTP através de linha de comando é a seguinte:
+A sintaxe para executar o STCP OFTP através de uma linha de comando é a seguinte:
 
 ```
 STCPCLT.EXE <Arquivo de configuração> [-p –r –t –m –f –w]

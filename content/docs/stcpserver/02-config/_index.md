@@ -861,20 +861,6 @@ Diretório remoto   | Configura o diretório remoto para onde se deseja subir o 
 Diretório temporário| Configura o diretório temporário, que garante a integridade dos arquivos durante o upload.
 Extensão temporária| Configura uma extensão temporária para arquivo no servidor remoto (SFTP).
 
-<!-- 43. Na guia **HTTP**, configure as seguintes opções.
-
-![](./imagem1/img47.png)
-
-Campos   | Descrição
-:---     | :---
-HTTP ID  | Identificação utilizada para autenticação e acesso no site.
-Senha    | Senha utilizada para autenticação e acesso no site.
-Confirmar| Preencha este campo com a senha informada no campo Senha para validação.
-Userdata | Preencha este campo com os dados extras associados à identificação Odette informada. /Obs.: Preencha este campo somente se for requerido pelo servidor.
-Modo de transferência| Esta opção permite selecionar o modo de transferência que será utilizado para comunicação com o servidor, são eles: Both (transmissão e recepção de arquivos), Sender (somente transmissão de arquivos) e Receiver (somente recepção de arquivos).
-Tamanho máximo do buffer| Preencha este campo com o tamanho máximo dos blocos de dados que serão transferidos. O intervalo válido é de 1 até 65535.
-Tempo máximo de inatividade| Preencha este campo com o tempo máximo de inatividade de comunicação entre o STCP OFTP Server e o computador remoto.
-Nível de Debug| Preencha este campo com o nível de detalhamento das informações que serão gravadas no arquivo de depuração. Para obter no mesmo arquivo de depuração a informação dos diferentes níveis, preencha este campo com a soma dos níveis desejados. /Obs.: Veja a tabela dos níveis de debug na configuração dos usuários. -->
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">5</span> &nbsp; Na guia **FTP**, configure as seguintes opções.
 
@@ -945,13 +931,13 @@ Criar referência de arquivo recebido| Esta opção controla a duplicidade de ar
 
 ## Agendamento
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Você poderá adicionar, remover, modificar ou copiar os parâmetros de configuração de um agendamento do serviço STCP OFTP Server.
+Você poderá adicionar, remover, modificar ou copiar os parâmetros de configuração de um agendamento do serviço STCP OFTP Server.
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp; Clique em **Adicionar**.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Clique em **Adicionar**.
 
 ![](agendamento.png)
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">3</span> &nbsp; Na guia **Geral**, preencha os campos com as informações descritas abaixo.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp; Na guia **Geral**, preencha os campos com as informações descritas abaixo.
 
 ![](agendamento-geral.png)
 
@@ -976,7 +962,7 @@ Tamanho máximo      | Preencha este campo com o tamanho máximo que um arquivo 
 Executar Comando    | Esta opção assinalada habilita a execução de um comando externo (executável ou bat).
 Comando             | Preencha este campo com o nome da aplicação (executável ou bat) a ser executada por este agendamento.
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">4</span> &nbsp; Na guia **Avançadas**, configure o período do agendamento.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">3</span> &nbsp; Na guia **Avançadas**, configure o período do agendamento.
 
 ![](avancadas-agendamento.png)
 
