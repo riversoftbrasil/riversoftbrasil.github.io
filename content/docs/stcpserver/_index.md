@@ -23,7 +23,7 @@ Saiba onde utilizar a aplicação e quais as suas vantagens na seção <a href="
 
 O STCP OFTP Server oferece as seguintes características:
 
-* Protocolo de transferência <a href="/odette" target="_blank">OFTP (ODETTE File Transfer Protocol)</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;
+* Protocolo de transferência <a href="/protocols" target="_blank">OFTP (ODETTE File Transfer Protocol)</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;
 * Autenticação através do protocolo *OFTP*
 * Autenticação através de certificado digital X.509 (TLS)
 * Criptografia RSA, 3DES, DES, AES (TLS)

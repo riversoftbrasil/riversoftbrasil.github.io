@@ -6,7 +6,7 @@ cascade:
 sidebar:
   exclude: false
 prev: /docs
-next: /odette
+next: /protocols
 slug: bancos-de-dados-homologados
 draft: false
 lastmod: 2024-03-21

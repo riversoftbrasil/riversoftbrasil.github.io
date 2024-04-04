@@ -6,7 +6,7 @@ cascade:
   type: docs
 sidebar:
   exclude: false
-prev: /odette
+prev: /protocols
 next: /events
 slug: seguranca-stcp
 draft: false
