@@ -10,9 +10,9 @@ weight: 1
 prev: /docs/stcpclient/
 next: /docs/stcpclient/02-config/
 draft: false
-lastmod: 2024-03-27
+lastmod: 2024-04-04
 ---
-## Distribuição dos pacotes para instalação
+## Distribuição dos pacotes
 
 O pacote de instalação será distribuído através de um link pela Equipe de Sustentação da Riversoft.
 

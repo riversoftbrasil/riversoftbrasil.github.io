@@ -10,9 +10,9 @@ prev: /docs/stcpserver
 next: /docs/stcpserver/02-config
 # slug:
 draft: false
-lastmod: 2024-04-02
+lastmod: 2024-04-04
 ---
-## Distribuição dos pacotes para instalação
+## Distribuição dos pacotes
 
 O pacote de instalação será distribuído através de um link pela Equipe de Sustentação da Riversoft.
 
