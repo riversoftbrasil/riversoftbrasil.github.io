@@ -735,6 +735,28 @@ Tamanho máximo do buffer| Preencha este campo com o tamanho máximo dos blocos 
 Tempo máximo de inatividade| Preencha este campo com o tempo máximo de inatividade de comunicação entre o STCP OFTP Server e o computador remoto.
 Nível de Debug| Preencha este campo com o nível de detalhamento das informações que serão gravadas no arquivo de depuração. Para obter no mesmo arquivo de depuração a informação dos diferentes níveis, preencha este campo com a soma dos níveis desejados. Obs.: Veja a tabela dos níveis de debug na configuração dos usuários.
 
+### S3
+
+Nesta seção, configure as seguintes opções:
+
+![](guia-s3.png)
+
+Campos   | Descrição
+:---     | :---
+Chave de  ID  | Identificação de acesso ao SFTP.
+Segredo da chave    | Senha de acesso ao SFTP.
+Token de acesso | Preencha este campo com a senha informada no campo Senha para validação.
+Userdata | Preencha este campo com a senha informada no campo Senha para validação.
+
+### AzBlob
+
+Nesta seção, configure as seguintes opções:
+
+![](guia-azblob.png)
+
+Campos   | Descrição
+:---     | :---
+
 ### Avançadas I
 
 Nesta seção, configure as seguintes opções para o usuário.
