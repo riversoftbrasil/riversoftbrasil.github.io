@@ -141,7 +141,7 @@ Para obter as informações detalhadas sobre o nível de Debug acesse a seção 
 
 
 {{< callout type="warning" >}}
-Obs.: Somente habilite esta opção quando for solicitado por equipe especializada.
+Obs.: Somente habilite esta opção quando for solicitado por uma equipe especializada.
 {{< /callout >}}
 
 Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alterar as configurações.

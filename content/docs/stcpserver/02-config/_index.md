@@ -71,9 +71,8 @@ Nesta guia, você poderá adicionar, remover ou modificar os parâmetros das int
 > O STCP OFTP Server oferece a capacidade de configurar múltiplas interfaces de redes com diferentes protocolos de comunicação, como TCP/IP, além da opção de implementar medidas de segurança adicionais através de protocolos como SFTP, HTTPS e TLS.
 
 {{< callout type="info" >}}
-*Obs.: As configurações de Redes somente serão utilizadas para as conexões entrantes (inbound).
+  As configurações de Redes somente serão utilizadas para as conexões entrantes (inbound).
 {{< /callout >}}
-
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp; Selecione um serviço de rede e clique em **OK**.
 
@@ -427,7 +426,7 @@ Na guia **Usuários**, você poderá adicionar, remover, modificar ou copiar os 
 ![](usuarios.png)
 
 {{< callout type="info" >}}
-  Para um novo usuário adicionado, automaticamente, será criada uma estrutura de subdiretórios para o envio e recepção dos arquivos, dentro do **Diretório de Dados** que foi previamente configurado na guia **Geral**.
+  Para um novo usuário adicionado, automaticamente, será criada uma estrutura de subdiretórios [(veja a estrutura de diretórios)](./#estrutura-dos-diretórios) para o envio e recepção dos arquivos, dentro do **Diretório de Dados** que foi previamente configurado na guia **Geral**.
 {{< /callout >}}
 
 <br>
@@ -445,60 +444,11 @@ Descrição| Preencha este campo com a descrição de sua livre escolha.
 
 Pressione o botão **OK** para gravar as configurações ou **Cancelar** para abandonar sem alterar as configurações.
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">3</span> &nbsp; Na guia **Odette**, preencha os campos com as informações descritas abaixo.
+### Geral
 
-![](guia-odette-usuario.png)
+<!-- <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">3</span> &nbsp; -->
 
-Campos | Descrição
-:---   | :---
-OID (Odette ID)| Preencha este campo com a identificação Odette associada a este usuário. Este campo poderá ter no máximo 25 (vinte e cinco) caracteres.
-Senha  | Preencha este campo com a senha associada à identificação Odette. Este campo poderá ter no máximo oito (8) caracteres.
-Confirmar | Preencha este campo com a senha informada no campo Senha para validação.
-Userdata| Preencha este campo com os dados extras associados à identificação Odette informada. <br> Obs.: Preencha este campo somente se for requerido pelo servidor.
-Características| As opções definidas neste grupo serão utilizadas pelo STCP OFTP Server na comunicação com o servidor Odette. <br> Obs.: Não modifique estas características sem ler atentamente o que significa cada uma delas e ter certeza de que realmente deseja fazê-lo.
-Modo de transferência| Esta opção permite selecionar o modo de transferência que será utilizado para comunicação com o servidor, são eles: Both (transmissão e recepção de arquivos), Sender (somente transmissão de arquivos) e Receiver (somente recepção de arquivos).
-Créditos| Preencha este campo com a quantidade de blocos de dados que serão transferidos até aguardar uma nova autorização para envio. <br> Obs.: O intervalo válido é de 1 até 99.
-Tamanho máximo do buffer| Preencha este campo com o tamanho máximo dos blocos de dados que serão transferidos. O intervalo válido é de 1 até 65535.
-Compressão| Esta opção assinalada habilita a compressão dos dados (padrão Odette) de uma transferência.
-Restart| Esta opção assinalada habilita o controle de recuperação automática na interrupção de uma transferência. Com esta opção habilitada, o STCP OFTP Server irá recuperar a transferência do ponto de interrupção.
-Special Logic| Esta opção assinalada habilita o controle do regime de comunicação lógica especial. Somente deve ser habilitado para comunicação através do protocolo PAD ou SERIAL. Obs.: Não habilite esta opção quando não for utilizado o Protocolo PAD ou SERIAL.
-Tempo máximo de espera de pacote (T1)| Tempo máximo para detectar timeout de processo.
-Tempo máximo de espera de pacote (T2)| Tempo máximo para detectar erros na recepção dos caracteres individuais.
-Número máximo de retransmissões| Número máximo de retransmissões utilizando o controle do regime de comunicação de lógica especial.
-Outros| As opções definidas neste grupo serão utilizadas localmente pelo STCP OFTP Server para controlar o tempo de inatividade e a geração do arquivo de depuração da comunicação.
-Tempo máximo de inatividade| Preencha este campo com o tempo máximo de inatividade de comunicação entre o STCP OFTP Server e o computador remoto.
-Nível de debug| Preencha este campo com o nível de detalhamento das informações que serão gravadas no arquivo de depuração. Para obter no mesmo arquivo de depuração a informação dos diferentes níveis, preencha este campo com a soma dos níveis desejados.
-
-Para cada tentativa de conexão será criado um novo arquivo de depuração no subdiretório **DEBUG** com a seguinte sintaxe:
-```
-ODTDEB.< Protocolo>.< Perfil>.YYYMMDDhhmmssnnn.
-```
-Protocolo | TCP/IP, TLS, SFTP ou HTTP/S
-:---:     | :---:
-YYYY      | Ano
-MM        | Mês
-DD        | Dia
-hh        | Hora
-mm        | Minuto
-ss        | Segundos
-nnn       | Milésimos de segundos
-
-A tabela a seguir contém a relação entre o nível de detalhamento e as informações que serão geradas.
-
-
-Nível | Descrição
-:---  | :---
-0     | Não grava o arquivo de depuração.
-1     | Grava as informações de entrada e saída das sub-rotinas.
-2     | Grava as informações de mudanças do estado do protocolo.
-4     | Grava as informações dos pacotes recebidos e enviados, formatado por campo.
-8     | Grava as informações dos pacotes recebidos e enviados, formatado em hexadecimal.
-16    | Grava as informações dos eventos ocorridos.
-32    | Grava as informações dos sub-registros.
-
-> Obs.: Somente habilite esta opção quando for solicitado por equipe especializada.
-
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">4</span> &nbsp; Na guia **Geral**, configure as seguintes opções descritas abaixo.
+Nesta guia, configure as seguintes opções descritas abaixo:
 
 ![](guia-geral-usuario.png)
 
@@ -515,7 +465,7 @@ Senha nunca expira| Esta opção assinalada impede que a senha expire.
 Conexão automática| Esta opção assinalada habilita este usuário a iniciar uma conexão.
 Protocolo| Este campo seleciona o tipo de protocolo de comunicação que este usuário irá utilizar para conexão. Após selecionar, pressione o botão Configurar para acessar a tela de configuração específica do protocolo de comunicação.
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">5</span> &nbsp; Selecione a opção de **Protocolo** desejada e clique em **Configurar**.
+Selecione a opção de **Protocolo** desejada e clique em **Configurar**.
 
 ![](protocolo-usuario.png)
 
@@ -537,7 +487,7 @@ Clique [aqui](https://docs.aws.amazon.com/pt_br/AmazonS3/latest/userguide/Welcom
   Clique [aqui](https://azure.microsoft.com/pt-br/products/storage/blobs) para mais informações sobre o **Armazenamento de Blobs do Azure**.
 {{< /callout >}}
 
-### Protocolo OFTP
+#### Protocolo OFTP
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Configure as seguintes opções na guia **TCP/IP**.
 
@@ -597,147 +547,6 @@ Lê configuração Proxy do IE |Pressione este botão para ler as configuraçõe
 
 Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alterar as configurações.
 
-<!-- ### Protocolo HTTP
-
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Configure as seguintes opções na guia **TCP/IP**.
-
-![](http-tcp-ip.png)
-
-Campos |Descrição
-:---   | :---
-Endereço IP| Preencha este campo com o endereço TCP/IP ou nome (DNS) do servidor STCP OFTP Server.
-Porta IP| Preencha este campo com a porta TCP/IP do servidor STCP OFTP Server.
-TLS   | Configura a comunicação segura com criptografia e certificação digital, com a utilização da padronização definida na RFC2246 (TLS1/SSL3). O TLS1/SSL3 é comumente encontrado nos servidores de sites seguros (HTTPS) e oferece o maior grau de segurança atualmente disponível. <br> Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica.
-Tamanho máximo do buffer| Preencha este campo com o tamanho máximo dos blocos de dados que serão transferidos. O intervalo válido é de 1 até 65535.
-
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp; Na guia **Proxy**, configure as seguintes opções.
-
-![](proxy-usuarios-http.png)
-
-Campos   | Descrição
-:---     | :---
-Habilitar| Esta opção assinalada habilita a utilização de um servidor Proxy.
-Endereço IP| Preencha este campo com o endereço TCP/IP ou nome (DNS) do servidor STCP Proxy.
-Porta IP |  Preencha este campo com a porta TCP/IP do servidor Proxy.
-Usuário  | Preencha este campo com o nome do usuário autorizado a utilizar o serviço de Proxy.
-Senha    | Preencha este campo com a senha do usuário autorizado a utilizar o serviço de Proxy.
-Confirmar| Preencha este campo com a senha informada no campo Senha para validação.
-Lê configuração Proxy do IE| Pressione este botão para ler as configurações de Proxy configuradas no Internet Explorer.<br> Obs.: As informações de autenticação não serão lidas do IE.
-
-#### Formulários
-
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Na guia **Formulários**, configure as seguintes opções.
-
-![](formularios-usuarios.png)
-
-Campos | Descrição
-:---   | :---
-User Agent | User Agent é uma string que indica o nome da aplicação, versão, sistema operacional e algumas características do computador.
-Login  | Parâmetro de configuração do formulário de autenticação do site.
-Logout | Parâmetro de configuração do formulário de saída do site.
-Listar Arquivos| Parâmetros de configuração do formulário para listagem do conteúdo da Caixa Postal.
-Download de Arquivos| Parâmetros de configuração do formulário para recebimento de arquivos.
-Upload de Arquivos| Parâmetros de configuração do formulário para envio de arquivos.
-Remover Arquivos| Parâmetros de configuração do formulário para remoção de arquivos.
-
-#### Login
-
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Clique no botão **Configurar** para acessar as opções de Login.
-
-![](login-options.png)
-
-Configure os seguintes campos.
-
-<!-- ![](./imagem1/img27.png) -->
-
-<!-- Campos | Descrição
-:---   | :---
-Método <br> Uri <br> Parâmetro de entrada <br> Mensagem de sucesso| Estas informações fazem parte dos parâmetros de configuração do formulário para acesso HTTP. Através destes é feita a integração do STCP com um site remoto, a fim de automatizar o processo de Transmissão e/ou Recepção de arquivos via protocolo HTTP.
-
-Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alterar as configurações.
-
-#### Logout
-
-Clique no botão **Configurar** para acessar as opções de Logout.
-
-![](formularios-usuarios-http.png)
-
-Configure os seguintes campos.
-
-![](logout-usuarios.png)
-
-Campos | Descrição
-:---   | :---
-Método <br> Uri <br> Parâmetro de entrada <br> Mensagem de sucesso| Estas informações fazem parte dos parâmetros de configuração do formulário para acesso HTTP. Através destes é feita a integração do STCP com um site remoto, a fim de automatizar o processo de Transmissão e/ou Recepção de arquivos via protocolo HTTP.
-
-Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alterar as configurações.
-
-#### Listar Arquivos
-
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Clique no botão **Configurar** para acessar as opções de Listar Arquivos.
-
-![](formularios-usuarios-http.png)
-
-Configure os seguintes campos.
-
-![](listar-arquivos.png)
-
-Campos | Descrição
-:---   | :---
-Método <br> Uri <br> Parâmetro de entrada <br> Mensagem de sucesso| Estas informações fazem parte dos parâmetros de configuração do formulário para acesso HTTP. Através destes é feita a integração do STCP com um site remoto, a fim de automatizar o processo de Transmissão e/ou Recepção de arquivos via protocolo HTTP.
-
-Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alterar as configurações.
-
-#### Download de arquivos
-
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Clique no botão **Configurar** para acessar as opções de Download de Arquivos.
-
-![](formularios-usuarios-http.png)
-
-Configure os seguintes campos.
-
-![](download-de-arquivos.png)
-
-Campos | Descrição
-:---   | :---
-Método Uri Parâmetro de entrada Mensagem de sucesso| Estas informações fazem parte dos parâmetros de configuração do formulário para acesso HTTP. Através destes é feita a integração do STCP com um site remoto, a fim de automatizar o processo de Transmissão e/ou Recepção de arquivos via protocolo HTTP.
-
-Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alterar as configurações.
-
-#### Upload de arquivos
-
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Clique no botão **Configurar** para acessar as opções de Upload de Arquivos.
-
-![](formularios-usuarios-http.png)
-
-Configure os seguintes campos.
-
-![](upload-de-arquivos.png)
-
-Campos | Descrição
-:---   | :---
-Método Uri Parâmetro de arquivo Parâmetro de rodapé Mensagem de sucesso| Estas informações fazem parte dos parâmetros de configuração do formulário para acesso HTTP. Através destes é feita a integração do STCP com um site remoto, a fim de automatizar o processo de Transmissão e/ou Recepção de arquivos via protocolo HTTP.
-
-Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alterar as configurações.
-
-#### Remover Arquivos
-
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp;Clique no botão **Configurar** para acessar as opções de Remover Arquivos.
-
-![](formularios-usuarios-http.png)
-
-Configure os seguintes campos.
-
-![](remover-arquivos.png)
-
-Campos | Descrição
-:---   | :---
-Método <br> Uri <br> Parâmetro de entrada <br> Mensagem de sucesso| Estas informações fazem parte dos parâmetros de configuração do formulário para acesso HTTP. Através destes é feita a integração do STCP com um site remoto, a fim de automatizar o processo de Transmissão e/ou Recepção de arquivos via protocolo HTTP.
-
-Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alterar as configurações. --> -->
-
-<!-- <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;"></span> &nbsp; -->
-
 Na guia **Avançadas**, configure as seguintes opções.
 
 ![](avancadas.png)
@@ -746,7 +555,7 @@ Campos | Descrição
 :---   | :---
 Máscara de arquivo| Através de expressão regular, esta opção serve para filtrar o que se deseja baixar.
 
-### Protocolo FTP
+#### Protocolo FTP
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Configure as seguintes opções na guia **TCP/IP**.
 
@@ -808,7 +617,7 @@ Extensão temporária | Configura uma extensão temporária para arquivo no serv
 
 Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alterar as configurações.
 
-### Protocolo SFTP
+#### Protocolo SFTP
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Configure as seguintes opções na guia **TCP/IP**.
 
@@ -862,7 +671,39 @@ Diretório temporário| Configura o diretório temporário, que garante a integr
 Extensão temporária| Configura uma extensão temporária para arquivo no servidor remoto (SFTP).
 
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">5</span> &nbsp; Na guia **FTP**, configure as seguintes opções.
+### Odette
+
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">4</span> &nbsp; Na guia **Odette**, preencha os campos com as informações descritas abaixo.
+
+![](guia-odette-usuario.png)
+
+Campos | Descrição
+:---   | :---
+OID (Odette ID)| Preencha este campo com a identificação Odette associada a este usuário. Este campo poderá ter no máximo 25 (vinte e cinco) caracteres.
+Senha  | Preencha este campo com a senha associada à identificação Odette. Este campo poderá ter no máximo oito (8) caracteres.
+Confirmar | Preencha este campo com a senha informada no campo Senha para validação.
+Userdata| Preencha este campo com os dados extras associados à identificação Odette informada. <br> Obs.: Preencha este campo somente se for requerido pelo servidor.
+Características| As opções definidas neste grupo serão utilizadas pelo STCP OFTP Server na comunicação com o servidor Odette. <br> Obs.: Não modifique estas características sem ler atentamente o que significa cada uma delas e ter certeza de que realmente deseja fazê-lo.
+Modo de transferência| Esta opção permite selecionar o modo de transferência que será utilizado para comunicação com o servidor, são eles: Both (transmissão e recepção de arquivos), Sender (somente transmissão de arquivos) e Receiver (somente recepção de arquivos).
+Créditos| Preencha este campo com a quantidade de blocos de dados que serão transferidos até aguardar uma nova autorização para envio. <br> Obs.: O intervalo válido é de 1 até 99.
+Tamanho máximo do buffer| Preencha este campo com o tamanho máximo dos blocos de dados que serão transferidos. O intervalo válido é de 1 até 65535.
+Compressão| Esta opção assinalada habilita a compressão dos dados (padrão Odette) de uma transferência.
+Restart| Esta opção assinalada habilita o controle de recuperação automática na interrupção de uma transferência. Com esta opção habilitada, o STCP OFTP Server irá recuperar a transferência do ponto de interrupção.
+Special Logic| Esta opção assinalada habilita o controle do regime de comunicação lógica especial. Somente deve ser habilitado para comunicação através do protocolo PAD ou SERIAL. Obs.: Não habilite esta opção quando não for utilizado o Protocolo PAD ou SERIAL.
+Tempo máximo de espera de pacote (T1)| Tempo máximo para detectar timeout de processo.
+Tempo máximo de espera de pacote (T2)| Tempo máximo para detectar erros na recepção dos caracteres individuais.
+Número máximo de retransmissões| Número máximo de retransmissões utilizando o controle do regime de comunicação de lógica especial.
+Outros| As opções definidas neste grupo serão utilizadas localmente pelo STCP OFTP Server para controlar o tempo de inatividade e a geração do arquivo de depuração da comunicação.
+Tempo máximo de inatividade| Preencha este campo com o tempo máximo de inatividade de comunicação entre o STCP OFTP Server e o computador remoto.
+Nível de debug* | Preencha este campo com o nível de detalhamento das informações que serão gravadas no arquivo de depuração. Para obter no mesmo arquivo de depuração a informação dos diferentes níveis, preencha este campo com a soma dos níveis desejados. <br> Para acessar as informações detalhadas sobre o debug acesse a página de <a href="/debug" target="_blank">Debug</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;.
+
+{{< callout type="warning">}}
+*Somente habilite esta opção quando for solicitado por uma equipe especializada.
+{{< /callout >}}
+
+### FTP
+
+Nesta seção, configure as seguintes opções.
 
 ![](guia-ftp.png)
 
@@ -877,7 +718,9 @@ Tamanho máximo do buffer| Preencha este campo com o tamanho máximo dos blocos 
 Tempo máximo de inatividade| Preencha este campo com o tempo máximo de inatividade de comunicação entre o STCP OFTP Server e o computador remoto.
 Nível de Debug| Preencha este campo com o nível de detalhamento das informações que serão gravadas no arquivo de depuração. Para obter no mesmo arquivo de depuração a informação dos diferentes níveis, preencha este campo com a soma dos níveis desejados. <br> Obs.: Veja a tabela dos níveis de debug na configuração dos usuários.
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">6</span> &nbsp; Na guia **SFTP**, configure as seguintes opções.
+### SFTP
+
+Nesta seção, configure as seguintes opções.
 
 ![](guia-sftp.png)
 
@@ -892,7 +735,9 @@ Tamanho máximo do buffer| Preencha este campo com o tamanho máximo dos blocos 
 Tempo máximo de inatividade| Preencha este campo com o tempo máximo de inatividade de comunicação entre o STCP OFTP Server e o computador remoto.
 Nível de Debug| Preencha este campo com o nível de detalhamento das informações que serão gravadas no arquivo de depuração. Para obter no mesmo arquivo de depuração a informação dos diferentes níveis, preencha este campo com a soma dos níveis desejados. Obs.: Veja a tabela dos níveis de debug na configuração dos usuários.
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">7</span> &nbsp; Na guia **Avançadas I**, configure as seguintes opções para o usuário.
+### Avançadas I
+
+Nesta seção, configure as seguintes opções para o usuário.
 
 ![](avancadas-I.png)
 
@@ -910,7 +755,9 @@ Término           | Término do intervalo do período de conexão.
 Dias da semana    | Informa os dias da semana em que a conexão poderá ocorrer.
 Padrão            | Restaura configuração padrão para o período de conexão.
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">8</span> &nbsp; Na guia **Avançadas II**, configure as seguintes opções para o usuário.
+### Avançadas II
+
+Nesta seção, configure as seguintes opções para o usuário.
 
 ![](avancadas-II.png)
 
@@ -1092,7 +939,7 @@ Campos     | Descrição
 Endereço IP| Preencha este campo com o endereço TCP/IP ou nome (DNS) do servidor STCP OFTP Server.
 Porta IP   | Preencha este campo com a porta TCP/IP do servidor STCP OFTP Server. <br> Obs.: A porta padrão do serviço LDAP é a 389.
 Comunicação segura| Esta opção assinalada habilita a utilização de criptografia na comunicação com o servidor STCP OFTP Server. <br> Obs.: Antes de habilitar esta opção, leia atentamente o capítulo sobre Segurança.
-SSL3       | Configura a comunicação segura com criptografia e certificação digital, com a utilização da padronização definida na RFC2246 (TLS1/SSL3). O TLS1/SSL3 é comumente encontrado nos servidores de sites seguros (HTTPS) e oferece o maior grau de segurança atualmente disponível. <br> Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica.
+TLS       | Configura a comunicação segura com criptografia e certificação digital, com a utilização da padronização definida na RFC2246 (TLS). O TLS é comumente encontrado nos servidores de sites seguros (HTTPS) e oferece o maior grau de segurança atualmente disponível. <br> Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica.
 Domínio    | Domínio do servidor de autenticação.
 Método     | Métodos utilizados pelo protocolo LDAP: LDAP_AUTH_SIMPLE, LDAP_AUTH_DIGEST, LDAP_AUTH_DPA, LDAP_AUTH_MSN, LDAP_AUTH_NEGOTIATE, LDAP_AUTH_NTLM, LDAP_AUTH_SICILY, LDAP_AUTH_SSPI
 
