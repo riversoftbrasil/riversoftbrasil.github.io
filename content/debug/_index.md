@@ -29,7 +29,7 @@ Acesse o STCP OFTP Client Config (Iniciar – Todos os programas – Riversoft S
 {{< /callout >}}
 
 
-Para cada tentativa de conexão será criado um novo arquivo de depuração no diretório DEBUG com a seguinte sintaxe:
+Para cada tentativa de conexão será criado um novo arquivo de depuração no diretório **DEBUG** com a seguinte sintaxe:
 
 ```
 ODTDEB.<Protocolo>.<Perfil>.YYYYMMDDhhmmssnnn
@@ -37,7 +37,7 @@ ODTDEB.<Protocolo>.<Perfil>.YYYYMMDDhhmmssnnn
 
 | Informação |        Significado        |
 | :--------- | :-----------------------: |
-| Protocolo  | TCPIP, X25, SERIAL ou PAD |
+| Protocolos | **TCP/IP, TLS, SFTP OU HTTP/S** |
 | Perfil     | Nome do perfil utilizado  |
 | YYYY       |            Ano            |
 | MM         |            Mês            |
