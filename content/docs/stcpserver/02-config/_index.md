@@ -413,7 +413,7 @@ Usuário   | Preencha este campo com o nome do usuário da rede de supervisão.
 Senha  | Preencha este campo com a senha do usuário que deve ser utilizada pelo rede de supervisão.
 Confirmar      | Preencha este campo com a senha informada no campo senha para validação.
 Intervalo de requisições | Esta opção assinalada o tempo (em segundos) de intervalo entre as requisições feitas.
-Executar comando externo | Esta opção habilita a execução de um comando externo dentro do STCP <br> Exemplo: ````notepad````Abrir bloco de notas no Windows.
+Executar comando externo | Preencha este campo com o nome de um comando externo (programa ou bat) que deve ser executado.
 ----
 
 Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alterar as configurações.
@@ -597,7 +597,7 @@ Lê configuração Proxy do IE |Pressione este botão para ler as configuraçõe
 
 Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alterar as configurações.
 
-### Protocolo HTTP
+<!-- ### Protocolo HTTP
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Configure as seguintes opções na guia **TCP/IP**.
 
@@ -650,7 +650,7 @@ Configure os seguintes campos.
 
 <!-- ![](./imagem1/img27.png) -->
 
-Campos | Descrição
+<!-- Campos | Descrição
 :---   | :---
 Método <br> Uri <br> Parâmetro de entrada <br> Mensagem de sucesso| Estas informações fazem parte dos parâmetros de configuração do formulário para acesso HTTP. Através destes é feita a integração do STCP com um site remoto, a fim de automatizar o processo de Transmissão e/ou Recepção de arquivos via protocolo HTTP.
 
@@ -734,7 +734,7 @@ Campos | Descrição
 :---   | :---
 Método <br> Uri <br> Parâmetro de entrada <br> Mensagem de sucesso| Estas informações fazem parte dos parâmetros de configuração do formulário para acesso HTTP. Através destes é feita a integração do STCP com um site remoto, a fim de automatizar o processo de Transmissão e/ou Recepção de arquivos via protocolo HTTP.
 
-Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alterar as configurações.
+Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alterar as configurações. --> -->
 
 <!-- <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;"></span> &nbsp; -->
 
