@@ -743,10 +743,14 @@ Nesta seção, configure as seguintes opções:
 
 Campos   | Descrição
 :---     | :---
-Chave de  ID  | Identificação de acesso ao SFTP.
-Segredo da chave    | Senha de acesso ao SFTP.
-Token de acesso | Preencha este campo com a senha informada no campo Senha para validação.
-Userdata | Preencha este campo com a senha informada no campo Senha para validação.
+Chave de acesso ID (Access Key ID)  | Preencha este campo com a sequência de caracteres única associada a conta da AWS.
+Segredo da chave  (Secret Access Key)  | Preencha este campo com a sequência de caracteres única associada a uma conta da AWS usada para provar a identidade do usuário ou da aplicação que está tentando acessar os recursos da AWS.
+Token de acesso | Preencha este campo com a credencial temporária, utilizado como parte do processo de autenticação para acessar recursos na AWS. O token de acesso é fornecido juntamente com a Access Key ID e a Secret Access Key sempre que você usa credenciais temporárias.
+Userdata | Preencha este campo com os dados extras associados à identificação Odette informada.
+Modo de transferência | Esta opção permite selecionar o modo de transferência que será utilizado para comunicação com o servidor, são eles: **Both** (transmissão e recepção de arquivos), **Sender** (somente transmissão de arquivos) e **Receiver** (somente recepção de arquivos).
+Tamanho máximo do buffer | Preencha este campo com o tamanho máximo dos blocos de dados que serão transferidos. O intervalo válido é de 1 até 65535.
+Tempo máximo de inatividade | Preencha este campo com o tempo máximo de inatividade de comunicação entre o STCP OFTP Server e o servidor remoto.
+Nível de Debug | Preencha este campo com o nível de detalhamento das informações que serão gravadas no arquivo de depuração. Para obter no mesmo arquivo de depuração a informação dos diferentes níveis, preencha este campo com a soma dos níveis desejados. <br> Obs.: Veja a <a href="/debug" target="_blank"> tabela dos níveis de debug </a> {{< icon "arrow-top-right-on-square" >}} na configuração dos usuários.
 
 ### AzBlob
 
@@ -756,6 +760,14 @@ Nesta seção, configure as seguintes opções:
 
 Campos   | Descrição
 :---     | :---
+Chave de acesso ID  | Preencha este campo com a chave para acessar a conta de armazenamento do Azure.
+Segredo da chave    | Preencha este campo com a sequência de caracteres para autenticação.
+Token de acesso | Preencha este campo com a credencial temporária, utilizado como parte do processo de autenticação.
+Userdata | Preencha este campo com os dados extras associados à identificação informada.
+Modo de transferência | Esta opção permite selecionar o modo de transferência que será utilizado para comunicação com o servidor, são eles: **Both** (transmissão e recepção de arquivos), **Sender** (somente transmissão de arquivos) e **Receiver** (somente recepção de arquivos).
+Tamanho máximo do buffer | Preencha este campo com o tamanho máximo dos blocos de dados que serão transferidos. O intervalo válido é de 1 até 65535.
+Tempo máximo de inatividade | Preencha este campo com o tempo máximo de inatividade de comunicação entre o STCP OFTP Server e o servidor remoto.
+Nível de Debug | Preencha este campo com o nível de detalhamento das informações que serão gravadas no arquivo de depuração. Para obter no mesmo arquivo de depuração a informação dos diferentes níveis, preencha este campo com a soma dos níveis desejados. <br> Obs.: Veja a <a href="/debug" target="_blank"> tabela dos níveis de debug </a> {{< icon "arrow-top-right-on-square" >}} na configuração dos usuários.
 
 ### Avançadas I
 
@@ -991,7 +1003,7 @@ Tipo | Descrição
 2    | Parte do nome do arquivo e os valores definidos nas propriedades de Prefixo e Sufixo do tipo.
 3    | O nome do arquivo e os valores definidos em uma expressão regular.
 
-> Obs.: Para informações mais detalhadas sobre expressão regular (RegEx), acesse o site (www.pcre.org).
+> Obs.: Para informações mais detalhadas sobre expressão regular (RegEx), acesse o site [Rubular](https://rubular.com/).
 
 A tabela abaixo demonstra a associação do nome do arquivo com o tipo específico:
 
@@ -1110,60 +1122,62 @@ Padrão                     | Restaura configuração padrão para o período de
 
 Pressionar o botão **OK** para gravar as configurações ou **Cancelar** para abandonar sem alterar as configurações.
 
-## Chave privativa e Certificado de autenticação TLS
+## Chave privativa e Certificado TLS
 
-Os seguintes procedimentos devem ser executados para a geração da chave privativa e do certificado digital a serem utilizados na comunicação SSL3.
+Os seguintes procedimentos devem ser executados para a geração da chave privativa e do certificado digital a serem utilizados na comunicação TLS.
 
-1. No prompt de comando, execute a aplicação openssl.exe (Ex.: C:\STCPODT\Program\openssl.exe) para iniciar o processo de geração do par de chaves assimétricas (privada/pública).
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; No prompt de comando, execute a aplicação **openssl.exe** (Ex.: C:\STCPODT\Program\openssl.exe) para iniciar o processo de geração do par de chaves assimétricas (privada/pública).
 
-<!-- ![](./imagem1/img74.png) -->
+![](openssl.png)
 
-2. Utilize o comando abaixo para gerar a chave privativa que será utilizada para criptografia da conexão.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp; Utilize o comando abaixo para gerar a chave privativa que será utilizada para criptografia da conexão.
 
-```bash
+```pshell
 genrsa -out[unidade_disco][diretorio_instalação_stcp]\keys\[nome_da_chave].key 1024
 ```
 
 Exemplo:
 
-```bash
+```pshell
 genrsa –out c:\stcpodt\keys\stcp_abcde.key 1024
 ```
 
-<!-- ![](./imagem1/img75.png) -->
+![](openssl-chave-priv.png)
 
-3. O próximo passo é gerar o Certificado Digital associado à chave gerada anteriormente. Para isso, utilize o comando abaixo.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">3</span> &nbsp; O próximo passo é gerar o Certificado Digital associado à chave gerada anteriormente. Para isso, utilize o comando abaixo.
 
-```ini
+```pshell
 req –new –x509 –key [unidade_disco][diretório_instalação_stcp]\keys\[nome_da_chave].key –out [unidade_disco][diretório_instalação_stcp]\certs\[nome_do_certificado].cer –days 1825 –config ./openssl.cnf
 ```
 
 Exemplo:
 
-```
+```pshell
 req –new –x509 –key c:\stcpodt\keys\stcp_interprint.key –out c:\stcpodt\certs\stcp_abcde.cer –days 1825 –config ./openssl.cnf
 ```
-4. Preencha as informações solicitadas para concluir o processo de geração do Certificado Digital.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">4</span> &nbsp; Preencha as informações solicitadas para concluir o processo de geração do Certificado Digital.
 
-<!-- ![](./imagem1/img76.png) -->
+![](openssl-cert.png)
 
-## Configuração para comunicação TLS
+## Comunicação TLS
 
-1. Para acessar o configurador do STCP OFTP Server Enterprise/Lite, clique em **Iniciar** e depois, em **Riversoft STCP OFTP Server Config**.
-2. Acesse a guia **Redes** para adicionar as interfaces que ficarão disponíveis para o serviço de transferência e adicione uma interface do serviço de transferência.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Para acessar o configurador do STCP OFTP Server Enterprise/Lite, clique em **Iniciar** e depois, em **Riversoft STCP OFTP Server Config**.
+
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp; Acesse a guia **Redes** para adicionar as interfaces que ficarão disponíveis para o serviço de transferência e adicione uma interface do serviço de transferência.
 
 ![](guia-redes.png)
 
-3. Clique em **Adicionar** e selecione o protocolo **OFTP – TCP/IP**.
-4. Clique em **OK** para entrar nas configurações.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">3</span> &nbsp; Clique em **Adicionar** e selecione o protocolo **OFTP – TCP/IP**.
+
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">4</span> &nbsp; Clique em **OK** para entrar nas configurações.
 
 ![](protocolo-oftp.png)
 
-5. Clique na guia **TCP/IP** e configure os parâmetros apresentados.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">5</span> &nbsp; Clique na guia **TCP/IP** e configure os parâmetros apresentados.
 
 ![](tcp-ip-redes.png)
 
-6. Clique na guia **TLS**, configure os parâmetros apresentados abaixo e pressione o botão **OK** para finalizar.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">6</span> &nbsp; Clique na guia **TLS**, configure os parâmetros apresentados abaixo e pressione o botão **OK** para finalizar.
 
 ![](redes-guia-tls.png)
 
