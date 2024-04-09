@@ -10,7 +10,7 @@ weight: 2
 prev: /docs/stcpclient/01-install-clt/
 next: /docs/stcpclient/03-util/
 draft: false
-lastmod: 2024-03-14
+lastmod: 2024-04-08
 ---
 ## Configurador
 
@@ -456,7 +456,7 @@ Na guia **Avançadas II**, nas **Propriedades do Perfil**, preencha os seguintes
 | Criar referência de arquivo recebido                     |                           Esta opção controla a duplicidade de arquivo, criando uma referência do arquivo no diretório **Restart**.                           |
 
 
-## Configuração para comunicação TLS(Openssl)
+## Comunicação TLS (Openssl)
 
 Na guia **Perfis**, selecione o perfil desejado e clique no botão **Propriedades**.
 
