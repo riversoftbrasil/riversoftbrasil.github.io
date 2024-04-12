@@ -63,7 +63,7 @@ Número de série*| Preencha este campo com o número de série que está locali
 
 Nesta guia, você poderá adicionar, remover ou modificar os parâmetros das interfaces de redes controladas pelo serviço do STCP OFTP Server.
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Clique em **Adicionar**.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Clique em **Adicionar**.
 
 ![](guia-redes.png)
 
@@ -74,7 +74,7 @@ Nesta guia, você poderá adicionar, remover ou modificar os parâmetros das int
   As configurações de Redes somente serão utilizadas para as conexões entrantes (inbound).
 {{< /callout >}}
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp; Selecione um serviço de rede e clique em **OK**.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp; Selecione um serviço de rede e clique em **OK**.
 
 Protocolo     | Descrição
 :---------    | :-----
@@ -87,7 +87,7 @@ Monitor Directlink - TCP/IP | Habilita a rede para supervisão do Directlink atr
 
 ### OFTP
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Na guia **Geral**, preencha as seguintes opções de configuração:
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Na guia **Geral**, preencha as seguintes opções de configuração:
 
 ![](redes-guia-geral.png)
 
@@ -97,7 +97,7 @@ Nome   | Campo com o nome da interface de rede configurada.
 Descrição| Preencha este campo com a descrição da interface de rede.
 Desabilitar| Esta opção assinalada desabilita a interface de rede.
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp; Na guia **TCP/IP**, configure as seguintes opções para o protocolo **OFTP: TCP/IP_1**.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp; Na guia **TCP/IP**, configure as seguintes opções para o protocolo **OFTP: TCP/IP_1**.
 
 ![](tcp_ip-configs.png)
 
@@ -119,7 +119,7 @@ Compressão GZIP| Esta opção assinalada habilita a utilização da compressão
   \*As marcas citadas são propriedade dos seus respectivos donos.
 {{< /callout >}}
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">3</span> &nbsp; Na guia **Odette**, configure as seguintes opções para o protocolo **OFTP: TCP/IP_1**.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">3</span> &nbsp; Na guia **Odette**, configure as seguintes opções para o protocolo **OFTP: TCP/IP_1**.
 
 ![](odette.png)
 
@@ -133,7 +133,7 @@ Outros         | As opções definidas neste grupo serão utilizadas localmente 
 Tempo máximo de inatividade| Preencha este campo com o tempo máximo de inatividade de comunicação entre o STCP OFTP Server e o computador remoto.
 Nível de debug | Preencha este campo com o nível de detalhamento das informações que serão gravadas no arquivo de depuração. Para obter no mesmo arquivo de depuração a informação dos diferentes níveis, preencha este campo com a soma dos níveis desejados. <br> Obs.: Veja a tabela dos níveis de debug na configuração dos usuários.
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">4</span> &nbsp; Na guia **TLS**, configure as seguintes opções para o protocolo **OFTP – TCP/IP**.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">4</span> &nbsp; Na guia **TLS**, configure as seguintes opções para o protocolo **OFTP – TCP/IP**.
 
 ![](tls.png)
 
@@ -155,7 +155,7 @@ Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alt
 
 ### API DirectLink
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Na guia **Geral**, preencha as seguintes opções de configuração:
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Na guia **Geral**, preencha as seguintes opções de configuração:
 
 ![](redes-api-01.png)
 
@@ -165,7 +165,7 @@ Nome   | Campo com o nome da interface de rede configurada.
 Descrição| Preencha este campo com a descrição da interface de rede.
 Desabilitar| Esta opção assinalada desabilita a interface de rede.
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp; Na guia **TCP/IP**, configure as seguintes opções:
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp; Na guia **TCP/IP**, configure as seguintes opções:
 
 ![](redes-api-02.png)
 
@@ -187,7 +187,7 @@ Compressão GZIP| Esta opção assinalada habilita a utilização da compressão
   \*As marcas citadas são propriedade dos seus respectivos donos.
 {{< /callout >}}
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">3</span> &nbsp; Na guia **TLS**, configure as seguintes opções:
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">3</span> &nbsp; Na guia **TLS**, configure as seguintes opções:
 
 ![](redes-api-03.png)
 
@@ -204,7 +204,7 @@ Diretório      | Preencha este campo com o nome do diretório (caminho completo
 Algoritmos     | Preencha este campo com os nomes dos algoritmos suportados para assinatura digital, hashing e criptografia dos dados. <br> Obs.: Caso este campo não seja configurado, o protocolo TLS será selecionado automaticamente.
 Debug          | Esta opção permite gerar um arquivo de depuração na pasta Debug do diretório de instalação do STCP.
 ----
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">4</span> &nbsp; Na guia **API**, configure as seguintes opções:
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">4</span> &nbsp; Na guia **API**, configure as seguintes opções:
 
 ![](redes-api-04.png)
 
@@ -222,7 +222,7 @@ Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alt
 
 ### SFTP DirectLink
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Na guia **Geral**, configure as seguintes opções:
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Na guia **Geral**, configure as seguintes opções:
 
 ![](redes-sftpdirl-01.png)
 
@@ -233,7 +233,7 @@ Descrição| Preencha este campo com a descrição da interface de rede.
 Desabilitar| Esta opção assinalada desabilita a interface de rede.
 -----
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp; Na guia **TCP/IP**, configure as seguintes opções:
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp; Na guia **TCP/IP**, configure as seguintes opções:
 
 ![](redes-sftpdirl-02.png)
 
@@ -256,7 +256,7 @@ Compressão GZIP| Esta opção assinalada habilita a utilização da compressão
   \*As marcas citadas são propriedade dos seus respectivos donos.
 {{< /callout >}}
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">3</span> &nbsp; Na guia **SSH/SFTP**, configure as seguintes opções:
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">3</span> &nbsp; Na guia **SSH/SFTP**, configure as seguintes opções:
 
 ![](redes-sftpdirl-03.png)
 
@@ -281,7 +281,7 @@ Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alt
 
 ### Monitor - TCP/IP
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Na guia **Geral**, configure as seguintes opções:
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Na guia **Geral**, configure as seguintes opções:
 
 ![](monitor-01.png)
 
@@ -292,7 +292,7 @@ Descrição| Preencha este campo com a descrição da interface de rede.
 Desabilitar| Esta opção assinalada desabilita a interface de rede.
 ---
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp; Na guia **TCP/IP**, configure as seguintes opções:
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp; Na guia **TCP/IP**, configure as seguintes opções:
 
 ![](monitor-02.png)
 
@@ -315,7 +315,7 @@ Compressão GZIP| Esta opção assinalada habilita a utilização da compressão
   \*As marcas citadas são propriedade dos seus respectivos donos.
 {{< /callout >}}
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">3</span> &nbsp; Na guia **TLS**, configure as seguintes opções:
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">3</span> &nbsp; Na guia **TLS**, configure as seguintes opções:
 
 ![](monitor-03.png)
 
@@ -333,7 +333,7 @@ Algoritmos     | Preencha este campo com os nomes dos algoritmos suportados para
 Debug          | Esta opção permite gerar um arquivo de depuração na pasta Debug do diretório de instalação do STCP.
 ----
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">4</span> &nbsp; Na guia **Monitor**, configure as seguintes opções:
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">4</span> &nbsp; Na guia **Monitor**, configure as seguintes opções:
 
 ![](monitor-04.png)
 
@@ -350,7 +350,7 @@ Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alt
 
 ### Monitor - DirectLink
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Na guia **Geral**, configure as seguintes opções:
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Na guia **Geral**, configure as seguintes opções:
 
 ![](monitordirl-01.png)
 
@@ -361,7 +361,7 @@ Descrição| Preencha este campo com a descrição da interface de rede.
 Desabilitar| Esta opção assinalada desabilita a interface de rede.
 ---
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp; Na guia **TCP/IP**, configure as seguintes opções:
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp; Na guia **TCP/IP**, configure as seguintes opções:
 
 ![](monitordirl-02.png)
 
@@ -384,7 +384,7 @@ Compressão GZIP| Esta opção assinalada habilita a utilização da compressão
   \*As marcas citadas são propriedade dos seus respectivos donos.
 {{< /callout >}}
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">3</span> &nbsp; Na guia **TLS**, configure as seguintes opções:
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">3</span> &nbsp; Na guia **TLS**, configure as seguintes opções:
 
 ![](monitordirl-03.png)
 
@@ -402,7 +402,7 @@ Algoritmos     | Preencha este campo com os nomes dos algoritmos suportados para
 Debug          | Esta opção permite gerar um arquivo de depuração na pasta Debug do diretório de instalação do STCP.
 ----
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">4</span> &nbsp; Na guia **Monitor**, configure as seguintes opções:
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">4</span> &nbsp; Na guia **Monitor**, configure as seguintes opções:
 
 ![](monitordirl-04.png)
 
@@ -421,7 +421,7 @@ Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alt
 
 Na guia **Usuários**, você poderá adicionar, remover, modificar ou copiar os parâmetros de configuração de um usuário do serviço STCP OFTP Server.
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Clique em **Adicionar**.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Clique em **Adicionar**.
 
 ![](usuarios.png)
 
@@ -431,7 +431,7 @@ Na guia **Usuários**, você poderá adicionar, remover, modificar ou copiar os 
 
 <br>
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp; Preencha os campos com as informações descritas abaixo e clique em **OK**.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp; Preencha os campos com as informações descritas abaixo e clique em **OK**.
 
 ![](configs-usuarios.png)
 
@@ -446,7 +446,7 @@ Pressione o botão **OK** para gravar as configurações ou **Cancelar** para ab
 
 ### Geral
 
-<!-- <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">3</span> &nbsp; -->
+<!-- <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">3</span> &nbsp; -->
 
 Nesta guia, configure as seguintes opções descritas abaixo:
 
@@ -489,7 +489,7 @@ Clique [aqui](https://docs.aws.amazon.com/pt_br/AmazonS3/latest/userguide/Welcom
 
 #### Protocolo OFTP
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Configure as seguintes opções na guia **TCP/IP**.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Configure as seguintes opções na guia **TCP/IP**.
 
 ![](oftp-usuario.png)
 
@@ -507,7 +507,7 @@ X25/Router| Esta opção de compatibilidade permite a comunicação do STCP OFTP
 XFB*/SSL  | Habilita a compatibilidade do STCP com o XFB em conexões seguras SSL.
 Compressão GZIP| Esta opção assinalada habilita a utilização da compressão GZIP onthe-fly (durante a transferência).<br> Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica.
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp; Na guia **TLS**, configure as seguintes opções para o protocolo **OFTP – TCP/IP**.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp; Na guia **TLS**, configure as seguintes opções para o protocolo **OFTP – TCP/IP**.
 
 ![](tls-usuario.png)
 
@@ -524,7 +524,7 @@ Diretório| Preencha este campo com o nome do diretório (caminho completo) onde
 Algoritmos | Preencha este campo com os nomes dos algoritmos suportados para assinatura digital, hashing e criptografia dos dados. <br> Obs.: Caso este campo não seja configurado, o protocolo TLS1/SSL3 irá selecionar automaticamente.
 Debug      | Esta opção permite criar um arquivo de depuração.
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">3</span> &nbsp; Na guia **Proxy**, configure as seguintes opções para o protocolo **OFTP – TCP/IP**.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">3</span> &nbsp; Na guia **Proxy**, configure as seguintes opções para o protocolo **OFTP – TCP/IP**.
 
 ![](proxy-usuarios.png)
 
@@ -557,7 +557,7 @@ Máscara de arquivo| Através de expressão regular, esta opção serve para fil
 
 #### Protocolo FTP
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Configure as seguintes opções na guia **TCP/IP**.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Configure as seguintes opções na guia **TCP/IP**.
 
 ![](guia-ftp-usuario.png)
 
@@ -572,7 +572,7 @@ Tamanho máximo do buffer| Preencha este campo com o tamanho máximo dos blocos 
 FTP Passivo | XXXXXXXXXXXXXXXX.
 ------------------
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp; Na guia **Proxy**, configure as seguintes opções:
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp; Na guia **Proxy**, configure as seguintes opções:
 
 ![](ftp-proxy.png)
 
@@ -586,7 +586,7 @@ Usuário    | Preencha este campo com o nome do usuário autorizado a utilizar o
 Senha      |  Preencha este campo com a senha do usuário autorizado a utilizar o serviço de Proxy.
 Confirmar  | Preencha este campo com a senha informada no campo Senha para validação.
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">3</span> &nbsp; Na guia **TLS**, configure as seguintes opções:
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">3</span> &nbsp; Na guia **TLS**, configure as seguintes opções:
 
 ![](guia-tls-usuarios.png)
 
@@ -600,7 +600,7 @@ Certificados CA (Autoridade)| As opções deste grupo estão relacionadas aos ce
 Campo          | IssuerCN: Emissor do certificado. IssuerDN: Detalhes sobre o emissor. SubjectCN: Para quem foi emitido o certificado. SubjectDN: Detalhes sobre o usuário para quem foi emitido o certificado.
 Valor          | O valor deste campo está relacionado aos certificados digitais das autoridades certificadoras (CA) que servirão para validar a autenticidade do certificado apresentado pelo servidor FTP.
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">4</span> &nbsp; Na guia **Avançadas**, configure as seguintes opções:
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">4</span> &nbsp; Na guia **Avançadas**, configure as seguintes opções:
 
 ![](guia-avancadas-ftp-usuarios.png)
 
@@ -619,7 +619,7 @@ Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alt
 
 #### Protocolo SFTP
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Configure as seguintes opções na guia **TCP/IP**.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Configure as seguintes opções na guia **TCP/IP**.
 
 ![](guia-sftp-usuario.png)
 
@@ -630,7 +630,7 @@ Porta IP    | Preencha este campo com a porta TCP/IP do servidor STCP OFTP Serve
 SSL3        | Configura a comunicação segura com criptografia e certificação digital, com a utilização da padronização definida na RFC2246 (TLS1/SSL3). O TLS1/SSL3 é comumente encontrado nos servidores de sites seguros (HTTPS) e oferece o maior grau de segurança atualmente disponível. <br> Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica.
 Tamanho máximo do buffer| Preencha este campo com o tamanho máximo dos blocos de dados que serão transferidos. O intervalo válido é de 1 até 65535.
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp; Na guia **Proxy**, configure as seguintes opções.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp; Na guia **Proxy**, configure as seguintes opções.
 
 ![](guia-proxy-sftp.png)
 
@@ -644,7 +644,7 @@ Usuário    | Preencha este campo com o nome do usuário autorizado a utilizar o
 Senha      | Preencha este campo com a senha do usuário autorizado a utilizar o serviço de Proxy.
 Confirmar  | Preencha este campo com a senha informada no campo Senha para validação.
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">3</span> &nbsp; Na guia **TLS**, configure as seguintes opções.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">3</span> &nbsp; Na guia **TLS**, configure as seguintes opções.
 
 ![](tls-sftp.png)
 
@@ -655,7 +655,7 @@ Senha    | Preencha este campo com a senha que protege o arquivo de chave privat
 Confirmar| Preencha este campo com a senha informada no campo Senha para validação.
 FingerPrint| Assinatura digital da chave privativa.
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">4</span> &nbsp; Na guia **Avançadas**, configure as seguintes opções.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">4</span> &nbsp; Na guia **Avançadas**, configure as seguintes opções.
 
 ![](avancadas-sftp.png)
 
@@ -673,7 +673,7 @@ Extensão temporária| Configura uma extensão temporária para arquivo no servi
 
 ### Odette
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">4</span> &nbsp; Na guia **Odette**, preencha os campos com as informações descritas abaixo.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">4</span> &nbsp; Na guia **Odette**, preencha os campos com as informações descritas abaixo.
 
 ![](guia-odette-usuario.png)
 
@@ -814,11 +814,11 @@ Criar referência de arquivo recebido| Esta opção controla a duplicidade de ar
 
 Você poderá adicionar, remover, modificar ou copiar os parâmetros de configuração de um agendamento do serviço STCP OFTP Server.
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Clique em **Adicionar**.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Clique em **Adicionar**.
 
 ![](agendamento.png)
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp; Na guia **Geral**, preencha os campos com as informações descritas abaixo.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp; Na guia **Geral**, preencha os campos com as informações descritas abaixo.
 
 ![](agendamento-geral.png)
 
@@ -843,7 +843,7 @@ Tamanho máximo      | Preencha este campo com o tamanho máximo que um arquivo 
 Executar Comando    | Esta opção assinalada habilita a execução de um comando externo (executável ou bat).
 Comando             | Preencha este campo com o nome da aplicação (executável ou bat) a ser executada por este agendamento.
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">3</span> &nbsp; Na guia **Avançadas**, configure o período do agendamento.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">3</span> &nbsp; Na guia **Avançadas**, configure o período do agendamento.
 
 ![](avancadas-agendamento.png)
 
@@ -857,7 +857,7 @@ Pressione o botão **OK** para gravar as alterações ou **Cancelar** para retor
 
 ## Avançadas
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Preencha os campos com as informações descritas.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Preencha os campos com as informações descritas.
 
 ![](guia-avancadas.png)
 
@@ -874,11 +874,11 @@ Máximo de tentativas| Número de tentativas de processar o arquivo.
 Controle de log   | As opções deste grupo controlam as propriedades de configuração dos Logs do sistema.
 Controle de autenticação| As opções deste grupo controlam o tipo de autenticação utilizado pelo STCP OFTP Server para validar um usuário. A autenticação está disponível pelo Sistema Operacional e a do STCP. <br> Obs.: Recomendamos a utilização da autenticação STCP.
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp; Em seguida, clique em **Controle de Log**
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp; Em seguida, clique em **Controle de Log**
 
 ![](avancadas-controle-log.png)
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">3</span> &nbsp; Na guia **Geral**, preencha os seguintes campos.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">3</span> &nbsp; Na guia **Geral**, preencha os seguintes campos.
 
 ![](avancadas-controle-log-geral.png)
 
@@ -915,11 +915,11 @@ Nível do Evento | Descrição
 
 Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alterar as configurações.
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">4</span> &nbsp; Clique em **Controle de Autenticação**
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">4</span> &nbsp; Clique em **Controle de Autenticação**
 
 ![](avancadas-controle-autenticacao.png)
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">5</span> &nbsp; Na guia **Geral**, preencha os seguintes campos.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">5</span> &nbsp; Na guia **Geral**, preencha os seguintes campos.
 
 ![](avancadas-controle-autenticacao-geral.png)
 
@@ -928,7 +928,7 @@ Campos | Descrição
 Interface de Autenticação (DLL)| Parâmetro que informa a biblioteca utilizada para configurar a interface de autenticação do STCP.
 Tipo   | Tipos de autenticação suportados pelo STCP OFTP Server: SO(Windows), STCP (Autenticação Nativa da aplicação), Securld/RSA, LDAP.
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">6</span> &nbsp; Na guia **SO(Windows)**, preencha os seguintes campos.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">6</span> &nbsp; Na guia **SO(Windows)**, preencha os seguintes campos.
 
 ![](avancadas-controle-autenticacao-sowindows.png)
 
@@ -939,7 +939,7 @@ Domínio | Domínio do sistema operacional.
 Prefixo |Prefixo para mascarar o usuário.
 -----
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">7</span> &nbsp; Na guia **STCP**, habilite ou desabilite as seguintes opções.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">7</span> &nbsp; Na guia **STCP**, habilite ou desabilite as seguintes opções.
 
 ![](avancadas-controle-autenticacao-stcp.png)
 
@@ -955,7 +955,7 @@ Pelo menos um caractere maiúsculo| Esta opção assinalada força a criação d
 Pelo menos um dígito| Esta opção assinalada força a criação de senhas com pelo menos um caractere numérico.
 Pelo menos um caractere especial| Esta opção assinalada força a criação de senhas com pelo menos um caractere especial.
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">8</span> &nbsp; Na guia **Securld/RSA**, preencha o seguinte campo.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">8</span> &nbsp; Na guia **Securld/RSA**, preencha o seguinte campo.
 
 ![](avancadas-controle-autenticacao-rsa.png)
 
@@ -964,7 +964,7 @@ Campos | Descrição
 Arquivo de configuração| Parâmetro que informa as configurações para autenticação Securld/RSA.
 ------
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">9</span> &nbsp; Na guia **LDAP**, preencha o seguinte campo.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">9</span> &nbsp; Na guia **LDAP**, preencha o seguinte campo.
 
 ![](avancadas-controle-autenticacao-ldap.png)
 
@@ -979,7 +979,7 @@ Método     | Métodos utilizados pelo protocolo LDAP: LDAP_AUTH_SIMPLE, LDAP_AU
 
 Pressione o botão **OK** para gravar as configurações ou **Cancelar** para abandonar sem alterar as configurações.
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">10</span> &nbsp; Na guia **Usuários**, selecione o usuário e clique em **Propriedades**.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">10</span> &nbsp; Na guia **Usuários**, selecione o usuário e clique em **Propriedades**.
 
 ![](usuarios-propriedades.png)
 
@@ -987,7 +987,7 @@ Após adicionar corretamente o Usuário, é necessário configurar os **Tipos de
 
 ## Tipos de Arquivos
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Clique em **Adicionar**.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Clique em **Adicionar**.
 
 ![](tipos-de-arquivos.png)
 
@@ -1015,7 +1015,7 @@ TEST.2   | 2   | —      | TEST  | —    |TXT.TEST /TXT.TXT| Sim /Não
 TEST.3   | 3   | —      | —     | T.T  |TXT.TXT /TXTTXT| Sim /Não
 Default  | —   | —      | —     | —    | TXTTXT | Sim
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp; Informe o Nome do novo tipo de arquivo e clique em **OK**.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp; Informe o Nome do novo tipo de arquivo e clique em **OK**.
 
 ![](tipo-de-arquivo-nome.png)
 
@@ -1023,7 +1023,7 @@ Campos | Descrição
 :---   | :---
 Nome do novo tipo de arquivo| Preencha este campo com o nome desejado para o novo tipo. <br> Obs.: Não utilize caracteres especiais ou espaços em branco.
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">3</span> &nbsp; Na guia **Geral**, configure as seguintes opções.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">3</span> &nbsp; Na guia **Geral**, configure as seguintes opções.
 
 ![](tipo-de-arquivo-geral.png)
 
@@ -1077,7 +1077,7 @@ A utilização do timestamp externo do arquivo tem o seguinte formato:
 **ss**            | Segundos
 **nnn**           | Milésimos de segundos
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">4</span> &nbsp; Na guia **Avançadas**, configure as seguintes opções para o tipo de arquivo.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">4</span> &nbsp; Na guia **Avançadas**, configure as seguintes opções para o tipo de arquivo.
 
 ![](tipo-de-arquivo-avancadas.png)
 
@@ -1126,11 +1126,11 @@ Pressionar o botão **OK** para gravar as configurações ou **Cancelar** para a
 
 Os seguintes procedimentos devem ser executados para a geração da chave privativa e do certificado digital a serem utilizados na comunicação TLS.
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; No prompt de comando, execute a aplicação **openssl.exe** (Ex.: C:\STCPODT\Program\openssl.exe) para iniciar o processo de geração do par de chaves assimétricas (privada/pública).
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; No prompt de comando, execute a aplicação **openssl.exe** (Ex.: C:\STCPODT\Program\openssl.exe) para iniciar o processo de geração do par de chaves assimétricas (privada/pública).
 
 ![](openssl.png)
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp; Utilize o comando abaixo para gerar a chave privativa que será utilizada para criptografia da conexão.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp; Utilize o comando abaixo para gerar a chave privativa que será utilizada para criptografia da conexão.
 
 ```pshell
 genrsa -out[unidade_disco][diretorio_instalação_stcp]\keys\[nome_da_chave].key 1024
@@ -1144,7 +1144,7 @@ genrsa –out c:\stcpodt\keys\stcp_abcde.key 1024
 
 ![](openssl-chave-priv.png)
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">3</span> &nbsp; O próximo passo é gerar o Certificado Digital associado à chave gerada anteriormente. Para isso, utilize o comando abaixo.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">3</span> &nbsp; O próximo passo é gerar o Certificado Digital associado à chave gerada anteriormente. Para isso, utilize o comando abaixo.
 
 ```pshell
 req –new –x509 –key [unidade_disco][diretório_instalação_stcp]\keys\[nome_da_chave].key –out [unidade_disco][diretório_instalação_stcp]\certs\[nome_do_certificado].cer –days 1825 –config ./openssl.cnf
@@ -1155,29 +1155,29 @@ Exemplo:
 ```pshell
 req –new –x509 –key c:\stcpodt\keys\stcp_interprint.key –out c:\stcpodt\certs\stcp_abcde.cer –days 1825 –config ./openssl.cnf
 ```
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">4</span> &nbsp; Preencha as informações solicitadas para concluir o processo de geração do Certificado Digital.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">4</span> &nbsp; Preencha as informações solicitadas para concluir o processo de geração do Certificado Digital.
 
 ![](openssl-cert.png)
 
 ## Comunicação TLS
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Para acessar o configurador do STCP OFTP Server Enterprise/Lite, clique em **Iniciar** e depois, em **Riversoft STCP OFTP Server Config**.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Para acessar o configurador do STCP OFTP Server Enterprise/Lite, clique em **Iniciar** e depois, em **Riversoft STCP OFTP Server Config**.
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp; Acesse a guia **Redes** para adicionar as interfaces que ficarão disponíveis para o serviço de transferência e adicione uma interface do serviço de transferência.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp; Acesse a guia **Redes** para adicionar as interfaces que ficarão disponíveis para o serviço de transferência e adicione uma interface do serviço de transferência.
 
 ![](guia-redes.png)
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">3</span> &nbsp; Clique em **Adicionar** e selecione o protocolo **OFTP – TCP/IP**.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">3</span> &nbsp; Clique em **Adicionar** e selecione o protocolo **OFTP – TCP/IP**.
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">4</span> &nbsp; Clique em **OK** para entrar nas configurações.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">4</span> &nbsp; Clique em **OK** para entrar nas configurações.
 
 ![](protocolo-oftp.png)
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">5</span> &nbsp; Clique na guia **TCP/IP** e configure os parâmetros apresentados.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">5</span> &nbsp; Clique na guia **TCP/IP** e configure os parâmetros apresentados.
 
 ![](tcp-ip-redes.png)
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #B0B0B0; color: white; text-align: center; line-height: 25px; font-size: 14px;">6</span> &nbsp; Clique na guia **TLS**, configure os parâmetros apresentados abaixo e pressione o botão **OK** para finalizar.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">6</span> &nbsp; Clique na guia **TLS**, configure os parâmetros apresentados abaixo e pressione o botão **OK** para finalizar.
 
 ![](redes-guia-tls.png)
 
