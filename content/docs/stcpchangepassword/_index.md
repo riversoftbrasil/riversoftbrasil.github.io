@@ -315,8 +315,6 @@ Onde **PADRAO** pode ser substituído pelas cores:
 | red     | <span style="background-color:#DA241B; border-radius: 4px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> |
 
 
-<!-- ![](img17.png) -->
-
 ### Instaladores e documentação
 
 ```xml {filename="web.config"}
