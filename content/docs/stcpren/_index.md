@@ -6,11 +6,11 @@ toc: true
 cascade:
   type: docs
 sidebar:
-  exclude: false
+  exclude: true
 weight: 7
 prev:
 next:
-draft: false
+# draft: false
 lastmod: 2024-02-28
 ---
 ## Introdução

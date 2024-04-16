@@ -6,15 +6,14 @@ toc: true
 cascade:
   type: docs
 sidebar:
-  exclude: false
+  exclude: true
 weight:
 prev: /stcpren
 next:
 # slug:
 # draft:
-lastmod: 2024-04-12
+lastmod: 2024-04-15
 ---
-
 Nesta seção veremos os passos necessários para instalação e configuração do site de troca de senha, o STCP OFTP Change Password, do serviço **STCP OFTP Server Enterprise**.
 
 > O STCP OFTP Change Password deverá ser configurado em um site ou diretório virtual no IIS utilizando SSL (HTTPS) e .Net Framework 2 ou superior.

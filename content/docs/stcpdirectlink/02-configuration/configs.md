@@ -11,7 +11,7 @@ prev: /docs/stcpdirectlink/02-configuration/requirements
 next: /docs/stcpdirectlink/03-run/
 slug: arquivo-configuracao
 draft: false
-lastmod: 2024-01-26
+lastmod: 2024-04-15
 ---
 
 ### Parâmetros de download
@@ -211,7 +211,7 @@ Exemplo de cifra segura para compatibilidade PCI:
 }
 ```
 
- #### ***Caminhos absolutos ou relativos***
+ #### Caminhos absolutos ou relativos
 
 Quando a aplicação for executada como serviço (windows), os parâmetros de diretórios e templates devem ser informados com o caminho absoluto (path completo).
 

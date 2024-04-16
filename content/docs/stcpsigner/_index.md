@@ -4,18 +4,18 @@ layout: docs
 cascade:
   type: docs
 sidebar:
-  exclude: false
+  exclude: true
 weight: 6
 prev:
 next:
-draft: false
+# draft: false
 lastmod: 2024-03-19
 ---
 O STCPSigner é um módulo utilizado para garantir a integridade, autenticidade, confidencialidade e inviolabilidade de um arquivo através da tecnologia de assinatura digital e da criptografia.
 
-![](sign-01.png)
+![](sign-01.png "O desenho ilustra a comunicação entre um remetente e um destinatário")
 
-O STCPSigner implementa a especificação RFC2315 (PKCS#7) e está em conformidade com a norma do Banco Central do Brasil (Carta Circular 3.134) sobre a utilização da assinatura digital em contratos de câmbio.
+O STCP Signer implementa a especificação RFC2315 (PKCS#7) e está em conformidade com a norma do Banco Central do Brasil (Carta Circular 3.134) sobre a utilização da assinatura digital em contratos de câmbio.
 
 Um documento eletrônico assinado/criptografado com o STCPSigner poderá ser decriptografado/validado com a utilização de outros produtos que sigam a mesma especificação.
 
@@ -48,7 +48,7 @@ O arquivo de saída é também chamado de PKCS#7.
 O STCPSigner deve ser executado com os seguintes parâmetros para realizar o processo de assinatura de um arquivo:
 
 ```
-stcpsigner sign –i < certificado-remetente> -n < arquivo de entrada> -o <arquivo de saída>
+stcpsigner sign –i <certificado-remetente> -n <arquivo de entrada> -o <arquivo de saída>
 ```
 
 ### Fluxo da Validação
@@ -60,7 +60,7 @@ O STCPSigner utiliza o certificado informado pelo remetente para validar a assin
 O STCPSigner deve ser executado com os seguintes parâmetros para realizar o processo de validação da assinatura de um arquivo:
 
 ```
-stcpsigner verify –i < certificado-remetente> -n < arquivo de entrada> -o <arquivo de saída>
+stcpsigner verify –i <certificado-remetente> -n <arquivo de entrada> -o <arquivo de saída>
 ```
 
 ### Fluxo de Criptografia
@@ -69,10 +69,10 @@ No processo de criptografia, o remetente cifra os dados associando-os à Chave P
 
 ![](sign-05.png)
 
-O STCPSigner deve ser executado com os seguintes parâmetros para realizar o processo de criptografia de um arquivo:
+O STCP Signer deve ser executado com os seguintes parâmetros para realizar o processo de criptografia de um arquivo:
 
 ```
-stcpsigner crypt –i < certificado-destinatário> -n < arquivo de entrada> -o <arquivo de saída>
+stcpsigner crypt –i <certificado-destinatário> -n < arquivo de entrada> -o <arquivo de saída>
 ```
 ### Fluxo de Decriptografia
 
@@ -83,5 +83,5 @@ Os dados recebidos do remetente são decriptografados com a Chave Privativa corr
 O STCPSigner deve ser executado com os seguintes parâmetros para realizar o processo de decriptografia de um arquivo:
 
 ```
-stcpsigner decrypt –i < certificado-destinatário> -n < arquivo de entrada> -o <arquivo de saída>**”
+stcpsigner decrypt –i <certificado-destinatário> -n <arquivo de entrada> -o <arquivo de saída>**”
 ```

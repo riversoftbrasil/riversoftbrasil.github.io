@@ -10,11 +10,11 @@ weight: 1
 prev: /docs
 next: /docs/stcpclient/01-install-clt/
 # slug:
-lastmod: 2024-03-22
+lastmod: 2024-04-15
 ---
 # Introdução
 
-O STCP OFTP Client é um cliente de transferência de arquivos seguro e multiprotocolo para aplicações de **e-business** e troca de informações corporativas, baseado na especificação <a href="/protocols" target="_blank">OFTP (ODETTE File Transfer Protocol)</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;.
+O STCP OFTP Client é um cliente de transferência de arquivos seguro e multiprotocolo para aplicações de **e-business** e troca de informações corporativas, baseado na especificação <a href="/protocols" target="_blank">OFTP (ODETTE File Transfer Protocol)</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;
 
 ## Onde usar?
 
@@ -26,7 +26,7 @@ Saiba onde utilizar a aplicação na seção <a href="/utils" target="_blank">Us
 - Autenticação através do protocolo OFTP
 - Autenticação através de certificado digital X.509 (TLS)
 - Criptografia RSA, 3DES, DES, AES (TLS)
-- Multiprotocolo de comunicação **TCP/IP** (OFTP, HTTPS, FTP e SFTP), **S3** (AWS) e **Blob** (Azure)
+- Protocolo de comunicação **TCP/IP** (OFTP, HTTPS, FTP e SFTP)
 - Transferência de todos os tipos de arquivos
 - Registros de logs de auditoria (bilhetagem) e eventos
 - Recuperação de transferência interrompida
@@ -37,7 +37,7 @@ Saiba onde utilizar a aplicação na seção <a href="/utils" target="_blank">Us
 
 ## Requisitos de software e hardware
 
-Confira os requisitos de software e hardware da aplicação na seção <a href="/requirements" target="_blank">Requisitos</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;.
+Confira os requisitos de software e hardware da aplicação na seção <a href="/requirements" target="_blank">Requisitos</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;
 
 
 

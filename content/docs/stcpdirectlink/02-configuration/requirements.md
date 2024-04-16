@@ -1,5 +1,5 @@
 ---
-linkTitle: Requisitos configuração
+linkTitle: Requisitos
 layout: docs
 toc: true
 cascade:
@@ -11,9 +11,9 @@ prev: /docs/stcpdirectlink/02-configuration/
 next: /docs/guide/organize-files
 slug: requisitos-configuracao
 draft: false
-lastmod: 2024-02-23
+lastmod: 2024-04-15
 ---
-## Requisitos para configuração da aplicação
+## Requisitos
 
 - Editor de texto (Ex: [VSCode](https://code.visualstudio.com/), [Notepad++](https://notepad-plus-plus.org/downloads/))
 - Informações do relay de email

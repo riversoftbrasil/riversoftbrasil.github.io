@@ -10,7 +10,7 @@ weight: 2
 prev: /docs/stcpclient/01-install-clt/
 next: /docs/stcpclient/03-util/
 draft: false
-lastmod: 2024-04-08
+lastmod: 2024-04-15
 ---
 ## Configurador
 
@@ -23,7 +23,7 @@ O programa de configuração do STCP OFTP Client foi instalado na pasta selecion
 O programa de configuração pode ser acessado também na pasta **Program** da aplicação, conforme exemplo de estrutura abaixo:
 
 ```
-*:\STCPCLT\Program\Riversoft STCP OFTP Client Config
+<Unidade de instalação>:\STCPCLT\Program\Riversoft STCP OFTP Client Config
 ```
 
 {{< filetree/container >}}
@@ -59,7 +59,7 @@ O programa de configuração pode ser acessado também na pasta **Program** da a
 ## Configurar Perfil
 
 Na guia **Perfis** você poderá adicionar, remover ou modificar os parâmetros de configuração de
-um usuário do serviço <a href="/docs/stcpserver/" target="_blank">STCP OFTP Server</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;.
+um usuário do serviço <a href="/docs/stcpserver/" target="_blank">STCP OFTP Server</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp;Clique no botão **Adicionar**
 
@@ -137,71 +137,11 @@ Clique em **OK**.
 | Nível de debug                        |      Preencha este campo com o nível de detalhamento das informações que serão gravadas no arquivo de depuração. Para obter no mesmo arquivo de depuração a informação dos diferentes níveis, preencha este campo com a soma dos níveis desejados.  |
 ---
 
-Para obter as informações detalhadas sobre o nível de Debug acesse a seção <a href="/debug" target="_blank">Debug</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;.
+Para obter as informações detalhadas sobre o nível de Debug acesse a seção <a href="/debug" target="_blank">Debug</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;
 
 
 {{< callout type="warning" >}}
 Obs.: Somente habilite esta opção quando for solicitado por uma equipe especializada.
-{{< /callout >}}
-
-Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alterar as configurações.
-
-## Guia Avançadas
-
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">3</span> &nbsp;Na guia **Avançadas**, configure os seguintes campos.
-
-![](clt-config-03.png)
-
-| Campos                                  |                                                                                                                                  Descrição                                                                                                                                   |
-| :-------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Máximo de sessões                       |                                               Este campo informa a quantidade máxima de sessões simultâneas de transferência que podem ser ativadas pelo serviço. <br> Obs.: Limitado a 1 (uma) sessão na versão STCP OFTP Client.                                                |
-| Check point                             | Preencha este campo com o múltiplo da quantidade de dadosrecebidos para que o STCP OFTP Client force uma gravação física do arquivo. No caso de uma interrupção da transferência, a sua recuperação ocorrerá a partir da última posição de check point corretamente gravada. |
-| Habilitar                               |                                                                                                                     Habilita o controle de lock externo.                                                                                                                     |
-| Tempo máximo de lock                    |                                                                                                               Tempo máximo que o arquivo permanece bloqueado.                                                                                                                |
-| Tempo de espera para uma nova tentativa |                                                                                                         Tempo de espera para nova tentativa de processar o arquivo.                                                                                                          |
-| Máximo de tentativas                    |                                                                                                                 Número de tentativas de processar o arquivo.                                                                                                                 |
-| Controle de Atualização                 |                                                                                                Este campo habilita o controle de atualização automática do STCP OFTP Client.                                                                                                 |
-
-### Log
-
-Clique no botão **Log** para continuar a configuração.
-
-![](clt-config-04.png)
-
-Na guia **Geral**, Preencha os seguintes campos.
-
-![](clt-config-05.png)
-
-| Campos                                        |                                                                                           Descrição                                                                                           |
-| :-------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| Interface de Log (DLL)                        |                                   Grava em arquivo de texto caso a DLL selecionada seja stcplogtxt.dll ou grava em Banco de dados se a DLL for logodbc.dll.                                   |
-| Gravar no arquivo de mensagem                 |                                                    Preencha este campo com o nível de evento que será armazenado no arquivo de mensagens.                                                     |
-| Apresentar na console do STCP                 |                                            Preencha este campo com o nível de evento que será mostrado najanela de mensagens do STCP OFTP Server.                                             |
-| Executar comando externo                      |                                               Preencha este campo com o nível de evento que irá disparar um comando (programa ou bat) externo.                                                |
-| Comando externo                               |                                                             Preencha este campo com o nome do comando externo (programa ou bat).                                                              |
-| Aceitar                                       |                                                                  Registra nos arquivos de log ou no Banco de dados do STCP.                                                                   |
-| Rejeitar                                      |                                                                Não registra nos arquivos de log ou no Banco de dados do STCP.                                                                 |
-| Comando para conexão ao banco de dados (ODBC) |                                                      String de conexão à fonte de dados ODBC. Informe DSN, UID (usuário) e PWD (senha).                                                       |
-| Senha                                         |                                                                         Digite a senha para acesso ao banco de dados.                                                                         |
-| Confirmar                                     |                                                           Preencha este campo com a senha informada no campo Senha para validação.                                                            |
-| Gravar arquivo de mensagem por usuário        | Esta opção assinalada habilita a geração do arquivo de mensagens dos eventos individualmente para cada Usuário. Obs.: O arquivo de mensagens será gerado no subdiretório LOG de cada usuário. |
-
-**Tabela com a descrição do Nível do evento:**
-
-| Nível do Evento |                                                                      Descrição                                                                      |
-| :-------------- | :------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 0               |                                                    Os eventos de início e término da aplicação.                                                     |
-| 1               |                                                        Os eventos que contenham algum erro.                                                         |
-| 2               |                                     Os eventos de término da operação de cancelamento de espera de uma conexão.                                     |
-| 3               |                                            Os eventos de início e término de cancelamento das conexões.                                             |
-| 4               | Os eventos de início e término de conexão com sucesso, início e término de sessão, início e término de transmissão ou início e término de recepção. |
-| 5               |                                                                    Não definido.                                                                    |
-| 6               |                                                                    Não definido.                                                                    |
-| 7               |                                        Os eventos de início e término da unidade de processamento (threads).                                        |
-| 8               |                                                      Os eventos de início e término da agenda.                                                      |
-
-{{< callout type="warning" >}}
- Obs.: Os eventos associados a um nível inferior ou igual ao selecionado serão processados.
 {{< /callout >}}
 
 Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alterar as configurações.
@@ -242,12 +182,15 @@ selecionada anteriormente.
 | Protocolo     |                                                Descrição                                                |
 | :------------ | :-----------------------------------------------------------------------------------------------------: |
 | OFTP - TCP/IP | Configura o STCP OFTP Server para utilizar o protocolo de comunicação TCP/IP através de uma rede local. |
+<!-- | HTTP – TCP/IP| Configura o STCP OFTP Server para utilizar o protocolo de comunicação HTTP. |
+| FTP – TCP/IP | Configura o STCP OFTP Server para utilizar o protocolo de comunicação FTP. |
+| SFTP – TCP/IP| Configura o STCP OFTP Server para utilizar o protocolo de comunicação SFTP. | -->
 ---
 
 
-> Clique [aqui](https://docs.aws.amazon.com/pt_br/AmazonS3/latest/userguide/Welcome.html) {{< icon "arrow-top-right-on-square" >}} &nbsp; para mais informações sobre o **Amazon Simple Storage Service (S3)**.
+<!-- > Clique [aqui](https://docs.aws.amazon.com/pt_br/AmazonS3/latest/userguide/Welcome.html) {{< icon "arrow-top-right-on-square" >}} &nbsp; para mais informações sobre o **Amazon Simple Storage Service (S3)**.
 
-> Clique [aqui](https://azure.microsoft.com/pt-br/products/storage/blobs) {{< icon "arrow-top-right-on-square" >}} &nbsp; para mais informações sobre o **Armazenamento de Blobs do Azure**.
+> Clique [aqui](https://azure.microsoft.com/pt-br/products/storage/blobs) {{< icon "arrow-top-right-on-square" >}} &nbsp; para mais informações sobre o **Armazenamento de Blobs do Azure**. -->
 
 ### Protocolo OFTP - TCP/IP
 
@@ -424,7 +367,7 @@ de sucesso (Return code 0), o processo é finalizado com sucesso.
 
 ![](clt-config-37.png)
 
-### Guia Avançadas I
+### Avançadas I
 
 Na guia **Avançadas I**, nas **Propriedades do Perfil**, preencha os seguintes campos de configuração.
 
@@ -438,7 +381,7 @@ Na guia **Avançadas I**, nas **Propriedades do Perfil**, preencha os seguintes 
 | Executar comando no fim da conexão      |                                                        Preencha este campo com o nome de um comando (programa ou bat) externo que deve ser executado ao final da conexão                                                         |
 | Aguardar término da execução do comando | Esta opção assinalada habilita o STCP OFTP Server a aguardar o encerramento do comando externo. Obs.: Utilize esta opção com cautela. Caso a aplicação necessite realizar operações complexas, mantenha esta opção desabilitada. |
 
-### Guia Avançadas II
+### Avançadas II
 
 Na guia **Avançadas II**, nas **Propriedades do Perfil**, preencha os seguintes campos de configuração.
 
@@ -456,6 +399,68 @@ Na guia **Avançadas II**, nas **Propriedades do Perfil**, preencha os seguintes
 | Criar referência de arquivo recebido                     |                           Esta opção controla a duplicidade de arquivo, criando uma referência do arquivo no diretório **Restart**.                           |
 
 
+## Guia Avançadas
+
+<!-- <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; -->
+Na guia **Avançadas**, configure os seguintes campos:
+
+![](clt-config-03.png)
+
+| Campos                                  |                                                                                                                                  Descrição                                                                                                                                   |
+| :-------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Máximo de sessões                       |                                               Este campo informa a quantidade máxima de sessões simultâneas de transferência que podem ser ativadas pelo serviço. <br> Obs.: Limitado a 1 (uma) sessão na versão STCP OFTP Client.                                                |
+| Check point                             | Preencha este campo com o múltiplo da quantidade de dadosrecebidos para que o STCP OFTP Client force uma gravação física do arquivo. No caso de uma interrupção da transferência, a sua recuperação ocorrerá a partir da última posição de check point corretamente gravada. |
+| Habilitar                               |                                                                                                                     Habilita o controle de lock externo.                                                                                                                     |
+| Tempo máximo de lock                    |                                                                                                               Tempo máximo que o arquivo permanece bloqueado.                                                                                                                |
+| Tempo de espera para uma nova tentativa |                                                                                                         Tempo de espera para nova tentativa de processar o arquivo.                                                                                                          |
+| Máximo de tentativas                    |                                                                                                                 Número de tentativas de processar o arquivo.                                                                                                                 |
+| Controle de Atualização                 |                                                                                                Este campo habilita o controle de atualização automática do STCP OFTP Client.                                                                                                 |
+
+### Log
+
+Clique no botão **Log** para continuar a configuração.
+
+![](clt-config-04.png)
+
+Na guia **Geral**, Preencha os seguintes campos.
+
+![](clt-config-05.png)
+
+| Campos                                        |                                                                                           Descrição                                                                                           |
+| :-------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| Interface de Log (DLL)                        |                                   Grava em arquivo de texto caso a DLL selecionada seja stcplogtxt.dll ou grava em Banco de dados se a DLL for logodbc.dll.                                   |
+| Gravar no arquivo de mensagem                 |                                                    Preencha este campo com o nível de evento que será armazenado no arquivo de mensagens.                                                     |
+| Apresentar na console do STCP                 |                                            Preencha este campo com o nível de evento que será mostrado najanela de mensagens do STCP OFTP Server.                                             |
+| Executar comando externo                      |                                               Preencha este campo com o nível de evento que irá disparar um comando (programa ou bat) externo.                                                |
+| Comando externo                               |                                                             Preencha este campo com o nome do comando externo (programa ou bat).                                                              |
+| Aceitar                                       |                                                                  Registra nos arquivos de log ou no Banco de dados do STCP.                                                                   |
+| Rejeitar                                      |                                                                Não registra nos arquivos de log ou no Banco de dados do STCP.                                                                 |
+| Comando para conexão ao banco de dados (ODBC) |                                                      String de conexão à fonte de dados ODBC. Informe DSN, UID (usuário) e PWD (senha).                                                       |
+| Senha                                         |                                                                         Digite a senha para acesso ao banco de dados.                                                                         |
+| Confirmar                                     |                                                           Preencha este campo com a senha informada no campo Senha para validação.                                                            |
+| Gravar arquivo de mensagem por usuário        | Esta opção assinalada habilita a geração do arquivo de mensagens dos eventos individualmente para cada Usuário. Obs.: O arquivo de mensagens será gerado no subdiretório LOG de cada usuário. |
+
+**Tabela com a descrição do Nível do evento:**
+
+| Nível do Evento |                                                                      Descrição                                                                      |
+| :-------------- | :------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0               |                                                    Os eventos de início e término da aplicação.                                                     |
+| 1               |                                                        Os eventos que contenham algum erro.                                                         |
+| 2               |                                     Os eventos de término da operação de cancelamento de espera de uma conexão.                                     |
+| 3               |                                            Os eventos de início e término de cancelamento das conexões.                                             |
+| 4               | Os eventos de início e término de conexão com sucesso, início e término de sessão, início e término de transmissão ou início e término de recepção. |
+| 5               |                                                                    Não definido.                                                                    |
+| 6               |                                                                    Não definido.                                                                    |
+| 7               |                                        Os eventos de início e término da unidade de processamento (threads).                                        |
+| 8               |                                                      Os eventos de início e término da agenda.                                                      |
+
+{{< callout type="warning" >}}
+ Obs.: Os eventos associados a um nível inferior ou igual ao selecionado serão processados.
+{{< /callout >}}
+
+Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alterar as configurações.
+
+
 ## Comunicação TLS (Openssl)
 
 Na guia **Perfis**, selecione o perfil desejado e clique no botão **Propriedades**.
@@ -471,7 +476,7 @@ Clique em **OK** para concluir o processo de configuração.
 
 ![](clt-config-42.png)
 
-Caso a comunicação entre o STCP OFTP Server Enterprise/Lite e o STCP OFTP Client que está sendo configurado exija autenticação, o **Certificado Digital** deverá ser informado na guia **TLS(Openssl)** no campo **Arquivo da opção Certificados CA (Autoridades)**.
+Caso a comunicação entre o STCP OFTP Server Enterprise/Lite e o STCP OFTP Client que está sendo configurado exija autenticação, o **Certificado Digital** deverá ser informado na guia **TLS(Openssl)** no campo **Arquivo** da opção **Certificados CA (Autoridades)**.
 
 ![](clt-config-43.png)
 

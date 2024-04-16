@@ -1,5 +1,5 @@
 ---
-linkTitle: Requisitos instalação
+linkTitle: Requisitos
 layout: docs
 toc: true
 cascade:
@@ -11,9 +11,9 @@ prev: /docs/stcpdirectlink/01-install
 next: /dirl/01-install/structure
 slug: requisitos-instalacao
 draft: false
-lastmod: 2024-03-08
+lastmod: 2024-04-15
 ---
-## Requisitos para instalação
+## Requisitos
 
 - Sistema operacional (**Windows** ou **Linux**)
 - Interface de rede para o serviço **http/https**

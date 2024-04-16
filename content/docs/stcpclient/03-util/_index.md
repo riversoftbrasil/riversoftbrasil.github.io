@@ -11,11 +11,45 @@ prev: /docs/stcpclient/02-config/
 next: /docs/stcpclient/04-audit/
 # slug:
 draft: false
-lastmod: 2024-04-01
+lastmod: 2024-04-15
 ---
-## Utilização
+## Subdiretórios
 
-O STCP OFTP Client cria um conjunto individual de subdiretórios para cada Perfil configurado no serviço para controle das transferências e integração com as aplicações externas, conforme mostra figura abaixo:
+O STCP OFTP Client cria um conjunto individual de subdiretórios para cada Perfil configurado no serviço para controle das transferências e integração com as aplicações externas.
+
+Veja:
+
+{{< filetree/container >}}
+  {{< filetree/folder name="STCPCLT" >}}
+    {{< filetree/folder name="`<NOME DO PERFIL>`" state="open" >}}
+
+    {{< filetree/folder name="CONTROLE" state="closed">}}
+    {{< /filetree/folder >}}
+
+    {{< filetree/folder name="ENTRADA" >}}
+      {{< filetree/folder name="RESTART" state="closed">}}
+      {{< /filetree/folder >}}
+    {{< /filetree/folder >}}
+
+    {{< filetree/folder name="LOG" state="closed">}}
+    {{< /filetree/folder >}}
+
+    {{< filetree/folder name="SAÍDA">}}
+
+      {{< filetree/folder name="BACKUP" state="closed">}}
+      {{< /filetree/folder >}}
+
+      {{< filetree/folder name="PENDENTE" state="closed">}}
+      {{< /filetree/folder >}}
+    {{< /filetree/folder >}}
+
+    {{< /filetree/folder >}}
+
+  {{< filetree/file name="`<NOME DO PERFIL>`.ini" >}}
+
+  {{< /filetree/folder >}}
+
+{{< /filetree/container >}}
 
 <Diretório de Dados>\ | Subdiretório de dados configurado.
 :----------------     | :-----------
@@ -30,7 +64,7 @@ BACKUP                | Subdiretório onde os arquivos enviados com sucesso ser�
 PENDENTE              | Subdiretório onde o arquivo de controle da transmissão será armazenado temporariamente.
 TEMP                  | Subdiretório de uso geral.
 
-Para transmitir, os arquivos devem ser disponibilizados no subdiretório “**SAIDA**” e os arquivos recebidos estarão no subdiretório “**ENTRADA**”.
+Para transmitir, os arquivos devem ser disponibilizados no subdiretório **SAIDA** e os arquivos recebidos estarão no subdiretório **ENTRADA**.
 
 ## Linha de comando
 

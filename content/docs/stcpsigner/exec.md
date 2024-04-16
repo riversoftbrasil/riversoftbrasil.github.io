@@ -11,9 +11,8 @@ next:
 draft: false
 lastmod: 2024-02-28
 ---
-## Como executar o STCPSigner
 
-### Linha de comando
+## Linha de comando
 
 ```
 stcpsigner.exe cmd [opções]
@@ -46,7 +45,7 @@ addoidinfo   | Adiciona informação para código OID.
 deloidinfo   | Remove informação para código OID.
 listoidinfo  | Mostra os códigos OID cadastrados.
 
-### Controle das chaves
+## Controle das chaves
 
 [Opções]| Descrição
 :---    | :---

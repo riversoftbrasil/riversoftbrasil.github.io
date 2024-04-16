@@ -11,13 +11,11 @@ prev: /docs/
 next: /docs/stcpdirectlink/01-install
 # slug: stcpdirectlink
 draft: false
-lastmod: 2024-03-11
+lastmod: 2024-04-15
 ---
-<!-- # Introdução -->
-
 ## O que é o STCP Directlink?
 
-O STCP Directlink é uma aplicação que, ao ser integrada aos produtos <a href="/docs/stcpserver/" target="_blank">STCP OFTP Server (Windows)</a> {{< icon "arrow-top-right-on-square" >}} ou STCP Gemini Server (Linux), oferece uma solução simples e robusta para transferência segura de arquivos (Download e Upload) através dos protocolos **HTTPS** e **SFTP**.
+O STCP Directlink é uma aplicação que, ao ser integrada aos produtos <a href="/docs/stcpserver/" target="_blank">STCP OFTP Server (Windows)</a> {{< icon "arrow-top-right-on-square" >}} ou STCP Gemini Server (Linux), oferece uma solução simples e robusta para transferência segura de arquivos (Download e Upload) através dos protocolos <a href="/protocols/#httphttps" target="_blank">HTTPS</a> e <a href="/protocols/#sftp" target="_blank">SFTP</a>.
 
 {{< callout type="info" >}}
   Disponível nas versões para Windows e Linux.
@@ -37,7 +35,7 @@ Com o Riversoft® STCPDirectLink é possível realizar o **upload** de um arquiv
 O código de segurança é encaminhado somente para o **email** ou **celular** vinculado ao arquivo e tem um **tempo de vida**.
 {{< /callout >}}
 
-Para possibilitar a integração de forma ágil, o STCP DirectLink disponibiliza uma [API](/docs/stcpdirectlink/05-api/) (Application Program Interface) no padrão [RestFull](https://restfulapi.net/) através do protocolo **https**.
+Para possibilitar a integração de forma ágil, o STCP DirectLink disponibiliza uma [API](/docs/stcpdirectlink/05-api/) (Application Program Interface) no padrão [RestFull](https://restfulapi.net/) através do protocolo **HTTPS**.
 
 ## Recursos
 Entre alguns dos recursos disponíveis no STCP Directlink estão:
@@ -50,6 +48,14 @@ Entre alguns dos recursos disponíveis no STCP Directlink estão:
 - API para **download** e **upload** de arquivos
 - Link seguro para compartilhamento de arquivos
 - Portal Web para **upload** e **download** de arquivos
+
+{{< callout type="info">}}
+Clique [aqui](https://docs.aws.amazon.com/pt_br/AmazonS3/latest/userguide/Welcome.html) para mais informações sobre o **Amazon Simple Storage Service (S3)**.
+{{< /callout >}}
+
+{{< callout type="info" >}}
+  Clique [aqui](https://azure.microsoft.com/pt-br/products/storage/blobs) para mais informações sobre o **Armazenamento de Blobs do Azure**.
+{{< /callout >}}
 
 ## Segurança e conformidade
 

@@ -79,7 +79,7 @@ Nesta guia, você poderá adicionar, remover ou modificar os parâmetros das int
 Protocolo     | Descrição
 :---------    | :-----
 OFTP - TCP/IP | Configura o STCP OFTP Server para utilizar o protocolo de comunicação TCP/IP.
-API DirectLink - HTTP/S | Configura o STCP Server para comunicar com com a API do Directlink. <br>  <a href="/docs/stcpdirectlink/05-api/" target="_blank">Acesse a seção da API do Directlink para mais informações</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;.
+API DirectLink - HTTP/S | Configura o STCP Server para comunicar com com a API do Directlink. <br>  <a href="/docs/stcpdirectlink/05-api/" target="_blank">Acesse a seção da API do Directlink para mais informações</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;
 SFTP DirectLink – TCP/IP | Configura o STCP Server para se comunicar via protocolo SFTP com o Directlink.
 Monitor – TCP/IP | Habilita a rede para supervisão do STCP através do protocolo TCP/IP.
 Monitor Directlink - TCP/IP | Habilita a rede para supervisão do Directlink através do protocolo TCP/IP.
@@ -695,7 +695,7 @@ Tempo máximo de espera de pacote (T2)| Tempo máximo para detectar erros na rec
 Número máximo de retransmissões| Número máximo de retransmissões utilizando o controle do regime de comunicação de lógica especial.
 Outros| As opções definidas neste grupo serão utilizadas localmente pelo STCP OFTP Server para controlar o tempo de inatividade e a geração do arquivo de depuração da comunicação.
 Tempo máximo de inatividade| Preencha este campo com o tempo máximo de inatividade de comunicação entre o STCP OFTP Server e o computador remoto.
-Nível de debug* | Preencha este campo com o nível de detalhamento das informações que serão gravadas no arquivo de depuração. Para obter no mesmo arquivo de depuração a informação dos diferentes níveis, preencha este campo com a soma dos níveis desejados. <br> Para acessar as informações detalhadas sobre o debug acesse a página de <a href="/debug" target="_blank">Debug</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;.
+Nível de debug* | Preencha este campo com o nível de detalhamento das informações que serão gravadas no arquivo de depuração. Para obter no mesmo arquivo de depuração a informação dos diferentes níveis, preencha este campo com a soma dos níveis desejados. <br> Para acessar as informações detalhadas sobre o debug acesse a página de <a href="/debug" target="_blank">Debug</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;
 
 {{< callout type="warning">}}
 *Somente habilite esta opção quando for solicitado por uma equipe especializada.

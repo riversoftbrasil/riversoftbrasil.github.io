@@ -16,7 +16,7 @@ lastmod: 2024-04-04
 
 O pacote de instalação será distribuído através de um link pela Equipe de Sustentação da Riversoft.
 
-Após extrair o  zip com o executável, os seguintes passos devem ser executados:
+Após extrair o zip com o executável, os seguintes passos devem ser executados:
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Clique no executável para iniciar o processo de instalação.
 

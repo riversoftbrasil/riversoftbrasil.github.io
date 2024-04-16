@@ -5,11 +5,11 @@ toc: true
 cascade:
   type: docs
 sidebar:
-  exclude: false
+  exclude: true
 weight: 1
 prev: /docs/stcpwebadmin
 next:
-draft: false
+# draft: false
 lastmod: 2024-04-12
 ---
 # Distribuição dos pacotes
@@ -18,16 +18,16 @@ Abra o link de instalação que será disponibilizado pela Equipe de Sustentaç�
 
 ## Criação do Banco de Dados
 
-O STCP OFTP Web Admin é compatível com diversos bancos de dados existentes no mercado, verifique mais informações na seção <a href="/database" target="_blank">Banco de Dados homologados</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;.
+O STCP OFTP Web Admin é compatível com diversos bancos de dados existentes no mercado, verifique mais informações na seção <a href="/database" target="_blank">Banco de Dados homologados</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;
 
 Crie um banco de dados **STCPWEB_DB** no servidor utilizando a ferramenta adequada ao sistema.
 
-A pasta **C:\Inetpub\wwwroot\STCPWEB_ADMIN\conf\scripts** contém os scripts para a criação das tabelas do banco de dados **STCPWEB_DB**.
+A pasta **\<Disco>:\Inetpub\wwwroot\STCPWEB_ADMIN\conf\scripts** contém os scripts para a criação das tabelas do banco de dados **STCPWEB_DB**.
 
 <!-- ![](./imagem2/img16.png) -->
 ![](web-admin-06.png "Scripts tabelas do Banco de Dados")
 
-## Configuração do driver ODBC para acesso ao Banco de Dados
+## Driver ODBC para acesso ao Banco de Dados
 
 Os seguintes procedimentos devem ser executados para configuração do driver ODBC de acesso ao Banco de Dados.
 
@@ -57,9 +57,9 @@ Faça o download da última versão do processador de scripts PHP do site www.ph
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp;Extraia o arquivo do PHP no diretório “**< drive>:\php**”.
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp;Crie o diretório de controle de sessão **< drive>:\php\sessiondata**.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp;Crie o diretório de controle de sessão **\<drive>:\php\sessiondata**.
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">3</span> &nbsp;Copie o arquivo **PHP-IIS.INI** do diretório **< drive>:\STCPWEB_ADMIN\conf** para o diretório **< drive>:\php** com o nome **PHP.INI**
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">3</span> &nbsp;Copie o arquivo **PHP-IIS.INI** do diretório **\<drive>:\STCPWEB_ADMIN\conf** para o diretório **\<drive>:\php** com o nome **PHP.INI**
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">4</span> &nbsp;Altere o arquivo **PHP.INI** com os parâmetros abaixo e salve o arquivo.
 
