@@ -12,11 +12,11 @@ prev:
 next:
 slug:
 draft:
-lastmod: 2024-03-22
+lastmod: 2024-04-15
 ---
-## STCP OFTP Server
+<!-- ## STCP OFTP Server
 
-Este documento tem como objetivo descrever os passos necessários para atualização das versões, 4.1.0 ou anteriores, para a nova versão do STCP OFTP Server Enterprise ou STCP OFTP Server Lite.
+Esta seção tem como objetivo descrever os passos necessários para atualização das versões, 4.1.0 ou anteriores, para a nova versão do STCP OFTP Server Enterprise ou STCP OFTP Server Lite.
 
 Na versão atualizada, a console da aplicação (ícone na barra de tarefas do Windows), foi substituída pelo STCPConsole.
 
@@ -25,7 +25,7 @@ O STCPConsole é um sistema que tem como principal funcionalidade permitir que s
 Para maiores detalhes, consulte a documentação do produto.
 http://www.riversoft.com.br/downloads/manuais/stcp_console_ptb.pdf
 
-A nova versão do _**STCP OFTP Server Enterprise**_ já suporta a comunicação através de FTP, SFTP e HTTP, trabalhando como cliente para tais protocolos.
+A nova versão do _**STCP OFTP Server Enterprise**_ já suporta a comunicação através de FTP, SFTP e HTTP, trabalhando como cliente para tais protocolos. -->
 
 ---
 ### Antes de Iniciar
@@ -59,38 +59,38 @@ A estrutura de pastas (Ex. **C:\STCPODT\DADOS\NOME-USUARIO**), configurada no di
 ---
 ### Procedimento
 
-1. Acesse o STCP OFTP Server Config (_Iniciar - Todos os programas - Riversoft STCP OFTP
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Acesse o STCP OFTP Server Config (_Iniciar - Todos os programas - Riversoft STCP OFTP
 Server_) e pare o serviço quando for solicitado.
 
 <!-- ![](./imagem2/img13.png) -->
 
-2. Na tela de confirmação de que o serviço foi desativado com sucesso, clique em _OK_.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp; Na tela de confirmação de que o serviço foi desativado com sucesso, clique em _OK_.
 
 <!-- ![](./imagem2/img14.png) -->
 
-3. Na guia _Geral_ desmarque a opção _Executar como serviço_ e clique em _OK_ para confirmar. Dessa forma o STCP OFTP será removido da lista de serviços do Windows.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">3</span> &nbsp; Na guia _Geral_ desmarque a opção _Executar como serviço_ e clique em _OK_ para confirmar. Dessa forma o STCP OFTP será removido da lista de serviços do Windows.
 
 <!-- ![](./imagem2/img15.png) -->
 
-4. Realize uma cópia de segurança dos diretórios de _Controle_ e _Dados_. Tais diretórios podem ser vizualizados, na guia _Geral_ do STCP OFTP Server Config.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">4</span> &nbsp; Realize uma cópia de segurança dos diretórios de _Controle_ e _Dados_. Tais diretórios podem ser vizualizados, na guia _Geral_ do STCP OFTP Server Config.
 
 <!-- ![](./imagem2/img16.png) -->
 
-5. Em _Adicionar/Remover Programas_ no _Painel de Controle_ do Windows, remova a versão atual do STCP OFTP Server. A estrutura de diretórios da aplicação (_Controle e Dados_) será mantida, juntamente com os arquivos de configuração (.INI).
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">5</span> &nbsp; Em _Adicionar/Remover Programas_ no _Painel de Controle_ do Windows, remova a versão atual do STCP OFTP Server. A estrutura de diretórios da aplicação (_Controle e Dados_) será mantida, juntamente com os arquivos de configuração (.INI).
 
 <!-- ![](./imagem2/img17.png) -->
 
-6. Faça o download, da versão nova versão, através do link enviado pela equipe de suporte da Riversoft e realize a instalação do produto.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">6</span> &nbsp; Faça o download, da versão nova versão, através do link enviado pela equipe de sustentação da Riversoft e realize a instalação do produto.
 
 <!-- ![](./imagem2/img18.png) -->
 
 <!-- ![](./imagem2/img19.png) -->
 
-7. Após o processo de instalação, acesse o STCP OFTP Server Config (**Iniciar - Todos os programas - Riversoft STCP OFTP Server**) e na guia _Avançadas_ clique no botão _Controle de Log_.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">7</span> &nbsp; Após o processo de instalação, acesse o STCP OFTP Server Config (**Iniciar - Todos os programas - Riversoft STCP OFTP Server**) e na guia _Avançadas_ clique no botão _Controle de Log_.
 
 <!-- ![](./imagem2/img20.png) -->
 
-8. Na janela _Propriedades do Log_, no painel _Interface de Log (DLL)_, selecione a biblioteca de log desejada e clique no botão _OK_ para salvar esta alteração.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">8</span> &nbsp; Na janela _Propriedades do Log_, no painel _Interface de Log (DLL)_, selecione a biblioteca de log desejada e clique no botão _OK_ para salvar esta alteração.
 
 Para a gravação de log em **banco de dados** (ODBC), selecione o arquivo:
 C:\STCPODT\Program\stcplogodbc.dll
@@ -100,17 +100,17 @@ C:\STCPODT\Program\stcplogtxt.dll
 
 <!-- ![](./imagem2/img21.png) -->
 
-9. Ainda na guia _Avançadas_, clique no botão _Controle de Autenticação_.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">9</span> &nbsp; Ainda na guia _Avançadas_, clique no botão _Controle de Autenticação_.
 
 <!-- ![](./imagem2/img22.png) -->
 
-10. Na guia _Geral da janela Autenticação_, no painel _Interface de Autenticação (DLL)_, selecione o arquivo: **C:\STCPODT\Program\stcpauthwin.dll**
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">10</span> &nbsp; Na guia _Geral da janela Autenticação_, no painel _Interface de Autenticação (DLL)_, selecione o arquivo: **C:\STCPODT\Program\stcpauthwin.dll**
 
 Certifique-se de que o campo _Tipo_, do painel _Autenticação_, esteja com o valor _STCP_ e clique no botão _OK_ para salvar as alterações realizadas.
 
 <!-- ![](./imagem2/img23.png) -->
 
-11. Clique no botão _OK_ para fechar o STCP OFTP Server Config. O próximo passo será a criação do serviço do STCP OFTP Server no Windows.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">11</span> &nbsp; Clique no botão _OK_ para fechar o STCP OFTP Server Config. O próximo passo será a criação do serviço do STCP OFTP Server no Windows.
 
 ---
 ### Serviço do STCP OFTP Server
@@ -121,21 +121,21 @@ O STCP OFTP Server Manager é um sistema gerenciador de serviços STCP, é simil
 
 Esse sistema permite que seja instalado/desinstalado o serviço do Riversoft STCP OFTP Server Enterprise (STCPSrv_1) ou Lite (STCPSrvLite_1). Também é permitido iniciar, parar e reiniciar um serviço, desde que se tenham as permissões apropriadas.
 
-1. Acesse o STCP OFTP Server Manager (**Iniciar - Todos os programas - Riversoft STCP
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Acesse o STCP OFTP Server Manager (**Iniciar - Todos os programas - Riversoft STCP
 OFTP Server**), selecione o serviço _Riversoft STCP OFTP Server Enterprise 1/Lite 1_ e clique
 no botão _Instalar serviço_.
 
 <!-- ![](./imagem2/img24.png) -->
 
-2. Uma mensagem confirmando que o serviço foi instalado com sucesso será exibida. Clique em _OK_ para finalizar.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp; Uma mensagem confirmando que o serviço foi instalado com sucesso será exibida. Clique em _OK_ para finalizar.
 
 <!-- ![](./imagem2/img25.png) -->
 
-3. Selecione o serviço recém-criado e clique no botão _Iniciar_.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">3</span> &nbsp; Selecione o serviço recém-criado e clique no botão _Iniciar_.
 
 <!-- ![](./imagem2/img26.png) -->
 
-4. O serviço será iniciado e seu status alterado para _Iniciado_. Esse servico também pode ser criado e removido pelo prompt de comando (cmd) do sistema operacional.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">4</span> &nbsp; O serviço será iniciado e seu status alterado para _Iniciado_. Esse servico também pode ser criado e removido pelo prompt de comando (cmd) do sistema operacional.
 
 <!-- ![](./imagem2/img27.png) -->
 

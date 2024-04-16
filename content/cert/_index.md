@@ -4,7 +4,7 @@ layout: docs
 cascade:
   type: docs
 sidebar:
-  exclude: false
+  exclude: true
 weight: 3
 prev: /proxy
 next: /update
@@ -277,56 +277,5 @@ Nota: Na linha de comando utilizamos a variável interna do STCP, **$LFNAME**, q
 
 Uma vez realizadas as configurações com êxito, um e-mail será encaminhado para o destinatário informado, sempre que um arquivo for transmitido com sucesso. O mesmo procedimento poderá ser utilizado para implantar notificações também na recepção de arquivos.
 
-### Geração da chave privativa e certificado de autenticação SSL3
 
-Os seguintes procedimentos devem ser executados para a geração da chave privativa e certificado digital para utilização na comunicação SSL3.
-
-No prompt de comando execute a aplicação **openssl.exe** (Ex.: C:\STCPODT\Program\openssl.exe) para iniciar o processo de geração do par de chaves assimétricas (privada/pública).
-
-<!-- ![](./imagem/img1.png) -->
-
-Utilize o comando abaixo para gerar a chave privativa que será utilizada para criptografia da conexão.
-```
-genrsa -out [unidade_disco [diretório_instalação_stcp]\keys\[nome_da_chave].key 1024
-```
-Exemplo:
-```
-genrsa -out c:\stcpodt\keys\stcp_riversoft.key 1024
-```
-<!-- ![](./imagem/img2.png) -->
-
-O próximo passo é gerar o Certificado Digital associado à chave gerada anteriormente, para isto utilize o comando abaixo.
-```
-req -new -x509 -key [unidade_disco][diretório_instalação_stcp]\keys\[nome_da_chave].key -out [unidade_disco][diretório_instalação_stcp]\certs\[nome_do_certificado].cer -days 1825 – config ./openssl.cnf
-```
-Exemplo:
-```
-req -new -x509 –key c:\stcpodt\keys\stcp_riversoft.key -out c:\stcpodt\certs\stcp_riversoft.cer -days 1825 -config ./openssl.cnf
-```
-{{< callout type="info" >}}
-  Obs.: O parâmetro `-days` equivale a quantos dias o certificado terá validade, podendo ser inserido o valor que mais se adequar às políticas da empresa.
-{{< /callout >}}
-
-
-Preencha as informações solicitadas para concluir o processo de geração do Certificado Digital.
-
-<!-- ![](./imagem/img3.png) -->
-
-### Configuração da interface de transferência do STCP OFTP Server Enterprise/Lite para comunicação SSL3
-
-Para acesssar o configurador do STCP OFTP Server Enterprise/Lite, clique em **Iniciar** e depois clique em **Riversoft STCP OFTP Server Config.**
-
-Acesse a guia de Redes para adicionar as interfaces que ficarão disponíveis para o serviço de transferência e então adicione uma interface do serviço de transferência.
-
-<!-- ![](./imagem/img4.png) -->
-
-Clique na guia **TCP/IP** e configura os parâmetros conforme apresentados.
-
-<!-- ![](./imagem/img5.png) -->
-
-Clique na guia **SSL3 (Openssl)** e configure os parâmetros conforme apresentado abaixo e pressione o botão Ok para finalizar.
-
-<!-- ![](./imagem/img6.png) -->
-
----------------
 

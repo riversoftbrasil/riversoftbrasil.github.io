@@ -18,8 +18,8 @@ Tudo o que você precisa saber para sua jornada nas soluções Riversoft.
 
 ### Windows
 {{< cards >}}
-  {{< card link="/docs/stcpserver" title="STCP OFTP Server" icon="cog" >}}
-  {{< card link="/docs/stcpclient" title="STCP OFTP Client" icon="desktop-computer" >}}
+  {{< card link="./stcpserver" title="STCP OFTP Server" icon="cog" >}}
+  {{< card link="./stcpclient" title="STCP OFTP Client" icon="desktop-computer" >}}
   {{< card link="../callout" title="STCP OFTP Web Admin" icon="cloud" >}}
   {{< card link="../callout" title="STCP Change Password" icon="shield-exclamation" >}}
   {{< card link="../callout" title="STCP Rename" icon="color-swatch" >}}
@@ -45,8 +45,8 @@ Tudo o que você precisa saber para sua jornada nas soluções Riversoft.
   {{< card link="/schedule" title="Execução automática" icon="calendar-days" >}}
   {{< card link="/email" title="Notificação por e-mail" icon="mail" >}}
   {{< card link="/proxy" title="Servidor Proxy para conexão" icon="server" >}}
-  {{< card link="/cert" title="Certificação" icon="key" >}}
-  {{< card link="/update" title="Atualização" icon="arrow-up" >}}
+  {{< card link="../callout" title="Certificação" icon="key" >}}
+  {{< card link="../callout" title="Atualização" icon="arrow-up" >}}
 {{< /cards >}}
 
 ### Referências e Informações

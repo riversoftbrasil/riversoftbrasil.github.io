@@ -62,4 +62,4 @@ Nele, a troca de informações é feita por meio de pacotes com a tecnologia SSH
 
 <!-- [Protocolos de rede](https://www.opservices.com.br/protocolos-de-rede/) -->
 
-<a href="https://www.opservices.com.br/protocolos-de-rede/" target="_blank">Protocolos de rede</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;.
+<a href="https://www.opservices.com.br/protocolos-de-rede/" target="_blank">Protocolos de rede</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;
