@@ -6,9 +6,10 @@ sidebar:
 ---
 ## STCP OFTP Server e STCP OFTP Client
 
-#### {{< icon "clock" >}} &nbsp;  Versão 5.3.15.0 (lançada em março de 2024)
+#### {{< icon "clock" >}} &nbsp;  Versão 5.3.15.0 (lançada em maio de 2024)
 
 - Correção do problema que apagava o lock de conexão do usuário, durante uma transferência de arquivos, após o Tempo máximo de lock configurado ser atingindo.
+- Correção do problema que impedia a definição correta dos períodos de início e fim de conexão ao configurar uma agenda através do STCP OFTP Server Config.
 
 #### {{< icon "clock" >}} &nbsp;  Versão 5.3.14.0 (lançada em fevereiro de 2024)
 
