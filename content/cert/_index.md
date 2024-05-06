@@ -94,13 +94,13 @@ openssl pkcs12 -in C:\TEMP\empresateste.com.br.pfx -out C:\TEMP\private-key.pem 
 
 ### Configuração da Rede
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; No menu, Iniciar > Todos os programas > Riversoft STCP OFTP Server, acesse o STCP OFTP Server Config.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp; No menu, Iniciar > Todos os programas > Riversoft STCP OFTP Server, acesse o STCP OFTP Server Config.
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp;Na guia Redes selecione a rede desejada e clique no botão Propriedades.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">2</span> &nbsp;Na guia Redes selecione a rede desejada e clique no botão Propriedades.
 
 <!-- ![](./imagem/img6.png) -->
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">3</span> &nbsp; Na janela Propriedades da rede, selecione a guia SSL3 (Openssl) e no grupo Chave privativa, informe os parâmetros Chave e Certificado.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">3</span> &nbsp; Na janela Propriedades da rede, selecione a guia SSL3 (Openssl) e no grupo Chave privativa, informe os parâmetros Chave e Certificado.
 
 > NOTA: Caso o certificado tenha sido instalado em um servidor Microsoft IIS, previamente será necessária a exportação do certificado para um arquivo PFX e a conversão desse arquivo para o formato PEM através do utilitário OpenSSL¹.
 
@@ -111,9 +111,9 @@ PARAMÊTROS | DESCRIÇÃO
 Chave      | Preencha este campo com o nome do arquivo (caminho completo) onde se encontra instalada a chave privativa.
 Certificado| Preencha este campo com o nome do arquivo (caminho completo) onde se encontra o certificado digital (X509) associado à chave privativa.
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">4</span> &nbsp; Pressione o botão OK para salvar e sair do STCP OFTP Server Config.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">4</span> &nbsp; Pressione o botão OK para salvar e sair do STCP OFTP Server Config.
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">5</span> &nbsp; Reinicie o serviço do Riversoft STCP OFTP Server para que as alterações sejam aplicadas.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">5</span> &nbsp; Reinicie o serviço do Riversoft STCP OFTP Server para que as alterações sejam aplicadas.
 
 -------
 
@@ -123,66 +123,66 @@ Anterior ao processo de configuração do certificado no STCP OFTP Client, será
 
 > NOTA: Caso você já possua os certificados raíz e intermediário vá para o passo 10.
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Faça uma cópia do certificado, encaminhado pela certificadora, para um diretório temporário do servidor onde o STCP OFTP Server está instalado (Ex. C:\TEMP)
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp; Faça uma cópia do certificado, encaminhado pela certificadora, para um diretório temporário do servidor onde o STCP OFTP Server está instalado (Ex. C:\TEMP)
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp; Acesso o diretório temporário e clique com o botão direito do mouse no certificado (Ex. empresateste_certificate.cer) e selecione Abrir
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">2</span> &nbsp; Acesso o diretório temporário e clique com o botão direito do mouse no certificado (Ex. empresateste_certificate.cer) e selecione Abrir
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">3</span> &nbsp; Na guia Caminho de Certificação selecione o certificado raíz (Ex. VeriSign Trial Secure Server Root CA – G2) e clique no botão Exibir Certificado.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">3</span> &nbsp; Na guia Caminho de Certificação selecione o certificado raíz (Ex. VeriSign Trial Secure Server Root CA – G2) e clique no botão Exibir Certificado.
 
 <!-- ![](./imagem/img8.png) -->
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">4</span> &nbsp; Uma nova janela será exibida, contendo as informações do certificado selecionado (neste exemplo serão exibidas as informações do certificado raiz _VeriSign Trial Secure Server Root CA – G2)_
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">4</span> &nbsp; Uma nova janela será exibida, contendo as informações do certificado selecionado (neste exemplo serão exibidas as informações do certificado raiz _VeriSign Trial Secure Server Root CA – G2)_
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">5</span> &nbsp; Selecione a guia Detalhes e clique no botão Copiar para Arquivo para iniciar o Assistente para Exportação de Certificados
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">5</span> &nbsp; Selecione a guia Detalhes e clique no botão Copiar para Arquivo para iniciar o Assistente para Exportação de Certificados
 
 <!-- ![](./imagem/img9.png) -->
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">6</span> &nbsp; Para continuar, clique em Avançar
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">6</span> &nbsp; Para continuar, clique em Avançar
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">7</span> &nbsp; No formato do arquivo de exportação selecione X.509 codificado na base 64 (*.cer) e clique no botão Avançar
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">7</span> &nbsp; No formato do arquivo de exportação selecione X.509 codificado na base 64 (*.cer) e clique no botão Avançar
 
 <!-- ![](./imagem/img10.png) -->
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">8</span> &nbsp; Informe o caminho e nome do arquivo a ser exportado (Ex. C:\TEMP\root_certificate.cer)
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">8</span> &nbsp; Informe o caminho e nome do arquivo a ser exportado (Ex. C:\TEMP\root_certificate.cer)
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">9</span> &nbsp; Para finalizar, clique no botão Concluir
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">9</span> &nbsp; Para finalizar, clique no botão Concluir
 
 <!-- ![](./imagem/img11.png) -->
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">10</span> &nbsp; Repita os passos de 3 a 9 para os exportar os demais certificados existentes na hierarquia de certificados, o certificado raiz (G2) e o intermediário (G3).
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">10</span> &nbsp; Repita os passos de 3 a 9 para os exportar os demais certificados existentes na hierarquia de certificados, o certificado raiz (G2) e o intermediário (G3).
 
 <!-- ![](./imagem/img12.png) -->
 
 > NOTA: Neste exemplo serão gerados mais dois arquivos no diretório temporário (Ex. root_certificate.cer e intermediate_certificate.cer).
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">11</span> &nbsp; Acesse a pasta “Program” do diretório de instalação do Riversoft STCP OFTP Server (Ex. C:\STCPODT\Program) e em seguida, para gerar o _hash_, digite a linha de comando:
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">11</span> &nbsp; Acesse a pasta “Program” do diretório de instalação do Riversoft STCP OFTP Server (Ex. C:\STCPODT\Program) e em seguida, para gerar o _hash_, digite a linha de comando:
 ```
 openssl x509 –noout –hash -in C:\TEMP\root_certificate.cer
 ```
 <!-- ![](./imagem/img13.png) -->
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">12</span> &nbsp; Uma vez obtido o _hash_ do arquivo indicado, renomeie esse arquivo para o seu _hash_ correspondente e mais a extensão .**0** (Ex. _root_certificate.cer para F877295a.0_)
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">12</span> &nbsp; Uma vez obtido o _hash_ do arquivo indicado, renomeie esse arquivo para o seu _hash_ correspondente e mais a extensão .**0** (Ex. _root_certificate.cer para F877295a.0_)
 
 <!-- ![](./imagem/img14.png) -->
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">13</span> &nbsp; Repita os passos 11 e 12 para realizar o renomeio dos demais arquivos exportados
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">13</span> &nbsp; Repita os passos 11 e 12 para realizar o renomeio dos demais arquivos exportados
 (Ex. _root_certificate.cer e intermediate_certificate.cer_)
 
 <!-- ![](./imagem/img15.png) -->
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">14</span> &nbsp; Copie os arquivos renomeados para a pasta Certs do diretório de instalação do STCP OFTP Client (Ex. C:\STCPCLT\Certs)
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">14</span> &nbsp; Copie os arquivos renomeados para a pasta Certs do diretório de instalação do STCP OFTP Client (Ex. C:\STCPCLT\Certs)
 
 ### Configuração do certificado SSL no STCP OFTP Client
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; No menu, Iniciar > Todos os programas > Riversoft STCP OFTP Client, acesse o STCP OFTP Client Config.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp; No menu, Iniciar > Todos os programas > Riversoft STCP OFTP Client, acesse o STCP OFTP Client Config.
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp; Na guia Perfis selecione o perfil desejado e clique no botão Propriedades
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">2</span> &nbsp; Na guia Perfis selecione o perfil desejado e clique no botão Propriedades
 
 <!-- ![](./imagem/img16.png) -->
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">3</span> &nbsp; Na janela Propriedades do perfil, na guia Geral, clique no botão Configurar e selecione a guia SSL3 (Openssl)
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">3</span> &nbsp; Na janela Propriedades do perfil, na guia Geral, clique no botão Configurar e selecione a guia SSL3 (Openssl)
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">4</span> &nbsp; No grupo Certificados CA (Autoridades) informe o parâmetro Diretório.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">4</span> &nbsp; No grupo Certificados CA (Autoridades) informe o parâmetro Diretório.
 
 <!-- ![](./imagem/img17.png) -->
 
@@ -190,9 +190,9 @@ PARAMÊTROS | DESCRIÇÃO
 :---       | :---
 Diretório  | Preencha este campo com o nome do diretório (caminho completo) onde se encontram instalados os certificados digitais (X509) contendo a chave pública que assina o certificado apresentado pelo servidor.
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">5</span> &nbsp; Pressione o botão OK para salvar e sair do *STCP OFTP Client Config*
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">5</span> &nbsp; Pressione o botão OK para salvar e sair do *STCP OFTP Client Config*
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">6</span> &nbsp; Realize os testes de conexão ao *STCP OFTP Server* através do *STCP OFTP Client*
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">6</span> &nbsp; Realize os testes de conexão ao *STCP OFTP Server* através do *STCP OFTP Client*
 
 ## STCP OFTP - Notificação por E-mail através de Scripts VBS
 
@@ -210,18 +210,18 @@ Conforme mencionado no item 1, é possível configurar o STCP para enviar uma no
 
 Tal procedimento pode ser realizado através do script _STCPEMAILEVT.VBS_, existente na pasta *Program*, do diretório de instalação (Diretório de Controle) da aplicação (Ex C:\STCPODT\Program).
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Edite o arquivo _STCPEMAILEVT.VBS_ e preencha as informações conforme a imagem.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp; Edite o arquivo _STCPEMAILEVT.VBS_ e preencha as informações conforme a imagem.
 
 <!-- ![](./imagem/img1.png) -->
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp; Além das configurações _strMailFrom_,_strMailTo_ também deverão ser configurados os
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">2</span> &nbsp; Além das configurações _strMailFrom_,_strMailTo_ também deverão ser configurados os
 parâmetros referentes ao servidor SMTP.
 
 <!-- ![](./imagem/img2.png) -->
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">3</span> &nbsp; Salve o arquivo.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">3</span> &nbsp; Salve o arquivo.
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">4</span> &nbsp; Para realizar a validação do funcionamento do script e do servidor SMTP, acesse o "Prompt de
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">4</span> &nbsp; Para realizar a validação do funcionamento do script e do servidor SMTP, acesse o "Prompt de
 Comando" e digite o comando abaixo. Caso nenhuma mensagem de erro seja apresentada,
 verifique se os e-mails foram recebidos nas contas indicadas.
 ```
@@ -247,24 +247,24 @@ Dentre várias outras possibilidades, além das notificações de erro apresenta
 
 Tal procedimento pode ser realizado através do script “stcpemail.vbs”, existente na pasta “Program”, do diretório de instalação (Diretório de Controle) da aplicação (Ex C:\STCPODT\Program).
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Edite o arquivo “stcpemail.vbs” e preencha os parâmetros referentes ao servidor SMTP
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp; Edite o arquivo “stcpemail.vbs” e preencha os parâmetros referentes ao servidor SMTP
 
 <!-- ![](./imagem/img5.png) -->
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp;Salve o arquivo.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">2</span> &nbsp;Salve o arquivo.
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">3</span> &nbsp; Para realizar a validação do funcionamento do script e do servidor SMTP, acesse o "Prompt de Comando" e digite o comando abaixo. Caso nenhuma mensagem de erro seja apresentada, verifique se os e-mails foram recebidos nas contas indicadas.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">3</span> &nbsp; Para realizar a validação do funcionamento do script e do servidor SMTP, acesse o "Prompt de Comando" e digite o comando abaixo. Caso nenhuma mensagem de erro seja apresentada, verifique se os e-mails foram recebidos nas contas indicadas.
 
 ```
 cscript //B C:\STCPODT\Program\ stcpemail.vbs de@dominio.com.br para@dominio.com.br nome-arquivo-teste
 ```
 <!-- ![](./imagem/img6.png) -->
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">4</span> &nbsp; Acesse o STCP OFTP Server Config (Iniciar – Todos os programas – Riversoft STCP OFTP Server – Riversoft STCP OFTP Server Config) e na guia “Usuários”, selecione o usuário desejado e clique no botão “Propriedades”.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">4</span> &nbsp; Acesse o STCP OFTP Server Config (Iniciar – Todos os programas – Riversoft STCP OFTP Server – Riversoft STCP OFTP Server Config) e na guia “Usuários”, selecione o usuário desejado e clique no botão “Propriedades”.
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">5</span> &nbsp; Na janela de propriedades do usuário selecionado, na guia “Tipos de arquivos” selecione o tipo “default” ou o tipo de arquivo desejado e clique no botão “Propriedades”.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">5</span> &nbsp; Na janela de propriedades do usuário selecionado, na guia “Tipos de arquivos” selecione o tipo “default” ou o tipo de arquivo desejado e clique no botão “Propriedades”.
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">6</span> &nbsp; Na janela de propriedades do tipo de arquivo desejado, no grupo “Características da transmissão”, preencha o parâmetro “Executar comando externo” com a linha de comando abaixo:
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">6</span> &nbsp; Na janela de propriedades do tipo de arquivo desejado, no grupo “Características da transmissão”, preencha o parâmetro “Executar comando externo” com a linha de comando abaixo:
 
 ```
 cscript //B C:\STCPODT\Program\stcpemail.vbs “de@dominio.com.br” para@dominio.com.br $LFNAME
@@ -273,7 +273,7 @@ Nota: Na linha de comando utilizamos a variável interna do STCP, **$LFNAME**, q
 
 <!-- ![](./imagem/img7.png) -->
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">7</span> &nbsp; Clique no botão **OK** para salvar as alterações.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">7</span> &nbsp; Clique no botão **OK** para salvar as alterações.
 
 Uma vez realizadas as configurações com êxito, um e-mail será encaminhado para o destinatário informado, sempre que um arquivo for transmitido com sucesso. O mesmo procedimento poderá ser utilizado para implantar notificações também na recepção de arquivos.
 

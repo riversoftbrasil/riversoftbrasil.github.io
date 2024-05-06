@@ -39,7 +39,7 @@ O programa de configuração pode ser acessado também na pasta **Program** da a
 
 ## Informações gerais
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Na guia Geral, preencha os campos com as informações descritas abaixo:
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp; Na guia Geral, preencha os campos com as informações descritas abaixo:
 
 ![](clt-guia-geral.png)
 
@@ -61,7 +61,7 @@ O programa de configuração pode ser acessado também na pasta **Program** da a
 Na guia **Perfis** você poderá adicionar, remover ou modificar os parâmetros de configuração de
 um usuário do serviço <a href="/docs/stcpserver/" target="_blank">STCP OFTP Server</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp;Clique no botão **Adicionar**
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp;Clique no botão **Adicionar**
 
 {{< callout type="info" >}}
 Para um novo Perfil adicionado, automaticamente, será criada uma estrutura de subdiretórios (vide exemplo abaixo) para o envio e recepção dos arquivos, dentro do Diretório de Dados que foi previamente configurado na guia Geral (tópico anterior).
@@ -95,7 +95,7 @@ Para um novo Perfil adicionado, automaticamente, será criada uma estrutura de s
 {{< /filetree/container >}}
 
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp;Preencha os campos **Nome** e **Descrição**.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">2</span> &nbsp;Preencha os campos **Nome** e **Descrição**.
 
 ![](clt-config-01.png)
 
@@ -112,7 +112,7 @@ Clique em **OK**.
 | Descrição |                                                                                          Preencha este campo com a descrição que desejar.                                                                                          |
 <br>
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">3</span> &nbsp;Na guia **Odette**, preencha os seguintes campos:
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">3</span> &nbsp;Na guia **Odette**, preencha os seguintes campos:
 
 ![](clt-config-02.png)
 
@@ -148,11 +148,11 @@ Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alt
 
 ## Propriedades do Perfil
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Com o perfil já criado, selecione-o e clique no botão **Propriedades**
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp; Com o perfil já criado, selecione-o e clique no botão **Propriedades**
 
 ![](clt-config-06.png)
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp; Na guia **Geral**, configure os seguintes campos.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">2</span> &nbsp; Na guia **Geral**, configure os seguintes campos.
 
 ![](clt-config-07.png)
 
@@ -174,7 +174,7 @@ Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alt
   Não habilite esta opção se você não tiver absoluta certeza de que o parceiro remoto é um STCP OFTP Client e que esteja também com esta característica habilitada.
 {{< /callout >}}
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">3</span> &nbsp;Ainda na guia **Geral**, clique no botão **Configurar** para configurar a opção de protocolo
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">3</span> &nbsp;Ainda na guia **Geral**, clique no botão **Configurar** para configurar a opção de protocolo
 selecionada anteriormente.
 
 ![](clt-config-08.png)
@@ -194,7 +194,7 @@ selecionada anteriormente.
 
 ### Protocolo OFTP - TCP/IP
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; Se o protocolo selecionado foi **OFTP – TCP/IP**, configure as seguintes opções na guia **TCP/IP**.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp; Se o protocolo selecionado foi **OFTP – TCP/IP**, configure as seguintes opções na guia **TCP/IP**.
 
 ![](clt-config-09.png)
 
@@ -217,7 +217,7 @@ selecionada anteriormente.
   \*As marcas citadas são propriedade dos seus respectivos donos.
 {{< /callout >}}
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp;Na guia **TLS(Openssl)**, configure os seguintes campos para o protocolo OFTP - TCP/IP.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">2</span> &nbsp;Na guia **TLS(Openssl)**, configure os seguintes campos para o protocolo OFTP - TCP/IP.
 
 ![](clt-config-10.png)
 
@@ -233,7 +233,7 @@ selecionada anteriormente.
 | Debug       |                                                            Esta opção permite gerar um arquivo de depuração na pasta Debug do diretório de instalação do STCP.                                                            |
 ----
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">3</span> &nbsp;Na guia **Proxy**, configure as seguintes opções para o protocolo **OFTP – TCP/IP**.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">3</span> &nbsp;Na guia **Proxy**, configure as seguintes opções para o protocolo **OFTP – TCP/IP**.
 
 ![](clt-config-11.png)
 
@@ -257,7 +257,7 @@ Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alt
 
 ### Tipos de Arquivos
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp;Vá para a guia **Tipos de Arquivos**
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp;Vá para a guia **Tipos de Arquivos**
 
 ![](clt-config-30.png)
 
@@ -299,7 +299,7 @@ Clique em **OK** para salvar as configurações.
 | Nome do novo tipo de arquivo | Preencha este campo com o nome desejado para o novo tipo. Obs.: Não utilize caracteres especiais ou espaços em branco. |
 -------
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">2</span> &nbsp;Na guia **Geral**, preencha e configure os seguintes campos.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">2</span> &nbsp;Na guia **Geral**, preencha e configure os seguintes campos.
 
 ![](clt-config-32.png)
 
@@ -330,7 +330,7 @@ Clique em **OK** para salvar as configurações.
 | EERP libera                    |                                       Esta opção permite habilitar ou inibir o tratamento do arquivo recebido somente após o envio do Odette EERP (End to End Response). Obs.: Somente utilize esta opção se o servidor suportar esta característica.                                        |
 ----------------
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">3</span> &nbsp;Na guia **Avançadas**, selecione as seguintes propriedades do tipo de arquivo.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">3</span> &nbsp;Na guia **Avançadas**, selecione as seguintes propriedades do tipo de arquivo.
 
 ![](clt-config-33.png)
 
@@ -401,7 +401,7 @@ Na guia **Avançadas II**, nas **Propriedades do Perfil**, preencha os seguintes
 
 ## Guia Avançadas
 
-<!-- <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px;">1</span> &nbsp; -->
+<!-- <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp; -->
 Na guia **Avançadas**, configure os seguintes campos:
 
 ![](clt-config-03.png)
