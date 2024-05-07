@@ -20,16 +20,16 @@ Tudo o que você precisa saber para sua jornada nas soluções Riversoft.
 {{< cards >}}
   {{< card link="./stcpserver" title="STCP OFTP Server" icon="cog" >}}
   {{< card link="./stcpclient" title="STCP OFTP Client" icon="desktop-computer" >}}
-  {{< card link="../callout" title="STCP OFTP Web Admin" icon="cloud" >}}
-  {{< card link="../callout" title="STCP Change Password" icon="shield-exclamation" >}}
-  {{< card link="../callout" title="STCP Rename" icon="color-swatch" >}}
-  {{< card link="../callout" title="STCP Signer" icon="finger-print" >}}
+  {{< card link="/404" title="STCP OFTP Web Admin" icon="cloud" >}}
+  {{< card link="/404" title="STCP Change Password" icon="shield-exclamation" >}}
+  {{< card link="/404" title="STCP Rename" icon="color-swatch" >}}
+  {{< card link="/404" title="STCP Signer" icon="finger-print" >}}
 {{< /cards >}}
 
 ### Linux
 {{< cards >}}
-  {{< card link="../callout" title="STCP Gemini Server" icon="lightning-bolt" >}}
-  {{< card link="../callout" title="STCP Gemini Client" icon="terminal" >}}
+  {{< card link="/404" title="STCP Gemini Server" icon="lightning-bolt" >}}
+  {{< card link="/404" title="STCP Gemini Client" icon="terminal" >}}
 {{< /cards >}}
 
 ### Multiplataforma
@@ -41,12 +41,12 @@ Tudo o que você precisa saber para sua jornada nas soluções Riversoft.
 {{< cards >}}
   {{< card link="/conection" title="Conectividade" icon="link" >}}
   {{< card link="/debug" title="Debug" icon="eye" >}}
-  {{< card link="../callout" title="Automação" icon="cube" >}}
+  {{< card link="/404" title="Automação" icon="cube" >}}
   {{< card link="/schedule" title="Execução automática" icon="calendar-days" >}}
   {{< card link="/email" title="Notificação por e-mail" icon="mail" >}}
   {{< card link="/proxy" title="Servidor Proxy para conexão" icon="server" >}}
-  {{< card link="../callout" title="Certificação" icon="key" >}}
-  {{< card link="../callout" title="Atualização" icon="arrow-up" >}}
+  {{< card link="/404" title="Certificação" icon="key" >}}
+  {{< card link="/404" title="Atualização" icon="arrow-up" >}}
 {{< /cards >}}
 
 ### Referências e Informações
