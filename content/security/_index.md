@@ -10,9 +10,8 @@ prev: /protocols
 next: /events
 slug: seguranca-stcp
 draft: false
-# lastmod:
+lastmod: 2024-05-07
 ---
-<!-- # Segurança -->
 ## Como é a segurança do STCP?
 
 O STCP implementa a segurança em dois níveis: autenticação do usuário pela aplicação e a criptografia dos dados.
@@ -74,7 +73,7 @@ A “criptografia nativa” é uma implementação proprietária de troca de cha
 * Alta - Chave assimétrica de 2048 bits e chave simétrica de 128 bits
 
 
-## A criptografia SSL3 no STCP OFTP Client
+## A criptografia TLS no STCP OFTP Client
 
 O STCP OFTP Client inicia o processo de comunicação segura com a solicitação para a camada SSL3 da abertura de uma nova sessão com a troca da chave pública (assimétrica) seguida da troca da chave de sessão (simétrica).
 
@@ -253,10 +252,14 @@ Original SSLeay License
 
 ## Referências
 
-(www.openssl.org)
-(www.modssl.org)
-(http://oss-institute.org/newspdf/OSSIFIPSRef.pdf)
-(www.odette.org)
-(www.oftp.net)
+www.openssl.org
+<br>
+www.modssl.org
+<br>
+http://oss-institute.org/newspdf/OSSIFIPSRef.pdf
+<br>
+www.odette.org
+<br>
+www.oftp.net
 
 
