@@ -4,8 +4,6 @@ toc: false
 layout: hextra-home
 # prev:
 # next:
-# slug: inicio
-# lastmod: 2024-03-21
 ---
 
 <!-- {{< hextra/hero-badge >}}
@@ -37,6 +35,28 @@ layout: hextra-home
 {{< feature-grid >}}
 
     {{< feature-card
+        title="STCP OFTP Server"
+        icon="cog"
+        subtitle="Servidor de transferência de arquivos seguro e multiprotocolo para aplicações de e-business e troca de informações corporativas, baseado na especificação OFTP."
+        link="docs/stcpserver"
+    >}}
+
+    {{< feature-card
+        title="STCP OFTP Client"
+        icon="desktop-computer"
+        subtitle="Client é um cliente de transferência de arquivos seguro e multiprotocolo para aplicações de e-business e troca de informações corporativas, baseado na especificação OFTP."
+        link="docs/stcpclient"
+    >}}
+
+
+    {{< feature-card
+        title="STCP Directlink"
+        icon="code"
+        subtitle="Aplicação integrada aos produtos STCP OFTP Server (Windows) ou STCP Gemini Server (Linux), com uma solução simples e robusta, através dos protocolos HTTPS e SFTP."
+        link="docs/stcpdirectlink"
+    >}}
+
+    {{< feature-card
         title="STCP Gemini Server"
         icon="lightning-bolt"
         subtitle="Aplicação servidora utilizada para transferência de arquivos seguro e multiprotocolo para aplicações de e-business e troca de informações corporativas, baseado na especificação OFTP."
@@ -50,27 +70,6 @@ layout: hextra-home
         subtitle="Aplicação cliente utilizada para transferência de arquivos seguro e multiprotocolo para aplicações de e-business e troca de informações corporativas, baseado na especificação OFTP."
         badge="EM BREVE"
 
-    >}}
-
-    {{< feature-card
-        title="STCP Directlink"
-        icon="code"
-        subtitle="Aplicação integrada aos produtos STCP OFTP Server (Windows) ou STCP Gemini Server (Linux), com uma solução simples e robusta, através dos protocolos HTTPS e SFTP."
-        link="docs/stcpdirectlink"
-    >}}
-
-    {{< feature-card
-        title="STCP OFTP Server"
-        icon="cog"
-        subtitle="Servidor de transferência de arquivos seguro e multiprotocolo para aplicações de e-business e troca de informações corporativas, baseado na especificação OFTP."
-        link="docs/stcpserver"
-    >}}
-
-    {{< feature-card
-        title="STCP OFTP Client"
-        icon="desktop-computer"
-        subtitle="Client é um cliente de transferência de arquivos seguro e multiprotocolo para aplicações de e-business e troca de informações corporativas, baseado na especificação OFTP."
-        link="docs/stcpclient"
     >}}
 
     {{< feature-card
