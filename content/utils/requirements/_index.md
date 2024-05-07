@@ -8,7 +8,7 @@ cascade:
 sidebar:
   exclude: false
 weight:
-prev: /utils
+prev: /advantages
 next: /logs
 # slug:
 draft:

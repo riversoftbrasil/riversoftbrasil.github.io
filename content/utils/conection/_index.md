@@ -1,5 +1,5 @@
 ---
-linkTitle: Teste de Conectividade Conectividade
+linkTitle: Teste de Conectividade
 layout: docs
 toc: true
 cascade:
@@ -10,7 +10,7 @@ prev: /docs
 next: /debug
 slug: testes-conectividade
 draft: false
-lastmod: 2024-03-05
+lastmod: 2024-05-07
 ---
 ## Telnet
 

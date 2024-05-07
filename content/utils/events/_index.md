@@ -8,7 +8,7 @@ sidebar:
   exclude: false
 weight: 5
 prev: /security
-next: /utils
+next: /advantages
 slug:
 draft: false
 # lastmod:

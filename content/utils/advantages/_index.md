@@ -8,8 +8,8 @@ cascade:
 sidebar:
   exclude: true
 weight: 6
-prev: /events
-next: /requirements
+prev: utils/events
+next: utils/requirements
 # slug:
 # draft:
 lastmod: 2024-03-21

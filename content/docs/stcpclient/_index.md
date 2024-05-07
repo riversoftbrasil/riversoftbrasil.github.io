@@ -18,7 +18,7 @@ O STCP OFTP Client é um cliente de transferência de arquivos seguro e multipro
 
 ## Onde usar?
 
-Saiba onde utilizar a aplicação na seção <a href="/utils" target="_blank">Uso e vantagens do STCP</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;
+Saiba onde utilizar a aplicação na seção <a href="/utils/advantages/" target="_blank">Uso e vantagens do STCP</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;
 
 ## Características
 
@@ -37,7 +37,7 @@ Saiba onde utilizar a aplicação na seção <a href="/utils" target="_blank">Us
 
 ## Requisitos de software e hardware
 
-Confira os requisitos de software e hardware da aplicação na seção <a href="/requirements" target="_blank">Requisitos</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;
+Confira os requisitos de software e hardware da aplicação na seção <a href="/utils/requirements" target="_blank">Requisitos</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;
 
 
 

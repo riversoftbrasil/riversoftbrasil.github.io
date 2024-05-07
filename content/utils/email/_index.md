@@ -21,11 +21,13 @@ Por se tratar de um script que utiliza uma linguagem universal (Visual Basic Scr
 
 ## Download do script VBS
 
-O envio das notificações por email é realizado através do script stcp-notifica.vbs, disponível para download no link abaixo. Após o download, o conteúdo do arquivo zipado deverá ser copiado para a pasta Program do diretório de instalação do STCP OFTP Client
+O envio das notificações por email é realizado através do script **stcp-notifica.vbs**. Após o download, o conteúdo do arquivo zipado deverá ser copiado para a pasta Program do diretório de instalação do STCP OFTP Client.
 
 `(Ex. C:\STCPCLT\Program)`
 
-<!-- Link para [download](https://www.riversoft.com.br/produtos/pub/stcp-notifica.zip) -->
+{{< callout type="info" >}}
+  O link para download do script é disponibilizado pela Equipe de Sustentação da Riversoft.
+{{< /callout >}}
 
 ## Configuração do script VBS
 
