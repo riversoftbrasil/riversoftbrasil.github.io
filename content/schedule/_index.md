@@ -27,7 +27,7 @@ Para executar automaticamente a aplicação de transferência de arquivos, devem
 
 {{% steps %}}
 
-## Configurações
+### Configurações
 
 Na guia **Geral** da janela de criação da tarefa configure os campos conforme a sua necessidade. Observe atentamente as opções de segurança conforme as configurações do seu ambiente.
 
@@ -35,7 +35,7 @@ Na guia **Disparadores** clique no botão **Novo**.
 
 ![](clt-agenda-02.png)
 
-## Agendamento
+### Agendamento
 
 Na janela **Novo Disparador** configure o agendamento conforme desejado e clique no botão **OK** para salvar as informações.
 
@@ -45,7 +45,7 @@ Na guia **Ações** clique no botão **Novo**
 
 ![](clt-agenda-04.png)
 
-## Programa/script
+### Programa/script
 
 No campo **Programa/script** informe a linha de comando utilizada para executar o STCP OFTP Client (vide exemplo abaixo) e clique no botão **OK**.
 
