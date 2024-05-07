@@ -6,9 +6,9 @@ cascade:
   type: docs
 sidebar:
   exclude: false
-prev: /docs
-next: /debug
-slug: testes-conectividade
+weight: 12
+prev: utils/requirements
+next: /variables
 draft: false
 lastmod: 2024-05-07
 ---

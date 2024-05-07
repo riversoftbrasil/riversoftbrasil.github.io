@@ -137,7 +137,7 @@ Clique em **OK**.
 | Nível de debug                        |      Preencha este campo com o nível de detalhamento das informações que serão gravadas no arquivo de depuração. Para obter no mesmo arquivo de depuração a informação dos diferentes níveis, preencha este campo com a soma dos níveis desejados.  |
 ---
 
-Para obter as informações detalhadas sobre o nível de Debug acesse a seção <a href="/debug" target="_blank">Debug</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;
+Para obter as informações detalhadas sobre o nível de Debug acesse a seção <a href="/utils/debug" target="_blank">Debug</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;
 
 
 {{< callout type="warning" >}}
@@ -182,15 +182,7 @@ selecionada anteriormente.
 | Protocolo     |                                                Descrição                                                |
 | :------------ | :-----------------------------------------------------------------------------------------------------: |
 | OFTP - TCP/IP | Configura o STCP OFTP Server para utilizar o protocolo de comunicação TCP/IP através de uma rede local. |
-<!-- | HTTP – TCP/IP| Configura o STCP OFTP Server para utilizar o protocolo de comunicação HTTP. |
-| FTP – TCP/IP | Configura o STCP OFTP Server para utilizar o protocolo de comunicação FTP. |
-| SFTP – TCP/IP| Configura o STCP OFTP Server para utilizar o protocolo de comunicação SFTP. | -->
 ---
-
-
-<!-- > Clique [aqui](https://docs.aws.amazon.com/pt_br/AmazonS3/latest/userguide/Welcome.html) {{< icon "arrow-top-right-on-square" >}} &nbsp; para mais informações sobre o **Amazon Simple Storage Service (S3)**.
-
-> Clique [aqui](https://azure.microsoft.com/pt-br/products/storage/blobs) {{< icon "arrow-top-right-on-square" >}} &nbsp; para mais informações sobre o **Armazenamento de Blobs do Azure**. -->
 
 ### Protocolo OFTP - TCP/IP
 

@@ -7,12 +7,11 @@ cascade:
   type: docs
 sidebar:
   exclude: false
-weight:
-prev:
-next:
-slug:
-draft:
-lastmod: 2024-04-15
+weight: 2
+prev: /logs
+next: /database
+draft: false
+lastmod: 2024-05-07
 ---
 <!-- ## STCP OFTP Server
 
@@ -27,7 +26,7 @@ http://www.riversoft.com.br/downloads/manuais/stcp_console_ptb.pdf
 
 A nova versão do _**STCP OFTP Server Enterprise**_ já suporta a comunicação através de FTP, SFTP e HTTP, trabalhando como cliente para tais protocolos. -->
 
----
+
 ### Antes de Iniciar
 
 Nos casos de migração do servidor STCP OFTP e para preservar as configurações dos roteamentos (_STCPRen_) e agendamentos em operação no ambiente atual, recomendamos que o novo servidor possua as mesmas características (_hostname, endereço ip, recursos compartilhados_) ao antigo.

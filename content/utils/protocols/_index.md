@@ -1,17 +1,16 @@
 ---
-linkTitle: Protocolo OFTP
+linkTitle: Protocolos
 layout: docs
 toc: true
 cascade:
   type: docs
 sidebar:
   exclude: false
-weight: 6
-prev: /database
-next: /security
-slug: protocolo-oftp
+weight: 10
+prev: /schedule
+next: /events
 draft: false
-lastmod: 2024-04-02
+lastmod: 2024-05-07
 ---
 ## OFTP
 
@@ -56,7 +55,6 @@ O FTP é útil caso o usuário perca o acesso ao painel de controle do seu site.
 Simple Transfer Protocol (Protocolo de Transferência Simples de Arquivos) consiste no protocolo FTP acrescido de uma camada de proteção para arquivos transferidos.
 
 Nele, a troca de informações é feita por meio de pacotes com a tecnologia SSH (Secure Shell – Bloqueio de Segurança), que autenticam e protegem a conexão entre cliente e servidor. O usuário define quantos arquivos serão transmitidos simultaneamente e define um sistema de senhas para reforçar a segurança.
-
 
 ## Referência
 

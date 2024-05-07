@@ -18,7 +18,7 @@ Abra o link de instalação que será disponibilizado pela Equipe de Sustentaç�
 
 ## Criação do Banco de Dados
 
-O STCP OFTP Web Admin é compatível com diversos bancos de dados existentes no mercado, verifique mais informações na seção <a href="/database" target="_blank">Banco de Dados homologados</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;
+O STCP OFTP Web Admin é compatível com diversos bancos de dados existentes no mercado, verifique mais informações na seção <a href="/utils/database" target="_blank">Banco de Dados homologados</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;
 
 Crie um banco de dados **STCPWEB_DB** no servidor utilizando a ferramenta adequada ao sistema.
 

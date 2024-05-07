@@ -6,12 +6,11 @@ cascade:
   type: docs
 sidebar:
   exclude: false
-weight: 4
-prev: /schedule
-next: /proxy
-slug: notificacao-email
+weight: 9
+prev: /events
+next: utils/requirements
 draft: false
-lastmod: 2024-03-22
+lastmod: 2024-05-07
 ---
 ## Introdução
 

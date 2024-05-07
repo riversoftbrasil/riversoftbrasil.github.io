@@ -4,13 +4,12 @@ layout: docs
 cascade:
   type: docs
 sidebar:
-  exclude: true
-weight: 3
-prev: /proxy
-next: /update
-slug: certificado-ca
+  exclude: false
+weight: 4
+prev: /database
+next: /proxy
 draft: false
-lastmod: 2024-04-09
+lastmod: 2024-05-07
 ---
 ## Certificado digital emitido por uma autoridade certificadora (CA)
 

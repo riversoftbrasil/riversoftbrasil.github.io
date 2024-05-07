@@ -7,12 +7,11 @@ cascade:
   type: docs
 sidebar:
   exclude: false
-weight:
-prev: /advantages
-next: /logs
-# slug:
-draft:
-lastmod: 2024-03-21
+weight: 11
+prev: /email
+next: /conection
+draft: false
+lastmod: 2024-05-07
 ---
 ## STCP OFTP Server
 

@@ -13,7 +13,7 @@ lastmod: 2024-04-01
 ---
 # Introdução
 
-O STCP OFTP Server é um servidor de transferência de arquivos **seguro** e **multiprotocolo** para aplicações de **e-business** e troca de informações corporativas, baseado na especificação <a href="/protocols" target="_blank">OFTP (ODETTE File Transfer Protocol)</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;
+O STCP OFTP Server é um servidor de transferência de arquivos **seguro** e **multiprotocolo** para aplicações de **e-business** e troca de informações corporativas, baseado na especificação <a href="/utils/protocols" target="_blank">OFTP (ODETTE File Transfer Protocol)</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;
 
 ## Onde usar, e quais vantagens?
 
@@ -23,7 +23,7 @@ Saiba onde utilizar a aplicação e quais as suas vantagens na seção <a href="
 
 O STCP OFTP Server oferece as seguintes características:
 
-* Protocolo de transferência <a href="/protocols" target="_blank">OFTP (ODETTE File Transfer Protocol)</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;
+* Protocolo de transferência <a href="/utils/protocols/#oftp" target="_blank">OFTP (ODETTE File Transfer Protocol)</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;
 * Autenticação através do protocolo *OFTP*
 * Autenticação através de certificado digital X.509 (TLS)
 * Criptografia RSA, 3DES, DES, AES (TLS)

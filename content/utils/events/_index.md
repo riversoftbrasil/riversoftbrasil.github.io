@@ -6,12 +6,11 @@ cascade:
   type: docs
 sidebar:
   exclude: false
-weight: 5
-prev: /security
-next: /advantages
-slug:
+weight: 8
+prev: /protocols
+next: /email
 draft: false
-# lastmod:
+lastmod: 2024-05-07
 ---
 ## Códigos de eventos gerados no arquivo de mensagens
 

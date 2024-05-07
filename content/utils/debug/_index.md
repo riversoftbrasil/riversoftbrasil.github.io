@@ -6,12 +6,11 @@ cascade:
   type: docs
 sidebar:
   exclude: false
-weight: 2
-prev: /conection
-next: /callout
-slug: nivel-de-debug
+weight: 6
+prev: /proxy
+next: /schedule
 draft: false
-lastmod:
+lastmod: 2024-05-07
 ---
 ## Habilitar ou Alterar o nível de Debug
 

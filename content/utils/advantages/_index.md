@@ -6,15 +6,13 @@ toc: true
 cascade:
   type: docs
 sidebar:
-  exclude: true
-weight: 6
+  exclude: false
+weight: 13
 prev: utils/events
 next: utils/requirements
-# slug:
-# draft:
-lastmod: 2024-03-21
+draft: false
+lastmod: 2024-05-07
 ---
-
 ## STCP OFTP Client e Server
 
 Ambos podem ser utilizados por diferentes aplicações para:
