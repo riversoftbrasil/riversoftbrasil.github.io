@@ -8,13 +8,12 @@ sidebar:
 weight: 3
 prev: /docs/stcpserver/02-config
 next: /docs/stcpdirectlink
-# slug:
 draft: false
-lastmod: 2024-02-26
+lastmod: 2024-05-10
 ---
 ## Utilização
 
-O STCP OFTP Server para cada usuário configurado no serviço cria um conjunto individual de subdiretórios para controle das transferências e integração com as aplicações externas, conforme mostra figura abaixo:
+O STCP OFTP Server, para cada usuário configurado no serviço, cria um conjunto individual de subdiretórios para controle das transferências e integração com as aplicações externas, conforme mostra figura abaixo:
 
 <Diretório de Dados>\ | Subdiretório de dados configurado.
 :---                  | :---
