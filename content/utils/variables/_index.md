@@ -1,5 +1,5 @@
 ---
-linkTitle: Variáveis internas STCP
+linkTitle: Variáveis internas
 title:
 layout: docs
 toc: true
@@ -7,13 +7,13 @@ cascade:
   type: docs
 sidebar:
   exclude: false
-weight: 14
+weight: 15
 prev: /conection
 next:
 draft: false
-lastmod: 2024-05-07
+lastmod: 2024-05-10
 ---
-## STCP OFTP Server
+## Variáveis internas do STCP OFTP Server
 
 As variáveis internas do STCP OFTP Server podem ser utilizadas como parâmetros para os comandos externos.
 
@@ -34,7 +34,7 @@ $OFUSERDATA| Variável que contém o userdata do arquivo ODETTE.
 $OFORIGINATOR| Variável que contém a origem do arquivo ODETTE.
 $OFDESTINATION| Variável que contém o destino do arquivo ODETTE.
 
-**Definição do valor padrão do parâmetro**
+## Definição do valor padrão do parâmetro
 
 Executar comando para:| Valor padrão do parâmetro.
 :---                  | :---

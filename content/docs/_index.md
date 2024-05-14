@@ -8,7 +8,7 @@ cascade:
 sidebar:
   exclude: false
 weight: 1
-lastmod: 2024-05-07
+lastmod: 2024-05-14
 ---
 
 Tudo o que você precisa saber para sua jornada nas soluções Riversoft.
@@ -39,7 +39,7 @@ Tudo o que você precisa saber para sua jornada nas soluções Riversoft.
   {{< card link="../utils/conection/" title="Conectividade" icon="link" >}}
   {{< card link="../utils/debug/" title="Debug" icon="eye" >}}
   {{< card link="/404" title="Automação" icon="cube" >}}
-  {{< card link="../utils/schedule/" title="Execução automática" icon="calendar-days" >}}
+  {{< card link="../utils/schedule/" title="Execução automática" icon="arrow-path" >}}
   {{< card link="../utils/email/" title="Notificação por e-mail" icon="mail" >}}
   {{< card link="../utils/proxy/" title="Servidor Proxy para conexão" icon="server" >}}
   {{< card link="/404" title="Certificação" icon="key" >}}
@@ -50,12 +50,14 @@ Tudo o que você precisa saber para sua jornada nas soluções Riversoft.
 
 {{< cards >}}
   {{< card link="../utils/database/" title="Banco de dados" icon="database" >}}
-  {{< card link="../utils/protocols/" title="Protocolos de Rede" icon="lock-closed" >}}
+  {{< card link="../utils/protocols/" title="Protocolos de Rede" icon="wifi" >}}
   {{< card link="/security" title="Segurança" icon="shield-check" >}}
   {{< card link="../utils/events/" title="Códigos de Erros e Eventos" icon="x-circle" >}}
-  {{< card link="../utils/advantages/" title="Uso e vantagens do STCP" icon="question-mark-circle" >}}
+  {{< card link="../utils/advantages/" title="Uso e vantagens do STCP" icon="rocket-launch" >}}
   {{< card link="../utils/requirements/" title="Requisitos de Software e Hardware" icon="queue-list" >}}
   {{< card link="../utils/logs/" title="Arquivos de Log" icon="clock" >}}
-  {{< card link="../utils/variables/" title="Variáveis internas do STCP" icon="code-bracket-square" >}}
+  {{< card link="../utils/console/" title="STCP Console" icon="document-magnifying-glass" >}}
+  {{< card link="../utils/service/" title="Serviço do STCP" icon="cube-transparent" >}}
+  {{< card link="../utils/variables/" title="Variáveis internas" icon="variable" >}}
 {{< /cards >}}
 

@@ -1,5 +1,5 @@
 ---
-linkTitle: Banco de Dados Homologados
+linkTitle: Banco de dados homologados
 layout: docs
 cascade:
   type: docs

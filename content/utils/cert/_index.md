@@ -1,5 +1,5 @@
 ---
-linkTitle: Certificado Digital
+linkTitle: Certificado digital
 layout: docs
 cascade:
   type: docs

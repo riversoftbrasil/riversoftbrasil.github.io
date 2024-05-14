@@ -1,6 +1,5 @@
 ---
-linkTitle: Requisitos de Software e Hardware
-# title:
+linkTitle: Requisitos de software e hardware
 layout: docs
 toc: true
 cascade:

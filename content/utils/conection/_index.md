@@ -1,5 +1,5 @@
 ---
-linkTitle: Teste de Conectividade
+linkTitle: Teste de conectividade
 layout: docs
 toc: true
 cascade:
