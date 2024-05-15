@@ -10,7 +10,7 @@ weight: 12
 prev: utils/requirements
 next: /variables
 draft: false
-lastmod: 2024-05-07
+lastmod: 2024-05-15
 ---
 ## Telnet
 
@@ -18,9 +18,9 @@ Em alguns casos, para que seja possível a identificação de problemas relacion
 
 Quando a conexão é estabelecida através de uma porta de comunicação sem o uso de certificado de segurança (TLS), siga os passos descritos abaixo:
 
-{{< icon "terminal" >}} &nbsp;  Acesse o prompt de comando do Windows *(a execução deverá ser sem as credenciais de Administrador)*.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp;Acesse o prompt de comando do Windows *(a execução deverá ser sem as credenciais de Administrador)*.
 
-{{< icon "code" >}} &nbsp;  Execute o comando abaixo e pressione `ENTER`
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">2</span> &nbsp;Execute o comando abaixo e pressione `ENTER`
 
 ```
 telnet <IP-SERVIDOR-DESTINO> <PORTA>
@@ -59,20 +59,19 @@ Em alguns casos, para que seja possível a identificação de problemas relacion
 
 Quando a conexão é estabelecida através de uma porta de comunicação segura (TLS), siga os passos descritos abaixo:
 
-{{< icon "download" >}} &nbsp; Efetue o download da ferramenta OpenSSL através do link:
-[Download Openssl](http://www.riversoft.com.br/produtos/pub/stcp-openssl.zip)
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp;Efetue o download da ferramenta OpenSSL através do link: [Download Openssl](http://www.riversoft.com.br/produtos/pub/stcp-openssl.zip)
 
-{{< icon "copy" >}} &nbsp; Copie o arquivo openssl.exe para o diretório `C:/Temp` (ou outro de sua preferencia).
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">2</span> &nbsp;Copie o arquivo openssl.exe para o diretório `C:/Temp` (ou outro de sua preferencia).
 
-{{< icon "terminal" >}} &nbsp; Acesse o prompt de comando do Windows *(a execução deverá ser sem as credenciais de Administrador)*.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">3</span> &nbsp;Acesse o prompt de comando do Windows *(a execução deverá ser sem as credenciais de Administrador)*.
 
-{{< icon "document" >}} &nbsp; No diretório C:/Temp execute o comando openssl.exe.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">4</span> &nbsp;No diretório C:/Temp execute o comando openssl.exe.
 
 {{< callout type="warning" >}}
 Nos parâmetros IP-SERVIDOR-DESTINO e PORTA deverão ser informados o IP e Porta respectivos ao servidor do parceiro, no qual a conexão será realizada.
 {{< /callout >}}
 
-{{< icon "terminal" >}} &nbsp; Após acesso ao OpenSSL, execute a linha de comando abaixo:
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">5</span> &nbsp;Após acesso ao OpenSSL, execute a linha de comando abaixo:
 
 ```
 s_client -host <IP-SERVIDOR-DESTINO> -port <PORTA> –debug
@@ -81,7 +80,7 @@ s_client -host <IP-SERVIDOR-DESTINO> -port <PORTA> –debug
 
 <!-- ![](telnet-02.png) -->
 
-{{< icon "desktop-computer" >}} &nbsp; A tela a seguir deverá ser apresentada em caso de sucesso. Observe que para haver sucesso no teste de conectividade, a mensagem **ODETTE FTP READY** deverá ser exibida conforme a imagem de exemplo abaixo.
+A tela a seguir deverá ser apresentada em caso de sucesso. Observe que para haver sucesso no teste de conectividade, a mensagem **ODETTE FTP READY** deverá ser exibida conforme a imagem de exemplo abaixo.
 
 ![](telnet-02.png)
 
