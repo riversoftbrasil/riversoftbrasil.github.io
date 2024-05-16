@@ -10,14 +10,13 @@ weight: 12
 prev: /cert
 next: /debug
 draft: false
-lastmod: 2024-05-10
+lastmod: 2024-05-15
 ---
 ## O que é?
 
-O STCPConsole é um sistema que tem como principal funcionalidade permitir que sejam realizadas
-atividades de monitoração de um determinado servidor. Estas atividades envolvem a **monitoração de
-usuários** (monitora todos os usuários ativos) e a **monitoração de eventos** (monitora todos os eventos do
-servidor).
+O STCP Console é um sistema que tem como principal funcionalidade permitir que sejam realizadas
+atividades de monitoração de um determinado servidor. Estas atividades envolvem a [monitoração de
+usuários](#como-monitorar-usuários) (monitora todos os usuários ativos) e a [monitoração de eventos](#como-monitorar-eventos) (monitora todos os eventos do servidor).
 
 Características Gerais:
 
@@ -27,8 +26,7 @@ Características Gerais:
 * Conexão com usuários
 
 ## Funcionalidades
-Dentre as principais funcionalidades deste módulo, podemos citar: adição e remoção de servidores e
-visões, monitoração de usuários e/ou eventos, e conexão com usuários.
+Dentre as principais funcionalidades deste módulo, podemos citar: [adição](#adicionar-um-servidor) e [remoção de servidores](#como-remover-um-servidor) e [visões](#como-adicionar-uma-visão), [monitoração de usuários](#como-monitorar-usuários) e/ou [eventos](#como-monitorar-eventos), e [conexão com usuários](#como-iniciar-conexão-com-um-usuário).
 
 ## Configuração
 
@@ -62,7 +60,7 @@ remover visões, monitorar usuários e eventos, etc.
 | ----------- | ----------- |
 | Endereço IP | Campo com o endereço TCP/IP ou nome (DNS) do servidor.|
 | Porta       | Campo com a porta IP usada pelo servidor. |
-| Comunicação segura | Esta opção habilita ou inibe a utilização de criptografia na comunicação com o servidor. <br>**Nativa(Básica):** configura a comunicação segura com criptografia com nível de segurança básico. <br>**Nativa (Média):** configura a comunicação segura com criptografia com nível de segurança médio. <br> **Nativa (Alta):** configura a comunicação segura com criptografia com nível de segurança alto. <br> **SSL3:** configura a comunicação segura com criptografia e certificação digital, com a utilização da padronização definida na RFC2246 (TLS1/SSL3). O TLS1/SSL3 é comumente encontrado nos servidores de sites seguros (HTTPS) e oferece o maior grau de segurança atualmente disponível. |
+| Comunicação segura | Esta opção habilita ou inibe a utilização de criptografia na comunicação com o servidor. <br>**Nativa (Básica):** configura a comunicação segura com criptografia com nível de segurança básico. <br>**Nativa (Média):** configura a comunicação segura com criptografia com nível de segurança médio. <br> **Nativa (Alta):** configura a comunicação segura com criptografia com nível de segurança alto. <br> **SSL3:** configura a comunicação segura com criptografia e certificação digital, com a utilização da padronização definida na RFC2246 (TLS1/SSL3). O TLS1/SSL3 é comumente encontrado nos servidores de sites seguros (HTTPS) e oferece o maior grau de segurança atualmente disponível. |
 
 {{< callout type="info" >}}
 Obs.: antes de habilitar uma destas opções de comunicação, confirme se o servidor com quem você deseja se comunicar suporta esta característica.
@@ -84,7 +82,6 @@ Obs.: a opção Compatibilidade não deve ser habilitada quando o servidor RVS* 
 | Parâmetro      | Descrição |
 | ----------- | ----------- |
 | Compressão GZIP | Esta opção habilita ou inibe a utilização da compressão GZIP on-the-fly (durante a transferência).|
-| Porta       | Campo com a porta IP usada pelo servidor. |
 
 {{< callout type="warning" >}}
 Obs: antes de habilitar a opção Compressão GZIP, confirme se o servidor com quem você deseja se
@@ -107,7 +104,7 @@ comunicar suporta esta característica.
 | Nativa (Básica)       | Configura a comunicação segura com criptografia com nível de segurança básico. |
 | Nativa (Média)       |  Configura a comunicação segura com criptografia com nível de segurança médio. |
 | Nativa (Alta)       | Configura a comunicação segura com criptografia com nível de segurança alto. |
-| SSL3       | Configura a comunicação segura com criptografia e certificação digital, com a utilização da padronização definida na RFC2246 (TLS1/SSL3). O TLS1/SSL3 é comumente encontrado nos servidores de sites seguros (HTTPS) e oferece o maior grau de segurança atualmente disponível. |
+
 
 {{< callout type="info" >}}
 Obs.: o arquivo da chave privativa deve estar no formato PKCS#12 e os certificados no formato DER ou PEM.
@@ -329,7 +326,7 @@ Quando este botão for acionado, serão listados apenas os usuários que se enca
 
 Exemplo: se o nome de um usuário é desconhecido, mas se sabe que a descrição deste contém a palavra “teste”, preencha o parâmetro **Descrição** com o valor “teste” e serão listados apenas os usuários que tenham essa informação na descrição. Este procedimento facilita a procura, já que permite refinar a lista de resultados.
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">3</span> &nbsp;Nesta tela, selecione o usuário desejado e clique no botão **OK**, ou então, dê um clique duplo sobre o nome do usuário e automaticamente esse nome irá para o parâmetro **“Usuário”**.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">3</span> &nbsp;Nesta tela, selecione o usuário desejado e clique no botão **OK**, ou então, dê um clique duplo sobre o nome do usuário e automaticamente esse nome irá para o parâmetro **Usuário**.
 
 Após informar o nome do usuário para conexão no parâmetro **Usuário**, clique no botão **OK** para que seja estabelecida a conexão.
 
@@ -346,20 +343,19 @@ Obs.: a conexão automática deve estar habilitada no usuário para que se tenha
 
 **D**
 
-*DER* É um padrão de codificação que fornece um método de codificação de objetos (como certificados e mensagens), independente de plataforma, para transmissão entre dispositivos e aplicativos.
+*DER* - É um padrão de codificação que fornece um método de codificação de objetos (como certificados e mensagens), independente de plataforma, para transmissão entre dispositivos e aplicativos.
 
 **E**
 
-*Endereço IP*
-Este endereço é um número único para cada computador conectado a Internet, composto por uma seqüência de 4 números que variam de 0 até 255, separados por “.”.
+*Endereço IP* - Este endereço é um número único para cada computador conectado a Internet, composto por uma sequência de 4 números que variam de 0 até 255, separados por "."
 
 **P**
 
 *PEM*
-Privacy Enhanced Mail é um formato popular de certificado.
+Privacy Enhanced Mail - é um formato popular de certificado.
 
-*PKCS#12* Um formato de arquivo que transporta certificados e chaves confidenciais.
+*PKCS#12* - Um formato de arquivo que transporta certificados e chaves confidenciais.
 
 **S**
 
-*SSL* Do Inglês Secure Sockets Layer. Protocolo que fornece confidencialidade e integridade na comunicação entre um cliente e um servidor, através do uso de criptografia.
+*SSL* - Do Inglês Secure Sockets Layer. Protocolo que fornece confidencialidade e integridade na comunicação entre um cliente e um servidor, através do uso de criptografia.
