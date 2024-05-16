@@ -4,7 +4,7 @@ layout: docs
 cascade:
   type: docs
 sidebar:
-  exclude: false
+  exclude: true
 weight: 4
 prev:
 next:
@@ -18,7 +18,6 @@ O STCP OFTP Web Admin é uma ferramenta com acesso através do browser (HTTP) qu
 ![](web-admin-01.png)
 
 <br>
-
 
 # Características Gerais
 
