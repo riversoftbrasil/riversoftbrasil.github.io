@@ -11,11 +11,11 @@ weight: 2
 prev: /logs
 next: /database
 draft: false
-lastmod: 2024-05-10
+lastmod: 2024-05-16
 ---
 ## Antes de Iniciar
 
-Nos casos de migração de servidores STCP OFTP e para preservar as configurações dos roteamentos (_STCPRen_) e agendamentos em operação no ambiente atual, recomendamos que o novo servidor possua as mesmas características (_hostname, endereço ip, recursos compartilhados_) ao antigo.
+Nos casos de migração de servidores, para preservar as configurações dos roteamentos (_STCPRen_) e agendamentos em operação no ambiente atual, recomendamos que o novo servidor possua as mesmas características (_hostname, endereço ip, recursos compartilhados_) ao antigo.
 
 Antes de qualquer alteração no ambiente STCP, recomenda-se uma cópia de segurança dos diretórios de _Controle e Dados_ da aplicação.
 
@@ -23,7 +23,7 @@ Antes de qualquer alteração no ambiente STCP, recomenda-se uma cópia de segur
 
 ## Migração dos Arquivos de Configuração (*.INI)
 
-Para transferir as configurações do STCP OFTP, do servidor atual para um novo, após a instalação copie os arquivos de configuração *_.INI_, existentes no diretório de _Controle_ (Ex. **C:\STCPODT**), do servidor antigo para respectivo diretório do novo servidor.
+Para transferir as configurações do STCP, no servidor atual para um novo, após a instalação copie os arquivos de configuração *_.INI_, existentes no diretório de _Controle_ (Ex. **C:\STCPODT**), do servidor antigo para respectivo diretório do novo servidor.
 
 Acesse o diretório de instalação do STCP no terminal e liste os arquivos com a extensão **.ini**
 
@@ -48,7 +48,7 @@ A estrutura de pastas (Exemplo abaixo **D:\STCPODT\work\NOME-USUARIO**), configu
 {{< /callout >}}
 
 ---
-## Procedimento
+## STCP OFTP Server
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp; Acesse o Riversoft STCP OFTP Server Manager como administrador (_Ex: D:\STCPODT\Program\Riversoft STCP OFTP Server Manager_) e pare o serviço da aplicação.
 
@@ -60,7 +60,6 @@ A estrutura de pastas (Exemplo abaixo **D:\STCPODT\work\NOME-USUARIO**), configu
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">3</span> &nbsp;Após parar o serviço, certifique de deletá-lo, esse procedimento pode ser feito através do comando abaixo (Verifique as permissões e se necessário, execute o prompt como **administrador**)
 
-<!-- Na guia _Geral_ desmarque a opção _Executar como serviço_ e clique em _OK_ para confirmar. Dessa forma o STCP OFTP será removido da lista de serviços do Windows. -->
 ```bash
 sc delete [nome do serviço]
 ```
@@ -101,26 +100,23 @@ Certifique-se de que o campo _Tipo_, do painel _Autenticação_, esteja com o va
 
 ![](upd-20.png)
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">10</span> &nbsp; Clique no botão _OK_ para fechar o STCP OFTP Server Config. O próximo passo é a criação do <a href="/protocols" target="_blank">serviço do STCP OFTP Server no Windows</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">10</span> &nbsp; Clique no botão _OK_ para fechar o STCP OFTP Server Config. O próximo passo é a criação do <a href="/utils/service/" target="_blank">serviço do STCP OFTP Server no Windows</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;
 
-## STCPConsole
+## STCP Console
 
-Conforme já mencionado, nas versões atualizadas do STCP OFTP Server, a console da aplicação (ícone na barra de tarefas do Windows), foi substituída pelo STCPConsole.
+Conforme já mencionado, nas versões atualizadas do STCP OFTP Server, a console da aplicação (ícone na barra de tarefas do Windows), foi substituída pelo STCP Console.
 
-O STCPConsole é um sistema que tem como principal funcionalidade permitir que sejam realizadas atividades de supervisão e gerenciamento de um determinado servidor. Estas atividades envolvem a monitoração de usuários (monitora todos os usuários ativos) e a monitoração de eventos (monitora todos os eventos do servidor).
+O STCP Console é um sistema que tem como principal funcionalidade permitir que sejam realizadas atividades de supervisão e gerenciamento de um determinado servidor. Estas atividades envolvem a monitoração de usuários (monitora todos os usuários ativos) e a monitoração de eventos (monitora todos os eventos do servidor).
 
 {{< callout type="info" >}}
-  Para utilização do STCPConsole, uma rede (TCPIP_MON_1) utilizando o protocolo "Monitor - TCP/IP" deverá estar previamente criada e configurada, na guia Redes, do STCP OFTP Server.
+  Para utilização do STCP Console, uma rede (TCPIP_MON_1) utilizando o protocolo **Monitor - TCP/IP** deverá estar previamente criada e configurada, na guia Redes, do STCP OFTP Server.
 {{< /callout >}}
 
-Para configuração e uso do STCPConsole, consulte a documentação do produto:
-(http://www.riversoft.com.br/downloads/manuais/stcp_console_ptb.pdf)
+Para configuração e uso do STCP Console, consulte a documentação do produto: [STCP Console](/utils/console/)
 
-<!-- ![](./imagem2/img29.png) -->
+>NOTA: É importante lembrar que as atividades de supervisão e gerência, dos servidores STCP OFTP, podem ser realizadas, também, pela ferramenta **STCP OFTP Web Admin**.
 
-> NOTA: É importante lembrar que as atividades de supervisão e gerência, dos servidores STCP OFTP, podem ser realizadas, também, pela ferramenta STCP OFTP Web Admin.
-
-## Configuração da Rede de Monitoração - TCPIP_MON
+## Rede de Monitoração - TCPIP_MON
 
 Para utilização do STCP Console, uma rede (Ex. **TCPIP_MON_1**) utilizando o protocolo _Monitor – TCP/IP_ deverá estar previamente criada e configurada, na guia _Redes_, do STCP OFTP Server.
 
@@ -128,34 +124,35 @@ Por padrão da aplicação, para este tipo de rede é utilizada a porta 33050, q
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp;Acesse o STCP OFTP Server Config (Iniciar - Todos os programas - Riversoft STCP OFTP Server) e na guia _Redes_ clique no botão _Adicionar_ e selecione o protocolo _Monitor – TCP/IP_. Clique no botão _OK_ para confirmar.
 
-<!-- ![](./imagem2/img30.png) -->
+![](upd-21.png)
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">2</span> &nbsp; Na janela _Propriedades da rede para monitor_, preencha o campo descrição e selecione a guia _TCP/IP_.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">2</span> &nbsp; Na janela _Propriedades da rede para Monitor_, preencha o campo descrição e selecione a guia _TCP/IP_.
 
-<!-- ![](./imagem2/img31.png) -->
+![](upd-22.png)
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">3</span> &nbsp;Realize as configurações conforme imagem abaixo.
 
-<!-- ![](./imagem2/img32.png) -->
+![](upd-23.png)
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">4</span> &nbsp;Selecione a guia _Monitor_ e preencha os campos abaixo:
 
-```
+```{filename="Usuário de monitoração"}
+
 Usuário: stcpmon
 Senha: stcpmon
 Confirmar: stcpmon
 ```
-<!-- ![](./imagem2/img33.png) -->
+![](upd-24.png)
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">5</span> &nbsp;Clique no botão _OK_ para salvar as alterações.
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">6</span> &nbsp;Clique no botão _OK_ novamente para finalizar o configurador.
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">7</span> &nbsp;Acesse o STCP OFTP Server Manager (_Iniciar - Todos os programas - Riversoft STCP OFTP Server_), selecione o serviço _Riversoft STCP OFTP Server_ e clique no botão _Reiniciar_.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">7</span> &nbsp;Acesse o **STCP OFTP Server Manager** (_Iniciar - Todos os programas - Riversoft STCP OFTP Server_), selecione o serviço do _STCP OFTP Server_ e clique no botão _Reiniciar_.
 
-<!-- ![](./imagem2/img34.png) -->
+![](upd-25.png)
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">8</span> &nbsp;Após o reinício do serviço a rede de monitoração (**TCPIP_MON_1**) já estará ativa.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">8</span> &nbsp;Após o reinício do serviço a rede de monitoração _TCPIP_MON_1_ já estará ativa.
 
 ## STCP OFTP Client
 
@@ -163,9 +160,9 @@ Confirmar: stcpmon
 
 Ao atualizar o STCP OFTP Client, para que não seja necessária a reconfiguração da aplicação e dos perfis já existentes, deverá ser feito um **backup** do arquivo de configuração da aplicação **CTCP.INI**, dos diretórios dos perfis (Ex.: **O0055RIVERSOFT**) e dos arquivos de configuração dos perfis (Ex.: **O0055RIVERSOFT.INI**) presentes no diretório de instalação da aplicação (Ex.: **C:\STCPCLT**).
 
-![](backup.png)
+![](backup.png "Arquivos que devem ser salvos")
 
-### Instalando a aplicação
+### Instalar a nova versão
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp;Clique no botão **Avançar**.
 
@@ -196,7 +193,7 @@ Pressione **Voltar** para retornar à tela anterior ou **Cancelar** para cancela
 
 ![](upd-06.png)
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">7</span> &nbsp;Na tela **Conclusão do clt-installshield**, clique no botão **Concluir** para finalizar a instalação.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">7</span> &nbsp;Na tela de conclusão do **Installshield**, clique no botão **Concluir** para finalizar a instalação.
 
 ![](upd-07.png)
 
