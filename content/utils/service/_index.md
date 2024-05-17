@@ -41,6 +41,6 @@ Também é permitido iniciar, parar e reiniciar um serviço, desde que se tenham
 <br>
 ![](service-05.png "Serviço iniciado nos serviços do Windows")
 
-Para maiores detalhes, consulte o item, <a href="/docs/stcpserver/03-util/" target="_blank">_Utilização_</a> {{< icon "arrow-top-right-on-square" >}} &nbsp; na documentação do STCP OFTP Server, para verificar como utilizar a aplicação por **linha de comando**.
+Para maiores detalhes, consulte o item, <a href="/stcpserver/03-util/" target="_blank">_Utilização_</a> {{< icon "arrow-top-right-on-square" >}} &nbsp; na documentação do STCP OFTP Server, para verificar como utilizar a aplicação por **linha de comando**.
 
 <br>

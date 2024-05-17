@@ -14,7 +14,7 @@ lastmod: 2024-05-07
 ---
 ## Introdução
 
-Nesta seção veremos os procedimentos necessários para a configuração e execução do **script VBS**, que pode ser utilizado para enviar, por e-mail, notificações de transferências de arquivos e/ou erros, através do <a href="/docs/stcpclient" target="_blank">STCP OFTP Client</a> {{< icon "arrow-top-right-on-square" >}}
+Nesta seção veremos os procedimentos necessários para a configuração e execução do **script VBS**, que pode ser utilizado para enviar, por e-mail, notificações de transferências de arquivos e/ou erros, através do <a href="/stcpclient" target="_blank">STCP OFTP Client</a> {{< icon "arrow-top-right-on-square" >}}
 
 Por se tratar de um script que utiliza uma linguagem universal (Visual Basic Scripting) e distribuída gratuitamente pela Microsoft, podemos customizá-lo para atender as mais diversas necessidades da área de monitoração, assim como filtrar as notificações e erros desejados.
 
@@ -146,3 +146,89 @@ Após as configurações e testes do script serem realizados, acesse o _STCP OFT
 ```
 1. cscript //B C:\STCPCLT\Program\stcp-notifica.vbs ERRO
 ```
+
+## Notificação por E-mail através de Scripts VBS
+
+### Introdução
+
+O STCP OFTP Server Lite/Enterprise e STCP OFTP Client nos permite a execução de processos por eventos (início e/ou fim de conexão, transmissão e/ou recepção de arquivos com sucesso, ocorrência de erros, etc.) através de linha de comandos.
+
+Por exemplo, podemos executar um script VBS - previamente configurado - para enviar e-mails para uma determinada área sempre que um arquivo for enviado e/ou recebido com sucesso. Neste mesmo cenário, outro script poderá ser executado sempre que ocorrer alguma falha de conexão ou na transferência dos arquivos. Tais scripts também podem ser utilizados para gerar Traps para um servidor SNMP ou gerar evidências no Event Viewer do sistema operacional.
+
+Este documento tem como finalidade, demonstrar os procedimentos necessários para a configuração e execução dos scripts VBS, responsáveis pelo envio de notificações por e-mail, no STCP. Por se tratar de um script que utiliza uma linguagem universal (Visual Basic Scripting) e distribuída gratuitamente pela Microsoft, podemos customizá-lo para atender as mais diversas necessidades da área de monitoração, assim como filtrar as notificações e erros desejados.
+
+### Configuração de notificações de erro por e-mail
+
+Conforme mencionado no item 1, é possível configurar o STCP para enviar uma notificação por e-mail sempre que houver algum erro no processo de conexão e/ou transferência de arquivos.
+
+Tal procedimento pode ser realizado através do script _STCPEMAILEVT.VBS_, existente na pasta *Program*, do diretório de instalação (Diretório de Controle) da aplicação (Ex C:\STCPODT\Program).
+
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp; Edite o arquivo _STCPEMAILEVT.VBS_ e preencha as informações conforme a imagem.
+
+{{< callout type="info" >}}
+Como padrão para este documento, utilizaremos o utilitário OpenSSL para realização do processo da geração e configuração do certificado digital. O OpenSSL está localizado na Pasta Program do diretório de instalação do STCP OFTP Server (Ex: C:\STCPODT\Program)
+{{< /callout >}}
+
+
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">2</span> &nbsp; Além das configurações _strMailFrom_,_strMailTo_ também deverão ser configurados os
+parâmetros referentes ao servidor SMTP.
+
+<!-- ![](./imagem/img2.png) -->
+
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">3</span> &nbsp; Salve o arquivo.
+
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">4</span> &nbsp; Para realizar a validação do funcionamento do script e do servidor SMTP, acesse o "Prompt de
+Comando" e digite o comando abaixo. Caso nenhuma mensagem de erro seja apresentada,
+verifique se os e-mails foram recebidos nas contas indicadas.
+```
+cscript C:\STCPODT\Program\STCPEMAILEVT.VBS NOME-SERVIDOR MSG1 MSG2
+```
+<!-- ![](./imagem/img3.png) -->
+
+Após a configuração e testes do script VBS, uma alteração nas Propriedades de Log do STCP (vide imagem abaixo) será necessária, habilitando a execução de um comando externo sempre ocorrer eventos que contenham algum erro (Nível de log = 1) e informando a linha de comando abaixo no parâmetro “Comando externo”.
+```
+cscript //B C:\STCPODT\Program\STCPEMAILEVT.VBS NOME-SERVIDOR
+```
+Nota: Observe que logo após o nome do servidor será necessário inserir uma aspas duplas (abre aspas).
+
+<!-- ![](./imagem/img4.png) -->
+
+Após a execução destes procedimentos, clique no botão OK para salvar as alterações e reinicie o serviço do Riversoft STCP OFTP Server para que as estas sejam ativadas.
+
+Uma vez realizadas as configurações com êxito, um e-mail será encaminhado para os destinatários informados no script sempre que um erro ocorrer no processo de transferência de arquivos.
+
+### Configuração de notificações de envio/recebimento de arquivos
+
+Dentre várias outras possibilidades, além das notificações de erro apresentadas no item 2 deste procedimento, também é possível gerar notificações para alertar o envio e/ou recebimento (com sucesso) de arquivos.
+
+Tal procedimento pode ser realizado através do script “stcpemail.vbs”, existente na pasta “Program”, do diretório de instalação (Diretório de Controle) da aplicação (Ex C:\STCPODT\Program).
+
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp; Edite o arquivo “stcpemail.vbs” e preencha os parâmetros referentes ao servidor SMTP
+
+<!-- ![](./imagem/img5.png) -->
+
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">2</span> &nbsp;Salve o arquivo.
+
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">3</span> &nbsp; Para realizar a validação do funcionamento do script e do servidor SMTP, acesse o "Prompt de Comando" e digite o comando abaixo. Caso nenhuma mensagem de erro seja apresentada, verifique se os e-mails foram recebidos nas contas indicadas.
+
+```
+cscript //B C:\STCPODT\Program\ stcpemail.vbs de@dominio.com.br para@dominio.com.br nome-arquivo-teste
+```
+<!-- ![](./imagem/img6.png) -->
+
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">4</span> &nbsp; Acesse o STCP OFTP Server Config (Iniciar – Todos os programas – Riversoft STCP OFTP Server – Riversoft STCP OFTP Server Config) e na guia “Usuários”, selecione o usuário desejado e clique no botão “Propriedades”.
+
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">5</span> &nbsp; Na janela de propriedades do usuário selecionado, na guia “Tipos de arquivos” selecione o tipo “default” ou o tipo de arquivo desejado e clique no botão “Propriedades”.
+
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">6</span> &nbsp; Na janela de propriedades do tipo de arquivo desejado, no grupo “Características da transmissão”, preencha o parâmetro “Executar comando externo” com a linha de comando abaixo:
+
+```
+cscript //B C:\STCPODT\Program\stcpemail.vbs “de@dominio.com.br” para@dominio.com.br $LFNAME
+```
+Nota: Na linha de comando utilizamos a variável interna do STCP, **$LFNAME**, que nos contém o nome completo do arquivo local. A relação completa das variáveis internas do STCP OFTP Server pode ser obtida no item “Definição das variáveis internas do STCP OFTP Server”, no link: [variáveis internas do STCP](/utils/variables/).
+
+<!-- ![](./imagem/img7.png) -->
+
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">7</span> &nbsp; Clique no botão **OK** para salvar as alterações.
+
+Uma vez realizadas as configurações com êxito, um e-mail será encaminhado para o destinatário informado, sempre que um arquivo for transmitido com sucesso. O mesmo procedimento poderá ser utilizado para implantar notificações também na recepção de arquivos.

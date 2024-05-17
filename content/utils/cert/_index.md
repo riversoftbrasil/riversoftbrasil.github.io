@@ -9,11 +9,11 @@ weight: 4
 prev: /database
 next: /proxy
 draft: false
-lastmod: 2024-05-07
+lastmod: 2024-05-17
 ---
 ## Certificado digital emitido por uma autoridade certificadora (CA)
 
-Veremos abaixo os procedimentos necessários para configuração do <a href="/docs/stcpserver" target="_blank">Riversoft STCP OFTP Server</a> {{< icon "arrow-top-right-on-square" >}} e <a href="/docs/stcpclient" target="_blank">Riversoft STCP OFTP Client</a> {{< icon "arrow-top-right-on-square" >}}&nbsp; utilizando certificado emitido por uma **Autoridade Certificadora**.
+Veremos abaixo os procedimentos necessários para configuração do <a href="/stcpserver" target="_blank">Riversoft STCP OFTP Server</a> {{< icon "arrow-top-right-on-square" >}} e <a href="/stcpclient" target="_blank">Riversoft STCP OFTP Client</a> {{< icon "arrow-top-right-on-square" >}}&nbsp; utilizando certificado emitido por uma **Autoridade Certificadora**.
 
 ### Geração da CSR
 
@@ -58,8 +58,7 @@ openssl req -new -key C:\STCPODT\Keys\chaveprivada.key > C:\STCPODT\Keys\solicit
 ### Solicitação do certificado SSL
 A CSR, gerada no passo anterior, deverá ser encaminhada para a entidade certificadora conforme procedimentos fornecidos por essa. Para maiores dúvidas referente ao envio da CSR entre em contato com seu agente de contas junto à entidade certificadora.
 
-Faça uma cópia de segurança de sua chave privada e do CSR, e guarde-as em local seguro.
-Nenhuma cópia de sua chave privada deverá ser distribuída e/ou solicitada por terceiros.
+Faça uma cópia de segurança de sua chave privada e do CSR, e guarde-as em local seguro. Nenhuma cópia de sua chave privada deverá ser distribuída e/ou solicitada por terceiros.
 
 ### Instalação e Configuração do certificado SSL
 
@@ -67,11 +66,14 @@ Uma vez Aprovado e Emitido, o contato técnico responsável do processo de certi
 
 Para maiores dúvidas referente ao processo de instalação e configuração entre em contato com o seu agente de suporte (CA) e/ou com a sua equipe de segurança.
 
-<!-- ![](./imagem/img4.png) -->
+{{< callout type="warning" >}}
+Este procedimento não tem como objetivo descrever o processo de instalação e configuração do certificado adquirido e sim os passos necessários para utilização desse certificado junto ao Riversoft STCP OFTP Server e Riversoft STCP OFTP Client.
+{{< /callout >}}
+
 
 ### Configuração do certificado SSL no STCP OFTP Server
 
-Para que seja possível configurar o STCP OFTP Server Enterprise/Lite, a fim de utilizar o certificado digital emitido por uma Autoridade Certificadora, será necessário possuir às chaves pública e privada e realizar os procedimentos descritos abaixo.
+Para que seja possível configurar o STCP OFTP Server Enterprise/Lite, a fim de utilizar o certificado digital emitido por uma Autoridade Certificadora, será necessário possuir às **chaves pública e privada** e realizar os procedimentos descritos abaixo.
 
 * Chave pública
 
@@ -86,24 +88,26 @@ A chave privativa (arquivo .key ou .pem) do certificado deverá ser copiada para
 
 > NOTA: Em alguns casos, onde o arquivo do certificado está no formato PFX, o processo de conversão para o formato PEM será necessário. É possível realizar a conversão usando o OpenSSL, disponível na pasta Program, do diretório de instalação do STCP OFTP Server/Lite (Ex. C:\STCPODT\Program).
 Para mais detalhes consulte: (https://www.openssl.org/docs/apps/pkcs12.html)
-```
+
+```{filename="Chave Privativa"}
+
 openssl pkcs12 -in C:\TEMP\empresateste.com.br.pfx -out C:\TEMP\private-key.pem -nodes
 ```
-<!-- ![](./imagem/img5.png) -->
+![](cert-01.png)
 
 ### Configuração da Rede
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp; No menu, Iniciar > Todos os programas > Riversoft STCP OFTP Server, acesse o STCP OFTP Server Config.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp; No menu, *Iniciar > Todos os programas > Riversoft STCP OFTP Server*, acesse o **STCP OFTP Server Config**.
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">2</span> &nbsp;Na guia Redes selecione a rede desejada e clique no botão Propriedades.
 
-<!-- ![](./imagem/img6.png) -->
+![](cert-02.png)
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">3</span> &nbsp; Na janela Propriedades da rede, selecione a guia SSL3 (Openssl) e no grupo Chave privativa, informe os parâmetros Chave e Certificado.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">3</span> &nbsp; Na janela Propriedades da rede, selecione a guia *TLS* e no grupo *Chave privativa*, informe os parâmetros *Chave e Certificado*.
 
 > NOTA: Caso o certificado tenha sido instalado em um servidor Microsoft IIS, previamente será necessária a exportação do certificado para um arquivo PFX e a conversão desse arquivo para o formato PEM através do utilitário OpenSSL¹.
 
-<!-- ![](./imagem/img7.png) -->
+![](cert-03.png)
 
 PARAMÊTROS | DESCRIÇÃO
 :---       | :---
@@ -114,13 +118,11 @@ Certificado| Preencha este campo com o nome do arquivo (caminho completo) onde s
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">5</span> &nbsp; Reinicie o serviço do Riversoft STCP OFTP Server para que as alterações sejam aplicadas.
 
--------
-
 ### Geração do hash do certificado para uso no STCP OFTP Client
 
 Anterior ao processo de configuração do certificado no STCP OFTP Client, será necessária obter uma cópia da cadeia de certificados, a partir do certificado assinado e enviado pela entidade certificadora e o realizar o renomeio de cada certificado dessa hierarquia para o seu hash correspondente.
 
-> NOTA: Caso você já possua os certificados raíz e intermediário vá para o passo 10.
+<!-- > NOTA: Caso você já possua os certificados raíz e intermediário vá para o passo 10. -->
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp; Faça uma cópia do certificado, encaminhado pela certificadora, para um diretório temporário do servidor onde o STCP OFTP Server está instalado (Ex. C:\TEMP)
 
@@ -154,7 +156,8 @@ Anterior ao processo de configuração do certificado no STCP OFTP Client, será
 
 > NOTA: Neste exemplo serão gerados mais dois arquivos no diretório temporário (Ex. root_certificate.cer e intermediate_certificate.cer).
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">11</span> &nbsp; Acesse a pasta “Program” do diretório de instalação do Riversoft STCP OFTP Server (Ex. C:\STCPODT\Program) e em seguida, para gerar o _hash_, digite a linha de comando:
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">11</span> &nbsp; Acesse a pasta *Program* do diretório de instalação do Riversoft STCP OFTP Server (Ex. C:\STCPODT\Program) e em seguida, para gerar o _hash_, digite a linha de comando:
+
 ```
 openssl x509 –noout –hash -in C:\TEMP\root_certificate.cer
 ```
@@ -173,7 +176,7 @@ openssl x509 –noout –hash -in C:\TEMP\root_certificate.cer
 
 ### Configuração do certificado SSL no STCP OFTP Client
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp; No menu, Iniciar > Todos os programas > Riversoft STCP OFTP Client, acesse o STCP OFTP Client Config.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp; No menu, *Iniciar > Todos os programas > Riversoft STCP OFTP Client*, acesse o STCP OFTP Client Config.
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">2</span> &nbsp; Na guia Perfis selecione o perfil desejado e clique no botão Propriedades
 
@@ -193,88 +196,7 @@ Diretório  | Preencha este campo com o nome do diretório (caminho completo) on
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">6</span> &nbsp; Realize os testes de conexão ao *STCP OFTP Server* através do *STCP OFTP Client*
 
-## STCP OFTP - Notificação por E-mail através de Scripts VBS
 
-### Introdução
-
-O STCP OFTP Server Lite/Enterprise e STCP OFTP Client nos permite a execução de processos por eventos (início e/ou fim de conexão, transmissão e/ou recepção de arquivos com sucesso, ocorrência de erros, etc.) através de linha de comandos.
-
-Por exemplo, podemos executar um script VBS - previamente configurado - para enviar e-mails para uma determinada área sempre que um arquivo for enviado e/ou recebido com sucesso. Neste mesmo cenário, outro script poderá ser executado sempre que ocorrer alguma falha de conexão ou na transferência dos arquivos. Tais scripts também podem ser utilizados para gerar Traps para um servidor SNMP ou gerar evidências no Event Viewer do sistema operacional.
-
-Este documento tem como finalidade, demonstrar os procedimentos necessários para a configuração e execução dos scripts VBS, responsáveis pelo envio de notificações por e-mail, no STCP. Por se tratar de um script que utiliza uma linguagem universal (Visual Basic Scripting) e distribuída gratuitamente pela Microsoft, podemos customizá-lo para atender as mais diversas necessidades da área de monitoração, assim como filtrar as notificações e erros desejados.
-
-### Configuração de notificações de erro por e-mail
-
-Conforme mencionado no item 1, é possível configurar o STCP para enviar uma notificação por e-mail sempre que houver algum erro no processo de conexão e/ou transferência de arquivos.
-
-Tal procedimento pode ser realizado através do script _STCPEMAILEVT.VBS_, existente na pasta *Program*, do diretório de instalação (Diretório de Controle) da aplicação (Ex C:\STCPODT\Program).
-
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp; Edite o arquivo _STCPEMAILEVT.VBS_ e preencha as informações conforme a imagem.
-
-<!-- ![](./imagem/img1.png) -->
-
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">2</span> &nbsp; Além das configurações _strMailFrom_,_strMailTo_ também deverão ser configurados os
-parâmetros referentes ao servidor SMTP.
-
-<!-- ![](./imagem/img2.png) -->
-
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">3</span> &nbsp; Salve o arquivo.
-
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">4</span> &nbsp; Para realizar a validação do funcionamento do script e do servidor SMTP, acesse o "Prompt de
-Comando" e digite o comando abaixo. Caso nenhuma mensagem de erro seja apresentada,
-verifique se os e-mails foram recebidos nas contas indicadas.
-```
-cscript C:\STCPODT\Program\STCPEMAILEVT.VBS NOME-SERVIDOR MSG1 MSG2
-```
-<!-- ![](./imagem/img3.png) -->
-
-Após a configuração e testes do script VBS, uma alteração nas Propriedades de Log do STCP (vide imagem abaixo) será necessária, habilitando a execução de um comando externo sempre ocorrer eventos que contenham algum erro (Nível de log = 1) e informando a linha de comando abaixo no parâmetro “Comando externo”.
-```
-cscript //B C:\STCPODT\Program\STCPEMAILEVT.VBS NOME-SERVIDOR
-```
-Nota: Observe que logo após o nome do servidor será necessário inserir uma aspas duplas (abre aspas).
-
-<!-- ![](./imagem/img4.png) -->
-
-Após a execução destes procedimentos, clique no botão OK para salvar as alterações e reinicie o serviço do Riversoft STCP OFTP Server para que as estas sejam ativadas.
-
-Uma vez realizadas as configurações com êxito, um e-mail será encaminhado para os destinatários informados no script sempre que um erro ocorrer no processo de transferência de arquivos.
-
-### Configuração de notificações de envio/recebimento de arquivos
-
-Dentre várias outras possibilidades, além das notificações de erro apresentadas no item 2 deste procedimento, também é possível gerar notificações para alertar o envio e/ou recebimento (com sucesso) de arquivos.
-
-Tal procedimento pode ser realizado através do script “stcpemail.vbs”, existente na pasta “Program”, do diretório de instalação (Diretório de Controle) da aplicação (Ex C:\STCPODT\Program).
-
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp; Edite o arquivo “stcpemail.vbs” e preencha os parâmetros referentes ao servidor SMTP
-
-<!-- ![](./imagem/img5.png) -->
-
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">2</span> &nbsp;Salve o arquivo.
-
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">3</span> &nbsp; Para realizar a validação do funcionamento do script e do servidor SMTP, acesse o "Prompt de Comando" e digite o comando abaixo. Caso nenhuma mensagem de erro seja apresentada, verifique se os e-mails foram recebidos nas contas indicadas.
-
-```
-cscript //B C:\STCPODT\Program\ stcpemail.vbs de@dominio.com.br para@dominio.com.br nome-arquivo-teste
-```
-<!-- ![](./imagem/img6.png) -->
-
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">4</span> &nbsp; Acesse o STCP OFTP Server Config (Iniciar – Todos os programas – Riversoft STCP OFTP Server – Riversoft STCP OFTP Server Config) e na guia “Usuários”, selecione o usuário desejado e clique no botão “Propriedades”.
-
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">5</span> &nbsp; Na janela de propriedades do usuário selecionado, na guia “Tipos de arquivos” selecione o tipo “default” ou o tipo de arquivo desejado e clique no botão “Propriedades”.
-
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">6</span> &nbsp; Na janela de propriedades do tipo de arquivo desejado, no grupo “Características da transmissão”, preencha o parâmetro “Executar comando externo” com a linha de comando abaixo:
-
-```
-cscript //B C:\STCPODT\Program\stcpemail.vbs “de@dominio.com.br” para@dominio.com.br $LFNAME
-```
-Nota: Na linha de comando utilizamos a variável interna do STCP, **$LFNAME**, que nos contém o nome completo do arquivo local. A relação completa das variáveis internas do STCP OFTP Server pode ser obtida no item “Definição das variáveis internas do STCP OFTP Server”, no link: [variáveis internas do STCP](/docs/stcpserver/02-config/#definição-das-variáveis-internas-do-stcp-oftp-server).
-
-<!-- ![](./imagem/img7.png) -->
-
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">7</span> &nbsp; Clique no botão **OK** para salvar as alterações.
-
-Uma vez realizadas as configurações com êxito, um e-mail será encaminhado para o destinatário informado, sempre que um arquivo for transmitido com sucesso. O mesmo procedimento poderá ser utilizado para implantar notificações também na recepção de arquivos.
 
 
 
