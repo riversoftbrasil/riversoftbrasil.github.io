@@ -38,14 +38,14 @@ layout: hextra-home
         title="STCP OFTP Server"
         icon="cog"
         subtitle="Servidor de transferência de arquivos seguro e multiprotocolo para aplicações de e-business e troca de informações corporativas, baseado na especificação OFTP."
-        link="docs/stcpserver"
+        link="/stcpserver"
     >}}
 
     {{< feature-card
         title="STCP OFTP Client"
         icon="desktop-computer"
         subtitle="Client é um cliente de transferência de arquivos seguro e multiprotocolo para aplicações de e-business e troca de informações corporativas, baseado na especificação OFTP."
-        link="docs/stcpclient"
+        link="/stcpclient"
     >}}
 
 
@@ -53,7 +53,7 @@ layout: hextra-home
         title="STCP Directlink"
         icon="code"
         subtitle="Aplicação integrada aos produtos STCP OFTP Server (Windows) ou STCP Gemini Server (Linux), com uma solução simples e robusta, através dos protocolos HTTPS e SFTP."
-        link="docs/stcpdirectlink"
+        link="/stcpdirectlink"
     >}}
 
     {{< feature-card
