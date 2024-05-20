@@ -7,10 +7,10 @@ cascade:
 sidebar:
   exclude: false
 weight: 13
-prev: /cert
-next: /debug
+prev: /service
+next: /conection
 draft: false
-lastmod: 2024-05-15
+lastmod: 2024-05-20
 ---
 ## O que é?
 
@@ -63,7 +63,7 @@ remover visões, monitorar usuários e eventos, etc.
 | Comunicação segura | Esta opção habilita ou inibe a utilização de criptografia na comunicação com o servidor. <br>**Nativa (Básica):** configura a comunicação segura com criptografia com nível de segurança básico. <br>**Nativa (Média):** configura a comunicação segura com criptografia com nível de segurança médio. <br> **Nativa (Alta):** configura a comunicação segura com criptografia com nível de segurança alto. <br> **SSL3:** configura a comunicação segura com criptografia e certificação digital, com a utilização da padronização definida na RFC2246 (TLS1/SSL3). O TLS1/SSL3 é comumente encontrado nos servidores de sites seguros (HTTPS) e oferece o maior grau de segurança atualmente disponível. |
 
 {{< callout type="info" >}}
-Obs.: antes de habilitar uma destas opções de comunicação, confirme se o servidor com quem você deseja se comunicar suporta esta característica.
+Antes de habilitar uma destas opções de comunicação, confirme se o servidor com quem você deseja se comunicar suporta esta característica.
 {{< /callout >}}
 
 | Parâmetro      | Descrição |

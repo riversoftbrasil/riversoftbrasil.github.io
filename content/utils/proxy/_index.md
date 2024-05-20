@@ -10,11 +10,11 @@ weight: 5
 prev: /cert
 next: /debug
 draft: false
-lastmod: 2024-05-07
+lastmod: 2024-05-20
 ---
 # Configurar um servidor proxy para conexão
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp; Acesse o **Riversoft STCP OFTP Client Config**: **(Iniciar -> Todos os programas -> Riversoft STCP OFTP Client)**
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp; Acesse o *Riversoft STCP OFTP Client Config*: *(Iniciar -> Todos os programas -> Riversoft STCP OFTP Client)*
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">2</span> &nbsp; Selecione o perfil desejado na guia **Perfis** e clique em **Propriedades**.
 

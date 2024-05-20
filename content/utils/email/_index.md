@@ -8,7 +8,7 @@ sidebar:
   exclude: false
 weight: 9
 prev: /events
-next: utils/requirements
+next: /protocols
 draft: false
 lastmod: 2024-05-07
 ---

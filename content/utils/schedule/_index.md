@@ -8,9 +8,9 @@ sidebar:
   exclude: false
 weight: 7
 prev: /debug
-next: /protocols
+next: /events
 draft: false
-lastmod: 2024-05-07
+lastmod: 2024-05-20
 ---
 # Configurar um agendamento
 
@@ -18,9 +18,9 @@ Nesta seção veremos como configurar a execução automática do Riversoft STCP
 
 Para executar automaticamente a aplicação de transferência de arquivos, devemos realizar os seguintes passos de configuração das tarefas agendadas do sistema operacional:
 
-{{< icon "arrow-long-right" >}}&nbsp; Acesse o **Agendador de Tarefas** dentro de **Ferramentas Administrativas**.
+{{< icon "chevron-right" >}}&nbsp; Acesse o **Agendador de Tarefas** dentro de **Ferramentas Administrativas**.
 
-{{< icon "arrow-long-right" >}}&nbsp; Clique em **Criar Tarefa** no painel **Ações**.
+{{< icon "chevron-right" >}}&nbsp; Clique em **Criar Tarefa** no painel **Ações**.
 
 ![](clt-agenda-01.png)
 

@@ -7,10 +7,10 @@ cascade:
 sidebar:
   exclude: false
 weight: 10
-prev: /schedule
-next: /events
+prev: /email
+next: utils/requirements
 draft: false
-lastmod: 2024-05-07
+lastmod: 2024-05-20
 ---
 ## OFTP
 

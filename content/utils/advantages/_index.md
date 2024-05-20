@@ -8,8 +8,8 @@ cascade:
 sidebar:
   exclude: false
 weight: 15
-prev: utils/events
-next: utils/requirements
+prev: /conection
+next: /variables
 draft: false
 lastmod: 2024-05-07
 ---

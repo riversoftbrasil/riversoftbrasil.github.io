@@ -9,7 +9,7 @@ sidebar:
   exclude: false
 weight: 12
 prev: utils/requirements
-next: /conection
+next: /console
 draft: false
 lastmod: 2024-05-10
 ---

@@ -8,12 +8,12 @@ cascade:
 sidebar:
   exclude: false
 weight: 16
-prev: /conection
+prev: /advantages
 next:
 draft: false
 lastmod: 2024-05-10
 ---
-## Variáveis internas do STCP OFTP Server
+## STCP OFTP Server
 
 As variáveis internas do STCP OFTP Server podem ser utilizadas como parâmetros para os comandos externos.
 

@@ -7,10 +7,10 @@ cascade:
 sidebar:
   exclude: false
 weight: 11
-prev: /email
-next: /conection
+prev: /protocols
+next: /service
 draft: false
-lastmod: 2024-05-07
+lastmod: 2024-05-20
 ---
 ## STCP OFTP Server
 

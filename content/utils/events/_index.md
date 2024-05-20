@@ -7,10 +7,10 @@ cascade:
 sidebar:
   exclude: false
 weight: 8
-prev: /protocols
+prev: /schedule
 next: /email
 draft: false
-lastmod: 2024-05-07
+lastmod: 2024-05-20
 ---
 ## Códigos de eventos gerados no arquivo de mensagens
 
@@ -806,11 +806,11 @@ Código| Descrição
 19515 | Falha interna.
 
 ----
-## **Códigos de erro da interface de comunicação TCP/IP (Criptografia SSL3)**
+## **Códigos de erro da interface de comunicação TCP/IP (Criptografia e segurança TLS)**
 
 Código| Descrição
 :---  | :---
-20001 | A negociação do protocolo SSL3 não foi concluída com sucesso.
+20001 | A negociação do protocolo TLS não foi concluída com sucesso.
 20002 | O protocolo está aguardando uma leitura.
 20003 | O protocolo está aguardando uma escrita.
 20004 | O protocolo está aguardando verificação do certificado (X509).
@@ -818,13 +818,13 @@ Código| Descrição
 20006 | O protocolo está em operação.
 20007 | O protocolo está aguardando um comando de CONNECT.
 20008 | O protocolo está aguardando um comando de ACCEPT.
-20851 | Falha de alocação de contexto para SSL3.
+20851 | Falha de alocação de contexto para TLS.
 20852 | Lista de algoritmos inválidos.
 20853 | Certificado inválido ou não encontrado.
 20854 | Arquivo de chave privativa inválido ou não encontrado.
 20855 | Arquivo de certificado inválido para a chave privativa.
 20856 | Diretório dos arquivos de certificados CA inválido ou não existe.
 20857 | Diretório dos arquivos de certificados inválido ou não existe.
-20858 | Contexto de conexão SSL3 inválido.
-20859 | Falha ao configurar o descritor da conexão SSL3.
+20858 | Contexto de conexão TLS inválido.
+20859 | Falha ao configurar o descritor da conexão TLS.
 
