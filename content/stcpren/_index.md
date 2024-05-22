@@ -1,6 +1,5 @@
 ---
 linkTitle: STCP Rename
-title: Introdução
 layout: docs
 toc: true
 cascade:
@@ -11,7 +10,7 @@ weight: 7
 prev:
 next:
 # draft: false
-lastmod: 2024-02-28
+lastmod: 2024-05-21
 ---
 ## Introdução
 
@@ -23,7 +22,7 @@ O STCPRen pode ser utilizado na integração do STCP OFTP Server ou STCP OFTP Cl
 
 No cenário apresentado abaixo, mostramos a integração da estrutura de diretórios de transferência do STCP OFTP Client com a de incorporação e geração de arquivos financeiros de um sistema de ERP.
 
-![](./imagem/img1.png)
+![](stcpren-01.png)
 
 As regras de validação e das ações (renomeio, cópia, backup, etc) deverão ser armazenadas em um ou mais arquivos de configuração.
 
@@ -65,7 +64,8 @@ Do Inglês _**H**yper**T**ext **T**ransfer **P**rotocol_. Protocolo usado para t
 O ISDN (Integrated Services Digital Network) é um sistema de conexões de telefone digital.
 
 **L**
-_**Log**_
+
+**Log**
 Registro de atividades por programas de computador. No caso de logs relativos a incidentes de segurança, eles normalmente são gerados por _firewalls_ ou por IDSs.
 
 **M**
@@ -110,9 +110,9 @@ Este é um formato de nome de arquivo que é usado para especificar a localizaç
 
 ## Referências
 
-Disponível em: (<http://www.tech-faq.com/lang/pt/ppp.shtml>). *Acesso em: 20 de julho de 2007*
+Disponível em: (<http://www.tech-faq.com/lang/pt/ppp.shtml>)
 <br>
-Disponível em: (<http://cartilha.cert.br/glossario/>). *Acesso em: 20 de julho de 2007*
+Disponível em: (<http://cartilha.cert.br/glossario/>)
 <br>
-Disponível em: (<http://www.iwebtool.com/what_is_unc.html>). *Acesso em: 20 de julho de 2007*
+Disponível em: (<http://www.iwebtool.com/what_is_unc.html>)
 

@@ -11,7 +11,7 @@ prev:
 next:
 slug: msgs-stcpren
 draft: false
-# lastmod: 
+lastmod: 2024-05-21
 ---
 ## Códigos de Eventos
 
