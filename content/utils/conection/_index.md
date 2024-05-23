@@ -7,10 +7,10 @@ cascade:
 sidebar:
   exclude: false
 weight: 14
-prev: /conection
+prev: /console
 next: /advantages
 draft: false
-lastmod: 2024-05-20
+lastmod: 2024-05-23
 ---
 ## Telnet
 

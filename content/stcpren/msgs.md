@@ -1,5 +1,5 @@
 ---
-linkTitle: Códigos e eventos
+linkTitle: Códigos de eventos
 layout: docs
 toc: true
 cascade:

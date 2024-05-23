@@ -12,7 +12,7 @@ prev:
 next:
 draft: false
 slug: config
-lastmod: 2024-05-21
+lastmod: 2024-05-23
 ---
 A configuração das regras de validação do nome de arquivo e as ações executadas pelo STCPRen podem ser criadas com o auxílio do programa *STCPRenCfg.EXE* ou de um editor de texto, por exemplo, *NOTEPAD.EXE*.
 
@@ -42,7 +42,7 @@ Nesta seção veremos como utilizar o programa *STCPRenCfg.EXE* para criar ou ed
 
 ![](stcpren-07.png)
 
-## Como alterar os parâmetros de configuração do arquivo de regras
+## Alterar os parâmetros de configuração do arquivo de regras
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp;Selecione o arquivo de configuração desejado e clique no botão **Propriedades**.
 
@@ -54,18 +54,18 @@ Nesta seção veremos como utilizar o programa *STCPRenCfg.EXE* para criar ou ed
 
 Parâmetro| Descrição
 :---     | :---
-**ScanDir**  | Define o nome do diretório para varredura. /Obs.: Este parâmetro será utilizado somente se a opção –scan for definida na linha de comando do STCPRen.
+**ScanDir**  | Define o nome do diretório para varredura. <br> Obs.: Este parâmetro será utilizado somente se a opção –scan for definida na linha de comando do STCPRen.
 **ScanDirRegEx**| Define uma expressão regular para validar os subdiretórios que serão processados na varredura.
 **ScanDirRegExNeg**| Define uma expressão regular para validar os diretórios que não serão excluídos da varredura.
-**ScanLockSem**| Define um nome de semáfora para sincronização do modo de varredura. /Obs.: Utilizado para sincronizar a execução de múltiplos processos do STCPREN. Válido somente com o uso da opção -scan.
+**ScanLockSem**| Define um nome de semáfora para sincronização do modo de varredura. <br> Obs.: Utilizado para sincronizar a execução de múltiplos processos do STCPREN. Válido somente com o uso da opção -scan.
 **ScanLockSemTimeout**| Intervalo entre as execuções das instâncias do STCPRen.
 **ScanLockSemOptions**| Executa uma instância por vez.
 **ScanFirstRule**     | Define a primeira regra de validação do nome do arquivo a ser executada.
-**ScanSubDir**        | Define se os subdiretórios serão verificados./ 0 = Não /1 = Sim
-**ScanCheckFileInUse**| Habilita/desabilita a verificação se o arquivo está em uso. /0 = Não /1 = Sim
+**ScanSubDir**        | Define se os subdiretórios serão verificados. <br> 0 = Não <br> 1 = Sim
+**ScanCheckFileInUse**| Habilita/desabilita a verificação se o arquivo está em uso. <br> 0 = Não <br> 1 = Sim
 **MaxRetries**        | Define o número de tentativas a serem realizadas antes de abandonar a operação (cópia, criação de diretório e apagar).
 **DelayRetry**        | Define o tempo de espera (em milisegundos) antes de realizar uma nova tentativa de operação (cópia, criação de diretório e apagar).
-**LogErrorOption**    | Define a opção de registro dos eventos de falha na localização de um diretório ou arquivo. /0 = Não registra /1 = Registra se o arquivo não existir /2 = Registra se o diretório não existir /3 = Registra se arquivo ou diretório não existirem
+**LogErrorOption**    | Define a opção de registro dos eventos de falha na localização de um diretório ou arquivo. <br> 0 = Não registra <br> 1 = Registra se o arquivo não existir <br> 2 = Registra se o diretório não existir <br> 3 = Registra se arquivo ou diretório não existirem
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">3</span> &nbsp;Na guia **Acesso**, é possível configurar os parâmetros para utilização de um compartilhamento de rede.
 
@@ -93,7 +93,7 @@ Parâmetro | Descrição
 **MessageFile** | Define o diretório para criação do arquivo de mensagem geral.
 **MessageFileUser**| Define o diretório para criação do arquivo de mensagem do usuário.
 **Verbose** | Define o nível de informação a ser armazenada.
-**UserLog**| Define se as mensagens serão geradas por usuário: /0 = Log geral /1 = Log por usuário
+**UserLog**| Define se as mensagens serão geradas por usuário: <br> 0 = Log geral <br> 1 = Log por usuário
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">5</span> &nbsp;Na guia **Variáveis**, você pode definir regras de substituição dos valores informados nas variáveis (–var0 à –var9) utilizados na linha de comando do STCPRen.
 
@@ -109,12 +109,12 @@ Parâmetro | Descrição
 
 Parâmetro | Descrição
 :---      | :---
-**$Var**  | Define a identificação da variável que será utilizada. /Valor: 0 a 9.
-**Ocorrência**| Define a sequência de execução da substituição. /Valor: 0 a 999
+**$Var**  | Define a identificação da variável que será utilizada. <br> Valor: 0 a 9.
+**Ocorrência**| Define a sequência de execução da substituição. <br> Valor: 0 a 999
 **Descrição**| Define o nome da regra de substituição.
 **RegExReplaceFrom**| Define a expressão regular para selecionar o que será substituído.
 **RegExReplaceTo**| Define o valor para substituição.
-**RegExReplaceOcorr**| Define a quantidade de repetições da substituição: /0 = Todas
+**RegExReplaceOcorr**| Define a quantidade de repetições da substituição: <br> 0 = Todas
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">8</span> &nbsp;Na guia **Listas**, você pode substituir as linhas do arquivo pelos valores das variáveis (-var0 à -var9) ou através de uma expressão regular criando regras de substituição.
 
@@ -122,7 +122,7 @@ O arquivo de lista pode conter nomes de diretórios ou arquivos que serão proce
 
 ![](stcpren-15.png)
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">9</span> &nbsp;Clique no botão **Adicionar** para configurar uma nova **regra desubstituição através de uma variável**.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">9</span> &nbsp;Clique no botão **Adicionar** para configurar uma nova **regra de substituição através de uma variável**.
 
 ![](stcpren-16.png)
 
@@ -132,7 +132,7 @@ O arquivo de lista pode conter nomes de diretórios ou arquivos que serão proce
 
 Parâmetro | Descrição
 :---      | :---
-**Ocorrência**| Define a sequência de execução da substituição. /Valor: 0 a 999
+**Ocorrência**| Define a sequência de execução da substituição. <br> Valor: 0 a 999
 **Descrição** | Define o nome da regra de substituição.
 **VarReplaceFileNamePosFrom**| Modifica o novo nome do arquivo com parte do valor da variável (var0,var1, ..., varn) a partir da posição de origem definida.
 **VarReplaceFileNamePosTo**  | Modifica o novo nome do arquivo com parte do valor da variável (var0,var1, ..., varn) para a posição de destino definida.
@@ -149,11 +149,11 @@ Parâmetro | Descrição
 
 Parâmetro     | Descrição
 :---          | :---
-**Ocorrência**| Define a sequência de execução da substituição. /Valor: 0 a 999
+**Ocorrência**| Define a sequência de execução da substituição. <br> Valor: 0 a 999
 **Descrição** | Define o nome da regra de substituição.
 **RegExReplaceFrom**| Define a expressão regular para selecionar os dados que serão substituídos.
 **RegExReplaceTo**  | Define o valor para substituição.
-**RegExReplaceOcorr**| Define a quantidade de repetições da substituição: /0 = Todas
+**RegExReplaceOcorr**| Define a quantidade de repetições da substituição: <br> 0 = Todas
 
 ## Criar e modificar as Regras de Validação dos nomes de arquivos
 
@@ -210,9 +210,9 @@ Parâmetro | Descrição
 **DestinationUser**| Nome do usuário/módulo de destino do STCP OFTP (opcional).
 **SourceUser**| Nome do usuário/módulo de origem do STCP OFTP (opcional).
 **NextSection**| Define a próxima seção de processamento a ser executada para esta regra. O nome do arquivo para processamento é o mesmo do início da regra.
-**RemoveAfterCopy**| Ativa ou inibe a remoção do arquivo: /Não = Não remove o arquivo /Sim = Remove o arquivo
-**RemoveAfterHours**| Remove o arquivo somente se o último acesso tiver ocorrido antes da quantidade de horas estabelecida neste parâmetro:/0 = Remove imediatamente />0 = Remove após a quantidade de horas especificada.
-**Overwrite**| Ativa ou inibe a sobreposição do arquivo: /Não = Não sobrepõe /Sim = Sobrepõe /Obs: Veja a opção de CopyFileOption e BackupFileOption para habilitar a sobreposição em cada operação individualmente.
+**RemoveAfterCopy**| Ativa ou inibe a remoção do arquivo: <br> Não = Não remove o arquivo <br> Sim = Remove o arquivo
+**RemoveAfterHours**| Remove o arquivo somente se o último acesso tiver ocorrido antes da quantidade de horas estabelecida neste parâmetro: <br> 0 = Remove imediatamente <br> 0 = Remove após a quantidade de horas especificada.
+**Overwrite**| Ativa ou inibe a sobreposição do arquivo: <br> Não = Não sobrepõe <br> Sim = Sobrepõe <br> Obs: Veja a opção de CopyFileOption e BackupFileOption para habilitar a sobreposição em cada operação individualmente.
 **ProcessAfterSeconds**| Processa o arquivo somente se o último acesso tiver ocorrido após a quantidade de segundos estabelecida neste parâmetro.
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">8</span> &nbsp;Na guia **Renomeio de Arquivo I**, configure os parâmetros que serão utilizados na definição do **Novo Nome do Arquivo**.
@@ -221,7 +221,7 @@ Parâmetro | Descrição
 
 Parâmetro | Descrição
 :---      | :---
-**RenameFileTo**| Define o novo nome para o arquivo. /Obs.: Se este parâmetro não for definido, o nome original será utilizado.
+**RenameFileTo**| Define o novo nome para o arquivo. <br> Obs.: Se este parâmetro não for definido, o nome original será utilizado.
 **InsertTimestamp**| Define a utilização do timestamp na nova nomenclatura: <br> 0 = Não insere <br> 1 = Insere no final do nome do arquivo <br> 2 = Insere no início do nome do arquivo <br> 4 = Insere customizado (através das opções de substituição) <br> ![](stcpren-31.png)
 **InsertTimestampPart**| Define o tipo de timestamp a ser utilizado pela opção InsertTimestamp: <br> 0 = Data e hora do sistema (computador local) <br> 1 = Data e hora da criação do arquivo <br> 2 = Data e hora da última modificação do arquivo <br> 4 = Data e hora do último acesso ao arquivo <br> ![](stcpren-32.png)
 
@@ -274,7 +274,7 @@ Parâmetro | Descrição
 
 Parâmetro | Descrição
 :---      | :---
-**Ocorrência**| Define a sequência de execução. /Valor: 0 a 999
+**Ocorrência**| Define a sequência de execução. <br> Valor: 0 a 999
 **Descrição**| Define a identificação da regra.
 **ReplaceFromFileRegEx**| Define uma expressão regular para validar a linha que contém a informação que deverá ser utilizada na substituição.
 **ReplaceFromFilePosFrom**| Define a coluna inicial da linha selecionada.
@@ -291,11 +291,11 @@ Parâmetro | Descrição
 
 Parâmetro | Descrição
 :---      | :---
-**Ocorrência**| Define a sequência de execução. /Valor: 0 a 999
+**Ocorrência**| Define a sequência de execução. <br> Valor: 0 a 999
 **Descrição**| Define a identificação da regra.
 **RegExReplaceFrom**| Define uma expressão regular para selecionar os dados que deverão ser .
 **RegExReplaceTo**| Define o valor para substituição.
-**RegExReplaceOcorr**| Define a quantidade de repetições da substituição: /0 = Todas
+**RegExReplaceOcorr**| Define a quantidade de repetições da substituição: <br> 0 = Todas
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">16</span> &nbsp;Na guia **Cópia**, configure os parâmetros que serão utilizados na definição do **Novo Nome do Diretório** para onde será copiado o arquivo original.
 
@@ -317,7 +317,7 @@ Parâmetro| Descrição
 
 Parâmetro | Descrição
 :---      | :---
-**Ocorrência**| Define a sequência de execução. /Valor: 0 a 999
+**Ocorrência**| Define a sequência de execução. <br> Valor: 0 a 999
 **Descrição**| Define a identificação da regra.
 **CopyPathReplacePosFrom**| Modifica o nome do path da cópia com parte do path original a partir da posição de origem definida.
 **CopyPathReplacePosTo**| Modifica o nome do path da cópia com parte do path original para a posição de destino definida.
@@ -343,11 +343,11 @@ Parâmetro | Descrição
 
 Parâmetro| Descrição
 :---     | :---
-**Ocorrência**| Define a sequência de execução. /Valor: 0 a 999
+**Ocorrência**| Define a sequência de execução. <br> Valor: 0 a 999
 **Descrição**| Define a identificação da regra.
 **CopyPathRegExReplaceFrom**| Define uma expressão regular para selecionar os dados que deverão ser .
 **CopyPathRegExReplaceTo**| Define o valor para substituição.
-**CopyPathRegExReplaceOcorr**| Define a quantidade de repetições da substituição: /0 = Todas
+**CopyPathRegExReplaceOcorr**| Define a quantidade de repetições da substituição: <br> 0 = Todas
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">21</span> &nbsp;Na guia **Backup**, configure os parâmetros que serão utilizados na definição do **Novo Nome do Diretório**, para onde será copiado o arquivo original:
 
@@ -356,7 +356,7 @@ Parâmetro| Descrição
 Parâmetro| Descrição
 :---     | :---
 **BkpToDir**| Define o nome do diretório destino para onde deverá ser copiado o arquivo de backup.
-**BkpFileOption**| Define as opções de backup que deverão ser utilizadas.![](stcpren-47.png)
+**BkpFileOption**| Define as opções de backup que deverão ser utilizadas. ![](stcpren-47.png)
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">22</span> &nbsp;Clique em **Adicionar** para configurar as regras de **Substituição através do nome original** que serão aplicadas no **Novo Nome do Diretório** de backup.
 
@@ -370,7 +370,7 @@ Parâmetro| Descrição
 :---     | :----
 **Ocorrência**| Define a sequência de eventos.
 **Descrição**| Identifica a regra de Backup.
-**BkpPathReplacePosFrom**| Modifica o nome do path de bachup com parte do path original a partir da posição de origem definida.
+**BkpPathReplacePosFrom**| Modifica o nome do path de backup com parte do path original a partir da posição de origem definida.
 **BkpPathReplacePosTo**| Modifica o nome do path de backup com parte do path original para a posição de destino definida.
 **BkpPathReplaceLen**| Modifica o nome do path de backup com parte do path original com o tamanho definido.
 **BkpPathReplaceVarReplacePosFrom**| Modifica o nome do path de backup com parte da variável a partir da posição de origem definida.
@@ -395,11 +395,11 @@ backup.
 
 Parâmetro| Descrição
 :---     | :---
-**Ocorrência**| Define a sequência de execução. /Valor: 0 a 999
+**Ocorrência**| Define a sequência de execução. <br> Valor: 0 a 999
 **Descrição**| Define a identificação da regra.
 **BkpPathRegExReplaceFrom**| Define uma expressão regular para selecionar os dados que deverão ser .
 **BkpPathRegExReplaceTo**| Define o valor para substituição.
-**BkpPathRegExReplaceOcorr**| Define a quantidade de repetições da substituição: /0 = Todas
+**BkpPathRegExReplaceOcorr**| Define a quantidade de repetições da substituição: <br> 0 = Todas
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">26</span> &nbsp;Na guia **Avançadas**, configure os parâmetros:
 
@@ -407,11 +407,11 @@ Parâmetro| Descrição
 
 Parâmetro| Descrição
 :---     | :---
-**CheckLockUnlockOption**| Define as opções de criação/utilização do arquivo de sincronização de acesso ao arquivo que está sendo processado. ![](./imagem/img55.png)
+**CheckLockUnlockOption**| Define as opções de criação/utilização do arquivo de sincronização de acesso ao arquivo que está sendo processado. ![](stcpren-53.png)
 **CheckLockUnlockFileName**| Define o nome do arquivo de bloqueio/desbloqueio que deverá ser verificado.
 **CreateLockUnlockFileName**| Define o nome do arquivo de bloqueio/desbloqueio que deverá ser criado.
 **Controle de tamanho de arquivos**| Define o tamanho mínimo e máximo que o arquivo pode ter para ser processado pela regra.
 **Período de execução**| Define o período (Início, Fim e Dias da Semana) em que uma regra deverá ser executada.
 **DelayNextFileProcess**| Define o intervalo mínimo (em milisegundos) para processar o próximo arquivo na mesma regra.
 **ContentLinesToRead**| Se o parâmetro ContentRegEx estiver setado esta opção valida o número de linhas que serão lidas do arquivo.
-**ResetSeqNumberDaily**| Zera diariamente o número de sequência informado no parâmetro “InsertSeqNumberSeq” (Renomeio de Arquivo I).
+**ResetSeqNumberDaily**| Zera diariamente o número de sequência informado no parâmetro *InsertSeqNumberSeq* (Renomeio de Arquivo I).

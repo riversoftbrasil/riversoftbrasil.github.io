@@ -7,8 +7,8 @@ cascade:
 sidebar:
   exclude: true
 weight: 7
-prev:
-next:
+prev: /docs
+next: /stcpren/install
 # draft: false
 lastmod: 2024-05-21
 ---
@@ -108,11 +108,11 @@ Este é um formato de nome de arquivo que é usado para especificar a localizaç
 **VPN**
 É uma rede de comunicação privada normalmente utilizada por uma empresa ou um conjunto de empresas e/ou instituições, construída em cima de uma rede de comunicação pública, por exemplo, a Internet.
 
-## Referências
+<!-- ## Referências
 
 Disponível em: (<http://www.tech-faq.com/lang/pt/ppp.shtml>)
 <br>
 Disponível em: (<http://cartilha.cert.br/glossario/>)
 <br>
-Disponível em: (<http://www.iwebtool.com/what_is_unc.html>)
+Disponível em: (<http://www.iwebtool.com/what_is_unc.html>) -->
 

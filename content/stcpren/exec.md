@@ -14,8 +14,6 @@ draft: false
 slug: execucao
 lastmod: 2024-02-28
 ---
-<!-- # Execução -->
-
 ### Linha de comando
 
 ```
@@ -35,6 +33,5 @@ stcpren_3_2.exe [opções]
 **-fileregexneg < regex>**| Define uma expressão regular para validar os nomes de arquivos que não serão processados.
 **-filelist < nome da lista>**| Define o nome do arquivo da lista de arquivos.
 **-dirlist < nome da lista>**| Define o nome do arquivo de lista de diretórios.
-**-scansemname < nome>**| Define um nome de semáfora para sincronização do modo de varredura. /Obs.: Utilizado para sincronizar a execução de múltiplos processos do STCPREN.
-**-var(N) < valor>**| Define o valor da variável.
-O índice (N) pode variar de 0 a 9.
+**-scansemname < nome>**| Define um nome de semáfora para sincronização do modo de varredura. <br> Obs.: Utilizado para sincronizar a execução de múltiplos processos do STCPREN.
+**-var(N) < valor>**| Define o valor da variável. <br> O índice (N) pode variar de 0 a 9.

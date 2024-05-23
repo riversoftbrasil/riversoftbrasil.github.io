@@ -19,7 +19,7 @@ Tudo o que você precisa saber para sua jornada nas soluções Riversoft.
   {{< card link="/stcpclient" title="STCP OFTP Client" icon="desktop-computer" >}}
   {{< card link="/404" title="STCP OFTP Web Admin" icon="cloud" >}}
   {{< card link="/404" title="STCP Change Password" icon="shield-exclamation" >}}
-  {{< card link="/404" title="STCP Rename" icon="color-swatch" >}}
+  {{< card link="/stcpren" title="STCP Rename" icon="color-swatch" >}}
   {{< card link="/404" title="STCP Signer" icon="finger-print" >}}
 {{< /cards >}}
 

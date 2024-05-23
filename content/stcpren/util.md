@@ -17,30 +17,32 @@ slug: utilizacao-stcpren
 
 ### Modos de operação e opções de execução
 
-O STCPRen é uma aplicação (.EXE) que pode ser executada diretamente na linha de comando do sistema operacional, através do agendador de tarefas ou por outras aplicações: STCP OFTP Server ou Client, TWS*, etc.
+O STCPRen pode ser executado diretamente na linha de comando do sistema operacional, através do agendador de tarefas ou por outras aplicações: STCP OFTP Server ou Client.
 
 O STCPRen possui quatro modos de operação distintos e a seleção será realizada através da linha de comando, são eles:
 
 Modo | Linha de Comando
 :--- | :---
-**Arquivo específico**| Stcpren_3_2.exe –rules < nome do arquivo de regras> <nome do arquivo específico>
-**Lista de arquivos**| Stcpren_3_2.exe –rules < nome do arquivo de regras> -filelist < nome do arquivo de lista>
-**Varredura de um diretório específico**| Stcpren_3_2.exe –rules < nome do arquivo de regras> -scan <nome do diretório>
-**Varredura de uma lista de diretórios**|Stcpren_3_2.exe –rules <nome do arquivo de regras> -dirlist <nome do arquivo de lista>
+**Arquivo específico**| Stcpren_3_2.exe –rules [nome do arquivo de regras] [nome do arquivo específico]
+**Lista de arquivos**| Stcpren_3_2.exe –rules [nome do arquivo de regras] -filelist [nome do arquivo de lista]
+**Varredura de um diretório específico**| Stcpren_3_2.exe –rules [nome do arquivo de regras] -scan [nome do diretório]
+**Varredura de uma lista de diretórios**| Stcpren_3_2.exe –rules [nome do arquivo de regras] -dirlist [nome do arquivo de lista]
 
-Quando o modo de varredura é utilizado, a opção “**-subdir**” habilita a procura nos subdiretórios.
+{{< callout type="info" >}}
+Quando o modo de varredura é utilizado, a opção **-subdir** habilita a procura nos subdiretórios.
+{{< /callout >}}
 
 ### Formação do novo nome do diretório e do arquivo
 
 Quando o STCPRen localiza um arquivo, separa o nome do diretório do nome do arquivo e possibilita a utilização destas informações pelas regras de substituição (Figura abaixo).
 
-![](./imagem/img2.png)
+![](stcpren-54.png)
 
 A seleção das informações para formar um novo nome de diretório e de arquivo nas ações de “Cópia” e ou de “Backup” serão configuradas através das regras de substituição (Figura abaixo).
 
-![](./imagem/img3.png)
+![](stcpren-55.png)
 
-![](./imagem/img4.png)
+![](stcpren-56.png)
 
 ### Variávies internas
 
@@ -57,7 +59,7 @@ Variável | Descrição
 **$NEW2NAME**   | Novo nome do arquivo (após as substituições) sem a extensão.
 **$OLD2NAME**   | Nome do arquivo original sem a extensão.
 **$FILESIZE**   | Tamanho do arquivo em bytes.
-**$TIMESTAMP**  | Timestamp no formato: YYYYMMDDhhmmssnnn /YYYY = ano /MM = mês /DD = dia /hh = hora (formato 24h) /mm = minuto /ss = segundos /nnn = milésimos de segundos
+**$TIMESTAMP**  | Timestamp no formato: YYYYMMDDhhmmssnnn <br> YYYY = ano <br> MM = mês <br> DD = dia <br> hh = hora (formato 24h) <br> mm = minuto <br> ss = segundos <br> nnn = milésimos de segundos
 **$RULENAME**   | Nome da regra executada
 **$DESCR**      | Descrição da regra
 **$ERROR**      | Último código de erro
@@ -71,4 +73,5 @@ O STCPRen irá registrar as ações executadas em um arquivo diário de log dos 
 
 Os dados poderão ser armazenados em arquivo texto ou banco de dados.
 
-![](./imagem/img5.png)
+![](stcpren-57.png)
+
