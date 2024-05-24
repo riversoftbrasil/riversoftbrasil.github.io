@@ -22,18 +22,18 @@ Saiba onde utilizar a aplicação na seção <a href="/utils/advantages/" target
 
 ## Características
 
-- Protocolo de transferência OFTP (ODETTE File Transfer Protocol)
-- Autenticação através do protocolo OFTP
-- Autenticação através de certificado digital X.509 (TLS)
-- Criptografia RSA, 3DES, DES, AES (TLS)
-- Protocolo de comunicação **TCP/IP** (OFTP, HTTPS, FTP e SFTP)
-- Transferência de todos os tipos de arquivos
-- Registros de logs de auditoria (bilhetagem) e eventos
-- Recuperação de transferência interrompida
-- Comunicação através de Proxy HTTP, SOCKS4 ou SOCKS5
-- Compressão padrão OFTP ou GZIP
-- Número limitado de 1 (uma) sessão de transferência
-- Número limitado de 1 (um) usuário
+- Protocolo de transferência OFTP (ODETTE File Transfer Protocol);
+- Autenticação através do protocolo OFTP;
+- Autenticação através de certificado digital X.509 (TLS);
+- Criptografia RSA, 3DES, DES, AES (TLS);
+- Protocolo de comunicação **TCP/IP** (OFTP, HTTPS, FTP e SFTP);
+- Transferência de todos os tipos de arquivos;
+- Registros de logs de auditoria (bilhetagem) e eventos;
+- Recuperação de transferência interrompida;
+- Comunicação através de Proxy HTTP;
+- Compressão padrão OFTP ou GZIP;
+- Número limitado de 1 (uma) sessão de transferência;
+- Número limitado de 1 (um) usuário.
 
 ## Requisitos de software e hardware
 

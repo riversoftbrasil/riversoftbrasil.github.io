@@ -92,8 +92,7 @@ layout: hextra-home
         title="STCP Rename"
         icon="color-swatch"
         subtitle="Aplicação que possibilita o renomeio e cópia de arquivos, varredura em diretórios e execução de processo, baseado na configuração de regras de validação dos nomes destes arquivos."
-        badge="EM BREVE"
-        link=""
+        link="/stcpren"
     >}}
 
     {{< feature-card

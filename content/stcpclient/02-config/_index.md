@@ -16,9 +16,9 @@ lastmod: 2024-04-15
 
 O programa de configuração do STCP OFTP Client foi instalado na pasta selecionada durante o processo de instalação e pode ser acessado através do menu **Iniciar**. Caso você não tenha alterado a pasta padrão, execute os seguintes passos:
 
-{{< icon "rectangle-group" >}}&nbsp; No menu **Iniciar**, **Todos os Programas**, selecione **Riversoft STCP OFTP Client**.
+{{< icon "chevron-right" >}}&nbsp; No menu **Iniciar**, **Todos os Programas**, selecione **Riversoft STCP OFTP Client**.
 
-{{< icon "cog-8-tooth" >}} &nbsp; Clique no programa **Riversoft STCP OFTP Client Config**.
+{{< icon "chevron-right" >}} &nbsp; Clique no programa **Riversoft STCP OFTP Client Config**.
 
 O programa de configuração pode ser acessado também na pasta **Program** da aplicação, conforme exemplo de estrutura abaixo:
 
