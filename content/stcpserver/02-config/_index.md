@@ -10,7 +10,7 @@ prev: /stcpserver/01-install-srv
 next: /stcpserver/03-util
 slug: config
 draft: false
-lastmod: 2024-03-28
+lastmod: 2024-05-24
 ---
 ## Configurador
 
@@ -52,7 +52,7 @@ Senha  | Preencha este campo com a senha do usuário que deve ser utilizado pelo
 Confirmar| Preencha este campo com a senha do usuário para ser validada.
 Diretório de controle| Este campo informa o nome do diretório de instalação do STCP OFTP Server onde serão armazenadas as configurações dos usuários, logs e arquivos de depuração da comunicação. <br> Obs.: Para a versão STCP OFTP Server, este parâmetro não pode ser modificado.
 Diretório de dados| Preencha este campo com o diretório, onde a estrutura de subdiretórios para envio e recepção dos arquivos de cada usuário deverá ser criada.  <br> Obs.: Esta configuração deve ser alterada antes da criação dos usuários.
-Número de série*| Preencha este campo com o número de série que está localizado no "Contrato de Licença de Uso" ou na parte traseira da embalagem do CD. <br>
+Número de série*| Preencha este campo com o número de série que é disponibilizado. <br>
 ----
 
 {{< callout type="warning" >}}
@@ -1092,25 +1092,25 @@ Gravar o arquivo| Preencha este campo com o nome de um programa externo que ser�
 
 Executa um comando externo para validar o arquivo antes de transmitir. Em caso de sucesso (Return code 0), o processo de transmissão será executado.
 
-![](./imagem1/img70.png)
+![](tipo-arq-01.png)
 
 **Validar o arquivo após transmitir**
 
 Executa comando para validar arquivo após a transmissão. Em caso de sucesso (Return code 0), o processo de transmissão será executado.
 
-![](./imagem1/img71.png)
+![](tipo-arq-02.png)
 
 **Validar o arquivo antes de receber**
 
 Executa um comando externo antes de receber o arquivo. Em caso de sucesso (Return code 0), o arquivo é fechado e a recepção, finalizada com sucesso.
 
-![](./imagem1/img72.png)
+![](tipo-arq-03.png)
 
 **Validar o arquivo após receber**
 
 Executa um comando externo após receber o arquivo, antes do fechamento do arquivo. Em caso de sucesso (Return code 0), o processo é finalizado com sucesso.
 
-![](./imagem1/img73.png)
+![](tipo-arq-04.png)
 
 Backup arquivo transmitido | Esta opção assinalada habilita o backup dos arquivos transmitidos para este tipo.
 :---                       | :---

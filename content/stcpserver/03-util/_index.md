@@ -28,7 +28,7 @@ O STCP OFTP Server, para cada usuário configurado no serviço, cria um conjunto
 **PENDENTE**          | Subdiretório onde o arquivo de controle da transmissão será armazenado temporariamente.
 **TEMP**              | Subdiretório de uso geral.
 
-Para transmitir, os arquivos devem ser disponibilizados no subdiretório "**SAIDA** e os arquivos recebidos estarão no subdiretório "**ENTRADA**".
+Para transmitir, os arquivos devem ser disponibilizados no subdiretório **SAIDA** e os arquivos recebidos estarão no subdiretório **ENTRADA**.
 
 ## Linha de comando
 

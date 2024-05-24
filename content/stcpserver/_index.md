@@ -23,17 +23,17 @@ Saiba onde utilizar a aplicação e quais as suas vantagens na seção <a href="
 O STCP OFTP Server oferece as seguintes características:
 
 * Protocolo de transferência <a href="/utils/protocols/#oftp" target="_blank">OFTP (ODETTE File Transfer Protocol)</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;
-* Autenticação através do protocolo *OFTP*
-* Autenticação através de certificado digital X.509 (TLS)
-* Criptografia RSA, 3DES, DES, AES (TLS)
-* Multiprotocolo de comunicação **TCP/IP** (OFTP, HTTPS, FTP e SFTP), **S3** (AWS) e **Blob** (Azure)
-* Transferência de todos os tipos de arquivos
-* Registros de logs de auditoria (bilhetagem) e eventos
-* Recuperação de transferência interrompida
-* Comunicação através de Proxy HTTP, SOCKS4 ou SOCKS5
-* Compressão padrão OFTP ou GZIP
-* Número ilimitado de sessões de transferência (Versão Enterprise) ou até 10 (dez) sessões de transferência (Versão Lite)
-* Número ilimitado de usuários (Versão Enterprise) ou até 10 (dez) usuários (Versão Lite)
+* Autenticação através do protocolo *OFTP*;
+* Autenticação através de certificado digital X.509 (TLS);
+* Criptografia RSA, 3DES, DES, AES (TLS);
+* Multiprotocolo de comunicação **TCP/IP** (OFTP, HTTPS, FTP e SFTP), **S3** (AWS) e **Blob** (Azure);
+* Transferência de todos os tipos de arquivos;
+* Registros de logs de auditoria (bilhetagem) e eventos;
+* Recuperação de transferência interrompida;
+* Comunicação através de Proxy HTTP;
+* Compressão padrão OFTP ou GZIP;
+* Número ilimitado de sessões de transferência (Versão Enterprise) ou até 10 (dez) sessões de transferência (Versão Lite);
+* Número ilimitado de usuários (Versão Enterprise) ou até 10 (dez) usuários (Versão Lite);
 <!-- * Versões Windows NT/2000/2003/XP -->
 
 ## Requisitos de software e hardware
