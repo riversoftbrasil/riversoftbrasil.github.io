@@ -10,7 +10,7 @@ weight: 2
 prev:
 next:
 draft: false
-lastmod: 2024-05-06
+lastmod: 2024-05-27
 ---
 # Configuração inicial
 
@@ -23,7 +23,7 @@ Configure o acesso ao Banco de Dados da ferramenta no arquivo **stcpweb_db.inc**
 ```
 Os parâmetros a serem configurados neste arquivo são:
 
-{{% details title="Banco de Dados" closed="true"%}}
+{{% details title="Banco de Dados" closed="false"%}}
 
 * **$TipoDBConf** = tipo do gerenciador de banco de dados utilizado. As opções disponíveis são **ACCESS**, **MSSERVER**, **MySql**, **Oracle**, **SQLite** e **Sybase**.
 * **$fnameConfDB** = nome da fonte de dados(ODBC) usada para conectar-se à base de dados de configuração.
@@ -32,7 +32,7 @@ Os parâmetros a serem configurados neste arquivo são:
 
 {{% /details %}}
 
-{{% details title="Operadores, grupos e servidores" closed="true"%}}
+{{% details title="Operadores, grupos e servidores" closed="false"%}}
 Configuração da base de dados que gerenciará as informações de operadores, grupos e servidores do STCP OFTP Web Admin:
 
 * **$TipoDBConf** = tipo do gerenciador de banco de dados utilizado. As opções disponíveis são **ACCESS**, **MSSERVER**, **MySql**, **Oracle**, **SQLite** e **Sybase**.
@@ -43,7 +43,7 @@ Configuração da base de dados que gerenciará as informações de operadores, 
 {{% /details %}}
 
 
-{{% details title="Códigos de erros e eventos" closed="true"%}}
+{{% details title="Códigos de erros e eventos" closed="false"%}}
  Configuração da base de dados que gerenciará as informações de códigos de erros e de eventos do sistema:
 
 * **$TipoDBErros** = tipo do gerenciador de banco de dados utilizado. As opções disponíveis são ACCESS, MSSERVER, MySql, Oracle, SQLite,
@@ -54,7 +54,7 @@ Sybase.
 
 {{% /details %}}
 
-{{% details title="Log" closed="true"%}}
+{{% details title="Log" closed="false"%}}
  Configuração da base de dados que gerenciará as informações de log dos operadores do STCP OFTP Web Admin:
 
 * **$TipoDBLogOper**= tipo do gerenciador de banco de dados utilizado. As opções disponíveis são ACCESS, MSSERVER, MySql, Oracle, SQLite, Sybase.
@@ -65,7 +65,7 @@ Sybase.
 {{% /details %}}
 
 
-{{% details title="Sessão da base de dados" closed="true"%}}
+{{% details title="Sessão da base de dados" closed="false"%}}
  <!-- Configuração da sessão da base de dados: -->
 
 * **$SQLAlterSession** = este parâmetro deve ser usado quando a base de dados utilizada for Oracle 8i ou Oracle 10g. Para utilizar este parâmetro, basta retirar o comentário do início da linha.

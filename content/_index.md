@@ -78,11 +78,10 @@ layout: hextra-home
     >}}
 
     {{< feature-card
-        title="STCP Gemini Server"
-        icon="lightning-bolt"
-        subtitle="Aplicação servidora utilizada para transferência de arquivos seguro e multiprotocolo para aplicações de e-business e troca de informações corporativas, baseado na especificação OFTP."
-        badge="EM BREVE"
-        link=""
+        title="STCP OFTP Web Admin"
+        icon="cloud"
+        subtitle="Ferramenta com acesso através do browser (HTTP) que possibilita a supervisão e monitoração das transferências de dados realizadas pelo software STCP OFTP Client/Server. "
+        link="/stcpwebadmin"
     >}}
 
     {{< feature-card
@@ -93,9 +92,9 @@ layout: hextra-home
     >}}
 
      {{< feature-card
-        title="STCP OFTP Web Admin"
-        icon="cloud"
-        subtitle="Ferramenta com acesso através do browser (HTTP) que possibilita a supervisão e monitoração das transferências de dados realizadas pelo software STCP OFTP Client/Server. "
+        title="STCP Gemini Server"
+        icon="lightning-bolt"
+        subtitle="Aplicação servidora utilizada para transferência de arquivos seguro e multiprotocolo para aplicações de e-business e troca de informações corporativas, baseado na especificação OFTP."
         badge="EM BREVE"
         link=""
     >}}

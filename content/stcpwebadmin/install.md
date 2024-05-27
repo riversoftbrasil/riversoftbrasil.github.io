@@ -10,7 +10,7 @@ weight: 1
 prev: /stcpwebadmin
 next:
 # draft: false
-lastmod: 2024-04-12
+lastmod: 2024-05-27
 ---
 # Distribuição dos pacotes
 
@@ -73,11 +73,11 @@ Os seguintes procedimentos devem ser executados para configuração do driver OD
 
 <!-- Na guia **Geral**, configure as opções conforme informadas (para Oracle8) e clique no botão **OK** para salvar. -->
 
-<!-- ![](./imagem2/img20.png) -->
+![](./imagem2/img20.png)
 
 Clique no botão **OK** para finalizar a configuração da fonte de dados ODBC.
 
-<!-- ![](./imagem2/img21.png) -->
+![](./imagem2/img21.png)
 
 ## Instalação e configuração do PHP
 
