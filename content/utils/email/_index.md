@@ -10,7 +10,7 @@ weight: 9
 prev: /events
 next: /protocols
 draft: false
-lastmod: 2024-05-07
+lastmod: 2024-05-27
 ---
 ## Introdução
 
@@ -132,10 +132,9 @@ Na janela _Propriedades do Perfil_, guia _Tipos de arquivos_, selecione o tipo d
 1. cscript //B C:\STCPCLT\Program\stcp-notifica.vbs RX $OFNAME
 ```
 
-<Callout type="info" emoji="ℹ️">
-  NOTA: O parâmetro **$OFNAME** refere-se a uma variável interna do STCP OFTP
-  que retorna o nome do arquivo recebido com sucesso.
-</Callout>
+{{< callout type="info" >}}
+NOTA: O parâmetro **$OFNAME** refere-se a uma variável interna do STCP OFTP que retorna o nome do arquivo recebido com sucesso.
+{{< /callout >}}
 
 ## Notificação de erro
 
@@ -177,15 +176,15 @@ parâmetros referentes ao servidor SMTP.
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">3</span> &nbsp; Salve o arquivo.
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">4</span> &nbsp; Para realizar a validação do funcionamento do script e do servidor SMTP, acesse o "Prompt de
-Comando" e digite o comando abaixo. Caso nenhuma mensagem de erro seja apresentada,
-verifique se os e-mails foram recebidos nas contas indicadas.
+<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">4</span> &nbsp; Para realizar a validação do funcionamento do script e do servidor SMTP, acesse o "Prompt de Comando" e digite o comando abaixo. Caso nenhuma mensagem de erro seja apresentada, verifique se os e-mails foram recebidos nas contas indicadas.
+
 ```
 cscript C:\STCPODT\Program\STCPEMAILEVT.VBS NOME-SERVIDOR MSG1 MSG2
 ```
 <!-- ![](./imagem/img3.png) -->
 
-Após a configuração e testes do script VBS, uma alteração nas Propriedades de Log do STCP (vide imagem abaixo) será necessária, habilitando a execução de um comando externo sempre ocorrer eventos que contenham algum erro (Nível de log = 1) e informando a linha de comando abaixo no parâmetro “Comando externo”.
+Após a configuração e testes do script VBS, uma alteração nas Propriedades de Log do STCP será necessária, habilitando a execução de um comando externo sempre ocorrer eventos que contenham algum erro (Nível de log = 1) e informando a linha de comando abaixo no parâmetro “Comando externo”.
+
 ```
 cscript //B C:\STCPODT\Program\STCPEMAILEVT.VBS NOME-SERVIDOR
 ```
