@@ -8,7 +8,7 @@ cascade:
 sidebar:
   exclude: false
 weight: 1
-lastmod: 2024-05-14
+lastmod: 2024-05-27
 ---
 
 Tudo o que você precisa saber para sua jornada nas soluções Riversoft.
@@ -18,7 +18,7 @@ Tudo o que você precisa saber para sua jornada nas soluções Riversoft.
   {{< card link="/stcpserver" title="STCP OFTP Server" icon="cog" >}}
   {{< card link="/stcpclient" title="STCP OFTP Client" icon="desktop-computer" >}}
   {{< card link="/404" title="STCP OFTP Web Admin" icon="cloud" >}}
-  {{< card link="/404" title="STCP Change Password" icon="shield-exclamation" >}}
+  {{< card link="/stcpchangepassword" title="STCP Change Password" icon="shield-exclamation" >}}
   {{< card link="/stcpren" title="STCP Rename" icon="color-swatch" >}}
   {{< card link="/404" title="STCP Signer" icon="finger-print" >}}
 {{< /cards >}}
