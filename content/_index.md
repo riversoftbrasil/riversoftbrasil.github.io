@@ -88,7 +88,7 @@ layout: hextra-home
         title="STCP Gemini Client"
         icon="terminal"
         subtitle="Aplicação cliente utilizada para transferência de arquivos seguro e multiprotocolo para aplicações de e-business e troca de informações corporativas, baseado na especificação OFTP."
-        badge="EM BREVE"
+        link="/stcpgeminiclient"
     >}}
 
      {{< feature-card
@@ -96,7 +96,6 @@ layout: hextra-home
         icon="lightning-bolt"
         subtitle="Aplicação servidora utilizada para transferência de arquivos seguro e multiprotocolo para aplicações de e-business e troca de informações corporativas, baseado na especificação OFTP."
         badge="EM BREVE"
-        link=""
     >}}
 
 {{< /feature-grid >}}
