@@ -25,7 +25,7 @@ Crie um banco de dados **STCPWEB_DB** no servidor utilizando a ferramenta adequa
 A pasta **\<disco>:\Inetpub\wwwroot\STCPWEB_ADMIN\conf\scripts** contém os scripts para a criação das tabelas do banco de dados **STCPWEB_DB**.
 
 <!-- ![](./imagem2/img16.png) -->
-![](web-admin-06.png "Scripts tabelas do Banco de Dados")
+![](imagem/web-admin-06.png "Scripts tabelas do Banco de Dados")
 
 ## Atualização da tabela TBLOperadores (SQL Server, MySQL e Oracle)
 
@@ -59,15 +59,15 @@ Os seguintes procedimentos devem ser executados para configuração do driver OD
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp;Acesse a ferramenta de configuração do ODBC.
 
-![](web-admin-07.png "")
+![](imagem/web-admin-07.png "")
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">2</span> &nbsp; Selecione a guia **DSN de Sistema** para adicionar a fonte de dados e clique em **Adicionar**.
 
-![](web-admin-08.png)
+![](imagem/web-admin-08.png)
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">3</span> &nbsp; Selecione o driver na lista e clique em **Concluir**.
 
-![](web-admin-09.png)
+![](imagem/web-admin-09.png)
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">4</span> &nbsp; Na guia **Geral**, configure as opções conforme informadas e clique no botão **OK** para salvar.
 

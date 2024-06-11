@@ -40,7 +40,7 @@ O programa de configuração pode ser acessado também na pasta **Program** da a
 
 Na guia **Geral** preencha os campos com as informações descritas abaixo.
 
-![](guia-geral.png)
+![](img/guia-geral.png)
 
 Campos | Descrição
 :----  | :----
@@ -65,7 +65,7 @@ Nesta guia, você poderá adicionar, remover ou modificar os parâmetros das int
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp; Clique em **Adicionar**.
 
-![](guia-redes.png)
+![](img/guia-redes.png)
 
 
 > O STCP OFTP Server oferece a capacidade de configurar múltiplas interfaces de redes com diferentes protocolos de comunicação, como TCP/IP, além da opção de implementar medidas de segurança adicionais através de protocolos como SFTP, HTTPS e TLS.
@@ -89,7 +89,7 @@ Monitor Directlink - TCP/IP | Habilita a rede para supervisão do Directlink atr
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp; Na guia **Geral**, preencha as seguintes opções de configuração:
 
-![](redes-guia-geral.png)
+![](img/redes-guia-geral.png)
 
 Campos | Descrição
 :----  | :----
@@ -99,7 +99,7 @@ Desabilitar| Esta opção assinalada desabilita a interface de rede.
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">2</span> &nbsp; Na guia **TCP/IP**, configure as seguintes opções para o protocolo **OFTP: TCP/IP_1**.
 
-![](tcp_ip-configs.png)
+![](img/tcp_ip-configs.png)
 
 Campos     | Descrição
 :----      | :----
@@ -121,7 +121,7 @@ Compressão GZIP| Esta opção assinalada habilita a utilização da compressão
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">3</span> &nbsp; Na guia **Odette**, configure as seguintes opções para o protocolo **OFTP: TCP/IP_1**.
 
-![](odette.png)
+![](img/odette.png)
 
 Campos         | Descrição
 :--------      | :-----
@@ -135,7 +135,7 @@ Nível de debug | Preencha este campo com o nível de detalhamento das informaç
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">4</span> &nbsp; Na guia **TLS**, configure as seguintes opções para o protocolo **OFTP – TCP/IP**.
 
-![](tls.png)
+![](img/tls.png)
 
 Campos         | Descrição
 :------------  | :------
@@ -157,7 +157,7 @@ Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alt
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp; Na guia **Geral**, preencha as seguintes opções de configuração:
 
-![](redes-api-01.png)
+![](img/redes-api-01.png)
 
 Campos | Descrição
 :----  | :----
@@ -167,7 +167,7 @@ Desabilitar| Esta opção assinalada desabilita a interface de rede.
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">2</span> &nbsp; Na guia **TCP/IP**, configure as seguintes opções:
 
-![](redes-api-02.png)
+![](img/redes-api-02.png)
 
 Campos     | Descrição
 :----      | :----
@@ -189,7 +189,7 @@ Compressão GZIP| Esta opção assinalada habilita a utilização da compressão
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">3</span> &nbsp; Na guia **TLS**, configure as seguintes opções:
 
-![](redes-api-03.png)
+![](img/redes-api-03.png)
 
 Campos         | Descrição
 :------------  | :------
@@ -206,7 +206,7 @@ Debug          | Esta opção permite gerar um arquivo de depuração na pasta D
 ----
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">4</span> &nbsp; Na guia **API**, configure as seguintes opções:
 
-![](redes-api-04.png)
+![](img/redes-api-04.png)
 
 Campos         | Descrição
 :------------  | :------
@@ -224,7 +224,7 @@ Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alt
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp; Na guia **Geral**, configure as seguintes opções:
 
-![](redes-sftpdirl-01.png)
+![](img/redes-sftpdirl-01.png)
 
 Campos | Descrição
 :----  | :----
@@ -235,7 +235,7 @@ Desabilitar| Esta opção assinalada desabilita a interface de rede.
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">2</span> &nbsp; Na guia **TCP/IP**, configure as seguintes opções:
 
-![](redes-sftpdirl-02.png)
+![](img/redes-sftpdirl-02.png)
 
 Campos     | Descrição
 :----      | :----
@@ -258,7 +258,7 @@ Compressão GZIP| Esta opção assinalada habilita a utilização da compressão
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">3</span> &nbsp; Na guia **SSH/SFTP**, configure as seguintes opções:
 
-![](redes-sftpdirl-03.png)
+![](img/redes-sftpdirl-03.png)
 
 Campos         | Descrição
 :------------  | :------
@@ -283,7 +283,7 @@ Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alt
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp; Na guia **Geral**, configure as seguintes opções:
 
-![](monitor-01.png)
+![](img/monitor-01.png)
 
 Campos | Descrição
 :----  | :----
@@ -294,7 +294,7 @@ Desabilitar| Esta opção assinalada desabilita a interface de rede.
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">2</span> &nbsp; Na guia **TCP/IP**, configure as seguintes opções:
 
-![](monitor-02.png)
+![](img/monitor-02.png)
 
 Campos     | Descrição
 :----      | :----
@@ -317,7 +317,7 @@ Compressão GZIP| Esta opção assinalada habilita a utilização da compressão
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">3</span> &nbsp; Na guia **TLS**, configure as seguintes opções:
 
-![](monitor-03.png)
+![](img/monitor-03.png)
 
 Campos         | Descrição
 :------------  | :------
@@ -335,7 +335,7 @@ Debug          | Esta opção permite gerar um arquivo de depuração na pasta D
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">4</span> &nbsp; Na guia **Monitor**, configure as seguintes opções:
 
-![](monitor-04.png)
+![](img/monitor-04.png)
 
 Campos         | Descrição
 :------------  | :------
@@ -352,7 +352,7 @@ Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alt
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp; Na guia **Geral**, configure as seguintes opções:
 
-![](monitordirl-01.png)
+![](img/monitordirl-01.png)
 
 Campos | Descrição
 :----  | :----
@@ -363,7 +363,7 @@ Desabilitar| Esta opção assinalada desabilita a interface de rede.
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">2</span> &nbsp; Na guia **TCP/IP**, configure as seguintes opções:
 
-![](monitordirl-02.png)
+![](img/monitordirl-02.png)
 
 Campos     | Descrição
 :----      | :----
@@ -386,7 +386,7 @@ Compressão GZIP| Esta opção assinalada habilita a utilização da compressão
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">3</span> &nbsp; Na guia **TLS**, configure as seguintes opções:
 
-![](monitordirl-03.png)
+![](img/monitordirl-03.png)
 
 Campos         | Descrição
 :------------  | :------
@@ -404,7 +404,7 @@ Debug          | Esta opção permite gerar um arquivo de depuração na pasta D
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">4</span> &nbsp; Na guia **Monitor**, configure as seguintes opções:
 
-![](monitordirl-04.png)
+![](img/monitordirl-04.png)
 
 Campos         | Descrição
 :------------  | :------
@@ -423,7 +423,7 @@ Na guia **Usuários**, você poderá adicionar, remover, modificar ou copiar os 
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp; Clique em **Adicionar**.
 
-![](usuarios.png)
+![](img/usuarios.png)
 
 {{< callout type="info" >}}
   Para um novo usuário adicionado, automaticamente, será criada uma estrutura de subdiretórios [(veja a estrutura de diretórios)](./#estrutura-dos-diretórios) para o envio e recepção dos arquivos, dentro do **Diretório de Dados** que foi previamente configurado na guia **Geral**.
@@ -433,7 +433,7 @@ Na guia **Usuários**, você poderá adicionar, remover, modificar ou copiar os 
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">2</span> &nbsp; Preencha os campos com as informações descritas abaixo e clique em **OK**.
 
-![](configs-usuarios.png)
+![](img/configs-usuarios.png)
 
 Campos | Descrição
 :---   | :---
@@ -450,7 +450,7 @@ Pressione o botão **OK** para gravar as configurações ou **Cancelar** para ab
 
 Nesta guia, configure as seguintes opções descritas abaixo:
 
-![](guia-geral-usuario.png)
+![](img/guia-geral-usuario.png)
 
 Campos    | Descrição
 :---      | :---
@@ -467,7 +467,7 @@ Protocolo| Este campo seleciona o tipo de protocolo de comunicação que este us
 
 Selecione a opção de **Protocolo** desejada e clique em **Configurar**.
 
-![](protocolo-usuario.png)
+![](img/protocolo-usuario.png)
 
 | Protocolo     |                                                Descrição                                                |
 | :------------ | :-----------------------------------------------------------------------------------------------------: |
@@ -491,7 +491,7 @@ Clique [aqui](https://docs.aws.amazon.com/pt_br/AmazonS3/latest/userguide/Welcom
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp; Configure as seguintes opções na guia **TCP/IP**.
 
-![](oftp-usuario.png)
+![](img/oftp-usuario.png)
 
 Campos     | Descrição
 :---       | :---
@@ -509,7 +509,7 @@ Compressão GZIP| Esta opção assinalada habilita a utilização da compressão
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">2</span> &nbsp; Na guia **TLS**, configure as seguintes opções para o protocolo **OFTP – TCP/IP**.
 
-![](tls-usuario.png)
+![](img/tls-usuario.png)
 
 Campos | Descrição
 :---   | :---
@@ -526,7 +526,7 @@ Debug      | Esta opção permite criar um arquivo de depuração.
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">3</span> &nbsp; Na guia **Proxy**, configure as seguintes opções para o protocolo **OFTP – TCP/IP**.
 
-![](proxy-usuarios.png)
+![](img/proxy-usuarios.png)
 
 Campos | Descrição
 :---   | :---
@@ -549,7 +549,7 @@ Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alt
 
 Na guia **Avançadas**, configure as seguintes opções.
 
-![](avancadas.png)
+![](img/avancadas.png)
 
 Campos | Descrição
 :---   | :---
@@ -559,7 +559,7 @@ Máscara de arquivo| Através de expressão regular, esta opção serve para fil
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp; Configure as seguintes opções na guia **TCP/IP**.
 
-![](guia-ftp-usuario.png)
+![](img/guia-ftp-usuario.png)
 
 Campos | Descrição
 :---   | :---
@@ -574,7 +574,7 @@ FTP Passivo | XXXXXXXXXXXXXXXX.
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">2</span> &nbsp; Na guia **Proxy**, configure as seguintes opções:
 
-![](ftp-proxy.png)
+![](img/ftp-proxy.png)
 
 Campos     | Descrição
 :---       | :---
@@ -588,7 +588,7 @@ Confirmar  | Preencha este campo com a senha informada no campo Senha para valid
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">3</span> &nbsp; Na guia **TLS**, configure as seguintes opções:
 
-![](guia-tls-usuarios.png)
+![](img/guia-tls-usuarios.png)
 
 Campos         | Descrição
 :---           | :---
@@ -602,7 +602,7 @@ Valor          | O valor deste campo está relacionado aos certificados digitais
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">4</span> &nbsp; Na guia **Avançadas**, configure as seguintes opções:
 
-![](guia-avancadas-ftp-usuarios.png)
+![](img/guia-avancadas-ftp-usuarios.png)
 
 Campos | Descrição
 :---   | :---
@@ -621,7 +621,7 @@ Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alt
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp; Configure as seguintes opções na guia **TCP/IP**.
 
-![](guia-sftp-usuario.png)
+![](img/guia-sftp-usuario.png)
 
 Campos      | Descrição
 :---        | :---
@@ -632,7 +632,7 @@ Tamanho máximo do buffer| Preencha este campo com o tamanho máximo dos blocos 
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">2</span> &nbsp; Na guia **Proxy**, configure as seguintes opções.
 
-![](guia-proxy-sftp.png)
+![](img/guia-proxy-sftp.png)
 
 Campos     | Descrição
 :---       | :---
@@ -646,7 +646,7 @@ Confirmar  | Preencha este campo com a senha informada no campo Senha para valid
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">3</span> &nbsp; Na guia **TLS**, configure as seguintes opções.
 
-![](tls-sftp.png)
+![](img/tls-sftp.png)
 
 Campos   | Descrição
 :---     | :---
@@ -657,7 +657,7 @@ FingerPrint| Assinatura digital da chave privativa.
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">4</span> &nbsp; Na guia **Avançadas**, configure as seguintes opções.
 
-![](avancadas-sftp.png)
+![](img/avancadas-sftp.png)
 
 Campos             | Descrição
 :---               | :---
@@ -675,7 +675,7 @@ Extensão temporária| Configura uma extensão temporária para arquivo no servi
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">4</span> &nbsp; Na guia **Odette**, preencha os campos com as informações descritas abaixo.
 
-![](guia-odette-usuario.png)
+![](img/guia-odette-usuario.png)
 
 Campos | Descrição
 :---   | :---
@@ -705,7 +705,7 @@ Nível de debug* | Preencha este campo com o nível de detalhamento das informa�
 
 Nesta seção, configure as seguintes opções.
 
-![](guia-ftp.png)
+![](img/guia-ftp.png)
 
 Campos   | Descrição
 :---     | :---
@@ -722,7 +722,7 @@ Nível de Debug| Preencha este campo com o nível de detalhamento das informaç�
 
 Nesta seção, configure as seguintes opções.
 
-![](guia-sftp.png)
+![](img/guia-sftp.png)
 
 Campos   | Descrição
 :---     | :---
@@ -739,7 +739,7 @@ Nível de Debug| Preencha este campo com o nível de detalhamento das informaç�
 
 Nesta seção, configure as seguintes opções:
 
-![](guia-s3.png)
+![](img/guia-s3.png)
 
 Campos   | Descrição
 :---     | :---
@@ -756,7 +756,7 @@ Nível de Debug | Preencha este campo com o nível de detalhamento das informaç
 
 Nesta seção, configure as seguintes opções:
 
-![](guia-azblob.png)
+![](img/guia-azblob.png)
 
 Campos   | Descrição
 :---     | :---
@@ -773,7 +773,7 @@ Nível de Debug | Preencha este campo com o nível de detalhamento das informaç
 
 Nesta seção, configure as seguintes opções para o usuário.
 
-![](avancadas-I.png)
+![](img/avancadas-I.png)
 
 Campos              | Descrição
 :---                | :---
@@ -793,7 +793,7 @@ Padrão            | Restaura configuração padrão para o período de conexão
 
 Nesta seção, configure as seguintes opções para o usuário.
 
-![](avancadas-II.png)
+![](img/avancadas-II.png)
 
 Campos | Descrição
 :---   | :---
@@ -816,11 +816,11 @@ Você poderá adicionar, remover, modificar ou copiar os parâmetros de configur
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp; Clique em **Adicionar**.
 
-![](agendamento.png)
+![](img/agendamento.png)
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">2</span> &nbsp; Na guia **Geral**, preencha os campos com as informações descritas abaixo.
 
-![](agendamento-geral.png)
+![](img/agendamento-geral.png)
 
 Campos              | Descrição
 :---                | :---
@@ -845,7 +845,7 @@ Comando             | Preencha este campo com o nome da aplicação (executável
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">3</span> &nbsp; Na guia **Avançadas**, configure o período do agendamento.
 
-![](avancadas-agendamento.png)
+![](img/avancadas-agendamento.png)
 
 Campos         | Descrição
 :---           | :---
@@ -859,7 +859,7 @@ Pressione o botão **OK** para gravar as alterações ou **Cancelar** para retor
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp; Preencha os campos com as informações descritas.
 
-![](guia-avancadas.png)
+![](img/guia-avancadas.png)
 
 Campos            | Descrição
 :---              | :---
@@ -876,11 +876,11 @@ Controle de autenticação| As opções deste grupo controlam o tipo de autentic
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">2</span> &nbsp; Em seguida, clique em **Controle de Log**
 
-![](avancadas-controle-log.png)
+![](img/avancadas-controle-log.png)
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">3</span> &nbsp; Na guia **Geral**, preencha os seguintes campos.
 
-![](avancadas-controle-log-geral.png)
+![](img/avancadas-controle-log-geral.png)
 
 Campos | Descrição
 :---   | :---
@@ -917,11 +917,11 @@ Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alt
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">4</span> &nbsp; Clique em **Controle de Autenticação**
 
-![](avancadas-controle-autenticacao.png)
+![](img/avancadas-controle-autenticacao.png)
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">5</span> &nbsp; Na guia **Geral**, preencha os seguintes campos.
 
-![](avancadas-controle-autenticacao-geral.png)
+![](img/avancadas-controle-autenticacao-geral.png)
 
 Campos | Descrição
 :---   | :---
@@ -930,7 +930,7 @@ Tipo   | Tipos de autenticação suportados pelo STCP OFTP Server: SO(Windows), 
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">6</span> &nbsp; Na guia **SO(Windows)**, preencha os seguintes campos.
 
-![](avancadas-controle-autenticacao-sowindows.png)
+![](img/avancadas-controle-autenticacao-sowindows.png)
 
 
 Campos  | Descrição
@@ -941,7 +941,7 @@ Prefixo |Prefixo para mascarar o usuário.
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">7</span> &nbsp; Na guia **STCP**, habilite ou desabilite as seguintes opções.
 
-![](avancadas-controle-autenticacao-stcp.png)
+![](img/avancadas-controle-autenticacao-stcp.png)
 
 Campos    | Descrição
 :---      | :---
@@ -957,7 +957,7 @@ Pelo menos um caractere especial| Esta opção assinalada força a criação de 
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">8</span> &nbsp; Na guia **Securld/RSA**, preencha o seguinte campo.
 
-![](avancadas-controle-autenticacao-rsa.png)
+![](img/avancadas-controle-autenticacao-rsa.png)
 
 Campos | Descrição
 :---   | ---
@@ -966,7 +966,7 @@ Arquivo de configuração| Parâmetro que informa as configurações para autent
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">9</span> &nbsp; Na guia **LDAP**, preencha o seguinte campo.
 
-![](avancadas-controle-autenticacao-ldap.png)
+![](img/avancadas-controle-autenticacao-ldap.png)
 
 Campos     | Descrição
 :---       | :---
@@ -981,7 +981,7 @@ Pressione o botão **OK** para gravar as configurações ou **Cancelar** para ab
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">10</span> &nbsp; Na guia **Usuários**, selecione o usuário e clique em **Propriedades**.
 
-![](usuarios-propriedades.png)
+![](img/usuarios-propriedades.png)
 
 Após adicionar corretamente o Usuário, é necessário configurar os **Tipos de Arquivos.  Obs.: Ao pressionar o botão OK, somente as configurações da guia Geral e Avançadas serão gravadas.**
 
@@ -989,7 +989,7 @@ Após adicionar corretamente o Usuário, é necessário configurar os **Tipos de
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp; Clique em **Adicionar**.
 
-![](tipos-de-arquivos.png)
+![](img/tipos-de-arquivos.png)
 
 A configuração de um **Tipo de Arquivo** possibilita alterar algumas características na transferência do arquivo, tais como: conversão do nome ou formato do arquivo, conversão da codificação dos dados, inicialização de uma aplicação ou bat, entre outras.
 
@@ -1017,7 +1017,7 @@ Default  | —   | —      | —     | —    | TXTTXT | Sim
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">2</span> &nbsp; Informe o Nome do novo tipo de arquivo e clique em **OK**.
 
-![](tipo-de-arquivo-nome.png)
+![](img/tipo-de-arquivo-nome.png)
 
 Campos | Descrição
 :---   | :---
@@ -1025,7 +1025,7 @@ Nome do novo tipo de arquivo| Preencha este campo com o nome desejado para o nov
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">3</span> &nbsp; Na guia **Geral**, configure as seguintes opções.
 
-![](tipo-de-arquivo-geral.png)
+![](img/tipo-de-arquivo-geral.png)
 
 Campos | Descrição
 :---   | :---
@@ -1079,7 +1079,7 @@ A utilização do timestamp externo do arquivo tem o seguinte formato:
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">4</span> &nbsp; Na guia **Avançadas**, configure as seguintes opções para o tipo de arquivo.
 
-![](tipo-de-arquivo-avancadas.png)
+![](img/tipo-de-arquivo-avancadas.png)
 
 Campos | Descrição
 :---   | :---
@@ -1092,25 +1092,25 @@ Gravar o arquivo| Preencha este campo com o nome de um programa externo que ser�
 
 Executa um comando externo para validar o arquivo antes de transmitir. Em caso de sucesso (Return code 0), o processo de transmissão será executado.
 
-![](tipo-arq-01.png)
+![](img/tipo-arq-01.png)
 
 **Validar o arquivo após transmitir**
 
 Executa comando para validar arquivo após a transmissão. Em caso de sucesso (Return code 0), o processo de transmissão será executado.
 
-![](tipo-arq-02.png)
+![](img/tipo-arq-02.png)
 
 **Validar o arquivo antes de receber**
 
 Executa um comando externo antes de receber o arquivo. Em caso de sucesso (Return code 0), o arquivo é fechado e a recepção, finalizada com sucesso.
 
-![](tipo-arq-03.png)
+![](img/tipo-arq-03.png)
 
 **Validar o arquivo após receber**
 
 Executa um comando externo após receber o arquivo, antes do fechamento do arquivo. Em caso de sucesso (Return code 0), o processo é finalizado com sucesso.
 
-![](tipo-arq-04.png)
+![](img/tipo-arq-04.png)
 
 Backup arquivo transmitido | Esta opção assinalada habilita o backup dos arquivos transmitidos para este tipo.
 :---                       | :---
@@ -1128,7 +1128,7 @@ Os seguintes procedimentos devem ser executados para a geração da chave privat
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp; No prompt de comando, execute a aplicação **openssl.exe** (Ex.: C:\STCPODT\Program\openssl.exe) para iniciar o processo de geração do par de chaves assimétricas (privada/pública).
 
-![](openssl.png)
+![](img/openssl.png)
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">2</span> &nbsp; Utilize o comando abaixo para gerar a chave privativa que será utilizada para criptografia da conexão.
 
@@ -1142,7 +1142,7 @@ Exemplo:
 genrsa –out c:\stcpodt\keys\stcp_abcde.key 1024
 ```
 
-![](openssl-chave-priv.png)
+![](img/openssl-chave-priv.png)
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">3</span> &nbsp; O próximo passo é gerar o Certificado Digital associado à chave gerada anteriormente. Para isso, utilize o comando abaixo.
 
@@ -1157,7 +1157,7 @@ req –new –x509 –key c:\stcpodt\keys\stcp_interprint.key –out c:\stcpodt\
 ```
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">4</span> &nbsp; Preencha as informações solicitadas para concluir o processo de geração do Certificado Digital.
 
-![](openssl-cert.png)
+![](img/openssl-cert.png)
 
 ## Comunicação TLS
 
@@ -1165,21 +1165,21 @@ req –new –x509 –key c:\stcpodt\keys\stcp_interprint.key –out c:\stcpodt\
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">2</span> &nbsp; Acesse a guia **Redes** para adicionar as interfaces que ficarão disponíveis para o serviço de transferência e adicione uma interface do serviço de transferência.
 
-![](guia-redes.png)
+![](img/guia-redes.png)
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">3</span> &nbsp; Clique em **Adicionar** e selecione o protocolo **OFTP – TCP/IP**.
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">4</span> &nbsp; Clique em **OK** para entrar nas configurações.
 
-![](protocolo-oftp.png)
+![](img/protocolo-oftp.png)
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">5</span> &nbsp; Clique na guia **TCP/IP** e configure os parâmetros apresentados.
 
-![](tcp-ip-redes.png)
+![](img/tcp-ip-redes.png)
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">6</span> &nbsp; Clique na guia **TLS**, configure os parâmetros apresentados abaixo e pressione o botão **OK** para finalizar.
 
-![](redes-guia-tls.png)
+![](img/redes-guia-tls.png)
 
 ## Estrutura dos diretórios
 

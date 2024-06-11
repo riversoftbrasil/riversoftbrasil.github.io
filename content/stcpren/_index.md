@@ -22,7 +22,7 @@ O STCPRen pode ser utilizado na integração do STCP OFTP Server ou STCP OFTP Cl
 
 No cenário apresentado abaixo, mostramos a integração da estrutura de diretórios de transferência do STCP OFTP Client com a de incorporação e geração de arquivos financeiros de um sistema de ERP.
 
-![](stcpren-01.png)
+![](img/stcpren-01.png)
 
 As regras de validação e das ações (renomeio, cópia, backup, etc) deverão ser armazenadas em um ou mais arquivos de configuração.
 

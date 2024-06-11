@@ -58,7 +58,7 @@ A Autoridade Certificadora é a empresa responsável pela verificação e proces
 
 O SSL é uma camada de protocolo para utilização entre a aplicação e a camada de comunicação TCP/IP. O SSL fornece os serviços de comunicação segura entre a aplicação cliente e servidor, permitindo a mútua autenticação, assinatura digital (integridade) e criptografia (privacidade).
 
-![](seg-01.png)
+![](img/seg-01.png)
 
 O SSL suporta a escolha específica dos algoritmos utilizados para criptografia, ‘hash’ e assinatura digital. A seleção dos algoritmos entre o cliente e servidor é realizada no estabelecimento da sessão do protocolo. O SSL tem diferentes versões, a adotada pelo STCP OFTP Client é a versão 3.0.
 
@@ -87,7 +87,7 @@ Estes são os passos realizados para a troca de chaves:
 
 O STCP OFTP Client possibilita a configuração do conjunto de algoritmos a serem utilizados para codificação na criptografia, assinatura digital e hash.
 
-![](seg-02.png "STCP OFTP Core")
+![](img/seg-02.png "STCP OFTP Core")
 
 O **STCP OFTP Client** tem uma arquitetura modular e possibilita a configuração de diferentes tipos de comunicação.
 

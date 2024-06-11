@@ -24,33 +24,33 @@ Nesta seção veremos como utilizar o programa *STCPRenCfg.EXE* para criar ou ed
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">2</span> &nbsp;Clique no botão **Adicionar** para selecionar o arquivo de configuração ou criar um novo.
 
-![](stcpren-03.png)
+![](img/stcpren-03.png)
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">3</span> &nbsp;Clique no botão indicado para localizar o arquivo.
 
-![](stcpren-04.png)
+![](img/stcpren-04.png)
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">4</span> &nbsp;Para criar um novo arquivo, digite um novo nome e clique no botão **Abrir**.
 
-![](stcpren-05.png)
+![](img/stcpren-05.png)
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">5</span> &nbsp;Clique no botão **OK** para adicionar ou criar o arquivo de configuração de regras.
 
-![](stcpren-06.png)
+![](img/stcpren-06.png)
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">6</span> &nbsp;Caso o arquivo de configuração não exista, uma janela de aviso será apresentada, clique no botão **Sim** para confirmar.
 
-![](stcpren-07.png)
+![](img/stcpren-07.png)
 
 ## Alterar os parâmetros de configuração do arquivo de regras
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp;Selecione o arquivo de configuração desejado e clique no botão **Propriedades**.
 
-![](stcpren-08.png)
+![](img/stcpren-08.png)
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">2</span> &nbsp;Na guia **Geral**, configure os parâmetros desejados.
 
-![](stcpren-09.png)
+![](img/stcpren-09.png)
 
 Parâmetro| Descrição
 :---     | :---
@@ -69,7 +69,7 @@ Parâmetro| Descrição
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">3</span> &nbsp;Na guia **Acesso**, é possível configurar os parâmetros para utilização de um compartilhamento de rede.
 
-![](stcpren-10.png)
+![](img/stcpren-10.png)
 
 Parâmetro     | Descrição
 :---          | :---
@@ -81,7 +81,7 @@ Parâmetro     | Descrição
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">4</span> &nbsp;Na guia **Log**, é possível configurar os parâmetros para gravação dos registros de eventos de execução do STCPRen.
 
-![](stcpren-11.png)
+![](img/stcpren-11.png)
 
 Parâmetro | Descrição
 :---      | :---
@@ -97,15 +97,15 @@ Parâmetro | Descrição
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">5</span> &nbsp;Na guia **Variáveis**, você pode definir regras de substituição dos valores informados nas variáveis (–var0 à –var9) utilizados na linha de comando do STCPRen.
 
-![](stcpren-12.png)
+![](img/stcpren-12.png)
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">6</span> &nbsp;Clique no botão **Adicionar** para configurar uma nova **regra de substituição dos valores de uma variável**.
 
-![](stcpren-13.png)
+![](img/stcpren-13.png)
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">7</span> &nbsp;Configure os parâmetros da regra de substituição e clique no botão **OK** para salvar.
 
-![](stcpren-14.png)
+![](img/stcpren-14.png)
 
 Parâmetro | Descrição
 :---      | :---
@@ -120,15 +120,15 @@ Parâmetro | Descrição
 
 O arquivo de lista pode conter nomes de diretórios ou arquivos que serão processados. As regras de substituição serão aplicadas às linhas do arquivo.
 
-![](stcpren-15.png)
+![](img/stcpren-15.png)
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">9</span> &nbsp;Clique no botão **Adicionar** para configurar uma nova **regra de substituição através de uma variável**.
 
-![](stcpren-16.png)
+![](img/stcpren-16.png)
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">10</span> &nbsp;Configure os parâmetros da regra de substituição e clique no botão **OK** para salvar.
 
-![](stcpren-17.png)
+![](img/stcpren-17.png)
 
 Parâmetro | Descrição
 :---      | :---
@@ -141,11 +141,11 @@ Parâmetro | Descrição
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">11</span> &nbsp;Clique no botão **Adicionar** para configurar uma nova **regra de substituição através de uma expressão regular**.
 
-![](stcpren-18.png)
+![](img/stcpren-18.png)
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">12</span> &nbsp;Configure os parâmetros da regra de substituição e clique no botão **OK** para salvar.
 
-![](stcpren-19.png)
+![](img/stcpren-19.png)
 
 Parâmetro     | Descrição
 :---          | :---
@@ -159,15 +159,15 @@ Parâmetro     | Descrição
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp;Na guia **Regras de Validação**, clique no botão **Adicionar** para criar uma nova regra ou selecione uma regra e clique no botão **Propriedades** para modificá-la.
 
-![](stcpren-20.png)
+![](img/stcpren-20.png)
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">2</span> &nbsp;Clique no botão **Adicionar** para criar uma nova regra.
 
-![](stcpren-21.png)
+![](img/stcpren-21.png)
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">3</span> &nbsp;Configure a identificação da regra e clique no botão **OK** para salvar.
 
-![](stcpren-22.png)
+![](img/stcpren-22.png)
 
 Parâmetro| Descrição
 :---     | :---
@@ -176,24 +176,24 @@ Parâmetro| Descrição
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">4</span> &nbsp;Selecione uma regra e clique no botão **Ordenar regras**.
 
-![](stcpren-23.png)
+![](img/stcpren-23.png)
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">5</span> &nbsp; Nesta tela, selecione o intervalo de ordenação das regras:
 
-![](stcpren-24.png)
+![](img/stcpren-24.png)
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">6</span> &nbsp;Selecione uma regra e clique no botão **Propriedades** para modificar os seus parâmetros.
 
-![](stcpren-25.png)
+![](img/stcpren-25.png)
 
 Para mudar o número da regra (ordem de execução), selecione-a e pressione um dos botões abaixo:
 
-![](stcpren-26.png)
-![](stcpren-27.png)
+![](img/stcpren-26.png)
+![](img/stcpren-27.png)
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">7</span> &nbsp;Na guia **Geral**, configure os parâmetros de identificação da regra, validação do arquivo e outros:
 
-![](stcpren-28.png)
+![](img/stcpren-28.png)
 
 Parâmetro | Descrição
 :---      | :---
@@ -217,21 +217,21 @@ Parâmetro | Descrição
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">8</span> &nbsp;Na guia **Renomeio de Arquivo I**, configure os parâmetros que serão utilizados na definição do **Novo Nome do Arquivo**.
 
-![](stcpren-29.png)
+![](img/stcpren-29.png)
 
 Parâmetro | Descrição
 :---      | :---
 **RenameFileTo**| Define o novo nome para o arquivo. <br> Obs.: Se este parâmetro não for definido, o nome original será utilizado.
-**InsertTimestamp**| Define a utilização do timestamp na nova nomenclatura: <br> 0 = Não insere <br> 1 = Insere no final do nome do arquivo <br> 2 = Insere no início do nome do arquivo <br> 4 = Insere customizado (através das opções de substituição) <br> ![](stcpren-31.png)
-**InsertTimestampPart**| Define o tipo de timestamp a ser utilizado pela opção InsertTimestamp: <br> 0 = Data e hora do sistema (computador local) <br> 1 = Data e hora da criação do arquivo <br> 2 = Data e hora da última modificação do arquivo <br> 4 = Data e hora do último acesso ao arquivo <br> ![](stcpren-32.png)
+**InsertTimestamp**| Define a utilização do timestamp na nova nomenclatura: <br> 0 = Não insere <br> 1 = Insere no final do nome do arquivo <br> 2 = Insere no início do nome do arquivo <br> 4 = Insere customizado (através das opções de substituição) <br> ![](img/stcpren-31.png)
+**InsertTimestampPart**| Define o tipo de timestamp a ser utilizado pela opção InsertTimestamp: <br> 0 = Data e hora do sistema (computador local) <br> 1 = Data e hora da criação do arquivo <br> 2 = Data e hora da última modificação do arquivo <br> 4 = Data e hora do último acesso ao arquivo <br> ![](img/stcpren-32.png)
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">9</span> &nbsp; Na guia **Renomeio de Arquivo I**, clique em **Adicionar** e configure as regras de renomeio do **Novo Nome do Arquivo** com as opções de **Substituição através do nome original**.
 
-![](stcpren-33.png)
+![](img/stcpren-33.png)
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">10</span> &nbsp;Configure as opções de substituição através do nome original do arquivo e do diretório, variáveis, número de sequência, timestamp e clique no botão **OK** para salvar.
 
-![](stcpren-34.png)
+![](img/stcpren-34.png)
 
 Parâmetro | Descrição
 :---      | :---
@@ -258,7 +258,7 @@ Parâmetro | Descrição
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">11</span> &nbsp;Na guia **Renomeio de Arquivo II**, configure as regras de renomeio do **Novo Nome do Arquivo** através do conteúdo do arquivo original ou de uma expressão regular:
 
-![](stcpren-35.png)
+![](img/stcpren-35.png)
 
 Parâmetro | Descrição
 :---      | :---
@@ -266,11 +266,11 @@ Parâmetro | Descrição
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">12</span> &nbsp;Clique em **Adicionar** para configurar as regras de **Substituição através do conteúdo do arquivo original** que serão aplicadas no **Novo Nome do Arquivo**:
 
-![](stcpren-36.png)
+![](img/stcpren-36.png)
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">13</span> &nbsp;Configure os parâmetros de substituição e clique no botão **OK** para salvar.
 
-![](stcpren-37.png)
+![](img/stcpren-37.png)
 
 Parâmetro | Descrição
 :---      | :---
@@ -283,11 +283,11 @@ Parâmetro | Descrição
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">14</span> &nbsp;Clique em **Adicionar** para configurar as regras de **Substituição através de uma expressão regular** que serão aplicadas no **Novo Nome do Arquivo**:
 
-![](stcpren-38.png)
+![](img/stcpren-38.png)
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">15</span> &nbsp;Configure os parâmetros de substituição e clique no botão **OK** para salvar.
 
-![](stcpren-39.png)
+![](img/stcpren-39.png)
 
 Parâmetro | Descrição
 :---      | :---
@@ -299,21 +299,21 @@ Parâmetro | Descrição
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">16</span> &nbsp;Na guia **Cópia**, configure os parâmetros que serão utilizados na definição do **Novo Nome do Diretório** para onde será copiado o arquivo original.
 
-![](stcpren-40.png)
+![](img/stcpren-40.png)
 
 Parâmetro| Descrição
 :---     | :---
 **CopyToDir**| Define o nome do diretório de destino para onde deverá ser copiado o arquivo.
-**CopyFileOption**| Define as opções de cópia que deverão ser utilizadas. <br> ![](stcpren-41.png)
+**CopyFileOption**| Define as opções de cópia que deverão ser utilizadas. <br> ![](img/stcpren-41.png)
 **CopyTempExtension**| Define uma extensão temporária para o arquivo enquanto o processo de cópia não é finalizado.
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">17</span> &nbsp;Clique em **Adicionar** para configurar as regras de **Substituição através do nome original** que serão aplicadas no **Novo Nome do Diretório**.
 
-![](stcpren-42.png)
+![](img/stcpren-42.png)
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">18</span> &nbsp;Configure os parâmetros de substituição e clique no botão **OK** para salvar.
 
-![](stcpren-43.png)
+![](img/stcpren-43.png)
 
 Parâmetro | Descrição
 :---      | :---
@@ -335,11 +335,11 @@ Parâmetro | Descrição
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">19</span> &nbsp; Clique em **Adicionar** para configurar as regras de **Substituição através de expressão regular** que serão aplicadas no **Novo Nome do Diretório**.
 
-![](stcpren-44.png)
+![](img/stcpren-44.png)
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">20</span> &nbsp;Configure os parâmetros de substituição e clique no botão **OK** para salvar.
 
-![](stcpren-45.png)
+![](img/stcpren-45.png)
 
 Parâmetro| Descrição
 :---     | :---
@@ -351,20 +351,20 @@ Parâmetro| Descrição
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">21</span> &nbsp;Na guia **Backup**, configure os parâmetros que serão utilizados na definição do **Novo Nome do Diretório**, para onde será copiado o arquivo original:
 
-![](stcpren-46.png)
+![](img/stcpren-46.png)
 
 Parâmetro| Descrição
 :---     | :---
 **BkpToDir**| Define o nome do diretório destino para onde deverá ser copiado o arquivo de backup.
-**BkpFileOption**| Define as opções de backup que deverão ser utilizadas. ![](stcpren-47.png)
+**BkpFileOption**| Define as opções de backup que deverão ser utilizadas. ![](img/stcpren-47.png)
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">22</span> &nbsp;Clique em **Adicionar** para configurar as regras de **Substituição através do nome original** que serão aplicadas no **Novo Nome do Diretório** de backup.
 
-![](stcpren-48.png)
+![](img/stcpren-48.png)
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">23</span> &nbsp;Configure os parâmetros de substituição e clique no botão **OK** para salvar.
 
-![](stcpren-49.png)
+![](img/stcpren-49.png)
 
 Parâmetro| Descrição
 :---     | :----
@@ -387,11 +387,11 @@ Parâmetro| Descrição
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">24</span> &nbsp;Clique em **Adicionar** para configurar as regras de **Substituição através de expressão regular** que serão aplicadas no **Novo Nome do Diretório** de
 backup.
 
-![](stcpren-50.png)
+![](img/stcpren-50.png)
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">25</span> &nbsp;Configure os parâmetros de substituição e clique no botão **OK** para salvar.
 
-![](stcpren-51.png)
+![](img/stcpren-51.png)
 
 Parâmetro| Descrição
 :---     | :---
@@ -403,11 +403,11 @@ Parâmetro| Descrição
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">26</span> &nbsp;Na guia **Avançadas**, configure os parâmetros:
 
-![](stcpren-52.png)
+![](img/stcpren-52.png)
 
 Parâmetro| Descrição
 :---     | :---
-**CheckLockUnlockOption**| Define as opções de criação/utilização do arquivo de sincronização de acesso ao arquivo que está sendo processado. ![](stcpren-53.png)
+**CheckLockUnlockOption**| Define as opções de criação/utilização do arquivo de sincronização de acesso ao arquivo que está sendo processado. ![](img/stcpren-53.png)
 **CheckLockUnlockFileName**| Define o nome do arquivo de bloqueio/desbloqueio que deverá ser verificado.
 **CreateLockUnlockFileName**| Define o nome do arquivo de bloqueio/desbloqueio que deverá ser criado.
 **Controle de tamanho de arquivos**| Define o tamanho mínimo e máximo que o arquivo pode ter para ser processado pela regra.

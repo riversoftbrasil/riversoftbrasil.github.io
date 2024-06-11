@@ -17,4 +17,4 @@ lastmod: 2024-02-23
 
 Na página de Upload(envio), os arquivos devem ser selecionados e enviados.
 
-![](upload.png "Página de Upload - Portal Directlink")
+![](img/upload.png "Página de Upload - Portal Directlink")

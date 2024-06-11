@@ -22,7 +22,7 @@ Para executar automaticamente a aplicação de transferência de arquivos, devem
 
 {{< icon "chevron-right" >}}&nbsp; Clique em **Criar Tarefa** no painel **Ações**.
 
-![](clt-agenda-01.png)
+![](img/clt-agenda-01.png)
 
 {{% steps %}}
 
@@ -32,17 +32,17 @@ Na guia **Geral** da janela de criação da tarefa configure os campos conforme 
 
 Na guia **Disparadores** clique no botão **Novo**.
 
-![](clt-agenda-02.png)
+![](img/clt-agenda-02.png)
 
 ### Agendamento
 
 Na janela **Novo Disparador** configure o agendamento conforme desejado e clique no botão **OK** para salvar as informações.
 
-![](clt-agenda-03.png)
+![](img/clt-agenda-03.png)
 
 Na guia **Ações** clique no botão **Novo**
 
-![](clt-agenda-04.png)
+![](img/clt-agenda-04.png)
 
 ### Programa/script
 
@@ -61,10 +61,10 @@ C:\STCPCLT\program\stcpclt.exe "C:\STCPCLT\CTCP.INI" -p PERFIL-TESTE -r 5 -t 30 
 
 Ao ser apresentada a mensagem abaixo clique no botão **Sim**.
 
-![](clt-agenda-06.png)
+![](img/clt-agenda-06.png)
 
 Após a criação da tarefa, esta será exibida na janela principal do **Agendador de Tarefas**.
 
-![](clt-agenda-07.png)
+![](img/clt-agenda-07.png)
 
 {{% /steps %}}

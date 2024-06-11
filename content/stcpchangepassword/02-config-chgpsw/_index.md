@@ -17,31 +17,31 @@ lastmod: 2024-05-27
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp; Acesse a ferramenta de configuração do IIS (Internet Information Services) e crie um novo **diretório virtual** e/ou **site** para a configuração da aplicação.
 
-![](iis-01.png)
+![](img/iis-01.png)
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">2</span> &nbsp; Informe o nome para o novo diretório virtual e o caminho físico, conforme figura abaixo e clique no botão **OK**.
 
-![](iis-02.png)
+![](img/iis-02.png)
 
-![](iis-03.png)
+![](img/iis-03.png)
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">3</span> &nbsp; Configure as permissões conforme apresentado e clique no botão "**Avançar**".
 
-![](img10.png)
+![](img/iis-06.png)
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">4</span> &nbsp; Clique no botão "**Concluir**" para finalizar a criação do diretório virtual.
 
-![](img11.png)
+![](img/iis-07.png)
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">5</span> &nbsp; Nas propriedades do diretório virtual criado, selecione a aba **Documentos** e pressione o botão **Adicionar**.
 
-![](img12.png)
+![](img/iis-08.png)
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">6</span> &nbsp; Informe o nome da página inicial do site conforme a figura abaixo e pressione "**OK**". Remova as outras páginas utilizando o botão **Remover**.
 
-![](img13.png)
+![](img/iis-09.png)
 
-![](img14.png)
+![](img/iis-10.png)
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">7</span> &nbsp; Na aba "**ASP .NET**" configure a versão conforme a figura abaixo:
 
@@ -52,7 +52,7 @@ lastmod: 2024-05-27
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp; Vá até o diretório de instalação da aplicação e renomeie o arquivo **exemplo.stcpmon.config** para **stcpmon.config**.
 
-![](iis-04.png)
+![](img/iis-04.png)
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">2</span> &nbsp; Configure o arquivo **stcpmon.config** conforme informado abaixo:
 
@@ -100,7 +100,7 @@ TCPRfc2204 = "16"
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp; No diretório de instalação da aplicação STCP OFTP Change Password, renomeie o arquivo "**exemplo.web.config**" para "**web.config**" e abra o arquivo já renomeado.
 
-![](iis-05.png)
+![](img/iis-05.png)
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">2</span> &nbsp; Na seção **appSettings**, realize as configurações da imagem de validação (Captcha Image).
 

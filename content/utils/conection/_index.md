@@ -30,7 +30,7 @@ telnet <IP-SERVIDOR-DESTINO> <PORTA>
 Nos parâmetros IP-SERVIDOR-DESTINO e PORTA deverão ser informados o IP e Porta respectivos ao servidor do parceiro, no qual a conexão será realizada.
 {{< /callout >}}
 
-![](telnet-01.png)
+![](img/telnet-01.png)
 
 {{< callout type="info" >}}
 Obs.: Antes de realizar o teste com o Telnet, verifique se o mesmo encontra-se instalado em seu sistema operacional. Em caso de dúvidas consulte o seu administrador de rede.
@@ -38,7 +38,7 @@ Obs.: Antes de realizar o teste com o Telnet, verifique se o mesmo encontra-se i
 
 Caso a conexão seja estabelecida com sucesso, a tela abaixo deverá ser exibida. Observe que para haver sucesso no teste de conectividade, a mensagem **ODETTE FTP READY** deverá ser exibida conforme a imagem de exemplo abaixo.
 
-![](telnet-02.png)
+![](img/telnet-02.png)
 
 Caso o teste retorne falha na conexão (vide exemplo abaixo), por favor, verifique com a área de infraestrutura de rede se não existe nenhum bloqueio (Firewall/Proxy) na comunicação.
 
@@ -46,7 +46,7 @@ Caso o teste retorne falha na conexão (vide exemplo abaixo), por favor, verifiq
 
 A mensagem de erro poderá variar conforme o problema existente na conectividade. Veja um exemplo abaixo no caso de erro.
 
-![](telnet-03.png)
+![](img/telnet-03.png)
 
 {{< callout type="info" >}}
 Obs.: Em caso de dúvidas na execução deste processo, consulte o seu administrador de rede.
@@ -76,13 +76,13 @@ Nos parâmetros IP-SERVIDOR-DESTINO e PORTA deverão ser informados o IP e Porta
 ```
 s_client -host <IP-SERVIDOR-DESTINO> -port <PORTA> –debug
 ```
-![](openssl-01.png)
+![](img/openssl-01.png)
 
-<!-- ![](telnet-02.png) -->
+<!-- ![](img/telnet-02.png) -->
 
 A tela a seguir deverá ser apresentada em caso de sucesso. Observe que para haver sucesso no teste de conectividade, a mensagem **ODETTE FTP READY** deverá ser exibida conforme a imagem de exemplo abaixo.
 
-![](telnet-02.png)
+![](img/telnet-02.png)
 
 Caso o teste retorne falha na conexão, por favor, verifique com a área de infraestrutura de rede se não existe nenhum bloqueio (Firewall/Proxy) na comunicação.
 

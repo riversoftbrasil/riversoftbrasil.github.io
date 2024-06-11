@@ -36,13 +36,13 @@ Quando o modo de varredura é utilizado, a opção **-subdir** habilita a procur
 
 Quando o STCPRen localiza um arquivo, separa o nome do diretório do nome do arquivo e possibilita a utilização destas informações pelas regras de substituição (Figura abaixo).
 
-![](stcpren-54.png)
+![](img/stcpren-54.png)
 
 A seleção das informações para formar um novo nome de diretório e de arquivo nas ações de “Cópia” e ou de “Backup” serão configuradas através das regras de substituição (Figura abaixo).
 
-![](stcpren-55.png)
+![](img/stcpren-55.png)
 
-![](stcpren-56.png)
+![](img/stcpren-56.png)
 
 ### Variávies internas
 
@@ -73,5 +73,5 @@ O STCPRen irá registrar as ações executadas em um arquivo diário de log dos 
 
 Os dados poderão ser armazenados em arquivo texto ou banco de dados.
 
-![](stcpren-57.png)
+![](img/stcpren-57.png)
 

@@ -41,7 +41,7 @@ O programa de configuração pode ser acessado também na pasta **Program** da a
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp; Na guia Geral, preencha os campos com as informações descritas abaixo:
 
-![](clt-guia-geral.png)
+![](img/clt-guia-geral.png)
 
 | Campos                |                                                                                                                        Descrição                                                                                                                         |
 | :-------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -97,7 +97,7 @@ Para um novo Perfil adicionado, automaticamente, será criada uma estrutura de s
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">2</span> &nbsp;Preencha os campos **Nome** e **Descrição**.
 
-![](clt-config-01.png)
+![](img/clt-config-01.png)
 
 <br>
 
@@ -114,7 +114,7 @@ Clique em **OK**.
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">3</span> &nbsp;Na guia **Odette**, preencha os seguintes campos:
 
-![](clt-config-02.png)
+![](img/clt-config-02.png)
 
 | Campos                                |                                                                                                                        Descrição                                                                                                                        |
 | :------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -150,11 +150,11 @@ Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alt
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp; Com o perfil já criado, selecione-o e clique no botão **Propriedades**
 
-![](clt-config-06.png)
+![](img/clt-config-06.png)
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">2</span> &nbsp; Na guia **Geral**, configure os seguintes campos.
 
-![](clt-config-07.png)
+![](img/clt-config-07.png)
 
 | Campos                                |                                                                                                                                                                                       Descrição                                                                                                                                                                                        |
 | :------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -177,7 +177,7 @@ Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alt
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">3</span> &nbsp;Ainda na guia **Geral**, clique no botão **Configurar** para configurar a opção de protocolo
 selecionada anteriormente.
 
-![](clt-config-08.png)
+![](img/clt-config-08.png)
 
 | Protocolo     |                                                Descrição                                                |
 | :------------ | :-----------------------------------------------------------------------------------------------------: |
@@ -188,7 +188,7 @@ selecionada anteriormente.
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp; Se o protocolo selecionado foi **OFTP – TCP/IP**, configure as seguintes opções na guia **TCP/IP**.
 
-![](clt-config-09.png)
+![](img/clt-config-09.png)
 
 | Campos             |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  Descrição                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | :----------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -211,7 +211,7 @@ selecionada anteriormente.
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">2</span> &nbsp;Na guia **TLS(Openssl)**, configure os seguintes campos para o protocolo OFTP - TCP/IP.
 
-![](clt-config-10.png)
+![](img/clt-config-10.png)
 
 | Campos      |                                                                                                         Descrição                                                                                                         |
 | :---------- | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
@@ -227,7 +227,7 @@ selecionada anteriormente.
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">3</span> &nbsp;Na guia **Proxy**, configure as seguintes opções para o protocolo **OFTP – TCP/IP**.
 
-![](clt-config-11.png)
+![](img/clt-config-11.png)
 
 | Campos                      |                                                                                        Descrição                                                                                         |
 | :-------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -251,7 +251,7 @@ Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alt
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp;Vá para a guia **Tipos de Arquivos**
 
-![](clt-config-30.png)
+![](img/clt-config-30.png)
 
 A configuração de um **Tipo de Arquivo** possibilita alterar algumas características na transferência do arquivo, tais como: conversão do nome ou formato do arquivo, conversão da codificação dos dados, inicialização de uma aplicação ou bat, entre outras.
 
@@ -284,7 +284,7 @@ A tabela abaixo demonstra a associação do nome do arquivo com o tipo específi
 Nesta nova tela, preencha o campo com o **Nome do novo tipo de arquivo**.
 Clique em **OK** para salvar as configurações.
 
-![](clt-config-31.png)
+![](img/clt-config-31.png)
 
 | Campo                        |                                                       Descrição                                                        |
 | :--------------------------- | :--------------------------------------------------------------------------------------------------------------------: |
@@ -293,7 +293,7 @@ Clique em **OK** para salvar as configurações.
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">2</span> &nbsp;Na guia **Geral**, preencha e configure os seguintes campos.
 
-![](clt-config-32.png)
+![](img/clt-config-32.png)
 
 | Campos                         |                                                                                                                                          Descrição                                                                                                                                           |
 | :----------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
@@ -324,7 +324,7 @@ Clique em **OK** para salvar as configurações.
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">3</span> &nbsp;Na guia **Avançadas**, selecione as seguintes propriedades do tipo de arquivo.
 
-![](clt-config-33.png)
+![](img/clt-config-33.png)
 
 | Campos                                                            |                                                                                                         Descrição                                                                                                          |
 | :---------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
@@ -338,32 +338,32 @@ Validar o arquivo antes de transmitir:
 
 Executa um comando externo para validar o arquivo antes de transmitir. Em caso de sucesso (Return code 0), o processo de transmissão será executado.
 
-![](clt-config-34.png)
+![](img/clt-config-34.png)
 
 Validar o arquivo após transmitir:
 
 Executa comando para validar arquivo após a transmissão. Em caso de sucesso (Return code 0), o processo de transmissão será executado.
 
-![](clt-config-35.png)
+![](img/clt-config-35.png)
 
 Validar o arquivo antes de receber:
 
 Executa um comando externo antes de receber o arquivo. Em caso de sucesso (Return code 0), o arquivo é fechado e a recepção, finalizada com sucesso.
 
-![](clt-config-36.png)
+![](img/clt-config-36.png)
 
 Validar o arquivo após receber:
 
 Executa um comando externo após receber o arquivo, antes do fechamento do arquivo. Em caso
 de sucesso (Return code 0), o processo é finalizado com sucesso.
 
-![](clt-config-37.png)
+![](img/clt-config-37.png)
 
 ### Avançadas I
 
 Na guia **Avançadas I**, nas **Propriedades do Perfil**, preencha os seguintes campos de configuração.
 
-![](clt-config-38.png)
+![](img/clt-config-38.png)
 
 | Campos                                  |                                                                                                            Descrição                                                                                                             |
 | :-------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
@@ -377,7 +377,7 @@ Na guia **Avançadas I**, nas **Propriedades do Perfil**, preencha os seguintes 
 
 Na guia **Avançadas II**, nas **Propriedades do Perfil**, preencha os seguintes campos de configuração.
 
-![](clt-config-39.png)
+![](img/clt-config-39.png)
 
 | Campos                                                   |                                                                           Descrição                                                                           |
 | :------------------------------------------------------- | :-----------------------------------------------------------------------------------------------------------------------------------------------------------: |
@@ -396,7 +396,7 @@ Na guia **Avançadas II**, nas **Propriedades do Perfil**, preencha os seguintes
 <!-- <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp; -->
 Na guia **Avançadas**, configure os seguintes campos:
 
-![](clt-config-03.png)
+![](img/clt-config-03.png)
 
 | Campos                                  |                                                                                                                                  Descrição                                                                                                                                   |
 | :-------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -412,11 +412,11 @@ Na guia **Avançadas**, configure os seguintes campos:
 
 Clique no botão **Log** para continuar a configuração.
 
-![](clt-config-04.png)
+![](img/clt-config-04.png)
 
 Na guia **Geral**, Preencha os seguintes campos.
 
-![](clt-config-05.png)
+![](img/clt-config-05.png)
 
 | Campos                                        |                                                                                           Descrição                                                                                           |
 | :-------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
@@ -457,22 +457,20 @@ Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alt
 
 Na guia **Perfis**, selecione o perfil desejado e clique no botão **Propriedades**.
 
-![](clt-config-40.png)
+![](img/clt-config-40.png)
 
 Na guia **Geral**, pressione o botão **Configurar**.
 
-![](clt-config-41.png)
+![](img/clt-config-41.png)
 
 Na guia **TCP/IP**, marque a opção **Comunicação Segura** e em seguida, selecione **TLS**.
 Clique em **OK** para concluir o processo de configuração.
 
-![](clt-config-42.png)
+![](img/clt-config-42.png)
 
 Caso a comunicação entre o STCP OFTP Server Enterprise/Lite e o STCP OFTP Client que está sendo configurado exija autenticação, o **Certificado Digital** deverá ser informado na guia **TLS(Openssl)** no campo **Arquivo** da opção **Certificados CA (Autoridades)**.
 
-![](clt-config-43.png)
-
-
+![](img/clt-config-43.png)
 
 ## Estrutura dos Diretórios
 

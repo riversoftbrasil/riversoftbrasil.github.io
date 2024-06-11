@@ -32,7 +32,7 @@ background_esp.jpg
 ```
 <br>
 
-![](chgpsw-08.png)
+![](img/chgpsw-08.png)
 
 O diretório padrão para armazenamento das imagens de background é: "**/images**".
 
@@ -116,7 +116,7 @@ O padrão de cores das bordas e cor de fundo do título do site padrão do STCP 
 
 <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">2</span> &nbsp; Já na classe _#tituloLogin_ a alteração deverá ser realizada no parâmetro **background-color**, alterando o valor **#XXXXXX** pela cor desejada.
 
-![](img23.png)
+![](img/chgpsw-09.png)
 
 Seguem abaixo os exemplos das classe do arquivo CSS:
 

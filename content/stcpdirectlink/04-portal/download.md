@@ -17,4 +17,4 @@ lastmod: 2024-03-05
 
 Ná página de download (receber) os arquivos disponíveis serão apresentados.
 
-![](download.png "Página de download - Portal Directlink")
+![](img/download.png "Página de download - Portal Directlink")

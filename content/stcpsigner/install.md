@@ -23,7 +23,7 @@ Exemplo:
   {{< filetree/file name="stcpsigner.exe" >}}
 {{< /filetree/container >}}
 
-![](sign-07.png)
+![](img/sign-07.png)
 
 {{< callout type="info" >}}
   Veja na seção de [Execução](/stcpsigner/exec/) cada comando disponível.
