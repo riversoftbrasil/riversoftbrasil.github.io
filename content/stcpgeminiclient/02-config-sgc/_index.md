@@ -11,11 +11,13 @@ weight: 2
 prev:
 next:
 draft:
-lastmod: 2024-06-10
+lastmod: 2024-06-13
 ---
 Toda a configuração da aplicação será realizada através do *STCP Gemini Client Config*. Não é necessária a utilização do super-usuário (root) para a configuração.
 
 ![](img/sgc-02.png)
+
+## Arquivo de configuração
 
 Siga os passos abaixo para criar o arquivo de configuração da aplicação.
 
