@@ -78,6 +78,7 @@ params:
     flexsearch:
       # index page by: content | summary | heading | title
       index: content
+      tokenize: full
 
   footer:
     enable: true
