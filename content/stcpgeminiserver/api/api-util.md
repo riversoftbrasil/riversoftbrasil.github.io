@@ -194,7 +194,7 @@ instância {id_i}     | Usuário | Sim |
 | Get   | Text        | And more      | tweytw | Sim |
 | Get   | Text        | And more      | tweytw | Sim |
 | Get   | Text        | And more      | tweytw | Sim |
-| Get   | Text        | And more      | tweytw | Sim |
+| Get   | Text        | And more      | tweytw | Não |
 
 
 
