@@ -10,7 +10,7 @@ prev: /list-download
 next: /download-de-arquivos
 slug: lista-backup-download
 draft: false
-lastmod: 2024-02-23
+lastmod: 2024-06-20
 ---
 
 ## Lista de arquivos backup para download (basic)
@@ -20,7 +20,7 @@ Esta requisição deve ser utilizada para obter a lista de arquivos da área de 
 <br>
 
 <div style="
-  background-color: #307F98; /* Blue */
+  background-color: #216E4E;
   border: none;
   border-radius: 60px;
   color: white;
@@ -62,8 +62,70 @@ https://<domain>/directlink/v1/download/list/backup
 ### Responses
 
 <br>
-<details open style="color: green; cursor: pointer;">
-<summary>200: OK   (Sucesso)</summary>
+
+## Responses
+
+<br>
+
+<!-- CSS e HTML com os estilos de respostas -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+<style>
+.response-status {
+font-family: "Roboto", sans-serif;
+font-weight: 300;
+font-style: normal;
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+border-bottom: 1px solid #e1e4e8;
+padding-bottom: 5px;
+}
+
+.status-code-green {
+display: inline-block;
+background-color: #e6ffed; /* cor de fundo */
+color: #27a745; /* cor do texto */
+padding: 2px 6px;
+border-radius: 3px;
+font-weight: bold;
+margin-right: 5px;
+}
+
+.status-code-orange {
+display: inline-block;
+background-color: #B95E04; /* cor de fundo */
+color: #F7C1BD; /* cor do texto */
+padding: 2px 6px;
+border-radius: 3px;
+font-weight: bold;
+margin-right: 5px;
+}
+
+.status-code-red {
+display: inline-block;
+background-color: #D33D3D; /* cor de fundo */
+color: #FCD4D4; /* cor do texto */
+padding: 2px 6px;
+border-radius: 3px;
+font-weight: bold;
+margin-right: 5px;
+}
+
+.response-message {
+font-size: 14px;
+color: #6a737d;  /* cor do texto cinza */
+}
+</style>
+
+<!-- Status 200 -->
+<div class="response-container">
+  <div class="response-status">
+          <span class="status-code-green">200</span> OK
+  </div>
+  <div class="response-message">Successo</div>
 
 ```json
 {
@@ -90,10 +152,14 @@ https://<domain>/directlink/v1/download/list/backup
     "time": "2022-06-13 19:37:52.366591 -0300 -03 m=+25968.263316625"
 }
 ```
-</details>
+<br>
 
-<details open>
-<summary style="color: #B95E04; cursor: pointer;">400: Bad Request   (Parâmetros da requisição inválidos)</summary>
+<!-- Status 400 -->
+
+  <div class="response-status">
+    <span class="status-code-orange">400</span> Bad Request
+  </div>
+  <div class="response-message">Parâmetros da requisição inválidos</div>
 
 ```json
 {
@@ -103,10 +169,16 @@ https://<domain>/directlink/v1/download/list/backup
     "time": "2022-06-13 17:55:53.559292 -0300 -03 m=+19849.437332386"
 }
 ```
-</details>
+<br>
 
-<details open>
-<summary style="color: #B95E04; cursor: pointer;">401: Unauthorized   (Usuário não existe ou senha inválida)</summary>
+<!-- Status 401 -->
+<div class="response-status">
+  <span class="status-code-orange">401</span> Unauthorized
+</div>
+<div class="response-message">
+ Usuário não existe ou senha inválida
+</div>
+
 
 ```json
 {
@@ -116,10 +188,15 @@ https://<domain>/directlink/v1/download/list/backup
     "time": "2022-06-13 17:56:45.233594 -0300 -03 m=+19901.111646777"
 }
 ```
-</details>
+<br>
 
-<details open>
-<summary style="color: #D33D3D; cursor: pointer;">500: Internal Server Error   (Falha interna)</summary>
+<!-- Status 500 -->
+<div class="response-status">
+  <span class="status-code-red">500</span> Internal Server Error
+</div>
+<div class="response-message">
+    Falha interna
+</div>
 
 ```json
 {
@@ -129,8 +206,7 @@ https://<domain>/directlink/v1/download/list/backup
     "time": "2022-06-13 17:56:45.233594 -0300 -03 m=+19901.111646777"
 }
 ```
-</details>
-
+</div>
 
 ## Lista de arquivos backup para download (bearer)
 
@@ -139,7 +215,7 @@ Esta requisição deve ser utilizada para obter a lista de arquivos da área de 
 <br>
 
 <div style="
-  background-color: #307F98; /* Blue */
+  background-color: #216E4E;
   border: none;
   border-radius: 60px;
   color: white;
@@ -153,8 +229,6 @@ Esta requisição deve ser utilizada para obter a lista de arquivos da área de 
 ">
 <h5 style="color: white;">GET</h5>
 </div>
-
-
 
 **Lista de arquivos para download utilizando a autenticação no modo Basic**
 
@@ -182,8 +256,66 @@ https://<domain>/directlink/v1/download/list/backup
 ### Responses
 
 <br>
-<details open style="color: green; cursor: pointer;">
-<summary>200: OK   (Sucesso)</summary>
+
+<!-- CSS e HTML com os estilos de respostas -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+<style>
+.response-status {
+font-family: "Roboto", sans-serif;
+font-weight: 300;
+font-style: normal;
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+border-bottom: 1px solid #e1e4e8;
+padding-bottom: 5px;
+}
+
+.status-code-green {
+display: inline-block;
+background-color: #e6ffed; /* cor de fundo */
+color: #27a745; /* cor do texto */
+padding: 2px 6px;
+border-radius: 3px;
+font-weight: bold;
+margin-right: 5px;
+}
+
+.status-code-orange {
+display: inline-block;
+background-color: #B95E04; /* cor de fundo */
+color: #F7C1BD; /* cor do texto */
+padding: 2px 6px;
+border-radius: 3px;
+font-weight: bold;
+margin-right: 5px;
+}
+
+.status-code-red {
+display: inline-block;
+background-color: #D33D3D; /* cor de fundo */
+color: #FCD4D4; /* cor do texto */
+padding: 2px 6px;
+border-radius: 3px;
+font-weight: bold;
+margin-right: 5px;
+}
+
+.response-message {
+font-size: 14px;
+color: #6a737d;  /* cor do texto cinza */
+}
+</style>
+
+<!-- Status 200 -->
+<div class="response-container">
+  <div class="response-status">
+          <span class="status-code-green">200</span> OK
+  </div>
+  <div class="response-message">Successo</div>
 
 ```json
 {
@@ -210,10 +342,14 @@ https://<domain>/directlink/v1/download/list/backup
     "time": "2022-06-13 19:37:52.366591 -0300 -03 m=+25968.263316625"
 }
 ```
-</details>
+<br>
 
-<details open>
-<summary style="color: #B95E04; cursor: pointer;">400: Bad Request   (Parâmetros da requisição inválidos)</summary>
+<!-- Status 400 -->
+
+  <div class="response-status">
+    <span class="status-code-orange">400</span> Bad Request
+  </div>
+  <div class="response-message">Parâmetros da requisição inválidos</div>
 
 ```json
 {
@@ -223,10 +359,16 @@ https://<domain>/directlink/v1/download/list/backup
     "time": "2022-06-13 17:55:53.559292 -0300 -03 m=+19849.437332386"
 }
 ```
-</details>
+<br>
 
-<details open>
-<summary style="color: #B95E04; cursor: pointer;">401: Unauthorized   (Usuário não existe ou senha inválida)</summary>
+<!-- Status 401 -->
+<div class="response-status">
+  <span class="status-code-orange">401</span> Unauthorized
+</div>
+<div class="response-message">
+ Usuário não existe ou senha inválida
+</div>
+
 
 ```json
 {
@@ -236,10 +378,15 @@ https://<domain>/directlink/v1/download/list/backup
     "time": "2022-06-13 17:56:45.233594 -0300 -03 m=+19901.111646777"
 }
 ```
-</details>
+<br>
 
-<details open>
-<summary style="color: #D33D3D; cursor: pointer;">500: Internal Server Error   (Falha interna)</summary>
+<!-- Status 500 -->
+<div class="response-status">
+  <span class="status-code-red">500</span> Internal Server Error
+</div>
+<div class="response-message">
+    Falha interna
+</div>
 
 ```json
 {
@@ -249,4 +396,4 @@ https://<domain>/directlink/v1/download/list/backup
     "time": "2022-06-13 17:56:45.233594 -0300 -03 m=+19901.111646777"
 }
 ```
-</details>
+</div>

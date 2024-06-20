@@ -10,7 +10,7 @@ prev: /05-api
 next: /login
 slug: token-oauth2
 draft: false
-lastmod: 2024-05-17
+lastmod: 2024-06-19
 ---
 
 ## Token de autorização
@@ -19,8 +19,7 @@ Esta requisição deve ser utilizada para obter o token(bearer) de autorização
 
 <br>
 <div style="
-  background-color: #04AA6D; /* Green */
-  /* cursor: pointer; */
+  background-color: #5E4DB2;
   border: none;
   border-radius: 60px;
   color: white;
@@ -67,22 +66,83 @@ Esta requisição deve ser utilizada para obter o token de autorização
 ### Responses
 
 <br>
-<details open>
-<summary style="color: green; cursor: pointer;">200: OK   (Sucesso)</summary>
+
+<!-- CSS e HTML com os estilos de respostas -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+<style>
+.response-status {
+font-family: "Roboto", sans-serif;
+font-weight: 300;
+font-style: normal;
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+border-bottom: 1px solid #e1e4e8;
+padding-bottom: 5px;
+}
+
+.status-code-green {
+display: inline-block;
+background-color: #e6ffed; /* cor de fundo */
+color: #27a745; /* cor do texto */
+padding: 2px 6px;
+border-radius: 3px;
+font-weight: bold;
+margin-right: 5px;
+}
+
+.status-code-orange {
+display: inline-block;
+background-color: #B95E04; /* cor de fundo */
+color: #F7C1BD; /* cor do texto */
+padding: 2px 6px;
+border-radius: 3px;
+font-weight: bold;
+margin-right: 5px;
+}
+
+.status-code-red {
+display: inline-block;
+background-color: #D33D3D; /* cor de fundo */
+color: #FCD4D4; /* cor do texto */
+padding: 2px 6px;
+border-radius: 3px;
+font-weight: bold;
+margin-right: 5px;
+}
+
+.response-message {
+font-size: 14px;
+color: #6a737d;  /* cor do texto cinza */
+}
+</style>
+
+<!-- Status 200 -->
+<div class="response-container">
+  <div class="response-status">
+          <span class="status-code-green">200</span> OK
+  </div>
+  <div class="response-message">Successo</div>
 
 ```json
 {
-    "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vMTkyLjE2OC41LjM4OjgwODAvZGlyZWN0bGluay92MSIsInN1YiI6IlVTRVIxIiwiYXVkIjpbImh0dHA6Ly8xOTIuMTY4LjUuMzg6ODA4MC9kaXJlY3RsaW5rL3YxIl0sImV4cCI6MTY1NTE1OTk3NiwibmJmIjoxNjU1MTU2Mzc2LCJpYXQiOjE2NTUxNTYzNzYsImp0aSI6IjE2NTUxNTYzNzY0Mjg2OTcwMDAifQ.GeMf9voddvEdgStH2GJqHIKIWXXYYbhLEKVz-kq_Cp8",
-    "token_type": "Bearer",
-    "expires_in": 3600,
-    "scope": "https://<domain>/directlink/v1"
+"access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vMTkyLjE2OC41LjM4OjgwODAvZGlyZWN0bGluay92MSIsInN1YiI6IlVTRVIxIiwiYXVkIjpbImh0dHA6Ly8xOTIuMTY4LjUuMzg6ODA4MC9kaXJlY3RsaW5rL3YxIl0sImV4cCI6MTY1NTE1OTk3NiwibmJmIjoxNjU1MTU2Mzc2LCJpYXQiOjE2NTUxNTYzNzYsImp0aSI6IjE2NTUxNTYzNzY0Mjg2OTcwMDAifQ.GeMf9voddvEdgStH2GJqHIKIWXXYYbhLEKVz-kq_Cp8",
+"token_type": "Bearer",
+"expires_in": 3600,
+"scope": "https://<domain>/directlink/v1"
 }
 ```
-</details>
+<br>
 
+<!-- Status 400 -->
 
-<details open>
-<summary style="color: #B95E04; cursor: pointer;">400: Bad Request   (Parâmetros da requisição inválidos)</summary>
+  <div class="response-status">
+    <span class="status-code-orange">400</span> Bad Request
+  </div>
+  <div class="response-message">Parâmetros da requisição inválidos</div>
 
 ```json
 {
@@ -91,10 +151,16 @@ Esta requisição deve ser utilizada para obter o token de autorização
     "error_uri": "https://<domain>/directlink/v1"
 }
 ```
-</details>
+<br>
 
-<details open>
-<summary style="color: #B95E04; cursor: pointer;">401: Unauthorized   (Usuário não existe ou senha inválida)</summary>
+<!-- Status 401 -->
+<div class="response-status">
+  <span class="status-code-orange">401</span> Unauthorized
+</div>
+<div class="response-message">
+ Usuário não existe ou senha inválida
+</div>
+
 
 ```json
 {
@@ -103,10 +169,15 @@ Esta requisição deve ser utilizada para obter o token de autorização
     "error_uri": "https://<domain>/directlink/v1"
 }
 ```
-</details>
+<br>
 
-<details open>
-<summary style="color: #D33D3D; cursor: pointer;">500: Internal Server Error   (Falha interna)</summary>
+<!-- Status 500 -->
+<div class="response-status">
+  <span class="status-code-red">500</span> Internal Server Error
+</div>
+<div class="response-message">
+    Falha interna
+</div>
 
 ```json
 {
@@ -115,15 +186,7 @@ Esta requisição deve ser utilizada para obter o token de autorização
     "error_uri": "https://<domain>/directlink/v1"
 }
 ```
-</details>
-
-</details>
-
-
-<!--
-{{% details title="POST" closed="false" %}}
-
-{{% /details %}} -->
+</div>
 
 A solicitação do token de autorização para acesso as interfaces disponíveis utiliza o padrão *oauth2*, Resource Owner Password Credential Grant (Autorização para o proprietário do recurso).
 
@@ -154,5 +217,3 @@ Pragma: no-cache
        "scope":"example_value"
 }
 ```
-
-
