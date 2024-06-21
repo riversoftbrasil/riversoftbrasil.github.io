@@ -144,7 +144,7 @@ grant_type=password&username=teste&password=teste123
 ```
 
 **access_token**: Token que deverá ser utilizado nas futuras requisições da API.
-**Expiration**: Tempo de vida em segundos, após isso uma nova token deverá ser requisitada. Novos parâmetros podem ser inseridos futuramente.
+<br>**Expiration**: Tempo de vida em segundos, após isso uma nova token deverá ser requisitada. Novos parâmetros podem ser inseridos futuramente.
 
 {{< callout type="info" >}}
 NOTA: Caso o pedido falhe e o usuário não consiga ser autenticado, ou estejam faltando cabeçalhos no request, o serviço
@@ -159,12 +159,90 @@ retornará um Status Code 401 e a seguinte resposta:
 
 As requisições da API dão controle total sobre as funcionalidades de configuração dos recursos utilizados pelo STCP Gemini. Para acessar os recursos, basta possuir um token válido. As requisições seguem um modelo CRUD, sendo divididas da seguinte forma:
 
-* POST, utilizado em requests de criação.
-* GET, utilizado em requests de recuperação de informação.
-* UPDATE, utilizado em requests de atualização de informação.
-* DELETE, utilizado em requests de remoção de informação.
+<br>
 
-Com exceção do método GET, todas as requisições devem conter um corpo determinado pelo template do serviço da API.
+<div style="
+  background-color: #5E4DB2;
+  border: none;
+  border-radius: 60px;
+  color: white;
+  padding: 2px 12px;
+  text-align: center;
+  display: inline-block;
+  letter-spacing: 1px;
+  align-items: center;
+  justify-content: center;
+
+">
+<h5 style="color: white;">POST</h5>
+</div>
+Utilizado em requests de criação.
+<!-- Espaçamento -->
+<br>
+<br>
+
+<div style="
+  background-color: #216E4E;
+  border: none;
+  border-radius: 60px;
+  color: white;
+  padding: 2px 12px;
+  text-align: center;
+  display: inline-block;
+  letter-spacing: 1px;
+  align-items: center;
+  justify-content: center;
+
+">
+<h5 style="color: white;">GET</h5>
+</div>
+Utilizado em requests de recuperação de informação.
+<!-- Espaçamento -->
+<br>
+<br>
+
+<div style="
+  background-color: #0155CC;
+  border: none;
+  border-radius: 60px;
+  color: white;
+  padding: 2px 12px;
+  text-align: center;
+  display: inline-block;
+  letter-spacing: 1px;
+  align-items: center;
+  justify-content: center;
+
+">
+<h5 style="color: white;">UPDATE</h5>
+</div>
+Utilizado também como <b>PUT/PATCH</b>, são requests de atualização de informação.
+<!-- Espaçamento -->
+<br>
+<br>
+
+<div style="
+  background-color: #AE2A18;
+  border: none;
+  border-radius: 60px;
+  color: white;
+  padding: 2px 12px;
+  text-align: center;
+  display: inline-block;
+  letter-spacing: 1px;
+  align-items: center;
+  justify-content: center;
+
+">
+<h5 style="color: white;">DELETE</h5>
+</div>
+Utilizado em requests de remoção de informação.
+<!-- Espaçamento -->
+<br>
+<br>
+
+
+> Com exceção do método GET, todas as requisições devem conter um corpo determinado pelo template do serviço da API.
 
 ### Corpo da requisição
 
@@ -180,23 +258,2376 @@ Content-Type: application/json
 
 ## STCPCore Entry Points
 
-| Método      | Endpoint    |        Uso    |  Retorno | Oauth |
-| :---        |    :----   |    :---      | :--   | --: |
-| Get         | /stcpcore/instances?search=reduced      | Obter lista de instâncias cadastradas no servidor  | Lista de Instâncias | Sim |
-| Get   | /stcpcore/instances/id/{id}?search=reduced       | Obter instância especificada pelo {id}     | Instância | Sim |
-| Get   | /stcpcore/instances/id/{id_i}/users?search=reduced        | Obter lista de usuários cadastrados na instância {id_i}      | Lista de Usuários | Sim |
-| Get   | /stcpcore/instances/id/{id_i}/users/id/{id_u}?search=reduced | Obter usuário específico pelo {id_u} para a
-instância {id_i}     | Usuário | Sim |
-| Get   | /stcpcore/instances/id/{id_i}/users/name/{name_u}?search=reduced  | And more      | tweytw | Sim |
-| Get   | Text        | And more      | tweytw | Sim |
-| Get   | Text        | And more      | tweytw | Sim |
-| Get   | Text        | And more      | tweytw | Sim |
-| Get   | Text        | And more      | tweytw | Sim |
-| Get   | Text        | And more      | tweytw | Sim |
-| Get   | Text        | And more      | tweytw | Sim |
-| Get   | Text        | And more      | tweytw | Não |
+<br>
+
+<!-- HTML e CSS Personalizado api -->
+<style>
+.response-container {
+  margin-top: 10px;
+}
+
+.response-status {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+border-bottom: 1px solid #e1e4e8;
+padding-bottom: 5px;
+}
+
+.status-code {
+display: inline-block;
+background-color: #e6ffed; /* cor de fundo */
+color: #27a745; /* cor do texto */
+padding: 2px 6px;
+border-radius: 3px;
+font-weight: bold;
+margin-right: 5px;
+}
+
+.response-message {
+font-size: 14px;
+color: #6a737d;  /* cor do texto cinza */
+}
+</style>
+
+<!-- CSS Método -->
+<div style="
+  background-color: #216E4E;
+  border: none;
+  border-radius: 60px;
+  color: white;
+  padding: 2px 12px;
+  text-align: center;
+  display: inline-block;
+  letter-spacing: 1px;
+  align-items: center;
+  justify-content: center;
+
+">
+<h5 style="color: white;">GET</h5>
+</div>
+
+<div class="response-container">
+  <div class="response-message">
+    Obter lista de instâncias cadastradas no servidor
+  </div>
 
 
+  ```
+  /stcpcore/instances?search=reduced
+  ```
+
+| Retorno      | Oauth |
+| :----------- | :-----------: |
+| Lista de Instâncias      | Sim       |
+</div>
+
+<br>
+<br>
+
+<!-- HTML e CSS Personalizado api -->
+<style>
+.response-container {
+  margin-top: 10px;
+}
+
+.response-status {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+border-bottom: 1px solid #e1e4e8;
+padding-bottom: 5px;
+}
+
+.status-code {
+display: inline-block;
+background-color: #e6ffed; /* cor de fundo */
+color: #27a745; /* cor do texto */
+padding: 2px 6px;
+border-radius: 3px;
+font-weight: bold;
+margin-right: 5px;
+}
+
+.response-message {
+font-size: 14px;
+color: #6a737d;  /* cor do texto cinza */
+}
+</style>
+
+<!-- CSS Método -->
+<div style="
+  background-color: #216E4E;
+  border: none;
+  border-radius: 60px;
+  color: white;
+  padding: 2px 12px;
+  text-align: center;
+  display: inline-block;
+  letter-spacing: 1px;
+  align-items: center;
+  justify-content: center;
+
+">
+<h5 style="color: white;">GET</h5>
+</div>
+
+<div class="response-container">
+  <div class="response-message">
+  Obter instância especificada pelo {id}
+  </div>
+
+
+  ```
+  /stcpcore/instances/id/{id}?search=reduced
+  ```
+
+| Retorno      | Oauth |
+| :----------- | :-----------: |
+| Instância    | Sim       |
+</div>
+
+<br>
+<br>
+
+<!-- HTML e CSS Personalizado api -->
+<style>
+.response-container {
+  margin-top: 10px;
+}
+
+.response-status {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+border-bottom: 1px solid #e1e4e8;
+padding-bottom: 5px;
+}
+
+.status-code {
+display: inline-block;
+background-color: #e6ffed; /* cor de fundo */
+color: #27a745; /* cor do texto */
+padding: 2px 6px;
+border-radius: 3px;
+font-weight: bold;
+margin-right: 5px;
+}
+
+.response-message {
+font-size: 14px;
+color: #6a737d;  /* cor do texto cinza */
+}
+</style>
+
+<!-- CSS Método -->
+<div style="
+  background-color: #216E4E;
+  border: none;
+  border-radius: 60px;
+  color: white;
+  padding: 2px 12px;
+  text-align: center;
+  display: inline-block;
+  letter-spacing: 1px;
+  align-items: center;
+  justify-content: center;
+
+">
+<h5 style="color: white;">GET</h5>
+</div>
+
+<div class="response-container">
+  <div class="response-message">
+  Obter lista de usuários cadastrados na instância {id_i}
+  </div>
+
+
+  ```
+  /stcpcore/instances/id/{id_i}/users?search=reduced
+  ```
+
+| Retorno      | Oauth |
+| :----------- | :-----------: |
+| Lista de Usuários | Sim       |
+</div>
+
+<br>
+<br>
+
+<!-- HTML e CSS Personalizado api -->
+<style>
+.response-container {
+  margin-top: 10px;
+}
+
+.response-status {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+border-bottom: 1px solid #e1e4e8;
+padding-bottom: 5px;
+}
+
+.status-code {
+display: inline-block;
+background-color: #e6ffed; /* cor de fundo */
+color: #27a745; /* cor do texto */
+padding: 2px 6px;
+border-radius: 3px;
+font-weight: bold;
+margin-right: 5px;
+}
+
+.response-message {
+font-size: 14px;
+color: #6a737d;  /* cor do texto cinza */
+}
+</style>
+
+<!-- CSS Método -->
+<div style="
+  background-color: #216E4E;
+  border: none;
+  border-radius: 60px;
+  color: white;
+  padding: 2px 12px;
+  text-align: center;
+  display: inline-block;
+  letter-spacing: 1px;
+  align-items: center;
+  justify-content: center;
+
+">
+<h5 style="color: white;">GET</h5>
+</div>
+
+<div class="response-container">
+  <div class="response-message">
+  Obter usuário específico pelo {id_u} para a instância {id_i}
+  </div>
+
+
+  ```
+  /stcpcore/instances/id/{id_i}/users/id/{id_u}?search=reduced
+  ```
+
+| Retorno      | Oauth |
+| :----------- | :-----------: |
+| Usuário    | Sim       |
+</div>
+
+<br>
+<br>
+
+<!-- HTML e CSS Personalizado api -->
+<style>
+.response-container {
+  margin-top: 10px;
+}
+
+.response-status {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+border-bottom: 1px solid #e1e4e8;
+padding-bottom: 5px;
+}
+
+.status-code {
+display: inline-block;
+background-color: #e6ffed; /* cor de fundo */
+color: #27a745; /* cor do texto */
+padding: 2px 6px;
+border-radius: 3px;
+font-weight: bold;
+margin-right: 5px;
+}
+
+.response-message {
+font-size: 14px;
+color: #6a737d;  /* cor do texto cinza */
+}
+</style>
+
+<!-- CSS Método -->
+<div style="
+  background-color: #216E4E;
+  border: none;
+  border-radius: 60px;
+  color: white;
+  padding: 2px 12px;
+  text-align: center;
+  display: inline-block;
+  letter-spacing: 1px;
+  align-items: center;
+  justify-content: center;
+
+">
+<h5 style="color: white;">GET</h5>
+</div>
+
+<div class="response-container">
+  <div class="response-message">
+  Obter usuário especificado pelo {name_u} para a instância {id_i}
+  </div>
+
+
+  ```
+ /stcpcore/instances/id/{id_i}/users/name/{name_u}?search=reduced
+  ```
+
+| Retorno      | Oauth |
+| :----------- | :-----------: |
+| Usuário    | Sim       |
+</div>
+
+<br>
+<br>
+
+<!-- HTML e CSS Personalizado api -->
+<style>
+.response-container {
+  margin-top: 10px;
+}
+
+.response-status {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+border-bottom: 1px solid #e1e4e8;
+padding-bottom: 5px;
+}
+
+.status-code {
+display: inline-block;
+background-color: #e6ffed; /* cor de fundo */
+color: #27a745; /* cor do texto */
+padding: 2px 6px;
+border-radius: 3px;
+font-weight: bold;
+margin-right: 5px;
+}
+
+.response-message {
+font-size: 14px;
+color: #6a737d;  /* cor do texto cinza */
+}
+</style>
+
+<!-- CSS Método -->
+<div style="
+  background-color: #216E4E;
+  border: none;
+  border-radius: 60px;
+  color: white;
+  padding: 2px 12px;
+  text-align: center;
+  display: inline-block;
+  letter-spacing: 1px;
+  align-items: center;
+  justify-content: center;
+
+">
+<h5 style="color: white;">GET</h5>
+</div>
+
+<div class="response-container">
+  <div class="response-message">
+  Obter lista de serviços de rede cadastrados na instância {id_i}
+  </div>
+
+
+  ```
+  /stcpcore/instances/id/{id_i}/services?search=reduced
+  ```
+
+| Retorno      | Oauth |
+| :----------- | :-----------: |
+| Lista de Serviços | Sim       |
+</div>
+
+<br>
+<br>
+
+<!-- HTML e CSS Personalizado api -->
+<style>
+.response-container {
+  margin-top: 10px;
+}
+
+.response-status {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+border-bottom: 1px solid #e1e4e8;
+padding-bottom: 5px;
+}
+
+.status-code {
+display: inline-block;
+background-color: #e6ffed; /* cor de fundo */
+color: #27a745; /* cor do texto */
+padding: 2px 6px;
+border-radius: 3px;
+font-weight: bold;
+margin-right: 5px;
+}
+
+.response-message {
+font-size: 14px;
+color: #6a737d;  /* cor do texto cinza */
+}
+</style>
+
+<!-- CSS Método -->
+<div style="
+  background-color: #216E4E;
+  border: none;
+  border-radius: 60px;
+  color: white;
+  padding: 2px 12px;
+  text-align: center;
+  display: inline-block;
+  letter-spacing: 1px;
+  align-items: center;
+  justify-content: center;
+
+">
+<h5 style="color: white;">GET</h5>
+</div>
+
+<div class="response-container">
+  <div class="response-message">
+  Obter serviço especificado pelo {id_s} para a instância {id_i}
+  </div>
+
+
+  ```
+  /stcpcore/instances/id/{id_i}/services/id/{id_s}?search=reduced
+  ```
+
+| Retorno      | Oauth |
+| :----------- | :-----------: |
+| Serviço |  Sim   |
+</div>
+
+<br>
+<br>
+
+<!-- HTML e CSS Personalizado api -->
+<style>
+.response-container {
+  margin-top: 10px;
+}
+
+.response-status {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+border-bottom: 1px solid #e1e4e8;
+padding-bottom: 5px;
+}
+
+.status-code {
+display: inline-block;
+background-color: #e6ffed; /* cor de fundo */
+color: #27a745; /* cor do texto */
+padding: 2px 6px;
+border-radius: 3px;
+font-weight: bold;
+margin-right: 5px;
+}
+
+.response-message {
+font-size: 14px;
+color: #6a737d;  /* cor do texto cinza */
+}
+</style>
+
+<!-- CSS Método -->
+<div style="
+  background-color: #216E4E;
+  border: none;
+  border-radius: 60px;
+  color: white;
+  padding: 2px 12px;
+  text-align: center;
+  display: inline-block;
+  letter-spacing: 1px;
+  align-items: center;
+  justify-content: center;
+
+">
+<h5 style="color: white;">GET</h5>
+</div>
+
+<div class="response-container">
+  <div class="response-message">
+  Obter lista de agendamentos cadastrados na instância {id_i}
+  </div>
+
+
+  ```
+ /stcpcore/instances/id/{id_i}/schedules?search=reduced
+  ```
+
+| Retorno      | Oauth |
+| :----------- | :-----------: |
+| Lista de agendamentos  | Sim       |
+</div>
+
+<br>
+<br>
+
+<!-- HTML e CSS Personalizado api -->
+<style>
+.response-container {
+  margin-top: 10px;
+}
+
+.response-status {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+border-bottom: 1px solid #e1e4e8;
+padding-bottom: 5px;
+}
+
+.status-code {
+display: inline-block;
+background-color: #e6ffed; /* cor de fundo */
+color: #27a745; /* cor do texto */
+padding: 2px 6px;
+border-radius: 3px;
+font-weight: bold;
+margin-right: 5px;
+}
+
+.response-message {
+font-size: 14px;
+color: #6a737d;  /* cor do texto cinza */
+}
+</style>
+
+<!-- CSS Método -->
+<div style="
+  background-color: #216E4E;
+  border: none;
+  border-radius: 60px;
+  color: white;
+  padding: 2px 12px;
+  text-align: center;
+  display: inline-block;
+  letter-spacing: 1px;
+  align-items: center;
+  justify-content: center;
+
+">
+<h5 style="color: white;">GET</h5>
+</div>
+
+<div class="response-container">
+  <div class="response-message">
+  Obter agendamento especificado pelo {id_s} para a instância {id_i}
+  </div>
+
+
+  ```
+  /stcpcore/instances/id/{id_i}/schedules/id/{id_s}?search=reduced
+  ```
+
+| Retorno      | Oauth |
+| :----------- | :-----------: |
+| Agendamento | Sim       |
+
+</div>
+
+<br>
+<br>
+
+<!-- HTML e CSS Personalizado api -->
+<style>
+.response-container {
+  margin-top: 10px;
+}
+
+.response-status {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+border-bottom: 1px solid #e1e4e8;
+padding-bottom: 5px;
+}
+
+.status-code {
+display: inline-block;
+background-color: #e6ffed; /* cor de fundo */
+color: #27a745; /* cor do texto */
+padding: 2px 6px;
+border-radius: 3px;
+font-weight: bold;
+margin-right: 5px;
+}
+
+.response-message {
+font-size: 14px;
+color: #6a737d;  /* cor do texto cinza */
+}
+</style>
+
+<!-- CSS Método -->
+<div style="
+  background-color: #216E4E;
+  border: none;
+  border-radius: 60px;
+  color: white;
+  padding: 2px 12px;
+  text-align: center;
+  display: inline-block;
+  letter-spacing: 1px;
+  align-items: center;
+  justify-content: center;
+
+">
+<h5 style="color: white;">GET</h5>
+</div>
+
+<div class="response-container">
+  <div class="response-message">
+ Obter lista de tipos de arquivos globais cadastrados na instância {id_i}
+  </div>
+
+
+  ```
+  /stcpcore/instances/id/{id_i}/ftypesglobal?search=reduced
+  ```
+
+| Retorno      | Oauth |
+| :----------- | :-----------: |
+| Lista de tipos de arquivos globais | Sim       |
+</div>
+
+<br>
+<br>
+
+
+<!-- HTML e CSS Personalizado api -->
+<style>
+.response-container {
+  margin-top: 10px;
+}
+
+.response-status {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+border-bottom: 1px solid #e1e4e8;
+padding-bottom: 5px;
+}
+
+.status-code {
+display: inline-block;
+background-color: #e6ffed; /* cor de fundo */
+color: #27a745; /* cor do texto */
+padding: 2px 6px;
+border-radius: 3px;
+font-weight: bold;
+margin-right: 5px;
+}
+
+.response-message {
+font-size: 14px;
+color: #6a737d;  /* cor do texto cinza */
+}
+</style>
+
+<!-- CSS Método -->
+<div style="
+  background-color: #216E4E;
+  border: none;
+  border-radius: 60px;
+  color: white;
+  padding: 2px 12px;
+  text-align: center;
+  display: inline-block;
+  letter-spacing: 1px;
+  align-items: center;
+  justify-content: center;
+
+">
+<h5 style="color: white;">GET</h5>
+</div>
+
+<div class="response-container">
+  <div class="response-message">
+Obter tipo de arquivo global específico pelo {id_ftg} para a instância {id_i}
+  </div>
+
+  ```
+  /stcpcore/instances/id/{id_i}/ftypesglobal/id/{id_ftg}?search=reduced
+  ```
+
+| Retorno      | Oauth |
+| :----------- | :-----------: |
+| Tipos de arquivo global | Sim       |
+</div>
+
+<br>
+<br>
+
+<!-- HTML e CSS Personalizado api -->
+<style>
+.response-container {
+  margin-top: 10px;
+}
+
+.response-status {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+border-bottom: 1px solid #e1e4e8;
+padding-bottom: 5px;
+}
+
+.status-code {
+display: inline-block;
+background-color: #e6ffed; /* cor de fundo */
+color: #27a745; /* cor do texto */
+padding: 2px 6px;
+border-radius: 3px;
+font-weight: bold;
+margin-right: 5px;
+}
+
+.response-message {
+font-size: 14px;
+color: #6a737d;  /* cor do texto cinza */
+}
+</style>
+
+<!-- CSS Método -->
+<div style="
+  background-color: #216E4E;
+  border: none;
+  border-radius: 60px;
+  color: white;
+  padding: 2px 12px;
+  text-align: center;
+  display: inline-block;
+  letter-spacing: 1px;
+  align-items: center;
+  justify-content: center;
+
+">
+<h5 style="color: white;">GET</h5>
+</div>
+
+<div class="response-container">
+  <div class="response-message">
+  Obter tipo de arquivo global específico pelo {name_ftg} para a instância {id_i}
+  </div>
+
+  ```
+  /stcpcore/instances/id/{id_i}/ftypesglobal/name/{name_ftg}?search=reduced
+  ```
+
+| Retorno      | Oauth |
+| :----------- | :-----------: |
+| Tipo de arquivo global | Sim       |
+
+</div>
+
+<br>
+<br>
+
+<!-- HTML e CSS Personalizado api -->
+<style>
+.response-container {
+  margin-top: 10px;
+}
+
+.response-status {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+border-bottom: 1px solid #e1e4e8;
+padding-bottom: 5px;
+}
+
+.status-code {
+display: inline-block;
+background-color: #e6ffed; /* cor de fundo */
+color: #27a745; /* cor do texto */
+padding: 2px 6px;
+border-radius: 3px;
+font-weight: bold;
+margin-right: 5px;
+}
+
+.response-message {
+font-size: 14px;
+color: #6a737d;  /* cor do texto cinza */
+}
+</style>
+
+<!-- CSS Método -->
+<div style="
+  background-color: #216E4E;
+  border: none;
+  border-radius: 60px;
+  color: white;
+  padding: 2px 12px;
+  text-align: center;
+  display: inline-block;
+  letter-spacing: 1px;
+  align-items: center;
+  justify-content: center;
+
+">
+<h5 style="color: white;">GET</h5>
+</div>
+
+<div class="response-container">
+  <div class="response-message">
+  Obter lista de tipos de arquivos cadastrados para usuário {id_u} na instância {id_i}
+  </div>
+
+  ```
+  /stcpcore/instances/id/{id_i}/users/id/{id_u}/ftypes?search=reduced
+  ```
+
+| Retorno      | Oauth |
+| :----------- | :-----------: |
+| Lista de tipos de arquivos | Sim       |
+</div>
+
+<br>
+<br>
+
+<!-- HTML e CSS Personalizado api -->
+<style>
+.response-container {
+  margin-top: 10px;
+}
+
+.response-status {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+border-bottom: 1px solid #e1e4e8;
+padding-bottom: 5px;
+}
+
+.status-code {
+display: inline-block;
+background-color: #e6ffed; /* cor de fundo */
+color: #27a745; /* cor do texto */
+padding: 2px 6px;
+border-radius: 3px;
+font-weight: bold;
+margin-right: 5px;
+}
+
+.response-message {
+font-size: 14px;
+color: #6a737d;  /* cor do texto cinza */
+}
+</style>
+
+<!-- CSS Método -->
+<div style="
+  background-color: #216E4E;
+  border: none;
+  border-radius: 60px;
+  color: white;
+  padding: 2px 12px;
+  text-align: center;
+  display: inline-block;
+  letter-spacing: 1px;
+  align-items: center;
+  justify-content: center;
+
+">
+<h5 style="color: white;">GET</h5>
+</div>
+
+<div class="response-container">
+  <div class="response-message">
+  Obter tipo de arquivo específicado pelo {id_ft} para o usuário {id_u} na instância {id_i}
+  </div>
+
+  ```
+  /stcpcore/instances/id/{id_i}/users/id/{id_u}/ftypes/id/{id_ft}?search=reduced
+  ```
+
+| Retorno      | Oauth |
+| :----------- | :-----------: |
+| Tipo de arquivo | Sim       |
+</div>
+
+<br>
+<br>
+
+<!-- HTML e CSS Personalizado api -->
+<style>
+.response-container {
+  margin-top: 10px;
+}
+
+.response-status {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+border-bottom: 1px solid #e1e4e8;
+padding-bottom: 5px;
+}
+
+.status-code {
+display: inline-block;
+background-color: #e6ffed; /* cor de fundo */
+color: #27a745; /* cor do texto */
+padding: 2px 6px;
+border-radius: 3px;
+font-weight: bold;
+margin-right: 5px;
+}
+
+.response-message {
+font-size: 14px;
+color: #6a737d;  /* cor do texto cinza */
+}
+</style>
+
+<!-- CSS Método -->
+<div style="
+  background-color: #216E4E;
+  border: none;
+  border-radius: 60px;
+  color: white;
+  padding: 2px 12px;
+  text-align: center;
+  display: inline-block;
+  letter-spacing: 1px;
+  align-items: center;
+  justify-content: center;
+
+">
+<h5 style="color: white;">GET</h5>
+</div>
+
+<div class="response-container">
+  <div class="response-message">
+  Obter tipo de arquivo específicado pelo {name_ft} para o usuário {id_u} na instância {id_i}
+  </div>
+
+  ```
+  /stcpcore/instances/id/{id_i}/users/id/{id_u}/ftypes/name/{name_ft}?search=reduced
+  ```
+
+| Retorno      | Oauth |
+| :----------- | :-----------: |
+| Tipo de arquivo | Sim       |
+</div>
+
+<br>
+<br>
+
+<!-- HTML e CSS Personalizado api -->
+<style>
+.response-container {
+  margin-top: 10px;
+}
+
+.response-status {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+border-bottom: 1px solid #e1e4e8;
+padding-bottom: 5px;
+}
+
+.status-code {
+display: inline-block;
+background-color: #e6ffed; /* cor de fundo */
+color: #27a745; /* cor do texto */
+padding: 2px 6px;
+border-radius: 3px;
+font-weight: bold;
+margin-right: 5px;
+}
+
+.response-message {
+font-size: 14px;
+color: #6a737d;  /* cor do texto cinza */
+}
+</style>
+
+<!-- CSS Método -->
+<div style="
+  background-color: #216E4E;
+  border: none;
+  border-radius: 60px;
+  color: white;
+  padding: 2px 12px;
+  text-align: center;
+  display: inline-block;
+  letter-spacing: 1px;
+  align-items: center;
+  justify-content: center;
+
+">
+<h5 style="color: white;">GET</h5>
+</div>
+
+<div class="response-container">
+  <div class="response-message">
+  Obter tipo de arquivo específicado pelo {name_ft} para o usuário {name_u} na instância {id_i}
+  </div>
+
+  ```
+  /stcpcore/instances/id/{id_i}/users/name/{name_u}/ftypes/name/{name_ft}?search=reduced
+  ```
+
+| Retorno      | Oauth |
+| :----------- | :-----------: |
+| Tipo de arquivo | Sim       |
+</div>
+
+<br>
+<br>
+
+<!-- HTML e CSS Personalizado api -->
+<style>
+.response-container {
+  margin-top: 10px;
+}
+
+.response-status {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+border-bottom: 1px solid #e1e4e8;
+padding-bottom: 5px;
+}
+
+.status-code {
+display: inline-block;
+background-color: #e6ffed; /* cor de fundo */
+color: #27a745; /* cor do texto */
+padding: 2px 6px;
+border-radius: 3px;
+font-weight: bold;
+margin-right: 5px;
+}
+
+.response-message {
+font-size: 14px;
+color: #6a737d;  /* cor do texto cinza */
+}
+</style>
+
+<!-- CSS Método -->
+<div style="
+  background-color: #216E4E;
+  border: none;
+  border-radius: 60px;
+  color: white;
+  padding: 2px 12px;
+  text-align: center;
+  display: inline-block;
+  letter-spacing: 1px;
+  align-items: center;
+  justify-content: center;
+
+">
+<h5 style="color: white;">GET</h5>
+</div>
+
+<div class="response-container">
+  <div class="response-message">
+  Valide se o nome de arquivo {name} se encontra nas regras de file type do usuário {id_u} da instância {id_i}
+  </div>
+
+  ```
+  /stcpcore/ftypes/validate?instance={id_i}&user={id_u}&filename={name}
+  ```
+
+| Retorno      | Oauth |
+| :----------- | :-----------: |
+| Tipo de arquivo | Sim       |
+</div>
+
+<br>
+<br>
+
+<!-- HTML e CSS Personalizado api -->
+<style>
+.response-container {
+  margin-top: 10px;
+}
+
+.response-status {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+border-bottom: 1px solid #e1e4e8;
+padding-bottom: 5px;
+}
+
+.status-code {
+display: inline-block;
+background-color: #e6ffed; /* cor de fundo */
+color: #27a745; /* cor do texto */
+padding: 2px 6px;
+border-radius: 3px;
+font-weight: bold;
+margin-right: 5px;
+}
+
+.response-message {
+font-size: 14px;
+color: #6a737d;  /* cor do texto cinza */
+}
+</style>
+
+<!-- CSS Método -->
+<div style="
+  background-color: #216E4E;
+  border: none;
+  border-radius: 60px;
+  color: white;
+  padding: 2px 12px;
+  text-align: center;
+  display: inline-block;
+  letter-spacing: 1px;
+  align-items: center;
+  justify-content: center;
+
+">
+<h5 style="color: white;">GET</h5>
+</div>
+
+<div class="response-container">
+  <div class="response-message">
+  Valide se o nome do arquivo {name} se encontra nas regras de file type da instância {id_i}
+  </div>
+
+  ```
+  /stcpcore/ftypesglobal/validate?instance={id_i}&filename={name}
+  ```
+
+| Retorno      | Oauth |
+| :----------- | :-----------: |
+| Tipo de arquivo | Sim       |
+</div>
+
+<br>
+<br>
+
+<!-- HTML e CSS Personalizado api -->
+<style>
+.response-container {
+  margin-top: 10px;
+}
+
+.response-status {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+border-bottom: 1px solid #e1e4e8;
+padding-bottom: 5px;
+}
+
+.status-code {
+display: inline-block;
+background-color: #e6ffed; /* cor de fundo */
+color: #27a745; /* cor do texto */
+padding: 2px 6px;
+border-radius: 3px;
+font-weight: bold;
+margin-right: 5px;
+}
+
+.response-message {
+font-size: 14px;
+color: #6a737d;  /* cor do texto cinza */
+}
+</style>
+
+<!-- CSS Método -->
+<div style="
+  background-color: #5E4DB2;
+  border: none;
+  border-radius: 60px;
+  color: white;
+  padding: 2px 12px;
+  text-align: center;
+  display: inline-block;
+  letter-spacing: 1px;
+
+">
+<h5 style="color: white;">POST</h5>
+</div>
+
+<div class="response-container">
+  <div class="response-message">
+  Cadastra uma nova instância no servidor
+  </div>
+
+  ```
+  /stcpcore/instances
+  ```
+
+| Retorno      | Oauth |
+| :----------- | :-----------: |
+| ID | Sim       |
+</div>
+
+<br>
+<br>
+
+<!-- HTML e CSS Personalizado api -->
+<style>
+.response-container {
+  margin-top: 10px;
+}
+
+.response-status {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+border-bottom: 1px solid #e1e4e8;
+padding-bottom: 5px;
+}
+
+.status-code {
+display: inline-block;
+background-color: #e6ffed; /* cor de fundo */
+color: #27a745; /* cor do texto */
+padding: 2px 6px;
+border-radius: 3px;
+font-weight: bold;
+margin-right: 5px;
+}
+
+.response-message {
+font-size: 14px;
+color: #6a737d;  /* cor do texto cinza */
+}
+</style>
+
+<!-- CSS Método -->
+<div style="
+  background-color: #5E4DB2;
+  border: none;
+  border-radius: 60px;
+  color: white;
+  padding: 2px 12px;
+  text-align: center;
+  display: inline-block;
+  letter-spacing: 1px;
+
+">
+<h5 style="color: white;">POST</h5>
+</div>
+
+<div class="response-container">
+  <div class="response-message">
+  Cadastra um novo usuário na instância {id_i}
+  </div>
+
+  ```
+  /stcpcore/instances/{id_i}/users
+  ```
+
+| Retorno      | Oauth |
+| :----------- | :-----------: |
+| ID | Sim       |
+</div>
+
+<br>
+<br>
+
+<!-- HTML e CSS Personalizado api -->
+<style>
+.response-container {
+  margin-top: 10px;
+}
+
+.response-status {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+border-bottom: 1px solid #e1e4e8;
+padding-bottom: 5px;
+}
+
+.status-code {
+display: inline-block;
+background-color: #e6ffed; /* cor de fundo */
+color: #27a745; /* cor do texto */
+padding: 2px 6px;
+border-radius: 3px;
+font-weight: bold;
+margin-right: 5px;
+}
+
+.response-message {
+font-size: 14px;
+color: #6a737d;  /* cor do texto cinza */
+}
+</style>
+
+<!-- CSS Método -->
+<div style="
+  background-color: #5E4DB2;
+  border: none;
+  border-radius: 60px;
+  color: white;
+  padding: 2px 12px;
+  text-align: center;
+  display: inline-block;
+  letter-spacing: 1px;
+
+">
+<h5 style="color: white;">POST</h5>
+</div>
+
+<div class="response-container">
+  <div class="response-message">
+  Cadastra um novo serviço de rede na instância {id_i}
+  </div>
+
+  ```
+  /stcpcore/instances/{id_i}/services
+  ```
+
+| Retorno      | Oauth |
+| :----------- | :-----------: |
+| ID | Sim       |
+</div>
+
+<br>
+<br>
+
+<!-- HTML e CSS Personalizado api -->
+<style>
+.response-container {
+  margin-top: 10px;
+}
+
+.response-status {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+border-bottom: 1px solid #e1e4e8;
+padding-bottom: 5px;
+}
+
+.status-code {
+display: inline-block;
+background-color: #e6ffed; /* cor de fundo */
+color: #27a745; /* cor do texto */
+padding: 2px 6px;
+border-radius: 3px;
+font-weight: bold;
+margin-right: 5px;
+}
+
+.response-message {
+font-size: 14px;
+color: #6a737d;  /* cor do texto cinza */
+}
+</style>
+
+<!-- CSS Método -->
+<div style="
+  background-color: #5E4DB2;
+  border: none;
+  border-radius: 60px;
+  color: white;
+  padding: 2px 12px;
+  text-align: center;
+  display: inline-block;
+  letter-spacing: 1px;
+
+">
+<h5 style="color: white;">POST</h5>
+</div>
+
+<div class="response-container">
+  <div class="response-message">
+  Cadastra um novo agendamento na instância {id_i}
+  </div>
+
+  ```
+  /stcpcore/instances/{id_i}/schedules
+  ```
+
+| Retorno      | Oauth |
+| :----------- | :-----------: |
+| ID | Sim       |
+</div>
+
+<br>
+<br>
+
+<!-- HTML e CSS Personalizado api -->
+<style>
+.response-container {
+  margin-top: 10px;
+}
+
+.response-status {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+border-bottom: 1px solid #e1e4e8;
+padding-bottom: 5px;
+}
+
+.status-code {
+display: inline-block;
+background-color: #e6ffed; /* cor de fundo */
+color: #27a745; /* cor do texto */
+padding: 2px 6px;
+border-radius: 3px;
+font-weight: bold;
+margin-right: 5px;
+}
+
+.response-message {
+font-size: 14px;
+color: #6a737d;  /* cor do texto cinza */
+}
+</style>
+
+<!-- CSS Método -->
+<div style="
+  background-color: #5E4DB2;
+  border: none;
+  border-radius: 60px;
+  color: white;
+  padding: 2px 12px;
+  text-align: center;
+  display: inline-block;
+  letter-spacing: 1px;
+
+">
+<h5 style="color: white;">POST</h5>
+</div>
+
+<div class="response-container">
+  <div class="response-message">
+  Cadastra um novo tipo de arquivo global na instância {id_i}
+  </div>
+
+  ```
+  /stcpcore/instances/{id_i}/ftypesglobal
+  ```
+
+| Retorno      | Oauth |
+| :----------- | :-----------: |
+| ID | Sim       |
+</div>
+
+<br>
+<br>
+
+<!-- HTML e CSS Personalizado api -->
+<style>
+.response-container {
+  margin-top: 10px;
+}
+
+.response-status {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+border-bottom: 1px solid #e1e4e8;
+padding-bottom: 5px;
+}
+
+.status-code {
+display: inline-block;
+background-color: #e6ffed; /* cor de fundo */
+color: #27a745; /* cor do texto */
+padding: 2px 6px;
+border-radius: 3px;
+font-weight: bold;
+margin-right: 5px;
+}
+
+.response-message {
+font-size: 14px;
+color: #6a737d;  /* cor do texto cinza */
+}
+</style>
+
+<!-- CSS Método -->
+<div style="
+  background-color: #5E4DB2;
+  border: none;
+  border-radius: 60px;
+  color: white;
+  padding: 2px 12px;
+  text-align: center;
+  display: inline-block;
+  letter-spacing: 1px;
+
+">
+<h5 style="color: white;">POST</h5>
+</div>
+
+<div class="response-container">
+  <div class="response-message">
+  Cadastra um novo tipo de arquivo no usuário {id_u} na instância {id_i}
+  </div>
+
+  ```
+  /stcpcore/instances/{id_i}/users/{id_u}/ftypes
+  ```
+
+| Retorno      | Oauth |
+| :----------- | :-----------: |
+| ID | Sim       |
+</div>
+
+<br>
+<br>
+
+<!-- HTML e CSS Personalizado api -->
+<style>
+.response-container {
+  margin-top: 10px;
+}
+
+.response-status {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+border-bottom: 1px solid #e1e4e8;
+padding-bottom: 5px;
+}
+
+.status-code {
+display: inline-block;
+background-color: #e6ffed; /* cor de fundo */
+color: #27a745; /* cor do texto */
+padding: 2px 6px;
+border-radius: 3px;
+font-weight: bold;
+margin-right: 5px;
+}
+
+.response-message {
+font-size: 14px;
+color: #6a737d;  /* cor do texto cinza */
+}
+</style>
+
+<!-- CSS Método -->
+<div style="
+  background-color: #5E4DB2;
+  border: none;
+  border-radius: 60px;
+  color: white;
+  padding: 2px 12px;
+  text-align: center;
+  display: inline-block;
+  letter-spacing: 1px;
+
+">
+<h5 style="color: white;">POST</h5>
+</div>
+
+<div class="response-container">
+  <div class="response-message">
+  Requisita ao servidor uma oauth token para requisições de recursos do servidor
+  </div>
+
+  ```
+  /oauth/token
+  ```
+
+| Retorno      | Oauth |
+| :----------- | :-----------: |
+| Token | Não       |
+</div>
+
+<br>
+<br>
+
+<!-- HTML e CSS Personalizado api -->
+<style>
+.response-container {
+  margin-top: 10px;
+}
+
+.response-status {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+border-bottom: 1px solid #e1e4e8;
+padding-bottom: 5px;
+}
+
+.status-code {
+display: inline-block;
+background-color: #e6ffed; /* cor de fundo */
+color: #27a745; /* cor do texto */
+padding: 2px 6px;
+border-radius: 3px;
+font-weight: bold;
+margin-right: 5px;
+}
+
+.response-message {
+font-size: 14px;
+color: #6a737d;  /* cor do texto cinza */
+}
+</style>
+
+<!-- CSS Método -->
+<div style="
+  background-color: #0155CC;
+  border: none;
+  border-radius: 60px;
+  color: white;
+  padding: 2px 12px;
+  text-align: center;
+  display: inline-block;
+  letter-spacing: 1px;
+  align-items: center;
+  justify-content: center;
+
+">
+<h5 style="color: white;">UPDATE</h5>
+</div>
+
+<div class="response-container">
+  <div class="response-message">
+  Atualiza uma instância no servidor
+  </div>
+
+  ```
+  /stcpcore/instances
+  ```
+
+| Retorno      | Oauth |
+| :----------- | :-----------: |
+| ID | Sim       |
+</div>
+
+<br>
+<br>
+
+<!-- HTML e CSS Personalizado api -->
+<style>
+.response-container {
+  margin-top: 10px;
+}
+
+.response-status {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+border-bottom: 1px solid #e1e4e8;
+padding-bottom: 5px;
+}
+
+.status-code {
+display: inline-block;
+background-color: #e6ffed; /* cor de fundo */
+color: #27a745; /* cor do texto */
+padding: 2px 6px;
+border-radius: 3px;
+font-weight: bold;
+margin-right: 5px;
+}
+
+.response-message {
+font-size: 14px;
+color: #6a737d;  /* cor do texto cinza */
+}
+</style>
+
+<!-- CSS Método -->
+<div style="
+  background-color: #0155CC;
+  border: none;
+  border-radius: 60px;
+  color: white;
+  padding: 2px 12px;
+  text-align: center;
+  display: inline-block;
+  letter-spacing: 1px;
+  align-items: center;
+  justify-content: center;
+
+">
+<h5 style="color: white;">UPDATE</h5>
+</div>
+
+<div class="response-container">
+  <div class="response-message">
+  Atualiza um usuário na instância {id_i}
+  </div>
+
+  ```
+  /stcpcore/instances/{id_i}/users
+  ```
+
+| Retorno      | Oauth |
+| :----------- | :-----------: |
+| ID | Sim       |
+</div>
+
+<br>
+<br>
+
+<!-- HTML e CSS Personalizado api -->
+<style>
+.response-container {
+  margin-top: 10px;
+}
+
+.response-status {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+border-bottom: 1px solid #e1e4e8;
+padding-bottom: 5px;
+}
+
+.status-code {
+display: inline-block;
+background-color: #e6ffed; /* cor de fundo */
+color: #27a745; /* cor do texto */
+padding: 2px 6px;
+border-radius: 3px;
+font-weight: bold;
+margin-right: 5px;
+}
+
+.response-message {
+font-size: 14px;
+color: #6a737d;  /* cor do texto cinza */
+}
+</style>
+
+<!-- CSS Método -->
+<div style="
+  background-color: #0155CC;
+  border: none;
+  border-radius: 60px;
+  color: white;
+  padding: 2px 12px;
+  text-align: center;
+  display: inline-block;
+  letter-spacing: 1px;
+  align-items: center;
+  justify-content: center;
+
+">
+<h5 style="color: white;">UPDATE</h5>
+</div>
+
+<div class="response-container">
+  <div class="response-message">
+  Atualiza um serviço de rede na instância {id_i}
+  </div>
+
+  ```
+  /stcpcore/instances/{id_i}/services
+  ```
+
+| Retorno      | Oauth |
+| :----------- | :-----------: |
+| ID | Sim       |
+</div>
+
+<br>
+<br>
+
+<!-- HTML e CSS Personalizado api -->
+<style>
+.response-container {
+  margin-top: 10px;
+}
+
+.response-status {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+border-bottom: 1px solid #e1e4e8;
+padding-bottom: 5px;
+}
+
+.status-code {
+display: inline-block;
+background-color: #e6ffed; /* cor de fundo */
+color: #27a745; /* cor do texto */
+padding: 2px 6px;
+border-radius: 3px;
+font-weight: bold;
+margin-right: 5px;
+}
+
+.response-message {
+font-size: 14px;
+color: #6a737d;  /* cor do texto cinza */
+}
+</style>
+
+<!-- CSS Método -->
+<div style="
+  background-color: #0155CC;
+  border: none;
+  border-radius: 60px;
+  color: white;
+  padding: 2px 12px;
+  text-align: center;
+  display: inline-block;
+  letter-spacing: 1px;
+  align-items: center;
+  justify-content: center;
+
+">
+<h5 style="color: white;">UPDATE</h5>
+</div>
+
+<div class="response-container">
+  <div class="response-message">
+  Atualiza um agendamento na instância {id_i}
+  </div>
+
+  ```
+  /stcpcore/instances/{id_i}/schedules
+  ```
+
+| Retorno      | Oauth |
+| :----------- | :-----------: |
+| ID | Sim       |
+</div>
+
+<br>
+<br>
+
+<!-- HTML e CSS Personalizado api -->
+<style>
+.response-container {
+  margin-top: 10px;
+}
+
+.response-status {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+border-bottom: 1px solid #e1e4e8;
+padding-bottom: 5px;
+}
+
+.status-code {
+display: inline-block;
+background-color: #e6ffed; /* cor de fundo */
+color: #27a745; /* cor do texto */
+padding: 2px 6px;
+border-radius: 3px;
+font-weight: bold;
+margin-right: 5px;
+}
+
+.response-message {
+font-size: 14px;
+color: #6a737d;  /* cor do texto cinza */
+}
+</style>
+
+<!-- CSS Método -->
+<div style="
+  background-color: #0155CC;
+  border: none;
+  border-radius: 60px;
+  color: white;
+  padding: 2px 12px;
+  text-align: center;
+  display: inline-block;
+  letter-spacing: 1px;
+  align-items: center;
+  justify-content: center;
+
+">
+<h5 style="color: white;">UPDATE</h5>
+</div>
+
+<div class="response-container">
+  <div class="response-message">
+  Atualiza um tipo de arquivo global na instância {id_i}
+  </div>
+
+  ```
+  /stcpcore/instances/{id_i}/ftypes_globa
+  ```
+
+| Retorno      | Oauth |
+| :----------- | :-----------: |
+| ID | Sim       |
+</div>
+
+<br>
+<br>
+
+<!-- HTML e CSS Personalizado api -->
+<style>
+.response-container {
+  margin-top: 10px;
+}
+
+.response-status {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+border-bottom: 1px solid #e1e4e8;
+padding-bottom: 5px;
+}
+
+.status-code {
+display: inline-block;
+background-color: #e6ffed; /* cor de fundo */
+color: #27a745; /* cor do texto */
+padding: 2px 6px;
+border-radius: 3px;
+font-weight: bold;
+margin-right: 5px;
+}
+
+.response-message {
+font-size: 14px;
+color: #6a737d;  /* cor do texto cinza */
+}
+</style>
+
+<!-- CSS Método -->
+<div style="
+  background-color: #0155CC;
+  border: none;
+  border-radius: 60px;
+  color: white;
+  padding: 2px 12px;
+  text-align: center;
+  display: inline-block;
+  letter-spacing: 1px;
+  align-items: center;
+  justify-content: center;
+
+">
+<h5 style="color: white;">UPDATE</h5>
+</div>
+
+<div class="response-container">
+  <div class="response-message">
+  Atualiza um tipo de arquivo no usuário {id_u} na instância {id_i}
+  </div>
+
+  ```
+  /stcpcore/instances/{id_i}/users/{i d_u}/ftypes
+  ```
+
+| Retorno      | Oauth |
+| :----------- | :-----------: |
+| ID | Sim       |
+</div>
+
+<br>
+<br>
+
+<!-- HTML e CSS Personalizado api -->
+<style>
+.response-container {
+  margin-top: 10px;
+}
+
+.response-status {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+border-bottom: 1px solid #e1e4e8;
+padding-bottom: 5px;
+}
+
+.status-code {
+display: inline-block;
+background-color: #e6ffed; /* cor de fundo */
+color: #27a745; /* cor do texto */
+padding: 2px 6px;
+border-radius: 3px;
+font-weight: bold;
+margin-right: 5px;
+}
+
+.response-message {
+font-size: 14px;
+color: #6a737d;  /* cor do texto cinza */
+}
+</style>
+
+<!-- CSS Método -->
+<div style="
+  background-color: #AE2A18;
+  border: none;
+  border-radius: 60px;
+  color: white;
+  padding: 2px 12px;
+  text-align: center;
+  display: inline-block;
+  letter-spacing: 1px;
+  align-items: center;
+  justify-content: center;
+
+">
+<h5 style="color: white;">DELETE</h5>
+</div>
+
+<div class="response-container">
+  <div class="response-message">
+  Remove uma instância do servidor
+  </div>
+
+  ```
+  /stcpcore/instances
+  ```
+
+| Retorno      | Oauth |
+| :----------- | :-----------: |
+| ID | Sim       |
+</div>
+
+<br>
+<br>
+
+<!-- HTML e CSS Personalizado api -->
+<style>
+.response-container {
+  margin-top: 10px;
+}
+
+.response-status {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+border-bottom: 1px solid #e1e4e8;
+padding-bottom: 5px;
+}
+
+.status-code {
+display: inline-block;
+background-color: #e6ffed; /* cor de fundo */
+color: #27a745; /* cor do texto */
+padding: 2px 6px;
+border-radius: 3px;
+font-weight: bold;
+margin-right: 5px;
+}
+
+.response-message {
+font-size: 14px;
+color: #6a737d;  /* cor do texto cinza */
+}
+</style>
+
+<!-- CSS Método -->
+<div style="
+  background-color: #AE2A18;
+  border: none;
+  border-radius: 60px;
+  color: white;
+  padding: 2px 12px;
+  text-align: center;
+  display: inline-block;
+  letter-spacing: 1px;
+  align-items: center;
+  justify-content: center;
+
+">
+<h5 style="color: white;">DELETE</h5>
+</div>
+
+<div class="response-container">
+  <div class="response-message">
+  Remove um usuário na instância {id_i}
+  </div>
+
+  ```
+  /stcpcore/instances/{id_i}/users
+  ```
+
+| Retorno      | Oauth |
+| :----------- | :-----------: |
+| ID | Sim       |
+</div>
+
+<br>
+<br>
+
+<!-- HTML e CSS Personalizado api -->
+<style>
+.response-container {
+  margin-top: 10px;
+}
+
+.response-status {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+border-bottom: 1px solid #e1e4e8;
+padding-bottom: 5px;
+}
+
+.status-code {
+display: inline-block;
+background-color: #e6ffed; /* cor de fundo */
+color: #27a745; /* cor do texto */
+padding: 2px 6px;
+border-radius: 3px;
+font-weight: bold;
+margin-right: 5px;
+}
+
+.response-message {
+font-size: 14px;
+color: #6a737d;  /* cor do texto cinza */
+}
+</style>
+
+<!-- CSS Método -->
+<div style="
+  background-color: #AE2A18;
+  border: none;
+  border-radius: 60px;
+  color: white;
+  padding: 2px 12px;
+  text-align: center;
+  display: inline-block;
+  letter-spacing: 1px;
+  align-items: center;
+  justify-content: center;
+
+">
+<h5 style="color: white;">DELETE</h5>
+</div>
+
+<div class="response-container">
+  <div class="response-message">
+  Remove um serviço de rede na Instância {id_i}
+  </div>
+
+  ```
+  /stcpcore/instances/{id_i}/services
+  ```
+
+| Retorno      | Oauth |
+| :----------- | :-----------: |
+| ID | Sim       |
+</div>
+
+<br>
+<br>
+
+<!-- HTML e CSS Personalizado api -->
+<style>
+.response-container {
+  margin-top: 10px;
+}
+
+.response-status {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+border-bottom: 1px solid #e1e4e8;
+padding-bottom: 5px;
+}
+
+.status-code {
+display: inline-block;
+background-color: #e6ffed; /* cor de fundo */
+color: #27a745; /* cor do texto */
+padding: 2px 6px;
+border-radius: 3px;
+font-weight: bold;
+margin-right: 5px;
+}
+
+.response-message {
+font-size: 14px;
+color: #6a737d;  /* cor do texto cinza */
+}
+</style>
+
+<!-- CSS Método -->
+<div style="
+  background-color: #AE2A18;
+  border: none;
+  border-radius: 60px;
+  color: white;
+  padding: 2px 12px;
+  text-align: center;
+  display: inline-block;
+  letter-spacing: 1px;
+  align-items: center;
+  justify-content: center;
+
+">
+<h5 style="color: white;">DELETE</h5>
+</div>
+
+<div class="response-container">
+  <div class="response-message">
+  Remove um agendamento na instância {id_i}
+  </div>
+
+  ```
+  /stcpcore/instances/{id_i}/users
+  ```
+
+| Retorno      | Oauth |
+| :----------- | :-----------: |
+| ID | Sim       |
+</div>
+
+<br>
+<br>
+
+<!-- HTML e CSS Personalizado api -->
+<style>
+.response-container {
+  margin-top: 10px;
+}
+
+.response-status {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+border-bottom: 1px solid #e1e4e8;
+padding-bottom: 5px;
+}
+
+.status-code {
+display: inline-block;
+background-color: #e6ffed; /* cor de fundo */
+color: #27a745; /* cor do texto */
+padding: 2px 6px;
+border-radius: 3px;
+font-weight: bold;
+margin-right: 5px;
+}
+
+.response-message {
+font-size: 14px;
+color: #6a737d;  /* cor do texto cinza */
+}
+</style>
+
+<!-- CSS Método -->
+<div style="
+  background-color: #AE2A18;
+  border: none;
+  border-radius: 60px;
+  color: white;
+  padding: 2px 12px;
+  text-align: center;
+  display: inline-block;
+  letter-spacing: 1px;
+  align-items: center;
+  justify-content: center;
+
+">
+<h5 style="color: white;">DELETE</h5>
+</div>
+
+<div class="response-container">
+  <div class="response-message">
+  Remove um tipo de arquivo global na instância {id_i}
+  </div>
+
+  ```
+  /stcpcore/instances/{id_i}/ftypes_global
+  ```
+
+| Retorno      | Oauth |
+| :----------- | :-----------: |
+| ID | Sim       |
+</div>
+
+<br>
+<br>
+
+<!-- HTML e CSS Personalizado api -->
+<style>
+.response-container {
+  margin-top: 10px;
+}
+
+.response-status {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+border-bottom: 1px solid #e1e4e8;
+padding-bottom: 5px;
+}
+
+.status-code {
+display: inline-block;
+background-color: #e6ffed; /* cor de fundo */
+color: #27a745; /* cor do texto */
+padding: 2px 6px;
+border-radius: 3px;
+font-weight: bold;
+margin-right: 5px;
+}
+
+.response-message {
+font-size: 14px;
+color: #6a737d;  /* cor do texto cinza */
+}
+</style>
+
+<!-- CSS Método -->
+<div style="
+  background-color: #AE2A18;
+  border: none;
+  border-radius: 60px;
+  color: white;
+  padding: 2px 12px;
+  text-align: center;
+  display: inline-block;
+  letter-spacing: 1px;
+  align-items: center;
+  justify-content: center;
+
+">
+<h5 style="color: white;">DELETE</h5>
+</div>
+
+<div class="response-container">
+  <div class="response-message">
+  Remove um tipo de arquivo no usuário {id_u} na instância {id_i}
+  </div>
+
+  ```
+  /stcpcore/instances/{id_i}/users/{id_u}/ftypes
+  ```
+
+| Retorno      | Oauth |
+| :----------- | :-----------: |
+| ID | Sim       |
+</div>
+
+<br>
+
+> O argumento **?search=reduced** é opcional nos campos que o aceitam. Este campo reduz a carga da resposta retirando o
+**config_txt** e retornando apenas informações essenciais como: **Nome**, **Id**, **Description** e **Field**.
 
 
 
