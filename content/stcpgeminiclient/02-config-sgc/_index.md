@@ -8,10 +8,10 @@ cascade:
 sidebar:
   exclude: false
 weight: 2
-prev:
-next:
+prev: /01-install-sgc/
+next: /03-exec-sgc/
 draft:
-lastmod: 2024-06-13
+lastmod: 2024-06-21
 ---
 Toda a configuração da aplicação será realizada através do *STCP Gemini Client Config*. Não é necessária a utilização do super-usuário (root) para a configuração.
 

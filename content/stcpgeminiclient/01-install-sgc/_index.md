@@ -8,14 +8,14 @@ cascade:
 sidebar:
   exclude: false
 weight: 1
-prev:
-next:
+prev: /stcpgeminiclient
+next: /02-config-sgc/
 draft:
-lastmod: 2024-06-10
+lastmod: 2024-06-21
 ---
 ## Requisitos
 
-O STCP Gemini Client está homologado para as distribuições CentOS (versões 7 e 8), Red Hat Enterprise Linux (versões 7 e 8), Amazon Linux, Oracle Linux (versões 7, 8 e 9), Debian (versão 9, 10 e 11) e Ubuntu (versões 18.04 e 20.04).
+O STCP Gemini Client está homologado para as distribuições Linux RHEL (versões 7 e 8), Ubuntu (versões 18.04 e 20.04), Amazon Linux, Oracle Linux (versões 7, 8 e 9), CentOS (versões 7 e 8), Rocky Linux e outros.
 
 Por questões de segurança, o STCP Gemini Client utiliza versões mais recentes das bibliotecas **OPENSSL**, **LIBSSH** e **PCRE2**.
 
@@ -23,9 +23,16 @@ Essas bibliotecas são dependências (pré-requisitos) para que o STCP Gemini Cl
 
 A instalação do STCP Gemini Client será realizada através do repositório oficial da Riversoft, de acordo com a distribuição Linux utilizada.
 
-## CentOS, Red Hat Enterprise Linux, Oracle Linux e Amazon Linux
+## Distribuições Linux
 
-**Instalação das dependências**
+As distribuições disponíveis para instalação são:
+* CentOS;
+* Red Hat Enterprise Linux;
+* Rocky Linux;
+* Oracle Linux;
+* Amazon Linux.
+
+### Instalação das dependências
 
 ![](img/sgc-01.png)
 

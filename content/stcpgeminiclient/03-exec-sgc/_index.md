@@ -8,10 +8,10 @@ cascade:
 sidebar:
   exclude: false
 weight: 3
-prev:
-next:
+prev: /02-config-sgc/
+next: /04-log-sgc/
 draft:
-lastmod: 2024-06-10
+lastmod: 2024-06-21
 ---
 Para executar a aplicação, através do terminal, utilize a linha de comando abaixo.
 

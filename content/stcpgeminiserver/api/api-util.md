@@ -10,9 +10,9 @@ sidebar:
 weight: 3
 prev:
 next:
-slug:
+slug: util-apigeminiserver
 draft:
-lastmod:
+lastmod: 2024-06-21
 ---
 ## Inicialização da API como aplicação
 
