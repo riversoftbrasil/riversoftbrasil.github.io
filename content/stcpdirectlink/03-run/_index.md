@@ -1,5 +1,5 @@
 ---
-linkTitle: Como executar
+linkTitle: Execução
 layout: docs
 toc: true
 cascade:

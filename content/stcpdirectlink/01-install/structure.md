@@ -11,7 +11,7 @@ prev: /stcpdirectlink/01-install/requirements
 next: /stcpdirectlink/02-configuration/
 slug: estrutura-diretorios
 draft: false
-lastmod: 2024-01-26
+lastmod: 2024-07-12
 ---
 
 ## Estrutura dos diretórios
@@ -22,20 +22,29 @@ Após ser instalado a seguinte estrutura de pastas e arquivos devem estar presen
   {{< filetree/folder name="bin" state="closed" >}}
   {{< /filetree/folder >}}
 
-  {{< filetree/folder name="configs" state="open" >}}
-      {{< filetree/file name="svvconfig" >}}
-      {{< filetree/file name="userconfig" >}}
+  {{< filetree/folder name="configs" state="closed" >}}
+  {{< /filetree/folder >}}
+
+  {{< filetree/folder name="control" state="closed" >}}
+  {{< /filetree/folder >}}
+
+   {{< filetree/folder name="data" state="closed" >}}
+  {{< /filetree/folder >}}
+
+
+  {{< filetree/folder name="license" state="closed" >}}
   {{< /filetree/folder >}}
 
   {{< filetree/folder name="logs" state="closed" >}}
   {{< /filetree/folder >}}
 
-  {{< filetree/folder name="license" state="closed" >}}
-  {{< /filetree/folder >}}
-
   {{< filetree/folder name="static" state="open" >}}
-    {{< filetree/file name="css" >}}
-    {{< filetree/file name="images" >}}
+     {{< filetree/folder name="css" state="closed" >}}
+     {{< /filetree/folder >}}
+
+     {{< filetree/folder name="images" state="closed" >}}
+     {{< /filetree/folder >}}
+
     {{< filetree/folder name="portal" state="open" >}}
       {{< filetree/folder name="assets" state="open" >}}
         {{< filetree/folder name="configs" state="closed" >}}
@@ -49,8 +58,6 @@ Após ser instalado a seguinte estrutura de pastas e arquivos devem estar presen
     {{< /filetree/folder >}}
   {{< /filetree/folder >}}
 
-
-
   {{< /filetree/folder >}}
 {{< /filetree/container >}}
 
@@ -59,8 +66,9 @@ Diretório                     | Descrição
 ---                           | ----
 bin                           | Executávies da aplicação
 configs                       | Configurações
-configs/svcconfig             | Configurações extras de serviços de redes (para integração ao STCPGemini)
-configs/userconfig            | Configurações extras de usuários (para integração ao STCPGemini)
+control                       | Diretório de controle
+data                          | Diretório de dados (sandbox)
+license                       | Diretório de licença
 logs                          | Logs de acesso a aplicação
 static                        | Páginas estáticas da aplicação
 static/css                    | Configurações dos estilos de página

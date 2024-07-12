@@ -11,7 +11,7 @@ prev: /stcpdirectlink/02-configuration/requirements
 next: /stcpdirectlink/03-run/
 slug: arquivo-configuracao
 draft: false
-lastmod: 2024-04-15
+lastmod: 2024-07-12
 ---
 
 ### Parâmetros de download
@@ -86,7 +86,7 @@ lastmod: 2024-04-15
  routeScanTimerMs                      | Tempo de varredura do diretório de roteamneto em milisegundos
  routeScanSplitFilenameRegex           | Expressão regular para validação e separação da campos do nome do arquivo
 
-### Parâmetros do servico de encurtamento de URL
+### Parâmetros do serviço de encurtamento de URL
 
  Parâmetros                            | Descrição
  ---------                             | -------------
@@ -95,7 +95,7 @@ lastmod: 2024-04-15
  urlShortnerEndpoint                   | Endpoint do serviço de broker
  urlShortnerToken                      | Token de autenticação do serviço
 
-### Parâmetros do servico de configuração
+### Parâmetros do serviço de configuração
 
  Parâmetros                            | Descrição
  ---------                             | -------------
@@ -106,7 +106,6 @@ lastmod: 2024-04-15
  cfgUser                               | Usuário de autenticação do serviço
  cfgPswd                               | Senha de autenticação do serviço
  cfgInstanceName                       | Nome da instância utilizada
- <!-- cfgMethod                             | Método de acesso ao serviço autenticação (obs.: **stcpgeminidb** - nome do tipo de banco de dados: **mysql** ou **mssql**) -->
 
 ### Parâmetros de log
 

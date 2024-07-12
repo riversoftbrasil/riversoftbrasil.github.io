@@ -5,7 +5,7 @@ cascade:
   type: docs
 sidebar:
   exclude: false
-weight: 2
+weight: 3
 prev: /authentication/
 next: /download
 slug: upload-arquivos
