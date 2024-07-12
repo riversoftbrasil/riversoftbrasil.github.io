@@ -39,6 +39,7 @@ lastmod: 2024-04-15
  emailServerPort                       | Porta do serviço de email
  emailAuthUser                         | Usuário para autenticação no serviço de email
  emailAuthPswd                         | Senha para autenticação no serviço de email
+ emailFormatMimeFrom                   | Formata o campo From do email no padrão mime
  emailAuthType                         | Tipo de autenticação do serviço de email (ex.: plain - login)
  emailTemplatesPath                    | Diretório de templates de emails e assuntos
  emailSendFrom                         | Endereço de email que gera a notificação
@@ -78,6 +79,7 @@ lastmod: 2024-04-15
  routeCopyPath                         | Caminho do diretório de copia
  routeDirectLinkEnable                 | Habilita o DirectLink (envio de email de notificação para download) (ex: true ou false)
  routeDirectLinkTableIndex             | Campo da tabela de distribuição que será utilizado no DirectLink como caixa postal (ex: origin ou destination)
+ routeDirectLinkUrl                    | Url do directlink que deve ser utilizada na mensagem do SecureEmail (link do email seguro)
  routeMoveFileEnable                   | Habilita o move do arquivo processado (ex: true ou false)
  routeMovePath                         | Caminho do diretório de move
  routeRemoveFile                       | Remove o arquivo processado (ex: true ou false)
@@ -98,13 +100,13 @@ lastmod: 2024-04-15
  Parâmetros                            | Descrição
  ---------                             | -------------
  cfgProvider                           | Tipo de provedor (stcpwindows, stcpgeminidb ou ldap)
- cfgEndpoint                           | Endpoint do serviço (obs.: **stcpgeminidb** - nome do banco de dados)
+ cfgDbName                             | Nome do serviço (obs.: **stcpgeminidb** - nome do banco de dados)
  cfgHost                               | Endereço ou nome do servidor de banco de dados
  cfgPort                               | Porta do servidor de banco de dados
  cfgUser                               | Usuário de autenticação do serviço
  cfgPswd                               | Senha de autenticação do serviço
  cfgInstanceName                       | Nome da instância utilizada
- cfgMethod                             | Método de acesso ao serviço autenticação (obs.: **stcpgeminidb** - nome do tipo de banco de dados: **mysql** ou **mssql**)
+ <!-- cfgMethod                             | Método de acesso ao serviço autenticação (obs.: **stcpgeminidb** - nome do tipo de banco de dados: **mysql** ou **mssql**) -->
 
 ### Parâmetros de log
 
@@ -141,6 +143,31 @@ lastmod: 2024-04-15
  ssoTenantOrTeamId                     | Nome do Tenant (Microsoft) ou do Team Id (Apple) do provedor SSO
  ssoScope                              | Filtro para localização de usuário no LDAP
 
+### Parâmetros do provedor de lock 
+
+Parâmetros                            | Descrição
+---------                             | -------------
+LockProvider                          | Conjunto de configuração do provedor de Lock
+lockType                              | Tipo do provedor de lock ***(ex: in-memory ou filesystem)***
+
+### Parâmetros de acesso ao KMS (Serviço de gerenciamento de segredos) 
+
+Parâmetros                            | Descrição
+---------                             | -------------
+kmsProvider                           | Conjunto de configuração do provedor de KMS
+kmsType                               | Tipo do provedor de autenticação ***(ex: azure:keyvault, oci:keyvault, aws:secretmanager ou gcp:secretmanager)***
+kmsName                               | Nome do provedor
+kmsEnable                             | Habilita/desabilita o provedor de KMS
+kmsEndpoint                           | URL do serviço ***AWS Secret Manager*** ou ***OCI KMS***
+kmsRegion                             | Região ***Azure Keyvault*** ou ***OCI KMS***
+kmsClientId                           | Client id de autenticação
+kmsClientSecret                       | Client secret de autenticação
+kmsClientFingerprint                  | Client fingerprint de autenticação ***OCI KMS***
+kmsClientPrivateKey                   | Chave privativa ou ***Google Secret Manager*** ou ***OCI KMS*** 
+kmsClientPrivateKeyPswd               | Senha da chave privativa ***OCI KMS*** 
+kmsTenant                             | Nome do Tenant para ***Azure Keyvault*** ou ***OCI KMS***
+kmsVaultId                            | Identificação do key vault para ***OCI KMS***
+
 ### Parâmetros gerais
 
  Parâmetros                            | Descrição
@@ -151,6 +178,13 @@ lastmod: 2024-04-15
  pinExpireSeconds                      | Tempo máximo de vida da chave de segurança (PIN)
  debug                                 | Nível de mensagens de logs geradas (0=desligada 255=mais detalhada)
  networks                              | Define os serviços de rede que serão disponibilizados
+ License                               | Caminho do arquivo de licença JWT
+ applDir                               | Nome do diretório de instalação da aplicação (ex.: /usr/local/stcpdirectlink)
+ applLockDir                           | Nome do diretório dos arquivos de lock (ex.: /usr/local/stcpdirectlink/control)
+ applPidFile                           | Nome do do arquivo controle da execução da aplicação (ex.: /var/run/stcpdirectlink.pid)
+ applUser                              | Usuário utilizado pela aplicação (linux)
+ applGroup                             | Grupo utilizado pela aplicação (linux)
+ applDebug                             | Nível de mensagens de logs geradas (0=desligada 255=mais detalhada)
 
 ### Parâmetros do serviço (windows)
 
@@ -162,18 +196,20 @@ lastmod: 2024-04-15
 
 ### Comentários
 
- #### ***Secrets***
+#### ***Secrets***
+
 <br>
      As informações sensiveis (segredo/senhas) poderão também ser lidas de um arquivo texto ou através de uma váriável de ambiente. Conforme a sintaxe abaixo:
 
- ```json
+ ```
        "applConfigPassPhrase":"file:[nome do arquivo]"
        "applConfigPassPhrase":"env:[nome da variável]"
 
        "appSecret":"file:[nome do arquivo]"
        "appSecret":"env:[nome da variável]"
 ```
- #### ***ciphers***
+
+#### ***ciphers***
 
 <br>
      É possível especificar quais suites podem ser negociadas ou deixar o campo vazio para que todas as suites sejam selecionadas. As suites disponíveis são:
@@ -205,13 +241,14 @@ Para especificar mais de uma suite elas devem ser separadas pelo caracter dois p
 <br>
 Exemplo de cifra segura para compatibilidade PCI:
 <br>
+
 ```json
 {
 "serverTLSCipherSuites":"TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384:TLS_AES_128_GCM_SHA256:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_256_GCM_SHA384:TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA"
 }
 ```
 
- #### Caminhos absolutos ou relativos
+#### Caminhos absolutos ou relativos
 
 Quando a aplicação for executada como serviço (windows), os parâmetros de diretórios e templates devem ser informados com o caminho absoluto (path completo).
 

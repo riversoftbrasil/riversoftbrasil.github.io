@@ -9,11 +9,11 @@ sidebar:
 weight: 2
 prev: /stcpdirectlink/01-install/
 next: /stcpdirectlink/02-configuration/requirements
-# slug: configuracao
 draft: false
-lastmod: 2024-03-08
+lastmod: 2024-07-12
 ---
 # Configuração
+
 As configurações de inicialização da aplicação serão armazenadas em um arquivo texto no formato **JSON**.
 
 A aplicação irá utilizar o arquivo de configuração ***config.json*** existente no diretório ***configs*** ou através do parâmetro: `-config \<nome do arquivo de configuração>` informado na linha de comando.
@@ -59,7 +59,6 @@ Copie o arquivo de exemplo **example-config.json** para **config.json** e ajuste
     "smsSender":"",
     "smsTemplatesPath":"./templates/riversoft/sms",
     "smsSendConfirmationEnable": true,
-    "smsSender":"",
 
     "routeEnable": false,
     "routeTableCSVFile":"./configs/test/list_table.csv",
@@ -69,16 +68,17 @@ Copie o arquivo de exemplo **example-config.json** para **config.json** e ajuste
     "routeScanSplitFilenameRegex_Example1":"(?i)^.*\/(?P<origin>.*?)_(?P<filename>.*)$",
     "routeScanSplitFilenameRegex_Example2":"(?i)^.*\/(?P<origin>.*?)\/saida\/(?P<filename>.*)$",
     "routeExternalCmdEnable":false,
-    "routeExternalCmd":"C:/STCPODT/Program/stcpren_3_2.exe",
-    "routeExternalCmdParams":"-rules C:/STCPODT/Program/STCPREN/stcpren-rx-dmz.ini -var0 <origin> <filefullname>",
-    "routePath": ["./download/route","./download/luiz","./download/fred","./download/vanderlei"],
+    "routeExternalCmd":"",
+    "routeExternalCmdParams":"",
+    "routePath": [],
     "routeCopyFileEnable": true,
-    "routeCopyPath": "./download/<destination>/saida/<filename>",
+    "routeCopyPath": "",
+    "routeMoveFileEnable": true,
+    "routeMovePath": "",
+    "routeRemoveFile": false,
     "routeDirectLinkEnable":true,
     "routeDirectLinkTableIndex":"destination",
-    "routeMoveFileEnable": true,
-    "routeMovePath": "./download/<origin>/saida/backup/<filename>.<unixtime>",
-    "routeRemoveFile": false,
+    "routeDirectLinkUrl": "http://your-domain/directlink/v1",
 
     "urlShortnerEnable": false,
     "urlShortnerProvider": "bitly",
@@ -86,17 +86,19 @@ Copie o arquivo de exemplo **example-config.json** para **config.json** e ajuste
     "urlShortnerToken":"",
 
     "cfgProvider_Example_StcpWindows": "stcpwindows",
-    "cfgEndpoint_Example_StcpWindows":"./configs/test/CTCP.INI",
+    "cfgDbName_Example_StcpWindows":"./configs/test/CTCP.INI",
     "cfgInstanceName_Example_Windows": "AWSContainerDev",
 
-    "cfgProvider_Example_StcpGeminiDB": "stcpgeminidb",
-    "cfgEndpoint_Example_StcpGeminiDB":"dbSTCPGeminiCfg",
-    "cfgHost_Example_StcpGeminiDB":"localhost",
-    "cfgPort_Example_StcpGeminiDB":3306,
-    "cfgUser_Example_StcpGeminiDB":"",
-    "cfgPswd_Example_StcpGeminiDB":"",
+    "cfgProvider_Example_StcpGeminiDB": "your-provider",
+    "cfgDbName_Example_StcpGeminiDB":"your-dbname",
+    "cfgDbHost_Example_StcpGeminiDB":"localhost",
+    "cfgDbPort_Example_StcpGeminiDB":3306,
+    "cfgDbUser_Example_StcpGeminiDB":"",
+    "cfgDbPswd_Example_StcpGeminiDB":"",
+    "cfgDbType": "mysql",
+    "cfgDbOptions": "?charset=latin1",
     "cfgInstanceName_Example_StcpGeminiDB": "AWSContainerDev",
-    "cfgMethod_Example_StcpGeminiDB": "mysql",
+
 
     "logDbEnable": false,
     "logDbType": "mysql",
@@ -110,7 +112,7 @@ Copie o arquivo de exemplo **example-config.json** para **config.json** e ajuste
     "oauthTokenMethodJWT": "HS256",
     "oauthTokenExpireSeconds": 3600,
 
-    "ssoProviders":[{
+    "ssoProviders":[{ 
         "ssoType": "oauth2",
         "ssoName":"google",
         "ssoEnable":false,
@@ -183,14 +185,36 @@ Copie o arquivo de exemplo **example-config.json** para **config.json** e ajuste
       }
     ],
 
-    "networks": [ "TCPIP_1", "TCPIP_2"],
+    "lockProvider":{
+      "lockType":"filesystem"
+    },
 
-    "applConfigPassPhrase":"Stcp@Gemini",
-    "appSecret":"STCPDirectLink2021",
+    "kmsProvider":{
+      "kmsEnable":false,
+      "kmsType":"oci:keyvault",
+      "kmsName":"OCI Secret provider",
+      "kmsEndpoint":"",
+      "kmsTenant":"",
+      "kmsRegion":"",
+      "kmsClientId":"",
+      "kmsClientFingerprint":"",
+      "kmsClientPrivateKey":"",
+      "kmsClientPrivateKeyPswd":"",
+      "kmsVaultId":""
+    },
+
+    "license": "./license/your-license.jwt",
+    "applDir":"",
+    "applLockDir":"",
+    "applPidFile":"",
+    "applConfigPassPhrase":"",
+    "applUser": "your-user",
+    "applGroup": "your-group",
+    "applSecret":"",
+    "applDebug": 129,
     "maxLenPin":6,
-    "PinExpireSeconds": 300,
     "maxReportLines":100,
-    "debug": 0
+    "pinExpireSeconds": 180
   },
   "Service": {
     "serviceName": "STCPDirectLinkSrv_1",
