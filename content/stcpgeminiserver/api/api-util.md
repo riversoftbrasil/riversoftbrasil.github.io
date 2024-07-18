@@ -161,86 +161,49 @@ As requisições da API dão controle total sobre as funcionalidades de configur
 
 <br>
 
-<div style="
-  background-color: #5E4DB2;
-  border: none;
-  border-radius: 60px;
-  color: white;
-  padding: 2px 12px;
-  text-align: center;
-  display: inline-block;
-  letter-spacing: 1px;
-  align-items: center;
-  justify-content: center;
+<style>
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+  .badge {
+    display: inline-block;
+    border-radius: 20px;
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+  .post { background-color: #5E4DB2; }
+  .get { background-color: #216E4E; }
+  .update { background-color: #0155CC; }
+  .delete { background-color: #AE2A18; }
+    </style>
+  
+  <table>
+        <tr>
+            <th><div class="badge post">POST</div></th>
+            <td>Utilizado em requests de criação.</td>
+        </tr>
+        <tr>
+            <th><div class="badge get">GET</div></th>
+            <td>Utilizado em requests de recuperação de informação.</td>
+        </tr>
+        <tr>
+            <th><div class="badge update">UPDATE</div></th>
+            <td>Utilizado também como <b>PUT/PATCH</b>, são requests de atualização de informação.</td>
+        </tr>
+        <tr>
+            <th><div class="badge delete">DELETE</div></th>
+            <td>Utilizado em requests de remoção de informação.</td>
+        </tr>
+    </table>
 
-">
-<h5 style="color: white;">POST</h5>
-</div>
-Utilizado em requests de criação.
-<!-- Espaçamento -->
 <br>
-<br>
-
-<div style="
-  background-color: #216E4E;
-  border: none;
-  border-radius: 60px;
-  color: white;
-  padding: 2px 12px;
-  text-align: center;
-  display: inline-block;
-  letter-spacing: 1px;
-  align-items: center;
-  justify-content: center;
-
-">
-<h5 style="color: white;">GET</h5>
-</div>
-Utilizado em requests de recuperação de informação.
-<!-- Espaçamento -->
-<br>
-<br>
-
-<div style="
-  background-color: #0155CC;
-  border: none;
-  border-radius: 60px;
-  color: white;
-  padding: 2px 12px;
-  text-align: center;
-  display: inline-block;
-  letter-spacing: 1px;
-  align-items: center;
-  justify-content: center;
-
-">
-<h5 style="color: white;">UPDATE</h5>
-</div>
-Utilizado também como <b>PUT/PATCH</b>, são requests de atualização de informação.
-<!-- Espaçamento -->
-<br>
-<br>
-
-<div style="
-  background-color: #AE2A18;
-  border: none;
-  border-radius: 60px;
-  color: white;
-  padding: 2px 12px;
-  text-align: center;
-  display: inline-block;
-  letter-spacing: 1px;
-  align-items: center;
-  justify-content: center;
-
-">
-<h5 style="color: white;">DELETE</h5>
-</div>
-Utilizado em requests de remoção de informação.
-<!-- Espaçamento -->
-<br>
-<br>
-
 
 > Com exceção do método GET, todas as requisições devem conter um corpo determinado pelo template do serviço da API.
 
