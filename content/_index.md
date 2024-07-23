@@ -39,6 +39,7 @@ layout: hextra-home
         icon="cog"
         subtitle="Servidor de transferência de arquivos seguro e multiprotocolo para aplicações de e-business e troca de informações corporativas, baseado na especificação OFTP."
         link="/stcpserver"
+        badge="EM BREVE"
     >}}
 
     {{< feature-card
@@ -46,6 +47,7 @@ layout: hextra-home
         icon="desktop-computer"
         subtitle="Client é um cliente de transferência de arquivos seguro e multiprotocolo para aplicações de e-business e troca de informações corporativas, baseado na especificação OFTP."
         link="/stcpclient"
+        badge="EM BREVE"
     >}}
 
 
@@ -61,6 +63,7 @@ layout: hextra-home
         icon="shield-exclamation"
         subtitle="Este é o portal para alteração de senha da caixa postal do usuário na aplicação do STCP OFTP Server. Nele você também pode baixar o manual e a aplicação do STCP OFTP Client."
         link="/stcpchangepassword"
+        badge="EM BREVE"
     >}}
 
     {{< feature-card
@@ -68,6 +71,7 @@ layout: hextra-home
         icon="color-swatch"
         subtitle="Aplicação que possibilita o renomeio e cópia de arquivos, varredura em diretórios e execução de processo, baseado na configuração de regras de validação dos nomes destes arquivos."
         link="/stcpren"
+        badge="EM BREVE"
     >}}
 
     {{< feature-card
@@ -75,6 +79,7 @@ layout: hextra-home
         icon="finger-print"
         subtitle="Módulo utilizado para garantir a integridade, autenticidade, confidencialidade e inviolabilidade de um arquivo através da tecnologia de assinatura digital e da criptografia."
         link="/stcpsigner"
+        badge="EM BREVE"
     >}}
 
     {{< feature-card
@@ -82,6 +87,7 @@ layout: hextra-home
         icon="cloud"
         subtitle="Ferramenta com acesso através do browser (HTTP) que possibilita a supervisão e monitoração das transferências de dados realizadas pelo software STCP OFTP Client/Server. "
         link="/stcpwebadmin"
+        badge="EM BREVE"
     >}}
 
     {{< feature-card
@@ -89,6 +95,7 @@ layout: hextra-home
         icon="terminal"
         subtitle="Aplicação cliente utilizada para transferência de arquivos seguro e multiprotocolo para aplicações de e-business e troca de informações corporativas, baseado na especificação OFTP."
         link="/stcpgeminiclient"
+        badge="EM BREVE"
     >}}
 
      {{< feature-card
