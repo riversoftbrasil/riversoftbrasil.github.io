@@ -25,7 +25,7 @@ Tudo o que você precisa saber para sua jornada nas soluções Riversoft.
 
 ### Linux
 {{< cards >}}
-  {{< card link="/404" title="STCP Gemini Server" icon="lightning-bolt" >}}
+  {{< card link="/stcpgeminiserver/custom/" title="STCP Gemini Server" icon="lightning-bolt" >}}
   {{< card link="/stcpgeminiclient" title="STCP Gemini Client" icon="terminal" >}}
 {{< /cards >}}
 
