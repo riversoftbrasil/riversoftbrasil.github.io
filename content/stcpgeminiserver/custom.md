@@ -14,7 +14,7 @@ draft: false
 lastmod: 2024-07-29
 ---
 
-Estamos atualmente trabalhando nesta documentação para fornecer o conteúdo mais atualizado e preciso possível. A versão completa estará disponível em breve. 
+Estamos trabalhando nesta documentação para fornecer o conteúdo mais atualizado e preciso possível. A versão completa estará disponível em breve. 
 
 Enquanto isso, acesse os manuais disponíveis em PDF: 
 
