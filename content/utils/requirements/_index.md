@@ -10,7 +10,7 @@ weight: 11
 prev: /protocols
 next: /service
 draft: false
-lastmod: 2024-05-20
+lastmod: 2024-08-02
 ---
 ## STCP OFTP Server
 
@@ -103,19 +103,6 @@ lastmod: 2024-05-20
 - 100 megabytes (MB) de espaço disponível em disco rígido para o aplicativo <sup>1</sup>
 - Linux RHEL, Ubuntu, Oracle Linux, CentOS, Rocky Linux, outros
 
-{{< callout type="" >}}
-  <sup>1</sup> O espaço disponível para os arquivos transferidos dependerá do volume e política de armazenamento de dados adotada.
-{{< /callout >}}
-
-{{< callout type="" >}}
-  <sup>2</sup> Server with Desktop Experience.
-{{< /callout >}}
-
-{{< callout type="" >}}
-  <sup>3</sup> Para versão STCP OFTP Server Enterprise.
-{{< /callout >}}
-
-
 ## Sistemas Operacionais Homologados
 
 O STCP encontra-se homologado para utilização na plataforma Microsft Windows (x86-32 x86-64), nas seguintes versões de sistemas operacionais:
@@ -133,13 +120,26 @@ O STCP encontra-se homologado para utilização na plataforma Microsft Windows (
 
 ### Ambiente Suportado em Cluster
 
-- Microsoft Windows Server 2022 <sup>1</sup>
-- Microsoft Windows Server 2019 <sup>1</sup>
-- Microsoft Windows Server 2016 <sup>1</sup>
+- Microsoft Windows Server 2022 <sup>2</sup>
+- Microsoft Windows Server 2019 <sup>2</sup>
+- Microsoft Windows Server 2016 <sup>2</sup>
 - Microsoft Windows 2012 Server R2
 - Microsoft Windows 2012 Server
 - Microsoft Windows 2008 Server R2
 
+<br>
+
+--------------------------------------------------
+<br>
+
 {{< callout type="" >}}
-  <sup>1</sup> Server with Desktop Experience.
+  <sup>1</sup> O espaço disponível para os arquivos transferidos dependerá do volume e política de armazenamento de dados adotada.
+{{< /callout >}}
+
+{{< callout type="" >}}
+  <sup>2</sup> Server with Desktop Experience.
+{{< /callout >}}
+
+{{< callout type="" >}}
+  <sup>3</sup> Para versão STCP OFTP Server Enterprise.
 {{< /callout >}}
