@@ -1,5 +1,5 @@
 ---
-title: Inicio
+title: Início
 toc: false
 layout: hextra-home
 # prev:
