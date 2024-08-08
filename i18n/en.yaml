@@ -1,1 +1,17 @@
-copyright: "© 2024 Riversoft Integração e Inovação."
+copyright: "© 2024 Riversoft Integração e Inovação. (English)"
+initial: Home
+docs: Docs
+security: Security
+changelog: Changelog
+backToTop: "Scroll to top"
+changeLanguage: "Change language"
+changeTheme: "Change theme"
+copyCode: "Copy code"
+dark: "Dark"
+lastUpdated: "Last updated on"
+light: "Light"
+noResultsFound: "No results found."
+onThisPage: "On this page"
+# poweredBy: "Powered by Hextra"
+# readMore: "Read more →"
+searchPlaceholder: "Search..."

@@ -1,1 +1,16 @@
 copyright: "© 2024 Riversoft Integração e Inovação. (Español)" 
+initial: Início
+docs: Docs
+security: Seguridad
+changelog: Changelog
+backToTop: "Subir al inicio"
+changeLanguage: "Cambiar idioma"
+changeTheme: "Cambiar tema"
+dark: "Oscuro"
+lastUpdated: "Última actualización"
+light: "Claro"
+noResultsFound: "No hubo resultados."
+onThisPage: "En esta página"
+# poweredBy: "Con tecnología de Hextra"
+# readMore: "Leer más →"
+searchPlaceholder: "Buscar..."
