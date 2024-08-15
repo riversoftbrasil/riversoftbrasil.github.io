@@ -19,4 +19,4 @@ Nesta seção veremos os passos de instalação e configurações do STCP Gemini
 
 > NOTA: Todo o procedimento foi baseado na distribuição Linux CentOS 7.0.
 
-[Documentos disponíveis](/stcpgeminiserver/custom/)
+[Documentos disponíveis em PDF](/stcpgeminiserver/custom/)
