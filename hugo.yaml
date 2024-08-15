@@ -107,9 +107,9 @@ languages:
   pt-br:
     languageName: Português
     weight: 1
-  es-es:
-    languageName: Español
-    weight: 2
-  en:
-    languageName: English
-    weight: 3
+  # es-es:
+  #   languageName: Español
+  #   weight: 2
+  # en:
+  #   languageName: English
+  #   weight: 3
