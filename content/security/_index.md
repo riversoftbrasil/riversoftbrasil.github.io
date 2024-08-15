@@ -10,256 +10,86 @@ prev: /protocols
 next: /events
 slug: seguranca-stcp
 draft: false
-lastmod: 2024-05-07
+lastmod: 2024-08-15
 ---
-## Como é a segurança do STCP?
+## Protocolo OFTP
 
-O STCP implementa a segurança em dois níveis: autenticação do usuário pela aplicação e a criptografia dos dados.
+No **OFTP (Odette File Transfer Protocol)**, temos um protocolo robusto e seguro amplamente utilizado na indústria automotiva e em outros setores para a troca de dados eletrônicos (EDI). A segurança oferecida pelo OFTP é uma de suas maiores vantagens, e aqui estão alguns dos principais benefícios:
 
-### Autenticação do usuário pela aplicação (ODETTE ID)
+**Criptografia e Autenticação:** O OFTP oferece suporte para criptografia avançada, garantindo que os dados trocados entre as partes sejam protegidos contra interceptação e acesso não autorizado. Além disso, a autenticação dos participantes assegura que apenas entidades confiáveis possam se comunicar, prevenindo fraudes e garantindo a integridade das transações.
 
-A autenticação do usuário é realizada pela aplicação através do reconhecimento de um usuário com até 26 (vinte e seis) caracteres e senha com até 8 (oito) caracteres antes do início da transferência.
+**Confirmação de Recebimento:** Um dos diferenciais do OFTP é a capacidade de confirmar a recepção dos arquivos transferidos. Isso garante que as partes envolvidas tenham certeza de que os dados foram entregues e recebidos corretamente, reduzindo o risco de perda de informações e aumentando a confiança no processo.
 
-### Criptografia
+**Transmissão Segura de Arquivos Grandes:** OFTP foi projetado para lidar eficientemente com a transferência de arquivos de grande volume. Com sua capacidade de retomar transferências interrompidas e assegurar que os dados cheguem ao destino completo e sem erros, o protocolo é ideal para indústrias onde o compartilhamento de grandes volumes de dados é comum.
 
-Criptografia é a codificação dos dados com o objetivo de proteger o seu conteúdo das pessoas indesejadas. Os algoritmos matemáticos usados para proteger os dados são chamados de codificadores.
+**Compatibilidade e Flexibilidade:** O OFTP é amplamente compatível com diversos sistemas e plataformas, facilitando a integração entre diferentes parceiros comerciais. Isso permite que as empresas mantenham seus dados seguros sem a necessidade de grandes mudanças em sua infraestrutura tecnológica.
 
-Existem dois tipos de codificadores: assimétricos (chave pública) e simétricos (convencionais).
+**Resiliência e Confiabilidade:** Além da segurança, o OFTP é conhecido por sua alta confiabilidade e resiliência. O protocolo inclui mecanismos para verificar a integridade dos dados durante a transferência e para retransmitir partes corrompidas, garantindo que a informação seja transferida corretamente mesmo em condições de rede adversas.
 
-Os codificadores assimétricos operam com um par de chaves: pública e privada. A chave que codifica os dados não é a mesma que decodifica.
+O OFTP traz **segurança**, **confiabilidade** e a **integridade** na troca de dados sensíveis. Ao implementar o OFTP, as organizações podem ter a tranquilidade de saber que suas comunicações estão protegidas contra ameaças e que seus dados chegarão ao destino de forma segura e intacta.
 
-Os codificadores simétricos utilizam uma única chave. A chave que codifica os dados é a mesma que decodifica.
+## Protocolo SFTP
 
-Os codificadores simétricos são mais rápidos do que os assimétricos e por isso são utilizados para codificar grandes volumes de dados, porém os assimétricos servem para manter a privacidade durante a troca das chaves simétricas e a assinatura digital.
+Já no protocolo **SFTP (Secure File Transfer Protocol)**, temos um protocolo seguro para transferência de arquivos que combina a funcionalidade do FTP com a segurança do SSH (Secure Shell). Ele é amplamente utilizado por empresas e indivíduos que precisam transferir dados de forma segura pela internet ou redes privadas. 
 
-## Message Digests (sumário da mensagem)
+Aqui estão algumas das principais vantagens do SFTP:
 
-A representação de uma mensagem de tamanho variável em uma mensagem pequena de tamanho fixo é chamada de ‘hash’ ou ‘Message Digests’ (Sumário da Mensagem).
+**Segurança Criptografada:** A principal vantagem do SFTP é a segurança. Todo o tráfego entre o cliente e o servidor é criptografado, o que impede que os dados sejam interceptados ou modificados por atacantes. Isso inclui tanto os dados transferidos quanto as credenciais de login.
 
-Os algoritmos de ‘hash’ foram desenhados de maneira a produzir uma representação única para cada mensagem e tornar extremamente difícil o processo de reconstrução da mensagem a partir do seu ‘hash’. É impossível diferentes mensagens produzirem o mesmo ‘hash’.
+**Autenticação Segura:** O SFTP utiliza a autenticação baseada em chaves SSH, que é muito mais segura do que as senhas tradicionais. Isso protege contra tentativas de login não autorizadas e garante que apenas usuários devidamente autenticados possam acessar o servidor.
 
-## Assinatura Digital
+**Integridade dos Dados:** O SFTP verifica a integridade dos dados durante a transferência, garantindo que os arquivos não sejam corrompidos ou alterados no processo. Isso é crucial para a confiabilidade das transferências, especialmente em ambientes onde a precisão dos dados é essencial.
 
-A Assinatura Digital é o processo de codificar o `hash` de uma determinada mensagem com a chave privativa do emissor. Qualquer um que receba a mensagem digitalmente assinada pode, através da chave pública do emissor, decodificar o `hash` e verificar a sua origem.
+**Firewall-Friendly:** Diferente do FTP tradicional, que requer múltiplas portas para a transferência de dados, o SFTP funciona sobre uma única conexão e porta, geralmente a porta 22. Isso simplifica a configuração de firewalls e reduz o risco de vulnerabilidades associadas a portas abertas.
 
-## Certificado
+**Transferências de Arquivos de Qualquer Tamanho:** O SFTP é capaz de lidar com transferências de arquivos de qualquer tamanho, seja ele pequeno ou extremamente grande. Isso o torna adequado para uma ampla gama de aplicações, desde o envio de pequenos documentos até grandes bases de dados ou backups.
 
-O Certificado é a associação da chave pública com a identificação do seu possuidor (nome do indivíduo, endereço do servidor ou outro) emitido e assinado por uma Autoridade Certificadora (CA).
+**Continuação de Transferências Interrompidas:** Uma característica útil do SFTP é a capacidade de retomar transferências interrompidas. Se uma transferência for interrompida devido a problemas de conexão ou outros fatores, ela pode ser continuada de onde parou, economizando tempo e largura de banda.
 
-O Certificado inclui também as informações da autoridade certificadora e o seu período de validade. Adicionalmente mais informações (extensões) podem ser associadas (número de série e outras).
+**Controle de Acesso e Permissões:** SFTP oferece um controle granular sobre o acesso e as permissões dos arquivos. Os administradores podem definir quais usuários ou grupos têm acesso a determinados arquivos ou diretórios, garantindo que os dados sensíveis sejam acessados apenas por pessoas autorizadas.
 
-## Autoridade Certificadora (CA)
+**Compatibilidade e Flexibilidade:** O SFTP é amplamente suportado por uma variedade de sistemas operacionais e ferramentas de software, o que facilita sua implementação em diferentes ambientes de TI. Ele também pode ser facilmente integrado a scripts e processos automatizados, tornando-o uma solução flexível para diversas necessidades de transferência de arquivos.
 
-A Autoridade Certificadora é a empresa responsável pela verificação e processamento das solicitações de certificado (certificate request), emissão e manutenção deles. Estas empresas mantêm uma lista de procedimentos e exigências para garantir a autenticidade do possuidor da chave pública.
+O SFTP é uma solução **segura**, **confiável** e **fácil** de usar para a transferência de arquivos, especialmente em contextos onde a proteção de dados sensíveis é uma prioridade.
 
-É possível a criação de sua própria autoridade certificadora (CA), em geral, para ser utilizada dentro da própria rede (Intranet).
+## Criptografia TLS
 
-## Secure Socket Layer (SSL)
+Alguns dos algoritmos mais atuais usados com TLS:
 
-O SSL é uma camada de protocolo para utilização entre a aplicação e a camada de comunicação TCP/IP. O SSL fornece os serviços de comunicação segura entre a aplicação cliente e servidor, permitindo a mútua autenticação, assinatura digital (integridade) e criptografia (privacidade).
+**1. AES (Advanced Encryption Standard):**
 
-![](img/seg-01.png)
+* AES-128: Utiliza uma chave de 128 bits, oferecendo um bom equilíbrio entre segurança e desempenho.
+* AES-256: Utiliza uma chave de 256 bits, oferecendo um nível de segurança mais elevado.
 
-O SSL suporta a escolha específica dos algoritmos utilizados para criptografia, ‘hash’ e assinatura digital. A seleção dos algoritmos entre o cliente e servidor é realizada no estabelecimento da sessão do protocolo. O SSL tem diferentes versões, a adotada pelo STCP OFTP Client é a versão 3.0.
+**2. ChaCha20:**
 
-## Criptografia no STCP OFTP Client
-O STCP OFTP Client utiliza a criptografia no nível de transporte onde um túnel seguro é estabelecido entre o cliente e o servidor, e todos os dados trafegados são codificados. A escolha do tipo de criptografia: Nativa ou SSL3 é realizada na configuração do produto.
+* Um algoritmo de cifra rápida e eficiente, especialmente útil em dispositivos com hardware limitado ou em situações onde a velocidade é crucial.
 
-## A Criptografia Nativa
-A “criptografia nativa” é uma implementação proprietária de troca de chaves e criptografia dos dados utilizando os algoritmos de chaves simétricas e assimétricas onde as chaves são negociadas dinamicamente. São 3 (três) as opções de configuração para os níveis de criptografia: Normal, Média e Alta, com as seguintes características:
+**3. ECDHE (Elliptic Curve Diffie-Hellman Ephemeral):**
 
-* Normal - Chave assimétrica de 512 bits e chave simétrica de 48 bits
-* Média - Chave assimétrica de 1024 bits e chave simétrica de 56 bits
-* Alta - Chave assimétrica de 2048 bits e chave simétrica de 128 bits
+* Utilizado para o acordo de chaves, oferece uma segurança mais forte com menores chaves, graças ao uso de criptografia de curvas elípticas.
 
+**4. RSA (Rivest-Shamir-Adleman):**
 
-## A criptografia TLS no STCP OFTP Client
+* Amplamente usado para troca de chaves e assinatura digital, embora esteja sendo gradualmente substituído por ECDHE em novas implementações devido a sua eficiência limitada em comparação com as curvas elípticas.
 
-O STCP OFTP Client inicia o processo de comunicação segura com a solicitação para a camada SSL3 da abertura de uma nova sessão com a troca da chave pública (assimétrica) seguida da troca da chave de sessão (simétrica).
+**5. SHA-256/384/512 (Secure Hash Algorithm):**
 
-Estes são os passos realizados para a troca de chaves:
+* Funções de hash que fornecem integridade dos dados. SHA-256 é o mais comum, mas SHA-384 e SHA-512 oferecem níveis mais elevados de segurança.
 
-1. O cliente solicita a abertura de uma sessão segura com o servidor. O servidor tem um certificado (X.509), contendo a chave pública e uma chave privada.
-2. O servidor envia uma cópia do seu certificado contendo a chave pública para o cliente.
-3. O cliente gera uma nova chave simétrica para esta sessão.
-4. O cliente codifica a chave de sessão com a chave pública do servidor e envia a chave de sessão codificada para o servidor.
-5. O servidor utiliza a sua chave privativa para decodificar a chave de sessão.
+**6. GCM (Galois/Counter Mode):**
 
-O STCP OFTP Client possibilita a configuração do conjunto de algoritmos a serem utilizados para codificação na criptografia, assinatura digital e hash.
-
-![](img/seg-02.png "STCP OFTP Core")
-
-O **STCP OFTP Client** tem uma arquitetura modular e possibilita a configuração de diferentes tipos de comunicação.
-
-O **STCP OFTP Client** permite a configuração de diferentes algoritmos e grupos de algoritmos para comunicação SSL3, abaixo segue a lista e definições:
-
-Algoritmos | Descrição
-:------    | :-----
-ALL        | Todos os algoritmos.
-HIGH       | Codificadores com chave maiores que 128 bits.
-MEDIUM     | Codificadores com chave de 128 bits.
-LOW        | Codificadores com chave de 56 ou 64 bits.
-EXP EXPORT | Codificadores exportáveis com 40 ou 56 bits.
-EXPORT40   | Codificadores exportáveis com 40 bits.
-EXPORT56   | Codificadores exportáveis com 56 bits.
-eNULL NULL | Sem codificadores (não recomendado).
-aNULL      | Sem autenticação. Corresponde ao algoritmo DH anonymous. Esta configuração é vulnerável ao ataque “man in the middle” (não recomendado).
-RSA        | Codificadores que utilizam RSA para troca de chave.
-kEDH       | Codificadores que utilizam EDH (Ephemeral Diffie Helman) para validação da chave.
-kDHr       | Codificadores que utilizam DH (Diffie Helman) para validação da chave e certificado DH assinado por uma CA com chave RSA.
-kDHd       | Codificadores que utilizam DH para validação da chave e certificado DH assinado por uma CA com chave DSS.
-aRSA       | Autenticação RSA com certificado com chave RSA.
-aDSS DSS   | Autenticação DSS com certificado com chave DSS.
-aDH        | Autenticação DH com certificado com chave DH.
-kFZA aFZA eFZA FZA| Codificadores, autenticação com algoritmo FORTEZZA (não disponível).
-DH         | Codificadores DH incluindo o DH anônimo.
-ADH        | Codificadores DH anônimo.
-3DES       | Codificadores triple DES.
-DES        | Codificadores DES (Data Encryption Standard).
-RC4        | Codificadores RC4.
-RC2        | Codificadores RC2.
-IDEA       | Codificadores IDEA.
-AES        | Codificadores AES (Advanced Encryption Standard).
-MD5        | MD5
-SHA SHA1   | SHA1
-
-----
-
-## Licença OpenSSL
-
-OpenSSL License
-
----------------
-
-```
-/* ================================================================= ===
-*Copyright (c) 1998-2004 The OpenSSL Project.  All rights reserved.
-*
-*Redistribution and use in source and binary forms, with or without
-*modification, are permitted provided that the following conditions
-*are met:
-*
-*1. Redistributions of source code must retain the above copyright
-*notice, this list of conditions and the following disclaimer.
-*
-*2. Redistributions in binary form must reproduce the above copyright
-*notice, this list of conditions and the following disclaimer in
-*the documentation and/or other materials provided with the
-*distribution.
-*
-*3. All advertising materials mentioning features or use of this
-*software must display the following acknowledgment:
-*"This product includes software developed by the OpenSSL Project
-*for use in the OpenSSL Toolkit. (http://www.openssl.org/)"
-*
-*4. The names "OpenSSL Toolkit" and "OpenSSL Project" must not be used to
-*endorse or promote products derived from this software without
-*prior written permission. For written permission, please contact
-*openssl-core@openssl.org.
-*
-*5. Products derived from this software may not be called "OpenSSL"
-*nor may "OpenSSL" appear in their names without prior written
-*permission of the OpenSSL Project.
-*
-*6. Redistributions of any form whatsoever must retain the following
-*acknowledgment:
-*"This product includes software developed by the OpenSSL Project
-*for use in the OpenSSL Toolkit (http://www.openssl.org/)"
-*
-*THIS SOFTWARE IS PROVIDED BY THE OpenSSL PROJECT ``AS IS'' AND ANY
-*EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-*IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
-*PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE OpenSSL PROJECT OR
-*ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
-*SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
-*NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
-*LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
-*HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,
-*STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
-*ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
-*OF THE POSSIBILITY OF SUCH DAMAGE.
-*
-================================================================= ===
-*
-*This product includes cryptographic software written by Eric Young
-*(eay@cryptsoft.com).  This product includes software written by Tim
-*Hudson (tjh@cryptsoft.com).
-*
+* Um modo de operação que oferece autenticação adicional e integridade dos dados, frequentemente usado com AES (AES-GCM).
 
 
-Original SSLeay License
-
------------------------
-
-/* Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)
-*All rights reserved.
-*
-*This package is an SSL implementation written
-*by Eric Young (eay@cryptsoft.com).
-*The implementation was written so as to conform with Netscapes SSL.
-*
-*This library is free for commercial and non-commercial use as long as
-*the following conditions are aheared to.  The following conditions
-*apply to all code found in this distribution, be it the RC4, RSA,
-*lhash, DES, etc., code; not just the SSL code.  The SSL documentation
-*included with this distribution is covered by the same copyright terms
-*except that the holder is Tim Hudson (tjh@cryptsoft.com).
-*
-*Copyright remains Eric Young's, and as such any Copyright notices in
-*the code are not to be removed.
-*If this package is used in a product, Eric Young should be given attribution
-*as the author of the parts of the library used.
-*This can be in the form of a textual message at program startup or
-*in documentation (online or textual) provided with the package.
-*
-*Redistribution and use in source and binary forms, with or without
-*modification, are permitted provided that the following conditions
-*are met:
-*1. Redistributions of source code must retain the copyright
-*notice, this list of conditions and the following disclaimer.
-*2. Redistributions in binary form must reproduce the above copyright
-*notice, this list of conditions and the following disclaimer in the
-*documentation and/or other materials provided with the distribution.
-*3. All advertising materials mentioning features or use of this software
-*must display the following acknowledgement:
-*"This product includes cryptographic software written by
-*Eric Young (eay@cryptsoft.com)"
-*The word 'cryptographic' can be left out if the rouines from the library
-*being used are not cryptographic related :-).
-*4. If you include any Windows specific code (or a derivative thereof) from
-*the apps directory (application code) you must include an acknowledgement:
-*"This product includes software written by Tim Hudson (tjh@cryptsoft.com)"
-*
-*THIS SOFTWARE IS PROVIDED BY ERIC YOUNG ``AS IS'' AND
-*ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-*IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
-*ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE
-*FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
-*DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
-*OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
-*HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
-*LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
-*OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
-*SUCH DAMAGE.
-*
-*The licence and distribution terms for any publically available version or
-*derivative of this code cannot be changed.  i.e. this code cannot simply be
-*copied and put under another distribution licence
-*[including the GNU Public Licence.]
-```
-
-----
-
-## Referências
-
-www.openssl.org
-<br>
-www.modssl.org
-<br>
-http://oss-institute.org/newspdf/OSSIFIPSRef.pdf
-<br>
-www.odette.org
-<br>
-www.oftp.net
+| **Algoritmo**       | **Uso**                                | **Tamanho de Chave** | **Segurança**                    | **Comentário**                                  |
+|---------------------|----------------------------------------|----------------------|----------------------------------|------------------------------------------------|
+| AES-128             | Cifra de dados                         | 128 bits             | Alta                             | Boa combinação de segurança e desempenho       |
+| AES-256             | Cifra de dados                         | 256 bits             | Muito Alta                       | Recomendado para segurança de longo prazo      |
+| ChaCha20            | Cifra de dados                         | 256 bits             | Muito Alta                       | Alternativa rápida ao AES, especialmente em hardware limitado |
+| ECDHE               | Acordo de chaves                       | 256 bits (EC curve)  | Muito Alta                       | Melhor eficiência comparado ao RSA             |
+| RSA                 | Troca de chaves, assinatura digital    | 2048/4096 bits        | Alta                             | Usado historicamente, mas gradualmente substituído por ECDHE  |
+| SHA-256/384/512     | Função de hash para integridade        | 256/384/512 bits     | Alta/Muito Alta                  | Proporciona integridade dos dados              |
+| GCM (AES-GCM)       | Autenticação de dados, integridade     | Variável (depende do AES) | Alta                        | Oferece criptografia autenticada               |
 
 
