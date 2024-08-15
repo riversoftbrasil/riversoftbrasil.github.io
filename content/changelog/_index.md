@@ -1,26 +1,14 @@
 ---
-linkTitle: Changelog
 title: Changelog
-toc: false
-layout: docs
-toc: true
-cascade:
-  type: docs
 sidebar:
-  exclude: false
-excludeSearch: true
-slug: changelog
-draft: false
-lastmod: 2024-01-26
+  exclude: true
 ---
-Confira as informações sobre os novos recursos, correções e atualizações mais recentes lançadas para os produtos STCP.
-
 <div class="mt-6"></div>
 {{< feature-card
-    title="STCP OFTP Server / STCP OFTP Client"
+    title="STCP OFTP Server e STCP OFTP Client"
     icon="cog"
-    subtitle=""
-    link="stcpserver"
+    subtitle="Confira as informações sobre os novos recursos, correções e atualizações mais recentes lançadas para os produtos."
+    link="/changelog/stw"
 >}}
 
 <div class="mt-6"></div>
@@ -28,8 +16,8 @@ Confira as informações sobre os novos recursos, correções e atualizações m
 {{< feature-card
     title="STCP OFTP Web Admin"
     icon="cloud"
-    subtitle=""
-    link="stcpadmin"
+    subtitle="Confira as informações sobre os novos recursos, correções e atualizações mais recentes lançadas para os produtos."
+    link="/changelog/stwadm"
 >}}
 
 <div class="mt-6"></div>
@@ -37,8 +25,8 @@ Confira as informações sobre os novos recursos, correções e atualizações m
 {{< feature-card
     title="STCP Directlink"
     icon="code"
-    subtitle=""
-    link="stcpdirectlink"
+    subtitle="Confira as informações sobre os novos recursos, correções e atualizações mais recentes lançadas para os produtos."
+    link="/changelog/dirl"
 >}}
 
 

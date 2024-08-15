@@ -1,17 +1,10 @@
 ---
-linkTitle: STCP OFTP Server
 toc: false
-layout: docs
-toc: false
-cascade:
-  type: docs
+layout: notas
 sidebar:
-  exclude: false
-excludeSearch: true
-weight: 1
-slug: stcpserver
+  exclude: true
 ---
-## STCP OFTP Server / STCP OFTP Client
+## STCP OFTP Server e STCP OFTP Client
 
 #### {{< icon "clock" >}} &nbsp;  Versão 5.3.15.0 (lançada em maio de 2024)
 
@@ -31,7 +24,7 @@ slug: stcpserver
 
 - Implementação do parâmetro SendTokenIdGlobal, no STCP (versão client) para envio do TokenID/Hash e versão do agente de maneira global (não vinculado a um perfil específico).
 - Implementação do backup de arquivo no configurador do STCP ao utilizar o serviço de armazenamento de objetos (Amazon S3 e Blobs do Microsoft Azure).
-- Melhorias na biblioteca se segurança (APIOSSL.DLL) para validação da cadeia de certificação completa ao utilizar um certificado CA na interface de rede com comunicação segura (TLS).
+- Melhorias na biblioteca de segurança (APIOSSL.DLL) para validação da cadeia de certificação completa ao utilizar um certificado CA na interface de rede com comunicação segura (TLS).
 
 #### {{< icon "clock" >}} &nbsp;  Versão 5.3.11.0 (lançada em maio de 2023)
 
