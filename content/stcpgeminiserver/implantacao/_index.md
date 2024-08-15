@@ -1,12 +1,13 @@
 ---
 linkTitle: Implantação
 title: Implantação
+excludeSearch: true
 layout: docs
 toc: true
 cascade:
   type: docs
 sidebar:
-  exclude: false
+  exclude: true
 weight: 1
 prev:
 next:

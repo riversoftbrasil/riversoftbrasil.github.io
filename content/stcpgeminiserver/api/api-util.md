@@ -1,12 +1,13 @@
 ---
 linkTitle: Utilização
 title:
+excludeSearch: true
 layout: docs
 toc: true
 cascade:
   type: docs
 sidebar:
-  exclude: false
+  exclude: true
 weight: 3
 prev:
 next:

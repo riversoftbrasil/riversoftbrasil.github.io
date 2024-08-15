@@ -1,12 +1,13 @@
 ---
 linkTitle: API Rest
 title: Uso do STCP Gemini API Rest
+excludeSearch: true
 layout: docs
 toc: true
 cascade:
   type: docs
 sidebar:
-  exclude: false
+  exclude: true
 weight: 2
 prev:
 next:
