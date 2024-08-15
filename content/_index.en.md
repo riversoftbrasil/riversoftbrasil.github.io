@@ -1,6 +1,7 @@
 ---
 title: Home
 toc: false
+excludeSearch: true
 layout: hextra-home
 # prev:
 # next:

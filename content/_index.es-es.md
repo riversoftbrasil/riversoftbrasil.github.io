@@ -1,8 +1,8 @@
-
 ---
 title: Inicio
 toc: false
 layout: hextra-home
+excludeSearch: true
 # prev:
 # next:
 ---
