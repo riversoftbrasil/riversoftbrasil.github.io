@@ -38,7 +38,7 @@ Tudo o que você precisa saber para sua jornada nas soluções Riversoft.
 {{< cards >}}
   {{< card link="../utils/update/" title="Atualização" icon="arrow-up" >}}
   {{< card link="/404" title="Automação" icon="cube" >}}
-  {{< card link="../utils/cert/" title="Certificação" icon="key" >}}
+  {{< card link="../utils/cert/" title="Certificado Digital" icon="key" >}}
   {{< card link="../utils/conection/" title="Conectividade" icon="link" >}}
   {{< card link="../utils/debug/" title="Debug" icon="eye" >}}
   {{< card link="../utils/schedule/" title="Execução automática" icon="arrow-path" >}}
