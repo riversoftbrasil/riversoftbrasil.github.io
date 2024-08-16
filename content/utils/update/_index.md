@@ -50,35 +50,35 @@ A estrutura de pastas (Exemplo abaixo **D:\STCPODT\work\NOME-USUARIO**), configu
 ---
 ## STCP OFTP Server
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp; Acesse o Riversoft STCP OFTP Server Manager como administrador (_Ex: D:\STCPODT\Program\Riversoft STCP OFTP Server Manager_) e pare o serviço da aplicação.
+{{< icon "chevron-right" >}}Acesse o Riversoft STCP OFTP Server Manager como administrador (_Ex: D:\STCPODT\Program\Riversoft STCP OFTP Server Manager_) e pare o serviço da aplicação.
 
 ![](img/upd-11.png)
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">2</span> &nbsp; Após parar o serviço, certifique de validar se o serviço está parado:
+{{< icon "chevron-right" >}} Após parar o serviço, certifique de validar se o serviço está parado:
 
 ![](img/upd-12.png)
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">3</span> &nbsp;Após parar o serviço, certifique de deletá-lo, esse procedimento pode ser feito através do comando abaixo (Verifique as permissões e se necessário, execute o prompt como **administrador**)
+{{< icon "chevron-right" >}}Após parar o serviço, certifique de deletá-lo, esse procedimento pode ser feito através do comando abaixo (Verifique as permissões e se necessário, execute o prompt como **administrador**)
 
 ```bash
 sc delete [nome do serviço]
 ```
 ![](img/upd-13.png)
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">4</span> &nbsp; Em _Adicionar/Remover Programas_ no _Painel de Controle_ do Windows, remova a versão atual do STCP OFTP Server. A estrutura de diretórios da aplicação (_Controle e Dados_) será mantida, juntamente com os arquivos de configuração (.INI).
+{{< icon "chevron-right" >}}Em _Adicionar/Remover Programas_ no _Painel de Controle_ do Windows, remova a versão atual do STCP OFTP Server. A estrutura de diretórios da aplicação (_Controle e Dados_) será mantida, juntamente com os arquivos de configuração (.INI).
 
 ![](img/upd-14.png "Selecione o programa do STCP Server para ser desinstalado")
 <br>
 ![](img/upd-15.png "Desinstale a aplicação")
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">5</span> &nbsp; Faça o download, da versão nova versão, através do link que é dispnibilizado pela Equipe de Sustentação da Riversoft e realize a instalação do produto.
+{{< icon "chevron-right" >}}Faça o download, da versão nova versão, através do link que é dispnibilizado pela Equipe de Sustentação da Riversoft e realize a instalação do produto.
 
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">6</span> &nbsp; Após o processo de instalação, acesse o STCP OFTP Server Config (**Iniciar - Todos os programas - Riversoft STCP OFTP Server**) e na guia _Avançadas_ clique no botão _Controle de Log_.
+<{{< icon "chevron-right" >}}Após o processo de instalação, acesse o STCP OFTP Server Config (**Iniciar - Todos os programas - Riversoft STCP OFTP Server**) e na guia _Avançadas_ clique no botão _Controle de Log_.
 
 ![](img/upd-17.png)
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">7</span> &nbsp; Na janela _Propriedades do Log_, no painel _Interface de Log (DLL)_, selecione a biblioteca de log desejada e clique no botão _OK_ para salvar esta alteração.
+{{< icon "chevron-right" >}}Na janela _Propriedades do Log_, no painel _Interface de Log (DLL)_, selecione a biblioteca de log desejada e clique no botão _OK_ para salvar esta alteração.
 
 Para a gravação de log em **banco de dados** (ODBC), selecione o arquivo:
 ```
@@ -92,15 +92,15 @@ Para a gravação de log em **arquivo texto**, selecione o arquivo:
 ```
 ![](img/upd-19.png)
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">8</span> &nbsp; Ainda na guia _Avançadas_, clique no botão _Controle de Autenticação_.
+{{< icon "chevron-right" >}}Ainda na guia _Avançadas_, clique no botão _Controle de Autenticação_.
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">9</span> &nbsp; Na guia _Geral da janela Autenticação_, no painel _Interface de Autenticação (DLL)_, selecione o arquivo: **[disco]:\STCPODT\Program\stcpauthwin.dll**
+{{< icon "chevron-right" >}}Na guia _Geral da janela Autenticação_, no painel _Interface de Autenticação (DLL)_, selecione o arquivo: **[disco]:\STCPODT\Program\stcpauthwin.dll**
 
 Certifique-se de que o campo _Tipo_, do painel _Autenticação_, esteja com o valor _STCP_ e clique no botão _OK_ para salvar as alterações realizadas.
 
 ![](img/upd-20.png)
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">10</span> &nbsp; Clique no botão _OK_ para fechar o STCP OFTP Server Config. O próximo passo é a criação do <a href="/utils/service/" target="_blank">serviço do STCP OFTP Server no Windows</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;
+{{< icon "chevron-right" >}}Clique no botão _OK_ para fechar o STCP OFTP Server Config. O próximo passo é a criação do <a href="/utils/service/" target="_blank">serviço do STCP OFTP Server no Windows</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;
 
 ## STCP Console
 
@@ -122,19 +122,19 @@ Para utilização do STCP Console, uma rede (Ex. **TCPIP_MON_1**) utilizando o p
 
 Por padrão da aplicação, para este tipo de rede é utilizada a porta 33050, que poderá ser alterada conforme especificações e/ou características da infraestrutura utilizada.
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp;Acesse o STCP OFTP Server Config (Iniciar - Todos os programas - Riversoft STCP OFTP Server) e na guia _Redes_ clique no botão _Adicionar_ e selecione o protocolo _Monitor – TCP/IP_. Clique no botão _OK_ para confirmar.
+{{< icon "chevron-right" >}}Acesse o STCP OFTP Server Config (Iniciar - Todos os programas - Riversoft STCP OFTP Server) e na guia _Redes_ clique no botão _Adicionar_ e selecione o protocolo _Monitor – TCP/IP_. Clique no botão _OK_ para confirmar.
 
 ![](img/upd-21.png)
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">2</span> &nbsp; Na janela _Propriedades da rede para Monitor_, preencha o campo descrição e selecione a guia _TCP/IP_.
+{{< icon "chevron-right" >}}Na janela _Propriedades da rede para Monitor_, preencha o campo descrição e selecione a guia _TCP/IP_.
 
 ![](img/upd-22.png)
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">3</span> &nbsp;Realize as configurações conforme imagem abaixo.
+{{< icon "chevron-right" >}}Realize as configurações conforme imagem abaixo.
 
 ![](img/upd-23.png)
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">4</span> &nbsp;Selecione a guia _Monitor_ e preencha os campos abaixo:
+{{< icon "chevron-right" >}}Selecione a guia _Monitor_ e preencha os campos abaixo:
 
 ```{filename="Usuário de monitoração"}
 
@@ -144,15 +144,15 @@ Confirmar: stcpmon
 ```
 ![](img/upd-24.png)
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">5</span> &nbsp;Clique no botão _OK_ para salvar as alterações.
+{{< icon "chevron-right" >}}Clique no botão _OK_ para salvar as alterações.
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">6</span> &nbsp;Clique no botão _OK_ novamente para finalizar o configurador.
+{{< icon "chevron-right" >}}Clique no botão _OK_ novamente para finalizar o configurador.
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">7</span> &nbsp;Acesse o **STCP OFTP Server Manager** (_Iniciar - Todos os programas - Riversoft STCP OFTP Server_), selecione o serviço do _STCP OFTP Server_ e clique no botão _Reiniciar_.
+{{< icon "chevron-right" >}}Acesse o **STCP OFTP Server Manager** (_Iniciar - Todos os programas - Riversoft STCP OFTP Server_), selecione o serviço do _STCP OFTP Server_ e clique no botão _Reiniciar_.
 
 ![](img/upd-25.png)
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">8</span> &nbsp;Após o reinício do serviço a rede de monitoração _TCPIP_MON_1_ já estará ativa.
+{{< icon "chevron-right" >}}Após o reinício do serviço a rede de monitoração _TCPIP_MON_1_ já estará ativa.
 
 ## STCP OFTP Client
 
@@ -164,36 +164,36 @@ Ao atualizar o STCP OFTP Client, para que não seja necessária a reconfiguraç�
 
 ### Instalar a nova versão
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp;Clique no botão **Avançar**.
+{{< icon "chevron-right" >}}Clique no botão **Avançar**.
 
 ![](img/upd-02.png)
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">2</span> &nbsp;Esta é a tela de boas-vindas, clique no botão **Avançar** para continuar. Pressione **Voltar** para retornar à tela anterior ou **Cancelar** para interromper o processo de instalação.
+{{< icon "chevron-right" >}}Esta é a tela de boas-vindas, clique no botão **Avançar** para continuar. Pressione **Voltar** para retornar à tela anterior ou **Cancelar** para interromper o processo de instalação.
 
 ![](img/upd-01.png)
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">3</span> &nbsp;Leia cuidadosamente o Contrato de Licença de Uso do Usuário Final e caso concorde com os termos propostos, marque a opção correspondente e pressione o botão **Avançar** para prosseguir com a instalação.
+{{< icon "chevron-right" >}}Leia cuidadosamente o Contrato de Licença de Uso do Usuário Final e caso concorde com os termos propostos, marque a opção correspondente e pressione o botão **Avançar** para prosseguir com a instalação.
 
 ![](img/upd-03.png)
 
 Pressione **Voltar** para retornar à tela anterior ou **Cancelar** para interromper o processo de instalação.
 
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">4</span> &nbsp;Na tela **Informações do Cliente**, informe o Nome do usuário e Organização (Empresa).
+{{< icon "chevron-right" >}}Na tela **Informações do Cliente**, informe o Nome do usuário e Organização (Empresa).
 
 Pressione **Voltar** para retornar à tela anterior ou **Cancelar** para cancelar todo o processo de instalação.
 
 ![](img/upd-04.png)
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">5</span> &nbsp;Na tela **Pasta de Destino**, clique em **Avançar** para instalar no diretório padrão ou **Alterar** para selecionar outro diretório ou criar um novo. Pressione **Voltar** para retornar à tela anterior ou **Cancelar** para interromper o processo de instalação.
+{{< icon "chevron-right" >}}Na tela **Pasta de Destino**, clique em **Avançar** para instalar no diretório padrão ou **Alterar** para selecionar outro diretório ou criar um novo. Pressione **Voltar** para retornar à tela anterior ou **Cancelar** para interromper o processo de instalação.
 
 ![](img/upd-05.png)
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">6</span> &nbsp;Na tela **Pronto para Instalar o Programa**, clique em **Qualquer pessoa que utilizar este computador (todos os usuários)** ou **Somente para mim (Riversoft)** para instalar. Pressione **Voltar** para retornar à tela anterior ou **Cancelar** para interromper o processo de instalação.
+{{< icon "chevron-right" >}}Na tela **Pronto para Instalar o Programa**, clique em **Qualquer pessoa que utilizar este computador (todos os usuários)** ou **Somente para mim (Riversoft)** para instalar. Pressione **Voltar** para retornar à tela anterior ou **Cancelar** para interromper o processo de instalação.
 
 ![](img/upd-06.png)
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">7</span> &nbsp;Na tela de conclusão do **Installshield**, clique no botão **Concluir** para finalizar a instalação.
+{{< icon "chevron-right" >}}Na tela de conclusão do **Installshield**, clique no botão **Concluir** para finalizar a instalação.
 
 ![](img/upd-07.png)
 

@@ -15,46 +15,46 @@ lastmod: 2024-05-27
 ---
 ## Configuração no IIS
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp; Acesse a ferramenta de configuração do IIS (Internet Information Services) e crie um novo **diretório virtual** e/ou **site** para a configuração da aplicação.
+{{< icon "chevron-right" >}}Acesse a ferramenta de configuração do IIS (Internet Information Services) e crie um novo **diretório virtual** e/ou **site** para a configuração da aplicação.
 
 ![](img/iis-01.png)
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">2</span> &nbsp; Informe o nome para o novo diretório virtual e o caminho físico, conforme figura abaixo e clique no botão **OK**.
+{{< icon "chevron-right" >}}Informe o nome para o novo diretório virtual e o caminho físico, conforme figura abaixo e clique no botão **OK**.
 
 ![](img/iis-02.png)
 
 ![](img/iis-03.png)
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">3</span> &nbsp; Configure as permissões conforme apresentado e clique no botão "**Avançar**".
+{{< icon "chevron-right" >}}Configure as permissões conforme apresentado e clique no botão "**Avançar**".
 
 ![](img/iis-06.png)
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">4</span> &nbsp; Clique no botão "**Concluir**" para finalizar a criação do diretório virtual.
+{{< icon "chevron-right" >}}Clique no botão "**Concluir**" para finalizar a criação do diretório virtual.
 
 ![](img/iis-07.png)
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">5</span> &nbsp; Nas propriedades do diretório virtual criado, selecione a aba **Documentos** e pressione o botão **Adicionar**.
+{{< icon "chevron-right" >}}Nas propriedades do diretório virtual criado, selecione a aba **Documentos** e pressione o botão **Adicionar**.
 
 ![](img/iis-08.png)
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">6</span> &nbsp; Informe o nome da página inicial do site conforme a figura abaixo e pressione "**OK**". Remova as outras páginas utilizando o botão **Remover**.
+{{< icon "chevron-right" >}}Informe o nome da página inicial do site conforme a figura abaixo e pressione "**OK**". Remova as outras páginas utilizando o botão **Remover**.
 
 ![](img/iis-09.png)
 
 ![](img/iis-10.png)
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">7</span> &nbsp; Na aba "**ASP .NET**" configure a versão conforme a figura abaixo:
+{{< icon "chevron-right" >}}Na aba "**ASP .NET**" configure a versão conforme a figura abaixo:
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">8</span> &nbsp; Para finalizar o processo de configuração clique no botão "**OK**".
+{{< icon "chevron-right" >}}Para finalizar o processo de configuração clique no botão "**OK**".
 
 
 ## Configuração do arquivo stcpmon.config
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp; Vá até o diretório de instalação da aplicação e renomeie o arquivo **exemplo.stcpmon.config** para **stcpmon.config**.
+{{< icon "chevron-right" >}}Vá até o diretório de instalação da aplicação e renomeie o arquivo **exemplo.stcpmon.config** para **stcpmon.config**.
 
 ![](img/iis-04.png)
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">2</span> &nbsp; Configure o arquivo **stcpmon.config** conforme informado abaixo:
+{{< icon "chevron-right" >}}Configure o arquivo **stcpmon.config** conforme informado abaixo:
 
 
 ```xml {filename="stcpmon.config"}
@@ -68,7 +68,7 @@ lastmod: 2024-05-27
 ```
 
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">3</span> &nbsp; Na tag "**configSections**" configure os seguintes parâmetros:
+{{< icon "chevron-right" >}}Na tag "**configSections**" configure os seguintes parâmetros:
 
 ```xml {filename="configSections"}
 <configSections>
@@ -86,7 +86,7 @@ requirePermission = "true"
 </configSections>
 ```
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">4</span> &nbsp;Crie uma tag com o nome dado para o servidor, neste exemplo, chamamos **Server1** e configure suas características:
+{{< icon "chevron-right" >}}Crie uma tag com o nome dado para o servidor, neste exemplo, chamamos **Server1** e configure suas características:
 
 ```xml {filename="configSections"}
 < Server1 TCPRemoteAddress="172.20.30.213" TCPRemotePort="33050" TCPRfc2204="16" />
@@ -98,11 +98,11 @@ TCPRfc2204 = "16"
 
 ## Configuração do arquivo web.config
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp; No diretório de instalação da aplicação STCP OFTP Change Password, renomeie o arquivo "**exemplo.web.config**" para "**web.config**" e abra o arquivo já renomeado.
+{{< icon "chevron-right" >}}No diretório de instalação da aplicação STCP OFTP Change Password, renomeie o arquivo "**exemplo.web.config**" para "**web.config**" e abra o arquivo já renomeado.
 
 ![](img/iis-05.png)
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">2</span> &nbsp; Na seção **appSettings**, realize as configurações da imagem de validação (Captcha Image).
+{{< icon "chevron-right" >}}Na seção **appSettings**, realize as configurações da imagem de validação (Captcha Image).
 
 <!-- Configurações da imagem de validação (Captcha Image). -->
 
@@ -125,7 +125,7 @@ TCPRfc2204 = "16"
 ...
 ```
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">3</span> &nbsp; Configure na propriedade **value** o tipo de texto que deverá ser mostrado na imagem:
+{{< icon "chevron-right" >}}Configure na propriedade **value** o tipo de texto que deverá ser mostrado na imagem:
 
 ```xml {filename="value"}
 < add key="STCPCaptcha:CharType" value="AlphaNum" />
@@ -139,18 +139,18 @@ TCPRfc2204 = "16"
 "AlphaUpperNum" = letras maiúsculas e números.
 ```
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">4</span> &nbsp; Configure na propriedade **value** a quantidade de caracteres que deve ser mostrada na imagem:
+{{< icon "chevron-right" >}}Configure na propriedade **value** a quantidade de caracteres que deve ser mostrada na imagem:
 
 ```xml {filename="value"}
 < add key="STCPCaptcha:Len" value="4" />
 ```
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">5</span> &nbsp; Para alterar o tipo de fonte da imagem, use a seguinte tag:
+{{< icon "chevron-right" >}}Para alterar o tipo de fonte da imagem, use a seguinte tag:
 
 ```
 < add key="STCPCaptcha:FontFamily0" value="Comic Sans MS" />
 ```
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">6</span> &nbsp; Configurações da conexão com o servidor STCP
+{{< icon "chevron-right" >}}Configurações da conexão com o servidor STCP
 
 ```xml {filename="web.config"}
 ...
@@ -163,25 +163,25 @@ TCPRfc2204 = "16"
 ...
 ```
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">7</span> &nbsp; Configure na propriedade **value** o nome do servidor informado no arquivo **stcpmon.config**.
+{{< icon "chevron-right" >}}Configure na propriedade **value** o nome do servidor informado no arquivo **stcpmon.config**.
 
 ```xml {filename="web.config"}
 < add key="STCPMonitor:Connection" value="Server1" />
 ```
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">8</span> &nbsp; Configure na propriedade **value** o nome do usuário de monitoração do STCP:
+{{< icon "chevron-right" >}}Configure na propriedade **value** o nome do usuário de monitoração do STCP:
 
 ```xml {filename="web.config"}
 <add key="STCPMonitor:Userid" value="stcpmon" />
 ```
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">9</span> &nbsp; Configure na propriedade **value** a senha do usuário de monitoração do STCP.
+{{< icon "chevron-right" >}}Configure na propriedade **value** a senha do usuário de monitoração do STCP.
 
 ```xml {filename="web.config"}
 < add key="STCPMonitor:Password" value="teste" />
 ```
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">10</span> &nbsp; Configure na propriedade **value** o valor **true** caso queira habilitar a comunicação através do protocolo TLS, caso contrário, utilize **false**.
+{{< icon "chevron-right" >}}Configure na propriedade **value** o valor **true** caso queira habilitar a comunicação através do protocolo TLS, caso contrário, utilize **false**.
 
 ```xml {filename="web.config"}
 < add key="STCPMonitor:Security" value="false" />
@@ -196,7 +196,7 @@ TCPRfc2204 = "16"
 ...
 ```
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp; O site do STCP OFTP Change Password pode ser exibido nos idiomas Português, Inglês e Espanhol. Configure na propriedade **value** o idioma padrão para o site.
+{{< icon "chevron-right" >}}O site do STCP OFTP Change Password pode ser exibido nos idiomas Português, Inglês e Espanhol. Configure na propriedade **value** o idioma padrão para o site.
 
 ```xml {filename="web.config"}
 < add key="STCPChangePassword:DefaultLanguage" value="ptb" />
@@ -205,7 +205,7 @@ TCPRfc2204 = "16"
 "enu" = Idioma Inglês.
 "esp" = Idioma Espanhol.
 ```
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">2</span> &nbsp; Configurações regionais.
+{{< icon "chevron-right" >}}Configurações regionais.
 
 ```xml {filename="web.config"}
 ...
@@ -218,7 +218,7 @@ value="~/images/btn_esp.gif"/>
 ...
 ```
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">3</span> &nbsp; Caso não deseje exibir o site em um determinado idioma, comente a linha desejada utilizando as tags abaixo:
+{{< icon "chevron-right" >}}Caso não deseje exibir o site em um determinado idioma, comente a linha desejada utilizando as tags abaixo:
 
 ```
 <!- - e -->.
@@ -256,7 +256,7 @@ value="~/images/cmdFinish_ptb_blue1.gif" />
 ...
 ```
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp;Configure na propriedade **value** o padrão de cores para os botões do site.
+{{< icon "chevron-right" >}}Configure na propriedade **value** o padrão de cores para os botões do site.
 
 Exemplo:
 

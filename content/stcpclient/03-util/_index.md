@@ -92,3 +92,4 @@ No exemplo acima, será executada a conexão para o Perfil TESTE para envio e re
 
 Ao término da execução do STCP OFTP, o arquivo _**CLCP.ERR.TXT**_ será criado no subdiretório de instalação, contendo a seguinte linha:
 **<código de erro>**
+

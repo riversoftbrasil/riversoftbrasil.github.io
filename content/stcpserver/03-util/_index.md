@@ -50,3 +50,4 @@ Exemplo:
 C:\STCPODT\Program\ctcpsvc.exe C:\STCPODT\CTCP.INI –noservice
 ```
 No exemplo acima, o STCP OFTP Server será executado como uma **aplicação**.
+

@@ -39,7 +39,7 @@ O programa de configuração pode ser acessado também na pasta **Program** da a
 
 ## Informações gerais
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp; Na guia Geral, preencha os campos com as informações descritas abaixo:
+{{< icon "chevron-right" >}}Na guia Geral, preencha os campos com as informações descritas abaixo:
 
 ![](img/clt-guia-geral.png)
 
@@ -61,7 +61,7 @@ O programa de configuração pode ser acessado também na pasta **Program** da a
 Na guia **Perfis** você poderá adicionar, remover ou modificar os parâmetros de configuração de
 um usuário do serviço <a href="/stcpserver/" target="_blank">STCP OFTP Server</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp;Clique no botão **Adicionar**
+{{< icon "chevron-right" >}}Clique no botão **Adicionar**
 
 {{< callout type="info" >}}
 Para um novo Perfil adicionado, automaticamente, será criada uma estrutura de subdiretórios (vide exemplo abaixo) para o envio e recepção dos arquivos, dentro do Diretório de Dados que foi previamente configurado na guia Geral (tópico anterior).
@@ -95,7 +95,7 @@ Para um novo Perfil adicionado, automaticamente, será criada uma estrutura de s
 {{< /filetree/container >}}
 
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">2</span> &nbsp;Preencha os campos **Nome** e **Descrição**.
+{{< icon "chevron-right" >}}Preencha os campos **Nome** e **Descrição**.
 
 ![](img/clt-config-01.png)
 
@@ -112,7 +112,7 @@ Clique em **OK**.
 | Descrição |                                                                                          Preencha este campo com a descrição que desejar.                                                                                          |
 <br>
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">3</span> &nbsp;Na guia **Odette**, preencha os seguintes campos:
+{{< icon "chevron-right" >}}Na guia **Odette**, preencha os seguintes campos:
 
 ![](img/clt-config-02.png)
 
@@ -148,11 +148,11 @@ Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alt
 
 ## Propriedades do Perfil
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp; Com o perfil já criado, selecione-o e clique no botão **Propriedades**
+{{< icon "chevron-right" >}}Com o perfil já criado, selecione-o e clique no botão **Propriedades**
 
 ![](img/clt-config-06.png)
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">2</span> &nbsp; Na guia **Geral**, configure os seguintes campos.
+{{< icon "chevron-right" >}}Na guia **Geral**, configure os seguintes campos.
 
 ![](img/clt-config-07.png)
 
@@ -174,7 +174,7 @@ Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alt
   Não habilite esta opção se você não tiver absoluta certeza de que o parceiro remoto é um STCP OFTP Client e que esteja também com esta característica habilitada.
 {{< /callout >}}
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">3</span> &nbsp;Ainda na guia **Geral**, clique no botão **Configurar** para configurar a opção de protocolo
+{{< icon "chevron-right" >}}Ainda na guia **Geral**, clique no botão **Configurar** para configurar a opção de protocolo
 selecionada anteriormente.
 
 ![](img/clt-config-08.png)
@@ -186,7 +186,7 @@ selecionada anteriormente.
 
 ### Protocolo OFTP - TCP/IP
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp; Se o protocolo selecionado foi **OFTP – TCP/IP**, configure as seguintes opções na guia **TCP/IP**.
+{{< icon "chevron-right" >}}Se o protocolo selecionado foi **OFTP – TCP/IP**, configure as seguintes opções na guia **TCP/IP**.
 
 ![](img/clt-config-09.png)
 
@@ -209,7 +209,7 @@ selecionada anteriormente.
   \*As marcas citadas são propriedade dos seus respectivos donos.
 {{< /callout >}}
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">2</span> &nbsp;Na guia **TLS(Openssl)**, configure os seguintes campos para o protocolo OFTP - TCP/IP.
+{{< icon "chevron-right" >}}Na guia **TLS(Openssl)**, configure os seguintes campos para o protocolo OFTP - TCP/IP.
 
 ![](img/clt-config-10.png)
 
@@ -225,7 +225,7 @@ selecionada anteriormente.
 | Debug       |                                                            Esta opção permite gerar um arquivo de depuração na pasta Debug do diretório de instalação do STCP.                                                            |
 ----
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">3</span> &nbsp;Na guia **Proxy**, configure as seguintes opções para o protocolo **OFTP – TCP/IP**.
+{{< icon "chevron-right" >}}Na guia **Proxy**, configure as seguintes opções para o protocolo **OFTP – TCP/IP**.
 
 ![](img/clt-config-11.png)
 
@@ -249,7 +249,7 @@ Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alt
 
 ### Tipos de Arquivos
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp;Vá para a guia **Tipos de Arquivos**
+{{< icon "chevron-right" >}}Vá para a guia **Tipos de Arquivos**
 
 ![](img/clt-config-30.png)
 
@@ -281,7 +281,7 @@ A tabela abaixo demonstra a associação do nome do arquivo com o tipo específi
 | TEST.3    |  3   |    -    |   -    |  T.T  |  TXT.TXT e TXTTXT   |  TXT.TXT: Sim TXTTXT: Não   |
 | Default   |  -   |    -    |   -    |   -   |       TXTTXT        |             Sim             |
 
-Nesta nova tela, preencha o campo com o **Nome do novo tipo de arquivo**.
+Nesta nova tela, preencha o campo com o **Nome do novo tipo de arquivo**. 
 Clique em **OK** para salvar as configurações.
 
 ![](img/clt-config-31.png)
@@ -291,7 +291,7 @@ Clique em **OK** para salvar as configurações.
 | Nome do novo tipo de arquivo | Preencha este campo com o nome desejado para o novo tipo. Obs.: Não utilize caracteres especiais ou espaços em branco. |
 -------
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">2</span> &nbsp;Na guia **Geral**, preencha e configure os seguintes campos.
+{{< icon "chevron-right" >}}Na guia **Geral**, preencha e configure os seguintes campos.
 
 ![](img/clt-config-32.png)
 
@@ -322,7 +322,7 @@ Clique em **OK** para salvar as configurações.
 | EERP libera                    |                                       Esta opção permite habilitar ou inibir o tratamento do arquivo recebido somente após o envio do Odette EERP (End to End Response). Obs.: Somente utilize esta opção se o servidor suportar esta característica.                                        |
 ----------------
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">3</span> &nbsp;Na guia **Avançadas**, selecione as seguintes propriedades do tipo de arquivo.
+{{< icon "chevron-right" >}}Na guia **Avançadas**, selecione as seguintes propriedades do tipo de arquivo.
 
 ![](img/clt-config-33.png)
 
@@ -361,7 +361,7 @@ de sucesso (Return code 0), o processo é finalizado com sucesso.
 
 ### Avançadas I
 
-Na guia **Avançadas I**, nas **Propriedades do Perfil**, preencha os seguintes campos de configuração.
+{{< icon "chevron-right" >}}Na guia **Avançadas I**, nas **Propriedades do Perfil**, preencha os seguintes campos de configuração.
 
 ![](img/clt-config-38.png)
 
@@ -375,7 +375,7 @@ Na guia **Avançadas I**, nas **Propriedades do Perfil**, preencha os seguintes 
 
 ### Avançadas II
 
-Na guia **Avançadas II**, nas **Propriedades do Perfil**, preencha os seguintes campos de configuração.
+{{< icon "chevron-right" >}}Na guia **Avançadas II**, nas **Propriedades do Perfil**, preencha os seguintes campos de configuração.
 
 ![](img/clt-config-39.png)
 
@@ -393,8 +393,7 @@ Na guia **Avançadas II**, nas **Propriedades do Perfil**, preencha os seguintes
 
 ## Guia Avançadas
 
-<!-- <span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp; -->
-Na guia **Avançadas**, configure os seguintes campos:
+{{< icon "chevron-right" >}}Na guia **Avançadas**, configure os seguintes campos:
 
 ![](img/clt-config-03.png)
 
@@ -410,11 +409,11 @@ Na guia **Avançadas**, configure os seguintes campos:
 
 ### Log
 
-Clique no botão **Log** para continuar a configuração.
+{{< icon "chevron-right" >}}Clique no botão **Log** para continuar a configuração.
 
 ![](img/clt-config-04.png)
 
-Na guia **Geral**, Preencha os seguintes campos.
+{{< icon "chevron-right" >}}Na guia **Geral**, Preencha os seguintes campos.
 
 ![](img/clt-config-05.png)
 
@@ -455,20 +454,20 @@ Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alt
 
 ## Comunicação TLS (Openssl)
 
-Na guia **Perfis**, selecione o perfil desejado e clique no botão **Propriedades**.
+{{< icon "chevron-right" >}}Na guia **Perfis**, selecione o perfil desejado e clique no botão **Propriedades**.
 
 ![](img/clt-config-40.png)
 
-Na guia **Geral**, pressione o botão **Configurar**.
+{{< icon "chevron-right" >}}Na guia **Geral**, pressione o botão **Configurar**.
 
 ![](img/clt-config-41.png)
 
-Na guia **TCP/IP**, marque a opção **Comunicação Segura** e em seguida, selecione **TLS**.
+{{< icon "chevron-right" >}}Na guia **TCP/IP**, marque a opção **Comunicação Segura** e em seguida, selecione **TLS**.
 Clique em **OK** para concluir o processo de configuração.
 
 ![](img/clt-config-42.png)
 
-Caso a comunicação entre o STCP OFTP Server Enterprise/Lite e o STCP OFTP Client que está sendo configurado exija autenticação, o **Certificado Digital** deverá ser informado na guia **TLS(Openssl)** no campo **Arquivo** da opção **Certificados CA (Autoridades)**.
+{{< icon "chevron-right" >}}Caso a comunicação entre o STCP OFTP Server Enterprise/Lite e o STCP OFTP Client que está sendo configurado exija autenticação, o **Certificado Digital** deverá ser informado na guia **TLS(Openssl)** no campo **Arquivo** da opção **Certificados CA (Autoridades)**.
 
 ![](img/clt-config-43.png)
 
@@ -578,7 +577,3 @@ Após a sua instalação e configuração, teremos a seguinte árvore de diretó
 
 
 {{< /filetree/container >}}
-
-
-
-

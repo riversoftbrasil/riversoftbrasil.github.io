@@ -41,3 +41,4 @@ O STCP OFTP Server oferece as seguintes características:
 Confira os requisitos de software e hardware da aplicação na seção <a href="/utils/requirements/" target="_blank">Requisitos</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;
 
 
+
