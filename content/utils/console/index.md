@@ -37,11 +37,11 @@ remover visões, monitorar usuários e eventos, etc.
 
 ### Adicionar um servidor
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp;Para adicionar um servidor, clique no botão **Adicionar Servidor** (imagem abaixo).
+{{< icon "chevron-right" >}}Para adicionar um servidor, clique no botão **Adicionar Servidor** (imagem abaixo).
 
 ![](img/console-02.png)
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">2</span> &nbsp;Na guia **Geral**, preencha os parâmetros:
+{{< icon "chevron-right" >}}Na guia **Geral**, preencha os parâmetros:
 
 ![](img/console-03.png)
 
@@ -51,7 +51,7 @@ remover visões, monitorar usuários e eventos, etc.
 | Descrição     | Descrição do servidor que está sendo adicionado. |
 | Desabilitar   | Esta opção habilita/desabilita o servidor.|
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">3</span> &nbsp;Na guia **TCP/IP**, preencha os parâmetros:
+{{< icon "chevron-right" >}}Na guia **TCP/IP**, preencha os parâmetros:
 
 ![](img/console-04.png)
 
@@ -88,7 +88,7 @@ Obs: antes de habilitar a opção Compressão GZIP, confirme se o servidor com q
 comunicar suporta esta característica.
 {{< /callout >}}
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">4</span> &nbsp;Na guia **SSL3(Openssl)**, preencha os parâmetros:
+{{< icon "chevron-right" >}}Na guia **SSL3(Openssl)**, preencha os parâmetros:
 
 ![](img/console-05.png)
 
@@ -126,7 +126,7 @@ Obs.: o arquivo da chave privativa deve estar no formato PKCS#12 e os certificad
 | Algoritmos  | Campo com os nomes dos algoritmos suportados para assinatura digital, hashing e criptografia dos dados. <br> Obs.: caso este campo não seja configurado, o protocolo TSL será selecionado automaticamente.|
 | Debug  | Esta opção permite criar um arquivo de depuração. |
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">5</span> &nbsp; Na guia **Monitor**, preencha os parâmetros:
+{{< icon "chevron-right" >}}Na guia **Monitor**, preencha os parâmetros:
 
 ![](img/console-06.png)
 
@@ -137,7 +137,7 @@ Obs.: o arquivo da chave privativa deve estar no formato PKCS#12 e os certificad
 | Confirmar  | Campo com a senha informada no campo **senha** para validação. |
 | Intervalo de atualização  | Campo com o intervalo mínimo de atualização das listas de monitoração. |
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">6</span> &nbsp;Depois de definidos todos os parâmetros do novo servidor, clique no botão **OK** para que as informações do novo servidor sejam salvas. Após isso, o novo servidor deve aparecer na árvore de servidores, e caso ele esteja selecionado, suas informações devem ser exibidas na lista ao lado.
+{{< icon "chevron-right" >}}Depois de definidos todos os parâmetros do novo servidor, clique no botão **OK** para que as informações do novo servidor sejam salvas. Após isso, o novo servidor deve aparecer na árvore de servidores, e caso ele esteja selecionado, suas informações devem ser exibidas na lista ao lado.
 
 ![](img/console-07.png)
 
@@ -149,7 +149,7 @@ Obs.: esta visão pode ser editada de acordo com as necessidades do usuário.
 
 ### Como adicionar uma visão
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp;Para adicionar uma visão, clique no botão **Adicionar Visão**
+{{< icon "chevron-right" >}}Para adicionar uma visão, clique no botão **Adicionar Visão**
 
 ![](img/console-07.png)
 
@@ -162,13 +162,13 @@ Obs.: esta visão pode ser editada de acordo com as necessidades do usuário.
 | Nº. de linhas  | preencha este campo com a quantidade de linhas que deseja visualizar na monitoração. |
 
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">2</span> &nbsp;Depois de definir os parâmetros da nova visão, clique no botão **OK** para que as informações sejam salvas. A nova visão deve aparecer na árvore de servidores, abaixo do nome do servidor.
+{{< icon "chevron-right" >}}Depois de definir os parâmetros da nova visão, clique no botão **OK** para que as informações sejam salvas. A nova visão deve aparecer na árvore de servidores, abaixo do nome do servidor.
 
 ![](img/console-08.png)
 
 ### Como editar os dados de um servidor
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp;Para editar os dados de um servidor, clique sobre o nome do servidor desejado com o botão direito do mouse e escolha a opção **Propriedades**.
+{{< icon "chevron-right" >}}Para editar os dados de um servidor, clique sobre o nome do servidor desejado com o botão direito do mouse e escolha a opção **Propriedades**.
 
 ![](img/console-09.png)
 
@@ -183,7 +183,7 @@ Obs.: para ter mais detalhes sobre a definição dos campos, ver seção [**Adic
 
 ### Como visualizar os dados de um servidor
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp;Para visualizar os dados de um servidor, clique sobre o nome do servidor desejado com o botão direito do mouse e escolha a opção **Visualizar**.
+{{< icon "chevron-right" >}}Para visualizar os dados de um servidor, clique sobre o nome do servidor desejado com o botão direito do mouse e escolha a opção **Visualizar**.
 
 ![](img/console-11.png)
 
@@ -193,7 +193,7 @@ A tela de visualização dos dados do servidor será exibida. Todos os campos ap
 
 ### Como editar os dados de uma visão
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp;Para editar os dados de uma visão, clique sobre o nome da visão desejada com o botão direito do mouse e escolha a opção **Editar**
+{{< icon "chevron-right" >}}Para editar os dados de uma visão, clique sobre o nome da visão desejada com o botão direito do mouse e escolha a opção **Editar**
 
 ![](img/console-13.png)
 
@@ -208,7 +208,7 @@ Obs.: para ter mais detalhes sobre a definição dos campos, ver seção [**Adic
 
 ### Como visualizar os dados de uma visão
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp;Para visualizar os dados de uma visão, clique sobre o nome da visão desejada com o botão direito do mouse e escolha a opção **Visualizar**.
+{{< icon "chevron-right" >}}Para visualizar os dados de uma visão, clique sobre o nome da visão desejada com o botão direito do mouse e escolha a opção **Visualizar**.
 
 ![](img/console-15.png)
 
@@ -218,7 +218,7 @@ A tela de visualização dos dados da visão será exibida. Todos os campos apar
 
 ### Como remover um servidor
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp;Para remover um servidor, selecione o servidor desejado na árvore e clique sobre o botão **Remover Servidor**.
+{{< icon "chevron-right" >}}Para remover um servidor, selecione o servidor desejado na árvore e clique sobre o botão **Remover Servidor**.
 
 ![](img/console-17.png)
 
@@ -227,7 +227,7 @@ Para evitar remoções indesejadas, é solicitado ao usuário que confirme o pro
 ![](img/console-18.png)
 
 ### Como remover uma visão
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp; Para remover uma visão, selecione a visão desejada na árvore e clique sobre o botão **Remover Visão**.
+{{< icon "chevron-right" >}}Para remover uma visão, selecione a visão desejada na árvore e clique sobre o botão **Remover Visão**.
 
 ![](img/console-19.png)
 
@@ -239,7 +239,7 @@ Para evitar remoções indesejadas, é solicitado ao usuário que confirme o pro
 
 A monitoração de usuários permite que sejam monitorados todos os usuários ativos no servidor. Este tipo de monitoração leva em conta o filtro de usuário definido na visão, portanto só serão exibidos os usuários que passarem por esse filtro.
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp;Para realizar a monitoração de usuários, clique com o botão direito do mouse sobre a visão desejada e escolha a opção **Monitorar → Usuário**.
+{{< icon "chevron-right" >}}Para realizar a monitoração de usuários, clique com o botão direito do mouse sobre a visão desejada e escolha a opção **Monitorar → Usuário**.
 
 ![](img/console-21.png)
 
@@ -269,7 +269,7 @@ fazer uso desta funcionalidade, basta clicar sobre o botão **Iniciar**. |
 
 A monitoração de eventos permite que sejam monitorados todos os eventos do servidor. Este tipo de monitoração leva em conta os parâmetros definidos na visão: **Filtro de eventos** (só serão exibidos os eventos que passarem por este filtro) e **Nº. de linhas** (define a quantidade de eventos exibidos).
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp;Para realizar a monitoração de eventos, clique com o botão direito do mouse sobre a visão desejada e escolha a opção **Monitorar → Eventos**
+{{< icon "chevron-right" >}}Para realizar a monitoração de eventos, clique com o botão direito do mouse sobre a visão desejada e escolha a opção **Monitorar → Eventos**
 
 ![](img/console-23.png)
 
@@ -287,7 +287,7 @@ Obs.: quando se define o filtro de eventos, a aplicação passa a ter como parâ
 mensagens o que for definido no parâmetro “Nº. de linhas” do filtro de eventos e não da visão.
 {{< /callout >}}
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">2</span> &nbsp; Para fazer uso desta funcionalidade, clique sobre o botão **Filtro de Eventos**. Será exibida a tela onde o usuário deve definir o filtro e a quantidade de mensagens de eventos, em seguida, clique no botão **OK** para que a monitoração seja atualizada com as novas informações.
+{{< icon "chevron-right" >}}Para fazer uso desta funcionalidade, clique sobre o botão **Filtro de Eventos**. Será exibida a tela onde o usuário deve definir o filtro e a quantidade de mensagens de eventos, em seguida, clique no botão **OK** para que a monitoração seja atualizada com as novas informações.
 
 <!-- Para fazer uso desta funcionalidade, clique sobre o botão **Filtro de Eventos**. Será exibida a tela onde o usuário deve definir o filtro e a quantidade de mensagens de eventos (como mostra a imagem abaixo), em seguida, clique no botão **OK** para que a monitoração seja atualizada com as novas informações. -->
 
@@ -300,7 +300,7 @@ mensagens o que for definido no parâmetro “Nº. de linhas” do filtro de eve
 
 A monitoração de usuários e eventos permite que sejam monitorados ao mesmo tempo os usuários ativos e os eventos do servidor.
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp;Para realizar a monitoração de usuários e eventos, clique com o botão direito do mouse sobre a visão desejada e escolher a opção **Monitorar → Todos**.
+{{< icon "chevron-right" >}}Para realizar a monitoração de usuários e eventos, clique com o botão direito do mouse sobre a visão desejada e escolher a opção **Monitorar → Todos**.
 
 ![](img/console-24.png)
 
@@ -308,11 +308,11 @@ As listas de monitoração de usuários e eventos exibirão as informações dos
 
 ### Como iniciar conexão com um usuário
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">1</span> &nbsp;Para iniciar uma conexão com um usuário, clique sobre o nome da visão desejada com o botão direito do mouse e escolha a opção **Iniciar Conexão**, como mostra a imagem.
+{{< icon "chevron-right" >}}Para iniciar uma conexão com um usuário, clique sobre o nome da visão desejada com o botão direito do mouse e escolha a opção **Iniciar Conexão**, como mostra a imagem.
 
 ![](img/console-25.png)
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">2</span> &nbsp;Informe o usuário:
+{{< icon "chevron-right" >}}Informe o usuário:
 
 ![](img/console-26.png)
 
@@ -326,7 +326,7 @@ Quando este botão for acionado, serão listados apenas os usuários que se enca
 
 Exemplo: se o nome de um usuário é desconhecido, mas se sabe que a descrição deste contém a palavra “teste”, preencha o parâmetro **Descrição** com o valor “teste” e serão listados apenas os usuários que tenham essa informação na descrição. Este procedimento facilita a procura, já que permite refinar a lista de resultados.
 
-<span style="display:inline-block; width: 25px; height: 25px; border-radius: 50%; background-color: #0095C7; color: white; text-align: center; line-height: 25px; font-size: 14px; font-family: Arial;">3</span> &nbsp;Nesta tela, selecione o usuário desejado e clique no botão **OK**, ou então, dê um clique duplo sobre o nome do usuário e automaticamente esse nome irá para o parâmetro **Usuário**.
+{{< icon "chevron-right" >}}Nesta tela, selecione o usuário desejado e clique no botão **OK**, ou então, dê um clique duplo sobre o nome do usuário e automaticamente esse nome irá para o parâmetro **Usuário**.
 
 Após informar o nome do usuário para conexão no parâmetro **Usuário**, clique no botão **OK** para que seja estabelecida a conexão.
 
@@ -359,3 +359,4 @@ Privacy Enhanced Mail - é um formato popular de certificado.
 **S**
 
 *SSL* - Do Inglês Secure Sockets Layer. Protocolo que fornece confidencialidade e integridade na comunicação entre um cliente e um servidor, através do uso de criptografia.
+

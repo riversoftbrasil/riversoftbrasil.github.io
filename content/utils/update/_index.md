@@ -74,7 +74,7 @@ sc delete [nome do serviço]
 {{< icon "chevron-right" >}}Faça o download, da versão nova versão, através do link que é dispnibilizado pela Equipe de Sustentação da Riversoft e realize a instalação do produto.
 
 
-<{{< icon "chevron-right" >}}Após o processo de instalação, acesse o STCP OFTP Server Config (**Iniciar - Todos os programas - Riversoft STCP OFTP Server**) e na guia _Avançadas_ clique no botão _Controle de Log_.
+{{< icon "chevron-right" >}}Após o processo de instalação, acesse o STCP OFTP Server Config (**Iniciar - Todos os programas - Riversoft STCP OFTP Server**) e na guia _Avançadas_ clique no botão _Controle de Log_.
 
 ![](img/upd-17.png)
 
