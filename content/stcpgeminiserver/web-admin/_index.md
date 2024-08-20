@@ -11,11 +11,10 @@ weight:
 prev: 
 next: 
 draft: 
-lastmod: 2024-07-24
+lastmod: 2024-08-01
 ---
 
-Nesta seção vamos detalhar as possibilidades de configuração do módulo Serviço Web Admin no
-Portal Gemini.
+Nesta seção vamos detalhar as possibilidades de configuração do módulo Serviço Web Admin no Portal Gemini.
 
 ## Módulo Serviço Web Admin
 
@@ -133,10 +132,250 @@ Para buscar por uma rede específica, informe seu **Nome** e/ou **Descrição**.
 
 A consulta de Código de erros permite que o Operador visualize os principais parâmetros cadastrados para os Códigos de erro do sistema.
 
-Para buscar por um erro específico, pode-se informar seu **Código:** e/ou sua **Descrição**. Como não há nenhum parâmetro obrigatório para esta pesquisa, ao clicar em "Pesquisar..." sem preencher nenhuma informação, todos os erros serão apresentados.
+Para buscar por um erro específico, pode-se informar seu **Código:** e/ou sua **Descrição**. Como não há nenhum parâmetro obrigatório para esta pesquisa, ao clicar filtrar sem preencher nenhuma informação, todos os erros serão apresentados.
+
+![](img/image-29.png "Aba Códigos de Erros")
 
 Ao localizar o erro desejado, clique sobre seu Código. A partir de então, os parâmetros cadastrados serão listados.
 
-![](img/image-29.png "Aba Códigos de Erros")
+![](img/image-30.png "Pesquisa de Erro")
+
+A partir de então os parâmetros cadastrados serão listados como mostrado a seguir:
+
+![](img/image-31.png)
+
+### Código de Eventos
+
+A consulta de Código de eventos permite que o Operador visualize os principais parâmetros cadastrados para os Códigos de eventos do sistema.
+
+![](img/image-32.png)
+
+Para buscar por um evento específico pode-se informar seu **"Código:" e/ou sua Descrição**. Como não há
+nenhum parâmetro obrigatório para esta pesquisa, ao filtrar sem preencher nenhuma informação, todos os eventos serão apresentados.
+
+![](img/image-33.png)
+
+A partir de então os parâmetros cadastrados serão listados como mostrado a seguir:
+
+![](img/image-34.png)
+
+### Grupos
+
+A consulta de Grupos permite que o Operador visualize os principais parâmetros cadastrados para os Grupos do sistema.
+
+Para buscar por um grupo específico pode-se informar seu **Nome e/ou sua Descrição**. Como não há nenhum parâmetro obrigatório para esta pesquisa, ao filtrar sem preencher nenhuma informação, todos os grupos existentes serão apresentados.
+
+![](img/image-35.png)
+
+Ao localizar o grupo desejado, clique sobre seu nome.
+
+![](img/image-36.png "Aba Geral - Grupos")
+
+![](img/image-37.png "Aba Operadores do Grupo - Grupos")
+
+![](img/image-38.png "Aba Permissões - Configurações")
+
+![](img/image-39.png "Aba Permissões - Consulta")
+
+![](img/image-40.png "Aba Permissões - Relatórios")
+
+![](img/image-41.png "Aba Permissões - Supervisão")
+
+![](img/image-42.png "Aba Permissões - Manutenção")
+
+### Operadores
+
+A consulta de Operadores permite visualizar os principais parâmetros cadastrados para os Operadores do sistema.
+
+![](img/image-43.png "Operadores")
+
+Para buscar por um operador específico pode-se informar seu **Nome e/ou sua Descrição**. Como não há nenhum parâmetro obrigatório para esta pesquisa, ao filtrar sem preencher nenhuma informação, todos os operadores existentes serão apresentados.
+
+![](img/image-44.png "Filtro de operador")
+
+A partir de então os parâmetros cadastrados serão listados como mostrado a seguir:
+
+![](img/image-45.png "Operador - Guia Geral")
+![](img/image-46.png "Operador - Guia Grupos")
+![](img/image-47.png "Operador - Guia Avançadas")
+
+### API 
+
+A consulta de APIs permite visualizar os principais parâmetros cadastrados para as APIs do sistema.
+
+Para buscar por uma API específico pode-se informar seu **Nome e/ou sua Descrição**. 
+
+Não há nenhum parâmetro obrigatório para esta pesquisa, portanto, ao filtrar sem preencher nenhuma informação, todas as APIs existentes serão apresentadas.
+
+![](img/image-48.png "API")
+
+Ao localizar o operador desejado, clique sobre seu nome.
+
+![](img/image-49.png "Filtro API")
+
+A partir de então os parâmetros cadastrados serão listados como mostrado a seguir:
+
+![](img/image-50.png "API - Geral")
+![](img/image-51.png "API - Comunicação")
+![](img/image-52.png "API - Políticas de senhas")
+![](img/image-53.png "API - Supervisão")
+
+## Menu Relatórios
+
+O Menu de Relatórios permite que o Operador obtenha relatórios detalhados de diversas entidades do portal.
+
+Existem 3 tipos de relatórios, os de [Eventos do sistema](#relatórios-de-eventos), os de [Frequência](#frequência) de conexão e de transferência e os relatórios de [Transferências](#transferências), todos eles serão abordados a seguir.
+
+![](img/image-54.png)
+![](img/image-55.png)
+![](img/image-56.png)
+
+### Relatórios de Eventos
+
+Nos relatórios de eventos será possível analisar os eventos ocorridos tanto em intervalos de tempo como em entidades específicas.
+
+#### Eventos de Instância
+
+É possível obter os relatórios de eventos das Instâncias utilizando diversos parâmetros como filtro, entre eles:
+
+| **Campo**         | **Descrição**                                                                                                                                             |
+|-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Usuário** | Filtra os eventos ocorridos na instância para determinados usuários ou pelos módulos que registram os tipos de interações                                 |
+| **Mensagem**      | Filtragem dos eventos através de suas mensagens. Ex: Concluído, Falha, etc.                                                                                |
+| **De**            | Pesquisa por intervalo de tempo: Data de início do período de pesquisa. Formato (DIA/MÊS/ANO)                                                             |
+| **Até**           | Pesquisa por intervalo de tempo: Data de término do período de pesquisa. Formato (DIA/MÊS/ANO)                                                            |
+| **Quantidade máxima de registros**  | Definir a quantidade máxima de registros de logs dos eventos (100, 250, 500 e 1000). |
+
+![](img/image-57.png "Filtros de pesquisa")
+![](img/image-61.png "Filtros de pesquisa")
+
+Clique em **Pesquisar** para visualizar as informações dos eventos do sistema. Caso deseje visualizá-los em uma ferramenta de planilhas, clique no ícone **Exportar**:
+
+![](img/image-58.png "Ícone pra exportar os eventos")
+
+#### Eventos do Sistema
+
+Os relatórios de eventos do sistema podem ser obtidos utilizando os seguintes critérios de filtragem:
+
+| **Campo**         | **Descrição**                                                                                                                                             |
+|-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Módulo** | Filtra os eventos pelo módulo que os registrou. |
+| **Mensagem**      | Filtragem dos eventos através de suas mensagens. Ex: Concluído, Falha, etc.                                                                                |
+| **De**            | Pesquisa por intervalo de tempo: Data de início do período de pesquisa. Formato (DIA/MÊS/ANO)                                                             |
+| **Até**           | Pesquisa por intervalo de tempo: Data de término do período de pesquisa. Formato (DIA/MÊS/ANO)                                                            |
+| **Quantidade máxima de registros**  | Definir a quantidade máxima de registros de logs dos eventos (100, 250, 500 e 1000). |
+
+![](img/image-59.png "Filtros de pesquisa")
+![](img/image-61.png "Filtros de pesquisa")
+
+Clique em **Pesquisar** para visualizar as informações dos eventos do sistema. Caso deseje visualizá-los em uma ferramenta de planilhas, clique no ícone **Exportar**:
+
+![](img/image-62.png "Ícone pra exportar os eventos")
+
+#### Eventos dos Usuários
+
+É possível obter os relatórios de eventos dos usuários utilizando diversos parâmetros como filtro, entre eles:
+
+| **Campo**         | **Descrição**                                                                                                                                             |
+|-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Usuário** | Filtra os eventos ocorridos na instância para determinados usuários ou pelos módulos que registram os tipos de interações                                 |
+| **Mensagem**      | Filtragem dos eventos através de suas mensagens. Ex: Concluído, Falha, etc.                                                                                |
+| **De**            | Pesquisa por intervalo de tempo: Data de início do período de pesquisa. Formato (DIA/MÊS/ANO)                                                             |
+| **Até**           | Pesquisa por intervalo de tempo: Data de término do período de pesquisa. Formato (DIA/MÊS/ANO)                                                            |
+| **Quantidade máxima de registros**  | Definir a quantidade máxima de registros de logs dos eventos (100, 250, 500 e 1000). |
+
+![](img/image-57.png "Filtros de pesquisa")
+![](img/image-61.png "Filtros de pesquisa")
+
+{{< callout type="info" >}}
+**DICA:** Caso nenhum usuário seja informado, todos os eventos de todos os usuários quem cumpram
+os filtros restantes serão apresentados.
+{{< /callout >}}
+
+Após inserir as informações desejadas clique em **Pesquisar**. Ao fazer isto uma sequência de eventos serão apresentados em sua tela, caso deseje visualizá-los em uma ferramenta de planilhas clique em **Exportar**:
+
+![](img/image-63.png "Ícone pra exportar os eventos")
+
+#### Eventos dos Operadores
+
+Os relatórios de eventos dos operadores podem ser obtidos utilizando os seguintes critérios de filtragem:
+
+| **Campo**         | **Descrição**                                                                                                                                             |
+|-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Operador** | Filtra os eventos ocorridos na instância para determinados usuários ou pelos módulos que registram os tipos de interações                                 |
+| **Mensagem**      | Filtragem dos eventos através de suas mensagens. Ex: Concluído, Falha, etc.                                                                                |
+| **De**            | Pesquisa por intervalo de tempo: Data de início do período de pesquisa. Formato (DIA/MÊS/ANO)                                                             |
+| **Até**           | Pesquisa por intervalo de tempo: Data de término do período de pesquisa. Formato (DIA/MÊS/ANO)                                                            |
+| **Quantidade máxima de registros**  | Definir a quantidade máxima de registros de logs dos eventos (100, 250, 500 e 1000). |
+
+![](img/image-60.png "Filtros de pesquisa")
+![](img/image-61.png "Filtros de pesquisa")
+
+Clique em **Pesquisar** para visualizar as informações dos eventos do sistema. Caso deseje visualizá-los em uma ferramenta de planilhas, clique no ícone **Exportar**:
+
+![](img/image-64.png "Ícone pra exportar os eventos")
+
+### Relatórios de Frequência
+
+Nos relatórios de frequência será possível analisar a frequência com que conexões e transferências foram realizadas.
+
+#### Frequência de Conexão
+
+É possível obter os relatórios de conexão utilizando diversos parâmetros como filtro, entre eles:
+
+| **Campo**   | **Descrição**                                                                                         |
+|-------------|-------------------------------------------------------------------------------------------------------|
+| **Instância** | Seleção da instância para a qual deseja-se obter o relatório. Parâmetro obrigatório.                 |
+| **Usuário**   | Inserção do nome de um usuário como filtro durante a pesquisa.                                       |
+| **Situação**  | Status da conexão realizada pelo Usuário, seja entrada, saída ou ambos.                              |
+| **De**        | Pesquisa por intervalo de tempo: Data de início do período de pesquisa. Formato (DIA/MÊS/ANO)        |
+| **Até**       | Pesquisa por intervalo de tempo: Data de término do período de pesquisa. Formato (DIA/MÊS/ANO)       |
+
+![](img/image-65.png "Filtros de pesquisa")
+![](img/image-61.png "Filtros de pesquisa")
+
+Após inserir as informações desejadas clique em **Pesquisar**. Ao fazer isto uma sequência de eventos serão apresentados em sua tela, caso deseje visualizá-los em uma ferramenta de planilhas clique em **Exportar**:
+
+![](img/image-66.png "Ícone pra exportar os eventos")
+
+#### Frequência de Transferências
+
+Os relatórios de eventos dos operadores podem ser obtidos utilizando os seguintes critérios de filtragem:
+
+| **Campo**          | **Descrição**                                                                                     |
+|--------------------|---------------------------------------------------------------------------------------------------|
+| **Usuário**        | Inserção do nome de um usuário como filtro durante a pesquisa.                                     |
+| **Situação**       | Modo de transmissão. Ex: Transmissão, Recepção ou ambos.                                           |
+| **Tags**           | Filtro das transferências pela Tag associada aos arquivos transmitidos.                            |
+| **De**             | Pesquisa por intervalo de tempo: Data de início do período de pesquisa. Formato (DIA/MÊS/ANO)      |
+| **Até**            | Pesquisa por intervalo de tempo: Data de término do período de pesquisa. Formato (DIA/MÊS/ANO)     |
+
+![](img/image-67.png "Filtros de pesquisa")
+![](img/image-61.png "Filtros de pesquisa")
+
+Após inserir as informações desejadas clique em **Pesquisar**. Ao fazer isto uma sequência de eventos serão apresentados em sua tela, caso deseje visualizá-los em uma ferramenta de planilhas clique em **Exportar**:
+
+![](img/image-69.png "Ícone pra exportar os eventos")
+
+### Relatórios de Tranferências
+
+Nos relatórios de transferências será possível analisar detalhes das transferências ocorridas, entre eles: **Estatísticas** dos dados das transmissões, **Gráficos** da taxa das transmissões sucedidas, **Histórico** das transmissões realizadas e outras funcionalidades.
+
+#### Auditoria das Transferências
+
+Ao fazer a auditoria das transferências, será possível visualizar relatórios com as informações mais importantes de cada transmissão.
+
+Para gerar este relatório pode-se preencher os seguintes campos de filtragem:
+
+| **Campo**       | **Descrição**                                                                                                                                          |
+|-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Instância**   | Seleção da instância para a qual deseja-se obter o relatório. Parâmetro obrigatório.                                                                    |
+| **Usuário**     | Inserção do nome de um usuário como filtro durante a pesquisa.                                                                                          |
+| **Mensagem**    | Filtragem através de mensagens. Ex: Início de sessão de entrada, Fim da sessão de saída, etc.                                                           |
+| **Tags**        | Filtro das transferências pela Tag associada aos arquivos transmitidos.                                                                                 |
+| **De**          | Pesquisa por intervalo de tempo: Data de início do período de pesquisa. Formato (DIA/MÊS/ANO)                                                           |
+| **Até**         | Pesquisa por intervalo de tempo: Data de término do período de pesquisa. Formato (DIA/MÊS/ANO)                                                          |
+| **Ordenado por**| Método de ordenação utilizado para apresentação dos dados. Pode assumir os critérios especificados para o campo Usuário ou pelos campos de Data/Hora inseridos. Além disso, também oferece a opção de ordenação por ordem alfabética (A↑Z) ou alfabética invertida (Z↓A). |
+
 
 
