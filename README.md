@@ -1,5 +1,7 @@
 # Documentação Riversoft STCP
 
+![](static/images/home.png "Tela inicial")
+
 ## Visão Geral
 
 Este repositório foi desenvolvido para fornecer informações detalhadas sobre a instalação, configuração e utilização das soluções de transferência gerenciada de arquivos (MFT) da Riversoft. Ele atua como uma fonte centralizada de documentação, facilitando o entendimento e oferecendo recursos valiosos para usuários explorarem e aproveitarem ao máximo nossa tecnologia.
