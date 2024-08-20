@@ -1,6 +1,6 @@
 # Documentação Riversoft STCP
 
-![](static/images/home.png "Tela inicial")
+![](static/images/home.png)
 
 ## Visão Geral
 
