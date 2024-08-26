@@ -357,7 +357,7 @@ Após inserir as informações desejadas clique em **Pesquisar**. Ao fazer isto 
 
 ![](img/image-69.png "Ícone pra exportar os eventos")
 
-### Relatórios de Tranferências
+### Relatórios de Transferências
 
 Nos relatórios de transferências será possível analisar detalhes das transferências ocorridas, entre eles: **Estatísticas** dos dados das transmissões, **Gráficos** da taxa das transmissões sucedidas, **Histórico** das transmissões realizadas e outras funcionalidades.
 
@@ -369,13 +369,94 @@ Para gerar este relatório pode-se preencher os seguintes campos de filtragem:
 
 | **Campo**       | **Descrição**                                                                                                                                          |
 |-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Instância**   | Seleção da instância para a qual deseja-se obter o relatório. Parâmetro obrigatório.                                                                    |
 | **Usuário**     | Inserção do nome de um usuário como filtro durante a pesquisa.                                                                                          |
 | **Mensagem**    | Filtragem através de mensagens. Ex: Início de sessão de entrada, Fim da sessão de saída, etc.                                                           |
 | **Tags**        | Filtro das transferências pela Tag associada aos arquivos transmitidos.                                                                                 |
 | **De**          | Pesquisa por intervalo de tempo: Data de início do período de pesquisa. Formato (DIA/MÊS/ANO)                                                           |
-| **Até**         | Pesquisa por intervalo de tempo: Data de término do período de pesquisa. Formato (DIA/MÊS/ANO)                                                          |
-| **Ordenado por**| Método de ordenação utilizado para apresentação dos dados. Pode assumir os critérios especificados para o campo Usuário ou pelos campos de Data/Hora inseridos. Além disso, também oferece a opção de ordenação por ordem alfabética (A↑Z) ou alfabética invertida (Z↓A). |
+| **Até**         | Pesquisa por intervalo de tempo: Data de término do período de pesquisa. Formato (DIA/MÊS/ANO)
+| **Quantidade máxima de registros**  | Definir a quantidade máxima de registros de logs dos eventos (100, 250, 500 e 1000). |
+                                                          |
+
+
+![](img/image-70.png "Filtros de pesquisa")
+![](img/image-71.png "Filtros de pesquisa")
+
+Após inserir as informações desejadas clique em **Pesquisar**. Ao fazer isto uma sequência de transferências serão apresentados em sua tela.
+
+Caso deseje visualizá-las em uma ferramenta de planilhas clique em:
+
+![](img/image-72.png "Ícone pra exportar os eventos")
+
+#### Estatísticas das Transferências
+
+Para buscar as estatísticas das transferências há alguns filtros que podem ser utilizados, eles são:
+
+| **Campo**         | **Descrição**                                                                                                         |
+|-------------------|-----------------------------------------------------------------------------------------------------------------------|
+| **Usuário**       | Inserção do nome de um usuário como filtro durante a pesquisa.                                                        |
+| **Situação**      | Divisão por período das estatísticas apresentadas. Ex: Por Hora, semanal, etc.                                        |
+| **Mensagem**      | Filtragem através de mensagens. Ex: Início de sessão de entrada, Fim da sessão de saída, etc.                         |
+| **Nome do arquivo**| Definição do nome do arquivo como filtro para apresentação das estatísticas.                                          |
+| **Tags**          | Filtro das transferências pela Tag associada aos arquivos transmitidos.                                               |
+| **De**            | Pesquisa por intervalo de tempo: Data de início do período de pesquisa. Formato (DIA/MÊS/ANO)                          |
+| **Até**           | Pesquisa por intervalo de tempo: Data de término do período de pesquisa. Formato (DIA/MÊS/ANO)                         |
+
+![](img/image-73.png "Filtros de pesquisa")
+![](img/image-71.png "Filtros de pesquisa")
+
+Após inserir as informações desejadas clique em **Pesquisar**. Ao fazer isto, uma lista com as estatísticas das transferências será apresentada.
+
+Caso deseje visualizá-las em uma ferramenta de planilhas clique em:
+
+![](img/image-75.png "Ícone pra exportar os eventos")
+
+#### Gráficos de Transferência
+
+Os gráficos das transferências ocorridas são diferentes entre si a depender dos filtros utilizados, eles são:
+
+| **Campo**         | **Descrição**                                                                                             |
+|-------------------|-----------------------------------------------------------------------------------------------------------|
+| **Usuário**       | Inserção do nome de um usuário como filtro durante a pesquisa.                                            |
+| **Situação**      | Divisão por período das informações apresentadas. Ex: Por Hora, semanal, etc.                             |
+| **Nome de arquivo**| Definição de um nome de arquivo como filtro.                                                             |
+| **Tags**          | Filtro das transferências pela Tag associada aos arquivos transmitidos.                                   |
+| **De**            | Pesquisa por intervalo de tempo: Data de início do período de pesquisa. Formato (DIA/MÊS/ANO)             |
+| **Até**           | Pesquisa por intervalo de tempo: Data de término do período de pesquisa. Formato (DIA/MÊS/ANO)            |
+
+![](img/image-76.png "Filtros de pesquisa")
+![](img/image-71.png "Filtros de pesquisa")
+
+Após inserir as informações desejadas e clicar em **Pesquisar**. será possível visualizar os seguintes tipos de gráficos:
+
+![](img/image-77.png "Tipos de Gráficos")
+
+#### Histórico das transferências
+
+Para filtrar o histórico de transferências segundo sua necessidade, há os seguintes campos de preenchimento:
+
+| Campos     | Descrição                                                                                                                                 |
+|------------|-------------------------------------------------------------------------------------------------------------------------------------------|
+| **Instâncias**   | Seleção da instância para a qual deseja-se obter o histórico de transferências. Parâmetro obrigatório.                                         |
+| **Usuário**      | Inserção do nome de um usuário como filtro durante pesquisa.                                                                                   |
+| **Situação**     | Divisão por status da transferência. Ex: Recebidas/Ok, Enviadas/Ok                                                                             |
+| **Nome de arquivo** | Definição de um nome de arquivo como filtro.                                                                                                  |
+| **Tags**         | Filtro das transferências pela Tag associada aos arquivos transmitidos.                                                                        |
+| **De**           | Pesquisa por intervalo de tempo: Data de início do período de pesquisa. Formato (DIA/MÊS/ANO)                                                  |
+| **Até**          | Pesquisa por intervalo de tempo: Data de término do período de pesquisa. Formato (DIA/MÊS/ANO)                                                 |
+| **Ordenado por** | Método de ordenação utilizado para apresentação dos dados. Pode assumir os critérios especificados para o campo Usuário ou pelos campos de Data/Hora inseridos. Além disso, também oferece a opção de ordenação por ordem alfabética (A↑Z) ou alfabética invertida (Z↓A). |
+| **Quantidade máxima de registros**  | Definir a quantidade máxima de registros de logs dos eventos (100, 250, 500 e 1000). |
+
+
+
+![](img/image-78.png "Filtros de pesquisa")
+![](img/image-71.png "Filtros de pesquisa")
+
+Após inserir as informações desejadas e clicar em **Pesquisar**.
+
+Caso deseje visualizar as transferências apresentadas em uma ferramenta de planilhas, clique em:
+
+![](img/image-79.png "Ícone pra exportar")
+
 
 
 
