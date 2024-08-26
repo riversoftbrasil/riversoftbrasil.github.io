@@ -10,7 +10,7 @@ weight: 8
 prev: /schedule
 next: /email
 draft: false
-lastmod: 2024-05-20
+lastmod: 2024-08-26
 ---
 ## Códigos de eventos gerados no arquivo de mensagens
 
@@ -322,7 +322,7 @@ MSG9008  | [MSG9008] LOCAL - <STCPCTL> - Erro: programa '%s' não autorizado [co
 MSG9009  | [MSG9009] LOCAL - <STCPCTL> - Erro: remover o arquivo '%s' [codigo:0x%X]
 
 ----
-## **Códigos de erro geral**
+## Códigos de erro geral
 
 Código | Descrição
 :---   | :---
@@ -365,7 +365,7 @@ Código | Descrição
 183    | Arquivo duplicado ao executar função "MOVE". Verificar arquivo duplicado na pasta de destino.
 
 ----
-## **Códigos de erro de transferência do protocolo Odette**
+## Códigos de erro de transferência do protocolo Odette
 
 Código | Descrição
 :---   | :---
@@ -383,7 +383,7 @@ Código | Descrição
 499    | Código não especificado: um erro foi detectado, mas não pode ser adequadamente descrito pelos códigos disponíveis.
 
 ----
-## **Códigos de erro de sessão do protocolo Odette**
+## Códigos de erro de sessão do protocolo Odette
 
 Código | Descrição
 :---   | :---
@@ -400,7 +400,7 @@ Código | Descrição
 599    | Código não especificado: um erro foi detectado, mas não pode ser adequadamente descrito pelos códigos disponíveis.
 
 ----
-## **Códigos de erro da transferência**
+## Códigos de erro da transferência
 
 Código | Descrição
 :---   | :---
@@ -449,7 +449,7 @@ Código | Descrição
 1265   | Null.
 
 ----
-## **Códigos de erro genérico da interface de comunicação**
+## Códigos de erro genérico da interface de comunicação
 
 Código | Descrição
 :---   | :---
@@ -459,7 +459,7 @@ Código | Descrição
 6804   | Biblioteca de comunicação inválida ou corrompida.
 
 ----
-## **Códigos de erro da interface de comunicação TCP/IP (RAS)**
+## Códigos de erro da interface de comunicação TCP/IP (RAS)
 
 Código | Descrição
 :---   | :---
@@ -595,7 +595,7 @@ Código | Descrição
 9805   | O usuário para autenticação do RAS não foi configurado.
 
 ----
-## **Códigos de erro da interface de comunicação TCP/IP**
+## Códigos de erro da interface de comunicação TCP/IP
 
 Código | Descrição
 :---   | :---
@@ -659,7 +659,7 @@ Código | Descrição
 10902  | O tipo do servidor proxy configurado não é suportado.
 
 ----
-## **Códigos de erro da interface de comunicação X.25**
+## Códigos de erro da interface de comunicação X.25
 
 Código | Descrição
 :---   | :---
@@ -711,7 +711,7 @@ Código | Descrição
 15902  | Erro no encapsulamento do pacote.
 
 ----
-## **Códigos de erro da interface de comunicação Serial**
+## Códigos de erro da interface de comunicação Serial
 
 Código | Descrição
 :---   | :---
@@ -743,7 +743,7 @@ Código | Descrição
 17673  | Processo cancelado pelo usuário.
 
 ----
-## **Códigos de erro da interface de comunicação TCP/IP (Criptografia Nativa)**
+## Códigos de erro da interface de comunicação TCP/IP (Criptografia Nativa)
 
 Código| Descrição
 :---  | :---
@@ -761,7 +761,7 @@ Código| Descrição
 18902 | Falha interna.
 
 ----
-## **Códigos de erro da interface de comunicação TCP/IP (Proxy)**
+## Códigos de erro da interface de comunicação TCP/IP (Proxy)
 
 Código| Descrição
 :---  | :---
@@ -806,7 +806,7 @@ Código| Descrição
 19515 | Falha interna.
 
 ----
-## **Códigos de erro da interface de comunicação TCP/IP (Criptografia e segurança TLS)**
+## Códigos de erro da interface de comunicação TCP/IP (Criptografia e segurança TLS)
 
 Código| Descrição
 :---  | :---
@@ -827,4 +827,44 @@ Código| Descrição
 20857 | Diretório dos arquivos de certificados inválido ou não existe.
 20858 | Contexto de conexão TLS inválido.
 20859 | Falha ao configurar o descritor da conexão TLS.
+
+## Códigos de erro da interface de comunicação FTP
+
+| Código  | Descrição                                                                                                         |
+|---------|-------------------------------------------------------------------------------------------------------------------|
+| 22800   | Falha ao tentar alocar recursos para o componente FTP específico durante uma operação.                            |
+| 22801   | Falha de alocação de memória.                                                                                     |
+| 22802   | Falha de conexão (TCP-IP Fail). Conexão abortada.                                                                 |
+| 22900   | Autenticação (usuário e senha).                                                                                   |
+| 22901   | Falha ao encerrar a conexão.                                                                                      |
+| 22902   | Sem permissão para acesso de gravação/modificação no servidor Remoto.                                             |
+| 22903   | Falha ao abrir arquivo no servidor remoto.                                                                        |
+| 22904   | Falha ao tentar obter o número de arquivos em um diretório ou ao tentar listar arquivos.                          |
+| 22905   | Erro de autenticação (privatekey).                                                                                |
+| 22906   | Falha ao encontrar o certificado.                                                                                 |
+| 22907   | Erro de configuração de sessões do usuário.                                                                       |
+| 22908   | Erro de conexão.                                                                                                  |
+| 22909   | Falha de acesso ao diretório remoto.                                                                              |
+| 22910   | Autenticação (comando Quote da guia FTP).                                                                         |
+
+## Códigos de erro da interface de comunicação SFTP
+
+| Código  | Descrição                                                                                                         |
+|---------|-------------------------------------------------------------------------------------------------------------------|
+| 23800   | Falha ao tentar alocar recursos para o componente SFTP específico durante uma operação.                           |
+| 23801   | Falha de alocação de memória.                                                                                     |
+| 23802   | Falha de conexão (TCP-IP Fail). Conexão abortada.                                                                 |
+| 23900   | Autenticação (usuário/senha) ou permissão de acesso às pastas do servidor remoto.                                 |
+| 23901   | Falha ao encerrar a conexão.                                                                                      |
+| 23902   | Sem permissão para gravação/modificação no servidor remoto.                                                       |
+| 23903   | Falha ao abrir arquivo no servidor remoto.                                                                        |
+| 23904   | Falha ao tentar obter o número de arquivos em um diretório ou ao tentar listar arquivos.                          |
+| 23905   | Falha de conexão (TCP-IP Fail).                                                                                   |
+| 23906   | Erro de autenticação (timeout).                                                                                   |
+| 23907   | Falha de acesso ao diretório do servidor remoto.                                                                  |
+| 23908   | Erro de autenticação (privatekey).                                                                                |
+| 23909   | Erro de autenticação (FingerPrint).                                                                               |
+| 23910   | Recepção de arquivo com erro.                                                                                     |
+| 23911   | Erro de acesso ao caminho especificado nos diretórios de download e upload.                                       |
+
 
