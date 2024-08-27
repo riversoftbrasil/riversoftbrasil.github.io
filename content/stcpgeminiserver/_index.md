@@ -25,6 +25,6 @@ Nesta seção veremos os passos de instalação e configurações do STCP Gemini
   {{< card link="/stcpgeminiserver/custom/" title="Documentos disponíveis em PDF" icon="document-check" >}}
 {{< /cards >}}
 
-Saiba onde e como utilizar a aplicação na seção <a href="/utils/advantages/#stcp-gemini-server-e-stcp-gemini-client" target="_blank">Uso e vantagens do STCP</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;
+Veja as vantagens e integrações da aplicação na seção <a href="/utils/advantages/#stcp-gemini-server-e-stcp-gemini-client" target="_blank">Uso e vantagens do STCP</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;
 
 <!-- ## Exemplo de Topologia  -->
