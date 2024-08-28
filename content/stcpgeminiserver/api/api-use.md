@@ -7,11 +7,11 @@ toc: true
 cascade:
   type: docs
 sidebar:
-  exclude: true
+  exclude: false
 weight: 3
 prev:
 next:
-slug: util-apigeminiserver
+slug: use-apigeminiserver
 draft:
 lastmod: 2024-06-21
 ---

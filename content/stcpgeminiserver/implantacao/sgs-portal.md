@@ -1,0 +1,92 @@
+---
+linkTitle: Portal
+title: 
+layout: docs
+toc: true
+cascade:
+  type: docs
+sidebar:
+  exclude: false
+weight: 
+prev: 
+next: 
+draft: 
+lastmod: 2024-08-01
+---
+
+Esta seção tem como objetivo descrever os passos de instalação e configurações iniciais do STCP Portal Gemini. Outras configurações podem ser realizadas conforme as necessidades específicas do ambiente e/ou funcionalidades utilizadas.
+
+{{< callout type="info" >}}
+ATENÇÃO: O Portal Gemini necessita do STCPGemini API Rest para se comunicar com o STCPGemini Server.
+{{< /callout >}}
+
+## Instalação
+
+### Pré-requisitos de Software
+
+* Instalação e configuração do STCPGemini API. [Ver documentação](/stcpgeminiserver/api); 
+* Navegadores Chrome (Ver 80 ou superior), Firefox (ver 81 ou superior) ou Safari (MacOS, Ver 14 ou superior);
+
+{{< callout type="info" >}}
+Os passos referentes à instalação dos pré-requisitos listados não serão abordados neste procedimento. Em caso de dúvidas, consulte o   
+administrador de redes responsável.
+{{< /callout >}}
+
+## Configurações do STCP Gemini Portal
+
+O STCP Gemini Portal pode ser utilizado de duas maneiras:
+
+* Integrado ao STCPGemini API (preferencialmente)
+* Integrado ao servidor Apache ou outros servidores web
+
+### Configurando o STCPGemini Portal integrado no STCPGemini API
+
+* Acesse o diretório /usr/local/stcpgemini-api/portal/app/configs.
+* Copie o arquivo example-config.json para config.json
+* Adicione a URL do STCP Gemini API na chave STCPRestAPIURL do arquivo config.json;
+
+
+```json
+{
+"info": "A chave STCPRestAPIURL abaixo representa o end point do STCPRest. Ex.: http://0.0.0.0:8888",
+"STCPRestAPIURL": "http://192.168.0.1:8094"
+}
+
+```
+
+* Na barra de pesquisa em seu navegador digite o ip/porta ou URL em que seu servidor está executando o STCPGemini API.
+
+### Configurando oSTCPGeminiPortal no Apache 
+
+{{< callout type="info" >}}
+O intuito desse material não é abordar a instalação do Apache.
+{{< /callout >}}
+
+* Instale o STCP Gemini Portal executando o seguinte comando:
+
+``` bash
+$ yum install stpcgemini-portal 
+```
+
+* Após a conclusão da instalação, faça os seguintes passos:
+  * Acesse o diretório /var/www/;
+  * Verifique a existência do diretório stpcportalweb;
+  * Copie os arquivos de stpcportalweb para o diretório html.
+
+* Acesse o diretório html e em seguida acesse o diretório configs.
+
+* Adicione a URL do STCP Gemini API na chave **STCPRestAPIURL** do arquivo **config.json**;
+
+```json
+{
+"info": "A chave STCPRestAPIURL abaixo representa o end point do STCPRest. Ex.: http://0.0.0.0:8888",
+"STCPRestAPIURL": "http://0.0.0.0:8888"
+}
+```
+
+* Na barra de pesquisa de seu navegador, digite o ip do seu servidor.
+
+{{< callout type="info" >}}
+Por padrão, o Apache é executado na porta 80, se desejar mudar a porta ou fazer um *virtual host* consulte a documentação do Apache.
+{{< /callout >}}
+
