@@ -1,0 +1,2815 @@
+---
+linkTitle: Configurações Portal
+title: 
+layout: docs
+toc: true
+cascade:
+  type: docs
+sidebar:
+  exclude: false
+weight: 
+prev: 
+next: 
+draft: 
+lastmod: 2024-08-01
+---
+# Funcionalidades do Portal
+
+O portal STCP Gemini é uma aplicação que facilita a configuração do STCP Gemini Server por possuir funcionalidades que vão desde o gerenciamento de instâncias, usuários, agendamentos, etc, até a possibilidade de iniciar conexões entre usuários e checar relatórios de comunição.
+
+# Página do Portal
+
+A instalação do portal pode ser consultada no Procedimento de Implantação do STCP Gemini Server. Após instalá-lo, acesse em seu navegador o Endereço/IP em que foi configurado.
+
+![](img/image-01.png "Portal do STCP Gemini")
+
+## Seleção do EntryPoint
+
+Para realizar o login será necessário selecionar um EntryPoint na caixa de seleção como mostra a imagem:
+
+![](img/image-02.png "Seleção do EntryPoint")
+
+
+Caso não haja nenhum Entrypoint cadastrado ou mais de uma opção, consulte o administrador da rede e verifique qual utilizar.
+
+{{< callout type="info" >}}
+O EntryPoint é essencial para logar no sistema!
+{{< /callout >}}
+
+## Login
+
+Durante o primeiro login utilize o operador **stcpadmin** e a senha **Admin**.
+
+![](img/image-03.png "Usuário e Senha")
+
+
+{{< callout type="info" >}}
+O operador stcpadmin possui permissões de acesso e configuração a todas as entidadoes do portal, contudo ao logar com outros operadores o acesso às funcionalidades descritas neste documento poderá estar disponível ou indisponível.
+{{< /callout >}}
+
+Ao fazer isso a listagem dos módulos será exibida, sendo eles: Configurador STCP, Admin, e Painel de Controle.
+
+![](img/image-04.png "Módulos")
+
+# Módulo Configurador STCP
+
+O módulo Configurador STCP permite ao operador manipular: Configuração de instâncias, serviços de rede, usuários (caixas postais), agendamentos, tipos de arquivos para transferência.
+
+{{< callout type="info" >}}
+A instância é uma peça chave, por isso não será possível acessar os menus Usuários, Serviços e Agendamentos antes de se selecionar ou criar uma Instância.
+{{< /callout >}}
+
+Para estabelecer uma conexão são necessários ao menos:
+
+* Uma instância
+* Um usuário
+* Um serviço de autenticação
+* Uma rede de supervisão
+* Um nó de supervisão
+
+## Instâncias
+
+As instâncias são as entidades fundamentais para efetuar conexões pois à elas são associados Usuários, Serviços, Tipos de arquivos e Agendamentos.
+
+A seguir encontram-se os passos necessários para criar uma Instância.
+
+Todas as ações do tópico serão explicadas a partir da listagem de instâncias presente no canto esquerdo da tela.
+
+### Adicionar Instâncias
+
+Durante o primeiro login no portal não haverá nenhuma instância cadastrada e por isso algumas mensagens de aviso serão apresentadas.
+
+O cadastro de uma nova instância é realizado clicando em "+ Adicionar" no canto superior direito da tela.
+
+![](img/image-05.png "Adicionar instância")
+
+{{< callout type="info" >}}
+Para facilitar a compreensão e definição dos campos e atributos, o cadastro é dividido em seções e subseções como mostrado nas imagens a seguir:
+{{< /callout >}}
+
+
+#### Seção Geral
+
+![](img/image-06.png "Campos seção Geral")
+
+O primeiro passo para cadastrar uma instância é definir seus atributos de **Identificação**. Segue uma tabela contendo os campos presentes nesta seção e suas especificações:
+
+| Campos                  | Descrição                       | Valores Permitidos           |
+|-------------------------|---------------------------------|------------------------------|
+| Nome (Obrigatório)      | Nome da Instância               |    -                          |
+| Descrição               | Descrição da Instância          |     -                         |
+| Sistema Operacional     | Sistema Operacional utilizado. (Linux, MAC OS ou Windows)   |  -    |
+| Número de Série (Obrigatório) | Número serial do STCP      | Valores hexadecimais         |
+
+#### Seção Diretórios
+
+**Diretórios de dados:** O segundo passo é definir os atributos para os diretórios de envio e recepção de arquivos, e controles do sistema. Segue abaixo uma tabela explicativa dos campos e suas especificações:
+
+![](img/image-07.png "Definição de diretórios")
+
+
+| Campos      | Descrição                                                                                                                                      | Valores Permitidos                        |
+|-------------|------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------|
+| Raiz (Obrigatório) | Caminho onde a estrutura de pastas da Instância será criada após o início da conexão.                                                   | Alfanuméricos, " / ", " _ ", " . ", " - " |
+| Controle    | Nome para a pasta responsável por armazenar arquivos de controle da sessão e conexões realizadas. Nome padrão: CONTROLE                        | Alfanuméricos                             |
+| Formatos    | Nome para a pasta que armazenará os formatos do sistema. Nome padrão: FORMATOS                                                                 | Alfanuméricos                             |
+| Temporário  | Nome para a pasta onde serão armazenados os arquivos temporários do sistema. Nome padrão: TEMP                                                  | Alfanuméricos                             |
+| Entrada     | Nome para a pasta onde os arquivos recebidos serão salvos. Nome padrão: ENTRADA                                                                 | Alfanuméricos                             |
+| Restart     | Nome para a pasta onde os arquivos que tiveram seu envio interrompido serão armazenados. Nome padrão: RESTART                                   | Alfanuméricos                             |
+| Saída       | Nome para a pasta onde deve-se inserir os arquivos que serão transmitidos. Nome padrão: SAIDA                                                   | Alfanuméricos                             |
+| Backup      | Nome para a pasta onde uma cópia dos arquivos enviados e recebidos são armazenados a fim de garantir que haja um backup caso seja necessário. Nome padrão: BACKUP | Alfanuméricos                 |
+| Pendentes   | Nome para a pasta onde os arquivos que ainda estão sendo recebidos ficam temporariamente salvos. Nome padrão: PENDENTES                         | Alfanuméricos                             |
+
+#### Seção Controles
+
+**Controle de Agenda:** O terceiro passo ao cadastrar uma instância é configurar alguns atributos do agendamento, entre eles: 
+
+* Habilitar ou desabilitar o controle dos agendamentos cadastrados para os usuários da instância.
+* Definir o intervalo em que o controle da agenda entrará em ação. Este intervalo de tempo é dado em **milissegundos**.
+
+![](img/image-08.png "Controle de Agenda")
+
+**Controle de Lock:** O quarto passo é configurar atributos de reinicialização de conexões e transmissões de arquivos. Segue a tabela explicativa dos campos e suas especificações:
+
+![](img/image-09.png "Controle de lock")
+
+
+Campos Descrição VPaelrmoreitsidos
+
+Habilitar Chave^ para^ habilitar^ ou^ deinstsabâilnitcaira^ o^ "Controle^ de^ Lock"^ da HDaebsailibtailidtaod^ /o
+
+Tempo de espera para
+nova tentativa de lock
+
+```
+Tempo entre tentativas de lock, dado em milissegundos. Numéricos
+```
+Máximo de tentativas de
+lock
+
+```
+Número máximo de tentativas de lock realizadas pelo
+sistema. Numéricos
+```
+Timeout de lock de sessão Tempope^ mrmáxanimoec,e^ erám r^ emailliizssanedgoun tdentosa,^ teivmas^ qu dee loo^ cskist.ema Numéricos
+
+```
+Controle de Sessões : Em seguida configura-se o numero máximo de sessões abertas
+simultaneamente para a instância.
+```
+
+```
+Outros controles: A última configuração da seção "Características" é a definição dos seguinte
+parâmetros:
+```
+```
+Campos Descrição Valores Permitidos
+Máximo de Mensagens
+no Console
+```
+```
+Número máximo de mensagens que serão
+apresentadas nos logs do Portal
+```
+```
+Numéricos maiores ou
+iguais a 50
+Máximo de Processos
+Assíncronos
+```
+```
+Número máximo de processos assíncronos que serão
+permitidos na Instância Numéricos
+```
+Autenticação de Usuários
+
+As configurações da seção de autenticação são responsáveis por definir qual banco de dados será utilizado
+pela instância e quais políticas de senha deverão ser seguidas.
+
+```
+Configurações Básicas: Inicialmente, deve-se configurar a biblioteca utilizada para o banco de dados e
+qual será o tipo de autenticação, como pode ser observado na tabela a seguir:
+```
+```
+Campos Descrição Valores Permitidos
+Biblioteca
+(Obrigatório)
+```
+```
+Biblioteca utilizada para o carregamento do banco de dados no
+início da conexão.
+```
+```
+No momento
+"MYSQL/MARIADB"
+Tipo
+Autenticação
+```
+```
+Formato utilizado na autenticação do banco de dados da
+instância quando a conexão for iniciada. No^ momento^ "STCP"
+```
+```
+Base de Dados: Em seguida configura-se a "Base de Dados", nela são inseridas informações do banco
+de dados utilizado. Veja seus campos e especificações na tabela a seguir:
+```
+```
+Campos Descrição Valores Permitidos
+Nome Nome do banco de dados que será utilizado para configuração
+Host Endereço do Banco de dados
+Porta Porta para o acesso ao banco de dados. Valor padrão: 3306 Somente números.
+Usuário Usuário do banco de dados para acessá-lo.
+```
+
+Campos Descrição Valores Permitidos
+
+Senha Senha do usuário do banco de dados.
+
+Confirmar Confirmação da senha do banco de dados.
+
+```
+AVISO: Nesta subseção todos os parâmetros são obrigatórios!
+```
+```
+Políticas de senhas: Também podem ser alteradas as Políticas de senha, sua utilização não é
+obrigatória, porém recomenda-se aplicá-las por questões de segurança. Segue uma tabela explicativa
+dos campos desta subseção e suas especificações:
+```
+Campos Descrição
+
+```
+Valores
+Permitidos
+```
+Habilitar Chave^ para^ habilitusuar/dáersiosab idliteassr^ aas i^ nstpolâítniccaias.^ de^ senha^ para^ os HDaebsailibtailditaod^ /o
+
+Comprimento
+mínimo da senha
+
+```
+Quantidade mínima de caracteres da senha
+```
+```
+Comprimento
+mínimo de 5 e
+máximo 8
+```
+Tempo de vida
+máximo da senha
+
+```
+Quantidade de tempo, em dias, em que a senha dos usuários
+poderá ser utilizada antes que seja necessário resetá-las Numéricos
+```
+Número máximo
+de falhas
+
+```
+Quantidade de vezes em que o usuário poderá errar a senha
+sem que seja bloqueado Numéricos
+```
+Número de
+senhas
+memorizadas
+
+```
+Quantidade de senhas já utilizadas anteriormente e que não
+podem ser reutilizadas durante a criação de uma nova Numéricos
+```
+Pelo menos um
+caractere
+minúsculo
+
+```
+Caso seja habilitada, esta opção obrigará que a senha do
+usuário possua pelo menos um caracter minúsculo
+```
+```
+Habilitado /
+Desabilitado
+```
+Pelo menos um
+caractere
+maiúsculo
+
+```
+Caso seja habilitada, esta opção obrigará que a senha do
+usuário possua pelo menos um caractere maiúsculo
+```
+```
+Habilitado /
+Desabilitado
+```
+Pelo menos um
+dígito
+
+```
+Caso seja habilitada, esta opção obrigará que a senha do
+usuário possua pelo menos um dígito
+```
+```
+Habilitado /
+Desabilitado
+```
+
+```
+Campos Descrição VPaelrmoreitsidos
+```
+```
+Pelo menos um
+caractere especial
+```
+```
+Caso seja habilitada, esta opção obrigará que a senha do
+usuário possua pelo menos um caractere especial
+```
+```
+Habilitado /
+Desabilitado
+```
+Log A sessão Log é responsável pelo gerenciamento das mensagens de eventos. Segue abaixo suas
+subseções:
+
+```
+Base de dados: Nesta subseção configura-se o banco de dados que armazenará os logs da aplicação.
+```
+```
+Campos Descrição Valores Permitidos
+```
+```
+Biblioteca Biblioteca^ utilizada^ parad^ oa^ dcosarr.egamento^ do^ banco^ de N"Mo^ YmomSQLe/MntoARIADB"
+```
+```
+Nome Nome do Banco de dados que armazenará os Logs.
+Host Endereço do Banco de dados
+Porta Porta de acesso ao banco. Valor padrão: 3306 Somente números
+Usuário Usuário do banco de dados.
+Senha Senha do usuário do banco de dados.
+Confirmar Confirmação da senha do banco de dados.
+```
+```
+AVISO: Nesta subseção todos os campos são obrigatórios.
+```
+```
+NOTA: O banco de dados utilizado para os Logs não precisa ser o mesmo definido na autenticação.
+```
+
+```
+Controle as mensagens de eventos: No cadastro dos logs também há a subseção "Controle das
+mensagens de eventos", onde são definidos quais logs serão gravados no banco de dados, quais
+serão mostrados no próprio Console Log do sistema e os comandos externos a serem executados.
+```
+```
+Campos Descrição VPaelrmoreitsidos
+```
+```
+Gravar no
+Banco de
+dados
+```
+```
+Define quais logs serão salvos no banco de dados de acordo com o
+número escolhido. Cada número possui tipos de logs definidos, estes
+podem ser consultados através das mensagens em azul ao lado direito
+do campo.
+```
+```
+Numerais dentre
+0 e 8
+```
+```
+Apresentar
+na console
+do STCP
+```
+```
+Define quais logs serão mostrados no console do sistema, porém estes
+não serão salvos no banco de dados.
+```
+```
+Numerais dentre
+0 e 8
+```
+```
+Executar
+comando
+externo
+```
+```
+Nível de evento que disparará um comando (programa ou bat) externo.
+```
+```
+Numerais dentre
+0 e 8
+```
+```
+Comando
+Externo
+```
+```
+Campo de cadastro do script com o comando externo que será
+executado.
+```
+```
+Insira o caminho
+onde o script
+com o comando
+está salvo.
+```
+```
+Filtros de mensagens de evento: Os últimos campos antes de concluir o cadastro da Instância são:
+```
+```
+Campos Descrição
+```
+```
+Valores
+Permitidos
+```
+```
+Aceitar
+```
+```
+Campo utilizado para criar um filtro das mensagens mostrada nos logs. Pode-se
+criar um filtro para que apenas mensagens de um determinado usuário sejam
+mostradas.
+```
+```
+Rejeitar
+```
+```
+Campo utilizado para criar um filtro das mensagens que não serão mostradas
+nos logs. Pode-se criar um filtro para que apenas mensagens de um
+determinado usuário sejam rejeitadas.
+```
+Finalmente, para adicionar a Instância e concluir o cadastro, clique em "Salvar".
+
+
+3.1.2 Editar Instâncias
+
+Caso precise editar algum parâmetro de uma instância já criada, acesse a lista de Instâncias e clique no ícone
+de edição presente à direita.
+
+Já na página de edição, altere os atributos desejados e salve as modificações ao final. Em caso de dúvidas leia
+a descrição dos campos novamente no tópico de Adicionar Instâncias
+
+```
+AVISO: O campo "Nome:" da Instância não pode ser alterado!
+```
+3.1.3 Copiar/Exibir Instâncias
+
+A cópia ou exibição das instâncias é realizada através do menu de opções indicado por uma seta ao lado direito
+da tela. Para executar uma dessas ações, clique neste ícone a função "Copiar" ou "Exibir" como mostrado na
+imagem a seguir:
+
+
+```
+NOTA: Ao selecionar a função copiar você será direcionado a uma tela semelhante a de edição, nela já
+constarão as informações da instância copiada exceto o nome. Modifique os campos que julgar
+necessário, digite o nome da nova instância e salve-a.
+```
+```
+NOTA: Ao clicar em "Exibir", os campos da Instância ficarão desabilitados e não será possível editá-los.
+```
+3.1.4 Remover Instâncias
+
+Para remover uma Instância existente, deve-se acessar as opções ao lado direito da Instância a ser removida e
+clicar em "Remover". Remover instâncias é um procedimento que deve ser realizado com cautela pois, como
+dito anteriormente, à elas estão associados usuários, Tipos de arquivo e Agendamentos.
+
+
+3.2 Adicionar tipos de arquivo
+
+Os tipos de arquivo são utilizados tanto na transmissão quanto recepção de arquivos em uma conexão. Sua
+função é realizar tratativas como conversões de nome, formato, etc.
+
+Para criar um novo tipo de arquivo acesse o menu de opções indicado pela seta.
+
+Em seguida, clique em +Adicionar.
+
+
+Identificação
+
+As primeiras informações a serem cadastradas na criação dos Tipos de Arquivo são seu nome, descrição e
+Tags que serão adicionadas ao nome dos arquivos tratados.
+
+Características
+
+Nesta seção serão descritas as "Características" do tipo de arquivo criado, entre elas se o tipo de arquivo fará
+tratativas Padrão ou através de uma Expressão Regular.
+
+```
+Tratativas Padrão: Apesar de constar tal campo como possível seleção, ao criar uma instância o
+sistema atribuirá a ela um tipo de arquivo com tratativas padrão automaticamente. Por não ser possível
+existir 2 padrões, esta seleção se encontrará sempre bloqueada.
+```
+```
+Tratativas por Expressão Regular: Este tipo de tratativa será feita baseando-se no nome do arquivo
+transmitido, incluindo seu formato. Por exemplo, caso deseje que arquivos no formato TXT crie uma
+tratativa que busque pela expressão "txt" no campo Regex.
+```
+Tipo de Arquivo Expressão Regular (Regex)
+
+
+```
+Transmissão: Nesta subseção configuram-se os parâmetros dos arquivos verificados pela tratativa
+durante o envio. Segue abaixo uma tabela explicativa contento tais parâmetros e suas especificidades:
+```
+Atributo Descrição Valores Permitidos
+
+Desabilitar Desabilitação^ de^ todas^ as^ tratativas^ realizadas^ durante^ a
+transmissão de um arquivo
+
+```
+Desabilitar/Manter
+```
+Executar comando
+externo
+
+```
+Campo utilizado para inserir o caminho de scripts de
+comandos que devem ser executados na transmissão dos
+arquivos.
+```
+Aguardar o término
+da execução do
+comando
+
+```
+Opção utilizada para que o sistema possa aguardar a
+execução do comando externo definido acima ao
+transmitir os arquivos.
+```
+Origem Odette ID da origem da transmissão
+
+Destino Odette ID de destino da transmissão
+
+Userdata
+
+```
+Inserção de dados de transmissão que podem ser úteis
+para outras aplicações
+```
+Formato de registro Escolha do formato de registro utilizado
+
+```
+Não Formatado;
+Stream (SFTP); Fixo;
+Variável;Texto
+```
+Tamanho de
+registro Tamanho^ dos^ registros^ armazenados Numerais
+
+Converte nome de
+arquivo
+
+```
+Seleção da conversão do nome do arquivo antes de
+transmitir.
+```
+```
+Não; Maiúscula;
+Minúscula
+```
+Remover CRLF
+
+```
+Habilitação/Desabilitação da remoção dos caracteres CR
+(Carriage Return) e LF (Line Feed) na transmissão do
+arquivo.
+```
+#### -.
+
+CR Número^ na^ tabela^ de^ carRaecturnteres^ referente^ ao^ Carriage Numerais
+
+LF Número na tabela de caracteres referente ao Line Feed Numerais
+
+Tabela de
+conversão de
+dados
+
+```
+Tabela de conversão dos dados entre os tipos de
+formatos -.
+```
+Remover timestamp
+
+```
+Habilita/Desabilita a remoção de timestamp do arquivo
+transmitido Chave^ selecionável
+```
+Backup Habilita/Desabilita Backup dos arquivos transmitidos Chave selecionável
+
+```
+NOTAS:
+```
+```
+Somente utilize a opção Remover CRLF quando o formato do registro for Fixo ou Variável.
+```
+
+```
+Ao escolher um formato de registro Fixo será necessário informar o Tamanho do registro.
+```
+```
+OFTP2: Nesta subseção configuram-se os parâmetros dos arquivos que utilizam o protocolo OFTP 2 na
+comunicação com foco na segurança dos arquivos que serão transmitidos. Segue a tabela com os
+parâmetros e suas funcionalidades:
+```
+Atributo Descrição Valores Permitidos
+
+Nível de
+Segurança Seleção^ do^ tipo^ nível^ do^ arquivo^ de^ transmissão
+
+```
+Níveis disponíveis: Desabilitado;
+Encriptado; Assinado; Encriptado e
+Assinado
+```
+Cipher Level Cifra de criptografia utilizada
+
+Comprimido Parâmetro^ de^ informação^ referente^ ao^ protocolo
+OFTP 2 do arquivo a ser transmitido.
+
+```
+Chave selecionável
+```
+Envelopado
+
+```
+Parâmetro de informação referente ao protocolo
+OFTP 2 constando se o arquivo foi criptografado Chave^ selecionável
+```
+EERP
+Signed
+
+```
+Habilitação/Desabilitação de assinatura na
+resposta de arquivo recebido pelo Destino Chave^ selecionável
+```
+
+```
+Recepção: Nesta subseção configuram-se os parâmetros dos arquivos verificados pela tratativa durante
+a recepção. Segue abaixo uma tabela explicativa contendo suas especificidades:
+```
+Atributo Descrição Valores Permitidos
+
+Desabilitar Desabilitação^ de^ todas^ as^ tratativas
+realizadas durante a recepção de um arquivo
+
+```
+Desabilitar/Manter.
+```
+Executar
+comando
+externo
+
+```
+Campo utilizado para inserir o caminho de
+scripts de comandos que devem ser
+executados na transmissão dos arquivos.
+```
+Aguardar o
+término da
+execução do
+comando
+
+```
+Opção utilizada para que o sistema possa
+aguardar a execução do comando externo
+ao receber os arquivos.
+```
+Tabela de
+conversão de
+dados
+
+#### -
+
+```
+A expressão regular irá definir qual
+extensão de arquivos seguirá as
+condições definidas neste tipo de
+arquivo.
+```
+Converte nome
+de arquivo
+
+```
+Seleção da conversão do nome do arquivo
+ao recebê-lo. Não;^ Maiúscula;^ Minúscula
+```
+Inserir CRLF -
+
+Caracter CR RX -
+
+Caracter LF RX -
+
+Inserir
+timestamp
+
+```
+Opção utilizada para que o sistema adicione
+um timestamp com as informações de
+horário ao receber arquivos.
+```
+Sobrepor
+arquivo -
+
+Desabilitar log
+de arquivo
+duplicado
+
+#### -
+
+Marcar arquivo
+recebido com
+data e hora
+local
+
+#### .
+
+
+Execução de comando externo de validação
+
+Nesta seção, informa-se sobre a execução de comandos externos após a validação dos arquivos.
+
+```
+Atributo Descrição
+Validar o arquivo antes de transmitir Caminho para o arquivo contendo os scritps de validação
+Validar o arquivo antes de receber Caminho para o arquivo contendo os scritps de validação
+Validar o arquivo após receber Caminho para o arquivo contendo os scritps de validação
+```
+Período de transferência
+
+A última seção define os períodos de transferência de arquivos na instância. Segue uma tabela contendo os
+campos que devem ser configurados:
+
+```
+Atributo Descrição
+```
+```
+Valores
+Permitidos
+Início Horário de início em que será permitido transferir arquivos. Numéricos
+Término Horário de término em que será permitido transferir arquivos. Numéricos
+Dias da
+Semana
+```
+```
+Define em quais os dias a transferência de arquivos será
+permitida.
+```
+```
+Seleção
+```
+
+Finalmente, para adicionar o novo Tipo de Arquivo à Instância e concluir o cadastro, clique em "Salvar".
+
+```
+NOTA: Os tipos de arquivos são mostrados separadamente de acordo com a Instância em que foram
+criados.
+```
+3.2.1 Editar Tipos de Arquivo
+
+Para editar um tipo de arquivo de uma instância siga os passos:
+
+```
+Acesse a lista de Instâncias
+Selecione a instância que contenha tal tipo de arquivo
+Acesse os menus de seleção clicando na seta
+Clique no ícone de edição como mostrado abaixo.
+```
+Após acessar a edição, altere os atributos desejados e salve as alterações.
+
+```
+NOTA: Não é possível alterar o nome de um tipo de arquivo definido como Padrão.
+```
+
+3.2.2 Copiar/Exibir Tipos de Arquivo
+
+Para copiar/exibir um tipo de arquivo de uma instância siga os passos:
+
+```
+Acesse a lista de Instâncias
+Selecione a instância que contenha tal tipo de arquivo
+Acesse os menus de seleção clicando na seta e selecione o campo desejado
+```
+```
+NOTA: Ao clicar em "Exibir", os campos do Tipo de Aquivo ficarão desabilitados.
+```
+
+3.2.3 Remover Tipos de Arquivo
+
+Para remover um tipo de arquivo siga os passos:
+
+```
+Acesse a lista de instâncias
+Selecione a instância que contenha o tipo de arquivo
+Acesse os menus de seleção clicando na seta e selecionando a opção "Remover"
+```
+```
+Clique em "X Remover" ao ser questionado por "Esta ação é irreversível. Tem certeza que deseja
+remover este registro?"
+```
+```
+Obs.: Não é possível remover o Tipo de Arquivo padrão da Instância.
+```
+### 4. Configurações de Redes
+
+
+Redes são utilizadas nos processos de transferência em diversos âmbitos. Para configurá-las utilize o módulo
+STCP, nele será possível Adicionar, Editar, Copiar, Exibir e Remover Redes.
+
+4.1 Adicionar Rede OFTP
+
+Para adicionar um serviço siga os passos:
+
+```
+Acesse o módulo STCP;
+Acesse a aba Redes no menu lateral esquerdo;
+Ao fazer isso a listagem de todas as redes da instância será apresentada para criar uma nova clique em
+"+Adicionar".
+```
+```
+NOTA: A divisão do formulário entre Seções e Subseções continuará sendo utilizada da mesma forma
+que durante o cadastro de Instâncias.
+```
+Identificação da Rede OFTP
+
+A primeira seção a ser preenchida é a Identificação.
+
+
+```
+NOTA: As Redes podem ser do tipo OFTP ou SUPERVISÃO sendo que a primeira é utilizada durante
+transferências de arquivos entre usuários, autenticação das Instâncias, etc, e a segunda para visualizar
+logs do sistema no console do Portal.
+```
+Siga a tabela abaixo para facilitar a inserção de dados:
+
+```
+Campo Descrição Valores Permitidos
+Desabilitado Habilita/Desabilita a Rede Chave selecionável
+Tipo Seleção do tipo de Rede entre OFTP e SUPERVISÃO Chave selecionável
+Nome Nome da Rede Auto atribuído pelo sistema
+Descrição Descrição da Rede
+```
+```
+AVISOS:
+```
+```
+Caso uma Rede seja bloqueada nenhuma conexão poderá ser inicializada por ela.
+O nome da Rede é automaticamente atribuído pelo sistema, seguinto o padrão:
+Redes do tipo OFTP: TCPIP_<Numero_da _rede>
+Redes do tipo SUPERVISÃO: TCPIP_SUP_<Numero_da_rede>
+```
+A segunda seção a ser preenchida varia a depender do tipo de Rede escolhida, segue abaixo tabelas
+explicativas para facilitar o preenchimento das informações em ambos os casos
+
+Rede escolhida - OFTP
+
+```
+Atributo Descrição Valores Permitidos
+```
+```
+Biblioteca Biblioteca^ utilizada^ OpFaTraP^ a ou^ Re Ldibe TOrFaTnsPf.e^ Pra SdFrãToP:.^ STCP^ Lib^ Transfer
+```
+```
+OFTP
+Level Seleção^ do^ nível^ do^ protocolo^ OFTP^ utilizado
+```
+```
+Opções disponíveis:
+1.2, 1.3, 1.4, 2.0.
+```
+```
+Créditos Número^ de^ pacotes^ de^ dados^ enviados^ de^ forma^ a^ controlar^ a^ banda
+utilizada na transmissão.
+```
+```
+Numerais
+```
+```
+Tamanho
+do buffer Tamanho,^ em^ bytes,^ dos^ pacotes^ de^ dados^ enviados. Numerais
+Tempo de
+inatividade
+```
+```
+Tempo, em segundos, em que a Rede permanecerá inativa e
+aceitará reabrir a transmissão caso haja interrupção. Numerais
+```
+
+```
+Atributo Descrição Valores Permitidos
+Nível de
+debug
+```
+```
+Informa o nível de detalhamento em que os logs da Rede serão
+listados pelo sistema no Console Info e arquivos de log. Numerais
+```
+```
+AVISO: Em uma transferência, o emissor poderá enviar o número de pacotes de dados informados para
+o parâmetro créditos antes de o receptor confirmar que está apto para receber a transmissão e que os
+dados serão recebidos com sucesso.
+```
+Rede escolhida - SUPERVISÃO
+
+_Autenticação_
+
+```
+Atributo Descrição Valores Permitidos
+Usuário Nome do usuário de supervisão Quaisquer valores exceto espaços
+Senha Senha deste usuário
+Confirmar Confirmação da senha Mesmo valor da senha
+```
+_Características_
+
+```
+Atributo Descrição
+```
+```
+Valores
+Permitidos
+```
+```
+Biblioteca Biblioteca^ utilizada^ para^ a^ RSeupdee^ drvei^ sSãupo)ervisão.^ (Padrão^ STCP^ Lib
+```
+```
+Intervalo de
+requisições Intervalo,^ em^ "segundos",^ entre^ as^ requisições. Numerais
+Tamanho do
+buffer
+```
+```
+Tamanho dos pacotes de dados enviados pela Rede. Numerais
+```
+
+```
+Atributo Descrição VPaelrmoreitsidos
+```
+```
+Tempo de
+inatividade
+```
+```
+Tempo, em segundos, em que a Rede permanecerá inativa e aceitará
+reabrir a transmissão caso haja interrupção. Numerais
+Nível de
+debug
+```
+```
+Informa o nível de detalhamento em que os logs da Rede serão listadas na
+Interface Local.
+```
+```
+Numerais
+```
+Comunicação
+
+Na seção Comunicação configura-se a comunicação realizada e suas especificidades, siga os tópicos e suas
+tabelas para facilitar a inserção dos valores no cadastro:
+
+_Interface local_
+
+```
+Atributo Descrição VPaelrmoreitsidos
+```
+```
+TCP v 6 Habilitação/Desabilitação do protocolo IPv 6 para a Rede. Csehlaevceionável
+```
+```
+Endereço
+IP
+```
+```
+Endereço IP da Interface Local utilizada para comunicar-se com o serviço
+OFTP. Este parâmetro é obrigatório
+```
+```
+Porta IP
+```
+```
+Porta IP habilitada na Interface local para comunicação com a Rede.
+Parâmetro obrigatório. Numerais
+Nível de
+debug
+```
+```
+Informa o nível de detalhamento em que os logs serão capturados na Interface
+Local. Numerais
+```
+```
+DICA: Para que o sistema busque qualquer Interface Local disponível, preencha o campo Endereço IP
+com o valor "0.0.0.0"
+```
+_4. 1. 1 Características_
+
+```
+Atributo Descrição Valores Permitidos
+```
+```
+Biblioteca
+```
+```
+Biblioteca utilizada para a comunicação da Rede. (Padrão
+STCP Lib Net OpenSSL)
+Compressão
+GZIP
+```
+```
+Habilitação/Desabilitação da compressão dos arquivos ao
+enviá-los. Chave^ selecionável
+```
+
+```
+Atributo Descrição Valores Permitidos
+```
+```
+TCP Max Listen
+```
+```
+Número máximo de processos que serão executados na fila
+do protocolo TCP/IP. Este campo é utilizado para controlar
+todos os processos que são executados simultâneamente na
+conexão.
+```
+```
+Numerais
+```
+```
+Compatibilidade Define^ o^ padrão^ de^ compatibilidade^ da^ Rede^ com^ outras
+aplicações.
+```
+```
+Seleção entre: RFC-
+2204, RFC 1006/1086,
+RVS*, X.25/Router e
+XFB*/SSL
+```
+_TLS-Chave Privativa_
+
+```
+Atributo Descrição Valores Permitidos
+```
+```
+TLS Habilita/Desabilita^ o^ cadastroRe^ ddea.^ chave^ privativa^ TLS^ para^ a
+```
+```
+Chave Chave TLS utilizada para a comunicação da Rede. Quaisquer^ valores^ exceto
+espaço
+Certificado Certificado utilizado para a validação da Chave TLS.
+```
+```
+Senha Senha^ da^ chave^ TLS^ que^ será^ verificada^ na^ comunicação
+da Rede.
+```
+```
+Quaisquer valores exceto
+espaço
+```
+```
+Confirmar Confirmação da senha da chave TLS
+```
+```
+Mesmo valor inserido como
+Senha.
+```
+```
+AVISO: Os campos Chave e certificado são obrigatórios caso a chave TLS esteja habilitada
+```
+_TLS- Certificados CA (Autoridades)_
+
+```
+Atributo Descrição Valores Permitidos
+```
+```
+Arquivo Nome^ do^ arquivo^ que^ contém^ o^ certificado^ TLS^ utilizada^ na^ Rede.
+Formato do arquivo: .cer
+```
+
+```
+Atributo Descrição Valores Permitidos
+```
+```
+Diretório Diretório onde o arquivo do certificado TLS está salvo. Cdear aarqucteirvoes^ de^ caminho
+```
+_TLS - Opções_
+
+```
+Atributo Descrição Valores Permitidos
+```
+```
+Verificar
+certificado
+```
+```
+Opção utilizada para forçar a Rede a checar
+o certificado dos usuários que se
+conectarem a ele.
+```
+```
+Chave selecionável
+```
+```
+Habilitar
+versões
+anteriores
+do SSL
+```
+```
+Opção utilizada para que os certificados em
+versões antigas do SSL sejam habilitados
+para uso. É recomendado que essa opção
+não seja habilitada.
+```
+```
+Chave selecionável
+```
+```
+Arquivo
+DH
+```
+```
+Campo utilizado para cadastrar um arquivo
+DH na Rede. É recomendado que essa
+opção não seja habilitada.
+```
+```
+Algoritmos
+```
+```
+Caixa de seleção dos tipos de algoritmos
+usados para a Rede.
+```
+```
+Pode-se selecionar qualquer um dos
+algoritmos disponíveis ou deixar em
+branco para que o melhor algoritmo seja
+definido automaticamente.
+Nível de
+debug
+```
+```
+Campo de definição do nível de debug dos
+eventos de TLS da Rede.
+```
+```
+Numerais
+```
+Para concluir o processo de cadastro da Rede OFTP, clique em "Salvar" como mostrado na imagem a seguir.
+
+
+### 4. 3 Editar Redes
+
+Para editar uma Rede, acesse a lista de Redes em "Módulos -> Configurador STCP -> Redes -> Editar" no
+ícone à direita;
+
+Após acessar a edição, altere os campos desejados e salve as alterações.
+
+```
+AVISO: O campo "Nome:" da Rede não pode ser alterado!
+```
+### 4. 4 Copiar/Exibir Redes
+
+A cópia ou exibição das Redes é realizada através do menu de opções ao lado da Rede desejada na lista de
+Redes. Para executar uma dessas ações, clique no ícone de opções ao lado de uma Rede e escolha a função
+"Copiar" ou "Exibir" como mostrado na imagem a seguir:
+
+
+```
+NOTA Ao clicar em "Exibir", os campos do Tipo de Aquivo ficarão desabilitados e não será possível
+editá-los.
+```
+### 4. 5 Remover Redes
+
+Para remover uma Rede, siga os passos:
+
+```
+Acesse a lista de Redes;
+Acesse os menus de seleção em uma Rede desejada clicando na seta e selecionando a opção
+"Remover" *
+```
+```
+Clique em "X Remover" ao ser questionado por "Esta ação é irreversível. Tem certeza que deseja
+remover este registro?"
+```
+## 5. Configurações de Usuários
+
+### 5. 1 Adicionar Usuário
+
+O STCP Gemini Portal permite criar novos Usuários acessando o menu Usuários em "Módulos ->
+Configurador STCP -> Usuários" e clicando em "+Adicionar".
+
+
+```
+NOTA: Para facilitar a compreensão e definição dos campos e atributos, o cadastro é dividido em
+seções e subseções como mostrado na imagem a seguir:
+```
+Identificação do Usuário
+
+A primeira seção a ser preenchida é a de identificação. Segue uma tabela descrevendo quais informações do
+usuário devem ser inseridas e suas especificidades:
+
+```
+Campo Descrição Valores Permitidos
+```
+```
+Desabilitado
+```
+```
+Bloqueia o usuário de realizar conexões e trasferir
+arquivos. Chave^ selecionável
+```
+```
+Nome (Obrigatório) Nome do Usuário a ser cadastrado. Qespuaaisquçoer^ valores^ exceto
+```
+```
+Descrição Descrição do usuário que está sendo criado.
+```
+```
+E-mail E-mail válido do usuário Enommaiel^ @noe^ mformail.caomto
+```
+
+```
+Campo Descrição Valores Permitidos
+Senha
+(Obrigatório) Senha^ para^ o^ usuário
+Confirmar
+(Obrigatório) Confirmação^ da^ senha^ definida^ anteriormente.
+```
+```
+Mesmo valor inserido para a
+senha
+```
+```
+NOTA: Ao criar a senha do usuário, deve-se seguir as políticas de senha definidas na criação de
+Instâncias. Pode-se visualizar abaixo que as políticas estão sendo seguidas nos campos "Senha" e
+"Confirmar"
+```
+Características do Usuário
+
+A segunda seção a ser cadastrada é a de características. Segue abaixo uma tabela explicativa dos campos que
+devem ser preenchidos:
+
+```
+Campo Descrição VPaelrmoreitsidos
+```
+```
+Tipo de Arquivo
+Padrão
+```
+```
+Definição de qual tipo de arquivo será definido como Padrão para o
+Usuário
+```
+```
+Seleção entre
+os disponíveis
+Máximo de
+sessões Número^ de^ sessões^ que^ poderão^ ser^ abertas^ por^ este^ Usuário. Numerais
+Backup
+arquivos
+transmitidos
+```
+```
+Chave utilizada para que os arquivos enviados pelo usuário sejam
+salvos na pasta BACKUP do sistema.
+```
+```
+Chave
+selecional
+```
+```
+Nome longo
+para arquivos
+```
+```
+Chave utilizada para permitir que arquivos com mais de 26
+caracteres com até 128 caracteres possam ser transferidos
+```
+```
+Chave
+selecionável
+Senha nunca
+expira
+```
+```
+Permite que a senha do usuário nunca expire e não tenha
+necessidade de ser alterada
+```
+```
+Chave
+selecionável
+Transmissão
+otimizada
+```
+```
+Permite que usuário envie arquivos de sua pasta Saída ao receber
+uma conexão
+```
+```
+Chave
+selecionável
+```
+
+```
+Campo Descrição VPaelrmoreitsidos
+```
+```
+OFTP Chave^ utilizada^ para^ habilitar^ ou^ desabilitar^ a^ opção^ de^ cadastro^ do
+Odette ID para o usuário.
+```
+```
+Chave
+selecionável
+```
+```
+SFTP
+```
+```
+Chave utilizada para habilitar ou desabilitar a opção de cadastro do
+SFTP ID para o usuário.
+```
+```
+Chave
+selecionável
+```
+```
+NOTA: Só é possível adicionar um tipo de arquivo previamente criado.
+```
+```
+AVISO: Os tipos de arquivo do usuário possuem prioridade em relação aos da instância, ou seja, as
+tratativas definidas na instância só ocorrerão caso não haja nenhuma tratativa definida para o usuário
+utilizado na transferência.
+```
+SELECIONANDO A OPÇÃO OFTP
+
+OFTP | Geral
+
+A terceira seção caso a opção OFTP seja habilitada é a OFTP|Geral, dividida nas subseções Minha
+Identificação e as Características do usuário cadastrado.
+
+```
+Minha identificação: A primeira subseção contém os cadastros do Odette ID para comunicar-se com
+outros usuários. Abaixo encontra-se uma tabela explicativa com as especificidades dos campos:
+```
+```
+Campo Descrição Valores Permitidos
+OID (Odette
+ID):
+```
+```
+Identificação do usuário com quem se fará a
+comunicação.
+Senha
+(Obrigatório)
+```
+```
+Senha do Odette ID com quem se fará a
+comunicação.
+```
+```
+Confirmar Confirmaaçntãoe^ rdiorma^ seennthae^ definida Danteveer-iormse^ insenteeri.r^ a^ mesma^ senha^ definida
+```
+```
+Userdata Dados^ extra^ associados^ à^ identificação
+Odette informada.
+```
+```
+NOTA: Preencha o campo Userdata somente se for requerido pelo servidor.
+```
+
+```
+Dica de Odette ID: Caso de exemplo: Um user 2 está sendo criado e deve comunicar-se com o user 1.
+Para isso, no campo "Minhas identificações" os parâmetros Odette ID e Senha devem conter as
+informações do "user1". O esquema de cadastro pode ser explicado utilzando o esquema a seguir:
+```
+```
+Características: Como o nome descreve nesta subseção devem ser inseridas as características do
+usuário. Segue abaixo a tabela com os campos e suas descrições:
+```
+Campo Descrição Valores Permitidos
+
+Biblioteca Biblioteca^ utilizada^ parTar^ aons^ usuferá rOioF.T^ VPa"lor^ padrão:^ "STCP^ Lib
+
+OFTP Level Seleção^ do^ nível^ do^ protocolo^ OFTP^ que^ será^ utilizado
+para o Usuário.
+
+```
+Opções disponíveis: 1.2,
+1.3, 1.4, 2.0.
+```
+Modo de
+Conexão
+
+```
+Seleção se o Usuário poderá Iniciar uma conexão,
+Receber uma conexão (Responder) ou Ambos.
+```
+```
+Opções disponíveis:
+"Initiator", "Responder" e
+"Both".
+```
+Modo de
+Transferência
+
+```
+Seleção se o Usuário poderá Enviar arquivos, Receber
+arquivos ou Ambos.
+```
+```
+Opções disponíveis:
+"Both", "Sender" ou
+"Receiver".
+```
+Créditos Número^ de^ paac botaensd^ ad eut^ dilaizdaosda^ e nnva itradansmos^ diess^ formão.a^ a^ controlar Numerais
+
+Tamanho
+máximo do
+buffer
+
+```
+Tamanho em bytes dos pacotes utilizados na transmissão
+de arquivos. Recomendação: Valores maiores que 1024 Numerais
+```
+Compressão Habilita/Desabilita^ a^ comprreceessbidãoso^ dos^ arquivos^ enviados^ e Chave selecionável
+
+Restart Habilita/Desabilita^ que^ os^ arquivos^ sejam^ salvos^ na^ pasta
+RESTART enquanto estão sendo recebidos.
+
+```
+Chave selecionável
+```
+Controle de
+EERP
+
+```
+Habilita/Desabilita a resposta de sucesso EERP ao fim de
+uma transmissão Chave^ selecionável
+```
+
+```
+Campo Descrição Valores Permitidos
+Tempo
+máximo de
+inatividade
+```
+```
+Tempo máximo de inatividade caso a conexão com algum
+usuário falhe, em segundos. Numerais
+```
+```
+Nível de
+Debug
+```
+```
+Nível dos debugs obtidos no Usuário e mostrados nos logs
+do sistema. Numerais
+```
+```
+PS: Em uma transferência o emissor poderá enviar o número de pacotes de dados informados para o
+parâmetro créditos antes de o receptor confirmar que está apto para receber a transmissão e que os
+dados serão recebidos com sucesso.
+```
+```
+OFTP 2: Caso o OFTP Level escolhido seja o 2.0, aparecerá a chave de seleção "Autenticação OFTP2:"
+deverá ser habilitada para o preenchimento dos campos de autenticação:
+```
+Para preencher os campos da Autenticação OFTP2, verifique a tabela a seguir:
+
+```
+Campo Descrição VPaelrmoreitsidos
+```
+```
+Chave
+Local
+```
+```
+Chave local utilizada para a comunicação com o outro Usuário envolvido
+na conexão. (NÃO CONFUNDIR COM A CHAVE TLS PARA COMUNICAR-
+SE COM A REDE)
+```
+```
+Quaisquer
+valores exceto
+espaços.
+```
+```
+Senha Senha utilizada na Autenticação OFTP2.
+```
+```
+Quaisquer
+valores exceto
+em branco.
+```
+```
+Confirmar Confirmar a senha utilizada.
+```
+```
+Quaisquer
+valores exceto
+em branco.
+```
+
+Campo Descrição VPaelrmoreitsidos
+
+Certificado
+Local
+
+```
+Certificado utilizado para a comunicação com o outro Usuário da conexão
+OFTP 2 (NÃO CONFUNDIR COM TLS DA REDE).
+```
+```
+Quaisquer
+valores exceto
+em branco.
+```
+Certificado
+Remoto
+
+```
+Certificado utilizado para validar o outro Usuário da conexão OFTP 2 (NÃO
+CONFUNDIR COM TLS DA REDE).
+```
+```
+Quaisquer
+valores exceto
+em branco.
+```
+```
+Dica de OFTP2: Caso de exemplo: Um User 1 está se comunicando com um User 2 utilizando o OFTP
+Level 2.0. Para realizar a conexão utilizando a autenticação 2.0, deve-se inserir um certificado local em
+cada um dos Usuários, fornecendo ao outro usuário um certificado remoto que possa validar o
+certificado local definido. Por exemplo, o user 1 insere um certificado local "X" e passa ao usuário 2
+um certificado remoto "Y" que possa validar esse certificado durante a conexão realizada entre eles.
+```
+
+OFTP | Comunicação
+
+A quarta seção a ser cadastrada é a "OFTP | Comunicação" que, como descrito pelo nome, é o local onde
+deve-se inserir as informações de comunicação entre os usuários durante a transmissão. Segue abaixo as
+tabelas explicativas dos campos e suas especificidades:
+
+```
+Interface primária: Representa o usuário com quem deseja-se fazer a transmissão.
+```
+```
+Campo Descrição Valores Permitidos
+Habilitar Habilitação/Desabilitação da interface primária Chave selecionável
+```
+```
+TCP version Definição^ de^ qual^ vutersilizãaod^ doe^ protocolo^ IP^ será EIPsvc 6 olha^ entre^ IPv^4 e
+```
+```
+Endereço IP Remoto
+(Obrigatório)
+```
+```
+Endereço IP do servidor remoto com o qual se fará
+a comunicação
+```
+```
+Valores dentro do
+padrão FQDN
+```
+```
+Porta IP (Obrigatório) Porta^ IP^ do^ servidor^ remoto^ inserido^ no^ campo
+anterior.
+```
+```
+Numerais
+```
+```
+Endereço IP Local Endereço IP Local utilizado pelo Usuário.
+```
+```
+Valores dentro do
+padrão FQDN
+```
+```
+Porta IP Porta^ IP^ do^ Eanntdeerrieormço^ eIPnt^ Leo.cal^ definido Numerais
+```
+```
+Nível de debug Indicação de quais logs serão capturados Numerais
+```
+
+```
+Interface secundária: A interface secundária tem o propósito de ser uma precaução caso a conexão seja
+interrompida com a interface primária. Ela só se ativará no caso descrito e os campos de cadastro são
+podem ser os mesmos da interface primária ou outro configurado.
+```
+_Características_
+
+```
+Campo Descrição Valores Permitidos
+```
+```
+Biblioteca Bbibiblilotioteeccaa^ ut Pializdarãdoa én aS^ cTomunCP Libi cNaeçtã Oop^ OeFnTSSP.L^ .A
+```
+```
+Compatibilidade Define^ o^ padrão^ de^ compatibilidade^ do^ serviço
+com outras aplicações
+```
+```
+Seleção entre: RFC-2204, RFC
+1006/1086, RVS*, X.25/Router e
+XFB*/SSL
+Compressão
+GZIP
+```
+```
+Habilitação/Desabilitação da compressão dos
+arquivos ao enviá-los Chave^ selecionável
+Comunicação
+segura
+```
+```
+Habilitar/Desabilitar a comunicação segura
+TLS Selecionar^ entre^ Desabilitado^ e^ TLS
+```
+_TLS - Chave privativa_
+
+
+```
+CCaampompo DDeessccrriiççããoo VVaallororeess PPeermrmiittiiddosos
+Chave
+(Obrigatório)
+```
+```
+Chave para habilitar ou não o cadastro da
+chave privativa TLS para o Usuário
+Certificado
+(Obrigatório)
+```
+```
+Certificado utilizado para a validação da
+Chave TLS.
+```
+```
+Senha Senha^ da^ chave^ TLS^ que^ será^ verificada^ no
+Usuário.
+```
+```
+Confirmar
+```
+```
+Confirmação da senha inserida para a chave
+privativa do usuário.
+```
+```
+Deve-se inserir o mesmo valor definido
+anteriormente no campo "Senha".
+```
+_TLS - Certificados CA (Autoridades)_
+
+```
+Campo Descrição Valores Permitidos
+```
+```
+Arquivo Arquivo^ que^ contUsuémár^ oio^ c noert fiormficadaoto^ T .LcSe^ rutilizado^ para^ o Acerqurtifivoica^ dcomo T^ LoS^ f.ormato^ de^ um
+```
+```
+Diretório Diretório onde o arquivo do certificado TLS está salvo. Caminho válido no sistema
+```
+_TLS - Opções_
+
+```
+Campo Descrição VPaelrmoreitsidos
+```
+```
+Verificar Certificado Habilitação/Desabilitação^ da^ funcionalidade^ de^ análise^ do
+certificado do Usuário.
+```
+```
+Chave
+selecionável
+Habilitar versões
+anteriores do SSL
+```
+```
+Possibilita que as versões mais antigas do SSL sejam
+utilizadas ou não.
+```
+```
+Chave
+selecionável
+```
+```
+Algoritmos Campo^ de^ seleção^ dosce^ Artlgiforicaitmosdos^ para^ verificação^ dos Mseelenucionável
+```
+```
+Nível de debug Define^ o^ nível^ dreel^ adceionbuagd^ ospa raao^ v TerLifSic.ação^ dos^ logs Numerais
+```
+
+#### SELECIONANDO A OPÇÃO SFTP
+
+SFTP | Geral
+
+A terceira seção caso a opção SFTP seja habilitada é a SFTP Geral, dividida nas subseções Minha
+Identificação e as Características do Usuário SFTP.
+
+```
+Minha identificação: A primeira subseção contém os cadastros do SFTP ID e a sua respectiva Senha
+para comunicar-se com o Servidor SFTP. Abaixo encontra-se uma tabela explicativa com as
+especificidades dos campos:
+```
+```
+Campo Descrição Valores Permitidos
+OID (SFTP
+ID):
+```
+```
+Identificação do Usuário de acordo com as credenciais
+passadas pelo Servidor SFTP (Usuário SFTP para acesso).
+Senha
+(Obrigatório) Senha^ do^ SFTP^ ID^ com^ quem^ se^ fará^ a^ comunicação.
+```
+```
+Confirmar Confirmação da senha definida anteriormente
+```
+```
+Deve-se inserir a mesma
+senha definida
+anteriormente.
+Userdata Dados extra associados à identificação Odette informada.
+```
+```
+NOTA: Preencha o campo Userdata somente se for requerido pelo servidor.
+```
+```
+Características: Como o nome descreve nesta subseção devem ser inseridas as características do
+usuário. Segue abaixo a tabela com os campos e suas descrições:
+```
+```
+Campo Descrição Valores Permitidos
+```
+```
+Biblioteca Biblioteca^ utilizada^ parTar^ oans^ usufeár rSioF.T^ VPa"lor^ padrão:^ "STCP^ Lib
+```
+
+```
+Campo Descrição Valores Permitidos
+```
+```
+Modo de
+Conexão
+```
+```
+Seleção se o Usuário poderá Iniciar uma conexão,
+Receber uma conexão (Responder) ou Ambos.
+```
+```
+Opções disponíveis:
+"Initiator", "Responder" e
+"Both".
+```
+```
+Modo de
+Transferência
+```
+```
+Seleção se o Usuário poderá Enviar arquivos, Receber
+arquivos ou Ambos.
+```
+```
+Opções disponíveis:
+"Both", "Sender" ou
+"Receiver".
+Tamanho
+máximo do
+buffer
+```
+```
+Tamanho em bytes dos pacotes utilizados na transmissão
+de arquivos. Recomendação: Valores maiores que 1024
+```
+```
+Numerais
+```
+```
+Tempo
+máximo de
+inatividade
+```
+```
+Tempo máximo de inatividade caso a conexão com algum
+usuário falhe, em segundos. Numerais
+```
+```
+Nível de
+Debug
+```
+```
+Nível dos debugs obtidos no Usuário e mostrados nos logs
+do sistema. Numerais
+```
+SFTP | Comunicação
+
+A quarta seção a ser cadastrada é a "SFTP | Comunicação" que, como descrito pelo nome, é o local onde
+deve-se inserir as informações de comunicação entre o Usuário e o Servidor SFTP, com foco nas informações
+de Interfaces Primária e Secundária, além das Auntenticações de Chave Pública e do Servidor, Controle de
+Download e Upload.
+
+```
+Interface Primária e Interface Secundária: Representa o Servidor SFTP com quem deseja-se fazer a
+conexão.
+```
+```
+Campo Descrição Valores Permitidos
+Habilitar Habilitação/Desabilitação da interface primária Chave selecionável
+Endereço IP Remoto
+(Obrigatório)
+```
+```
+Endereço IP do Servidor SFTP com o qual se fará
+a comunicação
+```
+```
+Valores dentro do
+padrão FQDN
+```
+```
+Porta IP (Obrigatório)
+```
+```
+Porta IP do Servidor SFTP inserido no campo
+anterior. Numerais
+```
+
+```
+NOTA: Pode-se escolher por qual Interface o Usuário irá se conectar ao Servidor SFTP. Caso a Interface
+Primária esteja incorreta e a Interface Primária seja correta, ao Iniciar a Conexão, o usuário irá tentar na
+primeira Interface e após a falha na tentativa, irá conectar-se pela Interface Secundária.
+```
+A quinta seção a ser cadastrada é a "Autenticação de Chave Pública" que é o local onde pode-se inserir uma
+Chave de Autenticação fornecida pelo Servidor SFTP para realizar a conexão corretamente e uma Senha, caso
+a Chave possua uma Senha definida.
+
+```
+Campo Descrição Valores Permitidos
+Chave
+privada
+```
+```
+Chave privada fornecida pelo Servidor SFTP para
+conectar-se corretamente.
+```
+```
+Colocar o caminho e o arquivo da
+Chave.
+```
+```
+Senha Senha^ definida^ para^ dae^ Cfihnaidvae.,^ caso^ ela^ tenha^ sido
+```
+```
+Confirmar Confirmar a Senha inserida anteriormente. Deve-se^ inserir^ a^ mesma^ senha
+definida anteriormente.
+```
+```
+NOTA: A Autenticação pela Chave não é obrigatória, o Usuário pode escolher se irá conectar-se pela
+Chave Pública ou pelo SFTP ID e Senha.
+```
+A próxima seção a ser cadastrada é a "Autenticação do Servidor" que é o local onde pode-se inserir o
+FigerPrint, que é um código de verificação quando a Conexão é realizada do Usuário para o Servidor SFTP.
+
+```
+Campo Descrição Valores Permitidos
+```
+```
+FingerPrint Código^ para^ verificaSçeãrvo^ didaor^ c onSFeTxPã.o^ do^ Usuário^ com^ o CFianrgaecrtPerrients^ do^ Código
+```
+```
+NOTA: A Autenticação pelo FingerPrint não é obrigatória.
+```
+
+```
+Dica de SFTP: O Diagrama a seguir mostra como é realizada a Conexão do usuário com o Servidor
+SFTP e as autenticações opcionais que podem ser utilizadas:
+```
+As últimas seções a serem cadastradas são as de "Controle de Download" e "Controle de Upload", sendo
+estas responsáveis pelos diretórios nos quais os Usuários irão baixar os arquivos para suas pastas de
+ENTRADA (Diretório de Download) e dos quais o Usuário irá enviar seus arquivos da pasta de SAIDA para o
+Servidor SFTO (Diretório de Upload).
+
+```
+Controle de Download: Nesta seção, são preenchidos os campos relacionados aos arquivos que serão
+baixados do Servidor SFTP para o Usuário ao realizar a conexão.
+```
+```
+Campo Descrição
+```
+```
+Valores
+Permitidos
+```
+```
+Diretório
+remoto
+```
+```
+Local de onde os Usuários irão baixar os arquivos do Servidor SFTP para
+suas pastas de ENTRADA
+```
+```
+Colocar o
+caminho do
+diretório que
+está no Servidor
+SFTP.
+```
+```
+Diretório
+de
+backup
+```
+```
+Local onde é realizado o backup dos arquivos baixados do Servidor SFTP.
+```
+```
+Caminho do
+diretório de
+backup no
+Servidor SFTP
+```
+```
+Extensão
+de
+backup
+```
+```
+Extensão que será adicionada ao arquivo salvo no diretório de backup do
+Servidor SFTP. Se a extensão for ".txt", ao receber um arquivo "teste", a
+extensão será adicionada "teste.txt" ao arquivo quando este for salvo no
+diretório de backup
+```
+```
+Qualquer
+extensão
+desejada.
+```
+```
+Máscara
+de
+arquivo
+```
+```
+Um "Regex" utilizado para filtrar os arquivos que serão baixados pelo
+Usuário do diretório remoto do Servidor SFTP
+```
+```
+Um Regex
+válido.
+```
+```
+Apagar
+arquivo
+```
+```
+Opção utilizada para apagar os arquivos após serem baixados do Servidor
+SFTP ou não.
+```
+```
+Chave seletora,
+habilitar ou
+desabilitar.
+```
+
+```
+Dica de Download dos Arquivos do Servidor SFTP: O Diagrama a seguir mostra como é realizado o
+processo de download dos arquivos do Servidor SFTP pelo usuário e a utilização das funcionalidades
+mostradas anteriormente.
+```
+```
+Controle de Upload: Nesta seção, são preenchidos os campos relacionados aos arquivos que serão
+enviados do Usuário do Gemini para o Servidor SFTP ao realizar a conexão.
+```
+Campo Descrição Valores Permitidos
+
+Diretório
+remoto
+
+```
+Local de onde os Usuários irão enviar os arquivos de
+sua pasta de SAÍDA para Servidor SFTP.
+```
+```
+Colocar o caminho do diretório
+remoto que está no Servidor SFTP.
+```
+Diretório
+temporário
+
+```
+Local onde os arquivos ficam enquanto estão sendo
+enviados do Usuário para o Servidor SFTP.
+```
+```
+Caminho do diretório temporário no
+Servidor SFTP
+```
+Extensão
+temporária
+
+```
+Extensão que será adicionada ao arquivo quando ele
+estiver na pasta temporária do Servidor SFTP
+```
+```
+Inserir uma extensão para ser
+adicionada.
+```
+
+Controle de Conexão
+
+A quinta seção a ser preenchido é a de Controle de Conexão possibilita a utilização de filtros de conexão,
+execução de comandos antes, ao iniciar e ao finalizar conexões e requisição de espera por parte do sistema
+até o término de execução de um comando.
+
+```
+Campo Descrição Valores Permitidos
+```
+```
+Filtro de
+Conexão
+```
+```
+Expressão regular que filtra os arquivos
+transferidos em uma conexão
+```
+```
+Deve-se inserir uma expressão regular
+para que os arquivos sejam filtrados na
+conexão.
+Executar
+comando antes
+da conexão
+```
+```
+Definir um comando que será executado
+antes da conexão do usuário ser iniciada.
+```
+```
+Deve-se inserir o caminho do script que
+executará a conexão.
+```
+```
+Aguardar o
+término da
+execução do
+comando
+```
+```
+Habilita/Desabilita que o sistema aguarde
+o término da execução do comando
+definido no campo anterior.
+```
+```
+Chave selecionável
+```
+```
+Executar
+comando no
+início da
+conexão
+```
+```
+Habilita/Desabilita que o sistema aguarde
+o término da execução do comando
+definido no campo anterior.
+```
+```
+Chave selecionável
+```
+```
+Executar
+comando no fim
+da conexão
+```
+```
+Definir um comando que será executado
+ao finalizar a conexão do Usuário.
+```
+```
+Deve-se inserir o caminho do script que
+executará a conexão.
+```
+```
+Aguardar o
+término da
+execução do
+comando
+```
+```
+Executar comando no início da conexão
+```
+```
+Habilita/Desabilita que o sistema aguarde
+o término da execução do comando
+definido no campo anterior.
+```
+
+#### AVISO
+
+```
+Caso uma expressão regular (Regex) tenha sido definida no campo "Filtro de Conexão:", apenas
+arquivos que contenham a expressão em seu nome/extensão poderão ser enviados ou recebidos por
+esse Usuário.
+```
+Período de Conexão
+
+A sexta seção a ser preenchida é a de Período de Conexão, ela permite definir um período de tempo em que a
+conexão pode ser realizada pelo Usuário. Segue abaixo uma tabela explicativa contendo os campos e suas
+especificidades.
+
+```
+Campo Descrição Valores Permitidos
+```
+```
+Hora
+Início
+```
+```
+Define a partir de qual horário a
+conexão do Usuário poderá ser
+realizada.
+```
+```
+Numerais
+```
+```
+Hora
+Término
+```
+```
+Define o horário final, ou até
+quando a conexão do Usuário
+poderá ser realizada.
+```
+```
+Numerais
+```
+```
+Dias da
+Semana
+```
+```
+Define os dias da semana em que
+poderá iniciar-se uma conexão
+```
+```
+Valores permitidos (Dom.,Seg.,Ter.,Qua.,Qui.,Sex. e Sáb.)
+```
+```
+Padrão Resetpaa^ od^ rpãeor ídood osi^ dstee^ mcona.exão
+```
+```
+Define o horário de início como "000000", o Horário de
+Término para "235959" e todos os dias da semana
+serão selecionados.
+```
+
+Controle de Hash da Máquina
+
+Nesta seção, pode-se habilitar a funcionalidade de verificação dos Usuários através do Hash de Máquina.
+Esta funcionalidade impõe que um usuário possa se conectar ao Server apenas através de uma máquina.
+Segue abaixo uma tabela explicativa:
+
+```
+Campo Descrição Valores Permitidos
+Verificar
+na
+conexão
+de
+entrada
+```
+```
+Funcionalidade utilizada para que o
+usuário verifique o Hash de Máquina
+das conexões recebidas por ele.
+```
+```
+Chave seletora
+```
+```
+Enviar
+na
+conexão
+de saída
+```
+```
+Esta funcionalidade ativa o envio do
+Hash de Máquina pelo usuário quando
+ele realiza uma solicitação de conexão
+de saída.
+```
+```
+Caso seja habilitada, o Usuário irá enviar o Hash de
+máquina ao realizar a conexão de saída para outro
+usuário, se não for habilitada, nenhum Hash será
+enviado.
+```
+Controle de arquivos na transmissão
+
+Finalmente, as últimas seções de cadastro dos Usuários são responsáveis pelas configurações dos arquivos
+transmitidos e recebidos pelo Usuário. Segue as tabelas das subseções contendo os campos e suas
+especificidades:
+
+
+CCaampompo DDeessccrriiççããoo VPVPaeaelrmlrmororeeiittssiiddosos
+
+Filtro de arquivos Expressão^ regular^ que^ filtra^ os^ arquivos^ transmitidos
+pelo usuário em uma conexão
+
+Tamanho mínimo
+
+```
+Define o tamanho mínimo dos arquivos enviados em
+pacotes de 1024 Bytes. Numerais
+```
+Tamanho máximo Define^ o^ tamanphaoc^ motáexsi mode 1024 dos^ a Brquyteivoss.^ enviados^ em Numerais
+
+Enviar ID local do arquivo no
+campo Userdata Este^ botão^.
+
+```
+Esta opção
+permite que...
+```
+#### NOTA
+
+```
+Cálculo do tamanhos mínimo e máximo dos arquivos:
+A definição dos tamanhos de arquivos e a análise dos arquivos transmitidos e recebidos são
+realizadas a partir de pacotes de 1024 Bytes. Configurando o campo "Tamanho mínimo:" com um
+valor x , o sistema realizará o seguinte cálculo:
+```
+Campo
+Tamanho
+Mínimo
+
+```
+Valor em Pacotes de 1024 Bytes
+```
+Valor
+múltiplo de
+1024 Bytes
+
+```
+O sistema irá considerar o valor exatamente como está no campo "Tamanho Mínimo".
+```
+Valor não
+múltiplo de
+1024 bytes
+
+```
+O sistema irá pegar o valor do cálculo valor/1024 = (valor arredondado para o próximo
+número inteiro acima do número decimal * 1024), este será o valor do tamanho mínimo
+considerado pelo sistema.
+```
+```
+Ou seja, definindo o "Tamanho mínimo" como 1 Byte, o sistema irá fazer o cálculo de 1/1024 =
+0,00097 aproximadamente. Esse número será arredondado para 1 (número inteiro mais próximo acima
+do número decimal) e por fim, irá multiplicá-lo por 1024 (1*1024), logo, o tamanho mínimo deverá ser
+1024 Bytes.
+```
+```
+Exemplos de Configurações dos Arquivos
+```
+
+Tamanho
+Mínimo
+
+```
+Tamanho
+do Arquivo
+a ser
+Transferido
+```
+```
+Resultado
+```
+Tamanho
+Mínimo
+
+```
+Tamanho
+do Arquivo
+a ser
+Transferido
+```
+```
+Resultado
+```
+Qualquer
+valor entre
+1 e 1024
+inclusive
+
+```
+Arquivo
+com
+tamanho
+menor ou
+igual a
+1023.
+```
+```
+A transferência será bloqueada pois o arquivo tem menos de 1024 Bytes
+que é o resultado da conta [ ( {1 ≤ número ≤ 1023} /1024) RESULTADO
+ARREDONDADO PARA CIMA ATÉ O PRIMEIRO NÚMERO INTEIRO (no
+caso será 1) * 1024].
+```
+Qualquer
+valor entre
+1024 e
+2048
+inclusive
+
+```
+Arquivo
+com
+tamanho
+menor ou
+igual a
+2047.
+```
+```
+A transferência será bloqueada pois o arquivo tem menos de 2048 Bytes
+que é o resultado da conta [ ( {1025 ≤ número ≤ 2047} /1024)
+RESULTADO ARREDONDADO PARA CIMA ATÉ O PRIMEIRO NÚMERO
+INTEIRO (no caso será 2) * 1024].
+```
+Qualquer
+valor entre
+2049 e
+3071
+inclusive
+
+```
+Arquivo
+com
+tamanho
+menor ou
+igual a 3071.
+```
+```
+A transferência será bloqueada pois o arquivo tem menos de 3072 Bytes
+que é o resultado da conta [ ( {2049 ≤ número ≤ 3071} /1024)
+RESULTADO ARREDONDADO PARA CIMA ATÉ O PRIMEIRO NÚMERO
+INTEIRO (no caso será 3) * 1024].
+```
+Tamanho
+Máximo
+
+```
+Tamanho
+do Arquivo
+a ser
+Transferido
+```
+```
+Resultado
+```
+Qualquer
+valor entre
+1 e 1024
+inclusive
+
+```
+Arquivo
+com
+tamanho
+maior que
+1024.
+```
+```
+A transferência será bloqueada pois o arquivo é maior ou igual de 1024
+Bytes que é o resultado da conta [ ( {1024 ≥ número} /1024)
+RESULTADO ARREDONDADO PARA CIMA ATÉ O PRIMEIRO NÚMERO
+INTEIRO (no caso será 1) * 1024].
+```
+Qualquer
+valor entre
+1024 e
+2048
+inclusive
+
+```
+Arquivo
+com
+tamanho
+maior que
+2048.
+```
+```
+A transferência será bloqueada pois o arquivo é maior ou igual de 1024
+Bytes que é o resultado da conta [ ( {1024 ≥ número} /1024)
+RESULTADO ARREDONDADO PARA CIMA ATÉ O PRIMEIRO NÚMERO
+INTEIRO (no caso será 1) * 1024].
+```
+Qualquer
+valor entre
+1 e 1024
+inclusive
+
+```
+Arquivo
+com
+tamanho
+maior que
+1023.
+```
+```
+A transferência será bloqueada pois o arquivo é maior ou igual de 1024
+Bytes que é o resultado da conta [ ( {1024 ≥ número} /1024)
+RESULTADO ARREDONDADO PARA CIMA ATÉ O PRIMEIRO NÚMERO
+INTEIRO (no caso será 1) * 1024].
+```
+```
+AVISO É importante destacar que caso o arquivo tenha o tamanho igual ao valor de tamanho máximo,
+ele será bloqueado. Assim, a lógica é "tamanho_mínimo ≤ arquivo < tamanho máximo"
+```
+
+Controle de arquivos na recepção
+
+A última seção de cadastro dos Usuários é o Controle de arquivos na recepção. Consulte a tabela abaixo
+para obter mais informações sobe o preenchimento.
+
+```
+Campo Descrição Valores Permitidos
+```
+```
+Filtro de
+arquivos
+```
+```
+Expressão regular que filtra os arquivos
+recebidos pelo usuário em uma
+conexão
+Tamanho
+mínimo
+```
+```
+Define o tamanho mínimo dos arquivos
+recebidos. Numerais
+Tamanho
+máximo
+```
+```
+Define o tamanho máximo dos arquivos
+recebidos.
+```
+```
+Numerais
+```
+```
+Criar referência
+de arquivo
+recebido
+```
+```
+Este botão.
+```
+```
+As possíveis escolhas são: "Não", "Sim -
+Com timestamp", "Sim - Sem
+timestamp".
+```
+Finalmente, para adicionar o Usuário e concluir o cadastro, clique em "Salvar" e visualize-o na lista de
+Usuários existentes.
+
+### 5. 2 Editar Usuários
+
+Para editar um Usuário, acesse a lista de Usuários em "Módulos -> Configurador STCP -> Usuários ->
+Editar".
+
+
+Após acessar a edição, altere os campos desejados e salve as alterações.
+
+```
+AVISO O campo "Nome:" da Instância não pode ser alterado!
+```
+### 5. 3 Copiar/Exibir Usuários
+
+A cópia ou exibição dos Usuários é realizada através do menu de opções ao lado esquerdo da lista de Usuários.
+Para executar uma dessas ações, clique no ícone de opções e escolha a função "Copiar" ou "Exibir" como
+mostrado na imagem a seguir:
+
+```
+NOTA Ao clicar em "Exibir", os campos do Usuário ficarão desabilitados e não será possível editá-los.
+```
+
+### 5. 4 Remover Usuários
+
+Por fim, para remover um Usuário existente, deve-se acessar as opções, clicar em "Remover" e quando a
+mensagem de aviso for mostrada clique em "OK" para removê-lo.
+
+### 5. 5 Adicionar Tipos de Arquivo de Usuário
+
+O processo de criação dos tipos de arquivo para um Usuário é idêntico ao cadastro de Tipos de arquivo das
+Instâncias. Para adicionar um tipo de arquivo de usuário, acesse "Módulos -> Configurador STCP ->
+Usuários", clicando na expansão das opções e por fim em "Tipos de Arquivo".
+
+```
+AVISO: É importante destacar que os tipos de arquivo só ficam disponíveis para o usuário que os criou.
+```
+
+Ao acessar a tela de "Tipos de Arquivo", clique em "+Adicionar" e cadastre os campos do Tipo de Arquivo da
+mesma forma que o cadastro do Tipo de Arquivo de Instâncias.
+
+```
+AVISO: Observe que o Tipo de Arquivo DEFAULT NÃO É criado automaticamente para o Usuário.
+Caso queira atribuir um Tipo de arquivo Default a um Usuário, acesse a Edição deste Usuário e
+atribua o Tipo de arquivo -> seção "Características" -> campo "Tipo de Arquivo Padrão:".
+```
+Clique no Tipo de Arquivo que será atribuído ao Usuário.
+
+
+### 5. 6 Editar Tipos de Arquivo
+
+Para editar um tipo de arquivo de um Usuário, acesse a lista de Usuários em "Módulos -> Configurador STCP
+-> Usuários -> Tipos de Arquivo -> Editar".
+
+Após acessar a edição, altere os atributos desejados e salve as alterações.
+
+```
+NOTA Não é possível alterar as seguintes informações dos tipos de arquivo definidos como "Padrão":
+"Nome:" e "o Tipo (Padrão ou Expressão Regular (Regex))".
+```
+### 5. 7 Copiar/Exibir Tipos de Arquivo
+
+A cópia ou exibição dos Tipos de Arquivo é realizada através do menu de opções ao lado do Tipo de Arquivo
+desejado na respectiva listagem. Para executar uma dessas ações, clique no ícone de opções ao lado de um
+Tipo de Arquivo e escolha a função "Copiar" ou "Exibir" como mostrado na imagem a seguir:
+
+
+```
+NOTA Ao clicar em "Exibir", os campos do Tipo de Aquivo ficarão desabilitados e não será possível
+editá-los.
+```
+### 5. 8 Remover Tipos de Arquivo
+
+Por fim, para remover um Tipo de Arquivo existente, deve-se acessar as opções ao lado do Tipo de Arquivo
+desejado, clicar em "X Remover" e ao ser apresentada a mensagem "Esta ação é irreversível. Tem certeza
+que deseja remover este registro?", clique em "OK".
+
+## 6. Configurações de Agendamento
+
+
+A funcionalidade de Agendamento é utilizada para que o sistema possa iniciar as conexões dos usuários sem a
+necessidade de iniciá-las manualmente. É possível "+Adicionar", "Editar", "Copiar", "Exibir" e "Remover" os
+Agendamentos.
+
+Os Agendamentos são atribuídos a Usuários específicos, e com as datas e horários definidos de acordo
+com o Usuário.
+
+### 6. 1 Adicionar Agendamentos
+
+O cadastro de agendamentos é realizado dentro da seção "Agendamentos" no módulo "STCP". Para
+cadastrar um novo agendamento, clique em "+Adicionar" e aguarde a abertura da tela de cadastro:
+
+Identificação de Agendamentos
+
+A primeira seção de cadastro dos Agendamentos é a "Identificação", nela são definidos o estado do
+Agendamento em "Bloqueada:", seu "Nome:" e "Descrição:".
+
+```
+Campo Descrição Valores Permitidos
+```
+```
+Desabilitado
+```
+```
+Opção utilizada para definir se o
+Agendamento está habilitado ou não
+(Bloquear ou não).
+```
+```
+Se a chave for habilitada, o Agendamento
+ficará indisponível, senão estará disponível
+normalmente.
+Nome
+(Obrigatório) Define^ o^ nome^ do^ Agendamento. Qualquer^ valor^ é^ permitido.
+```
+```
+Descrição Descrição^ dcoad^ Aagstrenaddaom.ento^ a^ ser Qualquer valor é permitido.
+```
+
+Seção Agenda
+
+O cadastro de datas e horários do Agendamento é realizado na seção Agenda, que é dividida nas subseções
+"Intervalo", "Data de início", "Data de término" e "Características".
+
+_Intervalo_
+
+A subseção "Intervalo" contém os campos necessários para definir qual o modo de Agendamento, ou seja, a
+forma que o mesmo será executado. Esta subseção contém os campos: "Modo:", Dia:", "Mês:", "Semana:",
+"Hora:" e "Minuto:".
+
+```
+Campo Descrição Valores Permitidos
+```
+```
+Modo
+```
+```
+Opção utilizada para definir o modo de
+operação do Agendamento. (por data e
+intervalo, data e hora ou intervalo)
+```
+```
+Pode-se escolher uma das opções
+existentes: "Por data e Hora", "Por data e
+Intervalo" e "Por intervalo".
+Dia, Mês,
+Semana,
+Hora e
+Minuto
+```
+```
+Campos de seleção utilizados para definir as
+datas e horários dos agendamentos, de
+acordo com o modo definido.
+```
+```
+Deve-se selecionar os números
+existentes para definir estes campos.
+```
+```
+Se o modo "Por data e Hora" for selecionado, é necessário configurar os campos "Dia", "Mês" e
+"Semana" com um Horário definido para executar o Agendamento.
+```
+```
+Se o modo "Por data e Intervalo" for selecionado, é necessário configurar os campos "Dia", "Mês" e
+"Semana" com um Horário definido para executar o Agendamento lembrando que selecionando a
+"Hora:" igual a 7 e "Minuto:" igual a 0 , o Agendamento será executado de "7 em 7 horas" no dia
+```
+
+```
+definido.
+```
+```
+Se o modo "Por intervalo" for selecionado, é necessário configurar os campos "Hora:" e "Minuto:" , o
+Agendamento será executado de "X em X horas e minutos".
+```
+```
+DICA: Pode-se definir um período em que o agendamento por intervalo será executado. Para isso,
+habilite a chave de seleção "Data de início / Data de término" e cadastre os campos em "Data de
+início" e "Data de término".
+```
+_Data de início_
+
+Nesta subseção, são cadastrados os parâmetros para início do Agendamento, ou seja, quando o Agendamento
+irá começar a ser executado. Estes parâmetros são: "Dia:", "Mês", "Hora:" e "Minuto:".
+
+```
+Campo Descrição Valores Permitidos
+Dia, Mês,
+Hora e
+Minuto
+```
+```
+Campos de seleção utilizados para definir as datas e
+horários dos agendamentos, de acordo com o modo
+definido.
+```
+```
+Deve-se selecionar os números
+existentes para definir a Data de
+início.
+```
+_Data de término_
+
+Nesta subseção são cadastrados os parâmetros para o término do Agendamento, ou seja, quando o
+Agendamento irá parar a sua execução. Estes parâmetros são: "Dia:", "Mês", "Hora:" e "Minuto:".
+
+```
+Campo Descrição Valores Permitidos
+```
+
+```
+Campo Descrição Valores Permitidos
+Dia, Mês,
+Hora e
+Minuto
+```
+```
+Campos de seleção utilizados para definir as datas e
+horários dos agendamentos, de acordo com o modo
+definido.
+```
+```
+Deve-se selecionar os números
+existentes para definir a Data de
+Término.
+```
+_Características_
+
+Nesta subseção, são habilitados os tipos do agendamento. Estas parâmetros são: "Recepção",
+"Transmissão" e "Executar comando".
+
+_Seção Conexão_
+
+A seção a ser cadastrada para o Agendamento é a de "Conexão", onde será definido para qual Usuário o
+Agendamento será atribuído e informações de controle dos arquivos na transmissão e recepção.
+
+```
+Obs.: Para está seção ser habilitada para cadastro os tipos Recepção ou Transmissão na subseção
+Características devem estar habilitados.
+```
+Esta seção é dividida nas subseções: "Iniciar conexão de saída para", "Controle de arquivos na
+Transmissão", "Controle de arquivos na Recepção" e "Opções".
+
+_Iniciar conexão de saída para_
+
+Esta subseção contém as informações do "Usuário:" para o qual o Agendamento será atribuído e o "Número
+de Sessões:" do agendamento.
+
+```
+Campo Descrição Valores Permitidos
+Usuário
+(Obrigatório)
+```
+```
+Definição do Usuário para o qual o
+Agendamento será executado.
+```
+```
+Deve-se selecionar um Usuário existente
+na caixa de seleção.
+```
+```
+Sessões
+```
+```
+Número de sessões máxima do
+Agendamento.
+```
+```
+Apenas números são permitidos neste
+campo.
+```
+
+_Controle de arquivos na Transmissão e Recepção_
+
+Estas subseções são cadastradas da mesma forma que os campos com mesmo nome descritos nas seções
+"5.1.8 - Controle de Arquivos na Transmissão" e "5.1.9 - Controle de arquivos na recepção" dos
+Usuários. Consulte os tópicos para rever as informações.
+
+_Opções_
+
+Esta subseção contém apenas a chave "Otimizar a conexão de saída:", utilizada para que ao iniciar uma
+conexão do usuário-1 para o usuário-2, a sessão seja otimizada para que ambos possam enviar e receber seus
+arquivos sem a necessidade de iniciar manualmente a conexão do usuário-2 para o usuário-1, ele irá aproveitar
+a conexão do usuário-1.
+
+```
+Obs.: Para habilitar a chave de seleção o tipo Transmissão em Características deve estar habilitado.
+```
+_Seção Executar comando externo_
+
+Esta seção é dividida nas subseções "Executar comando externo" e "Aguardar término da execução do
+comando".
+
+```
+Obs.: Para está seção ser habilitada para cadastro o tipo Executar comando na subseção
+Características deve estar habiltiado.
+```
+_Executar comando externo_
+
+Nesta subseção é configurado um comando ou um arquivo que contêm os comandos para executar durante o
+agendamento.
+
+_Aguardar término da execução do comando_
+
+Nesta subseção é habilitado a opção de aguardar a execução do comando para dar continuidade nos
+processos do agendamento.
+
+### 6. 2 Editar Agendamentos
+
+Para editar um Agendamento , acesse a lista de Agendamentos em "Módulos -> Configurador STCP ->
+Agendamentos -> Editar".
+
+
+Após acessar a edição, altere os atributos desejados e salve as alterações.
+
+### 6. 3 Copiar/Exibir Agendamentos
+
+A cópia ou exibição dos Agendamentos é realizada através do menu de opções ao lado do Agendamento
+desejado na lista de Agendamentos. Para executar uma dessas ações, clique no ícone de opções ao lado de
+um Agendamento e escolha a função "Copiar" ou "Exibir" como mostrado na imagem a seguir:
+
+#### NOTA
+
+```
+Ao clicar em "Exibir", os campos do Agendamento ficarão desabilitados e não será possível editá-los.
+```
+### 6. 4 Remover Agendamentos
+
+Por fim, para remover um Agendamento existente, deve-se acessar as opções ao lado do Agendamento
+desejado, clicar em "Remover" e ao aparecer a mensagem de aviso clique em "OK" para removê-lo.
+
+
+
