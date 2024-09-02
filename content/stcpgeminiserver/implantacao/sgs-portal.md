@@ -17,14 +17,14 @@ lastmod: 2024-08-01
 Esta seção tem como objetivo descrever os passos de instalação e configurações iniciais do STCP Portal Gemini. Outras configurações podem ser realizadas conforme as necessidades específicas do ambiente e/ou funcionalidades utilizadas.
 
 {{< callout type="info" >}}
-ATENÇÃO: O Portal Gemini necessita do STCPGemini API Rest para se comunicar com o STCPGemini Server.
+O Portal Gemini necessita do STCP Gemini API Rest para se comunicar com o STCP Gemini Server.
 {{< /callout >}}
 
 ## Instalação
 
 ### Pré-requisitos de Software
 
-* Instalação e configuração do STCPGemini API. [Ver documentação](/stcpgeminiserver/api); 
+* Instalação e configuração do STCP Gemini API. [Ver documentação](/stcpgeminiserver/api); 
 * Navegadores Chrome (Ver 80 ou superior), Firefox (ver 81 ou superior) ou Safari (MacOS, Ver 14 ou superior);
 
 {{< callout type="info" >}}
@@ -36,7 +36,7 @@ administrador de redes responsável.
 
 O STCP Gemini Portal pode ser utilizado de duas maneiras:
 
-* Integrado ao STCPGemini API (preferencialmente)
+* Integrado ao STCP Gemini API (preferencialmente)
 * Integrado ao servidor Apache ou outros servidores web
 
 ### Configurando o STCPGemini Portal integrado no STCPGemini API
