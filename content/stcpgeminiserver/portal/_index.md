@@ -129,697 +129,343 @@ O primeiro passo para cadastrar uma instância é definir seus atributos de **Id
 
 ![](img/image-08.png "Controle de Agenda")
 
-**Controle de Lock:** O quarto passo é configurar atributos de reinicialização de conexões e transmissões de arquivos. Segue a tabela explicativa dos campos e suas especificações:
+**Controle de Lock:** O quarto passo é configurar atributos de reinicialização de conexões e transmissões de arquivos. Segue abaixo a tabela explicativa dos campos e suas especificações:
 
 ![](img/image-09.png "Controle de lock")
 
+| Campos                          | Descrição                                                                              | Valores Permitidos        |
+|---------------------------------|----------------------------------------------------------------------------------------|---------------------------|
+| Habilitar                       | Chave para habilitar ou desabilitar o "Controle de Lock" da instância                  | Habilitado / Desabilitado |
+| Tempo de espera para nova tentativa de lock | Tempo entre tentativas de lock, dado em milissegundos.                           | Numéricos                 |
+| Máximo de tentativas de lock    | Número máximo de tentativas de lock realizadas pelo sistema.                           | Numéricos                 |
+| Timeout de lock de sessão       | Tempo máximo, em milissegundos, em que o sistema permanecerá realizando tentativas de lock. | Numéricos                 |
 
-Campos Descrição VPaelrmoreitsidos
+**Controle de sessões simultâneas:** Em seguida configura-se o numero máximo de sessões abertas simultaneamente para a instância.
 
-Habilitar Chave^ para^ habilitar^ ou^ deinstsabâilnitcaira^ o^ "Controle^ de^ Lock"^ da HDaebsailibtailidtaod^ /o
+![](img/image-10.png "Controle de sessões simultâneas")
 
-Tempo de espera para
-nova tentativa de lock
+**Outros controles:** A última configuração da seção **Controles** é a definição dos seguinte parâmetros:
 
-```
-Tempo entre tentativas de lock, dado em milissegundos. Numéricos
-```
-Máximo de tentativas de
-lock
+![](img/image-11.png "Outros controles")
 
-```
-Número máximo de tentativas de lock realizadas pelo
-sistema. Numéricos
-```
-Timeout de lock de sessão Tempope^ mrmáxanimoec,e^ erám r^ emailliizssanedgoun tdentosa,^ teivmas^ qu dee loo^ cskist.ema Numéricos
+| Campos                        | Descrição                                                                 | Valores Permitidos              |
+|-------------------------------|---------------------------------------------------------------------------|---------------------------------|
+| Máximo de Mensagens no Console | Número máximo de mensagens que serão apresentadas nos logs do Portal      | Numéricos maiores ou iguais a 50 |
+| Máximo de Processos Assíncronos| Número máximo de processos assíncronos que serão permitidos na Instância  | Numéricos                       |
 
-```
-Controle de Sessões : Em seguida configura-se o numero máximo de sessões abertas
-simultaneamente para a instância.
-```
+#### Autenticação de Usuários
 
-```
-Outros controles: A última configuração da seção "Características" é a definição dos seguinte
-parâmetros:
-```
-```
-Campos Descrição Valores Permitidos
-Máximo de Mensagens
-no Console
-```
-```
-Número máximo de mensagens que serão
-apresentadas nos logs do Portal
-```
-```
-Numéricos maiores ou
-iguais a 50
-Máximo de Processos
-Assíncronos
-```
-```
-Número máximo de processos assíncronos que serão
-permitidos na Instância Numéricos
-```
-Autenticação de Usuários
+As configurações da seção de autenticação são responsáveis por definir qual banco de dados será utilizado pela instância e quais políticas de senha deverão ser seguidas.
 
-As configurações da seção de autenticação são responsáveis por definir qual banco de dados será utilizado
-pela instância e quais políticas de senha deverão ser seguidas.
-
-```
-Configurações Básicas: Inicialmente, deve-se configurar a biblioteca utilizada para o banco de dados e
+**Configurações Básicas:** Inicialmente, deve-se configurar a biblioteca utilizada para o banco de dados e
 qual será o tipo de autenticação, como pode ser observado na tabela a seguir:
-```
-```
-Campos Descrição Valores Permitidos
-Biblioteca
-(Obrigatório)
-```
-```
-Biblioteca utilizada para o carregamento do banco de dados no
-início da conexão.
-```
-```
-No momento
-"MYSQL/MARIADB"
-Tipo
-Autenticação
-```
-```
-Formato utilizado na autenticação do banco de dados da
-instância quando a conexão for iniciada. No^ momento^ "STCP"
-```
-```
-Base de Dados: Em seguida configura-se a "Base de Dados", nela são inseridas informações do banco
-de dados utilizado. Veja seus campos e especificações na tabela a seguir:
-```
-```
-Campos Descrição Valores Permitidos
-Nome Nome do banco de dados que será utilizado para configuração
-Host Endereço do Banco de dados
-Porta Porta para o acesso ao banco de dados. Valor padrão: 3306 Somente números.
-Usuário Usuário do banco de dados para acessá-lo.
-```
 
-Campos Descrição Valores Permitidos
+![](img/image-12.png "Configurações Básicas")
 
-Senha Senha do usuário do banco de dados.
-
-Confirmar Confirmação da senha do banco de dados.
-
-```
-AVISO: Nesta subseção todos os parâmetros são obrigatórios!
-```
-```
-Políticas de senhas: Também podem ser alteradas as Políticas de senha, sua utilização não é
-obrigatória, porém recomenda-se aplicá-las por questões de segurança. Segue uma tabela explicativa
-dos campos desta subseção e suas especificações:
-```
-Campos Descrição
-
-```
-Valores
-Permitidos
-```
-Habilitar Chave^ para^ habilitusuar/dáersiosab idliteassr^ aas i^ nstpolâítniccaias.^ de^ senha^ para^ os HDaebsailibtailditaod^ /o
-
-Comprimento
-mínimo da senha
-
-```
-Quantidade mínima de caracteres da senha
-```
-```
-Comprimento
-mínimo de 5 e
-máximo 8
-```
-Tempo de vida
-máximo da senha
-
-```
-Quantidade de tempo, em dias, em que a senha dos usuários
-poderá ser utilizada antes que seja necessário resetá-las Numéricos
-```
-Número máximo
-de falhas
-
-```
-Quantidade de vezes em que o usuário poderá errar a senha
-sem que seja bloqueado Numéricos
-```
-Número de
-senhas
-memorizadas
-
-```
-Quantidade de senhas já utilizadas anteriormente e que não
-podem ser reutilizadas durante a criação de uma nova Numéricos
-```
-Pelo menos um
-caractere
-minúsculo
-
-```
-Caso seja habilitada, esta opção obrigará que a senha do
-usuário possua pelo menos um caracter minúsculo
-```
-```
-Habilitado /
-Desabilitado
-```
-Pelo menos um
-caractere
-maiúsculo
-
-```
-Caso seja habilitada, esta opção obrigará que a senha do
-usuário possua pelo menos um caractere maiúsculo
-```
-```
-Habilitado /
-Desabilitado
-```
-Pelo menos um
-dígito
-
-```
-Caso seja habilitada, esta opção obrigará que a senha do
-usuário possua pelo menos um dígito
-```
-```
-Habilitado /
-Desabilitado
-```
-
-```
-Campos Descrição VPaelrmoreitsidos
-```
-```
-Pelo menos um
-caractere especial
-```
-```
-Caso seja habilitada, esta opção obrigará que a senha do
-usuário possua pelo menos um caractere especial
-```
-```
-Habilitado /
-Desabilitado
-```
-Log A sessão Log é responsável pelo gerenciamento das mensagens de eventos. Segue abaixo suas
-subseções:
-
-```
-Base de dados: Nesta subseção configura-se o banco de dados que armazenará os logs da aplicação.
-```
-```
-Campos Descrição Valores Permitidos
-```
-```
-Biblioteca Biblioteca^ utilizada^ parad^ oa^ dcosarr.egamento^ do^ banco^ de N"Mo^ YmomSQLe/MntoARIADB"
-```
-```
-Nome Nome do Banco de dados que armazenará os Logs.
-Host Endereço do Banco de dados
-Porta Porta de acesso ao banco. Valor padrão: 3306 Somente números
-Usuário Usuário do banco de dados.
-Senha Senha do usuário do banco de dados.
-Confirmar Confirmação da senha do banco de dados.
-```
-```
-AVISO: Nesta subseção todos os campos são obrigatórios.
-```
-```
-NOTA: O banco de dados utilizado para os Logs não precisa ser o mesmo definido na autenticação.
-```
-
-```
-Controle as mensagens de eventos: No cadastro dos logs também há a subseção "Controle das
-mensagens de eventos", onde são definidos quais logs serão gravados no banco de dados, quais
-serão mostrados no próprio Console Log do sistema e os comandos externos a serem executados.
-```
-```
-Campos Descrição VPaelrmoreitsidos
-```
-```
-Gravar no
-Banco de
-dados
-```
-```
-Define quais logs serão salvos no banco de dados de acordo com o
-número escolhido. Cada número possui tipos de logs definidos, estes
-podem ser consultados através das mensagens em azul ao lado direito
-do campo.
-```
-```
-Numerais dentre
-0 e 8
-```
-```
-Apresentar
-na console
-do STCP
-```
-```
-Define quais logs serão mostrados no console do sistema, porém estes
-não serão salvos no banco de dados.
-```
-```
-Numerais dentre
-0 e 8
-```
-```
-Executar
-comando
-externo
-```
-```
-Nível de evento que disparará um comando (programa ou bat) externo.
-```
-```
-Numerais dentre
-0 e 8
-```
-```
-Comando
-Externo
-```
-```
-Campo de cadastro do script com o comando externo que será
-executado.
-```
-```
-Insira o caminho
-onde o script
-com o comando
-está salvo.
-```
-```
-Filtros de mensagens de evento: Os últimos campos antes de concluir o cadastro da Instância são:
-```
-```
-Campos Descrição
-```
-```
-Valores
-Permitidos
-```
-```
-Aceitar
-```
-```
-Campo utilizado para criar um filtro das mensagens mostrada nos logs. Pode-se
-criar um filtro para que apenas mensagens de um determinado usuário sejam
-mostradas.
-```
-```
-Rejeitar
-```
-```
-Campo utilizado para criar um filtro das mensagens que não serão mostradas
-nos logs. Pode-se criar um filtro para que apenas mensagens de um
-determinado usuário sejam rejeitadas.
-```
-Finalmente, para adicionar a Instância e concluir o cadastro, clique em "Salvar".
+| Campos                        | Descrição                                                                                      | Valores Permitidos          |
+|-------------------------------|------------------------------------------------------------------------------------------------|-----------------------------|
+| Biblioteca (Obrigatório)       | Biblioteca utilizada para o carregamento do banco de dados no início da conexão.              | No momento "MYSQL/MARIADB"  |
+| Tipo Autenticação              | Formato utilizado na autenticação do banco de dados da instância quando a conexão for iniciada.| No momento "STCP"           |
 
 
-3.1.2 Editar Instâncias
+**Base de Dados:** Em seguida configura-se a **Base de Dados**, nela são inseridas informações do banco de dados utilizado. Veja seus campos e especificações na tabela a seguir:
 
-Caso precise editar algum parâmetro de uma instância já criada, acesse a lista de Instâncias e clique no ícone
-de edição presente à direita.
+![](img/image-13.png "Base de Dados")
+
+
+| Campos                      | Descrição                                                        | Valores Permitidos       |
+|-----------------------------|------------------------------------------------------------------|--------------------------|
+| Nome do banco de dados       | Nome do banco de dados que será utilizado para configuração      |                          |
+| Endereço                    | Endereço do Banco de dados                                       |                          |
+| Porta                       | Porta para o acesso ao banco de dados. Valor padrão: 3306        | Somente números           |
+| Usuário                     | Usuário do banco de dados para acessá-lo.                        |                          |
+| Senha                       | Senha do usuário do banco de dados.                              |                          |
+| Confirmar                   | Confirmação da senha do banco de dados.                          |                          |
+
+
+{{< callout type="info" >}}
+**Nesta subseção todos os parâmetros são obrigatórios!**
+{{< /callout >}}
+
+**Políticas de senhas:** Também podem ser alteradas as **Políticas de senha**, sua utilização não é obrigatória, porém recomenda-se aplicá-las por questões de segurança. Segue uma tabela explicativa dos campos desta subseção e suas especificações:
+
+![](img/image-14.png "Políticas de Senhas")
+
+| Campos                          | Descrição                                                                                                          | Valores Permitidos       |
+|---------------------------------|--------------------------------------------------------------------------------------------------------------------|--------------------------|
+| Habilitar                        | Chave para habilitar/desabilitar as políticas de senha para os usuários dessa instância.                           | Habilitado / Desabilitado |
+| Comprimento mínimo da senha      | Quantidade mínima de caracteres da senha                                                                           | Comprimento mínimo de 5 e máximo 8 |
+| Tempo de vida máximo da senha    | Quantidade de tempo, em dias, em que a senha dos usuários poderá ser utilizada antes que seja necessário resetá-las | Numéricos                 |
+| Número máximo de falhas          | Quantidade de vezes em que o usuário poderá errar a senha sem que seja bloqueado                                   | Numéricos                 |
+| Forçar histórico de senhas     | Quantidade de senhas já utilizadas anteriormente e que não podem ser reutilizadas durante a criação de uma nova     | Numéricos                 |
+| Pelo menos um caractere minúsculo| Caso seja habilitada, esta opção obrigará que a senha do usuário possua pelo menos um caractere minúsculo           | Habilitado / Desabilitado |
+| Pelo menos um caractere maiúsculo| Caso seja habilitada, esta opção obrigará que a senha do usuário possua pelo menos um caractere maiúsculo           | Habilitado / Desabilitado |
+| Pelo menos um dígito             | Caso seja habilitada, esta opção obrigará que a senha do usuário possua pelo menos um dígito                        | Habilitado / Desabilitado |
+| Pelo menos um caractere especial | Caso seja habilitada, esta opção obrigará que a senha do usuário possua pelo menos um caractere especial            | Habilitado / Desabilitado |
+
+#### Log 
+
+A sessão Log é responsável pelo gerenciamento das mensagens de eventos. Segue abaixo suas subseções:
+
+**Configurações Básicas:** Inicialmente, deve-se configurar a biblioteca utilizada para o banco de dados e
+qual será o tipo de autenticação, como pode ser observado na tabela abaixo:
+
+![](img/image-15.png "Seção Log")
+
+| Campos                        | Descrição                                                                                      | Valores Permitidos          |
+|-------------------------------|------------------------------------------------------------------------------------------------|-----------------------------|
+| Biblioteca       | Biblioteca utilizada para o carregamento do banco de dados no início da conexão.              | No momento "MYSQL/MARIADB"  |
+
+**Base de dados:** Nesta subseção configura-se o banco de dados que armazenará os logs da aplicação.
+
+![](img/image-16.png "Base de Dados")
+
+| Campos    | Descrição                                                         | Valores Permitidos          |
+|-----------|-------------------------------------------------------------------|-----------------------------|
+| Nome do banco de dados | Nome do Banco de dados que armazenará os Logs.                    |                             |
+| Endereço      | Endereço do Banco de dados                                        |                             |
+| Porta     | Porta de acesso ao banco. Valor padrão: 3306                      | Somente números             |
+| Usuário   | Usuário do banco de dados.                                        |                             |
+| Senha     | Senha do usuário do banco de dados.                               |                             |
+| Confirmar | Confirmação da senha do banco de dados.                           |                             |
+
+
+{{< callout type="info" >}}
+**Nesta subseção todos os campos são obrigatórios.**
+{{< /callout >}}
+
+{{< callout type="warning" >}}
+O banco de dados utilizado para os Logs não precisa ser o mesmo definido na autenticação.
+{{< /callout >}}
+
+**Nível de log das mensagens de eventos:** No cadastro dos logs também há essa subseção, onde são definidos quais logs serão gravados no banco de dados, quais serão mostrados no próprio Console Log do sistema e os comandos externos a serem executados.
+
+![](img/image-17.png "Nível de log das mensagens de eventos")
+
+| Campos                  | Descrição                                                                                                                                 | Valores Permitidos        |
+|-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|---------------------------|
+| Gravar no Banco de dados | Define quais logs serão salvos no banco de dados de acordo com o número escolhido. Cada número possui tipos de logs definidos, que podem ser consultados através das mensagens em azul ao lado direito do campo. | Numerais dentre 0 e 8      |
+| Apresentar na console do STCP | Define quais logs serão mostrados no console do sistema, porém estes não serão salvos no banco de dados.                                      | Numerais dentre 0 e 8      |
+| Executar comando externo | Nível de evento que disparará um comando (programa ou bat) externo.                                                                       | Numerais dentre 0 e 8      |
+| Comando Externo          | Campo de cadastro do script com o comando externo que será executado.                                                                     | Insira o caminho onde o script com o comando está salvo. |
+
+**Filtros de mensagem de evento:** Os últimos campos antes de concluir o cadastro da Instância são:
+
+![](img/image-18.png "Filtros de mensagem de eventos")
+
+| Campos  | Descrição                                                                                                                                   | Valores Permitidos |
+|---------|---------------------------------------------------------------------------------------------------------------------------------------------|--------------------|
+| Aceitar | Campo utilizado para criar um filtro das mensagens mostradas nos logs. Pode-se criar um filtro para que apenas mensagens de um determinado usuário sejam mostradas. |                    |
+| Rejeitar | Campo utilizado para criar um filtro das mensagens que não serão mostradas nos logs. Pode-se criar um filtro para que apenas mensagens de um determinado usuário sejam rejeitadas. |                    |
+
+Finalmente, para adicionar a Instância e concluir o cadastro, clique em **Salvar**.
+
+![](img/image-19.png "Filtros de mensagem de evento")
+
+### Editar Instâncias
+
+Caso precise editar algum parâmetro de uma instância já criada, acesse a lista de Instâncias e clique no ícone de edição presente à direita.
+
+![](img/image-20.png "Editar instâncias")
 
 Já na página de edição, altere os atributos desejados e salve as modificações ao final. Em caso de dúvidas leia
 a descrição dos campos novamente no tópico de Adicionar Instâncias
 
-```
-AVISO: O campo "Nome:" da Instância não pode ser alterado!
-```
-3.1.3 Copiar/Exibir Instâncias
+{{< callout type="warning" >}}
+O campo **Nome:** da Instância não pode ser alterado!
+{{< /callout >}}
+
+### Copiar Instâncias
 
 A cópia ou exibição das instâncias é realizada através do menu de opções indicado por uma seta ao lado direito
-da tela. Para executar uma dessas ações, clique neste ícone a função "Copiar" ou "Exibir" como mostrado na
-imagem a seguir:
+da tela. Para executar uma dessas ações, clique neste ícone a função **Copiar** como mostrado na imagem a seguir:
 
+![](img/image-21.png "Copiar instâncias")
 
-```
-NOTA: Ao selecionar a função copiar você será direcionado a uma tela semelhante a de edição, nela já
+{{< callout type="info" >}}
+Ao selecionar a função copiar você será direcionado a uma tela semelhante a de edição, nela já
 constarão as informações da instância copiada exceto o nome. Modifique os campos que julgar
 necessário, digite o nome da nova instância e salve-a.
-```
-```
-NOTA: Ao clicar em "Exibir", os campos da Instância ficarão desabilitados e não será possível editá-los.
-```
-3.1.4 Remover Instâncias
+{{< /callout >}}
 
-Para remover uma Instância existente, deve-se acessar as opções ao lado direito da Instância a ser removida e
-clicar em "Remover". Remover instâncias é um procedimento que deve ser realizado com cautela pois, como
-dito anteriormente, à elas estão associados usuários, Tipos de arquivo e Agendamentos.
+### Remover Instâncias
 
+Para remover uma Instância existente, deve-se acessar as opções ao lado direito da Instância a ser removida e clicar em **Excluir**. Remover instâncias é um procedimento que deve ser realizado com cautela pois, como dito anteriormente, à elas estão associados Usuários, Tipos de arquivo e Agendamentos.
 
-3.2 Adicionar tipos de arquivo
+![](img/image-22.png "Remover instâncias")
+![](img/image-23.png "Confirmação")
 
-Os tipos de arquivo são utilizados tanto na transmissão quanto recepção de arquivos em uma conexão. Sua
-função é realizar tratativas como conversões de nome, formato, etc.
+### Adicionar tipos de arquivo
+
+Os tipos de arquivo são utilizados tanto na transmissão quanto recepção de arquivos em uma conexão. Sua função é realizar tratativas como conversões de nome, formato, etc.
 
 Para criar um novo tipo de arquivo acesse o menu de opções indicado pela seta.
 
-Em seguida, clique em +Adicionar.
+![](img/image-24.png "Tipos de arquivo")
+
+Em seguida, clique em **+ Adicionar**.
+
+![](img/image-25.png)
+
+**Identificação**
+
+As primeiras informações a serem cadastradas na criação dos Tipos de Arquivo são seu nome, descrição e Tags que serão adicionadas ao nome dos arquivos tratados.
+
+![](img/image-26.png "Identificação do Tipo de Arquivo")
+
+**Informações**
+
+Nesta seção serão descritas as **Informações** do tipo de arquivo criado, entre elas se o tipo de arquivo fará tratativas **Padrão** ou através de uma **Expressão Regular**.
 
 
-Identificação
+* **Tratativas Padrão**: Apesar de constar tal campo como possível seleção, ao criar uma instância o sistema atribuirá a ela um tipo de arquivo com tratativas padrão automaticamente. Por não ser possível existir 2 padrões, esta seleção se encontrará sempre bloqueada.
 
-As primeiras informações a serem cadastradas na criação dos Tipos de Arquivo são seu nome, descrição e
-Tags que serão adicionadas ao nome dos arquivos tratados.
+* **Tratativas por Expressão Regular:** Este tipo de tratativa será feita baseando-se no nome do arquivo transmitido, incluindo seu formato. Por exemplo, caso deseje que arquivos no formato TXT crie uma tratativa que busque pela expressão "txt" no campo Regex.
 
-Características
+* **Tipo de Arquivo Expressão Regular (Regex)**.
+  
+![](img/image-27.png "Detalhes do Tipo de Arquivo")
 
-Nesta seção serão descritas as "Características" do tipo de arquivo criado, entre elas se o tipo de arquivo fará
-tratativas Padrão ou através de uma Expressão Regular.
+**Transmissão:** Nesta subseção configuram-se os parâmetros dos arquivos verificados pela tratativa durante o envio. Segue abaixo uma tabela explicativa contento tais parâmetros e suas especificidades:
 
-```
-Tratativas Padrão: Apesar de constar tal campo como possível seleção, ao criar uma instância o
-sistema atribuirá a ela um tipo de arquivo com tratativas padrão automaticamente. Por não ser possível
-existir 2 padrões, esta seleção se encontrará sempre bloqueada.
-```
-```
-Tratativas por Expressão Regular: Este tipo de tratativa será feita baseando-se no nome do arquivo
-transmitido, incluindo seu formato. Por exemplo, caso deseje que arquivos no formato TXT crie uma
-tratativa que busque pela expressão "txt" no campo Regex.
-```
-Tipo de Arquivo Expressão Regular (Regex)
+![](img/image-28.png "Transmissão do Tipo de Arquivo")
+![](img/image-29.png "Opções do Tipo de Arquivo")
 
 
-```
-Transmissão: Nesta subseção configuram-se os parâmetros dos arquivos verificados pela tratativa
-durante o envio. Segue abaixo uma tabela explicativa contento tais parâmetros e suas especificidades:
-```
-Atributo Descrição Valores Permitidos
+| Atributo                    | Descrição                                                                                                                                                      | Valores Permitidos                        |
+|-----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------|
+| Desabilitar                 | Desabilitação de todas as tratativas realizadas durante a transmissão de um arquivo                                                                             | Desabilitar/Manter                        |
+| Executar comando externo    | Campo utilizado para inserir o caminho de scripts de comandos que devem ser executados na transmissão dos arquivos                                              |                                           |
+| Aguardar o término da execução do comando | Opção utilizada para que o sistema possa aguardar a execução do comando externo definido acima ao transmitir os arquivos                          |                                           |
+| Origem                      | Odette ID da origem da transmissão                                                                                                                              |                                           |
+| Destino                     | Odette ID de destino da transmissão                                                                                                                             |                                           |
+| Userdata                    | Inserção de dados de transmissão que podem ser úteis para outras aplicações                                                                                     |                                           |
+| Formato de registro         | Escolha do formato de registro utilizado                                                                                                                        | Não Formatado; Stream (SFTP); Fixo; Variável; Texto |
+| Tamanho de registro         | Tamanho dos registros armazenados                                                                                                                               | Numerais                                  |
+| Converte nome de arquivo    | Seleção da conversão do nome do arquivo antes de transmitir.                                                                                                    | Não; Maiúscula; Minúscula                 |
+| Remover CRLF                | Habilitação/Desabilitação da remoção dos caracteres CR (Carriage Return) e LF (Line Feed) na transmissão do arquivo                                              | -.                                        |
+| CR                          | Número na tabela de caracteres referente ao Carriage Return                                                                                                     | Numerais                                  |
+| LF                          | Número na tabela de caracteres referente ao Line Feed                                                                                                           | Numerais                                  |
+| Tabela de conversão de dados| Tabela de conversão dos dados entre os tipos de formatos                                                                                                        | -.                                        |
+| Remover timestamp           | Habilita/Desabilita a remoção de timestamp do arquivo transmitido                                                                                               | Chave selecionável                        |
+| Backup                      | Habilita/Desabilita Backup dos arquivos transmitidos                                                                                                            | Chave selecionável                        |
 
-Desabilitar Desabilitação^ de^ todas^ as^ tratativas^ realizadas^ durante^ a
-transmissão de um arquivo
+**NOTAS**:
+> Somente utilize a opção Remover CRLF quando o formato do registro for Fixo ou Variável.
+> Ao escolher um formato de registro Fixo será necessário informar o Tamanho do registro.
 
-```
-Desabilitar/Manter
-```
-Executar comando
-externo
+<!-- {{< callout type="info" >}}
+**NOTAS:**
+* Somente utilize a opção Remover CRLF quando o formato do registro for Fixo ou Variável.
+* Ao escolher um formato de registro **Fixo** será necessário informar o **Tamanho do registro**. 
+{{< /callout >}} -->
 
-```
-Campo utilizado para inserir o caminho de scripts de
-comandos que devem ser executados na transmissão dos
-arquivos.
-```
-Aguardar o término
-da execução do
-comando
+**OFTP2:** Nesta subseção configuram-se os parâmetros dos arquivos que utilizam o protocolo OFTP 2 na comunicação com foco na segurança dos arquivos que serão transmitidos. Segue a tabela com os parâmetros e suas funcionalidades:
 
-```
-Opção utilizada para que o sistema possa aguardar a
-execução do comando externo definido acima ao
-transmitir os arquivos.
-```
-Origem Odette ID da origem da transmissão
+| Atributo        | Descrição                                                                                            | Valores Permitidos                                 |
+|-----------------|------------------------------------------------------------------------------------------------------|---------------------------------------------------|
+| Nível de Segurança | Seleção do tipo nível do arquivo de transmissão                                                       | Níveis disponíveis: Desabilitado; Encriptado; Assinado; Encriptado e Assinado |
+| Cipher Level    | Cifra de criptografia utilizada                                                                        |                                                   |
+| Comprimido      | Parâmetro de informação referente ao protocolo OFTP2 do arquivo a ser transmitido.                     | Chave selecionável                                |
+| Envelopado      | Parâmetro de informação referente ao protocolo OFTP2 constando se o arquivo foi criptografado          | Chave selecionável                                |
+| EERP Signed     | Habilitação/Desabilitação de assinatura na resposta de arquivo recebido pelo Destino                    | Chave selecionável                                |
 
-Destino Odette ID de destino da transmissão
+![](img/image-30.png "OFTP2 do Tipo de Arquivo")
 
-Userdata
+**Recepção:** Nesta subseção configuram-se os parâmetros dos arquivos verificados pela tratativa durante a recepção. Segue abaixo uma tabela explicativa contendo suas especificidades:
 
-```
-Inserção de dados de transmissão que podem ser úteis
-para outras aplicações
-```
-Formato de registro Escolha do formato de registro utilizado
+![](img/image-31.png "Recepção do Tipo de Arquivo")
 
-```
-Não Formatado;
-Stream (SFTP); Fixo;
-Variável;Texto
-```
-Tamanho de
-registro Tamanho^ dos^ registros^ armazenados Numerais
-
-Converte nome de
-arquivo
-
-```
-Seleção da conversão do nome do arquivo antes de
-transmitir.
-```
-```
-Não; Maiúscula;
-Minúscula
-```
-Remover CRLF
-
-```
-Habilitação/Desabilitação da remoção dos caracteres CR
-(Carriage Return) e LF (Line Feed) na transmissão do
-arquivo.
-```
-#### -.
-
-CR Número^ na^ tabela^ de^ carRaecturnteres^ referente^ ao^ Carriage Numerais
-
-LF Número na tabela de caracteres referente ao Line Feed Numerais
-
-Tabela de
-conversão de
-dados
-
-```
-Tabela de conversão dos dados entre os tipos de
-formatos -.
-```
-Remover timestamp
-
-```
-Habilita/Desabilita a remoção de timestamp do arquivo
-transmitido Chave^ selecionável
-```
-Backup Habilita/Desabilita Backup dos arquivos transmitidos Chave selecionável
-
-```
-NOTAS:
-```
-```
-Somente utilize a opção Remover CRLF quando o formato do registro for Fixo ou Variável.
-```
-
-```
-Ao escolher um formato de registro Fixo será necessário informar o Tamanho do registro.
-```
-```
-OFTP2: Nesta subseção configuram-se os parâmetros dos arquivos que utilizam o protocolo OFTP 2 na
-comunicação com foco na segurança dos arquivos que serão transmitidos. Segue a tabela com os
-parâmetros e suas funcionalidades:
-```
-Atributo Descrição Valores Permitidos
-
-Nível de
-Segurança Seleção^ do^ tipo^ nível^ do^ arquivo^ de^ transmissão
-
-```
-Níveis disponíveis: Desabilitado;
-Encriptado; Assinado; Encriptado e
-Assinado
-```
-Cipher Level Cifra de criptografia utilizada
-
-Comprimido Parâmetro^ de^ informação^ referente^ ao^ protocolo
-OFTP 2 do arquivo a ser transmitido.
-
-```
-Chave selecionável
-```
-Envelopado
-
-```
-Parâmetro de informação referente ao protocolo
-OFTP 2 constando se o arquivo foi criptografado Chave^ selecionável
-```
-EERP
-Signed
-
-```
-Habilitação/Desabilitação de assinatura na
-resposta de arquivo recebido pelo Destino Chave^ selecionável
-```
-
-```
-Recepção: Nesta subseção configuram-se os parâmetros dos arquivos verificados pela tratativa durante
-a recepção. Segue abaixo uma tabela explicativa contendo suas especificidades:
-```
-Atributo Descrição Valores Permitidos
-
-Desabilitar Desabilitação^ de^ todas^ as^ tratativas
-realizadas durante a recepção de um arquivo
-
-```
-Desabilitar/Manter.
-```
-Executar
-comando
-externo
-
-```
-Campo utilizado para inserir o caminho de
-scripts de comandos que devem ser
-executados na transmissão dos arquivos.
-```
-Aguardar o
-término da
-execução do
-comando
-
-```
-Opção utilizada para que o sistema possa
-aguardar a execução do comando externo
-ao receber os arquivos.
-```
-Tabela de
-conversão de
-dados
-
-#### -
-
-```
-A expressão regular irá definir qual
-extensão de arquivos seguirá as
-condições definidas neste tipo de
-arquivo.
-```
-Converte nome
-de arquivo
-
-```
-Seleção da conversão do nome do arquivo
-ao recebê-lo. Não;^ Maiúscula;^ Minúscula
-```
-Inserir CRLF -
-
-Caracter CR RX -
-
-Caracter LF RX -
-
-Inserir
-timestamp
-
-```
-Opção utilizada para que o sistema adicione
-um timestamp com as informações de
-horário ao receber arquivos.
-```
-Sobrepor
-arquivo -
-
-Desabilitar log
-de arquivo
-duplicado
-
-#### -
-
-Marcar arquivo
-recebido com
-data e hora
-local
-
-#### .
+| Atributo                      | Descrição                                                                                                    | Valores Permitidos                  |
+|-------------------------------|--------------------------------------------------------------------------------------------------------------|-------------------------------------|
+| Desabilitar                   | Desabilitação de todas as tratativas realizadas durante a recepção de um arquivo                              | Desabilitar/Manter                  |
+| Executar comando externo      | Campo utilizado para inserir o caminho de scripts de comandos que devem ser executados na transmissão dos arquivos |                                     |
+| Aguardar término da execução do comando | Opção utilizada para que o sistema possa aguardar a execução do comando externo ao receber os arquivos    |                                     |
+| Tabela de conversão de dados  | A expressão regular que irá definir qual extensão de arquivos seguirá as condições definidas neste tipo de arquivo | -                                   |
+| Converte nome de arquivo      | Seleção da conversão do nome do arquivo ao recebê-lo                                                           | Não; Maiúscula; Minúscula           |
+| Inserir CRLF                  | -                                                                                                             |                                     |
+| Caracter CR RX                | -                                                                                                             |                                     |
+| Caracter LF RX                | -                                                                                                             |                                     |
+| Inserir timestamp             | Opção utilizada para que o sistema adicione um timestamp com as informações de horário ao receber arquivos     |                                     |
+| Sobrepor arquivo              | -                                                                                                             |                                     |
+| Desabilitar log de arquivo duplicado | -                                                                                                     |                                     |
+| Marcar arquivo recebido com data e hora local | -                                                                                          |                                     |
 
 
-Execução de comando externo de validação
+**Execução de comando externo de validação**
 
 Nesta seção, informa-se sobre a execução de comandos externos após a validação dos arquivos.
 
-```
-Atributo Descrição
-Validar o arquivo antes de transmitir Caminho para o arquivo contendo os scritps de validação
-Validar o arquivo antes de receber Caminho para o arquivo contendo os scritps de validação
-Validar o arquivo após receber Caminho para o arquivo contendo os scritps de validação
-```
-Período de transferência
+| Atributo                        | Descrição                                                          |
+|---------------------------------|--------------------------------------------------------------------|
+| Validar o arquivo antes de transmitir | Caminho para o arquivo contendo os scripts de validação           |
+| Validar o arquivo antes de receber    | Caminho para o arquivo contendo os scripts de validação           |
+| Validar o arquivo após receber        | Caminho para o arquivo contendo os scripts de validação           |
+
+![](img/image-32.png)
+
+**Período de transferência**
 
 A última seção define os períodos de transferência de arquivos na instância. Segue uma tabela contendo os
 campos que devem ser configurados:
 
-```
-Atributo Descrição
-```
-```
-Valores
-Permitidos
-Início Horário de início em que será permitido transferir arquivos. Numéricos
-Término Horário de término em que será permitido transferir arquivos. Numéricos
-Dias da
-Semana
-```
-```
-Define em quais os dias a transferência de arquivos será
-permitida.
-```
-```
-Seleção
-```
+| Atributo    | Descrição                                                                             | Valores Permitidos |
+|-------------|---------------------------------------------------------------------------------------|--------------------|
+| Início      | Horário de início em que será permitido transferir arquivos.                          | Numéricos          |
+| Término     | Horário de término em que será permitido transferir arquivos.                         | Numéricos          |
+| Dias da Semana | Define em quais dias a transferência de arquivos será permitida.                     | Seleção            |
 
-Finalmente, para adicionar o novo Tipo de Arquivo à Instância e concluir o cadastro, clique em "Salvar".
+![](img/image-33.png)
 
-```
-NOTA: Os tipos de arquivos são mostrados separadamente de acordo com a Instância em que foram
-criados.
-```
-3.2.1 Editar Tipos de Arquivo
+Finalmente, para adicionar o novo Tipo de Arquivo à Instância e concluir o cadastro, clique em **Salvar**.
 
-Para editar um tipo de arquivo de uma instância siga os passos:
+{{< callout type="info" >}}
+**NOTA:** Os tipos de arquivos são mostrados separadamente de acordo com a Instância em que foram criados.
+{{< /callout >}}
 
-```
-Acesse a lista de Instâncias
-Selecione a instância que contenha tal tipo de arquivo
-Acesse os menus de seleção clicando na seta
-Clique no ícone de edição como mostrado abaixo.
-```
+### Editar Tipos de Arquivo
+
+Para editar um tipo de arquivo de uma instância, clique no ícone de edição como mostrado abaixo.
+
+![](img/image-34.png "Editar tipo de arquivo da Instância")
+
 Após acessar a edição, altere os atributos desejados e salve as alterações.
 
-```
-NOTA: Não é possível alterar o nome de um tipo de arquivo definido como Padrão.
-```
+{{< callout type="info" >}}
+**NOTA:** Não é possível alterar o nome de um tipo de arquivo definido como Padrão.
+{{< /callout >}}
 
-3.2.2 Copiar/Exibir Tipos de Arquivo
+### Copiar Tipos de Arquivo
 
-Para copiar/exibir um tipo de arquivo de uma instância siga os passos:
+Para copiar um tipo de arquivo de uma instância, acesse o menu de seleção clicando na seta e selecione o campo desejado
 
-```
-Acesse a lista de Instâncias
-Selecione a instância que contenha tal tipo de arquivo
-Acesse os menus de seleção clicando na seta e selecione o campo desejado
-```
-```
-NOTA: Ao clicar em "Exibir", os campos do Tipo de Aquivo ficarão desabilitados.
-```
+![](img/image-35.png "Editar tipo de arquivo da Instância")
 
-3.2.3 Remover Tipos de Arquivo
+{{< callout type="info" >}}
+**NOTA:** Ao clicar em **Copiar**, os campos do Tipo de Aquivo ficarão desabilitados.
+{{< /callout >}}
 
-Para remover um tipo de arquivo siga os passos:
+### Remover Tipos de Arquivo
 
-```
-Acesse a lista de instâncias
-Selecione a instância que contenha o tipo de arquivo
-Acesse os menus de seleção clicando na seta e selecionando a opção "Remover"
-```
-```
-Clique em "X Remover" ao ser questionado por "Esta ação é irreversível. Tem certeza que deseja
-remover este registro?"
-```
-```
+Para remover um tipo de arquivo acesse o menu de seleção clicando na seta e selecionando a opção **Excluir**
+
+![](img/image-36.png "Excluir tipo de arquivo da Instância")
+
+
+Clique em **Sim** ao ser questionado.
+
+![](img/image-37.png "Confirmar exclusão")
+
+{{< callout type="warning" >}}
 Obs.: Não é possível remover o Tipo de Arquivo padrão da Instância.
-```
-### 4. Configurações de Redes
+{{< /callout >}}
 
+## Configurações de Redes
 
 Redes são utilizadas nos processos de transferência em diversos âmbitos. Para configurá-las utilize o módulo
 STCP, nele será possível Adicionar, Editar, Copiar, Exibir e Remover Redes.
 
-4.1 Adicionar Rede OFTP
+### Adicionar Rede OFTP
 
 Para adicionar um serviço siga os passos:
 
@@ -1159,7 +805,7 @@ Numerais
 Para concluir o processo de cadastro da Rede OFTP, clique em "Salvar" como mostrado na imagem a seguir.
 
 
-### 4. 3 Editar Redes
+### Editar Redes
 
 Para editar uma Rede, acesse a lista de Redes em "Módulos -> Configurador STCP -> Redes -> Editar" no
 ícone à direita;
@@ -1169,7 +815,7 @@ Após acessar a edição, altere os campos desejados e salve as alterações.
 ```
 AVISO: O campo "Nome:" da Rede não pode ser alterado!
 ```
-### 4. 4 Copiar/Exibir Redes
+### Copiar Redes
 
 A cópia ou exibição das Redes é realizada através do menu de opções ao lado da Rede desejada na lista de
 Redes. Para executar uma dessas ações, clique no ícone de opções ao lado de uma Rede e escolha a função
@@ -1180,7 +826,7 @@ Redes. Para executar uma dessas ações, clique no ícone de opções ao lado de
 NOTA Ao clicar em "Exibir", os campos do Tipo de Aquivo ficarão desabilitados e não será possível
 editá-los.
 ```
-### 4. 5 Remover Redes
+### Remover Redes
 
 Para remover uma Rede, siga os passos:
 
@@ -1193,9 +839,9 @@ Acesse os menus de seleção em uma Rede desejada clicando na seta e selecionand
 Clique em "X Remover" ao ser questionado por "Esta ação é irreversível. Tem certeza que deseja
 remover este registro?"
 ```
-## 5. Configurações de Usuários
+## Configurações de Usuários
 
-### 5. 1 Adicionar Usuário
+### Adicionar Usuário
 
 O STCP Gemini Portal permite criar novos Usuários acessando o menu Usuários em "Módulos ->
 Configurador STCP -> Usuários" e clicando em "+Adicionar".
@@ -2480,7 +2126,7 @@ timestamp".
 Finalmente, para adicionar o Usuário e concluir o cadastro, clique em "Salvar" e visualize-o na lista de
 Usuários existentes.
 
-### 5. 2 Editar Usuários
+### Editar Usuários
 
 Para editar um Usuário, acesse a lista de Usuários em "Módulos -> Configurador STCP -> Usuários ->
 Editar".
@@ -2491,7 +2137,7 @@ Após acessar a edição, altere os campos desejados e salve as alterações.
 ```
 AVISO O campo "Nome:" da Instância não pode ser alterado!
 ```
-### 5. 3 Copiar/Exibir Usuários
+### Copiar Usuários
 
 A cópia ou exibição dos Usuários é realizada através do menu de opções ao lado esquerdo da lista de Usuários.
 Para executar uma dessas ações, clique no ícone de opções e escolha a função "Copiar" ou "Exibir" como
@@ -2501,12 +2147,12 @@ mostrado na imagem a seguir:
 NOTA Ao clicar em "Exibir", os campos do Usuário ficarão desabilitados e não será possível editá-los.
 ```
 
-### 5. 4 Remover Usuários
+### Remover Usuários
 
 Por fim, para remover um Usuário existente, deve-se acessar as opções, clicar em "Remover" e quando a
 mensagem de aviso for mostrada clique em "OK" para removê-lo.
 
-### 5. 5 Adicionar Tipos de Arquivo de Usuário
+### Adicionar Tipos de Arquivo de Usuário
 
 O processo de criação dos tipos de arquivo para um Usuário é idêntico ao cadastro de Tipos de arquivo das
 Instâncias. Para adicionar um tipo de arquivo de usuário, acesse "Módulos -> Configurador STCP ->
@@ -2527,7 +2173,7 @@ atribua o Tipo de arquivo -> seção "Características" -> campo "Tipo de Arquiv
 Clique no Tipo de Arquivo que será atribuído ao Usuário.
 
 
-### 5. 6 Editar Tipos de Arquivo
+### Editar Tipos de Arquivo
 
 Para editar um tipo de arquivo de um Usuário, acesse a lista de Usuários em "Módulos -> Configurador STCP
 -> Usuários -> Tipos de Arquivo -> Editar".
@@ -2538,7 +2184,7 @@ Após acessar a edição, altere os atributos desejados e salve as alterações.
 NOTA Não é possível alterar as seguintes informações dos tipos de arquivo definidos como "Padrão":
 "Nome:" e "o Tipo (Padrão ou Expressão Regular (Regex))".
 ```
-### 5. 7 Copiar/Exibir Tipos de Arquivo
+### Copiar Tipos de Arquivo
 
 A cópia ou exibição dos Tipos de Arquivo é realizada através do menu de opções ao lado do Tipo de Arquivo
 desejado na respectiva listagem. Para executar uma dessas ações, clique no ícone de opções ao lado de um
@@ -2549,13 +2195,13 @@ Tipo de Arquivo e escolha a função "Copiar" ou "Exibir" como mostrado na image
 NOTA Ao clicar em "Exibir", os campos do Tipo de Aquivo ficarão desabilitados e não será possível
 editá-los.
 ```
-### 5. 8 Remover Tipos de Arquivo
+### Remover Tipos de Arquivo
 
 Por fim, para remover um Tipo de Arquivo existente, deve-se acessar as opções ao lado do Tipo de Arquivo
 desejado, clicar em "X Remover" e ao ser apresentada a mensagem "Esta ação é irreversível. Tem certeza
 que deseja remover este registro?", clique em "OK".
 
-## 6. Configurações de Agendamento
+## Configurações de Agendamento
 
 
 A funcionalidade de Agendamento é utilizada para que o sistema possa iniciar as conexões dos usuários sem a
@@ -2565,7 +2211,7 @@ Agendamentos.
 Os Agendamentos são atribuídos a Usuários específicos, e com as datas e horários definidos de acordo
 com o Usuário.
 
-### 6. 1 Adicionar Agendamentos
+### Adicionar Agendamentos
 
 O cadastro de agendamentos é realizado dentro da seção "Agendamentos" no módulo "STCP". Para
 cadastrar um novo agendamento, clique em "+Adicionar" e aguarde a abertura da tela de cadastro:
@@ -2787,7 +2433,7 @@ _Aguardar término da execução do comando_
 Nesta subseção é habilitado a opção de aguardar a execução do comando para dar continuidade nos
 processos do agendamento.
 
-### 6. 2 Editar Agendamentos
+### Editar Agendamentos
 
 Para editar um Agendamento , acesse a lista de Agendamentos em "Módulos -> Configurador STCP ->
 Agendamentos -> Editar".
@@ -2795,7 +2441,7 @@ Agendamentos -> Editar".
 
 Após acessar a edição, altere os atributos desejados e salve as alterações.
 
-### 6. 3 Copiar/Exibir Agendamentos
+### Copiar/Exibir Agendamentos
 
 A cópia ou exibição dos Agendamentos é realizada através do menu de opções ao lado do Agendamento
 desejado na lista de Agendamentos. Para executar uma dessas ações, clique no ícone de opções ao lado de
@@ -2806,7 +2452,7 @@ um Agendamento e escolha a função "Copiar" ou "Exibir" como mostrado na imagem
 ```
 Ao clicar em "Exibir", os campos do Agendamento ficarão desabilitados e não será possível editá-los.
 ```
-### 6. 4 Remover Agendamentos
+### Remover Agendamentos
 
 Por fim, para remover um Agendamento existente, deve-se acessar as opções ao lado do Agendamento
 desejado, clicar em "Remover" e ao aparecer a mensagem de aviso clique em "OK" para removê-lo.
