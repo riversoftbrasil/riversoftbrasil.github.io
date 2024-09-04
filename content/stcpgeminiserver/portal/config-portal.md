@@ -462,8 +462,7 @@ Obs.: Não é possível remover o Tipo de Arquivo padrão da Instância.
 
 ## Configurações de Redes
 
-Redes são utilizadas nos processos de transferência em diversos âmbitos. Para configurá-las utilize o módulo
-STCP, nele será possível Adicionar, Editar, Copiar, Exibir e Remover Redes.
+Redes são utilizadas nos processos de transferência em diversos âmbitos. Para configurá-las utilize o módulo STCP, nele será possível Adicionar, Editar, Copiar, Exibir e Remover Redes.
 
 ### Adicionar Rede OFTP
 

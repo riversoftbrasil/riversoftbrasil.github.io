@@ -20,7 +20,7 @@ Nesta seção vamos detalhar as possibilidades de configuração do módulo Serv
 
 O Serviço Web Admin permite que o Operador realize as funções de Consulta dos cadastros no sistema como: Instâncias, Usuários, Transferência de Arquivos, tenha acesso a Relatórios de: Eventos, Frequência e Transferências, faça **Monitoração** de: Agendamentos, Instâncias e Usuários, além de possibilitar Manutenção de: Instâncias, Agendamentos, Operadores e Usuários.
 
-![](img/image-01.png)
+![](img-webadmin/image-01.png)
 
 Além das funções descritas anteriormente há outras disponíveis, como Iniciar Conexões, e todas serão descritas a seguir.
 
@@ -42,7 +42,7 @@ O Menu de consultas permite a visualização de todos os cadastros realizados no
 * Operadores;
 * Configurações API.
 
-![](img/image-02.png)
+![](img-webadmin/image-02.png)
 
 
 ### Instâncias
@@ -51,19 +51,19 @@ A **consulta de Instâncias** permite que o Operador visualize os principais par
 
 Para buscar por uma instância específica insira seu nome e, se desejar, sua descrição. 
 
-![](img/image-03.png "Menu de Consulta no Portal")
+![](img-webadmin/image-03.png "Menu de Consulta no Portal")
 
 Ao localizar a instância pesquisada, clique sobre seu nome.
 
-![](img/image-04.png "Consulta de Instâncias")
+![](img-webadmin/image-04.png "Consulta de Instâncias")
 
 A partir de então os parâmetros cadastrados serão listados como mostrado a seguir:
 
-![](img/image-05.png "Guia Geral - Instâncias")
-![](img/image-06.png "Guia Diretórios - Instâncias")
-![](img/image-07.png "Guia Controles - Instâncias")
-![](img/image-08.png "Guia Autenticação de Usuários - Instâncias")
-![](img/image-09.png "Guia Log - Instâncias")
+![](img-webadmin/image-05.png "Guia Geral - Instâncias")
+![](img-webadmin/image-06.png "Guia Diretórios - Instâncias")
+![](img-webadmin/image-07.png "Guia Controles - Instâncias")
+![](img-webadmin/image-08.png "Guia Autenticação de Usuários - Instâncias")
+![](img-webadmin/image-09.png "Guia Log - Instâncias")
 
 **Tabela de descrição de Nível do evento**
 
@@ -86,14 +86,14 @@ A consulta de Agendamentos permite que o Operador visualize os principais parâm
 
 Para buscar por um agendamento específico, informe seu **Nome** e/ou **Descrição**. Após preencher o campos descrito, o agendamento cadastrado será listado conforme mostra a imagem.
 
-![](img/image-10.png "Consultar Agendamentos")
+![](img-webadmin/image-10.png "Consultar Agendamentos")
 
 Ao localizar o agendamento pesquisado, clique em **"Editar"**. A partir de então, os parâmetros cadastrados serão listados.
 
-![](img/image-11.png "Guia Geral - Agendamentos")
-![](img/image-12.png "Guia Agenda - Agendamentos")
-![](img/image-13.png "Guia Transmissão/Recepção - Agendamentos")
-![](img/image-14.png "Guia Comando Externo - Agendamentos")
+![](img-webadmin/image-11.png "Guia Geral - Agendamentos")
+![](img-webadmin/image-12.png "Guia Agenda - Agendamentos")
+![](img-webadmin/image-13.png "Guia Transmissão/Recepção - Agendamentos")
+![](img-webadmin/image-14.png "Guia Comando Externo - Agendamentos")
 
 ### Usuários
 
@@ -101,19 +101,19 @@ A consulta de Usuários permite que o Operador visualize os principais parâmetr
 
 Para buscar por um usuário específico, informe seu **Nome** e/ou **Descrição**. Após preencher o campos descrito, o usuário cadastrado será listado conforme mostra a imagem.
 
-![](img/image-15.png "Consultar Usuários")
+![](img-webadmin/image-15.png "Consultar Usuários")
 
 Ao localizar o usuário pesquisado, clique sobre seu nome. A partir de então, os parâmetros cadastrados serão listados.
 
-![](img/image-16.png "Verificar parâmetros - Usuários")
-![](img/image-17.png "Guia Geral - Usuários")
-![](img/image-18.png "Guia Características - Usuários")
-![](img/image-19.png )
-![](img/image-20.png "Guia Controles - Usuários")
-![](img/image-21.png)
-![](img/image-22.png)
-![](img/image-23.png)
-![](img/image-24.png)
+![](img-webadmin/image-16.png "Verificar parâmetros - Usuários")
+![](img-webadmin/image-17.png "Guia Geral - Usuários")
+![](img-webadmin/image-18.png "Guia Características - Usuários")
+![](img-webadmin/image-19.png )
+![](img-webadmin/image-20.png "Guia Controles - Usuários")
+![](img-webadmin/image-21.png)
+![](img-webadmin/image-22.png)
+![](img-webadmin/image-23.png)
+![](img-webadmin/image-24.png)
 
 ### Redes 
 
@@ -122,10 +122,10 @@ A consulta de Redes permite que o Operador visualize os principais parâmetros c
 Para buscar por uma rede específica, informe seu **Nome** e/ou **Descrição**. Após preencher o campos descrito, a rede cadastrada será listado conforme mostra a imagem.
 
 
-![](img/image-25.png "Consultar Redes")
-![](img/image-26.png "Guia Geral - Redes")
-![](img/image-27.png "Guia OFTP - Redes")
-![](img/image-28.png "Guia Comunicação - Redes")
+![](img-webadmin/image-25.png "Consultar Redes")
+![](img-webadmin/image-26.png "Guia Geral - Redes")
+![](img-webadmin/image-27.png "Guia OFTP - Redes")
+![](img-webadmin/image-28.png "Guia Comunicação - Redes")
 
 
 ### Código de Erros
@@ -134,30 +134,30 @@ A consulta de Código de erros permite que o Operador visualize os principais pa
 
 Para buscar por um erro específico, pode-se informar seu **Código:** e/ou sua **Descrição**. Como não há nenhum parâmetro obrigatório para esta pesquisa, ao clicar filtrar sem preencher nenhuma informação, todos os erros serão apresentados.
 
-![](img/image-29.png "Aba Códigos de Erros")
+![](img-webadmin/image-29.png "Aba Códigos de Erros")
 
 Ao localizar o erro desejado, clique sobre seu Código. A partir de então, os parâmetros cadastrados serão listados.
 
-![](img/image-30.png "Pesquisa de Erro")
+![](img-webadmin/image-30.png "Pesquisa de Erro")
 
 A partir de então os parâmetros cadastrados serão listados como mostrado a seguir:
 
-![](img/image-31.png)
+![](img-webadmin/image-31.png)
 
 ### Código de Eventos
 
 A consulta de Código de eventos permite que o Operador visualize os principais parâmetros cadastrados para os Códigos de eventos do sistema.
 
-![](img/image-32.png)
+![](img-webadmin/image-32.png)
 
 Para buscar por um evento específico pode-se informar seu **"Código:" e/ou sua Descrição**. Como não há
 nenhum parâmetro obrigatório para esta pesquisa, ao filtrar sem preencher nenhuma informação, todos os eventos serão apresentados.
 
-![](img/image-33.png)
+![](img-webadmin/image-33.png)
 
 A partir de então os parâmetros cadastrados serão listados como mostrado a seguir:
 
-![](img/image-34.png)
+![](img-webadmin/image-34.png)
 
 ### Grupos
 
@@ -165,39 +165,39 @@ A consulta de Grupos permite que o Operador visualize os principais parâmetros 
 
 Para buscar por um grupo específico pode-se informar seu **Nome e/ou sua Descrição**. Como não há nenhum parâmetro obrigatório para esta pesquisa, ao filtrar sem preencher nenhuma informação, todos os grupos existentes serão apresentados.
 
-![](img/image-35.png)
+![](img-webadmin/image-35.png)
 
 Ao localizar o grupo desejado, clique sobre seu nome.
 
-![](img/image-36.png "Aba Geral - Grupos")
+![](img-webadmin/image-36.png "Aba Geral - Grupos")
 
-![](img/image-37.png "Aba Operadores do Grupo - Grupos")
+![](img-webadmin/image-37.png "Aba Operadores do Grupo - Grupos")
 
-![](img/image-38.png "Aba Permissões - Configurações")
+![](img-webadmin/image-38.png "Aba Permissões - Configurações")
 
-![](img/image-39.png "Aba Permissões - Consulta")
+![](img-webadmin/image-39.png "Aba Permissões - Consulta")
 
-![](img/image-40.png "Aba Permissões - Relatórios")
+![](img-webadmin/image-40.png "Aba Permissões - Relatórios")
 
-![](img/image-41.png "Aba Permissões - Supervisão")
+![](img-webadmin/image-41.png "Aba Permissões - Supervisão")
 
-![](img/image-42.png "Aba Permissões - Manutenção")
+![](img-webadmin/image-42.png "Aba Permissões - Manutenção")
 
 ### Operadores
 
 A consulta de Operadores permite visualizar os principais parâmetros cadastrados para os Operadores do sistema.
 
-![](img/image-43.png "Operadores")
+![](img-webadmin/image-43.png "Operadores")
 
 Para buscar por um operador específico pode-se informar seu **Nome e/ou sua Descrição**. Como não há nenhum parâmetro obrigatório para esta pesquisa, ao filtrar sem preencher nenhuma informação, todos os operadores existentes serão apresentados.
 
-![](img/image-44.png "Filtro de operador")
+![](img-webadmin/image-44.png "Filtro de operador")
 
 A partir de então os parâmetros cadastrados serão listados como mostrado a seguir:
 
-![](img/image-45.png "Operador - Guia Geral")
-![](img/image-46.png "Operador - Guia Grupos")
-![](img/image-47.png "Operador - Guia Avançadas")
+![](img-webadmin/image-45.png "Operador - Guia Geral")
+![](img-webadmin/image-46.png "Operador - Guia Grupos")
+![](img-webadmin/image-47.png "Operador - Guia Avançadas")
 
 ### API 
 
@@ -207,18 +207,18 @@ Para buscar por uma API específico pode-se informar seu **Nome e/ou sua Descri�
 
 Não há nenhum parâmetro obrigatório para esta pesquisa, portanto, ao filtrar sem preencher nenhuma informação, todas as APIs existentes serão apresentadas.
 
-![](img/image-48.png "API")
+![](img-webadmin/image-48.png "API")
 
 Ao localizar o operador desejado, clique sobre seu nome.
 
-![](img/image-49.png "Filtro API")
+![](img-webadmin/image-49.png "Filtro API")
 
 A partir de então os parâmetros cadastrados serão listados como mostrado a seguir:
 
-![](img/image-50.png "API - Geral")
-![](img/image-51.png "API - Comunicação")
-![](img/image-52.png "API - Políticas de senhas")
-![](img/image-53.png "API - Supervisão")
+![](img-webadmin/image-50.png "API - Geral")
+![](img-webadmin/image-51.png "API - Comunicação")
+![](img-webadmin/image-52.png "API - Políticas de senhas")
+![](img-webadmin/image-53.png "API - Supervisão")
 
 ## Menu Relatórios
 
@@ -226,9 +226,9 @@ O Menu de Relatórios permite que o Operador obtenha relatórios detalhados de d
 
 Existem 3 tipos de relatórios, os de [Eventos do sistema](#relatórios-de-eventos), os de [Frequência](#frequência) de conexão e de transferência e os relatórios de [Transferências](#transferências), todos eles serão abordados a seguir.
 
-![](img/image-54.png)
-![](img/image-55.png)
-![](img/image-56.png)
+![](img-webadmin/image-54.png)
+![](img-webadmin/image-55.png)
+![](img-webadmin/image-56.png)
 
 ### Relatórios de Eventos
 
@@ -246,12 +246,12 @@ Nos relatórios de eventos será possível analisar os eventos ocorridos tanto e
 | **Até**           | Pesquisa por intervalo de tempo: Data de término do período de pesquisa. Formato (DIA/MÊS/ANO)                                                            |
 | **Quantidade máxima de registros**  | Definir a quantidade máxima de registros de logs dos eventos (100, 250, 500 e 1000). |
 
-![](img/image-57.png "Filtros de pesquisa")
-![](img/image-61.png "Filtros de pesquisa")
+![](img-webadmin/image-57.png "Filtros de pesquisa")
+![](img-webadmin/image-61.png "Filtros de pesquisa")
 
 Clique em **Pesquisar** para visualizar as informações dos eventos do sistema. Caso deseje visualizá-los em uma ferramenta de planilhas, clique no ícone **Exportar**:
 
-![](img/image-58.png "Ícone pra exportar os eventos")
+![](img-webadmin/image-58.png "Ícone pra exportar os eventos")
 
 #### Eventos do Sistema
 
@@ -265,12 +265,12 @@ Os relatórios de eventos do sistema podem ser obtidos utilizando os seguintes c
 | **Até**           | Pesquisa por intervalo de tempo: Data de término do período de pesquisa. Formato (DIA/MÊS/ANO)                                                            |
 | **Quantidade máxima de registros**  | Definir a quantidade máxima de registros de logs dos eventos (100, 250, 500 e 1000). |
 
-![](img/image-59.png "Filtros de pesquisa")
-![](img/image-61.png "Filtros de pesquisa")
+![](img-webadmin/image-59.png "Filtros de pesquisa")
+![](img-webadmin/image-61.png "Filtros de pesquisa")
 
 Clique em **Pesquisar** para visualizar as informações dos eventos do sistema. Caso deseje visualizá-los em uma ferramenta de planilhas, clique no ícone **Exportar**:
 
-![](img/image-62.png "Ícone pra exportar os eventos")
+![](img-webadmin/image-62.png "Ícone pra exportar os eventos")
 
 #### Eventos dos Usuários
 
@@ -284,8 +284,8 @@ Clique em **Pesquisar** para visualizar as informações dos eventos do sistema.
 | **Até**           | Pesquisa por intervalo de tempo: Data de término do período de pesquisa. Formato (DIA/MÊS/ANO)                                                            |
 | **Quantidade máxima de registros**  | Definir a quantidade máxima de registros de logs dos eventos (100, 250, 500 e 1000). |
 
-![](img/image-57.png "Filtros de pesquisa")
-![](img/image-61.png "Filtros de pesquisa")
+![](img-webadmin/image-57.png "Filtros de pesquisa")
+![](img-webadmin/image-61.png "Filtros de pesquisa")
 
 {{< callout type="info" >}}
 **DICA:** Caso nenhum usuário seja informado, todos os eventos de todos os usuários quem cumpram
@@ -294,7 +294,7 @@ os filtros restantes serão apresentados.
 
 Após inserir as informações desejadas clique em **Pesquisar**. Ao fazer isto uma sequência de eventos serão apresentados em sua tela, caso deseje visualizá-los em uma ferramenta de planilhas clique em **Exportar**:
 
-![](img/image-63.png "Ícone pra exportar os eventos")
+![](img-webadmin/image-63.png "Ícone pra exportar os eventos")
 
 #### Eventos dos Operadores
 
@@ -308,12 +308,12 @@ Os relatórios de eventos dos operadores podem ser obtidos utilizando os seguint
 | **Até**           | Pesquisa por intervalo de tempo: Data de término do período de pesquisa. Formato (DIA/MÊS/ANO)                                                            |
 | **Quantidade máxima de registros**  | Definir a quantidade máxima de registros de logs dos eventos (100, 250, 500 e 1000). |
 
-![](img/image-60.png "Filtros de pesquisa")
-![](img/image-61.png "Filtros de pesquisa")
+![](img-webadmin/image-60.png "Filtros de pesquisa")
+![](img-webadmin/image-61.png "Filtros de pesquisa")
 
 Clique em **Pesquisar** para visualizar as informações dos eventos do sistema. Caso deseje visualizá-los em uma ferramenta de planilhas, clique no ícone **Exportar**:
 
-![](img/image-64.png "Ícone pra exportar os eventos")
+![](img-webadmin/image-64.png "Ícone pra exportar os eventos")
 
 ### Relatórios de Frequência
 
@@ -331,12 +331,12 @@ Nos relatórios de frequência será possível analisar a frequência com que co
 | **De**        | Pesquisa por intervalo de tempo: Data de início do período de pesquisa. Formato (DIA/MÊS/ANO)        |
 | **Até**       | Pesquisa por intervalo de tempo: Data de término do período de pesquisa. Formato (DIA/MÊS/ANO)       |
 
-![](img/image-65.png "Filtros de pesquisa")
-![](img/image-61.png "Filtros de pesquisa")
+![](img-webadmin/image-65.png "Filtros de pesquisa")
+![](img-webadmin/image-61.png "Filtros de pesquisa")
 
 Após inserir as informações desejadas clique em **Pesquisar**. Ao fazer isto uma sequência de eventos serão apresentados em sua tela, caso deseje visualizá-los em uma ferramenta de planilhas clique em **Exportar**:
 
-![](img/image-66.png "Ícone pra exportar os eventos")
+![](img-webadmin/image-66.png "Ícone pra exportar os eventos")
 
 #### Frequência de Transferências
 
@@ -350,12 +350,12 @@ Os relatórios de eventos dos operadores podem ser obtidos utilizando os seguint
 | **De**             | Pesquisa por intervalo de tempo: Data de início do período de pesquisa. Formato (DIA/MÊS/ANO)      |
 | **Até**            | Pesquisa por intervalo de tempo: Data de término do período de pesquisa. Formato (DIA/MÊS/ANO)     |
 
-![](img/image-67.png "Filtros de pesquisa")
-![](img/image-61.png "Filtros de pesquisa")
+![](img-webadmin/image-67.png "Filtros de pesquisa")
+![](img-webadmin/image-61.png "Filtros de pesquisa")
 
 Após inserir as informações desejadas clique em **Pesquisar**. Ao fazer isto uma sequência de eventos serão apresentados em sua tela, caso deseje visualizá-los em uma ferramenta de planilhas clique em **Exportar**:
 
-![](img/image-69.png "Ícone pra exportar os eventos")
+![](img-webadmin/image-69.png "Ícone pra exportar os eventos")
 
 ### Relatórios de Transferências
 
@@ -378,14 +378,14 @@ Para gerar este relatório pode-se preencher os seguintes campos de filtragem:
                                                           |
 
 
-![](img/image-70.png "Filtros de pesquisa")
-![](img/image-71.png "Filtros de pesquisa")
+![](img-webadmin/image-70.png "Filtros de pesquisa")
+![](img-webadmin/image-71.png "Filtros de pesquisa")
 
 Após inserir as informações desejadas clique em **Pesquisar**. Ao fazer isto uma sequência de transferências serão apresentados em sua tela.
 
 Caso deseje visualizá-las em uma ferramenta de planilhas clique em:
 
-![](img/image-72.png "Ícone pra exportar os eventos")
+![](img-webadmin/image-72.png "Ícone pra exportar os eventos")
 
 #### Estatísticas das Transferências
 
@@ -401,14 +401,14 @@ Para buscar as estatísticas das transferências há alguns filtros que podem se
 | **De**            | Pesquisa por intervalo de tempo: Data de início do período de pesquisa. Formato (DIA/MÊS/ANO)                          |
 | **Até**           | Pesquisa por intervalo de tempo: Data de término do período de pesquisa. Formato (DIA/MÊS/ANO)                         |
 
-![](img/image-73.png "Filtros de pesquisa")
-![](img/image-71.png "Filtros de pesquisa")
+![](img-webadmin/image-73.png "Filtros de pesquisa")
+![](img-webadmin/image-71.png "Filtros de pesquisa")
 
 Após inserir as informações desejadas clique em **Pesquisar**. Ao fazer isto, uma lista com as estatísticas das transferências será apresentada.
 
 Caso deseje visualizá-las em uma ferramenta de planilhas clique em:
 
-![](img/image-75.png "Ícone pra exportar os eventos")
+![](img-webadmin/image-75.png "Ícone pra exportar os eventos")
 
 #### Gráficos de Transferência
 
@@ -423,12 +423,12 @@ Os gráficos das transferências ocorridas são diferentes entre si a depender d
 | **De**            | Pesquisa por intervalo de tempo: Data de início do período de pesquisa. Formato (DIA/MÊS/ANO)             |
 | **Até**           | Pesquisa por intervalo de tempo: Data de término do período de pesquisa. Formato (DIA/MÊS/ANO)            |
 
-![](img/image-76.png "Filtros de pesquisa")
-![](img/image-71.png "Filtros de pesquisa")
+![](img-webadmin/image-76.png "Filtros de pesquisa")
+![](img-webadmin/image-71.png "Filtros de pesquisa")
 
 Após inserir as informações desejadas e clicar em **Pesquisar**. será possível visualizar os seguintes tipos de gráficos:
 
-![](img/image-77.png "Tipos de Gráficos")
+![](img-webadmin/image-77.png "Tipos de Gráficos")
 
 #### Histórico das transferências
 
@@ -448,14 +448,14 @@ Para filtrar o histórico de transferências segundo sua necessidade, há os seg
 
 
 
-![](img/image-78.png "Filtros de pesquisa")
-![](img/image-71.png "Filtros de pesquisa")
+![](img-webadmin/image-78.png "Filtros de pesquisa")
+![](img-webadmin/image-71.png "Filtros de pesquisa")
 
 Após inserir as informações desejadas e clicar em **Pesquisar**.
 
 Caso deseje visualizar as transferências apresentadas em uma ferramenta de planilhas, clique em:
 
-![](img/image-79.png "Ícone pra exportar")
+![](img-webadmin/image-79.png "Ícone pra exportar")
 
 
 
