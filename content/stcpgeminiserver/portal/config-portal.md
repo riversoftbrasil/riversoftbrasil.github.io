@@ -462,54 +462,57 @@ Obs.: Não é possível remover o Tipo de Arquivo padrão da Instância.
 
 ## Configurações de Redes
 
-Redes são utilizadas nos processos de transferência em diversos âmbitos. Para configurá-las utilize o módulo STCP, nele será possível Adicionar, Editar, Copiar, Exibir e Remover Redes.
+Redes são utilizadas nos processos de transferência em diversos âmbitos. Para configurá-las utilize o módulo STCP, nele será possível **Adicionar**, **Editar**, **Copiar**, **Exibir** e **Remover Redes**.
+
+![](img/image-38.png "Redes")
 
 ### Adicionar Rede OFTP
 
-Para adicionar um serviço siga os passos:
+Para adicionar um serviço clique em **+Adicionar**. 
 
-```
-Acesse o módulo STCP;
-Acesse a aba Redes no menu lateral esquerdo;
-Ao fazer isso a listagem de todas as redes da instância será apresentada para criar uma nova clique em
-"+Adicionar".
-```
-```
-NOTA: A divisão do formulário entre Seções e Subseções continuará sendo utilizada da mesma forma
+![](img/image-39.png "Adicionar nova Rede")
+
+Ao fazer isso, será apresentada a tela para criar uma nova: 
+
+![](img/image-40.png)
+
+{{< callout type="info" >}}
+**NOTA:** A divisão do formulário entre Seções e Subseções continuará sendo utilizada da mesma forma
 que durante o cadastro de Instâncias.
-```
-Identificação da Rede OFTP
+{{< /callout >}}
 
-A primeira seção a ser preenchida é a Identificação.
+**Identificação da Rede OFTP**
 
+A primeira seção a ser preenchida é a **Identificação**.
 
-```
-NOTA: As Redes podem ser do tipo OFTP ou SUPERVISÃO sendo que a primeira é utilizada durante
-transferências de arquivos entre usuários, autenticação das Instâncias, etc, e a segunda para visualizar
+![](img/image-39.png "Identificação da nova Rede")
+
+{{< callout type="info" >}}
+**NOTA:** As Redes podem ser do tipo OFTP, Supervisão (Gemini e DirectLink), API (DirectLink) sendo que a primeira é utilizada durante transferências de arquivos entre usuários, autenticação das Instâncias, etc, e a segunda para visualizar
 logs do sistema no console do Portal.
-```
+{{< /callout >}}
+
 Siga a tabela abaixo para facilitar a inserção de dados:
 
-```
-Campo Descrição Valores Permitidos
-Desabilitado Habilita/Desabilita a Rede Chave selecionável
-Tipo Seleção do tipo de Rede entre OFTP e SUPERVISÃO Chave selecionável
-Nome Nome da Rede Auto atribuído pelo sistema
-Descrição Descrição da Rede
-```
-```
-AVISOS:
-```
-```
-Caso uma Rede seja bloqueada nenhuma conexão poderá ser inicializada por ela.
-O nome da Rede é automaticamente atribuído pelo sistema, seguinto o padrão:
-Redes do tipo OFTP: TCPIP_<Numero_da _rede>
-Redes do tipo SUPERVISÃO: TCPIP_SUP_<Numero_da_rede>
-```
-A segunda seção a ser preenchida varia a depender do tipo de Rede escolhida, segue abaixo tabelas
-explicativas para facilitar o preenchimento das informações em ambos os casos
+| Campo       | Descrição                                      | Valores Permitidos    |
+|-------------|------------------------------------------------|-----------------------|
+| Desabilitado| Habilita/Desabilita a Rede                     | Chave selecionável    |
+| Tipo        | Seleção do tipo de Rede entre OFTP e SUPERVISÃO| Chave selecionável    |
+| Nome        | Nome da Rede                                   | Auto atribuído pelo sistema |
+| Descrição   | Descrição da Rede                              |                       |
 
-Rede escolhida - OFTP
+
+{{< callout type="info" >}}
+**AVISOS:**
+* Caso uma Rede seja bloqueada nenhuma conexão poderá ser inicializada por ela.
+* O nome da Rede é automaticamente atribuído pelo sistema, seguinto o padrão:
+   * Redes do tipo OFTP: TCPIP_<Numero_da _rede>
+   * Redes do tipo SUPERVISÃO: TCPIP_SUP_<Numero_da_rede>
+{{< /callout >}}
+
+A segunda seção a ser preenchida varia a depender do tipo de Rede escolhida, segue abaixo tabelas explicativas para facilitar o preenchimento das informações em ambos os casos
+
+**Rede escolhida - OFTP**
 
 ```
 Atributo Descrição Valores Permitidos
