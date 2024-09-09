@@ -11,7 +11,7 @@ prev: /docs/
 next: /stcpdirectlink/01-install
 # slug: stcpdirectlink
 draft: false
-lastmod: 2024-05-29
+lastmod: 2024-09-09
 ---
 ## O que é o STCP Directlink?
 
@@ -57,7 +57,9 @@ Clique [aqui](https://docs.aws.amazon.com/pt_br/AmazonS3/latest/userguide/Welcom
   Clique [aqui](https://azure.microsoft.com/pt-br/products/storage/blobs) para mais informações sobre o **Armazenamento de Blobs do Azure**.
 {{< /callout >}}
 
-## Segurança e conformidade
+## Segurança e Privacidade
+
+A segurança é um dos pilares do **STCP DirectLink**. Todas as transações são criptografadas, e o sistema oferece uma arquitetura de autenticação robusta, assegurando que apenas usuários autorizados tenham acesso às funcionalidades. Além disso, **não utilizamos cookies**, proporcionando um ambiente mais privado e sem o uso de mecanismos de rastreamento.
 
 - Utiliza **TLS 1.2/1.3** para atender às necessidades de intercâmbio de informações de forma segura através da Internet.
 - Total suporte à utilização de **certificados digitais**.
