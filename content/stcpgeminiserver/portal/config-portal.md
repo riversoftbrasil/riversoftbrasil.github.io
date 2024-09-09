@@ -481,11 +481,13 @@ Ao fazer isso, será apresentada a tela para criar uma nova:
 que durante o cadastro de Instâncias.
 {{< /callout >}}
 
-**Identificação da Rede OFTP**
+#### Aba Geral
 
-A primeira seção a ser preenchida é a **Identificação**.
+**Identificação da nova Rede**
 
-![](img/image-39.png "Identificação da nova Rede")
+A primeira subseção a ser preenchida é a **Identificação**.
+
+![](img/image-41.png "Identificação da nova Rede")
 
 {{< callout type="info" >}}
 **NOTA:** As Redes podem ser do tipo OFTP, Supervisão (Gemini e DirectLink), API (DirectLink) sendo que a primeira é utilizada durante transferências de arquivos entre usuários, autenticação das Instâncias, etc, e a segunda para visualizar
@@ -497,70 +499,100 @@ Siga a tabela abaixo para facilitar a inserção de dados:
 | Campo       | Descrição                                      | Valores Permitidos    |
 |-------------|------------------------------------------------|-----------------------|
 | Desabilitado| Habilita/Desabilita a Rede                     | Chave selecionável    |
-| Tipo        | Seleção do tipo de Rede entre OFTP e SUPERVISÃO| Chave selecionável    |
+| Tipo        | Seleção do tipo de Rede entre OFTP, SFTP, API e Supervisão | Chave selecionável    |
 | Nome        | Nome da Rede                                   | Auto atribuído pelo sistema |
 | Descrição   | Descrição da Rede                              |                       |
-
 
 {{< callout type="info" >}}
 **AVISOS:**
 * Caso uma Rede seja bloqueada nenhuma conexão poderá ser inicializada por ela.
-* O nome da Rede é automaticamente atribuído pelo sistema, seguinto o padrão:
+* O nome da Rede é automaticamente atribuído pelo sistema, seguindo o padrão:
    * Redes do tipo OFTP: TCPIP_<Numero_da _rede>
    * Redes do tipo SUPERVISÃO: TCPIP_SUP_<Numero_da_rede>
 {{< /callout >}}
 
-A segunda seção a ser preenchida varia a depender do tipo de Rede escolhida, segue abaixo tabelas explicativas para facilitar o preenchimento das informações em ambos os casos
+#### Aba Comunicação
 
-**Rede escolhida - OFTP**
+Na aba de **Comunicação** as subseções a serem preenchidas são: **Interface local**, **Opções** e **TLS**.
 
-```
-Atributo Descrição Valores Permitidos
-```
-```
-Biblioteca Biblioteca^ utilizada^ OpFaTraP^ a ou^ Re Ldibe TOrFaTnsPf.e^ Pra SdFrãToP:.^ STCP^ Lib^ Transfer
-```
-```
-OFTP
-Level Seleção^ do^ nível^ do^ protocolo^ OFTP^ utilizado
-```
-```
-Opções disponíveis:
-1.2, 1.3, 1.4, 2.0.
-```
-```
-Créditos Número^ de^ pacotes^ de^ dados^ enviados^ de^ forma^ a^ controlar^ a^ banda
-utilizada na transmissão.
-```
-```
-Numerais
-```
-```
-Tamanho
-do buffer Tamanho,^ em^ bytes,^ dos^ pacotes^ de^ dados^ enviados. Numerais
-Tempo de
-inatividade
-```
-```
-Tempo, em segundos, em que a Rede permanecerá inativa e
-aceitará reabrir a transmissão caso haja interrupção. Numerais
-```
+![](img/image-43.png)
 
-```
-Atributo Descrição Valores Permitidos
-Nível de
-debug
-```
-```
-Informa o nível de detalhamento em que os logs da Rede serão
-listados pelo sistema no Console Info e arquivos de log. Numerais
-```
-```
-AVISO: Em uma transferência, o emissor poderá enviar o número de pacotes de dados informados para
-o parâmetro créditos antes de o receptor confirmar que está apto para receber a transmissão e que os
-dados serão recebidos com sucesso.
-```
-Rede escolhida - SUPERVISÃO
+| Atributo   | Descrição                                                                                     | Valores Permitidos    |
+|------------|------------------------------------------------------------------------------------------------|-----------------------|
+| TCP v4 ou v6     | Habilitação/Desabilitação do protocolo IPv6 para a Rede.                                        | Chave selecionável    |
+| Endereço IP| Endereço IP da Interface Local utilizada para comunicar-se com o serviço OFTP. Parâmetro obrigatório |                       |
+| Porta IP   | Porta IP habilitada na Interface local para comunicação com a Rede. Parâmetro obrigatório       | Numerais              |
+| Nível de debug | Informa o nível de detalhamento em que os logs serão capturados na Interface Local         |                       |
+
+{{< callout type="info" >}}
+**DICA:** Para que o sistema busque qualquerInterface Local disponível, preencha o campo Endereço IP
+com o valor "0.0.0.0"
+{{< /callout >}}
+
+![](img/image-44.png)
+
+| Atributo        | Descrição                                                                                                      | Valores Permitidos                         |
+|-----------------|----------------------------------------------------------------------------------------------------------------|--------------------------------------------|
+| Biblioteca      | Biblioteca utilizada para a comunicação da Rede. (Padrão STCPLib Net OpenSSL)                                   |                                            |
+| Compressão GZIP | Habilitação/Desabilitação da compressão dos arquivos ao enviá-los.                                              | Chave selecionável                         |
+| TCP Max Listen  | Número máximo de processos que serão executados na fila do protocolo TCP/IP. Este campo é utilizado para controlar todos os processos que são executados simultaneamente na conexão. | Numerais                                   |
+| Compatibilidade | Define o padrão de compatibilidade da Rede com outras aplicações.                                               | Seleção entre: RFC2204, RFC 1006/1086, RVS*, X.25/Router e XFB*/SSL |
+
+![](img/image-45.png)
+
+**TLS - Chave Privativa**
+
+| Atributo  | Descrição                                                                                           | Valores Permitidos                 |
+|-----------|-----------------------------------------------------------------------------------------------------|------------------------------------|
+| TLS       | Habilita/Desabilita o cadastro da chave privativa TLS para a Rede.                                   | Chave selecionável                 |
+| Chave     | Chave TLS utilizada para a comunicação da Rede.                                                      | Quaisquer valores exceto espaço    |
+| Certificado| Certificado utilizado para a validação da Chave TLS.                                                |                                    |
+| Senha     | Senha da chave TLS que será verificada na comunicação da Rede.                                       | Quaisquer valores exceto espaço    |
+| Confirmar | Confirmação da senha da chave TLS                                                                    | Mesmo valor inserido como Senha    |
+
+{{< callout type="warning" >}}
+**AVISO:** Os campos Chave e certificado são obrigatórios caso a chave TLS esteja habilitada.
+{{< /callout >}}
+
+**TLS- Certificados CA (Autoridades)**
+
+| Atributo  | Descrição                                                           | Valores Permitidos         |
+|-----------|---------------------------------------------------------------------|----------------------------|
+| Arquivo   | Nome do arquivo que contém o certificado TLS utilizado na Rede.     | Formato do arquivo: .cer   |
+| Diretório | Diretório onde o arquivo do certificado TLS está salvo.             | Caracteres de caminho de arquivo |
+
+**TLS- Opções**
+
+| Atributo                  | Descrição                                                                                                       | Valores Permitidos       |
+|---------------------------|-----------------------------------------------------------------------------------------------------------------|--------------------------|
+| Verificar certificado      | Opção utilizada para forçar a Rede a checar o certificado dos usuários que se conectarem a ele.                 | Chave selecionável        |
+| Habilitar versões anteriores do SSL | Opção utilizada para que os certificados em versões antigas do SSL sejam habilitados para uso. É recomendado que essa opção não seja habilitada. | Chave selecionável        |
+| Arquivo DH                | Campo utilizado para cadastrar um arquivo DH na Rede. É recomendado que essa opção não seja habilitada.          |                          |
+| Algoritmos                | Caixa de seleção dos tipos de algoritmos usados para a Rede. Pode-se selecionar qualquer um dos algoritmos disponíveis ou deixar em branco para que o melhor algoritmo seja definido automaticamente. |                          |
+| Nível de debug            | Campo de definição do nível de debug dos eventos de TLS da Rede.                                                 | Numerais                 |
+
+A terceira seção a ser preenchida varia a depender do tipo de Rede escolhida, segue abaixo tabelas explicativas para facilitar o preenchimento das informações em ambos os casos.
+
+#### Rede OFTP
+
+![](img/image-42.png "Campos Rede OFTP")
+
+| Atributo            | Descrição                                                                                                      | Valores Permitidos                          |
+|---------------------|---------------------------------------------------------------------------------------------------------------|---------------------------------------------|
+| Biblioteca          | Biblioteca utilizada para a Rede OFTP. Padrão: STCP Lib Transfer OFTP ou Lib Transfer SFTP.                    |                                             |
+| OFTP Level          | Seleção do nível do protocolo OFTP utilizado                                                                   | Opções disponíveis: 1.2, 1.3, 1.4, 2.0     |
+| Créditos            | Número de pacotes de dados enviados de forma a controlar a banda utilizada na transmissão.                     | Numerais                                    |
+| Tamanho do buffer   | Tamanho, em bytes, dos pacotes de dados enviados.                                                              | Numerais                                    |
+| Tempo de inatividade| Tempo, em segundos, em que a Rede permanecerá inativa e aceitará reabrir a transmissão caso haja interrupção.  | Numerais                                    |
+| Nível de debug      | Informa o nível de detalhamento em que os logs da Rede serão listados pelo sistema no Console Info e arquivos de log. | Numerais                                    |
+
+{{< callout type="info" >}}
+**AVISO:** Em uma transferência, o emissor poderá enviar o número de pacotes de dados informados para o parâmetro créditos antes de o receptor confirmar que está apto para receber a transmissão e que os dados serão recebidos com sucesso.
+{{< /callout >}}
+
+Para concluir o processo de cadastro da Rede OFTP, clique em **Salvar** como mostrado na imagem a seguir.
+
+#### Rede escolhida - SUPERVISÃO
 
 _Autenticação_
 
