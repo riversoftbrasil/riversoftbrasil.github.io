@@ -590,438 +590,102 @@ A terceira seção a ser preenchida varia a depender do tipo de Rede escolhida, 
 **AVISO:** Em uma transferência, o emissor poderá enviar o número de pacotes de dados informados para o parâmetro créditos antes de o receptor confirmar que está apto para receber a transmissão e que os dados serão recebidos com sucesso.
 {{< /callout >}}
 
-Para concluir o processo de cadastro da Rede OFTP, clique em **Salvar** como mostrado na imagem a seguir.
-
-#### Rede escolhida - SUPERVISÃO
-
-_Autenticação_
-
-```
-Atributo Descrição Valores Permitidos
-Usuário Nome do usuário de supervisão Quaisquer valores exceto espaços
-Senha Senha deste usuário
-Confirmar Confirmação da senha Mesmo valor da senha
-```
-_Características_
-
-```
-Atributo Descrição
-```
-```
-Valores
-Permitidos
-```
-```
-Biblioteca Biblioteca^ utilizada^ para^ a^ RSeupdee^ drvei^ sSãupo)ervisão.^ (Padrão^ STCP^ Lib
-```
-```
-Intervalo de
-requisições Intervalo,^ em^ "segundos",^ entre^ as^ requisições. Numerais
-Tamanho do
-buffer
-```
-```
-Tamanho dos pacotes de dados enviados pela Rede. Numerais
-```
-
-```
-Atributo Descrição VPaelrmoreitsidos
-```
-```
-Tempo de
-inatividade
-```
-```
-Tempo, em segundos, em que a Rede permanecerá inativa e aceitará
-reabrir a transmissão caso haja interrupção. Numerais
-Nível de
-debug
-```
-```
-Informa o nível de detalhamento em que os logs da Rede serão listadas na
-Interface Local.
-```
-```
-Numerais
-```
-Comunicação
-
-Na seção Comunicação configura-se a comunicação realizada e suas especificidades, siga os tópicos e suas
-tabelas para facilitar a inserção dos valores no cadastro:
-
-_Interface local_
-
-```
-Atributo Descrição VPaelrmoreitsidos
-```
-```
-TCP v 6 Habilitação/Desabilitação do protocolo IPv 6 para a Rede. Csehlaevceionável
-```
-```
-Endereço
-IP
-```
-```
-Endereço IP da Interface Local utilizada para comunicar-se com o serviço
-OFTP. Este parâmetro é obrigatório
-```
-```
-Porta IP
-```
-```
-Porta IP habilitada na Interface local para comunicação com a Rede.
-Parâmetro obrigatório. Numerais
-Nível de
-debug
-```
-```
-Informa o nível de detalhamento em que os logs serão capturados na Interface
-Local. Numerais
-```
-```
-DICA: Para que o sistema busque qualquer Interface Local disponível, preencha o campo Endereço IP
-com o valor "0.0.0.0"
-```
-_4. 1. 1 Características_
-
-```
-Atributo Descrição Valores Permitidos
-```
-```
-Biblioteca
-```
-```
-Biblioteca utilizada para a comunicação da Rede. (Padrão
-STCP Lib Net OpenSSL)
-Compressão
-GZIP
-```
-```
-Habilitação/Desabilitação da compressão dos arquivos ao
-enviá-los. Chave^ selecionável
-```
-
-```
-Atributo Descrição Valores Permitidos
-```
-```
-TCP Max Listen
-```
-```
-Número máximo de processos que serão executados na fila
-do protocolo TCP/IP. Este campo é utilizado para controlar
-todos os processos que são executados simultâneamente na
-conexão.
-```
-```
-Numerais
-```
-```
-Compatibilidade Define^ o^ padrão^ de^ compatibilidade^ da^ Rede^ com^ outras
-aplicações.
-```
-```
-Seleção entre: RFC-
-2204, RFC 1006/1086,
-RVS*, X.25/Router e
-XFB*/SSL
-```
-_TLS-Chave Privativa_
-
-```
-Atributo Descrição Valores Permitidos
-```
-```
-TLS Habilita/Desabilita^ o^ cadastroRe^ ddea.^ chave^ privativa^ TLS^ para^ a
-```
-```
-Chave Chave TLS utilizada para a comunicação da Rede. Quaisquer^ valores^ exceto
-espaço
-Certificado Certificado utilizado para a validação da Chave TLS.
-```
-```
-Senha Senha^ da^ chave^ TLS^ que^ será^ verificada^ na^ comunicação
-da Rede.
-```
-```
-Quaisquer valores exceto
-espaço
-```
-```
-Confirmar Confirmação da senha da chave TLS
-```
-```
-Mesmo valor inserido como
-Senha.
-```
-```
-AVISO: Os campos Chave e certificado são obrigatórios caso a chave TLS esteja habilitada
-```
-_TLS- Certificados CA (Autoridades)_
-
-```
-Atributo Descrição Valores Permitidos
-```
-```
-Arquivo Nome^ do^ arquivo^ que^ contém^ o^ certificado^ TLS^ utilizada^ na^ Rede.
-Formato do arquivo: .cer
-```
-
-```
-Atributo Descrição Valores Permitidos
-```
-```
-Diretório Diretório onde o arquivo do certificado TLS está salvo. Cdear aarqucteirvoes^ de^ caminho
-```
-_TLS - Opções_
-
-```
-Atributo Descrição Valores Permitidos
-```
-```
-Verificar
-certificado
-```
-```
-Opção utilizada para forçar a Rede a checar
-o certificado dos usuários que se
-conectarem a ele.
-```
-```
-Chave selecionável
-```
-```
-Habilitar
-versões
-anteriores
-do SSL
-```
-```
-Opção utilizada para que os certificados em
-versões antigas do SSL sejam habilitados
-para uso. É recomendado que essa opção
-não seja habilitada.
-```
-```
-Chave selecionável
-```
-```
-Arquivo
-DH
-```
-```
-Campo utilizado para cadastrar um arquivo
-DH na Rede. É recomendado que essa
-opção não seja habilitada.
-```
-```
-Algoritmos
-```
-```
-Caixa de seleção dos tipos de algoritmos
-usados para a Rede.
-```
-```
-Pode-se selecionar qualquer um dos
-algoritmos disponíveis ou deixar em
-branco para que o melhor algoritmo seja
-definido automaticamente.
-Nível de
-debug
-```
-```
-Campo de definição do nível de debug dos
-eventos de TLS da Rede.
-```
-```
-Numerais
-```
-Para concluir o processo de cadastro da Rede OFTP, clique em "Salvar" como mostrado na imagem a seguir.
-
+Para concluir o processo de cadastro da Rede, clique em **Salvar** como mostrado na imagem a seguir.
 
 ### Editar Redes
 
-Para editar uma Rede, acesse a lista de Redes em "Módulos -> Configurador STCP -> Redes -> Editar" no
-ícone à direita;
+Para editar uma Rede, acesse a lista de Redes em: **Redes** e depois **Editar**, como mostra a imagem.
+
+![](img/image-46.png "Editar Rede")
 
 Após acessar a edição, altere os campos desejados e salve as alterações.
 
-```
-AVISO: O campo "Nome:" da Rede não pode ser alterado!
-```
+{{< callout type="info" >}}
+**AVISO:** O campo **Nome** da Rede não pode ser alterado!
+{{< /callout >}}
+
 ### Copiar Redes
 
-A cópia ou exibição das Redes é realizada através do menu de opções ao lado da Rede desejada na lista de
-Redes. Para executar uma dessas ações, clique no ícone de opções ao lado de uma Rede e escolha a função
-"Copiar" ou "Exibir" como mostrado na imagem a seguir:
+A cópia ou exibição das Redes é realizada através do menu de opções ao lado da Rede desejada na lista de Redes. Para executar uma dessas ações, clique no ícone de opções ao lado de uma Rede e escolha a função **Copiar** como mostrado na imagem a seguir:
 
+![](img/image-47.png "Copiar Rede")
 
-```
-NOTA Ao clicar em "Exibir", os campos do Tipo de Aquivo ficarão desabilitados e não será possível
-editá-los.
-```
 ### Remover Redes
 
 Para remover uma Rede, siga os passos:
 
-```
-Acesse a lista de Redes;
-Acesse os menus de seleção em uma Rede desejada clicando na seta e selecionando a opção
-"Remover" *
-```
-```
-Clique em "X Remover" ao ser questionado por "Esta ação é irreversível. Tem certeza que deseja
-remover este registro?"
-```
+* Acesse a lista de Redes;
+* Acesse os menus de seleção em uma Rede desejada clicando na seta e selecionando a opção **Excluir** 
+![](img/image-48.png "Excluir Rede")
+
+* Clique em **Sim** ao ser questionado por *Tem certeza que deseja remover a rede [Nome_da_rede]?*
+  
+![](img/image-49.png "Confirmação")
+
 ## Configurações de Usuários
 
 ### Adicionar Usuário
 
-O STCP Gemini Portal permite criar novos Usuários acessando o menu Usuários em "Módulos ->
-Configurador STCP -> Usuários" e clicando em "+Adicionar".
+O STCP Gemini Portal permite criar novos Usuários acessando o menu lateral em **Usuários** e clicando em **+Adicionar**.
+
+![](img/image-50.png "Adicionar imagem")
+
+{{< callout type="info" >}}
+**NOTA:** Para facilitar a compreensão e definição dos campos e atributos, o cadastro é dividido em seções e subseções como mostrado na imagem a seguir:
+{{< /callout >}}
+
+#### Seção Geral
+
+**Identificação do Usuário**
+
+![](img/image-51.png "Campos de identificação do usuário")
 
 
-```
-NOTA: Para facilitar a compreensão e definição dos campos e atributos, o cadastro é dividido em
-seções e subseções como mostrado na imagem a seguir:
-```
-Identificação do Usuário
+A primeira seção a ser preenchida é a de identificação. Segue uma tabela descrevendo quais informações do usuário devem ser inseridas e suas especificidades:
 
-A primeira seção a ser preenchida é a de identificação. Segue uma tabela descrevendo quais informações do
-usuário devem ser inseridas e suas especificidades:
+| Campo             | Descrição                                                            | Valores Permitidos                |
+|-------------------|----------------------------------------------------------------------|-----------------------------------|
+| Desabilitado      | Bloqueia o usuário de realizar conexões e transferir arquivos.        | Chave selecionável                |
+| Nome (Obrigatório)| Nome do Usuário a ser cadastrado.                                     | Quaisquer valores exceto espaço   |
+| Descrição         | Descrição do usuário que está sendo criado.                          |                                   |
+| E-mail            | E-mail válido do usuário                                              | Email no formato nome@email.com   |
+| Senha (Obrigatório) | Senha para o usuário                                                |                                   |
+| Confirmar (Obrigatório) | Confirmação da senha definida anteriormente.                   | Mesmo valor inserido para a senha |
 
-```
-Campo Descrição Valores Permitidos
-```
-```
-Desabilitado
-```
-```
-Bloqueia o usuário de realizar conexões e trasferir
-arquivos. Chave^ selecionável
-```
-```
-Nome (Obrigatório) Nome do Usuário a ser cadastrado. Qespuaaisquçoer^ valores^ exceto
-```
-```
-Descrição Descrição do usuário que está sendo criado.
-```
-```
-E-mail E-mail válido do usuário Enommaiel^ @noe^ mformail.caomto
-```
 
-```
-Campo Descrição Valores Permitidos
-Senha
-(Obrigatório) Senha^ para^ o^ usuário
-Confirmar
-(Obrigatório) Confirmação^ da^ senha^ definida^ anteriormente.
-```
-```
-Mesmo valor inserido para a
-senha
-```
-```
-NOTA: Ao criar a senha do usuário, deve-se seguir as políticas de senha definidas na criação de
-Instâncias. Pode-se visualizar abaixo que as políticas estão sendo seguidas nos campos "Senha" e
-"Confirmar"
-```
-Características do Usuário
+{{< callout type="info" >}}
+**NOTA:** Ao criar a senha do usuário, deve-se seguir as políticas de senha definidas na criação de Instâncias. Pode-se visualizar abaixo que as políticas estão sendo seguidas nos campos **Senha** e **Confirmar**.
+{{< /callout >}}
+
+#### Seção Características 
+
+**Protocolo para conexão de saída**
+
+![](img/image-52.png "Campos de carasterísticas do usuário")
 
 A segunda seção a ser cadastrada é a de características. Segue abaixo uma tabela explicativa dos campos que
 devem ser preenchidos:
 
-```
-Campo Descrição VPaelrmoreitsidos
-```
-```
-Tipo de Arquivo
-Padrão
-```
-```
-Definição de qual tipo de arquivo será definido como Padrão para o
-Usuário
-```
-```
-Seleção entre
-os disponíveis
-Máximo de
-sessões Número^ de^ sessões^ que^ poderão^ ser^ abertas^ por^ este^ Usuário. Numerais
-Backup
-arquivos
-transmitidos
-```
-```
-Chave utilizada para que os arquivos enviados pelo usuário sejam
-salvos na pasta BACKUP do sistema.
-```
-```
-Chave
-selecional
-```
-```
-Nome longo
-para arquivos
-```
-```
-Chave utilizada para permitir que arquivos com mais de 26
-caracteres com até 128 caracteres possam ser transferidos
-```
-```
-Chave
-selecionável
-Senha nunca
-expira
-```
-```
-Permite que a senha do usuário nunca expire e não tenha
-necessidade de ser alterada
-```
-```
-Chave
-selecionável
-Transmissão
-otimizada
-```
-```
-Permite que usuário envie arquivos de sua pasta Saída ao receber
-uma conexão
-```
-```
-Chave
-selecionável
-```
+| Campo                     | Descrição                                                                                               | Valores Permitidos            |
+|---------------------------|---------------------------------------------------------------------------------------------------------|-------------------------------|
+| Protocolo     | Definição de qual protocolo será utilizado na conexão                               |  Chave selecionável  |
+| Backup arquivos transmitidos          | Chave utilizada para que os arquivos enviados pelo usuário sejam
+salvos na pasta BACKUP do sistema.                                             | Chave selecionável                      |
+| Senha nunca expira | Permite que a senha do usuário nunca expire e não tenha
+necessidade de ser alterada.     | Chave selecionável             |
+| Transmissão otimizada | Permite que usuário envie arquivos de sua pasta Saída ao receber uma conexão     | Chave selecionável             |
 
-```
-Campo Descrição VPaelrmoreitsidos
-```
-```
-OFTP Chave^ utilizada^ para^ habilitar^ ou^ desabilitar^ a^ opção^ de^ cadastro^ do
-Odette ID para o usuário.
-```
-```
-Chave
-selecionável
-```
-```
-SFTP
-```
-```
-Chave utilizada para habilitar ou desabilitar a opção de cadastro do
-SFTP ID para o usuário.
-```
-```
-Chave
-selecionável
-```
-```
-NOTA: Só é possível adicionar um tipo de arquivo previamente criado.
-```
-```
-AVISO: Os tipos de arquivo do usuário possuem prioridade em relação aos da instância, ou seja, as
+
+<!-- {{< callout type="info" >}}
+**NOTA:** Só é possível adicionar um tipo de arquivo previamente criado.
+{{< /callout >}}
+
+{{< callout type="warning" >}}
+Os tipos de arquivo do usuário possuem prioridade em relação aos da instância, ou seja, as
 tratativas definidas na instância só ocorrerão caso não haja nenhuma tratativa definida para o usuário
 utilizado na transferência.
-```
+{{< /callout >}} -->
+
 SELECIONANDO A OPÇÃO OFTP
 
 OFTP | Geral
