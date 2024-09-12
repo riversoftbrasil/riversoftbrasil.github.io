@@ -262,8 +262,7 @@ Para fazer uso desta funcionalidade, clique sobre o botão **Filtro de Usuário*
 | Funções   | Descrição |
 | ----------- | ----------- |
 | Parar monitoração | Esta função permite parar a atividade de monitoração. Para fazer uso desta funcionalidade, basta clicar sobre o botão **Parar**. |
-| Iniciar monitoração | Esta função permite iniciar a atividade de uma monitoração que foi parada. Para
-fazer uso desta funcionalidade, basta clicar sobre o botão **Iniciar**. |
+| Iniciar monitoração | Esta função permite iniciar a atividade de uma monitoração que foi parada. Para fazer uso desta funcionalidade, basta clicar sobre o botão **Iniciar**. |
 
 ### Como monitorar eventos
 
@@ -338,25 +337,65 @@ Após informar o nome do usuário para conexão no parâmetro **Usuário** e cli
 Obs.: a conexão automática deve estar habilitada no usuário para que se tenha sucesso nessa operação.
 {{< /callout >}}
 
-
 ## Glossário
 
-**D**
+<div class="glossary-section">
+  <div class="letter-group">
+    <h3>D</h3>
+    <p><strong>DER</strong> - Um padrão de codificação que fornece um método de codificação de objetos, como certificados e mensagens, independente de plataforma, para transmissão entre dispositivos e aplicativos.</p>
+  </div>
 
-*DER* - É um padrão de codificação que fornece um método de codificação de objetos (como certificados e mensagens), independente de plataforma, para transmissão entre dispositivos e aplicativos.
+  <div class="letter-group">
+    <h3>E</h3>
+    <p><strong>Endereço IP</strong> - Um número único para cada computador conectado à Internet, composto por uma sequência de 4 números que variam de 0 até 255, separados por “.”.</p>
+  </div>
 
-**E**
+  <div class="letter-group">
+    <h3>P</h3>
+    <p><strong>PEM (Privacy Enhanced Mail)</strong> - Um formato popular de certificado.</p>
+    <p><strong>PKCS#12</strong> - Um formato de arquivo que transporta certificados e chaves confidenciais.</p>
+  </div>
 
-*Endereço IP* - Este endereço é um número único para cada computador conectado a Internet, composto por uma sequência de 4 números que variam de 0 até 255, separados por "."
+  <div class="letter-group">
+    <h3>S</h3>
+    <p><strong>SSL (Secure Sockets Layer)</strong> - Protocolo que fornece confidencialidade e integridade na comunicação entre um cliente e um servidor, através do uso de criptografia.</p>
+  </div>
+</div>
 
-**P**
+<style>
+  .glossary-section {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+  }
 
-*PEM*
-Privacy Enhanced Mail - é um formato popular de certificado.
+  .letter-group {
+    margin-bottom: 20px;
+  }
 
-*PKCS#12* - Um formato de arquivo que transporta certificados e chaves confidenciais.
+  .letter-group h3 {
+    font-size: 1.8em;
+    color: #333;
+    border-bottom: 2px solid #007acc;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
 
-**S**
+  .letter-group p {
+    font-size: 1.1em;
+    color: #555;
+    margin-left: 20px;
+    text-indent: -20px;
+    padding-left: 20px;
+    line-height: 1.6;
+  }
 
-*SSL* - Do Inglês Secure Sockets Layer. Protocolo que fornece confidencialidade e integridade na comunicação entre um cliente e um servidor, através do uso de criptografia.
+  strong {
+    color: #333;
+  }
+</style>
 

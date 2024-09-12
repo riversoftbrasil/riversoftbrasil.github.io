@@ -737,19 +737,52 @@ Obs.: este procedimento permite que uma caixa postal seja bloqueada/desbloqueada
 
 ## Glossário
 
-**I**
+<div class="glossary-section">
+  <div class="letter-group">
+    <h3>I</h3>
+    <p><strong>IUSR</strong> - Conta Interna para acesso anônimo ao Internet Information Service.</p>
+  </div>
 
-**IUSR**
-Conta Interna para acesso anônimo ao Internet Information Service.
+  <div class="letter-group">
+    <h3>S</h3>
+    <p><strong>System DSN</strong> - Pode ser usado por alguém que tenha acesso à máquina.</p>
+  </div>
+</div>
 
-**S**
+<style>
+  .glossary-section {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+  }
 
-**System DSN**
-Pode ser usado por alguém que tenha acesso à máquina.
+  .letter-group {
+    margin-bottom: 20px;
+  }
 
-<!-- ## Referências
+  .letter-group h3 {
+    font-size: 1.8em;
+    color: #333;
+    border-bottom: 2px solid #007acc;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
 
-Disponível em: (<http://www.webopedia.com/TERM/D/DNS.html>).
+  .letter-group p {
+    font-size: 1.1em;
+    color: #555;
+    margin-left: 20px;
+    text-indent: -20px;
+    padding-left: 20px;
+    line-height: 1.6;
+  }
 
-Acesso em: 16 de agosto de 2007. -->
+  strong {
+    color: #333;
+  }
+</style>
 

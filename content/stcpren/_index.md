@@ -28,85 +28,117 @@ As regras de validação e das ações (renomeio, cópia, backup, etc) deverão 
 
 ### Características Gerais
 
-* Renomeio de arquivo(s)
-* Cópia para múltiplos diretórios
-* Conversão de formato texto (Unix/Dos)
-* Validação do nome do arquivo por expressão regular
-* Remoção do arquivo por data do último acesso
-* Execução de processo (.BAT, .EXE, etc...)
-* Registro de log das ações realizadas
-* Geração de timestamp com data e hora do computador ou do arquivo
-* Mapeamento dinâmico de recursos de rede
-* Varredura de diretório e subdiretório
-* Validação de diretório por expressão regular
-* Conversão maiúscula e minúscula do nome do arquivo
+* Renomeio de arquivo(s);
+* Cópia para múltiplos diretórios;
+* Conversão de formato texto (Unix/Dos);
+* Validação do nome do arquivo por expressão regular;
+* Remoção do arquivo por data do último acesso;
+* Execução de processo (.BAT, .EXE, etc...);
+* Registro de log das ações realizadas;
+* Geração de timestamp com data e hora do computador ou do arquivo;
+* Mapeamento dinâmico de recursos de rede;
+* Varredura de diretório e subdiretório;
+* Validação de diretório por expressão regular;
+* Conversão maiúscula e minúscula do nome do arquivo.
 
 ## Glossário
 
-**E**
+<div class="glossary-section">
+  <div class="letter-group">
+    <h3>E</h3>
+    <p><strong>Endereço IP</strong> - Este endereço é um número único para cada computador conectado à Internet, composto por uma sequência de 4 números que variam de 0 até 255, separados por “.”.</p>
+  </div>
 
-**Endereço IP**
-Este endereço é um número único para cada computador conectado a Internet, composto por uma sequência de 4 números que variam de 0 até 255, separados por “.”.
+  <div class="letter-group">
+    <h3>F</h3>
+    <p><strong><em>Firewall</em></strong> - Dispositivo constituído pela combinação de software e hardware, utilizado para dividir e controlar o acesso entre redes de computadores.</p>
+  </div>
 
-**F**
+  <div class="letter-group">
+    <h3>H</h3>
+    <p><strong>HTTP</strong> - Do Inglês <em><strong>H</strong>yper<strong>T</strong>ext <strong>T</strong>ransfer <strong>P</strong>rotocol</em>. Protocolo usado para transferir páginas <em>Web</em> entre um servidor e um cliente, por exemplo, o <em>browser</em>.</p>
+  </div>
 
-_**Firewall**_
-Dispositivo constituído pela combinação de software e hardware, utilizado para dividir e controlar o acesso entre redes de computadores.
+  <div class="letter-group">
+    <h3>I</h3>
+    <p><strong>ISDN</strong> - O ISDN (Integrated Services Digital Network) é um sistema de conexões de telefone digital.</p>
+  </div>
 
-**H**
+  <div class="letter-group">
+    <h3>L</h3>
+    <p><strong>Log</strong> - Registro de atividades por programas de computador. No caso de logs relativos a incidentes de segurança, eles normalmente são gerados por <em>firewalls</em> ou por IDSs.</p>
+  </div>
 
-**HTTP**
-Do Inglês _**H**yper**T**ext **T**ransfer **P**rotocol_. Protocolo usado para transferir páginas _Web_ entre um servidor e um cliente, por exemplo, o _browser_.
+  <div class="letter-group">
+    <h3>M</h3>
+    <p><strong>Macro</strong> - É sinônimo para um grupo de instruções que pode ser usado como uma instrução ao longo do código-fonte.</p>
+  </div>
 
-**I**
+  <div class="letter-group">
+    <h3>P</h3>
+    <p><strong>Protocolo OFTP (ODETTE File Transfer Protocol)</strong> - O OFTP foi primeiramente especificado com premissas do modelo interconexão de sistemas abertos (OSI) utilizando o serviço de rede recomendado pela norma CCITT X.25. Com o crescimento da utilização do OFTP por diferentes setores, a organização ODETTE ampliou o escopo de padronização e incorporou a utilização do protocolo TCP/IP.</p>
+    <p><strong>PPP</strong> - O PPP (Point-to-Point Protocol) é o método mais usado para transportar pacotes do IP sobre uma ligação de série entre o usuário e o Internet Service Provider (ISP).</p>
+  </div>
 
-**ISDN**
-O ISDN (Integrated Services Digital Network) é um sistema de conexões de telefone digital.
+  <div class="letter-group">
+    <h3>R</h3>
+    <p><strong>RAS</strong> - Um protocolo para configuração de uma VPN.</p>
+  </div>
 
-**L**
+  <div class="letter-group">
+    <h3>S</h3>
+    <p><strong>Scan</strong> - Técnica normalmente implementada por um tipo de programa, projetado para efetuar varreduras em redes de computadores.</p>
+    <p><strong>SMM</strong> - System Management Module (Módulo de Gerenciamento de Sistema).</p>
+    <p><strong>SSL</strong> - Do Inglês <em><strong>S</strong>ecure <strong>S</strong>ockets <strong>L</strong>ayer</em>. Protocolo que fornece confidencialidade e integridade na comunicação entre um cliente e um servidor, através do uso de criptografia.</p>
+  </div>
 
-**Log**
-Registro de atividades por programas de computador. No caso de logs relativos a incidentes de segurança, eles normalmente são gerados por _firewalls_ ou por IDSs.
+  <div class="letter-group">
+    <h3>U</h3>
+    <p><strong>UNC</strong> - Este é um formato de nome de arquivo que é usado para especificar a localização dos arquivos, pastas e recursos na rede local (LAN).</p>
+  </div>
 
-**M**
+  <div class="letter-group">
+    <h3>V</h3>
+    <p><strong>VPN</strong> - É uma rede de comunicação privada normalmente utilizada por uma empresa ou um conjunto de empresas e/ou instituições, construída em cima de uma rede de comunicação pública, por exemplo, a Internet.</p>
+  </div>
+</div>
 
-**Macro**
-É sinônimo para um grupo de instruções que pode ser usado como uma instrução ao longo do código-fonte.
+<style>
+  .glossary-section {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+  }
 
-**P**
+  .letter-group {
+    margin-bottom: 20px;
+  }
 
-**Protocolo OFTP (ODETTE File Transfer Protocol)**
-O OFTP foi primeiramente especificado com premissas do modelo interconexão de sistemas abertos (OSI) utilizando o serviço de rede recomendado pela norma CCITT X.25.
-Com o crescimento da utilização do OFTP por diferentes setores, a organização ODETTE ampliou o escopo de padronização e incorporou a utilização do protocolo TCP/IP.
+  .letter-group h3 {
+    font-size: 1.8em;
+    color: #333;
+    border-bottom: 2px solid #007acc;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
 
-**PPP**
-O PPP (Point-to-Point Protocol) é o método mais usado para transportar pacotes do IP sobre uma ligação de série entre o usuário e a Internet Service Provider (ISP).
+  .letter-group p {
+    font-size: 1.1em;
+    color: #555;
+    margin-left: 20px;
+    text-indent: -20px;
+    padding-left: 20px;
+    line-height: 1.6;
+  }
 
-**R**
-
-**RAS**
-Um protocolo para configuração de uma VPN.
-
-**S**
-
-**Scan**
-Técnica normalmente implementada por um tipo de programa, projetado para efetuar varreduras em redes de computadores.
-
-**SMM**
-System Management Module (Módulo de Gerenciamento de Sistema).
-
-**SSL**
-Do Inglês _**S**ecure **S**ockets **L**ayer_. Protocolo que fornece confidencialidade e integridade na comunicação entre um cliente e um servidor, através do uso de criptografia.
-
-**U**
-
-**UNC**
-Este é um formato de nome de arquivo que é usado para especificar a localização dos arquivos, pastas e recursos na rede local (LAN).
-
-**V**
-
-**VPN**
-É uma rede de comunicação privada normalmente utilizada por uma empresa ou um conjunto de empresas e/ou instituições, construída em cima de uma rede de comunicação pública, por exemplo, a Internet.
+  strong {
+    color: #333;
+  }
+</style>
 
 <!-- ## Referências
 
