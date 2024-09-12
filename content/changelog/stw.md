@@ -9,6 +9,7 @@ sidebar:
 #### {{< icon "clock" >}} &nbsp;  Versão 5.3.16.0 (lançada em agosto de 2024)
 
 - Implementação da opção na biblioteca de log ODBC para gravar os dados de auditoria da tabela TBLTRANSFERS tanto no banco de dados quanto em um arquivo texto (JSON).
+- Aumento do número máximo de entradas (1000) na lista de arquivos de configuração do STCPRenCfg.
 - Atualização das bibliotecas de segurança TLS (Openssl 3.3.1).
 
 #### {{< icon "clock" >}} &nbsp;  Versão 5.3.15.0 (lançada em maio de 2024)
