@@ -11,7 +11,7 @@ weight:
 prev: 
 next: 
 draft: 
-lastmod: 2024-08-01
+lastmod: 2024-09-01
 ---
 # Funcionalidades do Portal
 
@@ -674,20 +674,106 @@ salvos na pasta BACKUP do sistema.                                             |
 necessidade de ser alterada.     | Chave selecionável             |
 | Transmissão otimizada | Permite que usuário envie arquivos de sua pasta Saída ao receber uma conexão     | Chave selecionável             |
 
-#### Seção Controles 
-
-A terceira seção a ser preenchido é a de Controle de Conexão, que  possibilita a utilização de filtros de conexão, execução de comandos antes, ao iniciar e ao finalizar conexões e requisição de espera por parte do sistema até o términode execução de um comando.
-
-
-<!-- {{< callout type="info" >}}
-**NOTA:** Só é possível adicionar um tipo de arquivo previamente criado.
+{{< callout type="info" >}}
+Só é possível adicionar um tipo de arquivo previamente criado.
 {{< /callout >}}
 
 {{< callout type="warning" >}}
-Os tipos de arquivo do usuário possuem prioridade em relação aos da instância, ou seja, as
-tratativas definidas na instância só ocorrerão caso não haja nenhuma tratativa definida para o usuário
-utilizado na transferência.
-{{< /callout >}} -->
+Os tipos de arquivo do usuário possuem prioridade em relação aos da instância, ou seja, as tratativas definidas na instância só ocorrerão caso não haja nenhuma tratativa definida para o usuário utilizado na transferência.
+{{< /callout >}}
+
+#### Seção Controles 
+
+A terceira seção a ser preenchido é a de **Controle de Conexão**, que  possibilita a utilização de filtros de conexão, execução de comandos antes, ao iniciar e ao finalizar conexões e requisição de espera por parte do sistema até o términode execução de um comando.
+
+![](img/image-53.png "Campos de controles do usuário")
+
+| Campo                        | Descrição                                                                                                      | Valores Permitidos                |
+|------------------------------|----------------------------------------------------------------------------------------------------------------|-----------------------------------|
+| Máximo de sessões             | Configura-se o numero máximo de sessões abertas simultaneamente para o usuário.   | Numerais |
+| Filtro de Conexão             | Expressão regular que filtra os arquivos transferidos em uma conexão                                            | Deve-se inserir uma expressão regular para que os arquivos sejam filtrados na conexão |
+| Executar comando antes da conexão | Definir um comando que será executado antes da conexão do usuário ser iniciada                              | Deve-se inserir o caminho do script que executará a conexão |
+| Aguardar o término da execução do comando | Habilita/Desabilita que o sistema aguarde o término da execução do comando definido no campo anterior | Chave selecionável                |
+| Executar comando no início da conexão | Habilita/Desabilita que o sistema aguarde o término da execução do comando definido no campo anterior | Chave selecionável                |
+| Executar comando no fim da conexão | Definir um comando que será executado ao finalizar a conexão do Usuário                                    | Deve-se inserir o caminho do script que executará a conexão |
+| Aguardar o término da execução do comando | Habilita/Desabilita que o sistema aguarde o término da execução do comando definido no campo anterior | Chave selecionável                |
+
+**Período de Conexão**
+
+A próxima subseção a ser preenchida é a de **Período de Conexão**, ela permite definir um período de tempo em que a conexão pode ser realizada pelo Usuário. Segue abaixo uma tabela explicativa contendo os campos e suas especificidades.
+
+![](img/image-54.png "Subseção período da conexão")
+
+| Campo        | Descrição                                                                       | Valores Permitidos                                               |
+|--------------|---------------------------------------------------------------------------------|------------------------------------------------------------------|
+| Hora Início  | Define a partir de qual horário a conexão do Usuário poderá ser realizada.       | Numerais                                                         |
+| Hora Término | Define o horário final, ou até quando a conexão do Usuário poderá ser realizada. | Numerais                                                         |
+| Dias da Semana | Define os dias da semana em que poderá iniciar-se uma conexão                    | Valores permitidos: Dom., Seg., Ter., Qua., Qui., Sex. e Sáb.     |
+| Padrão       | Reseta o período de conexão padrão do sistema.                                   | Define o horário de início como **00:00:00**, o Horário de Término para **23:59:59** e todos os dias da semana serão selecionados |
+
+![](img/image-55.png "Subseção arquivos e hash de máquina")
+
+As últimas subseções de cadastro dos Usuários são responsáveis pelas configurações dos arquivos transmitidos e recebidos pelo Usuário. Segue as tabelas das subseções contendo os campos e suas especificidades:
+
+**Controle de arquivos na transmissão**
+
+| Campo                        | Descrição                                                                    | Valores Permitidos  |
+|------------------------------|-------------------------------------------------------------------------------|---------------------|
+| Filtro de arquivos            | Expressão regular que filtra os arquivos transmitidos pelo usuário em uma conexão |                     |
+| Tamanho mínimo                | Define o tamanho mínimo dos arquivos enviados em pacotes de 1024 Bytes.       | Numerais            |
+| Tamanho máximo                | Define o tamanho máximo dos arquivos enviados em pacotes de 1024 Bytes.       | Numerais            |
+| Enviar ID local do arquivo no campo Userdata | Esta opção permite que o ID local do arquivo seja enviado no campo Userdata. |                     |
+
+{{< callout type="info" >}}
+**Cálculo do tamanhos mínimo e máximo dos arquivos:**
+
+A definição dos tamanhos de arquivos e a análise dos arquivos transmitidos e recebidos são realizadas a partir de pacotes de **1024 Bytes**. Configurando o campo "Tamanho mínimo:" com um valor x , o sistema realizará o seguinte cálculo:
+{{< /callout >}}
+
+| Campo             | Descrição                                                                                                                |
+|-------------------|--------------------------------------------------------------------------------------------------------------------------|
+| Tamanho Mínimo    | Valor em pacotes de 1024 Bytes                                                                                           |
+| Valor múltiplo de 1024 Bytes | O sistema irá considerar o valor exatamente como está no campo "Tamanho Mínimo".                                |
+| Valor não múltiplo de 1024 Bytes | O sistema irá pegar o valor do cálculo valor/1024 = (valor arredondado para o próximo número inteiro acima do número decimal * 1024), e este será o valor do tamanho mínimo considerado pelo sistema. |
+
+{{< callout type="info" >}}
+Ou seja, definindo o **Tamanho mínimo** como **1 Byte**, o sistema irá fazer o cálculo de **1/1024 = 0,00097** aproximadamente. Esse número será arredondado para 1 (número inteiro mais próximo acima do número decimal) e porfim, irá multiplicá-lo por 1024 (1*1024), logo, o **tamanho mínimo** deverá ser 1024 Bytes.
+{{< /callout >}}
+
+* Exemplos de Configurações dos Arquivos: 
+
+| Tamanho Mínimo                   | Tamanho do Arquivo a ser Transferido | Resultado                                                                                                                      |
+|----------------------------------|--------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
+| Qualquer valor entre 1 e 1024 inclusive  | Arquivo com tamanho menor ou igual a 1023 | A transferência será bloqueada, pois o arquivo tem menos de 1024 Bytes, que é o resultado da conta [(1 ≤ número ≤ 1023) / 1024] RESULTADO ARREDONDADO PARA CIMA ATÉ O PRIMEIRO NÚMERO INTEIRO (neste caso será 1) * 1024. |
+| Qualquer valor entre 1024 e 2048 inclusive | Arquivo com tamanho menor ou igual a 2047 | A transferência será bloqueada, pois o arquivo tem menos de 2048 Bytes, que é o resultado da conta [(1025 ≤ número ≤ 2047) / 1024] RESULTADO ARREDONDADO PARA CIMA ATÉ O PRIMEIRO NÚMERO INTEIRO (neste caso será 2) * 1024. |
+| Qualquer valor entre 2049 e 3071 inclusive | Arquivo com tamanho menor ou igual a 3071 | A transferência será bloqueada, pois o arquivo tem menos de 3072 Bytes, que é o resultado da conta [(2049 ≤ número ≤ 3071) / 1024] RESULTADO ARREDONDADO PARA CIMA ATÉ O PRIMEIRO NÚMERO INTEIRO (neste caso será 3) * 1024. |
+
+| Tamanho Máximo                   | Tamanho do Arquivo a ser Transferido | Resultado                                                                                                                      |
+|----------------------------------|--------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
+| Qualquer valor entre 1 e 1024 inclusive  | Arquivo com tamanho maior que 1024       | A transferência será bloqueada, pois o arquivo é maior ou igual a 1024 Bytes, que é o resultado da conta [(1024 ≥ número) / 1024] RESULTADO ARREDONDADO PARA CIMA ATÉ O PRIMEIRO NÚMERO INTEIRO (neste caso será 1) * 1024. |
+| Qualquer valor entre 1024 e 2048 inclusive | Arquivo com tamanho maior que 2048       | A transferência será bloqueada, pois o arquivo é maior ou igual a 2048 Bytes, que é o resultado da conta [(1024 ≥ número) / 1024] RESULTADO ARREDONDADO PARA CIMA ATÉ O PRIMEIRO NÚMERO INTEIRO (neste caso será 2) * 1024. |
+| Qualquer valor entre 1 e 1024 inclusive  | Arquivo com tamanho maior que 1023       | A transferência será bloqueada, pois o arquivo é maior ou igual a 1024 Bytes, que é o resultado da conta [(1024 ≥ número) / 1024] RESULTADO ARREDONDADO PARA CIMA ATÉ O PRIMEIRO NÚMERO INTEIRO (neste caso será 1) * 1024. |
+
+**Controle de arquivos na recepção**
+
+| Campo                         | Descrição                                                              | Valores Permitidos                        |
+|-------------------------------|------------------------------------------------------------------------|-------------------------------------------|
+| Filtro de arquivos             | Expressão regular que filtra os arquivos recebidos pelo usuário em uma conexão |                                           |
+| Tamanho mínimo                 | Define o tamanho mínimo dos arquivos recebidos.                        | Numerais                                  |
+| Tamanho máximo                 | Define o tamanho máximo dos arquivos recebidos.                        | Numerais                                  |
+| Criar referência de arquivo recebido | Opção para criar uma referência do arquivo recebido.              | **Não**, **Sim - Com timestamp**, **Sim - Sem timestamp** |
+
+
+**Controle de Hash da Máquina**
+
+Nesta seção, pode-se habilitar a funcionalidade de verificaçãodos Usuários através do **Hash de Máquina**. Esta funcionalidade impõe que um usuário possa se conectar ao Server apenas através de uma máquina. Segue abaixo uma tabela explicativa:
+
+| Campo                         | Descrição                                                                                                      | Valores Permitidos |
+|-------------------------------|----------------------------------------------------------------------------------------------------------------|--------------------|
+| Verificar na conexão de entrada| Funcionalidade utilizada para que o usuário verifique o Hash de Máquina das conexões recebidas por ele.         | Chave seletora     |
+| Enviar na conexão de saída     | Esta funcionalidade ativa o envio do Hash de Máquina pelo usuário quando ele realiza uma solicitação de conexão de saída. | Caso habilitada, o Usuário irá enviar o Hash de máquina ao realizar a conexão de saída para outro usuário. Se não for habilitada, nenhum Hash será enviado. |
+
+
 
 
 
