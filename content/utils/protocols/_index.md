@@ -20,6 +20,12 @@ Este protocolo foi especificado pelo Grupo de Trabalho 4 da Organização ODETTE
 
 O OFTP foi primeiramente especificado com as premissas do modelo de interconexão de sistemas abertos (OSI) utilizando o serviço de rede recomendado pela norma CCITT X.25. Com o crescimento da utilização do OFTP por diferentes setores (bancos, comércio, governo etc.) e em diferentes plataformas (mainframes, mini e microcomputadores), a organização ODETTE ampliou o escopo da padronização e incorporou a utilização do protocolo TCP/IP. A RFC (Request for Comments) 2204 orienta a utilização do OFTP em redes TCP/IP.
 
+## SFTP
+
+Simple Transfer Protocol (Protocolo de Transferência Simples de Arquivos) consiste no protocolo FTP acrescido de uma camada de proteção para arquivos transferidos.
+
+Nele, a troca de informações é feita por meio de pacotes com a tecnologia SSH (Secure Shell – Bloqueio de Segurança), que autenticam e protegem a conexão entre cliente e servidor. O usuário define quantos arquivos serão transmitidos simultaneamente e define um sistema de senhas para reforçar a segurança.
+
 ## TCP/IP
 
 Trata-se do acrônimo de dois protocolos combinados. São eles o TCP (Transmission Control Protocol — Protocolo de Controle de Transmissão) e IP (Internet Protocol — Protocolo de Internet).
@@ -40,12 +46,6 @@ O navegador envia um pedido de acesso a uma página, e o servidor retorna uma re
 Já o HTTPS (Hyper Text Transfer Secure — Protocolo de Transferência de Hipertexto Seguro) funciona exatamente como o HTTP, porém, existe uma camada de proteção a mais. Isso significa que os sites que utilizam esse protocolo são de acesso seguro.
 
 O protocolo HTTPS é comumente usado por sites com sistemas de pagamentos. Esse tipo de site depende de proteção que garanta a integridade dos dados, informações de conta e cartão de créditos dos usuários. A segurança é feita por meio de uma certificação digital, que cria uma criptografia para impedir ameaças e ataques virtuais.
-
-## SFTP
-
-Simple Transfer Protocol (Protocolo de Transferência Simples de Arquivos) consiste no protocolo FTP acrescido de uma camada de proteção para arquivos transferidos.
-
-Nele, a troca de informações é feita por meio de pacotes com a tecnologia SSH (Secure Shell – Bloqueio de Segurança), que autenticam e protegem a conexão entre cliente e servidor. O usuário define quantos arquivos serão transmitidos simultaneamente e define um sistema de senhas para reforçar a segurança.
 
 ## Referência
 
