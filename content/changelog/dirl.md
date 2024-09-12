@@ -6,7 +6,7 @@ sidebar:
 ---
 ## STCP Directlink
 
-### {{< icon "clock" >}} &nbsp;  Versão 6.5.16 (lançada em março de 2024)
+### {{< icon "clock" >}} &nbsp;  Versão 6.5.16 (lançada em abril de 2024)
 
 - Correção do problema que gerava erro de validação no upload de arquivo (API) quando era utilizado mais de um e-mail e com espaços em branco.
 
