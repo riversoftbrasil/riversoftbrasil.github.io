@@ -10,7 +10,7 @@ weight: 1
 prev: /stcpwebadmin
 next:
 # draft: false
-lastmod: 2024-05-27
+lastmod: 2024-09-13
 ---
 # Distribuição dos pacotes
 
@@ -29,7 +29,7 @@ A pasta **\<disco>:\Inetpub\wwwroot\STCPWEB_ADMIN\conf\scripts** contém os scri
 
 ## Atualização da tabela TBLOperadores (SQL Server, MySQL e Oracle)
 
-Nas versões 4.3.3 ou superiores, do STCP OFTP Web Admin, veja em <a href="/changelog/stcpadmin/" target="_blank">Changelog</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;, foram implementadas diversas melhorias como: Autenticação através de LDAP, acesso às políticas de segurança e novos Registros de logs de operadores.
+Nas versões 4.3.3 ou superiores, do STCP OFTP Web Admin, veja em <a href="/changelog/stwadm/" target="_blank">Changelog</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;, foram implementadas diversas melhorias como: Autenticação através de LDAP, acesso às políticas de segurança e novos Registros de logs de operadores.
 
 Para a utilização das novas versões do produto, será necessária também a atualização da tabela _TBLOPERADORES_, do banco de dados utilizado pela ferramenta, utilizando os scripts abaixo:
 

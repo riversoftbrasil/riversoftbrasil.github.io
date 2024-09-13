@@ -13,7 +13,7 @@ lastmod: 2024-05-06
 ---
 # Introdução
 
-O STCP OFTP Web Admin é uma ferramenta com acesso através do browser (HTTP) que possibilita a supervisão e monitoração das transferências de dados realizadas pelo software do STCP OFTP Client/Server.
+O STCP OFTP Web Admin é uma ferramenta com acesso através do browser (HTTP) que possibilita a supervisão e monitoração das transferências de dados realizadas pelo software do STCP OFTP Client e Server.
 
 ![](imagem/web-admin-01.png)
 
