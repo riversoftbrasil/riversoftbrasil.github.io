@@ -420,7 +420,7 @@ campos que devem ser configurados:
 Finalmente, para adicionar o novo Tipo de Arquivo à Instância e concluir o cadastro, clique em **Salvar**.
 
 {{< callout type="info" >}}
-**NOTA:** Os tipos de arquivos são mostrados separadamente de acordo com a Instância em que foram criados.
+Os tipos de arquivos são mostrados separadamente de acordo com a Instância em que foram criados.
 {{< /callout >}}
 
 ### Editar Tipos de Arquivo
@@ -432,7 +432,7 @@ Para editar um tipo de arquivo de uma instância, clique no ícone de edição c
 Após acessar a edição, altere os atributos desejados e salve as alterações.
 
 {{< callout type="info" >}}
-**NOTA:** Não é possível alterar o nome de um tipo de arquivo definido como Padrão.
+Não é possível alterar o nome de um tipo de arquivo definido como Padrão.
 {{< /callout >}}
 
 ### Copiar Tipos de Arquivo
@@ -442,7 +442,7 @@ Para copiar um tipo de arquivo de uma instância, acesse o menu de seleção cli
 ![](img/image-35.png "Editar tipo de arquivo da Instância")
 
 {{< callout type="info" >}}
-**NOTA:** Ao clicar em **Copiar**, os campos do Tipo de Aquivo ficarão desabilitados.
+Ao clicar em **Copiar**, os campos do Tipo de Aquivo ficarão desabilitados.
 {{< /callout >}}
 
 ### Remover Tipos de Arquivo
@@ -477,7 +477,7 @@ Ao fazer isso, será apresentada a tela para criar uma nova:
 ![](img/image-40.png)
 
 {{< callout type="info" >}}
-**NOTA:** A divisão do formulário entre Seções e Subseções continuará sendo utilizada da mesma forma
+A divisão do formulário entre Seções e Subseções continuará sendo utilizada da mesma forma
 que durante o cadastro de Instâncias.
 {{< /callout >}}
 
@@ -490,7 +490,7 @@ A primeira subseção a ser preenchida é a **Identificação**.
 ![](img/image-41.png "Identificação da nova Rede")
 
 {{< callout type="info" >}}
-**NOTA:** As Redes podem ser do tipo OFTP, Supervisão (Gemini e DirectLink), API (DirectLink) sendo que a primeira é utilizada durante transferências de arquivos entre usuários, autenticação das Instâncias, etc, e a segunda para visualizar
+As Redes podem ser do tipo OFTP, Supervisão (Gemini e DirectLink), API (DirectLink) sendo que a primeira é utilizada durante transferências de arquivos entre usuários, autenticação das Instâncias, etc, e a segunda para visualizar
 logs do sistema no console do Portal.
 {{< /callout >}}
 
@@ -631,7 +631,7 @@ O STCP Gemini Portal permite criar novos Usuários acessando o menu lateral em *
 ![](img/image-50.png "Adicionar imagem")
 
 {{< callout type="info" >}}
-**NOTA:** Para facilitar a compreensão e definição dos campos e atributos, o cadastro é dividido em seções e subseções como mostrado na imagem a seguir:
+Para facilitar a compreensão e definição dos campos e atributos, o cadastro é dividido em seções e subseções como mostrado na imagem a seguir:
 {{< /callout >}}
 
 #### Seção Geral
@@ -654,7 +654,7 @@ A primeira seção a ser preenchida é a de identificação. Segue uma tabela de
 
 
 {{< callout type="info" >}}
-**NOTA:** Ao criar a senha do usuário, deve-se seguir as políticas de senha definidas na criação de Instâncias. Pode-se visualizar abaixo que as políticas estão sendo seguidas nos campos **Senha** e **Confirmar**.
+Ao criar a senha do usuário, deve-se seguir as políticas de senha definidas na criação de Instâncias. Pode-se visualizar abaixo que as políticas estão sendo seguidas nos campos **Senha** e **Confirmar**.
 {{< /callout >}}
 
 #### Seção Características 
@@ -787,7 +787,7 @@ A próxima seção caso a opção OFTP seja habilitada é a OFTP, dividida nas s
 | Userdata        | Dados extra associados à identificação Odette informada.            |                                               |
 
 {{< callout type="info" >}}
-**NOTA:** Preencha o campo **Userdata** somente se for requerido pelo servidor.
+Preencha o campo **Userdata** somente se for requerido pelo servidor.
 {{< /callout >}}
 
 ![](img/image-57.png "Subseção Opções")
@@ -869,3 +869,48 @@ Em uma transferência o emissor poderá enviar o número de pacotes de dados inf
 
 #### Seção SFTP
 
+A quinta seção caso a opção SFTP seja habilitada teremos as seguintes subseções **Identificação da Comunicação**, **Autenticação de chave pública**, **Opções**, **Interface Primária/Secundária**,  **Autenticação de servidor** e **Controle de Download/Upload**.
+
+Abaixo temos cada uma e suas respectivas tabelas explicativas:
+
+**Identificação da Comunicação**
+
+![](img/image-64.png)
+
+| Campo           | Descrição                                                                  | Valores Permitidos                           |
+|-----------------|----------------------------------------------------------------------------|----------------------------------------------|
+| OID (SFTP ID)   | Identificação do Usuário de acordo com as credenciais passadas pelo Servidor SFTP (Usuário SFTP para acesso). |                                              |
+| Senha (Obrigatório) | Senha do SFTP ID com quem se fará a comunicação.                       |                                              |
+| Confirmar       | Confirmação da senha definida anteriormente                               | Deve-se inserir a mesma senha definida anteriormente. |
+| Userdata        | Dados extra associados à identificação Odette informada.                  |                                              |
+
+{{< callout type="warning" >}}
+Preencha o campo Userdata somente se for requerido pelo servidor.
+{{< /callout >}}
+
+**Autenticação de chave pública**
+
+![](img/image-65.png)
+
+A próxima subseção a ser cadastrada é a *Autenticação de Chave Pública* que é o local onde pode-se inserir uma Chave de Autenticação fornecida pelo Servidor SFTP para realizar a conexão corretamente e uma Senha, caso a Chave possua uma Senha definida.
+
+| Campo           | Descrição                                                             | Valores Permitidos                          |
+|-----------------|-----------------------------------------------------------------------|---------------------------------------------|
+| Chave privada   | Chave privada fornecida pelo Servidor SFTP para conectar-se corretamente. | Colocar o caminho e o arquivo da Chave.     |
+| Chave pública   | Chave pública fornecida pelo Servidor SFTP para conectar-se corretamente. | Colocar o caminho e o arquivo da Chave.     |
+| Senha           | Senha definida para a Chave, caso ela tenha sido definida.            |                                             |
+| Confirmar       | Confirmar a Senha inserida anteriormente.                             | Deve-se inserir a mesma senha definida anteriormente. |
+
+{{< callout type="warning" >}}
+A Autenticação pela Chave não é obrigatória, o Usuário pode escolher se irá conectar-se pela Chave Pública ou pelo SFTP ID e Senha.
+{{< /callout >}}
+
+**Opções**
+
+![](img/image-66.png)
+
+**Interface Primária/Secundária**
+
+**Autenticação de servidor**
+
+**Controle de Download/Upload**
