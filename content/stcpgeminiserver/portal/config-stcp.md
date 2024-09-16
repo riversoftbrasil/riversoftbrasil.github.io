@@ -1,5 +1,5 @@
 ---
-linkTitle: Configurações Portal
+linkTitle: Configurador STCP
 title: 
 layout: docs
 toc: true
@@ -773,9 +773,99 @@ Nesta seção, pode-se habilitar a funcionalidade de verificaçãodos Usuários 
 | Verificar na conexão de entrada| Funcionalidade utilizada para que o usuário verifique o Hash de Máquina das conexões recebidas por ele.         | Chave seletora     |
 | Enviar na conexão de saída     | Esta funcionalidade ativa o envio do Hash de Máquina pelo usuário quando ele realiza uma solicitação de conexão de saída. | Caso habilitada, o Usuário irá enviar o Hash de máquina ao realizar a conexão de saída para outro usuário. Se não for habilitada, nenhum Hash será enviado. |
 
+#### Seção OFTP
+
+A próxima seção caso a opção OFTP seja habilitada é a OFTP, dividida nas subseções **Identificação da comunicação**, **Opções**, **Comunicação**, **Interface Primária/Secundária** e por fim, **TLS**.
+
+![](img/image-56.png "Identificação da Seção OFTP")
+
+| Campo           | Descrição                                                           | Valores Permitidos                            |
+|-----------------|---------------------------------------------------------------------|-----------------------------------------------|
+| OID (Odette ID) | Identificação do usuário com quem se fará a comunicação.             |                                               |
+| Senha (Obrigatório) | Senha do Odette ID com quem se fará a comunicação.               |                                               |
+| Confirmar       | Confirmação da senha definida anteriormente                         | Deve-se inserir a mesma senha definida anteriormente. |
+| Userdata        | Dados extra associados à identificação Odette informada.            |                                               |
+
+{{< callout type="info" >}}
+**NOTA:** Preencha o campo **Userdata** somente se for requerido pelo servidor.
+{{< /callout >}}
+
+![](img/image-57.png "Subseção Opções")
+
+| Campo                    | Descrição                                                                                                  | Valores Permitidos                                  |
+|--------------------------|------------------------------------------------------------------------------------------------------------|-----------------------------------------------------|
+| Biblioteca                | Biblioteca utilizada para o usuário. Valor padrão: "STCP Lib Transfer OFTP"                                 |                                                     |
+| OFTP Level                | Seleção do nível do protocolo OFTP que será utilizado para o Usuário.                                       | Opções disponíveis: 1.2, 1.3, 1.4, 2.0              |
+| Modo de Conexão           | Seleção se o Usuário poderá Iniciar uma conexão, Receber uma conexão (Responder) ou Ambos.                  | Opções disponíveis: "Initiator", "Responder", "Both" |
+| Modo de Transferência     | Seleção se o Usuário poderá Enviar arquivos, Receber arquivos ou Ambos.                                     | Opções disponíveis: "Both", "Sender", "Receiver"    |
+| Créditos                  | Número de pacotes de dados enviados de forma a controlar a banda utilizada na transmissão.                  | Numerais                                            |
+| Tamanho máximo do buffer  | Tamanho em bytes dos pacotes utilizados na transmissão de arquivos. Recomendação: Valores maiores que 1024  | Numerais                                            |
+| Compressão                | Habilita/Desabilita a compressão dos arquivos enviados e recebidos                                          | Chave selecionável                                  |
+| Restart                   | Habilita/Desabilita que os arquivos sejam salvos na pasta RESTART enquanto estão sendo recebidos            | Chave selecionável                                  |
+| Controle de EERP          | Habilita/Desabilita a resposta de sucesso EERP ao fim de uma transmissão                                    | Chave selecionável                                  |
+| Tempo máximo de inatividade | Tempo máximo de inatividade caso a conexão com algum usuário falhe, em segundos.                          | Numerais                                            |
+| Nível de Debug            | Nível dos debugs obtidos no Usuário e mostrados nos logs do sistema.                                        | Numerais                                            |
+| Nome longo para arquivos            |    Chave utilizada para permitir que arquivos com mais de 26 caracteres com até 128 caracteres possam ser transferidos                                  | Chave selecionável                                            |
+
+{{< callout type="info" >}}
+Em uma transferência o emissor poderá enviar o número de pacotes de dados informados para o parâmetro créditos antes de o receptor confirmar que está apto para receber a transmissão e que os dados serão recebidos com sucesso.
+{{< /callout >}}
+
+![](img/image-58.png "Subseção Comunicação")
+
+| Campo          | Descrição                                                                                          | Valores Permitidos                                      |
+|----------------|----------------------------------------------------------------------------------------------------|---------------------------------------------------------|
+| Biblioteca      | Biblioteca utilizada na comunicação OFTP. A biblioteca Padrão é STCP Lib Net OpenSSL.                |                                                         |
+| Compatibilidade| Define o padrão de compatibilidade do serviço com outras aplicações.                               | Seleção entre: RFC-2204, RFC 1006/1086, RVS*, X.25/Router e XFB*/SSL |
+| Compressão GZIP| Habilitação/Desabilitação da compressão dos arquivos ao enviá-los. | Chave selecionável |
+
+![](img/image-59.png "Subseção Interface Primária")
+![](img/image-60.png "Subseção Interface Secundária")
+
+| Campo                  | Descrição                                                                                          | Valores Permitidos              |
+|------------------------|----------------------------------------------------------------------------------------------------|---------------------------------|
+| Habilitar               | Habilitação/Desabilitação da interface primária                                                    | Chave selecionável              |
+| Versão TCP             | Definição de qual versão de protocolo IP será utilizado                                             | Escolha entre IPv4 e IPv6       |
+| Endereço remoto (Obrigatório) | Endereço IP do servidor remoto com o qual se fará a comunicação                                   | Valores dentro do padrão FQDN   |
+| Porta  (Obrigatório)  | Porta IP do servidor remoto inserido no campo anterior                                             | Numerais                        |
+| Endereço local       | Endereço IP Local utilizado pelo Usuário                                                           | Valores dentro do padrão FQDN   |
+| Porta                | Porta IP do Endereço IP Local definido anteriormente                                               | Numerais                        |
+| Nível de debug          | Indicação de quais logs serão capturados                                                           | Numerais                        |
 
 
+**TLS-Chave Privativa**
+
+![](img/image-61.png "Chave privativa -TLS")
+
+| Atributo   | Descrição                                                                                           | Valores Permitidos                  |
+|------------|-----------------------------------------------------------------------------------------------------|-------------------------------------|
+| Habilitar        | Habilita/Desabilita o cadastro da chave privativa TLS para a Rede.                                   | Chave selecionável                  |
+| Chave      | Chave TLS utilizada para a comunicação da Rede.                                                      | Quaisquer valores exceto espaço     |
+| Certificado| Certificado utilizado para a validação da Chave TLS.                                                 |                                     |
+| Senha      | Senha da chave TLS que será verificada na comunicação da Rede.                                       | Quaisquer valores exceto espaço     |
+| Confirmar  | Confirmação da senha da chave TLS                                                                    | Mesmo valor inserido como Senha     |
+
+**Certificados CA (Autoridades)**
+
+![](img/image-62.png "Certificados CA (autoridades) - TLS")
 
 
+| Campo    | Descrição                                                                 | Valores Permitidos                   |
+|----------|---------------------------------------------------------------------------|--------------------------------------|
+| Arquivo  | Arquivo que contém o certificado TLS utilizado para o Usuário no formato .cer | Arquivo com o formato de um certificado TLS |
+| Diretório| Diretório onde o arquivo do certificado TLS está salvo.                    | Caminho válido no sistema            |
 
+**TLS - Opções**
+
+![](img/image-63.png "Opções - TLS")
+
+| Campo                        | Descrição                                                                                          | Valores Permitidos    |
+|------------------------------|----------------------------------------------------------------------------------------------------|-----------------------|
+| Verificar Certificado         | Habilitação/Desabilitação da funcionalidade de análise do certificado do Usuário.                  | Chave selecionável     |
+| Habilitar versões anteriores do SSL | Possibilita que as versões mais antigas do SSL sejam utilizadas ou não.                       | Chave selecionável     |
+| Arquivo DH | Campo utilizado para cadastrar um arquivo DH na Rede. **É recomendado que essa opção não seja habilitada.**      | Caracteres de caminho de arquivo    |
+| Algoritmos                    | Campo de seleção dos Algoritmos para verificação dos certificados                                  | Menu selecionável      |
+| Nível de debug                | Define o nível de debug para verificação dos logs relacionados ao TLS.                             | Numerais               |
+
+#### Seção SFTP
 
