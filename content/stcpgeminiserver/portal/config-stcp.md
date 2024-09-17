@@ -909,8 +909,146 @@ A Autenticação pela Chave não é obrigatória, o Usuário pode escolher se ir
 
 ![](img/image-66.png)
 
+| Campo           | Descrição                                                             | Valores Permitidos                          |
+|-----------------|-----------------------------------------------------------------------|---------------------------------------------|
+| Biblioteca      | Biblioteca utilizada para o usuário. Valor padrão: **STCP Lib Transfer SFTP** | Chave selecionável     |
+| Modo de Conexão | Seleção se o Usuário poderá **Iniciar uma conexão**, **Receber uma conexão (Responder)** ou **Ambos** | Opções disponíveis: **Initiator**, **Responder** e **Both**.     |
+| Modo de transferência    | Seleção se o Usuário poderá **Sender** arquivos, **Receiver** arquivos ou **Both**. | Colocar o caminho e o arquivo da Chave.  |
+| Tempo de inatividade     | Senha definida para a Chave, caso ela tenha sido definida.  | Numerais  |
+| Tamanho máximo do buffer | Tamanho, em bytes, dos pacotes de dados enviados.           | Numerais  |
+| Nível de debug           | Informa o nível de detalhamento em que os logs da Rede serão listados pelo sistema no Console Info e arquivos de log. | Numerais |
+
 **Interface Primária/Secundária**
+
+![](img/image-67.png)
+
+* Interface primária: Representa o usuário com quem deseja-se fazer a transmissão.
+
+![](img/image-68.png)
+
+* Interface secundária: A interface secundária tem o propósito de ser uma precaução caso a conexão seja interrompida com a interface primária. Ela só se ativará no caso descrito e os campos de cadastro são podem ser os mesmos da interface primária ou outro configurado.
+
+| Campo           | Descrição                                                             | Valores Permitidos                          |
+|-----------------|-----------------------------------------------------------------------|---------------------------------------------|
+| Habilitar | Habilitação/Desabilitação da interface primária. | Chave selecionável   |
+| Endereço remoto **(Obrigatório)** | Endereço IP do servidor remoto com o qual se fará a comunicação. | Valores dentro do padrão FQDN   |
+| Porta   **(Obrigatório)**         | Porta IP do servidorremoto inserido no campo anterior. | Numerais   |
 
 **Autenticação de servidor**
 
+![](img/image-69.png)
+
+| Campo        | Descrição                                                             | Valores Permitidos            |
+|--------------|-----------------------------------------------------------------------|-------------------------------|
+| FingerPrint  | Código para verificação da conexão do Usuário com o Servidor SFTP.    | Caracteres do Código FingerPrint |
+
+{{< callout type="warning" >}}
+A Autenticação pelo FingerPrint não é obrigatória
+{{< /callout >}}
+
 **Controle de Download/Upload**
+
+![](img/image-70.png)
+
+* Controle de Download: Nesta seção, são preenchidos os campos relacionados aos arquivos que serão
+baixados do Servidor SFTP para o Usuário ao realizar a conexão.
+
+| Campo             | Descrição                                                                                                         | Valores Permitidos                           |
+|-------------------|-------------------------------------------------------------------------------------------------------------------|----------------------------------------------|
+| Diretório remoto  | Local de onde os Usuários irão baixar os arquivos do Servidor SFTP para suas pastas de ENTRADA                     | Colocar o caminho do diretório que está no Servidor SFTP |
+| Diretório de backup | Local onde é realizado o backup dos arquivos baixados do Servidor SFTP                                            | Caminho do diretório de backup no Servidor SFTP |
+| Extensão de backup  | Extensão que será adicionada ao arquivo salvo no diretório de backup do Servidor SFTP. Exemplo: "teste.txt"       | Qualquer extensão desejada                   |
+| Máscara de arquivo  | Um "Regex" utilizado para filtrar os arquivos que serão baixados pelo Usuário do diretório remoto do Servidor SFTP | Um Regex válido                              |
+| Apagar arquivo     | Opção utilizada para apagar os arquivos após serem baixados do Servidor SFTP ou não                               | Chave seletora, habilitar ou desabilitar     |
+
+
+* Controle de Upload: Nesta seção, são preenchidos os campos relacionados aos arquivos que serão enviados do Usuário do Gemini para o Servidor SFTP ao realizar a conexão.
+  
+![](img/image-71.png)
+
+| Campo               | Descrição                                                                                       | Valores Permitidos                              |
+|---------------------|-------------------------------------------------------------------------------------------------|-------------------------------------------------|
+| Diretório remoto    | Local de onde os Usuários irão enviar os arquivos de sua pasta de SAÍDA para o Servidor SFTP.    | Colocar o caminho do diretório remoto que está no Servidor SFTP |
+| Diretório temporário | Local onde os arquivos ficam enquanto estão sendo enviados do Usuário para o Servidor SFTP.      | Caminho do diretório temporário no Servidor SFTP |
+| Extensão temporária  | Extensão que será adicionada ao arquivo quando ele estiver na pasta temporária do Servidor SFTP | Inserir uma extensão para ser adicionada         |
+
+### Editar Usuário
+
+Para editar um Usuário, acesse a lista de Usuários em **Usuários -> Editar**
+
+![](img/image-72.png)
+
+Após acessar a edição, altere os campos desejados e salve as alterações.
+
+### Copiar Usuário
+
+A cópia ou exibição dos Usuários é realizada através do menu de opções ao lado esquerdo da lista de Usuários.
+
+Para executar uma dessas ações, clique no ícone de opções e escolha a função **Copiar** como mostrado na imagem a seguir:
+
+![](img/image-73.png)
+
+### Remover Usuário
+
+![](img/image-74.png)
+
+Por fim, para remover um Usuário existente, deve-se acessar as opções, clicar em **Excluir** e quando a mensagem de aviso for mostrada clique em **Sim** para removê-lo.
+
+![](img/image-75.png)
+
+### Adicionar Tipos de Arquivo de Usuário
+
+O processo de criação dos tipos de arquivo para um Usuário é idêntico ao cadastro de Tipos de arquivo das Instâncias. Para adicionar um tipo de arquivo de usuário, acesse **Usuários-> Tipos de arquivo de usuário**:
+
+![](img/image-76.png)
+
+Ao acessar a tela de Tipos de Arquivo, clique em **+ Adicionar** e cadastre os campos do Tipo de Arquivo da mesma forma que o cadastro do Tipo de Arquivo de Instâncias.
+
+![](img/image-77.png)
+
+**Seção Geral** 
+
+![](img/image-78.png)
+
+**Seção Informações** 
+
+![](img/image-79.png)
+![](img/image-80.png)
+![](img/image-81.png)
+![](img/image-82.png)
+![](img/image-83.png)
+
+**Seção Execução de comando externo de validação** 
+
+![](img/image-84.png)
+
+**Seção Período de transferência** 
+
+![](img/image-85.png)
+
+{{< callout type="warning" >}}
+É importante destacar que os tipos de arquivo só ficam disponíveis para o usuário que os criou.
+{{< /callout >}}
+
+### Editar Tipos de Arquivo de Usuário
+
+Para editar um tipo de arquivo de um Usuário, acesse a lista de Usuários em **Usuários -> Tiposde Arquivo -> Editar**
+
+![](img/image-86.png)
+
+Após acessar a edição, altere os atributos desejados e salve as alterações.
+
+### Copiar Tipos de Arquivo
+
+A cópia ou exibição dos Tipos de Arquivo é realizada através do menu de opções ao lado do Tipo de Arquivo desejado na respectiva listagem. 
+
+Para executar uma dessas ações, clique no ícone de opções ao lado de um Tipo de Arquivo e escolha a função **Copiar** como mostrado na imagem a seguir:
+
+![](img/image-87.png)
+
+### Remover Tipos de Arquivo
+
+Porfim, para remover um Tipo de Arquivo existente, deve-se acessar as opções ao lado do Tipo de Arquivo desejado, clicar em **Excluir** e ao ser apresentada a mensagem de confirmação, clique em **Sim**.
+
+![](img/image-88.png)
+![](img/image-89.png)
