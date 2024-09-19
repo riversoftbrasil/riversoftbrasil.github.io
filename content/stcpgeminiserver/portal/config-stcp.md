@@ -1052,3 +1052,33 @@ Porfim, para remover um Tipo de Arquivo existente, deve-se acessar as opções a
 
 ![](img/image-88.png)
 ![](img/image-89.png)
+
+## Configurações de Agendamento
+
+A funcionalidade de Agendamento é utilizada para que o sistema possa iniciar as conexões dos usuários sem a necessidade de iniciá-las manualmente. 
+
+É possível **+Adicionar**, **Editar**, **Copiar**, **Exibir** e **Remover** os Agendamentos.
+
+Os Agendamentos são atribuídos a Usuários específicos, e com as datas e horários definidos de acordo com o Usuário.
+
+### Adicionar Agendamentos
+
+O cadastro de agendamentos é realizado dentro da seção Agendamentos no módulo STCP. Para cadastrar um novo agendamento, clique em **+Adicionar** e aguarde a abertura da tela de cadastro:
+
+![](img/image-90.png)
+
+**Seção Geral**
+
+A primeira seção de cadastro dos Agendamentos é a **Geral**, nela são definidos o estado do Agendamento em **Habilitado**, seu **Nome:** e **Descrição:**
+
+![](img/image-91.png)
+
+**Seção Agenda**
+
+![](img/image-92.png)
+
+O cadastro de datas e horários do Agendamento é realizado na seção Agenda, que é dividida nas subseções **Intervalo**, **Data de início**, "**Data de término** e **Características**". 
+
+*Intervalo*
+
+A subseção "Intervalo" contém os campos necessários para definir qual o modo de Agendamento, ou seja, a forma que o mesmo será executado. Esta subseção contém os campos: "Modo:", Dia:", "Mês:", "Semana:", "Hora:" e "Minuto:".
