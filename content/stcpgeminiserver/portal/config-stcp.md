@@ -1057,7 +1057,7 @@ Porfim, para remover um Tipo de Arquivo existente, deve-se acessar as opções a
 
 A funcionalidade de Agendamento é utilizada para que o sistema possa iniciar as conexões dos usuários sem a necessidade de iniciá-las manualmente. 
 
-É possível **+Adicionar**, **Editar**, **Copiar**, **Exibir** e **Remover** os Agendamentos.
+É possível **+Adicionar**, **Editar**, **Copiar** e **Remover** os Agendamentos.
 
 Os Agendamentos são atribuídos a Usuários específicos, e com as datas e horários definidos de acordo com o Usuário.
 
@@ -1077,8 +1077,103 @@ A primeira seção de cadastro dos Agendamentos é a **Geral**, nela são defini
 
 ![](img/image-92.png)
 
-O cadastro de datas e horários do Agendamento é realizado na seção Agenda, que é dividida nas subseções **Intervalo**, **Data de início**, "**Data de término** e **Características**". 
+O cadastro de datas e horários do Agendamento é realizado na seção Agenda, que é dividida nas subseções **Tipo de agenda**, **Intervalo** e **Período**.
+
+*Tipo de Agenda*
+
+| Campo               | Descrição                                                                                       | Valores Permitidos                              |
+|---------------------|-------------------------------------------------------------------------------------------------|-------------------------------------------------|
+| Recepção    | Definir agenda para apenas **RECEBER** arquivos.            | Caixa de seleção |
+| Transmissão | Definir a agenda para apenas **TRANSMISSÃO** de arquivos.   | Caixa de seleção |
+| Executar comando externo | Opção que disparará um comando (programa ou bat) externo. | Caixa de seleção  |
+| DirectLink  | Opção que indica a execução de agenda do *DirectLink* | Caixa de seleção  |
 
 *Intervalo*
 
-A subseção "Intervalo" contém os campos necessários para definir qual o modo de Agendamento, ou seja, a forma que o mesmo será executado. Esta subseção contém os campos: "Modo:", Dia:", "Mês:", "Semana:", "Hora:" e "Minuto:".
+A subseção Intervalo contém os campos necessários para definir qual o modo de Agendamento, ou seja, a forma que o mesmo será executado. Esta subseção contém os campos: **Modo**, **Dias da Semana**, e **Período de Conexão**.
+
+![](img/image-93.png)
+![](img/image-94.png)
+
+*Período*
+
+Nesta subseção são cadastrados os parâmetros para o início e término do Agendamento, ou seja, quando o Agendamento irá iniciar e parar a sua execução. 
+
+**Seção Transmissão/Recepção**
+
+*Identificação*
+
+![](img/image-95.png)
+
+| Campo              | Descrição                                                        | Valores Permitidos                             |
+|--------------------|------------------------------------------------------------------|------------------------------------------------|
+| Usuário (Obrigatório) | Definição do Usuário para o qual o Agendamento será executado.  | Deve-se selecionar um Usuário existente na caixa de seleção |
+| Sessões            | Número de sessões máximas do Agendamento.                        | Apenas números são permitidos neste campo      |
+
+Temos agora as configurações dos arquivos transmitidos e recebidos no agendamento. Segue as tabelas das subseções contendo os campos e suas
+especificidades:
+
+*Controle de arquivos na transmissão*
+
+![](img/image-96.png)
+
+
+| Campo             | Descrição                                                              | Valores Permitidos  |
+|-------------------|------------------------------------------------------------------------|---------------------|
+| Filtro de arquivos | Expressão regular que filtra os arquivos transmitidos pelo usuário em uma conexão |                     |
+| Tamanho mínimo     | Define o tamanho mínimo dos arquivos enviados em pacotes de 1024 Bytes.| Numerais            |
+| Tamanho máximo     | Define o tamanho máximo dos arquivos enviados em pacotes de 1024 Bytes.| Numerais            |
+
+*Controle de arquivos na recepção*
+
+![](img/image-97.png)
+
+| Campo             | Descrição                                                              | Valores Permitidos  |
+|-------------------|------------------------------------------------------------------------|---------------------|
+| Filtro de arquivos | Expressão regular que filtra os arquivos recebidos pelo usuário em uma conexão |                     |
+| Tamanho mínimo     | Define o tamanho mínimo dos arquivos recebidos.                        | Numerais            |
+| Tamanho máximo     | Define o tamanho máximo dos arquivos recebidos.                        | Numerais            |
+
+*Opções*
+
+![](img/image-98.png)
+
+| Campo             | Descrição                                                              | Valores Permitidos  |
+|-------------------|------------------------------------------------------------------------|---------------------|
+| Otimizar conexão de saída | Utilizada para que ao iniciar uma conexão do *usuário-1* para o *usuário-2*, a sessão seja otimizada para que ambos possam enviar e receber seus arquivos sem a necessidade de iniciar manualmente a conexão do usuário-2 para o usuário-1, ele irá aproveitar a conexão do usuário-1. |    Chave selecionável  |
+
+**Seção Executar comando externo**
+
+![](img/image-99.png)
+
+Esta seção é dividida nas subseções **Executar comando externo** e **Aguardar término da execução do comando**.
+
+{{< callout type="info" >}}
+Obs.: Para está seção ser habilitada para cadastro, a chave **Executar comando externo** na subseção Agenda deve estar habilitada.
+{{< /callout >}}
+
+| Campo                          | Descrição                                                                                                        |
+|--------------------------------|------------------------------------------------------------------------------------------------------------------|
+| Executar comando externo        | Configura um comando ou um arquivo contendo os comandos para executar durante o agendamento.                     |
+| Aguardar término da execução do comando | Habilita a opção de aguardar a execução do comando para dar continuidade nos processos do agendamento.     |
+
+### Editar Agendamentos
+
+Para editar um Agendamento , acesse a lista de Agendamentos em **Agendamentos -> Editar**.
+
+![](img/image-100.png)
+
+Após acessar a edição, altere os atributos desejados e salve as alterações.
+
+### Copiar Agendamentos
+
+A cópia dos Agendamentos é realizada através do menu de opções ao lado do Agendamento desejado na lista de Agendamentos. Para executar uma dessas ações, clique no ícone de opções ao lado de um Agendamento e escolha a função **Copiar** como mostrado na imagem a seguir:
+
+![](img/image-101.png)
+
+### Excluir Agendamentos
+
+Porfim, para remover um Agendamento existente, deve-se acessar as opções ao lado do Agendamento desejado, clicar em **Excluir** e ao aparecer a mensagem de aviso (Imagem abaixo) clique em **Sim** para removê-lo.
+
+![](img/image-102.png)
+![](img/image-103.png "Mensagem de aviso")
