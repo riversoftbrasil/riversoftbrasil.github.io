@@ -10,7 +10,7 @@ prev: /upload-multipart
 next: /postman
 slug: upload-arquivo-json
 draft: false
-lastmod: 2024-06-20
+lastmod: 2024-09-23
 ---
 
 ## Upload de arquivo json (basic)
@@ -48,8 +48,8 @@ https://<domain>/directlink/v1/upload
 
 |     Parâmetro  | Descrição | |
 | ----------- | ----------- | -------- |
-| *Authorization**  |  Basic base64(username:password) |
-| *Content_type**  |   |
+| *Authorization* <span style="color:red;">*</span>  |  Basic base64(username:password) |
+| *Content_type* <span style="color:red;">*</span>  |   |
 | **X-STCPDIRECTLINK-DESTINATION** |   |
 | **X-STCPDIRECTLINK-EMAIL**  |   |
 | **X-STCPDIRECTLINK-MOBILE**  |   |
@@ -246,8 +246,8 @@ https://<domain>/directlink/v1/upload
 
 |   Parâmetro | Descrição  | |
 | ----------- | ----------- | -------- |
-| *Authorization**  |  Bearer `<token>` |
-| *Content_type**  |   |
+| *Authorization* <span style="color:red;">*</span>  |  Bearer `<token>` |
+| *Content_type* <span style="color:red;">*</span>  |   |
 | **X-STCPDIRECTLINK-DESTINATION** |   |
 | **X-STCPDIRECTLINK-EMAIL**  |   |
 | **X-STCPDIRECTLINK-MOBILE**  |   |
@@ -399,3 +399,7 @@ color: #6a737d;  /* cor do texto cinza */
 }
 ```
 </div>
+
+{{< callout type="warning" >}}
+<span style="color:red;">*</span> Parâmetro obrigatório
+{{< /callout >}}

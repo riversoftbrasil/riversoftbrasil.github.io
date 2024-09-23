@@ -47,8 +47,8 @@ Esta requisição deve ser utilizada para obter o token de autorização
 
 |    Nome   | Descrição |
 | ----------- | ----------- |
-| *Authorization**   | Basic base64 (username:password) |
-| *Content_type**  |  application/json |
+| *Authorization* <span style="color:red;">*</span>   | Basic base64 (username:password) |
+| *Content_type* <span style="color:red;">*</span> |  application/json |
 
 ### Responses
 
@@ -296,3 +296,7 @@ Esta requisição deve ser utilizada para obter o token de autorização
 }
 ```
 </div>
+
+{{< callout type="warning" >}}
+<span style="color:red;">*</span> Parâmetro obrigatório
+{{< /callout >}}

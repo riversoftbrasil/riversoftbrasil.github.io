@@ -47,23 +47,19 @@ https://<domain>/directlink/v1/download/list/backup
 
 |  Parâmetro  | Tipo | Descrição |
 | ----------- | ----------- | -------- |
-| *page**  | Integer | <p> Página da lista contendo no máximo 100 registros. <br> **obs.:** Este valor deve ser incrementado até retornar uma lista vazia. </p> |
+| *page* <span style="color:red;">*</span>  | Integer | <p> Página da lista contendo no máximo 100 registros. <br> **obs.:** Este valor deve ser incrementado até retornar uma lista vazia. </p> |
 
 
 ### Header
 
-|   Parâmetro    | Descrição  | |
-| ----------- | ----------- | -------- |
-| *Authorization**  |  Basic base64(username:password) |
-| *Content_type**  |  application/json |
-
-
-
-### Responses
+| Parâmetro       | Descrição                                |
+| --------------- | ---------------------------------------- |
+| *Authorization* <span style="color:red;">*</span> | Basic base64(username:password) |
+| *Content_type* <span style="color:red;">*</span>  | application/json               |
 
 <br>
 
-## Responses
+### Responses
 
 <br>
 
@@ -242,15 +238,15 @@ https://<domain>/directlink/v1/download/list/backup
 
 |   Parâmetro    | Descrição |
 | ----------- | ----------- | -------- |
-| *page**  | Integer | <p> Página da lista contendo no máximo 100 registros. <br> **obs.:** Este valor deve ser incrementado até retornar uma lista vazia. </p> |
+| *page* <span style="color:red;">*</span>  | Integer | <p> Página da lista contendo no máximo 100 registros. <br> **obs.:** Este valor deve ser incrementado até retornar uma lista vazia. </p> |
 
 
 ### Header
 
 |  Parâmetro  | Descrição | |
 | ----------- | ----------- | -------- |
-| *Authorization**  |  Bearer `<token>` |
-| *Content_type**  |  application/json |
+| *Authorization* <span style="color:red;">*</span>  |  Bearer `<token>` |
+| *Content_type* <span style="color:red;">*</span>  |  application/json |
 
 
 ### Responses
@@ -397,3 +393,7 @@ color: #6a737d;  /* cor do texto cinza */
 }
 ```
 </div>
+
+{{< callout type="warning" >}}
+<span style="color:red;">*</span> Parâmetro obrigatório
+{{< /callout >}}

@@ -10,7 +10,7 @@ prev: /list-backup-download
 next: /upload-multipart
 slug: download-de-arquivos-usuario
 draft: false
-lastmod: 2024-06-20
+lastmod: 2024-09-23
 ---
 
 ## Download de arquivos
@@ -48,7 +48,7 @@ https://<domain>/directlink/v1/download/file
 
 |  Parâmetro  | Descrição | |
 | ----------- | ----------- | -------- |
-| *z**  | String | Token de download obtido na requisição ou *[Lista de download(basic)](/stcpdirectlink/05-api/lista-arquivos-download/)* ou *[Lista de download(bearer)](/stcpdirectlink/05-api/lista-arquivos-download/#lista-de-arquivos-para-download-bearer)* |
+| *z* <span style="color:red;">*</span>  | String | Token de download obtido na requisição ou *[Lista de download(basic)](/stcpdirectlink/05-api/lista-arquivos-download/)* ou *[Lista de download(bearer)](/stcpdirectlink/05-api/lista-arquivos-download/#lista-de-arquivos-para-download-bearer)* |
 
 
 ### Responses
@@ -235,7 +235,7 @@ https://<domain>/directlink/v1/download/file/backup
 
 |       |  | |
 | ----------- | ----------- | -------- |
-| *z**  | String | Token de download obtido na requisição ou *[Lista de download(basic)](/stcpdirectlink/05-api/list-download(basic)/)* ou *[Lista de download(bearer)](/stcpdirectlink/05-api/list-download(bearer)/)* |
+| *z* <span style="color:red;">*</span>  | String | Token de download obtido na requisição ou *[Lista de download(basic)](/stcpdirectlink/05-api/list-download(basic)/)* ou *[Lista de download(bearer)](/stcpdirectlink/05-api/list-download(bearer)/)* |
 
 
 ### Responses
@@ -384,3 +384,6 @@ color: #6a737d;  /* cor do texto cinza */
 ```
 </div>
 
+{{< callout type="warning" >}}
+<span style="color:red;">*</span> Parâmetro obrigatório
+{{< /callout >}}

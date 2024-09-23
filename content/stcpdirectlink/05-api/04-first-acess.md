@@ -51,7 +51,7 @@ Esta requisição deve ser utilizada para obter o token de autorização
 
 | Nome      | Descrição |
 | ----------- | ----------- |
-| *u**   | Nome do usuário cadastrado na plataforma |
+| *u* <span style="color:red;">*</span>   | Nome do usuário cadastrado na plataforma |
 
 
 
@@ -59,7 +59,7 @@ Esta requisição deve ser utilizada para obter o token de autorização
 
 |    Nome   | Descrição | |
 | ----------- | ----------- | -------- |
-| *Content_type**  |  application/json |
+| *Content_type* <span style="color:red;">*</span>  |  application/json |
 
 
 ### Responses
@@ -210,3 +210,6 @@ Usuário não é o primeiro acesso
 ```
 </div>
 
+{{< callout type="warning" >}}
+<span style="color:red;">*</span> Parâmetro obrigatório
+{{< /callout >}}

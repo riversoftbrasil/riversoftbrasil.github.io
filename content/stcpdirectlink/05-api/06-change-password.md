@@ -10,7 +10,7 @@ prev: /forgot-password
 next: /list-download
 slug: alterar-senha
 draft: false
-lastmod: 2024-06-20
+lastmod: 2024-09-23
 ---
 
 ## Alteração de senha
@@ -46,7 +46,7 @@ https://<domain>/directlink/v1/auth/change
 
 |   Parâmetro    | Descrição | |
 | ----------- | ----------- | -------- |
-| *k**   | Token de alteração de senha retornado na resposta das funções: *[Primeiro acesso](/stcpdirectlink/05-api/first-acess/)* ou *[Esqueceu a senha](stcpdirectlink/05-api/forgot-password/)*|
+| *k* <span style="color:red;">*</span>   | Token de alteração de senha retornado na resposta das funções: *[Primeiro acesso](/stcpdirectlink/05-api/first-acess/)* ou *[Esqueceu a senha](stcpdirectlink/05-api/forgot-password/)*|
 | p | Pin (código de segurança) que será enviado para o email do usuário que está cadastrado na plataforma |
 | z | Nova senha |
 
@@ -56,9 +56,7 @@ https://<domain>/directlink/v1/auth/change
 
 |   Parâmetro    | Descrição | |
 | ----------- | ----------- | -------- |
-| *Content_type**  |  application/json |
-
-
+| *Content_type* <span style="color:red;">*</span>  |  application/json |
 
 ### Responses
 
@@ -206,4 +204,6 @@ Usuário não é o primeiro acesso
 ```
 </div>
 
-
+{{< callout type="warning" >}}
+<span style="color:red;">*</span> Parâmetro obrigatório
+{{< /callout >}}

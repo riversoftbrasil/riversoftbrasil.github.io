@@ -10,9 +10,8 @@ prev: /09-download
 next: /upload-json
 slug: upload-multipart
 draft: false
-lastmod: 2024-06-20
+lastmod: 2024-09-23
 ---
-
 
 ## Upload de arquivo multipart (basic)
 
@@ -48,7 +47,7 @@ https://<domain>/directlink/v1/upload
 
 |   Parâmetro | Descrição | |
 | ----------- | ----------- | -------- |
-| *file**  | File | Nome do arquivo |
+| *file* <span style="color:red;">*</span>  | File | Nome do arquivo |
 | *d*  |  | Usuário de destino registrado na plataforma |
 | *c*  |  | Número de celular de destino do link para download |
 | *m*  |  | Email de destino do link para download |
@@ -59,8 +58,8 @@ https://<domain>/directlink/v1/upload
 
 |    Parâmetro| Descrição  | |
 | ----------- | ----------- | -------- |
-| *Authorization**  |  Basic base64(username:password) |
-| *Content_type**  |  multipart/form-data |
+| *Authorization* <span style="color:red;">*</span>  |  Basic base64(username:password) |
+| *Content_type* <span style="color:red;">*</span>  |  multipart/form-data |
 
 ### Responses
 
@@ -241,7 +240,7 @@ https://<domain>/directlink/v1/upload
 
 |   Parâmetro | Descrição  | |
 | ----------- | ----------- | -------- |
-| *file**  | File | Nome do arquivo |
+| *file* <span style="color:red;">*</span>  | File | Nome do arquivo |
 | *d*  |  | Usuário de destino registrado na plataforma |
 | *c*  |  | Número de celular de destino do link para download |
 | *m*  |  | Email de destino do link para download |
@@ -251,8 +250,8 @@ https://<domain>/directlink/v1/upload
 
 |   Parâmetro | Descrição |
 | ----------- | ----------- | -------- |
-| *Authorization**  |  Bearer `<token>` |
-| *Content_type**  |  multipart/form-data |
+| *Authorization* <span style="color:red;">*</span>  |  Bearer `<token>` |
+| *Content_type* <span style="color:red;">*</span>  |  multipart/form-data |
 
 
 ### Responses
@@ -399,3 +398,7 @@ color: #6a737d;  /* cor do texto cinza */
 }
 ```
 </div>
+
+{{< callout type="warning" >}}
+<span style="color:red;">*</span> Parâmetro obrigatório
+{{< /callout >}}

@@ -10,7 +10,7 @@ prev: /01-authentication
 next: /logout
 slug: login
 draft: false
-lastmod: 2024-06-19
+lastmod: 2024-09-23
 ---
 
 ## Login
@@ -50,8 +50,8 @@ Esta requisição deve ser utilizada para obter o token de autorização
 
 |    Nome   | Descrição |
 | ----------- | ----------- | -------- |
-| *Authorization**   | Basic base64 (username:password) |
-| *Content_type**  |  application/json |
+| *Authorization* <span style="color:red;">*</span> | Basic base64 (username:password) |
+| *Content_type* <span style="color:red;">*</span>  |  application/json |
 
 
 ### Responses
@@ -180,3 +180,7 @@ color: #6a737d;  /* cor do texto cinza */
 }
 ```
 </div>
+
+{{< callout type="warning" >}}
+<span style="color:red;">*</span> Parâmetro obrigatório
+{{< /callout >}}

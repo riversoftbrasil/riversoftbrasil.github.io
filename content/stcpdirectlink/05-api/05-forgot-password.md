@@ -10,7 +10,7 @@ prev: /first-acess
 next: /change-password
 slug: recuperar-senha
 draft: false
-lastmod: 2024-06-20
+lastmod: 2024-09-23
 ---
 
 ## Esqueceu a senha
@@ -48,7 +48,7 @@ https://<domain>/directlink/v1/auth/forget
 
 |   Nome    | Descrição | |
 | ----------- | ----------- | -------- |
-| *u**   | Nome do usuário cadastrado na plataforma |
+| *u* <span style="color:red;">*</span>   | Nome do usuário cadastrado na plataforma |
 
 
 
@@ -56,7 +56,7 @@ https://<domain>/directlink/v1/auth/forget
 
 |   Nome    |  Descrição| |
 | ----------- | ----------- | -------- |
-| *Content_type**  |  application/json |
+| *Content_type* <span style="color:red;">*</span>  |  application/json |
 
 
 
@@ -208,5 +208,6 @@ Usuário não é o primeiro acesso
 ```
 </div>
 
-
-
+{{< callout type="warning" >}}
+<span style="color:red;">*</span> Parâmetro obrigatório
+{{< /callout >}}

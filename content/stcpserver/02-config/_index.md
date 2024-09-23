@@ -10,15 +10,15 @@ prev: /stcpserver/01-install-srv
 next: /stcpserver/03-util
 slug: config
 draft: false
-lastmod: 2024-05-24
+lastmod: 2024-09-23
 ---
 ## Configurador
 
 O programa de configuração do STCP OFTP Server foi instalado na pasta selecionada durante o processo de instalação e pode ser acessado através do menu **Iniciar**. Caso você não tenha alterado a pasta padrão, execute os seguintes passos:
 
-{{< icon "rectangle-group" >}}&nbsp; No menu **Iniciar**, **Todos os Programas**, selecione **Riversoft STCP OFTP Client**.
+{{< icon "chevron-right" >}} No menu **Iniciar**, **Todos os Programas**, selecione **Riversoft STCP OFTP Client**.
 
-{{< icon "cog-8-tooth" >}} &nbsp; Clique no programa **Riversoft STCP OFTP Client Config**.
+{{< icon "chevron-right" >}} Clique no programa **Riversoft STCP OFTP Client Config**.
 
 O programa de configuração pode ser acessado também na pasta **Program** da aplicação, conforme exemplo de estrutura abaixo:
 

@@ -10,7 +10,7 @@ prev: /05-api
 next: /login
 slug: token-oauth2
 draft: false
-lastmod: 2024-06-19
+lastmod: 2024-09-23
 ---
 
 ## Token de autorização
@@ -47,15 +47,15 @@ Esta requisição deve ser utilizada para obter o token de autorização
 
 | Chave | Tipo | Valor|
 | --- | ----------- | ---------|
-| *Content_type** | password | application/x-www-form-urlencoded |
+| *Content_type* <span style="color:red;">*</span> | password | application/x-www-form-urlencoded |
 
 ### Body
 
 |  Nome  | Descrição |
 | ----------- | ----------- |
-| *grant_type**      | password |
-| *username**      | nome do usuário na plataforma |
-| *password**      | senha do usuário na plataforma |
+| *grant_type* <span style="color:red;">*</span>      | password |
+| *username* <span style="color:red;">*</span>    | nome do usuário na plataforma |
+| *password* <span style="color:red;">*</span>      | senha do usuário na plataforma |
 
 <!-- *required -->
 
@@ -217,3 +217,7 @@ Pragma: no-cache
        "scope":"example_value"
 }
 ```
+
+{{< callout type="warning" >}}
+<span style="color:red;">*</span> Parâmetro obrigatório
+{{< /callout >}}

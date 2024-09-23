@@ -10,7 +10,7 @@ weight: 2
 prev: /stcpclient/01-install-clt/
 next: /stcpclient/03-util/
 draft: false
-lastmod: 2024-04-15
+lastmod: 2024-09-23
 ---
 ## Configurador
 
@@ -267,8 +267,7 @@ A associação entre um **Tipo de arquivo** e o arquivo propriamente dito pode s
 ---
 
 {{< callout type="info" >}}
-  Obs.: Para informações mais detalhadas sobre expressão regular (RegEx), acesse
-  o site www.pcre.org.
+Obs.: Para informações mais detalhadas sobre expressão regular (RegEx), acesse o site [Rubular](https://rubular.com/).
 {{< /callout >}}
 
 A tabela abaixo demonstra a associação do nome do arquivo com o tipo específico:
@@ -471,13 +470,17 @@ Clique em **OK** para concluir o processo de configuração.
 
 ![](img/clt-config-43.png)
 
+{{< callout type="warning" >}}
+Obs: A opção *Chave* é a chave gerada pelo administrador da aplicação servidora (STCP OFTP Server).
+{{< /callout >}}
+
 ## Estrutura dos Diretórios
 
 Após a sua instalação e configuração, teremos a seguinte árvore de diretórios, onde serão armazenadas as informações de configuração, logs e controle.
 
 {{< filetree/container >}}
   {{< filetree/folder name="STCPCLT" >}}
-    {{< filetree/folder name="`<PERFIL>`" state="open" >}}
+    {{< filetree/folder name="`<PERFIL>`" state="closed" >}}
 
     {{< filetree/folder name="CONTROLE">}}
     {{< /filetree/folder >}}
@@ -501,11 +504,10 @@ Após a sua instalação e configuração, teremos a seguinte árvore de diretó
 
     {{< /filetree/folder >}}
 
-
-  {{< filetree/folder name="TEMP">}}
+  {{< filetree/folder name="TEMP" state="closed">}}
   {{< /filetree/folder >}}
 
-  {{< filetree/folder name="Certs">}}
+  {{< filetree/folder name="Certs" state="closed">}}
     {{< filetree/file name="stcpupdater.cer" >}}
     {{< filetree/file name="stcpupdatercerts.pem" >}}
   {{< /filetree/folder >}}
