@@ -43,7 +43,7 @@ Tudo o que você precisa saber para sua jornada nas soluções Riversoft.
   {{< card link="../utils/debug/" title="Debug" icon="eye" >}}
   {{< card link="../utils/schedule/" title="Execução automática" icon="arrow-path" >}}
   {{< card link="../utils/email/" title="Notificação por e-mail" icon="mail" >}}
-  {{< card link="../utils/proxy/" title="Servidor Proxy para conexão" icon="server" >}}
+  {{< card link="../utils/proxy/" title="Servidor proxy para conexão" icon="server" >}}
 {{< /cards >}}
 
 ### Referências e Informações
