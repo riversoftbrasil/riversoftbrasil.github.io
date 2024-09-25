@@ -9,8 +9,8 @@ cascade:
 sidebar:
   exclude: false
 weight: 1
-prev: 
-next: 
+prev: /
+next: 01-install-sgc-bradesco/
 slug: 
 draft: 
 lastmod: 2024-07-25

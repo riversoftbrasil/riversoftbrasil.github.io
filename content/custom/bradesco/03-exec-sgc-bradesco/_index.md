@@ -9,8 +9,8 @@ cascade:
 sidebar:
   exclude: false  
 weight: 3
-prev: 
-next: 
+prev: 02-config-sgc-bradesco/
+next: 04-log-sgc-bradesco/
 slug: 
 draft: false 
 lastmod: 2024-07-26

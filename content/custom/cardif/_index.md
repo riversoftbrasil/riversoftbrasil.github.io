@@ -16,7 +16,7 @@ draft: false
 lastmod: 2024-08-05
 ---
 
-![](logo.png)
+![](img/logo.png)
 
 ## Instalação
 
