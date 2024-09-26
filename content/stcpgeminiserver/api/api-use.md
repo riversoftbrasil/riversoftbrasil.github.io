@@ -132,7 +132,7 @@ Request POST /oauth/token HTTP/1.1 Host: 1.2.3.4:5678 Content-Type: application/
 grant_type=password&username=teste&password=teste123
 ```
 
-```
+```bash
 {
 "access_token": "ed3799b1d5f6ff6a7204fe36a3000ac6bfb1ed91a96111ee5d0d6c4d6f494616",
 "token_type": "Bearer",

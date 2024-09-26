@@ -28,8 +28,7 @@ O Portal Gemini necessita do STCP Gemini API Rest para se comunicar com o STCP G
 * Navegadores Chrome (Ver 80 ou superior), Firefox (ver 81 ou superior) ou Safari (MacOS, Ver 14 ou superior);
 
 {{< callout type="info" >}}
-Os passos referentes à instalação dos pré-requisitos listados não serão abordados neste procedimento. Em caso de dúvidas, consulte o   
-administrador de redes responsável.
+Os passos referentes à instalação dos pré-requisitos listados não serão abordados neste procedimento. Em caso de dúvidas, consulte o administrador de redes responsável.
 {{< /callout >}}
 
 ## Configurações do STCP Gemini Portal
@@ -39,7 +38,7 @@ O STCP Gemini Portal pode ser utilizado de duas maneiras:
 * Integrado ao STCP Gemini API (preferencialmente)
 * Integrado ao servidor Apache ou outros servidores web
 
-### Configurando o STCPGemini Portal integrado no STCPGemini API
+### Configurando o STCP Gemini Portal integrado no STCP Gemini API
 
 * Acesse o diretório /usr/local/stcpgemini-api/portal/app/configs.
 * Copie o arquivo example-config.json para config.json
@@ -56,7 +55,7 @@ O STCP Gemini Portal pode ser utilizado de duas maneiras:
 
 * Na barra de pesquisa em seu navegador digite o ip/porta ou URL em que seu servidor está executando o STCPGemini API.
 
-### Configurando oSTCPGeminiPortal no Apache 
+### Configurando o STCPGeminiPortal no Apache 
 
 {{< callout type="info" >}}
 O intuito desse material não é abordar a instalação do Apache.
