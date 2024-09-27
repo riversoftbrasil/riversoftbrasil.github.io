@@ -60,5 +60,5 @@ A tabela a seguir contém a relação entre o nível de detalhamento e as inform
 | 63    |                 Grava as informações completas (Debug completo)                  |
 
 {{< callout type="warning" >}}
-Somente habilite ou altere esta opção quando for solicitado por equipe especializada.
+Somente habilite ou altere esta opção quando for solicitado por uma equipe especializada.
 {{< /callout >}}

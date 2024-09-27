@@ -50,7 +50,7 @@ A estrutura de pastas (Exemplo abaixo **D:\STCPODT\work\NOME-USUARIO**), configu
 ---
 ## STCP OFTP Server
 
-{{< icon "chevron-right" >}}Acesse o Riversoft STCP OFTP Server Manager como administrador (_Ex: D:\STCPODT\Program\Riversoft STCP OFTP Server Manager_) e pare o serviço da aplicação.
+{{< icon "chevron-right" >}}Acesse o Riversoft STCP OFTP Server Manager com privilégios de Administrador (_Ex: D:\STCPODT\Program\Riversoft STCP OFTP Server Manager_) e pare o serviço da aplicação.
 
 ![](img/upd-11.png)
 

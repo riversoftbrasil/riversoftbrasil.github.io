@@ -36,7 +36,7 @@ YYYYMMDD.msg.txt
 
 Disponíveis na pasta Log do perfil correspondente à caixa postal utilizada (Ex. C:\STCPCLT\NOMEPERFIL\LOG) . Registram as informações referentes aos eventos do processo de transferências de um determinado perfil. Cada perfil, registrado no sistema (guia Perfis), possui uma pasta Log correspondente.
 
-- Os eventos listados nestes arquivos podem ser:
+Os eventos listados nestes arquivos podem ser:
 - Início/Fim de Conexão Entrante ou Sainte;
 - Início/Fim de Sessão;
 - Início/Fim de Transmissão ou Recepção de arquivos;

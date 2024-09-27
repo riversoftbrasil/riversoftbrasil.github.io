@@ -15,9 +15,9 @@ lastmod: 2024-05-07
 
 O STCP pode utilizar (conectar-se) com os seguintes tipos de bancos de dados para definições de configuração e dados das aplicações:
 
-* Microsoft SQL Server 2017 ou superior.
-* Oracle 19c ou superior.
-* MySQL Database 8.0 ou superior.
-* MariaDB 10.4 ou superior
+* Microsoft SQL Server 2017 ou superior;
+* Oracle 19c ou superior;
+* MySQL Database 8.0 ou superior;
+* MariaDB 10.4 ou superior.
 
 
