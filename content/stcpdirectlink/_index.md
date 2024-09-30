@@ -15,7 +15,7 @@ lastmod: 2024-09-09
 ---
 ## O que é o STCP Directlink?
 
-O STCP Directlink é uma aplicação que, ao ser integrada aos produtos <a href="/stcpserver/" target="_blank">STCP OFTP Server (Windows)</a> {{< icon "arrow-top-right-on-square" >}} ou STCP Gemini Server (Linux), oferece uma solução simples e robusta para transferência segura de arquivos (Download e Upload) através dos protocolos <a href="/utils/protocols/#httphttps" target="_blank">HTTPS</a> e <a href="/utils/protocols/#sftp" target="_blank">SFTP</a>.
+O STCP Directlink é uma aplicação que, ao ser integrada aos produtos <a href="/stcpserver/" target="_blank">STCP OFTP Server (Windows)</a> {{< icon "arrow-top-right-on-square" >}} ou <a href="/stcpgeminiserver/" target="_blank">STCP Gemini Server (Linux)</a> {{< icon "arrow-top-right-on-square" >}}, oferece uma solução simples e robusta para transferência segura de arquivos (Download e Upload) através dos protocolos <a href="/utils/protocols/#httphttps" target="_blank">HTTPS</a> e <a href="/utils/protocols/#sftp" target="_blank">SFTP</a>.
 
 {{< callout type="info" >}}
   Disponível nas versões para Windows e Linux.
@@ -31,7 +31,7 @@ Com o Riversoft® STCPDirectLink é possível realizar o **upload** de um arquiv
   O **link seguro** para **download** identifica qual a **conta de email** ou **número do celular** está vinculado ao arquivo e só permite o **download** com a utilização de um **código de segurança**.
 {{< /callout >}}
 
-{{< callout type="" >}}
+{{< callout type="warning" >}}
 O código de segurança é encaminhado somente para o **email** ou **celular** vinculado ao arquivo e tem um **tempo de vida**.
 {{< /callout >}}
 

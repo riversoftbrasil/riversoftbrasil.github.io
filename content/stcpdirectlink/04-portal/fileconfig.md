@@ -15,7 +15,7 @@ draft: false
 lastmod: 2024-07-12
 ---
 
-A configuração do portal do STCPDirectLink é realizada através de um arquivo no formato json (ex.: example-config.json) localizado no diretório ***static/portal/assets/configs***.
+A configuração do portal do STCP DirectLink é realizada através de um arquivo no formato json (ex.: example-config.json) localizado no diretório ***static/portal/assets/configs***.
 
 Copie o arquivo de exemplo **example-config.json** para **config.json** e ajustes os parâmetros de acordo com sua necessidade.
 
@@ -66,7 +66,7 @@ Parâmetros                            | Descrição
 version                               | Versão (1.0.1)
 language                              | pt_BR | en | es | pt
 title                                 | Título da página
-url                                   | Enpoint da api do STCPDirectLink (default: https://stcp.riversoft.com.br/directlink/v1")
+url                                   | Enpoint da api do STCP DirectLink (default: https://stcp.riversoft.com.br/directlink/v1")
 logo                                  | Imagem do logotipo (default: 96)
 logoHeight                            | Altura da imagem do logo (default: images/river_banner_blue.png)
 logoLaunchUrl                         | Hiperlink associado ao logo (default: https://riversoft.com.br)

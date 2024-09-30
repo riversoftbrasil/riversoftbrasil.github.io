@@ -87,7 +87,7 @@ Copie o arquivo de exemplo **example-config.json** para **config.json** e ajuste
 
     "cfgProvider_Example_StcpWindows": "stcpwindows",
     "cfgDbName_Example_StcpWindows":"./configs/test/CTCP.INI",
-    "cfgInstanceName_Example_Windows": "AWSContainerDev",
+    "cfgInstanceName_Example_Windows": "instance-name",
 
     "cfgProvider_Example_StcpGeminiDB": "your-provider",
     "cfgDbName_Example_StcpGeminiDB":"your-dbname",
@@ -97,7 +97,7 @@ Copie o arquivo de exemplo **example-config.json** para **config.json** e ajuste
     "cfgDbPswd_Example_StcpGeminiDB":"",
     "cfgDbType": "mysql",
     "cfgDbOptions": "?charset=latin1",
-    "cfgInstanceName_Example_StcpGeminiDB": "AWSContainerDev",
+    "cfgInstanceName_Example_StcpGeminiDB": "instance-name",
 
 
     "logDbEnable": false,
@@ -160,7 +160,7 @@ Copie o arquivo de exemplo **example-config.json** para **config.json** e ajuste
       },
       {
         "ssoType": "ldap",
-        "ssoName": "River CIAM",
+        "ssoName": "your-sso-name",
         "ssoEnable": false,
         "ssoClientId":"cn=admin,dc=example,dc=org",
         "ssoClientSecret":"",
@@ -222,4 +222,4 @@ Copie o arquivo de exemplo **example-config.json** para **config.json** e ajuste
     "serviceDisplayedName": "Riversoft STCP DirectLink Server 1"
   }
 }
-```
+``` 

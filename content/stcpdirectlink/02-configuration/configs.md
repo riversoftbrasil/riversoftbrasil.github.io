@@ -1,5 +1,5 @@
 ---
-linkTitle: Arquivo de configuração
+linkTitle: Parâmetros de Configuração
 layout: docs
 toc: true
 cascade:
@@ -247,7 +247,7 @@ Exemplo de cifra segura para compatibilidade PCI:
 }
 ```
 
-#### Caminhos absolutos ou relativos
+### Caminhos absolutos ou relativos
 
 Quando a aplicação for executada como serviço (windows), os parâmetros de diretórios e templates devem ser informados com o caminho absoluto (path completo).
 
