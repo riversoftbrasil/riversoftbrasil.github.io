@@ -33,7 +33,7 @@ Esta requisição deve ser utilizada para o registro de logout do usuário da pl
 <h5 style="color: white;">POST</h5>
 </div>
 
-**Logout utilizando a autenticação no modo Basic**
+<!-- ## Logout utilizando a autenticação no modo Basic -->
 
 ```
 https://<domain>/directlink/v1/auth/login
@@ -41,16 +41,16 @@ https://<domain>/directlink/v1/auth/login
 
 Esta requisição deve ser utilizada para obter o token de autorização
 
-**Parameters**
+### Parameters
 
-### Header
+#### Header
 
 |    Nome   | Descrição |
 | ----------- | ----------- |
 | *Authorization* <span style="color:red;">*</span>   | Basic base64 (username:password) |
 | *Content_type* <span style="color:red;">*</span> |  application/json |
 
-### Responses
+#### Responses
 
 <br>
 
@@ -202,7 +202,7 @@ Esta requisição deve ser utilizada para o registro de logout do usuário da pl
 
 
 
-**Logout utilizando a autenticação no modo Bearer**
+<!-- **Logout utilizando a autenticação no modo Bearer** -->
 
 ```
 https://<domain>/directlink/v1/auth/logout
@@ -211,10 +211,10 @@ https://<domain>/directlink/v1/auth/logout
 
 Esta requisição deve ser utilizada para obter o token de autorização
 
-**Parameters**
+### Parameters
 
 
-### Header
+#### Header
 
 |    Nome   | Descrição | |
 | ----------- | ----------- | -------- |
@@ -222,7 +222,7 @@ Esta requisição deve ser utilizada para obter o token de autorização
 | *Content_type**  |  application/json |
 
 
-### Responses
+#### Responses
 
 <br>
 <!-- Status 200 -->
@@ -296,7 +296,3 @@ Esta requisição deve ser utilizada para obter o token de autorização
 }
 ```
 </div>
-
-{{< callout type="warning" >}}
-<span style="color:red;">*</span> Parâmetro obrigatório
-{{< /callout >}}

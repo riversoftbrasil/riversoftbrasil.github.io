@@ -34,16 +34,19 @@ Esta requisição deve ser utilizada para upload do arquivo json para área do u
 <h5 style="color: white;">POST</h5>
 </div>
 
-**Upload de arquivo json utilizado no modo Basic**
+<!-- **Upload de arquivo json utilizado no modo Basic** -->
 
 ```
 https://<domain>/directlink/v1/upload
 ```
 
-**Parameters**
+### Parameters
 
+{{< callout type="warning" >}}
+<span style="color:red;">*</span> Parâmetro obrigatório
+{{< /callout >}}
 
-### Header
+#### Header
 
 
 |     Parâmetro  | Descrição | |
@@ -66,10 +69,9 @@ X-STCPDIRECTLINK-FILENAME ​
 X-STCPDIRECTLINK-INFO -->
 
 
-### Responses
+#### Responses
 
 <br>
-
 
 <!-- CSS e HTML com os estilos de respostas -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -232,17 +234,19 @@ Esta requisição deve ser utilizada para upload do arquivo json para área do u
 <h5 style="color: white;">POST</h5>
 </div>
 
-**Upload de arquivo json utilizado no modo Bearer**
+<!-- **Upload de arquivo json utilizado no modo Bearer** -->
 
 ```
 https://<domain>/directlink/v1/upload
 ```
 
-**Parameters**
+### Parameters
 
+{{< callout type="warning" >}}
+<span style="color:red;">*</span> Parâmetro obrigatório
+{{< /callout >}}
 
-### Header
-
+#### Header
 
 |   Parâmetro | Descrição  | |
 | ----------- | ----------- | -------- |
@@ -255,7 +259,7 @@ https://<domain>/directlink/v1/upload
 | **X-STCPDIRECTLINK-FILENAME**  |   |
 | **X-STCPDIRECTLINK-INFO**  |   |
 
-### Responses
+#### Responses
 
 <br>
 
@@ -399,7 +403,3 @@ color: #6a737d;  /* cor do texto cinza */
 }
 ```
 </div>
-
-{{< callout type="warning" >}}
-<span style="color:red;">*</span> Parâmetro obrigatório
-{{< /callout >}}

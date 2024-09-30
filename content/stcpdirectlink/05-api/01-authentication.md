@@ -37,11 +37,15 @@ Esta requisição deve ser utilizada para obter o token(bearer) de autorização
 https://<domain>/directlink/v1/oauth2/token
 ```
 
-**OAuth2 token**
+## OAuth2 token
 
 Esta requisição deve ser utilizada para obter o token de autorização
 
-**Parameters**
+{{< callout type="warning" >}}
+<span style="color:red;">*</span> Parâmetro obrigatório
+{{< /callout >}}
+
+## Parameters
 
 ### Header
 
@@ -57,7 +61,6 @@ Esta requisição deve ser utilizada para obter o token de autorização
 | *username* <span style="color:red;">*</span>    | nome do usuário na plataforma |
 | *password* <span style="color:red;">*</span>      | senha do usuário na plataforma |
 
-<!-- *required -->
 
 {{< callout type="info" >}}
  O campo body, deve ser formatado em query string como exemplo: grant_type=*password&username*=`usuario`&password=`senha`
@@ -217,7 +220,3 @@ Pragma: no-cache
        "scope":"example_value"
 }
 ```
-
-{{< callout type="warning" >}}
-<span style="color:red;">*</span> Parâmetro obrigatório
-{{< /callout >}}

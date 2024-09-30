@@ -33,16 +33,17 @@ Esta requisição deve ser utilizada para alteração de senha do usuário na pl
 <h5 style="color: white;">POST</h5>
 </div>
 
-
-**Alteração de senha do usuário**
-
 ```
 https://<domain>/directlink/v1/auth/change
 ```
 
-**Parameters**
+### Parameters
 
-### Query
+{{< callout type="warning" >}}
+<span style="color:red;">*</span> Parâmetro obrigatório
+{{< /callout >}}
+
+#### Query
 
 |   Parâmetro    | Descrição | |
 | ----------- | ----------- | -------- |
@@ -52,13 +53,13 @@ https://<domain>/directlink/v1/auth/change
 
 
 
-### Header
+#### Header
 
 |   Parâmetro    | Descrição | |
 | ----------- | ----------- | -------- |
 | *Content_type* <span style="color:red;">*</span>  |  application/json |
 
-### Responses
+#### Responses
 
 <br>
 <!-- CSS e HTML com os estilos de respostas -->
@@ -204,6 +205,3 @@ Usuário não é o primeiro acesso
 ```
 </div>
 
-{{< callout type="warning" >}}
-<span style="color:red;">*</span> Parâmetro obrigatório
-{{< /callout >}}

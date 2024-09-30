@@ -36,15 +36,17 @@ Esta requisição deve ser utilizada para obtenção do link para alteração de
 </div>
 
 
-**Obter o link de alteração de senha**
-
 ```
 https://<domain>/directlink/v1/auth/forget
 ```
 
-**Parameters**
+### Parameters
 
-### Query
+{{< callout type="warning" >}}
+<span style="color:red;">*</span> Parâmetro obrigatório
+{{< /callout >}}
+
+#### Query
 
 |   Nome    | Descrição | |
 | ----------- | ----------- | -------- |
@@ -52,7 +54,7 @@ https://<domain>/directlink/v1/auth/forget
 
 
 
-### Header
+#### Header
 
 |   Nome    |  Descrição| |
 | ----------- | ----------- | -------- |
@@ -60,7 +62,7 @@ https://<domain>/directlink/v1/auth/forget
 
 
 
-### Responses
+#### Responses
 
 <br>
 
@@ -207,7 +209,3 @@ Usuário não é o primeiro acesso
 }
 ```
 </div>
-
-{{< callout type="warning" >}}
-<span style="color:red;">*</span> Parâmetro obrigatório
-{{< /callout >}}

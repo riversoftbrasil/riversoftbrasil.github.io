@@ -36,7 +36,7 @@ Esta requisição deve ser utilizada para obtenção do link para alteração de
 </div>
 
 
-**Obter o link de alteração de senha do primeiro acesso**
+<!-- **Obter o link de alteração de senha do primeiro acesso** -->
 
 ```
 https://<domain>/directlink/v1/auth/firstaccess
@@ -45,9 +45,13 @@ https://<domain>/directlink/v1/auth/firstaccess
 
 Esta requisição deve ser utilizada para obter o token de autorização
 
-**Parameters**
+### Parameters
 
-### Query
+{{< callout type="warning" >}}
+<span style="color:red;">*</span> Parâmetro obrigatório
+{{< /callout >}}
+
+#### Query
 
 | Nome      | Descrição |
 | ----------- | ----------- |
@@ -55,14 +59,14 @@ Esta requisição deve ser utilizada para obter o token de autorização
 
 
 
-### Header
+#### Header
 
 |    Nome   | Descrição | |
 | ----------- | ----------- | -------- |
 | *Content_type* <span style="color:red;">*</span>  |  application/json |
 
 
-### Responses
+#### Responses
 <br>
 
 <!-- CSS e HTML com os estilos de respostas -->
@@ -210,6 +214,3 @@ Usuário não é o primeiro acesso
 ```
 </div>
 
-{{< callout type="warning" >}}
-<span style="color:red;">*</span> Parâmetro obrigatório
-{{< /callout >}}

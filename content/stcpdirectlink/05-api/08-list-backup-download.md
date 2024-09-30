@@ -35,22 +35,24 @@ Esta requisição deve ser utilizada para obter a lista de arquivos da área de 
 <h5 style="color: white;">GET</h5>
 </div>
 
-**Lista de arquivos para download utilizando a autenticação no modo Basic**
-
 ```
 https://<domain>/directlink/v1/download/list/backup
 ```
 
-**Parameters**
+### Parameters
 
-### Query
+{{< callout type="warning" >}}
+<span style="color:red;">*</span> Parâmetro obrigatório
+{{< /callout >}}
+
+#### Query
 
 |  Parâmetro  | Tipo | Descrição |
 | ----------- | ----------- | -------- |
 | *page* <span style="color:red;">*</span>  | Integer | <p> Página da lista contendo no máximo 100 registros. <br> **obs.:** Este valor deve ser incrementado até retornar uma lista vazia. </p> |
 
 
-### Header
+#### Header
 
 | Parâmetro       | Descrição                                |
 | --------------- | ---------------------------------------- |
@@ -59,7 +61,7 @@ https://<domain>/directlink/v1/download/list/backup
 
 <br>
 
-### Responses
+#### Responses
 
 <br>
 
@@ -226,22 +228,24 @@ Esta requisição deve ser utilizada para obter a lista de arquivos da área de 
 <h5 style="color: white;">GET</h5>
 </div>
 
-**Lista de arquivos para download utilizando a autenticação no modo Basic**
-
 ```
 https://<domain>/directlink/v1/download/list/backup
 ```
 
-**Parameters**
+### Parameters
 
-### Query
+{{< callout type="warning" >}}
+<span style="color:red;">*</span> Parâmetro obrigatório
+{{< /callout >}}
+
+#### Query
 
 |   Parâmetro    | Descrição |
 | ----------- | ----------- | -------- |
 | *page* <span style="color:red;">*</span>  | Integer | <p> Página da lista contendo no máximo 100 registros. <br> **obs.:** Este valor deve ser incrementado até retornar uma lista vazia. </p> |
 
 
-### Header
+#### Header
 
 |  Parâmetro  | Descrição | |
 | ----------- | ----------- | -------- |
@@ -249,7 +253,7 @@ https://<domain>/directlink/v1/download/list/backup
 | *Content_type* <span style="color:red;">*</span>  |  application/json |
 
 
-### Responses
+#### Responses
 
 <br>
 
@@ -393,7 +397,3 @@ color: #6a737d;  /* cor do texto cinza */
 }
 ```
 </div>
-
-{{< callout type="warning" >}}
-<span style="color:red;">*</span> Parâmetro obrigatório
-{{< /callout >}}

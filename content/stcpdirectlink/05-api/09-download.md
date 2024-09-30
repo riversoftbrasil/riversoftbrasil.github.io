@@ -35,27 +35,23 @@ Esta requisição deve ser utilizada para download de arquivos.
 <h5 style="color: white;">GET</h5>
 </div>
 
-
-**Download do arquivo da área do usuário**
+<!-- **Download do arquivo da área do usuário** -->
 
 ```
 https://<domain>/directlink/v1/download/file
 ```
 
-**Parameters**
+### Parameters
 
-### Query
+#### Query
 
 |  Parâmetro  | Descrição | |
 | ----------- | ----------- | -------- |
 | *z* <span style="color:red;">*</span>  | String | Token de download obtido na requisição ou *[Lista de download(basic)](/stcpdirectlink/05-api/lista-arquivos-download/)* ou *[Lista de download(bearer)](/stcpdirectlink/05-api/lista-arquivos-download/#lista-de-arquivos-para-download-bearer)* |
 
-
-### Responses
-
 <br>
 
-## Responses
+#### Responses
 
 <br>
 
@@ -222,23 +218,26 @@ Esta requisição deve ser utilizada para download do arquivo da área de backup
 <h5 style="color: white;">GET</h5>
 </div>
 
-
-**Download do arquivo da área do usuário**
+<!-- **Download do arquivo da área do usuário** -->
 
 ```
 https://<domain>/directlink/v1/download/file/backup
 ```
 
-**Parameters**
+### Parameters
 
-### Query
+{{< callout type="warning" >}}
+<span style="color:red;">*</span> Parâmetro obrigatório
+{{< /callout >}}
+
+#### Query
 
 |       |  | |
 | ----------- | ----------- | -------- |
 | *z* <span style="color:red;">*</span>  | String | Token de download obtido na requisição ou *[Lista de download(basic)](/stcpdirectlink/05-api/list-download(basic)/)* ou *[Lista de download(bearer)](/stcpdirectlink/05-api/list-download(bearer)/)* |
 
 
-### Responses
+#### Responses
 
 <br>
 
@@ -383,7 +382,3 @@ color: #6a737d;  /* cor do texto cinza */
 }
 ```
 </div>
-
-{{< callout type="warning" >}}
-<span style="color:red;">*</span> Parâmetro obrigatório
-{{< /callout >}}

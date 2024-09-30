@@ -33,17 +33,19 @@ Esta requisição deve ser utilizada para upload do arquivo (qualquer formato) p
 <h5 style="color: white;">POST</h5>
 </div>
 
-
-
-**Upload de arquivo multipartidário utilizando a autenticação no modo Basic**
+<!-- **Upload de arquivo multipartidário utilizando a autenticação no modo Basic** -->
 
 ```
 https://<domain>/directlink/v1/upload
 ```
 
-**Parameters**
+### Parameters
 
-### Query
+{{< callout type="warning" >}}
+<span style="color:red;">*</span> Parâmetro obrigatório
+{{< /callout >}}
+
+#### Query
 
 |   Parâmetro | Descrição | |
 | ----------- | ----------- | -------- |
@@ -54,14 +56,14 @@ https://<domain>/directlink/v1/upload
 | *i*  |  | Mensagem de notificação do link para download |
 
 
-### Header
+#### Header
 
 |    Parâmetro| Descrição  | |
 | ----------- | ----------- | -------- |
 | *Authorization* <span style="color:red;">*</span>  |  Basic base64(username:password) |
 | *Content_type* <span style="color:red;">*</span>  |  multipart/form-data |
 
-### Responses
+#### Responses
 
 <br>
 
@@ -228,15 +230,19 @@ Esta requisição deve ser utilizada para upload do arquivo (qualquer formato) p
 </div>
 
 
-**Upload de arquivo multipartidário utilizando a autenticação no modo Bearer**
+<!-- **Upload de arquivo multipartidário utilizando a autenticação no modo Bearer** -->
 
 ```
 https://<domain>/directlink/v1/upload
 ```
 
-**Parameters**
+### Parameters
 
-### Query
+{{< callout type="warning" >}}
+<span style="color:red;">*</span> Parâmetro obrigatório
+{{< /callout >}}
+
+#### Query
 
 |   Parâmetro | Descrição  | |
 | ----------- | ----------- | -------- |
@@ -246,7 +252,7 @@ https://<domain>/directlink/v1/upload
 | *m*  |  | Email de destino do link para download |
 | *i*  |  | Mensagem de notificação do link para download |
 
-### Header
+#### Header
 
 |   Parâmetro | Descrição |
 | ----------- | ----------- | -------- |
@@ -254,7 +260,7 @@ https://<domain>/directlink/v1/upload
 | *Content_type* <span style="color:red;">*</span>  |  multipart/form-data |
 
 
-### Responses
+#### Responses
 
 <br>
 <!-- CSS e HTML com os estilos de respostas -->
@@ -398,7 +404,3 @@ color: #6a737d;  /* cor do texto cinza */
 }
 ```
 </div>
-
-{{< callout type="warning" >}}
-<span style="color:red;">*</span> Parâmetro obrigatório
-{{< /callout >}}

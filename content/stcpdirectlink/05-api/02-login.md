@@ -34,7 +34,7 @@ Esta requisição deve ser utilizada para o registro de login do usuário e obte
 </div>
 
 
-**Login**
+<!-- **Login** -->
 
 ```
 https://<domain>/directlink/v1/auth/login
@@ -43,7 +43,11 @@ https://<domain>/directlink/v1/auth/login
 
 Esta requisição deve ser utilizada para obter o token de autorização
 
-**Parameters**
+### Parameters
+
+{{< callout type="warning" >}}
+<span style="color:red;">*</span> Parâmetro obrigatório
+{{< /callout >}}
 
 
 ### Header
@@ -181,6 +185,3 @@ color: #6a737d;  /* cor do texto cinza */
 ```
 </div>
 
-{{< callout type="warning" >}}
-<span style="color:red;">*</span> Parâmetro obrigatório
-{{< /callout >}}
