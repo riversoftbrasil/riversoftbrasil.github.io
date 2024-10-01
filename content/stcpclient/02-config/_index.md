@@ -245,7 +245,7 @@ selecionada anteriormente.
 | Lê configuração Proxy do IE |                  Pressione este botão para ler as configurações de Proxy configuradas no Internet Explorer. <br> Obs.: As informações de autenticação não serão lidas do IE.                  |
 --------
 
-Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alterar as configurações
+Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alterar as configurações.
 
 ### Tipos de Arquivos
 
@@ -450,7 +450,6 @@ de sucesso (Return code 0), o processo é finalizado com sucesso.
 
 Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alterar as configurações.
 
-
 ## Comunicação TLS (Openssl)
 
 {{< icon "chevron-right" >}}Na guia **Perfis**, selecione o perfil desejado e clique no botão **Propriedades**.
@@ -472,6 +471,64 @@ Clique em **OK** para concluir o processo de configuração.
 
 {{< callout type="warning" >}}
 Obs: A opção *Chave* é a chave gerada pelo administrador da aplicação servidora (STCP OFTP Server).
+{{< /callout >}}
+
+## Configuração de Certificado 
+
+{{< icon "chevron-right" >}}No menu, *Iniciar > Todos os programas > Riversoft STCP OFTP Client*, acesse o *STCP OFTP Client Config*.
+
+{{< icon "chevron-right" >}}Na guia Perfis selecione o perfil desejado e clique no botão **Propriedades**
+
+![](img/cert-01.png)
+
+{{< icon "chevron-right" >}}Na janela Propriedades do perfil, na guia **Geral**, clique no botão **Configurar** e selecione a guia **TLS (Openssl)**
+
+{{< icon "chevron-right" >}}No grupo Certificados CA (Autoridades) informe o parâmetro Diretório.
+
+![](img/cert-02.png)
+
+PARAMÊTROS | DESCRIÇÃO
+:---       | :---
+Diretório  | Preencha este campo com o nome do diretório (caminho completo) onde se encontram instalados os certificados digitais (X509) contendo a chave pública que assina o certificado apresentado pelo servidor.
+
+{{< icon "chevron-right" >}}Pressione o botão OK para salvar e sair do *STCP OFTP Client Config*
+
+{{< icon "chevron-right" >}}Realize os testes de conexão ao *STCP OFTP Server* através do *STCP OFTP Client*
+
+## Configurar um servidor proxy para conexão
+
+{{< icon "chevron-right" >}}Acesse o *Riversoft STCP OFTP Client Config*: *(Iniciar -> Todos os programas -> Riversoft STCP OFTP Client)*
+
+{{< icon "chevron-right" >}}Selecione o perfil desejado na guia **Perfis** e clique em **Propriedades**.
+
+![](img/clt-proxy-01.png)
+
+{{< icon "chevron-right" >}}Na guia **Geral**, clique no botão **Configurar**.
+
+![](img/clt-proxy-02.png)
+
+{{< icon "chevron-right" >}}Na guia **Proxy**
+
+Clique no botão **Lê Configuração Proxy do IE** para obter as informações do navegador Internet Explorer. Caso o servidor Proxy utilize autenticação, preencha-as.
+
+![](img/clt-proxy-03.png)
+
+{{< callout type="info" >}}
+Autenticação Basic é comumente utilizada com servidores Squid, Wingate e outros.
+Autenticação NTLM é comumente utilizada com servidores ISA, MS-Proxy.
+{{< /callout >}}
+
+**Notas:**
+{{< callout type="info" >}}
+  Algumas configurações de autenticação requerem a informação do servidor de
+  domínio (quando aplicável) no seguinte padrão: (Nomedodomínio) \ (Usuário do
+  domínio).
+{{< /callout >}}
+
+
+{{< callout type="info" >}}
+  Nos casos em que houver alteração da senha do usuário do domínio, a senha do
+  STCP OFTP Client também deverá ser alterada.
 {{< /callout >}}
 
 ## Estrutura dos Diretórios

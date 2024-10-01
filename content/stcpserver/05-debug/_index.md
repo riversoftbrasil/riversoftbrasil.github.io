@@ -6,32 +6,33 @@ cascade:
   type: docs
 sidebar:
   exclude: false
-weight: 6
-prev: /proxy
-next: /schedule
+weight: 5
+prev: 
+next: 
 draft: false
-lastmod: 2024-05-20
+lastmod: 2024-10-01
 ---
 ## Habilitar ou Alterar o nível de Debug
 
-Em alguns casos, para se obter uma análise mais detalhada de problemas relacionados ao intercâmbio de arquivos, torna-se necessária a depuração dos processos de conexão e transferência, realizadas pelo *STCP OFTP Client*.
+Em alguns casos, para se obter uma análise mais detalhada de problemas relacionados ao intercâmbio de arquivos, torna-se necessária a depuração dos processos de conexão e transferência, realizadas pelo *STCP OFTP Server*.
 
 Através da configuração do parâmetro *Nível de debug* é possível gerar um arquivo de depuração na pasta DEBUG (Ex. C:\STCPCLT\Debug) do diretório de instalação do STCP.
 
-Acesse o *STCP OFTP Client Config* (Iniciar – Todos os programas – Riversoft STCP OFTP Client). Selecione o perfil desejado na guia Perfis e clique no botão Propriedades. Na janela Propriedades do perfil, na guia *Odette*, altere o valor do campo *Nível de debug* para 63 (outros valores podem ser utilizados – vide Tabela abaixo).
+Acesse o STCP OFTP Server Config (Iniciar – Todos os programas – Riversoft STCP OFTP Server). Selecione o usuário desejado na guia Usuários e clique no botão Propriedades Na janela Propriedades do usuário, na guia do protocolo utilizado (Odette, SFTP, FTP, HTTP) altere o valor do campo "Nível de debug" para 63 (outros valores podem ser utilizados – vide Tabela abaixo). 
 
-Após a alteração, disponibilize um arquivo de teste na pasta SAIDA do perfil, que apresenta o erro, e inicie uma nova conexão. O arquivo de debug será gerado no diretório DEBUG (Ex. C:\STCPCLT\Debug).
-
+Após a alteração, disponibilize um arquivo de teste na pasta SAIDA do usuário, que apresenta o erro, e inicie uma nova conexão. O arquivo de debug será gerado no diretório DEBUG (Ex. C:\STCPODT\Debug).
 
 {{< callout type="info" >}}
   NOTA: Uma vez gerado o erro, você pode voltar o nível de debug para o seu valor padrão (0).
 {{< /callout >}}
 
+![](img/img-01.png)
+
 Para cada tentativa de conexão será criado um novo arquivo de depuração no diretório **DEBUG** com a seguinte sintaxe:
 
 ```{filename="Arquivo de debug"}
 
-ODTDEB.<Protocolo>.<Perfil>.YYYYMMDDhhmmssnnn
+ODTDEB.<Protocolo>.<Usuario>.YYYYMMDDhhmmssnnn
 ```
 
 | Informação |        Descrição        |

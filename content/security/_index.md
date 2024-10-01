@@ -92,4 +92,61 @@ Alguns dos algoritmos mais atuais usados com TLS:
 | SHA-256/384/512     | Função de hash para integridade        | 256/384/512 bits     | Alta/Muito Alta                  | Proporciona integridade dos dados              |
 | GCM (AES-GCM)       | Autenticação de dados, integridade     | Variável (depende do AES) | Alta                        | Oferece criptografia autenticada               |
 
+## Configurar porta TLS
 
+{{< icon "chevron-right" >}}Para acessar o configurador do STCP OFTP Server, acesse o **Riversoft STCP OFTP Server Config**.
+
+{{< icon "chevron-right" >}}Acesse a guia **Redes** para adicionar as interfaces que ficarão disponíveis para o serviço de transferência e adicione uma interface do serviço de transferência.
+
+![](img/guia-redes.png)
+
+{{< icon "chevron-right" >}}Clique em **Adicionar** e selecione o protocolo **OFTP – TCP/IP**.
+
+{{< icon "chevron-right" >}}Clique em **OK** para entrar nas configurações.
+
+![](img/protocolo-oftp.png)
+
+{{< icon "chevron-right" >}}Clique na guia **TCP/IP** e configure os parâmetros apresentados.
+
+![](img/tcp-ip-redes.png)
+
+{{< icon "chevron-right" >}}Clique na guia **TLS**, configure os parâmetros apresentados abaixo e pressione o botão **OK** para finalizar.
+
+![](img/redes-guia-tls.png)
+
+### Chave privativa e Certificado 
+
+Os seguintes procedimentos devem ser executados para a geração da chave privativa e do certificado digital a serem utilizados na comunicação TLS.
+
+{{< icon "chevron-right" >}}No prompt de comando, execute a aplicação **openssl.exe** (Ex.: C:\STCPODT\Program\openssl.exe) para iniciar o processo de geração do par de chaves assimétricas (privada/pública).
+
+![](img/openssl.png)
+
+{{< icon "chevron-right" >}}Utilize o comando abaixo para gerar a chave privativa que será utilizada para criptografia da conexão.
+
+```pshell
+genrsa -out[unidade_disco][diretorio_instalação_stcp]\keys\[nome_da_chave].key 1024
+```
+
+Exemplo:
+
+```pshell
+genrsa –out c:\stcpodt\keys\stcp_abcde.key 1024
+```
+
+![](img/openssl-chave-priv.png)
+
+{{< icon "chevron-right" >}}O próximo passo é gerar o Certificado Digital associado à chave gerada anteriormente. Para isso, utilize o comando abaixo.
+
+```pshell
+req –new –x509 –key [unidade_disco][diretório_instalação_stcp]\keys\[nome_da_chave].key –out [unidade_disco][diretório_instalação_stcp]\certs\[nome_do_certificado].cer –days 1825 –config ./openssl.cnf
+```
+
+Exemplo:
+
+```pshell
+req –new –x509 –key c:\stcpodt\keys\stcp_interprint.key –out c:\stcpodt\certs\stcp_abcde.cer –days 1825 –config ./openssl.cnf
+```
+{{< icon "chevron-right" >}}Preencha as informações solicitadas para concluir o processo de geração do Certificado Digital.
+
+![](img/openssl-cert.png)

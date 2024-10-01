@@ -85,6 +85,166 @@ Monitor – TCP/IP | Habilita a rede para supervisão do STCP através do protoc
 Monitor Directlink - TCP/IP | Habilita a rede para supervisão do Directlink através do protocolo TCP/IP.
 ----
 
+### Certificado digital emitido por uma autoridade certificadora (CA)
+
+Veremos abaixo os procedimentos necessários para configuração do Riversoft STCP OFTP Server utilizando certificado emitido por uma **Autoridade Certificadora**.
+
+#### Geração da CSR
+
+A CSR, cuja sigla significa *Certificate Signing Request*, é um arquivo de texto, gerado pelo servidor web, contendo as informações para a solicitação do seu certificado junto à entidade certificadora escolhida e usada para gerar um certificado assinado digitalmente.
+
+A CSR conterá informações importantes da companhia e deve ser preenchida conforme instruções já encaminhadas pela entidade certificadora contratada.
+
+A geração da CSR é divida em duas etapas:
+
+* Geração do par de chaves (que deve ser gerada no tamanho de 2048 bits)
+* Geração da CSR
+
+{{< callout type="warning" >}}
+Como padrão, utilizaremos o utilitário **OpenSSL** para realização do processo de geração e configuração do certificado digital.
+{{< /callout >}}
+
+{{< callout type="info" >}}
+O procedimento de geração de CSR, pode ser realizado por outro software de servidor (IIS, IBM Webshepere, iPlanet, Keytool, entre outros), conforme a infraestrutura utilizada.
+{{< /callout >}}
+
+#### Geração do Par de Chaves
+
+Acesse a pasta **Program** do diretório de instalação do Riversoft STCP OFTP Server (Ex. C:\STCPODT\Program) e em seguida, para gerar o par de chaves, digite a linha de comando:
+
+```
+openssl genrsa -des3 > C:\STCPODT\Keys\chaveprivada.key 2048
+```
+<!-- Após digitar a linha de comando, o sistema solicitará que informe uma senha para proteger o par de chaves que será criado no diretório *C:\STCPODT\Keys*. -->
+
+![](img/openssl-chavepriv.png "Linha de comando")
+![](img/openssl-chavepriv-dir.png "Arquivo salvo no diretório")
+
+#### Geração da CSR (Certificate Signing Request)
+
+Em seguida, para gerar a requisição (CSR), utilize a linha de comando e digite as informações solicitadas.
+```
+openssl req -new -key C:\STCPODT\Keys\chaveprivada.key > C:\STCPODT\Keys\solicitacao.csr -config C:\STCPODT\Program\openssl.cnf
+```
+
+<!-- ![](./imagem/img3.png) -->
+
+#### Solicitação do certificado 
+A CSR, gerada no passo anterior, deverá ser encaminhada para a entidade certificadora conforme procedimentos fornecidos por essa. Para maiores dúvidas referente ao envio da CSR entre em contato com seu agente de contas junto à entidade certificadora.
+
+Faça uma cópia de segurança de sua chave privada e do CSR, e guarde-as em local seguro. **Nenhuma cópia de sua chave privada deverá ser distribuída e/ou solicitada por terceiros.**
+
+#### Instalação e Configuração do certificado 
+
+Uma vez Aprovado e Emitido, o contato técnico responsável do processo de certificação digital, receberá da entidade certificadora todas as informações pertinentes à instalação e configuração do certificado.
+
+Para maiores dúvidas referente ao processo de instalação e configuração entre em contato com o seu agente de suporte (CA) e/ou com a sua equipe de segurança.
+
+{{< callout type="warning" >}}
+Este procedimento não tem como objetivo descrever o processo de instalação e configuração do certificado adquirido e sim os passos necessários para utilização desse certificado junto ao Riversoft STCP OFTP Server e Riversoft STCP OFTP Client.
+{{< /callout >}}
+
+#### Configurar Certificado
+
+Para que seja possível configurar o STCP OFTP Server Enterprise/Lite, a fim de utilizar o certificado digital emitido por uma Autoridade Certificadora, será necessário possuir às **chaves pública e privada** e realizar os procedimentos descritos abaixo.
+
+* Chave pública
+
+Faça uma cópia da chave pública do certificado (arquivo .cer), encaminhado pela entidade certificadora, para a pasta Certs do diretório de instalação do STCP OFTP Server Enterprise/Lite (Ex. C:\STCPODT\Certs).
+
+> NOTA: Em alguns casos o administrador precisa realizar a exportação da chave pública (*.cer) do Certificado.   Para isso, é possível utilizar o snap-in Certificados do Console de Gerenciamento Microsoft (MMC).
+
+Para mais detalhes consulte: (https://technet.microsoft.com/pt-br/library/cc730988.aspx)
+
+* Chave Privativa
+
+A chave privativa (arquivo .key ou .pem) do certificado deverá ser copiada para a pasta Keys do diretório de instalação do STCP OFTP Server Enterprise/Lite (Ex. C:\STCPODT\Key).
+
+> NOTA: Em alguns casos, onde o arquivo do certificado está no formato PFX, o processo de conversão para o formato PEM será necessário. É possível realizar a conversão usando o OpenSSL, disponível na pasta Program, do diretório de instalação do STCP OFTP Server/Lite (Ex. C:\STCPODT\Program).
+<!-- Para mais detalhes consulte: (https://www.openssl.org/docs/apps/pkcs12.html) -->
+
+```{filename="Chave Privativa"}
+
+openssl pkcs12 -in C:\TEMP\empresateste.com.br.pfx -out C:\TEMP\private-key.pem -nodes
+```
+![](img/cert-01.png)
+
+#### Geração do hash do certificado para uso no STCP OFTP Client
+
+Anterior ao processo de configuração do certificado no STCP OFTP Client, será necessária obter uma cópia da cadeia de certificados, a partir do certificado assinado e enviado pela entidade certificadora e o realizar o renomeio de cada certificado dessa hierarquia para o seu hash correspondente.
+
+{{< icon "chevron-right" >}}Faça uma cópia do certificado, encaminhado pela certificadora, para um diretório temporário do servidor onde o STCP OFTP Server está instalado (Ex. C:\TEMP)
+
+{{< icon "chevron-right" >}}Acesso o diretório temporário e clique com o botão direito do mouse no certificado (Ex. empresateste_certificate.cer) e selecione **Abrir**
+
+{{< icon "chevron-right" >}}Na guia Caminho de Certificação selecione o certificado raíz (Ex. VeriSign Trial Secure Server Root CA – G2) e clique no botão Exibir Certificado.
+
+![](img/cert-04.png)
+
+{{< icon "chevron-right" >}}Uma nova janela será exibida, contendo as informações do certificado selecionado (neste exemplo serão exibidas as informações do certificado raiz _VeriSign Trial Secure Server Root CA – G2)_
+
+{{< icon "chevron-right" >}}Selecione a guia **Detalhes** e clique no botão **Copiar para Arquivo** para iniciar o Assistente para Exportação de Certificados
+
+![](img/cert-05.png)
+
+{{< icon "chevron-right" >}}Para continuar, clique em **Avançar**
+
+{{< icon "chevron-right" >}}No formato do arquivo de exportação selecione *X.509 codificado na base 64 (*.cer)* e clique no botão **Avançar**
+
+![](img/cert-06.png)
+
+{{< icon "chevron-right" >}}Informe o caminho e nome do arquivo a ser exportado (Ex. C:\TEMP\root_certificate.cer)
+
+{{< icon "chevron-right" >}}Para finalizar, clique no botão **Concluir**
+
+![](img/cert-07.png)
+
+{{< icon "chevron-right" >}}Repita os passos de 3 a 9 para os exportar os demais certificados existentes na hierarquia de certificados, o certificado raiz (G2) e o intermediário (G3).
+
+![](img/cert-08.png)
+
+> NOTA: Neste exemplo serão gerados mais dois arquivos no diretório temporário (Ex. root_certificate.cer e intermediate_certificate.cer).
+
+{{< icon "chevron-right" >}}Acesse a pasta *Program* do diretório de instalação do Riversoft STCP OFTP Server (Ex. C:\STCPODT\Program) e em seguida, para gerar o _hash_, digite a linha de comando:
+
+```
+openssl x509 –noout –hash -in C:\TEMP\root_certificate.cer
+```
+<!-- ![](./imagem/img13.png) -->
+
+{{< icon "chevron-right" >}}Uma vez obtido o _hash_ do arquivo indicado, renomeie esse arquivo para o seu _hash_ correspondente e mais a extensão .**0** (Ex. _root_certificate.cer para F877295a.0_)
+
+![](img/cert-09.png)
+
+{{< icon "chevron-right" >}}Repita os passos 11 e 12 para realizar o renomeio dos demais arquivos exportados *(Ex. _root_certificate.cer e intermediate_certificate.cer_)*
+
+<!-- ![](./imagem/img15.png) -->
+
+{{< icon "chevron-right" >}}Copie os arquivos renomeados para a pasta Certs do diretório de instalação do STCP OFTP Client *(Ex. C:\STCPCLT\Certs)*
+
+#### Configuração da Rede
+
+{{< icon "chevron-right" >}}No menu, *Iniciar > Todos os programas > Riversoft STCP OFTP Server*, acesse o **STCP OFTP Server Config**.
+
+{{< icon "chevron-right" >}}Na guia Redes selecione a rede desejada e clique no botão Propriedades.
+
+![](img/cert-02.png)
+
+{{< icon "chevron-right" >}}Na janela Propriedades da rede, selecione a guia *TLS* e no grupo *Chave privativa*, informe os parâmetros *Chave e Certificado*.
+
+> NOTA: Caso o certificado tenha sido instalado em um servidor Microsoft IIS, previamente será necessária a exportação do certificado para um arquivo PFX e a conversão desse arquivo para o formato PEM através do utilitário OpenSSL¹.
+
+![](img/cert-03.png)
+
+PARAMÊTROS | DESCRIÇÃO
+:---       | :---
+Chave      | Preencha este campo com o nome do arquivo (caminho completo) onde se encontra instalada a chave privativa.
+Certificado| Preencha este campo com o nome do arquivo (caminho completo) onde se encontra o certificado digital (X509) associado à chave privativa.
+
+{{< icon "chevron-right" >}}Pressione o botão OK para salvar e sair do STCP OFTP Server Config.
+
+{{< icon "chevron-right" >}}Reinicie o serviço do Riversoft STCP OFTP Server para que as alterações sejam aplicadas.
+
 ### OFTP
 
 {{< icon "chevron-right" >}}Na guia **Geral**, preencha as seguintes opções de configuração:
@@ -810,6 +970,143 @@ Filtro de arquivos| Preencha este campo com uma expressão regular para validar 
 Tamanho máximo| Preencha este campo com o tamanho máximo que um arquivo pode ter para ser transferido.
 Criar referência de arquivo recebido| Esta opção controla a duplicidade de arquivo, criando uma referência do arquivo no diretório Restart.
 
+### Tipos de Arquivos
+
+{{< icon "chevron-right" >}}Clique em **Adicionar**.
+
+![](img/tipos-de-arquivos.png)
+
+A configuração de um **Tipo de Arquivo** possibilita alterar algumas características na transferência do arquivo, tais como: conversão do nome ou formato do arquivo, conversão da codificação dos dados, inicialização de uma aplicação ou bat, entre outras.
+
+O tipo **Default** sempre deverá existir e será utilizado nos casos em que não haja um tipo específico definido para a transferência em andamento.
+
+A associação entre um **Tipo de arquivo** e o arquivo propriamente dito pode ser estabelecida de três formas distintas:
+
+Tipo | Descrição
+:--- | :---
+1    | Através do nome do arquivo e o nome do tipo.
+2    | Parte do nome do arquivo e os valores definidos nas propriedades de Prefixo e Sufixo do tipo.
+3    | O nome do arquivo e os valores definidos em uma expressão regular.
+
+> Obs.: Para informações mais detalhadas sobre expressão regular (RegEx), acesse o site [Rubular](https://rubular.com/).
+
+A tabela abaixo demonstra a associação do nome do arquivo com o tipo específico:
+
+Nome Tipo| Tipo| Prefixo| Sufixo| RegEx| Nome Arquivo| Associação
+:--- |:--- |:--- |:--- |:--- |:--- |:---
+TEST.0   | 1   | —      | —     | —    | TEST.0 /TEST.TXT| Sim /Não
+TEST.1   | 2   | TEST   | —     | —    | TEST.TXT /TXT.TEST| Sim /Não
+TEST.2   | 2   | —      | TEST  | —    |TXT.TEST /TXT.TXT| Sim /Não
+TEST.3   | 3   | —      | —     | T.T  |TXT.TXT /TXTTXT| Sim /Não
+Default  | —   | —      | —     | —    | TXTTXT | Sim
+
+{{< icon "chevron-right" >}}Informe o Nome do novo tipo de arquivo e clique em **OK**.
+
+![](img/tipo-de-arquivo-nome.png)
+
+Campos | Descrição
+:---   | :---
+Nome do novo tipo de arquivo| Preencha este campo com o nome desejado para o novo tipo. <br> Obs.: Não utilize caracteres especiais ou espaços em branco.
+
+{{< icon "chevron-right" >}}Na guia **Geral**, configure as seguintes opções.
+
+![](img/tipo-de-arquivo-geral.png)
+
+Campos | Descrição
+:---   | :---
+Verificar nome do arquivo por:| As opções definidas neste grupo serão utilizadas pelo STCP OFTP Server para definir a forma de associação do nome do arquivo com o tipo: Padrão (Default), Prefixo/Sufixo, Nome do tipo, Expressão regular. <br> Obs.: O nome do tipo associa o nome do arquivo ao nome do tipo de arquivo criado.
+Prefixo| Preencha este campo com o prefixo do nome do arquivo que deve ser associado a este tipo.
+Sufixo | Preencha este campo com o sufixo do nome do arquivo que deve ser associado a este tipo.
+Expressão Regular (Regex)| Preencha este campo com a expressão regular que deve ser associada a este tipo.
+Características da Transmissão| As opções definidas neste grupo serão utilizadas pelo STCP OFTP Server para definir as características do arquivo na transmissão.
+Desabilitar| Esta opção permite desabilitar ou habilitar o tratamento do tipo de arquivo na transmissão.
+Formato do registro| Esta opção permite selecionar o formato do registro do arquivo, são eles: Não Formatado, Fixo e Variável.  <br> Obs.: Somente utilize Fixo ou Variável quando o servidor Odette for uma versão de mainframe (grande porte) e esta característica estiver habilitada.
+Tamanho| Preencha este campo com a quantidade de caracteres (bytes) que compõem o registro.  Obs.: Somente utilize esta opção quando o formato do registro for Fixo ou Variável.
+Executar comando externo| Preencha este campo com o nome do comando externo (programa ou bat).
+Comando a ser executado| Preencha este campo com o nome de uma aplicação ou arquivo de lote (bat) a ser executado após o envio, com sucesso, do arquivo.
+Tabela conversão de dados| Esta opção permite selecionar a tabela de conversão dos dados na transmissão, são elas: Nenhuma, ANSI2E.TAB, ASC2EBC.TAB (converte de ASCII para EBCDIC), E2ANSI.TAB, EBC2ASC.TAB (converte de EBCDIC para ASCII), ODTA2E.TAB, ODTE2A.TAB, STDA2E.TAB e STDE2A.TAB.
+Origem| Preencha este campo com a identificação Odette (OID) de origem do arquivo.  <br> Obs.: Quando o usuário é criado, este campo contém a identificação local.
+Converte nome arquivo| Esta opção permite selecionar a conversão do nome do arquivo antes de transmitir, são elas: Não, maiúscula ou minúscula.
+Destino| Preencha este campo com o a identificação Odette (OID) do destino deste arquivo.  <br> Obs.: Quando o usuário é criado, este campo contém a identificação remota.
+Userdata| Preencha este campo com os dados extras associados à identificação Odette informada. <br> Obs.: Preencha este campo somente se for requerido pelo servidor.
+Remover CR+LF| Esta opção permite habilitar ou desabilitar a remoção dos caracteres CR (Carriage Return) e LF (Line Feed) na transmissão do arquivo. <br> Obs.: Somente utilize esta opção quando o formato do registro for Fixo ou Variável.
+Remover Timestamp| Esta opção permite habilitar ou desabilitar a remoção do timestamp externo do nome do arquivo.
+Desabilitar| Esta opção permite desabilitar ou habilitar o tratamento do tipo de arquivo na recepção.
+Executar comando externo| Preencha este campo com o nome do comando externo (programa ou bat).
+Comando a ser executado| Preencha este campo com o nome de uma aplicação ou arquivo de lote (bat) a ser executado após a recepção com sucesso do arquivo.
+Tabela conversão de dados| Esta opção permite selecionar a tabela de conversão dos dados na recepção, são elas: Nenhuma, ASC2EBC.TAB (converte de ASCII para EBCDIC)  e EBC2ASC.TAB (converte de EBCDIC para ASCII).
+Converte nome arquivo| Esta opção permite selecionar a conversão do nome do arquivo antes de transmitir, são elas: Não, maiúscula ou minúscula.
+Inserir CR+LF| Esta opção permite habilitar ou desabilitar a inserção dos caracteres CR (Carriage Return) e LF (Line Feed) na recepção do arquivo. <br> Obs.: Somente utilize esta opção quando o formato do registro for Fixo ou Variável.
+Inserir Timestamp| Esta opção permite habilitar ou desabilitar a inserção do timestamp externo no nome do arquivo.
+Sobrepor arquivo| Esta opção permite habilitar ou inibir a sobreposição do arquivo quando já existir um arquivo com o mesmo nome.
+Inibir EERP| Esta opção permite habilitar ou desabilitar o envio do comando Odette EERP (End to End Response) ao final da recepção do arquivo com sucesso. <br> Obs.: Somente utilize esta opção se o servidor suportar esta característica.
+EERP libera| Esta opção permite habilitar ou desabilitar o tratamento do arquivo recebido somente após o envio do Odette EERP (End to End Response). <br> Obs.: Somente utilize esta opção se o servidor suportar esta característica.
+
+Pressione o botão **OK** para gravar as configurações ou **Cancelar** para abandonar sem alterar as configurações.
+
+**Formato do Timestamp externo do arquivo**
+
+A utilização do timestamp externo do arquivo tem o seguinte formato:
+
+```
+<nome do arquivo>.YYYYMMDDhhmmssnnn
+```
+
+`<nome do arquivo>`| Nome do arquivo sem caracteres especiais ou espaços.
+:---              | :---
+**YYYY**         | Ano
+**MM**            | Mês
+**DD**            | Dia
+**Hh**            | Hora
+**mm**            | Minuto
+**ss**            | Segundos
+**nnn**           | Milésimos de segundos
+
+{{< icon "chevron-right" >}}Na guia **Avançadas**, configure as seguintes opções para o tipo de arquivo.
+
+![](img/tipo-de-arquivo-avancadas.png)
+
+Campos | Descrição
+:---   | :---
+Marcar no arquivo recebido| Esta opção permite habilitar/desabilitar a inserção da data e hora
+com data e hora local os atributos de:| local no arquivo recebido para os atributos correspondentes. <br> Obs.: A data e a hora do protocolo ODETTE serão utilizadas nos atributos desabilitados.
+Ler o arquivo| Preencha este campo com o nome de um programa externo que será executado para realizar a leitura do arquivo.
+Gravar o arquivo| Preencha este campo com o nome de um programa externo que será executado para realizar a gravação do arquivo.
+
+**Validar o arquivo antes de transmitir**
+
+Executa um comando externo para validar o arquivo antes de transmitir. Em caso de sucesso (Return code 0), o processo de transmissão será executado.
+
+![](img/tipo-arq-01.png)
+
+**Validar o arquivo após transmitir**
+
+Executa comando para validar arquivo após a transmissão. Em caso de sucesso (Return code 0), o processo de transmissão será executado.
+
+![](img/tipo-arq-02.png)
+
+**Validar o arquivo antes de receber**
+
+Executa um comando externo antes de receber o arquivo. Em caso de sucesso (Return code 0), o arquivo é fechado e a recepção, finalizada com sucesso.
+
+![](img/tipo-arq-03.png)
+
+**Validar o arquivo após receber**
+
+Executa um comando externo após receber o arquivo, antes do fechamento do arquivo. Em caso de sucesso (Return code 0), o processo é finalizado com sucesso.
+
+![](img/tipo-arq-04.png)
+
+Backup arquivo transmitido | Esta opção assinalada habilita o backup dos arquivos transmitidos para este tipo.
+:---                       | :---
+Período de transferência   | Início e término de uma transferência.
+Início                     | Início do intervalo do período de transferência.
+Término                    | Término do intervalo do período de transferência.
+Dias da semana             | Informa os dias da semana em que a transferência poderá ocorrer.
+Padrão                     | Restaura configuração padrão para o período de transferência.
+
+Pressionar o botão **OK** para gravar as configurações ou **Cancelar** para abandonar sem alterar as configurações.
+
 ## Agendamento
 
 Você poderá adicionar, remover, modificar ou copiar os parâmetros de configuração de um agendamento do serviço STCP OFTP Server.
@@ -985,317 +1282,5 @@ Pressione o botão **OK** para gravar as configurações ou **Cancelar** para ab
 
 Após adicionar corretamente o Usuário, é necessário configurar os **Tipos de Arquivos.  Obs.: Ao pressionar o botão OK, somente as configurações da guia Geral e Avançadas serão gravadas.**
 
-## Tipos de Arquivos
-
-{{< icon "chevron-right" >}}Clique em **Adicionar**.
-
-![](img/tipos-de-arquivos.png)
-
-A configuração de um **Tipo de Arquivo** possibilita alterar algumas características na transferência do arquivo, tais como: conversão do nome ou formato do arquivo, conversão da codificação dos dados, inicialização de uma aplicação ou bat, entre outras.
-
-O tipo **Default** sempre deverá existir e será utilizado nos casos em que não haja um tipo específico definido para a transferência em andamento.
-
-A associação entre um **Tipo de arquivo** e o arquivo propriamente dito pode ser estabelecida de três formas distintas:
-
-Tipo | Descrição
-:--- | :---
-1    | Através do nome do arquivo e o nome do tipo.
-2    | Parte do nome do arquivo e os valores definidos nas propriedades de Prefixo e Sufixo do tipo.
-3    | O nome do arquivo e os valores definidos em uma expressão regular.
-
-> Obs.: Para informações mais detalhadas sobre expressão regular (RegEx), acesse o site [Rubular](https://rubular.com/).
-
-A tabela abaixo demonstra a associação do nome do arquivo com o tipo específico:
-
-Nome Tipo| Tipo| Prefixo| Sufixo| RegEx| Nome Arquivo| Associação
-:--- |:--- |:--- |:--- |:--- |:--- |:---
-TEST.0   | 1   | —      | —     | —    | TEST.0 /TEST.TXT| Sim /Não
-TEST.1   | 2   | TEST   | —     | —    | TEST.TXT /TXT.TEST| Sim /Não
-TEST.2   | 2   | —      | TEST  | —    |TXT.TEST /TXT.TXT| Sim /Não
-TEST.3   | 3   | —      | —     | T.T  |TXT.TXT /TXTTXT| Sim /Não
-Default  | —   | —      | —     | —    | TXTTXT | Sim
-
-{{< icon "chevron-right" >}}Informe o Nome do novo tipo de arquivo e clique em **OK**.
-
-![](img/tipo-de-arquivo-nome.png)
-
-Campos | Descrição
-:---   | :---
-Nome do novo tipo de arquivo| Preencha este campo com o nome desejado para o novo tipo. <br> Obs.: Não utilize caracteres especiais ou espaços em branco.
-
-{{< icon "chevron-right" >}}Na guia **Geral**, configure as seguintes opções.
-
-![](img/tipo-de-arquivo-geral.png)
-
-Campos | Descrição
-:---   | :---
-Verificar nome do arquivo por:| As opções definidas neste grupo serão utilizadas pelo STCP OFTP Server para definir a forma de associação do nome do arquivo com o tipo: Padrão (Default), Prefixo/Sufixo, Nome do tipo, Expressão regular. <br> Obs.: O nome do tipo associa o nome do arquivo ao nome do tipo de arquivo criado.
-Prefixo| Preencha este campo com o prefixo do nome do arquivo que deve ser associado a este tipo.
-Sufixo | Preencha este campo com o sufixo do nome do arquivo que deve ser associado a este tipo.
-Expressão Regular (Regex)| Preencha este campo com a expressão regular que deve ser associada a este tipo.
-Características da Transmissão| As opções definidas neste grupo serão utilizadas pelo STCP OFTP Server para definir as características do arquivo na transmissão.
-Desabilitar| Esta opção permite desabilitar ou habilitar o tratamento do tipo de arquivo na transmissão.
-Formato do registro| Esta opção permite selecionar o formato do registro do arquivo, são eles: Não Formatado, Fixo e Variável.  <br> Obs.: Somente utilize Fixo ou Variável quando o servidor Odette for uma versão de mainframe (grande porte) e esta característica estiver habilitada.
-Tamanho| Preencha este campo com a quantidade de caracteres (bytes) que compõem o registro.  Obs.: Somente utilize esta opção quando o formato do registro for Fixo ou Variável.
-Executar comando externo| Preencha este campo com o nome do comando externo (programa ou bat).
-Comando a ser executado| Preencha este campo com o nome de uma aplicação ou arquivo de lote (bat) a ser executado após o envio, com sucesso, do arquivo.
-Tabela conversão de dados| Esta opção permite selecionar a tabela de conversão dos dados na transmissão, são elas: Nenhuma, ANSI2E.TAB, ASC2EBC.TAB (converte de ASCII para EBCDIC), E2ANSI.TAB, EBC2ASC.TAB (converte de EBCDIC para ASCII), ODTA2E.TAB, ODTE2A.TAB, STDA2E.TAB e STDE2A.TAB.
-Origem| Preencha este campo com a identificação Odette (OID) de origem do arquivo.  <br> Obs.: Quando o usuário é criado, este campo contém a identificação local.
-Converte nome arquivo| Esta opção permite selecionar a conversão do nome do arquivo antes de transmitir, são elas: Não, maiúscula ou minúscula.
-Destino| Preencha este campo com o a identificação Odette (OID) do destino deste arquivo.  <br> Obs.: Quando o usuário é criado, este campo contém a identificação remota.
-Userdata| Preencha este campo com os dados extras associados à identificação Odette informada. <br> Obs.: Preencha este campo somente se for requerido pelo servidor.
-Remover CR+LF| Esta opção permite habilitar ou desabilitar a remoção dos caracteres CR (Carriage Return) e LF (Line Feed) na transmissão do arquivo. <br> Obs.: Somente utilize esta opção quando o formato do registro for Fixo ou Variável.
-Remover Timestamp| Esta opção permite habilitar ou desabilitar a remoção do timestamp externo do nome do arquivo.
-Desabilitar| Esta opção permite desabilitar ou habilitar o tratamento do tipo de arquivo na recepção.
-Executar comando externo| Preencha este campo com o nome do comando externo (programa ou bat).
-Comando a ser executado| Preencha este campo com o nome de uma aplicação ou arquivo de lote (bat) a ser executado após a recepção com sucesso do arquivo.
-Tabela conversão de dados| Esta opção permite selecionar a tabela de conversão dos dados na recepção, são elas: Nenhuma, ASC2EBC.TAB (converte de ASCII para EBCDIC)  e EBC2ASC.TAB (converte de EBCDIC para ASCII).
-Converte nome arquivo| Esta opção permite selecionar a conversão do nome do arquivo antes de transmitir, são elas: Não, maiúscula ou minúscula.
-Inserir CR+LF| Esta opção permite habilitar ou desabilitar a inserção dos caracteres CR (Carriage Return) e LF (Line Feed) na recepção do arquivo. <br> Obs.: Somente utilize esta opção quando o formato do registro for Fixo ou Variável.
-Inserir Timestamp| Esta opção permite habilitar ou desabilitar a inserção do timestamp externo no nome do arquivo.
-Sobrepor arquivo| Esta opção permite habilitar ou inibir a sobreposição do arquivo quando já existir um arquivo com o mesmo nome.
-Inibir EERP| Esta opção permite habilitar ou desabilitar o envio do comando Odette EERP (End to End Response) ao final da recepção do arquivo com sucesso. <br> Obs.: Somente utilize esta opção se o servidor suportar esta característica.
-EERP libera| Esta opção permite habilitar ou desabilitar o tratamento do arquivo recebido somente após o envio do Odette EERP (End to End Response). <br> Obs.: Somente utilize esta opção se o servidor suportar esta característica.
-
-Pressione o botão **OK** para gravar as configurações ou **Cancelar** para abandonar sem alterar as configurações.
-
-**Formato do Timestamp externo do arquivo**
-
-A utilização do timestamp externo do arquivo tem o seguinte formato:
-
-```
-<nome do arquivo>.YYYYMMDDhhmmssnnn
-```
-
-`<nome do arquivo>`| Nome do arquivo sem caracteres especiais ou espaços.
-:---              | :---
-**YYYY**         | Ano
-**MM**            | Mês
-**DD**            | Dia
-**Hh**            | Hora
-**mm**            | Minuto
-**ss**            | Segundos
-**nnn**           | Milésimos de segundos
-
-{{< icon "chevron-right" >}}Na guia **Avançadas**, configure as seguintes opções para o tipo de arquivo.
-
-![](img/tipo-de-arquivo-avancadas.png)
-
-Campos | Descrição
-:---   | :---
-Marcar no arquivo recebido| Esta opção permite habilitar/desabilitar a inserção da data e hora
-com data e hora local os atributos de:| local no arquivo recebido para os atributos correspondentes. <br> Obs.: A data e a hora do protocolo ODETTE serão utilizadas nos atributos desabilitados.
-Ler o arquivo| Preencha este campo com o nome de um programa externo que será executado para realizar a leitura do arquivo.
-Gravar o arquivo| Preencha este campo com o nome de um programa externo que será executado para realizar a gravação do arquivo.
-
-**Validar o arquivo antes de transmitir**
-
-Executa um comando externo para validar o arquivo antes de transmitir. Em caso de sucesso (Return code 0), o processo de transmissão será executado.
-
-![](img/tipo-arq-01.png)
-
-**Validar o arquivo após transmitir**
-
-Executa comando para validar arquivo após a transmissão. Em caso de sucesso (Return code 0), o processo de transmissão será executado.
-
-![](img/tipo-arq-02.png)
-
-**Validar o arquivo antes de receber**
-
-Executa um comando externo antes de receber o arquivo. Em caso de sucesso (Return code 0), o arquivo é fechado e a recepção, finalizada com sucesso.
-
-![](img/tipo-arq-03.png)
-
-**Validar o arquivo após receber**
-
-Executa um comando externo após receber o arquivo, antes do fechamento do arquivo. Em caso de sucesso (Return code 0), o processo é finalizado com sucesso.
-
-![](img/tipo-arq-04.png)
-
-Backup arquivo transmitido | Esta opção assinalada habilita o backup dos arquivos transmitidos para este tipo.
-:---                       | :---
-Período de transferência   | Início e término de uma transferência.
-Início                     | Início do intervalo do período de transferência.
-Término                    | Término do intervalo do período de transferência.
-Dias da semana             | Informa os dias da semana em que a transferência poderá ocorrer.
-Padrão                     | Restaura configuração padrão para o período de transferência.
-
-Pressionar o botão **OK** para gravar as configurações ou **Cancelar** para abandonar sem alterar as configurações.
-
-## Chave privativa e Certificado TLS
-
-Os seguintes procedimentos devem ser executados para a geração da chave privativa e do certificado digital a serem utilizados na comunicação TLS.
-
-{{< icon "chevron-right" >}}No prompt de comando, execute a aplicação **openssl.exe** (Ex.: C:\STCPODT\Program\openssl.exe) para iniciar o processo de geração do par de chaves assimétricas (privada/pública).
-
-![](img/openssl.png)
-
-{{< icon "chevron-right" >}}Utilize o comando abaixo para gerar a chave privativa que será utilizada para criptografia da conexão.
-
-```pshell
-genrsa -out[unidade_disco][diretorio_instalação_stcp]\keys\[nome_da_chave].key 1024
-```
-
-Exemplo:
-
-```pshell
-genrsa –out c:\stcpodt\keys\stcp_abcde.key 1024
-```
-
-![](img/openssl-chave-priv.png)
-
-{{< icon "chevron-right" >}}O próximo passo é gerar o Certificado Digital associado à chave gerada anteriormente. Para isso, utilize o comando abaixo.
-
-```pshell
-req –new –x509 –key [unidade_disco][diretório_instalação_stcp]\keys\[nome_da_chave].key –out [unidade_disco][diretório_instalação_stcp]\certs\[nome_do_certificado].cer –days 1825 –config ./openssl.cnf
-```
-
-Exemplo:
-
-```pshell
-req –new –x509 –key c:\stcpodt\keys\stcp_interprint.key –out c:\stcpodt\certs\stcp_abcde.cer –days 1825 –config ./openssl.cnf
-```
-{{< icon "chevron-right" >}}Preencha as informações solicitadas para concluir o processo de geração do Certificado Digital.
-
-![](img/openssl-cert.png)
-
-## Comunicação TLS
-
-{{< icon "chevron-right" >}}Para acessar o configurador do STCP OFTP Server Enterprise/Lite, clique em **Iniciar** e depois, em **Riversoft STCP OFTP Server Config**.
-
-{{< icon "chevron-right" >}}Acesse a guia **Redes** para adicionar as interfaces que ficarão disponíveis para o serviço de transferência e adicione uma interface do serviço de transferência.
-
-![](img/guia-redes.png)
-
-{{< icon "chevron-right" >}}Clique em **Adicionar** e selecione o protocolo **OFTP – TCP/IP**.
-
-{{< icon "chevron-right" >}}Clique em **OK** para entrar nas configurações.
-
-![](img/protocolo-oftp.png)
-
-{{< icon "chevron-right" >}}Clique na guia **TCP/IP** e configure os parâmetros apresentados.
-
-![](img/tcp-ip-redes.png)
-
-{{< icon "chevron-right" >}}Clique na guia **TLS**, configure os parâmetros apresentados abaixo e pressione o botão **OK** para finalizar.
-
-![](img/redes-guia-tls.png)
-
-## Estrutura dos diretórios
-
-Após a instalação e configuração da aplicação, irá criar a seguinte árvore de diretórios onde serão armazenadas as informações de configuração, logs e controle.
-
-{{< filetree/container >}}
-  {{< filetree/folder name="STCPODT" >}}
-
-    {{< filetree/folder name="`<USUÁRIO>`" state="closed" >}}
-      {{< filetree/folder name="CONTROLE" state="closed" >}}
-      {{< /filetree/folder >}}
-
-      {{< filetree/folder name="ENTRADA" state="closed" >}}
-        {{< filetree/folder name="RESTART" state="closed" >}}
-        {{< /filetree/folder >}}
-      {{< /filetree/folder >}}
-
-      {{< filetree/folder name="FORMATO" state="closed" >}}
-        {{< filetree/file name="default" >}}
-      {{< /filetree/folder >}}
-
-      {{< filetree/folder name="LOG" state="closed" >}}
-      {{< /filetree/folder >}}
-
-      {{< filetree/folder name="SAIDA" state="closed" >}}
-        {{< filetree/folder name="BACKUP" state="closed" >}}
-        {{< /filetree/folder >}}
-
-        {{< filetree/folder name="PENDENTE" state="closed" >}}
-        {{< /filetree/folder >}}
-      {{< /filetree/folder >}}
-
-      {{< filetree/folder name="TEMP" state="closed" >}}
-      {{< /filetree/folder >}}
-
-
-    {{< /filetree/folder >}}
-
-    {{< filetree/folder name="Certs" state="closed" >}}
-    {{< /filetree/folder >}}
-
-    {{< filetree/folder name="Debug" state="closed" >}}
-    {{< /filetree/folder >}}
-
-    {{< filetree/folder name="Keys" state="closed" >}}
-    {{< /filetree/folder >}}
-
-    {{< filetree/folder name="Samples" state="closed" >}}
-      {{< filetree/file name="LicencaSTCP.rtf" >}}
-    {{< /filetree/folder >}}
-
-    {{< filetree/folder name="Trastab" state="closed" >}}
-      {{< filetree/file name="ANSI2E.TAB" >}}
-      {{< filetree/file name="ASC2EBC.TAB" >}}
-      {{< filetree/file name="E2ANSI.TAB" >}}
-      {{< filetree/file name="EBC2ASC.TAB" >}}
-      {{< filetree/file name="ODTA2E.TAB" >}}
-      {{< filetree/file name="ODTE2A.TAB" >}}
-      {{< filetree/file name="STDA2E.TAB" >}}
-      {{< filetree/file name="STDE2E.TAB" >}}
-    {{< /filetree/folder >}}
-
-    {{< filetree/folder name="Program" state="closed" >}}
-      {{< filetree/file name="Riversoft STCP OFTP Server Console" >}}
-      {{< filetree/file name="Riversoft STCP OFTP Log Viewer (Text)" >}}
-      {{< filetree/file name="Riversoft STCP OFTP Rename Config" >}}
-      {{< filetree/file name="Riversoft STCP OFTP Server Manager" >}}
-      {{< filetree/file name="Riversoft STCP OFTP Updater" >}}
-      {{< filetree/file name="Riversoft STCP OFTP Server Config" >}}
-      {{< filetree/file name="apitcp.dll" >}}
-      {{< filetree/file name="apiossl.dll" >}}
-      {{< filetree/file name="netlink.dll" >}}
-      {{< filetree/file name="STCPUpdClt_x64.exe" >}}
-      {{< filetree/file name="STCPUpdClt_x86.exe" >}}
-      {{< filetree/file name="STCPUbbCad.exe" >}}
-      {{< filetree/file name="stcpsigner.exe" >}}
-      {{< filetree/file name="STCPRenCfg.exe" >}}
-      {{< filetree/file name="stcpren_3_2.exe" >}}
-      {{< filetree/file name="stcppswd.exe" >}}
-      {{< filetree/file name="stcpmon.exe" >}}
-      {{< filetree/file name="STCPConfigurationManager.exe" >}}
-      {{< filetree/file name="STCPLogViewer.exe" >}}
-      {{< filetree/file name="stcplogagent.exe" >}}
-      {{< filetree/file name="STCPFileConv.exe" >}}
-      {{< filetree/file name="STCPFileConcat.exe" >}}
-      {{< filetree/file name="ctcpsvc.exe" >}}
-      {{< filetree/file name="STCPConsole.exe" >}}
-      {{< filetree/file name="stcpchangeparam.exe" >}}
-      {{< filetree/file name="StcpCfg.exe" >}}
-      {{< filetree/file name="stcplogodbcv2.dll" >}}
-      {{< filetree/file name="stcplogtxt.dll" >}}
-      {{< filetree/file name="stcplogodbc.dll" >}}
-      {{< filetree/file name="stcpauthwin.dll" >}}
-      {{< filetree/file name="stcptokenhash.dll" >}}
-      {{< filetree/file name="openssl.cnf" >}}
-      {{< filetree/file name="openssl.exe" >}}
-      {{< filetree/file name="stcpemail.vbs" >}}
-      {{< filetree/file name="STCPEMAILEVT.VBS" >}}
-      {{< filetree/file name="STCPUpdClt_x64.lib" >}}
-      {{< filetree/file name="STCPUpdClt_x86.lib" >}}
-    {{< /filetree/folder >}}
-
-    {{< filetree/folder name="Log" state="closed" >}}
-    {{< /filetree/folder >}}
-
-    {{< filetree/folder name="Temp" state="closed" >}}
-    {{< /filetree/folder >}}
-
-    {{< filetree/file name="stcpconsole.ini" >}}
-    {{< filetree/file name="stcprenfiles.ini" >}}
-    {{< filetree/file name="`<USER>`.ini" >}}
-    {{< filetree/file name="CTCPSCHED.ini" >}}
-    {{< filetree/file name="CTCP.ini" >}}
-
-  {{< /filetree/folder >}}
-
-{{< /filetree/container >}}
 
 

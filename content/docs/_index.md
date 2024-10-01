@@ -38,9 +38,7 @@ Tudo o que você precisa saber para sua jornada nas soluções Riversoft.
 {{< cards >}}
   {{< card link="../utils/update/" title="Atualização" icon="arrow-up" >}}
   {{< card link="/404" title="Automação" icon="cube" >}}
-  {{< card link="../utils/cert/" title="Certificado Digital" icon="key" >}}
   {{< card link="../utils/conection/" title="Conectividade" icon="link" >}}
-  {{< card link="../utils/debug/" title="Debug" icon="eye" >}}
   {{< card link="../utils/schedule/" title="Execução automática" icon="arrow-path" >}}
   {{< card link="../utils/email/" title="Notificação por e-mail" icon="mail" >}}
   {{< card link="../utils/proxy/" title="Servidor proxy para conexão" icon="server" >}}
@@ -55,8 +53,6 @@ Tudo o que você precisa saber para sua jornada nas soluções Riversoft.
   {{< card link="../utils/protocols/" title="Protocolos de Rede" icon="wifi" >}}
   {{< card link="../utils/requirements/" title="Requisitos de Software e Hardware" icon="queue-list" >}}
   {{< card link="/security" title="Segurança" icon="shield-check" >}}
-  {{< card link="../utils/service/" title="Serviço do STCP" icon="cube-transparent" >}}
-  {{< card link="../utils/console/" title="STCP Console" icon="document-magnifying-glass" >}}
   {{< card link="../utils/advantages/" title="Uso e vantagens do STCP" icon="rocket-launch" >}}
   {{< card link="../utils/variables/" title="Variáveis internas" icon="variable" >}}
 {{< /cards >}}

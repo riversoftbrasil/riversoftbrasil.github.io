@@ -6,23 +6,21 @@ cascade:
   type: docs
 sidebar:
   exclude: false
-weight: 13
-prev: /service
-next: /conection
+weight: 6
+prev: 
+next: 
 draft: false
-lastmod: 2024-05-20
+lastmod: 2024-10-01
 ---
 ## O que é?
 
-O STCP Console é um sistema que tem como principal funcionalidade permitir que sejam realizadas
-atividades de monitoração de um determinado servidor. Estas atividades envolvem a [monitoração de
-usuários](#como-monitorar-usuários) (monitora todos os usuários ativos) e a [monitoração de eventos](#como-monitorar-eventos) (monitora todos os eventos do servidor).
+O STCP Console é um sistema que tem como principal funcionalidade permitir que sejam realizadas atividades de monitoração de um determinado servidor. Estas atividades envolvem a [monitoração de usuários](#como-monitorar-usuários) (monitora todos os usuários ativos) e a [monitoração de eventos](#como-monitorar-eventos) (monitora todos os eventos do servidor).
 
 Características Gerais:
 
-* Monitoração de usuários
-* Adição e remoção de servidores
-* Adição e remoção de visões
+* Monitoração de usuários;
+* Adição e remoção de servidores;
+* Adição e remoção de visões;
 * Conexão com usuários
 
 ## Funcionalidades

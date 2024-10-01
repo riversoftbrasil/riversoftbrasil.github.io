@@ -34,7 +34,6 @@ O STCP OFTP Server oferece as seguintes características:
 * Compressão padrão OFTP ou GZIP;
 * Número ilimitado de sessões de transferência (Versão Enterprise) ou até 10 (dez) sessões de transferência (Versão Lite);
 * Número ilimitado de usuários (Versão Enterprise) ou até 10 (dez) usuários (Versão Lite).
-<!-- * Versões Windows NT/2000/2003/XP -->
 
 ## Requisitos de software e hardware
 
