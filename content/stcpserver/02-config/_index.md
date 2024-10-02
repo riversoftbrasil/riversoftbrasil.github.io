@@ -245,6 +245,44 @@ Certificado| Preencha este campo com o nome do arquivo (caminho completo) onde s
 
 {{< icon "chevron-right" >}}Reinicie o serviço do Riversoft STCP OFTP Server para que as alterações sejam aplicadas.
 
+### Rede de Monitoração 
+
+Para utilização do STCP Console, uma rede (Ex. **TCPIP_MON_1**) utilizando o protocolo _Monitor – TCP/IP_ deverá estar previamente criada e configurada, na guia _Redes_, do STCP OFTP Server.
+
+Por padrão da aplicação, para este tipo de rede é utilizada a porta 33050, que poderá ser alterada conforme especificações e/ou características da infraestrutura utilizada.
+
+{{< icon "chevron-right" >}}Acesse o STCP OFTP Server Config (Iniciar - Todos os programas - Riversoft STCP OFTP Server) e na guia _Redes_ clique no botão _Adicionar_ e selecione o protocolo _Monitor – TCP/IP_. Clique no botão _OK_ para confirmar.
+
+![](img/mon-01.png)
+
+{{< icon "chevron-right" >}}Na janela _Propriedades da rede para Monitor_, preencha o campo descrição e selecione a guia _TCP/IP_.
+
+![](img/mon-02.png)
+
+{{< icon "chevron-right" >}}Realize as configurações conforme imagem abaixo.
+
+![](img/mon-03.png)
+
+{{< icon "chevron-right" >}}Selecione a guia _Monitor_ e preencha os campos abaixo:
+
+```{filename="Usuário de monitoração"}
+
+Usuário: stcpmon
+Senha: stcpmon
+Confirmar: stcpmon
+```
+![](img/mon-04.png)
+
+{{< icon "chevron-right" >}}Clique no botão _OK_ para salvar as alterações.
+
+{{< icon "chevron-right" >}}Clique no botão _OK_ novamente para finalizar o configurador.
+
+{{< icon "chevron-right" >}}Acesse o **STCP OFTP Server Manager** (_Iniciar - Todos os programas - Riversoft STCP OFTP Server_), selecione o serviço do _STCP OFTP Server_ e clique no botão _Reiniciar_.
+
+![](img/mon-05.png)
+
+{{< icon "chevron-right" >}}Após o reinício do serviço a rede de monitoração _TCPIP_MON_1_ já estará ativa.
+
 ### OFTP
 
 {{< icon "chevron-right" >}}Na guia **Geral**, preencha as seguintes opções de configuração:
