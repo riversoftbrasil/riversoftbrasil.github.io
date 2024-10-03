@@ -40,8 +40,6 @@ Tudo o que você precisa saber para sua jornada nas soluções Riversoft.
   {{< card link="/404" title="Automação" icon="cube" >}}
   {{< card link="../utils/conection/" title="Conectividade" icon="link" >}}
   {{< card link="../utils/schedule/" title="Execução automática" icon="arrow-path" >}}
-  {{< card link="../utils/email/" title="Notificação por e-mail" icon="mail" >}}
-  {{< card link="../utils/proxy/" title="Servidor proxy para conexão" icon="server" >}}
 {{< /cards >}}
 
 ### Referências e Informações
