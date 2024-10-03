@@ -46,3 +46,36 @@ Executar comando para:| Valor padrão do parâmetro.
 **Gravar o arquivo**  | Nome completo do arquivo.
 **Agenda**            | Nome da agenda.
 **Eventos (LOG)**     | Linha com detalhes do evento.
+
+## STCP Gemini Server
+
+| Variável       | Descrição                                    |
+|----------------|----------------------------------------------|
+| $DIRSYS      | Diretório do sistema                         |
+| $DIRDATA     | Diretório de dados                           |
+| $LUSERID     | Usuário local                                |
+| $LUSEREMAIL  | Email do usuário local                       |
+| $LUSERDESC   | Descrição do usuário local                   |
+| $LFNAME      | Nome do arquivo local com caminho            |
+| $LFBKPNAME   | Nome do arquivo de backup com caminho        |
+| $OMYID       | Identificação local                          |
+| $OMYUSERDATA | Dados do usuário                             |
+| $OFNAME      | Nome do arquivo Odette                       |
+| $OFTYPE      | Tipo do arquivo Odette                       |
+| $OFRECLEN    | Tamanho do registro                          |
+| $OFSIZE      | Tamanho estimado do arquivo                  |
+| $OFDATE      | Data do arquivo Odette                       |
+| $OFTIME      | Hora do arquivo Odette                       |
+| $OFUSERDATA  | Userdata do arquivo Odette                   |
+| $OFORIGINATOR | Origem do arquivo Odette                     |
+| $OFDESTINATION | Destino do arquivo Odette                   |
+| $OFUNITCOUNT | Tamanho real do arquivo                      |
+| $OFRECCOUNT  | Quantidade de registros do arquivo           |
+| $OFID        | Id do arquivo                                |
+| $OFSTARTTIME | Início da transferência                      |
+| $OFFINISHTIME | Final da transferência                       |
+| $OFEXTRAINFO | Informações extras                           |
+| $SCHEDNAME   | Nome do scheduler                            |
+| $SCHEDUSER   | Usuário associado ao scheduler               |
+| $INSTNAME    | Nome da instância                            |
+
