@@ -8,7 +8,7 @@ sidebar:
   exclude: false
 weight: 11
 prev: /protocols
-next: /service
+next: /conection
 draft: false
 lastmod: 2024-08-02
 ---

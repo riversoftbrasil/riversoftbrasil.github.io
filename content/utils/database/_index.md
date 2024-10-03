@@ -6,8 +6,8 @@ cascade:
 sidebar:
   exclude: false
 weight: 3
-prev: /update
-next: /cert
+prev: /logs
+next: /events
 draft: false
 lastmod: 2024-05-07
 ---

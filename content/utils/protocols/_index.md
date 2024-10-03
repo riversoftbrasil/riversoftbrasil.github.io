@@ -7,7 +7,7 @@ cascade:
 sidebar:
   exclude: false
 weight: 10
-prev: /email
+prev: /events
 next: utils/requirements
 draft: false
 lastmod: 2024-05-20
