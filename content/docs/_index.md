@@ -36,10 +36,8 @@ Tudo o que você precisa saber para sua jornada nas soluções Riversoft.
 
 ### Guias passo a passo
 {{< cards >}}
-  {{< card link="../utils/update/" title="Atualização" icon="arrow-up" >}}
   {{< card link="/404" title="Automação" icon="cube" >}}
   {{< card link="../utils/conection/" title="Conectividade" icon="link" >}}
-  {{< card link="../utils/schedule/" title="Execução automática" icon="arrow-path" >}}
 {{< /cards >}}
 
 ### Referências e Informações
