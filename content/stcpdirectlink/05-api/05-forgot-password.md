@@ -37,7 +37,7 @@ Esta requisição deve ser utilizada para obtenção do link para alteração de
 
 
 ```
-https://<domain>/directlink/v1/auth/forget
+https://your-domain/directlink/v1/auth/forget
 ```
 
 ### Parameters
@@ -132,7 +132,7 @@ color: #6a737d;  /* cor do texto cinza */
     "description": "handlerAuthForget:succsessfully",
     "apiver": "v1 (3.6.0)",
     "user": "USER1",
-    "linkURL": "https://<domain>/directlink/v1/auth/change?lang=pt&k=B6PhQo1gVaksHm-E4JGwuqWkZj6MT6srC74-wZ2Fsw9MXDduhfs-Nw3utpRFV4l6eTY4Tr-lOCDR0eoKG7Y2u3FRQiSm1TO_F_KD0cfWX2_QWASF1rvrx4KRiw0t_PKum5qMNqEWEBqB9d9RJd8Opz4SPfILjaoRBtPuMQOsxkIbO2pn6-tuC5I_AyisBOaGMR3MOnYXVWwr6e3bKvFIqCY6",
+    "linkURL": "https://your-domain/directlink/v1/auth/change?lang=pt&k=B6PhQo1gVaksHm-E4JGwuqWkZj6MT6srC74-wZ2Fsw9MXDduhfs-Nw3utpRFV4l6eTY4Tr-lOCDR0eoKG7Y2u3FRQiSm1TO_F_KD0cfWX2_QWASF1rvrx4KRiw0t_PKum5qMNqEWEBqB9d9RJd8Opz4SPfILjaoRBtPuMQOsxkIbO2pn6-tuC5I_AyisBOaGMR3MOnYXVWwr6e3bKvFIqCY6",
     "time": "2022-06-13 19:23:45.771553 -0300 -03 m=+25121.666310551"
 }
 ```

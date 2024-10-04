@@ -36,7 +36,7 @@ Esta requisição deve ser utilizada para o registro de logout do usuário da pl
 <!-- ## Logout utilizando a autenticação no modo Basic -->
 
 ```
-https://<domain>/directlink/v1/auth/login
+https://your-domain/directlink/v1/auth/login
 ```
 
 Esta requisição deve ser utilizada para obter o token de autorização
@@ -205,7 +205,7 @@ Esta requisição deve ser utilizada para o registro de logout do usuário da pl
 <!-- **Logout utilizando a autenticação no modo Bearer** -->
 
 ```
-https://<domain>/directlink/v1/auth/logout
+https://your-domain/directlink/v1/auth/logout
 ```
 
 

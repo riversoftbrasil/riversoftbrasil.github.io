@@ -39,7 +39,7 @@ Esta requisição deve ser utilizada para obtenção do link para alteração de
 <!-- **Obter o link de alteração de senha do primeiro acesso** -->
 
 ```
-https://<domain>/directlink/v1/auth/firstaccess
+https://your-domain/directlink/v1/auth/firstaccess
 ```
 
 

@@ -34,7 +34,7 @@ Esta requisição deve ser utilizada para obter o token(bearer) de autorização
 
 
 ```url
-https://<domain>/directlink/v1/oauth2/token
+https://your-domain/directlink/v1/oauth2/token
 ```
 
 ## OAuth2 token
@@ -135,7 +135,7 @@ color: #6a737d;  /* cor do texto cinza */
 "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vMTkyLjE2OC41LjM4OjgwODAvZGlyZWN0bGluay92MSIsInN1YiI6IlVTRVIxIiwiYXVkIjpbImh0dHA6Ly8xOTIuMTY4LjUuMzg6ODA4MC9kaXJlY3RsaW5rL3YxIl0sImV4cCI6MTY1NTE1OTk3NiwibmJmIjoxNjU1MTU2Mzc2LCJpYXQiOjE2NTUxNTYzNzYsImp0aSI6IjE2NTUxNTYzNzY0Mjg2OTcwMDAifQ.GeMf9voddvEdgStH2GJqHIKIWXXYYbhLEKVz-kq_Cp8",
 "token_type": "Bearer",
 "expires_in": 3600,
-"scope": "https://<domain>/directlink/v1"
+"scope": "https://your-domain/directlink/v1"
 }
 ```
 <br>
@@ -151,7 +151,7 @@ color: #6a737d;  /* cor do texto cinza */
 {
     "error": 400,
     "error_description": "Bad Request",
-    "error_uri": "https://<domain>/directlink/v1"
+    "error_uri": "https://your-domain/directlink/v1"
 }
 ```
 <br>
@@ -169,7 +169,7 @@ color: #6a737d;  /* cor do texto cinza */
 {
     "error": 401,
     "error_description": "Unauthorized",
-    "error_uri": "https://<domain>/directlink/v1"
+    "error_uri": "https://your-domain/directlink/v1"
 }
 ```
 <br>
@@ -186,7 +186,7 @@ color: #6a737d;  /* cor do texto cinza */
 {
     "error": 500,
     "error_description": "Internal server error",
-    "error_uri": "https://<domain>/directlink/v1"
+    "error_uri": "https://your-domain/directlink/v1"
 }
 ```
 </div>

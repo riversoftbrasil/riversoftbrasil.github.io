@@ -37,7 +37,7 @@ Esta requisição deve ser utilizada para o registro de login do usuário e obte
 <!-- **Login** -->
 
 ```
-https://<domain>/directlink/v1/auth/login
+https://your-domain/directlink/v1/auth/login
 ```
 
 
