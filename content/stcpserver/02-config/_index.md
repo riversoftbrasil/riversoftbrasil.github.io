@@ -171,11 +171,11 @@ openssl pkcs12 -in C:\TEMP\empresateste.com.br.pfx -out C:\TEMP\private-key.pem 
 
 #### Geração do hash do certificado para uso no STCP OFTP Client
 
-Anterior ao processo de configuração do certificado no STCP OFTP Client, será necessária obter uma cópia da cadeia de certificados, a partir do certificado assinado e enviado pela entidade certificadora e o realizar o renomeio de cada certificado dessa hierarquia para o seu hash correspondente.
+Anterior ao processo de configuração do certificado no STCP OFTP Client, será necessária obter uma cópia da cadeia de certificados, a partir do certificado assinado e enviado pela entidade certificadora e realizar o renomeio de cada certificado dessa hierarquia para o seu hash correspondente.
 
-{{< icon "chevron-right" >}}Faça uma cópia do certificado, encaminhado pela certificadora, para um diretório temporário do servidor onde o STCP OFTP Server está instalado (Ex. C:\TEMP)
+{{< icon "chevron-right" >}}Faça uma cópia do certificado, encaminhado pela certificadora, para um diretório temporário do servidor onde o STCP OFTP Server está instalado (Ex. C:\TEMP).
 
-{{< icon "chevron-right" >}}Acesso o diretório temporário e clique com o botão direito do mouse no certificado (Ex. empresateste_certificate.cer) e selecione **Abrir**
+{{< icon "chevron-right" >}}Acesse o diretório temporário e clique com o botão direito do mouse no certificado (Ex. empresateste_certificate.cer) e selecione **Abrir**.
 
 {{< icon "chevron-right" >}}Na guia Caminho de Certificação selecione o certificado raíz (Ex. VeriSign Trial Secure Server Root CA – G2) e clique no botão Exibir Certificado.
 
@@ -199,7 +199,7 @@ Anterior ao processo de configuração do certificado no STCP OFTP Client, será
 
 ![](img/cert-07.png)
 
-{{< icon "chevron-right" >}}Repita os passos de 3 a 9 para os exportar os demais certificados existentes na hierarquia de certificados, o certificado raiz (G2) e o intermediário (G3).
+{{< icon "chevron-right" >}}Repita os passos para exportar os demais certificados existentes na hierarquia de certificados, o certificado raiz (G2) e o intermediário (G3).
 
 ![](img/cert-08.png)
 
@@ -216,7 +216,7 @@ openssl x509 –noout –hash -in C:\TEMP\root_certificate.cer
 
 ![](img/cert-09.png)
 
-{{< icon "chevron-right" >}}Repita os passos 11 e 12 para realizar o renomeio dos demais arquivos exportados *(Ex. _root_certificate.cer e intermediate_certificate.cer_)*
+{{< icon "chevron-right" >}}Repita os passos descritos acima, para renomeio dos demais arquivos exportados *(Ex. _root_certificate.cer e intermediate_certificate.cer_)*
 
 <!-- ![](./imagem/img15.png) -->
 
@@ -244,44 +244,6 @@ Certificado| Preencha este campo com o nome do arquivo (caminho completo) onde s
 {{< icon "chevron-right" >}}Pressione o botão OK para salvar e sair do STCP OFTP Server Config.
 
 {{< icon "chevron-right" >}}Reinicie o serviço do Riversoft STCP OFTP Server para que as alterações sejam aplicadas.
-
-### Rede de Monitoração 
-
-Para utilização do STCP Console, uma rede (Ex. **TCPIP_MON_1**) utilizando o protocolo _Monitor – TCP/IP_ deverá estar previamente criada e configurada, na guia _Redes_, do STCP OFTP Server.
-
-Por padrão da aplicação, para este tipo de rede é utilizada a porta 33050, que poderá ser alterada conforme especificações e/ou características da infraestrutura utilizada.
-
-{{< icon "chevron-right" >}}Acesse o STCP OFTP Server Config (Iniciar - Todos os programas - Riversoft STCP OFTP Server) e na guia _Redes_ clique no botão _Adicionar_ e selecione o protocolo _Monitor – TCP/IP_. Clique no botão _OK_ para confirmar.
-
-![](img/mon-01.png)
-
-{{< icon "chevron-right" >}}Na janela _Propriedades da rede para Monitor_, preencha o campo descrição e selecione a guia _TCP/IP_.
-
-![](img/mon-02.png)
-
-{{< icon "chevron-right" >}}Realize as configurações conforme imagem abaixo.
-
-![](img/mon-03.png)
-
-{{< icon "chevron-right" >}}Selecione a guia _Monitor_ e preencha os campos abaixo:
-
-```{filename="Usuário de monitoração"}
-
-Usuário: stcpmon
-Senha: stcpmon
-Confirmar: stcpmon
-```
-![](img/mon-04.png)
-
-{{< icon "chevron-right" >}}Clique no botão _OK_ para salvar as alterações.
-
-{{< icon "chevron-right" >}}Clique no botão _OK_ novamente para finalizar o configurador.
-
-{{< icon "chevron-right" >}}Acesse o **STCP OFTP Server Manager** (_Iniciar - Todos os programas - Riversoft STCP OFTP Server_), selecione o serviço do _STCP OFTP Server_ e clique no botão _Reiniciar_.
-
-![](img/mon-05.png)
-
-{{< icon "chevron-right" >}}Após o reinício do serviço a rede de monitoração _TCPIP_MON_1_ já estará ativa.
 
 ### OFTP
 
@@ -477,7 +439,45 @@ Nível de debug   | Preencha este campo com o nível de detalhamento das informa
 
 Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alterar as configurações.
 
-### Monitor - TCP/IP
+### Rede de Monitoração - TCP/IP
+
+Na rede de monitoração, temos o [STCP Console](/stcpserver/04-console/), uma rede (Ex. **TCPIP_MON_1**) utilizando o protocolo _Monitor – TCP/IP_ deverá estar previamente criada e configurada, na guia _Redes_, do STCP OFTP Server.
+
+Por padrão da aplicação, para este tipo de rede é utilizada a porta 33050, que poderá ser alterada conforme especificações e/ou características da infraestrutura utilizada.
+
+{{< icon "chevron-right" >}}Acesse o STCP OFTP Server Config (Iniciar - Todos os programas - Riversoft STCP OFTP Server) e na guia _Redes_ clique no botão _Adicionar_ e selecione o protocolo _Monitor – TCP/IP_. Clique no botão _OK_ para confirmar.
+
+![](img/mon-01.png)
+
+{{< icon "chevron-right" >}}Na janela _Propriedades da rede para Monitor_, preencha o campo descrição e selecione a guia _TCP/IP_.
+
+![](img/mon-02.png)
+
+{{< icon "chevron-right" >}}Realize as configurações conforme imagem abaixo.
+
+![](img/mon-03.png)
+
+{{< icon "chevron-right" >}}Selecione a guia _Monitor_ e preencha os campos abaixo:
+
+```{filename="Usuário de monitoração"}
+
+Usuário: stcpmon
+Senha: stcpmon
+Confirmar: stcpmon
+```
+![](img/mon-04.png)
+
+{{< icon "chevron-right" >}}Clique no botão _OK_ para salvar as alterações.
+
+{{< icon "chevron-right" >}}Clique no botão _OK_ novamente para finalizar o configurador.
+
+{{< icon "chevron-right" >}}Acesse o **STCP OFTP Server Manager** (_Iniciar - Todos os programas - Riversoft STCP OFTP Server_), selecione o serviço do _STCP OFTP Server_ e clique no botão _Reiniciar_.
+
+![](img/mon-05.png)
+
+{{< icon "chevron-right" >}}Após o reinício do serviço a rede de monitoração _TCPIP_MON_1_ já estará ativa.
+
+<!-- ### Monitor - TCP/IP
 
 {{< icon "chevron-right" >}}Na guia **Geral**, configure as seguintes opções:
 
@@ -544,9 +544,9 @@ Intervalo de requisições | Esta opção assinalada o tempo (em segundos) de in
 Executar comando externo | Esta opção habilita a execução de um comando externo dentro do STCP <br> Exemplo: ````notepad````Abrir bloco de notas no Windows.
 ----
 
-Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alterar as configurações.
+Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alterar as configurações. -->
 
-### Monitor - DirectLink
+### Rede de Monitoração - DirectLink
 
 {{< icon "chevron-right" >}}Na guia **Geral**, configure as seguintes opções:
 

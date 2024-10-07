@@ -26,7 +26,7 @@ Características Gerais:
 > NOTA: É importante lembrar que as atividades de supervisão e gerência, dos servidores STCP OFTP, podem ser realizadas, também, pela ferramenta **STCP OFTP Web Admin**.
 
 ## Funcionalidades
-Dentre as principais funcionalidades deste módulo, podemos citar: [adição](#adicionar-um-servidor) e [remoção de servidores](#como-remover-um-servidor) e [visões](#como-adicionar-uma-visão), [monitoração de usuários](#como-monitorar-usuários) e/ou [eventos](#como-monitorar-eventos), e [conexão com usuários](#como-iniciar-conexão-com-um-usuário).
+Dentre as principais funcionalidades deste módulo, podemos citar: [adição](#adicionar-um-servidor) e [remoção de servidores](#como-remover-um-servidor) e [visões](#como-adicionar-uma-visão), [monitoração de usuários](#como-monitorar-usuários), [eventos](#como-monitorar-eventos), e [conexão com usuários](#como-iniciar-conexão-com-um-usuário).
 
 ## Configuração
 
