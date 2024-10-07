@@ -7,8 +7,8 @@ cascade:
 sidebar:
   exclude: false
 weight: 4
-prev: 
-next: 
+prev: /stcpclient/03-util/
+next: /stcpclient/05-update/
 draft: false
 lastmod: 2024-10-02
 ---

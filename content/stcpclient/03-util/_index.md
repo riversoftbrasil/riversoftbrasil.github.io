@@ -8,7 +8,7 @@ sidebar:
   exclude: false
 weight: 3
 prev: /stcpclient/02-config/
-next: /stcpclient/04-audit/
+next: /stcpclient/04-debug/
 # slug:
 draft: false
 lastmod: 2024-04-15

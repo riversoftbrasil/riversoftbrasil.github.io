@@ -7,8 +7,8 @@ cascade:
 sidebar:
   exclude: false
 weight: 6
-prev: 
-next: 
+prev: /stcpserver/06-update
+next: /stcpserver/07-email
 draft: false
 lastmod: 2024-10-01
 ---

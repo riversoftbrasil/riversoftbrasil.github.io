@@ -7,7 +7,7 @@ cascade:
 sidebar:
   exclude: false
 weight: 7
-prev: 
+prev: /stcpserver/04-console
 next: 
 draft: false
 lastmod: 2024-10-01

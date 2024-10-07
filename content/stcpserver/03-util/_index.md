@@ -7,7 +7,7 @@ sidebar:
   exclude: false
 weight: 3
 prev: /stcpserver/02-config
-next: /stcpdirectlink
+next: /stcpserver/05-debug
 draft: false
 lastmod: 2024-05-10
 ---

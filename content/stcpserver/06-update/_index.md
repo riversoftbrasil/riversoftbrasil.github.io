@@ -8,8 +8,8 @@ cascade:
 sidebar:
   exclude: false
 weight: 6
-prev: 
-next: 
+prev: /stcpserver/05-debug
+next: /stcpserver/04-console
 draft: false
 lastmod: 2024-10-02
 ---
