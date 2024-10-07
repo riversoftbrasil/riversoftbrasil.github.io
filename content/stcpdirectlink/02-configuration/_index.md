@@ -8,9 +8,9 @@ sidebar:
   exclude: false
 weight: 2
 prev: /stcpdirectlink/01-install/
-next: /stcpdirectlink/02-configuration/requirements
+next: /stcpdirectlink/03-run
 draft: false
-lastmod: 2024-07-12
+lastmod: 2024-10-01
 ---
 # Configuração
 
@@ -536,5 +536,3 @@ Confira abaixo uma tabela com a explicação dos parâmetros:
 | TrustAnchorArnStr       | ARN que identifica a entidade de confiança (Trust Anchor), que é usada pela AWS para validar o certificado do cliente.                              |
 | RoleArn                | ARN da função IAM que será assumida após a autenticação. Define as permissões que serão concedidas temporariamente à identidade autenticada.          |
 | SessionDuration         | Duração da sessão em segundos. Define por quanto tempo as credenciais temporárias obtidas serão válidas (neste caso, 3600 segundos ou 1 hora).      |
-
-Tabelas explicativa

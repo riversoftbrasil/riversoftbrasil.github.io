@@ -8,9 +8,9 @@ sidebar:
   exclude: false
 weight: 4
 prev: /03-run
-next: /authentication
+next: stcpdirectlink/04-portal/fileconfig/
 draft: false
-lastmod: 2024-09-09
+lastmod: 2024-10-07
 ---
 
 ## Portal Web
