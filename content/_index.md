@@ -15,6 +15,15 @@ layout: default
 <div class="mt-6"></div>
 
 {{< feature-card
+    title="STCP Gemini Client e STCP Gemini Server"
+    icon="terminal"
+    subtitle="Confira as informações sobre os novos recursos, correções e atualizações mais recentes lançadas para os produtos."
+    link="changelog/stg"
+>}}
+
+<div class="mt-6"></div>
+
+{{< feature-card
     title="STCP OFTP Web Admin"
     icon="cloud"
     subtitle="Confira as informações sobre os novos recursos, correções e atualizações mais recentes lançadas para os produtos."
