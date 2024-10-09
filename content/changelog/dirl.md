@@ -6,6 +6,15 @@ sidebar:
 ---
 ## STCP Directlink
 
+### {{< icon "clock" >}} &nbsp;  Versão 6.9.9 (lançada em outubro de 2024)
+
+- Correção do nome incorreto do controle OTP no banco de dados de configuração do STCP Gemini, anteriormente `LOGIN_TOTP_SECRET`, agora corrigido para `LOGIN_OTP_SECRET`.
+- Correção do problema ao negociar conexão com servidor, quando utilizava SFTP.
+- Correção de falha na recepção de arquivos via SFTP Client utilizando o DirectLink em Linux, onde a conexão era encerrada quando um arquivo era bloqueado pelo filtro de arquivos.
+- Melhorias no tratamento de espaços em branco nas chaves autorizadas.
+- Correção do problema de autenticação com senha na API HTTP.
+- Correção do problema na exibição de certificado e handshake ao testar a conectividade da rede de supervisão, utilizando TLS.
+
 ### {{< icon "clock" >}} &nbsp;  Versão 6.5.16 (lançada em abril de 2024)
 
 - Correção do problema que gerava erro de validação no upload de arquivo (API) quando era utilizado mais de um e-mail e com espaços em branco.
