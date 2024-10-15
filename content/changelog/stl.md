@@ -5,7 +5,7 @@ sidebar:
   exclude: true
 ---
 
-## STCP Gemini Client e STCP Gemini Server
+## STCP Gemini Server e STCP Gemini Client
 
 #### {{< icon "clock" >}} &nbsp;  Versão 6.6.13 (lançada em outubro de 2024)
 

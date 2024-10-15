@@ -15,7 +15,7 @@ layout: default
 <div class="mt-6"></div>
 
 {{< feature-card
-    title="STCP Gemini Client e STCP Gemini Server"
+    title="STCP Gemini Server e STCP Gemini Client"
     icon="terminal"
     subtitle="Confira as informações sobre os novos recursos, correções e atualizações mais recentes lançadas para os produtos."
     link="stl"
