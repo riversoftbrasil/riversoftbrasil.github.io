@@ -13,7 +13,8 @@ prev: 01-install-sgc-bradesco/
 next: 03-exec-sgc-bradesco/
 slug: 
 draft: false 
-lastmod: 2024-07-26
+lastmod: 2024-10-16
+cliente: Bradesco
 ---
 
 Toda a configuração da aplicação será realizada através do STCP Gemini Client Config. Não é necessária a utilização do super-usuário (root) para a configuração. 
@@ -24,6 +25,9 @@ Siga os passos abaixo para criar o arquivo de configuração da aplicação:
 
 ```bash
 $ cd /usr/local/stcpclient/configs/
+```
+
+```bash
 $ cp example-stcpclient.config.json stcpclient.config.json
 ```
 
@@ -37,11 +41,11 @@ $ stcpclient-config init
 
 | Parâmetros       |  Descrição      | 
 | -------------    | :-------------: | 
-| Número de série  |  **Fornecido pelo Bradesco**  | 
+| Número de série  |  **Fornecido pelo {{< param cliente >}}**  | 
 | Sistema operacional   | 0-Linux                  |    
 | Nome do Perfil        | O0055BRADESCO            |   
-| OID (Odette ID)       | **Fornecido pelo Bradesco**  |   
-| Senha OID (Odette ID) | **Fornecido pelo Bradesco**  |   
+| OID (Odette ID)       | **Fornecido pelo {{< param cliente >}}**  |   
+| Senha OID (Odette ID) | **Fornecido pelo {{< param cliente >}}**  |   
 | Endereço IP           | rvsweb.bradesco.com.br       |   
 | Porta                 |         443                  |   
 | Comunicação segura (TLS) |         Não               |   

@@ -14,6 +14,7 @@ next: 04-log-sgc-bradesco/
 slug: 
 draft: false 
 lastmod: 2024-07-26
+cliente: Bradesco
 ---
 
 Para executar a aplicação, através do terminal, utilize a linha de comando abaixo:
@@ -28,7 +29,7 @@ Após a execução do STCP Gemini Client, assim que a conexão com servidor do B
 
 ## Como enviar e receber arquivos
 
-Os arquivos que serão enviados para o Bradesco deverão ser disponibilizados na pasta SAIDA da aplicação.
+Os arquivos que serão enviados para o {{< param cliente >}} deverão ser disponibilizados na pasta SAIDA da aplicação.
 
 ```
 /usr/local/stcpclient/data/STCPClt/O0055BRADESCO/SAIDA
@@ -41,7 +42,7 @@ Em seguida, execute o STCP Gemini Client conforme descrito acima.
 Os arquivos enviados com sucesso serão removidos automaticamente da pasta de SAIDA.
 {{< /callout >}}
 
-Ao executar o STCP Gemini Client, os arquivos que forem recebidos do Bradesco ficarão disponíveis na pasta ENTRADA da aplicação.
+Ao executar o STCP Gemini Client, os arquivos que forem recebidos do {{< param cliente >}} ficarão disponíveis na pasta ENTRADA da aplicação.
 
 ```
 /usr/local/stcpclient/data/STCPClt/O0055BRADESCO/ENTRADA
