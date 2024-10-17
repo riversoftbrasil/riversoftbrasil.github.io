@@ -7,6 +7,11 @@ sidebar:
 
 ## STCP Gemini Server e STCP Gemini Client
 
+#### {{< icon "clock" >}} &nbsp;  Versão 6.6.16 (lançada em outubro de 2024)
+
+- Correção no tratamento de controle da referência do arquivo na recepção.
+- Melhorias no tratamento do filtro de tamanho do arquivo na transmissão.
+
 #### {{< icon "clock" >}} &nbsp;  Versão 6.6.13 (lançada em outubro de 2024)
 
 - Melhorias no tratamento de cálculo do hash em conexões OpenSSL 3.
