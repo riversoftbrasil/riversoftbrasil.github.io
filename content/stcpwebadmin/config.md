@@ -10,7 +10,7 @@ weight: 2
 prev:
 next:
 draft: false
-lastmod: 2024-05-27
+lastmod: 2024-10-10
 ---
 # Configuração inicial
 
