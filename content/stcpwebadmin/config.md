@@ -123,17 +123,15 @@ Obs.: o administrador do sistema deverá ser obrigatoriamente o **stcpadmin**. E
 
 ![](./imagem2/img70.png)
 
-{{< icon "chevron-right" >}}Preencha os campos: nome, descrição e servidor/usuário.
-
 {{< callout type="info" >}}
 Obs.: para associar todos os servidores a todos os usuários, utilize \ . Para especificar os usuários relacionados ao servidor, basta separar com uma barra invertida \ . Exemplo: **SERV001\USER001**.
 {{< /callout >}}
 
 {{< icon "chevron-right" >}}Selecione os operadores e as permissões que farão parte do grupo.
 
-![](./imagem2/img71.png)
+![](./imagem2/img71.png "Preencha os campos: nome, descrição e servidor/usuário")
 
-{{< icon "chevron-right" >}}Clique no botão para salvar as informações do grupo.
+![](./imagem2/btn.png "Clique no botão para salvar as informações do grupo")
 
 ## Cadastro de Operadores
 
@@ -149,7 +147,7 @@ Obs.: para associar todos os servidores a todos os usuários, utilize \ . Para e
 
 ![](./imagem2/img73.png)
 
-{{< icon "chevron-right" >}}Clique no botão para salvar as informações do operador.
+![](./imagem2/btn.png "Clique no botão para salvar as informações do operador")
 
 ## Cadastro dos Servidores
 
@@ -167,7 +165,7 @@ Obs.: este servidor refere-se ao servidor de monitoração definido no STCP OFTP
 
 ![](./imagem2/img75.png)
 
-{{< icon "chevron-right" >}}Clique no botão para salvar as informações do servidor.
+![](./imagem2/btn.png "Clique no botão para salvar as informações do servidor")
 
 ## Funcionalidades
 
@@ -192,9 +190,9 @@ Esta funcionalidade permite ao usuário consultar os **Códigos de erros**.
 {{< icon "chevron-right" >}}Informe o **Código de erro**. Para filtrar os dados da pesquisa, informe também
 a descrição do erro.
 
-{{< icon "chevron-right" >}}Ou clique no botão para visualizar todos os códigos de erros.
+![](./imagem2/img77.png "Ou clique na lupa para visualizar todos os códigos de erros conforme imagem abaixo")
 
-![](./imagem2/img77.png)
+![](./imagem2/all-errors.png)
 
 ### Consulta aos Códigos de eventos
 
@@ -204,7 +202,7 @@ Esta funcionalidade permite ao usuário consultar os **Códigos de eventos**.
 
 {{< icon "chevron-right" >}}Informe o “Código do evento”. Para filtrar os dados da pesquisa, informe também a descrição do evento.
 
-{{< icon "chevron-right" >}}Ou clique no botão para visualizar todos os códigos de eventos.
+{{< icon "chevron-right" >}}Ou clique na lupa para visualizar todos os códigos de eventos.
 
 ![](./imagem2/img78.png)
 
@@ -216,7 +214,7 @@ Esta funcionalidade permite ao usuário **Consultar os Grupos**.
 
 {{< icon "chevron-right" >}}Informe o **Grupo**. Para filtrar os dados da pesquisa, informe também a descrição do grupo.
 
-{{< icon "chevron-right" >}}Ou clique no botão para visualizar todos os grupos cadastrados.
+{{< icon "chevron-right" >}}Ou clique na lupa para visualizar todos os grupos cadastrados.
 
 ![](./imagem2/img79.png)
 
@@ -229,7 +227,7 @@ Esta funcionalidade permite ao usuário consultar os **Operadores**.
 {{< icon "chevron-right" >}}Informe o **Operador**. Para filtrar os dados da pesquisa, informe também a
 descrição do operador.
 
-{{< icon "chevron-right" >}}Ou clique no botão para visualizar todos os operadores cadastrados.
+{{< icon "chevron-right" >}}Ou clique na lupa para visualizar todos os operadores cadastrados.
 
 ![](./imagem2/img80.png)
 
@@ -241,7 +239,7 @@ Esta funcionalidade permite ao usuário consultar os **Usuários cadastrados**.
 
 {{< icon "chevron-right" >}}Informe a **Identificação do usuário**. Para filtrar os dados da pesquisa, informe também a **descrição do usuário**.
 
-{{< icon "chevron-right" >}}Ou clique no botão para visualizar todos os usuários cadastrados.
+{{< icon "chevron-right" >}}Ou clique na lupa para visualizar todos os usuários cadastrados.
 
 ![](./imagem2/img81.png)
 
@@ -255,7 +253,7 @@ Esta funcionalidade permite ao usuário consultar o **Histórico das Transferên
 
 {{< icon "chevron-right" >}}Selecione o **Período considerado** e a **Situação** (Todas, Recebidas/OK, Enviadas/OK, Falha Rx ou Falha Tx).
 
-{{< icon "chevron-right" >}}Ou clique no botão para visualizar todo o histórico das transferências.
+{{< icon "chevron-right" >}}Ou clique na lupa para visualizar todo o histórico das transferências.
 
 ![](./imagem2/img82.png)
 
@@ -285,7 +283,7 @@ Esta funcionalidade permite ao usuário consultar o relatório de eventos de ope
 
 ![](./imagem2/img84.png)
 
-{{< icon "chevron-right" >}}Ou clique no botão para visualizar todos os eventos.
+{{< icon "chevron-right" >}}Ou clique na lupa para visualizar todos os eventos.
 
 ![](./imagem2/img85.png)
 
