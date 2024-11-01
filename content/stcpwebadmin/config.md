@@ -299,7 +299,7 @@ Esta funcionalidade permite ao usuário consultar o relatório de eventos do Sis
 
 ![](./imagem2/img86.png)
 
-{{< icon "chevron-right" >}}Ou clique no botão para visualizar todos os eventos.
+{{< icon "chevron-right" >}}Ou clique na lupa para visualizar todos os eventos conforme a imagem de exemplo abaixo: 
 
 ![](./imagem2/img87.png)
 
@@ -315,7 +315,7 @@ Esta funcionalidade permite ao usuário consultar o relatório de eventos dos us
 
 ![](./imagem2/img88.png)
 
-{{< icon "chevron-right" >}}Ou clique no botão para visualizar todos os eventos.
+{{< icon "chevron-right" >}}Ou clique na lupa para visualizar todos os eventos conforme a imagem de exemplo abaixo: 
 
 ![](./imagem2/img89.png)
 
@@ -331,7 +331,7 @@ Esta funcionalidade permite ao usuário consultar o relatório das transferênci
 
 ![](./imagem2/img90.png)
 
-{{< icon "chevron-right" >}}Ou clique no botão para visualizar a auditoria de todas as transferências.
+{{< icon "chevron-right" >}}Ou clique na lupa para visualizar a auditoria de todas as transferências.
 
 ![](./imagem2/img91.png)
 
@@ -347,7 +347,7 @@ Esta funcionalidade permite ao usuário consultar o relatório de estatística d
 
 ![](./imagem2/img92.png)
 
-{{< icon "chevron-right" >}}Ou clique no botão para visualizar a estatística de todas as transferências.
+{{< icon "chevron-right" >}}Ou clique na lupa para visualizar a estatística de todas as transferências.
 
 ![](./imagem2/img93.png)
 
@@ -386,7 +386,7 @@ Exemplo: SRSVM-T02.
 
 ![](./imagem2/img96.png)
 
-{{< icon "chevron-right" >}}Para visualizar todos os relatórios, clique no botão.
+{{< icon "chevron-right" >}}Para visualizar todos os relatórios, clique na lupa.
 
 ![](./imagem2/img97.png)
 
@@ -404,15 +404,15 @@ Exemplo: SRSVM-T02.
 
 ![](./imagem2/img100.png)
 
-{{< icon "chevron-right" >}}Quando o processo de importação for concluído, será mostrada a confirmação.
+<!-- {{< icon "chevron-right" >}}Quando o processo de importação for concluído, será mostrada a confirmação.
 
-![](./imagem2/img101.png)
+![](./imagem2/img101.png) -->
 
 ### Importação de códigos de eventos
 
 {{< icon "chevron-right" >}}Para importar os códigos de eventos de um arquivo xml para o banco de dados da STCP OFTP Web Admin, acesse **Manutenção → Banco de Dados → Importar Dados**.
 
-![](./imagem2/img102.png)
+![](./imagem2/img98.png)
 
 {{< icon "chevron-right" >}}Em Tipo de Dados, escolha a opção Códigos de Eventos e clique no botão.
 
