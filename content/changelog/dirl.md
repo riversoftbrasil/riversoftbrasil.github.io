@@ -6,6 +6,11 @@ sidebar:
 ---
 ## STCP Directlink
 
+### {{< icon "clock" >}} &nbsp;  Versão 6.9.10 (lançada em outubro de 2024)
+
+- Correção do problema ao processar parâmetros com aspas duplas e simples, garantindo o parsing correto na linha de comando.
+- Melhoria na expressão regular do parsing da linha de comando.
+
 ### {{< icon "clock" >}} &nbsp;  Versão 6.9.9 (lançada em outubro de 2024)
 
 - Correção do nome do campo controle LOGIN_TOTP_SECRET para LOGIN_OTP_SECRET na tabela AUTHENTICATIONS do banco de dados de configuração do STCP Gemini.

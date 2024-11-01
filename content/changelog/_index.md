@@ -1,5 +1,5 @@
 ---
-title: Changelog
+title: 
 toc: false
 layout: default
 ---
@@ -18,7 +18,16 @@ layout: default
     title="STCP Gemini Server e STCP Gemini Client"
     icon="terminal"
     subtitle="Confira as informações sobre os novos recursos, correções e atualizações mais recentes lançadas para os produtos."
-    link="stl"
+    link="sgs-sgc"
+>}}
+
+<div class="mt-6"></div>
+
+{{< feature-card
+    title="STCP Gemini Rename"
+    icon="terminal"
+    subtitle="Confira as informações sobre os novos recursos, correções e atualizações mais recentes lançadas para os produtos."
+    link="stcpren-go"
 >}}
 
 <div class="mt-6"></div>
