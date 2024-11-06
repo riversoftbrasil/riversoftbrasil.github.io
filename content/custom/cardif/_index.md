@@ -7,13 +7,14 @@ toc: true
 cascade:
   type: docs
 sidebar:
-  exclude: false 
+  exclude: true 
 weight: 2
 prev: 
 next: 
 slug: 
 draft: false
 lastmod: 2024-08-05
+cliente: Accor
 ---
 
 ![](img/logo.png)
