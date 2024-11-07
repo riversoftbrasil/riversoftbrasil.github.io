@@ -7,7 +7,7 @@ toc: true
 cascade:
   type: docs
 sidebar:
-  exclude: false
+  exclude: true
 weight: 1
 prev: /
 next: 01-install-sgc-bradesco
