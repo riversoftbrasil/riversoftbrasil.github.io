@@ -1,5 +1,5 @@
 ---
-linkTitle: STCP OFTP Client | Cardif
+linkTitle: STCP OFTP Client | Burguer King
 title: 
 excludeSearch: true
 layout: docs
