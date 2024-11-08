@@ -1,5 +1,5 @@
 ---
-linkTitle: STCP OFTP Client | Cardif
+linkTitle: STCP OFTP Client | Accor
 title: 
 excludeSearch: true
 layout: docs
