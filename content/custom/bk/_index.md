@@ -232,21 +232,6 @@ $ stcpclient-config init
 
 ![](img/image-04.png)
 
-| Parâmetros       |  Descrição      | 
-| -------------    | :-------------: | 
-| Número de série  |  **Fornecido pelo {{< param cliente >}}**  | 
-| Sistema operacional   | 0-Linux                  |    
-| Nome do Perfil        | O0055ACCOR            |   
-| OID (Odette ID)       | **Fornecido pela {{< param cliente >}}**  |   
-| Senha OID (Odette ID) | **Fornecido pela {{< param cliente >}}**  |   
-| Endereço IP           | **Fornecido pela {{< param cliente >}}**       |   
-| Porta                 |         443                  |   
-| Comunicação segura (TLS) |         Não               |   
-| Certificado de arquivo   |      Deixar em branco     |   
-| Certificado de diretório |      Deixar em branco     |   
-| Backup arquivos transmitidos |         Não               |   
-| Nome longo para arquivos     |         Sim               |   
-
 ## Execução
 
 Para executar a aplicação, através do terminal, utilize a linha de comando abaixo:
