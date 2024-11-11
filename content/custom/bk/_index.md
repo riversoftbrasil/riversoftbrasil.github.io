@@ -13,7 +13,7 @@ prev:
 next: 
 slug: 
 draft: false
-lastmod: 2024-10-31
+lastmod: 2024-10-15
 cliente: Burguer King
 ---
 <br>

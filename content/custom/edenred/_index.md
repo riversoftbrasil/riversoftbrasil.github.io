@@ -191,7 +191,7 @@ deb http://apt.riversoft.com.br/riversoft_repo/debian/ bionic main
 deb http://apt.riversoft.com.br/riversoft_repo/debian/ focal main
 ```
 
-* Para a versão Ubuntu 24.04 e Debian 12:
+* Para a versão Ubuntu 22.04, Ubuntu 24.04 e Debian 12:
 
 ```
 deb http://apt.riversoft.com.br/riversoft_repo/debian/ noble main

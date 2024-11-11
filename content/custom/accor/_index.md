@@ -13,7 +13,7 @@ prev:
 next: 
 slug: 
 draft: false
-lastmod: 2024-10-20
+lastmod: 2024-10-15
 cliente: Accor Hotels
 ---
 <br>

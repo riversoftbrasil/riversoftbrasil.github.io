@@ -13,7 +13,7 @@ prev:
 next: 
 slug: 
 draft: false
-lastmod: 2024-10-20
+lastmod: 2024-10-15
 cliente: E-Sales
 ---
 <br>
@@ -140,7 +140,7 @@ $ yum install stcpgemini-client.x86_64
 
 Confirme as informações exibidas na tela para concluir a instalação e siga para a seção Configuração do STCP Gemini Client.
 
-## Ubuntu e Debian
+## Instalação: Ubuntu e Debian
 
 ### Instalação das dependências
 

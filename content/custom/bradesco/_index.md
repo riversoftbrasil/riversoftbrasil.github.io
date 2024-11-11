@@ -13,7 +13,7 @@ prev: /
 next: 01-install-sgc-bradesco
 slug: 
 draft: 
-lastmod: 2024-07-25
+lastmod: 2024-10-15
 cliente: Bradesco
 ---
 <br>
