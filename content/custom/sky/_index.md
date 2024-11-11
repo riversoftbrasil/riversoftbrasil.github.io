@@ -23,13 +23,13 @@ cliente: Sky
 
 <br>
 
-Com o objetivo de aumentar a segurança, automatizar e padronizar o processo de intercâmbio de arquivos com os seus parceiros, o {{< param cliente >}} tem implantado em seu ambiente da solução Riversoft STCP OFTP Server Enterprise. 
+Com o objetivo de aumentar a segurança, automatizar e padronizar o processo de intercâmbio de arquivos com os seus parceiros, a {{< param cliente >}} tem implantado em seu ambiente da solução Riversoft STCP OFTP Server Enterprise. 
 
-A transferência de arquivos (transmissão e/ou recepção) entre os parceiros e o servidor {{< param cliente >}} será realizada através da aplicação cliente do STCP do {{< param cliente >}}, disponível para as plataformas Windows (STCP OFTP Client) e Linux (STCP Gemini Client). Esse software será disponibilizado para os parceiros sem custos de licenciamento e suporte. 
+A transferência de arquivos (transmissão e/ou recepção) entre os parceiros e o servidor da {{< param cliente >}} será realizada através da aplicação cliente do STCP do {{< param cliente >}}, disponível para as plataformas Windows (STCP OFTP Client) e Linux (STCP Gemini Client). Esse software será disponibilizado para os parceiros sem custos de licenciamento e suporte. 
 
-Uma caixa postal (Usuário) será criada no servidor STCP da {{< param cliente >}} e através do software cliente os arquivos serão transferidos de modo seguro entre o {{< param cliente >}} e os seus parceiros. 
+Uma caixa postal (Usuário) será criada no servidor STCP da {{< param cliente >}} e através do software cliente os arquivos serão transferidos de modo seguro entre a {{< param cliente >}} e os seus parceiros. 
 
-Todo o processo envolvendo essa transferência de arquivos ocorre diretamente entre o {{< param cliente >}} e os seus parceiros. Nenhuma informação será trafegada, administrada, coletada e/ou armazenada pela Riversoft. 
+Todo o processo envolvendo essa transferência de arquivos ocorre diretamente entre a {{< param cliente >}} e os seus parceiros. Nenhuma informação será trafegada, administrada, coletada e/ou armazenada pela Riversoft. 
 
 O STCP Gemini Client é uma aplicação cliente utilizada para transferência de arquivos seguro e multiprotocolo para aplicações de e-business e troca de informações corporativas, baseado na especificação OFTP (ODETTE File Transfer Protocol).
 
@@ -47,9 +47,7 @@ Essas bibliotecas são dependências (pré-requisitos) para que o STCP Gemini Cl
 
 A instalação do STCP Gemini Client será realizada através do repositório oficial da Riversoft, de acordo com a distribuição Linux utilizada.
 
-## Sistemas Operacionais Linux
-
-*CentOS, Red Hat Enterprise Linux, Oracle Linux e Amazon Linux*
+## Instalação: CentOS, Red Hat Enterprise Linux, Oracle Linux e Amazon Linux
 
 ### Instalação das dependências
 
@@ -148,7 +146,7 @@ $ yum install stcpgemini-client.x86_64
 
 Confirme as informações exibidas na tela para concluir a instalação e siga para a seção Configuração do STCP Gemini Client.
 
-## Ubuntu e Debian
+## Instalação: Ubuntu e Debian
 
 ### Instalação das dependências
 
@@ -194,7 +192,7 @@ deb http://apt.riversoft.com.br/riversoft_repo/debian/ bionic main
 deb http://apt.riversoft.com.br/riversoft_repo/debian/ focal main
 ```
 
-* Para a versão Ubuntu 24.04 e Debian 12:
+* Para a versão Ubuntu 22.04, Ubuntu 24.04 e Debian 12:
 
 ```
 deb http://apt.riversoft.com.br/riversoft_repo/debian/ noble main
@@ -235,12 +233,12 @@ $ stcpclient-config init
 
 | Parâmetros       |  Descrição      | 
 | -------------    | :-------------: | 
-| Número de série  |  **Fornecido pelo {{< param cliente >}}**  | 
+| Número de série  |  35E5D251704B491ABB4D67D51180B502C239  | 
 | Sistema operacional   | 0-Linux                  |    
-| Nome do Perfil        | O0055BRADESCO            |   
-| OID (Odette ID)       | **Fornecido pelo {{< param cliente >}}**  |   
-| Senha OID (Odette ID) | **Fornecido pelo {{< param cliente >}}**  |   
-| Endereço IP           | rvsweb.bradesco.com.br       |   
+| Nome do Perfil        | O0055SKY            |   
+| OID (Odette ID)       | **Fornecido pela {{< param cliente >}}**  |   
+| Senha OID (Odette ID) | **Fornecido pela {{< param cliente >}}**  |   
+| Endereço IP           | stcp.sky.com.br       |   
 | Porta                 |         443                  |   
 | Comunicação segura (TLS) |         Não               |   
 | Certificado de arquivo   |      Deixar em branco     |   
@@ -253,7 +251,7 @@ $ stcpclient-config init
 Para executar a aplicação, através do terminal, utilize a linha de comando abaixo:
 
 ```bash
-$ stcpclient -p O0055BRADESCO -r 1 /usr/local/stcpclient/configs/stcpclient.config.json
+$ stcpclient -p O0055SKY -r 1 /usr/local/stcpclient/configs/stcpclient.config.json
 ```
 
 Após a execução do STCP Gemini Client, assim que a conexão com servidor do BRADESCO for estabelecida com sucesso, os arquivos serão enviados e/ou recebidos automaticamente:
@@ -265,7 +263,7 @@ Após a execução do STCP Gemini Client, assim que a conexão com servidor do B
 Os arquivos que serão enviados para o {{< param cliente >}} deverão ser disponibilizados na pasta SAIDA da aplicação.
 
 ```
-/usr/local/stcpclient/data/STCPClt/O0055BRADESCO/SAIDA
+/usr/local/stcpclient/data/STCPClt/O0055SKY/SAIDA
 ```
 
 Em seguida, execute o STCP Gemini Client conforme descrito acima.
@@ -275,10 +273,10 @@ Em seguida, execute o STCP Gemini Client conforme descrito acima.
 Os arquivos enviados com sucesso serão removidos automaticamente da pasta de SAIDA.
 {{< /callout >}}
 
-Ao executar o STCP Gemini Client, os arquivos que forem recebidos do {{< param cliente >}} ficarão disponíveis na pasta ENTRADA da aplicação.
+Ao executar o STCP Gemini Client, os arquivos que forem recebidos da {{< param cliente >}} ficarão disponíveis na pasta ENTRADA da aplicação.
 
 ```
-/usr/local/stcpclient/data/STCPClt/O0055BRADESCO/ENTRADA
+/usr/local/stcpclient/data/STCPClt/O0055SKY/ENTRADA
 ```
 
 ### Modo de execução através do Cron
@@ -288,7 +286,7 @@ Ao executar o STCP Gemini Client, os arquivos que forem recebidos do {{< param c
 ```bash
 $ sudo cat /etc/crontab
 
-0 0 * * * /bin/bash -l -c "PATH=\"$PATH:/usr/local/bin\"; stcpclient -p O0055BRADESCO -r 1 /usr/local/stcpclient/configs/stcpclient.config.json"
+0 0 * * * /bin/bash -l -c "PATH=\"$PATH:/usr/local/bin\"; stcpclient -p O0055SKY -r 1 /usr/local/stcpclient/configs/stcpclient.config.json"
 ```
 
 ## Logs 
