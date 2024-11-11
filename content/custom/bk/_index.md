@@ -238,7 +238,7 @@ $ stcpclient-config init
 | OID (Odette ID)       | **Fornecido pelo {{< param cliente >}}**  |   
 | Senha OID (Odette ID) | **Fornecido pelo {{< param cliente >}}**  |   
 | Endereço IP           | stcp.burgerking.com.br    |   
-| Porta                 |         443                  |   
+| Porta                 |         4443                  |   
 | Comunicação segura (TLS) |         Sim               |   
 | Certificado de arquivo   |      Deixar em branco     |   
 | Certificado de diretório |      Deixar em branco     |   
