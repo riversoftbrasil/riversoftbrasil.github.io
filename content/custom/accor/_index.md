@@ -1,5 +1,5 @@
 ---
-linkTitle: STCP OFTP Client | Accor
+linkTitle: STCP OFTP Client | Accor Hotels 
 title: 
 excludeSearch: true
 layout: docs
@@ -13,8 +13,8 @@ prev:
 next: 
 slug: 
 draft: false
-lastmod: 2024-08-05
-cliente: Accor
+lastmod: 2024-10-20
+cliente: Accor Hotels
 ---
 <br>
 
@@ -22,13 +22,13 @@ cliente: Accor
 
 <br>
 
-Com o objetivo de aumentar a segurança, automatizar e padronizar o processo de intercâmbio de arquivos com os seus parceiros, o {{< param cliente >}} tem implantado em seu ambiente da solução Riversoft STCP OFTP Server Enterprise. 
+Com o objetivo de aumentar a segurança, automatizar e padronizar o processo de intercâmbio de arquivos com os seus parceiros, a {{< param cliente >}} tem implantado em seu ambiente da solução Riversoft STCP OFTP Server Enterprise. 
 
-A transferência de arquivos (transmissão e/ou recepção) entre os parceiros e o servidor {{< param cliente >}} será realizada através da aplicação cliente do STCP do {{< param cliente >}}, disponível para as plataformas Windows (STCP OFTP Client) e Linux (STCP Gemini Client). Esse software será disponibilizado para os parceiros sem custos de licenciamento e suporte. 
+A transferência de arquivos (transmissão e/ou recepção) entre os parceiros e o servidor {{< param cliente >}} será realizada através da aplicação cliente do STCP da {{< param cliente >}}, disponível para as plataformas Windows (STCP OFTP Client) e Linux (STCP Gemini Client). Esse software será disponibilizado para os parceiros sem custos de licenciamento e suporte. 
 
 Uma caixa postal (Usuário) será criada no servidor STCP da {{< param cliente >}} e através do software cliente os arquivos serão transferidos de modo seguro entre o {{< param cliente >}} e os seus parceiros. 
 
-Todo o processo envolvendo essa transferência de arquivos ocorre diretamente entre o {{< param cliente >}} e os seus parceiros. Nenhuma informação será trafegada, administrada, coletada e/ou armazenada pela Riversoft. 
+Todo o processo envolvendo essa transferência de arquivos ocorre diretamente entre a {{< param cliente >}} e os seus parceiros. Nenhuma informação será trafegada, administrada, coletada e/ou armazenada pela Riversoft. 
 
 O STCP Gemini Client é uma aplicação cliente utilizada para transferência de arquivos seguro e multiprotocolo para aplicações de e-business e troca de informações corporativas, baseado na especificação OFTP (ODETTE File Transfer Protocol).
 
@@ -38,7 +38,7 @@ Esta seção tem como objetivo descrever os passos iniciais para instalação e 
 
 ### Requisitos
 
-O STCP Gemini Client está homologado para as distribuições CentOS (versões 7 e 8), Red Hat Enterprise Linux (versões 7 e 8), Amazon Linux, Oracle Linux (versões 7, 8 e 9), Debian (versão 9, 10 e 11) e Ubuntu (versões 18.04 e 20.04) 
+O STCP Gemini Client está homologado para as distribuições CentOS (versões 7 e 8), Red Hat Enterprise Linux (versões 7 e 8), Amazon Linux, Oracle Linux (versões 7, 8 e 9), Debian (versão 9, 10, 11 e 12) e Ubuntu (versões 18.04, 20.04, 22.04 e 24.04).
 
 Por questões de segurança, o STCP Gemini Client utiliza versões mais recentes das bibliotecas OPENSSL, LIBSSH e PCRE2. 
 
@@ -46,9 +46,7 @@ Essas bibliotecas são dependências (pré-requisitos) para que o STCP Gemini Cl
 
 A instalação do STCP Gemini Client será realizada através do repositório oficial da Riversoft, de acordo com a distribuição Linux utilizada.
 
-## Sistemas Operacionais Linux
-
-*CentOS, Red Hat Enterprise Linux, Oracle Linux e Amazon Linux*
+## Instalação: CentOS, Red Hat Enterprise Linux, Oracle Linux e Amazon Linux
 
 ### Instalação das dependências
 
@@ -147,7 +145,7 @@ $ yum install stcpgemini-client.x86_64
 
 Confirme as informações exibidas na tela para concluir a instalação e siga para a seção Configuração do STCP Gemini Client.
 
-## Ubuntu e Debian
+## Instalação: Ubuntu e Debian
 
 ### Instalação das dependências
 
@@ -232,12 +230,27 @@ $ stcpclient-config init
 
 ![](img/image-04.png)
 
+| Parâmetros       |  Descrição      | 
+| -------------    | :-------------: | 
+| Número de série  |  **Fornecido pela {{< param cliente >}}**  | 
+| Sistema operacional   | 0-Linux                  |    
+| Nome do Perfil        | O0055ACCORHOTELS            |   
+| OID (Odette ID)       | **Fornecido pela {{< param cliente >}}**  |   
+| Senha OID (Odette ID) | **Fornecido pela {{< param cliente >}}**  |   
+| Endereço IP           | stcpaccor.accor.com.br       |   
+| Porta                 |         443                  |   
+| Comunicação segura (TLS) |         Não               |   
+| Certificado de arquivo   |      Deixar em branco     |   
+| Certificado de diretório |      Deixar em branco     |   
+| Backup arquivos transmitidos |         Não               |   
+| Nome longo para arquivos     |         Sim               |   
+
 ## Execução
 
 Para executar a aplicação, através do terminal, utilize a linha de comando abaixo:
 
 ```bash
-$ stcpclient -p O0055BRADESCO -r 1 /usr/local/stcpclient/configs/stcpclient.config.json
+$ stcpclient -p O0055ACCORHOTELS -r 1 /usr/local/stcpclient/configs/stcpclient.config.json
 ```
 
 Após a execução do STCP Gemini Client, assim que a conexão com servidor do BRADESCO for estabelecida com sucesso, os arquivos serão enviados e/ou recebidos automaticamente:
@@ -246,13 +259,13 @@ Após a execução do STCP Gemini Client, assim que a conexão com servidor do B
 
 ### Como enviar e receber arquivos
 
-Os arquivos que serão enviados para o {{< param cliente >}} deverão ser disponibilizados na pasta SAIDA da aplicação.
+Os arquivos que serão enviados para a {{< param cliente >}} deverão ser disponibilizados na pasta SAIDA da aplicação.
 
 ```
-/usr/local/stcpclient/data/STCPClt/O0055BRADESCO/SAIDA
+/usr/local/stcpclient/data/STCPClt/O0055ACCORHOTELS/SAIDA
 ```
 
-Em seguida, execute o STCP Gemini Client conforme descrito acima.
+Em seguida, execute o STCP Gemini Client conforme descrito acima na seção de Execução.
 
 {{< callout type="info" >}}
 **Nota:** Todos os arquivos que estiverem na pasta SAIDA serão enviados. 
@@ -262,7 +275,7 @@ Os arquivos enviados com sucesso serão removidos automaticamente da pasta de SA
 Ao executar o STCP Gemini Client, os arquivos que forem recebidos do {{< param cliente >}} ficarão disponíveis na pasta ENTRADA da aplicação.
 
 ```
-/usr/local/stcpclient/data/STCPClt/O0055BRADESCO/ENTRADA
+/usr/local/stcpclient/data/STCPClt/O0055ACCORHOTELS/ENTRADA
 ```
 
 ### Modo de execução através do Cron
@@ -272,7 +285,7 @@ Ao executar o STCP Gemini Client, os arquivos que forem recebidos do {{< param c
 ```bash
 $ sudo cat /etc/crontab
 
-0 0 * * * /bin/bash -l -c "PATH=\"$PATH:/usr/local/bin\"; stcpclient -p O0055BRADESCO -r 1 /usr/local/stcpclient/configs/stcpclient.config.json"
+0 0 * * * /bin/bash -l -c "PATH=\"$PATH:/usr/local/bin\"; stcpclient -p O0055ACCORHOTELS -r 1 /usr/local/stcpclient/configs/stcpclient.config.json"
 ```
 
 ## Logs 
