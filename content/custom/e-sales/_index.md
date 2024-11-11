@@ -13,7 +13,7 @@ prev:
 next: 
 slug: 
 draft: false
-lastmod: 2024-10-31
+lastmod: 2024-10-20
 cliente: E-Sales
 ---
 <br>
@@ -22,13 +22,8 @@ cliente: E-Sales
 
 <br>
 
-Com o objetivo de aumentar a segurança, automatizar e padronizar o processo de intercâmbio de arquivos com os seus parceiros, o {{< param cliente >}} tem implantado em seu ambiente da solução Riversoft STCP OFTP Server Enterprise. 
 
-A transferência de arquivos (transmissão e/ou recepção) entre os parceiros e o servidor {{< param cliente >}} será realizada através da aplicação cliente do STCP do {{< param cliente >}}, disponível para as plataformas Windows (STCP OFTP Client) e Linux (STCP Gemini Client). Esse software será disponibilizado para os parceiros sem custos de licenciamento e suporte. 
-
-Uma caixa postal (Usuário) será criada no servidor STCP da {{< param cliente >}} e através do software cliente os arquivos serão transferidos de modo seguro entre o {{< param cliente >}} e os seus parceiros. 
-
-Todo o processo envolvendo essa transferência de arquivos ocorre diretamente entre o {{< param cliente >}} e os seus parceiros. Nenhuma informação será trafegada, administrada, coletada e/ou armazenada pela Riversoft. 
+Esta seção tem como objetivo descrever os passos iniciais para instalação e configuração do STCP Gemini Client. Outras configurações podem ser realizadas conforme as necessidades específicas do ambiente e/ou funcionalidades utilizadas.
 
 O STCP Gemini Client é uma aplicação cliente utilizada para transferência de arquivos seguro e multiprotocolo para aplicações de e-business e troca de informações corporativas, baseado na especificação OFTP (ODETTE File Transfer Protocol).
 
@@ -38,7 +33,7 @@ Esta seção tem como objetivo descrever os passos iniciais para instalação e 
 
 ### Requisitos
 
-O STCP Gemini Client está homologado para as distribuições CentOS (versões 7 e 8), Red Hat Enterprise Linux (versões 7 e 8), Amazon Linux, Oracle Linux (versões 7, 8 e 9), Debian (versão 9, 10 e 11) e Ubuntu (versões 18.04 e 20.04) 
+O STCP Gemini Client está homologado para as distribuições CentOS (versões 7 e 8), Red Hat Enterprise Linux (versões 7 e 8), Amazon Linux, Oracle Linux (versões 7, 8 e 9), Debian (versão 9, 10 e 11) e Ubuntu (versões 18.04, 20.04, 22.04 e 24.04) 
 
 Por questões de segurança, o STCP Gemini Client utiliza versões mais recentes das bibliotecas OPENSSL, LIBSSH e PCRE2. 
 
@@ -46,15 +41,13 @@ Essas bibliotecas são dependências (pré-requisitos) para que o STCP Gemini Cl
 
 A instalação do STCP Gemini Client será realizada através do repositório oficial da Riversoft, de acordo com a distribuição Linux utilizada.
 
-## Sistemas Operacionais Linux
-
-*CentOS, Red Hat Enterprise Linux, Oracle Linux e Amazon Linux*
+## Instalação: CentOS, Red Hat Enterprise Linux, Oracle Linux e Amazon Linux
 
 ### Instalação das dependências
 
 ![](img/image-01.png)
 
-As dependências para o STCP Gemini Client podem ser instaladas através do repositório EPEL, assim como, através dos seus respectivos pacotes RPM e conforme padrão e práticas adotadas por cada organização.
+As dependências para o STCP Gemini Client podem ser instaladas através do repositório EPEL, assim como, através dos seus respectivos pacotes RPM, conforme padrão e práticas adotadas por cada organização.
 
 ``` bash
 $ yum install epel-release
@@ -193,7 +186,7 @@ deb http://apt.riversoft.com.br/riversoft_repo/debian/ bionic main
 deb http://apt.riversoft.com.br/riversoft_repo/debian/ focal main
 ```
 
-* Para a versão Ubuntu 24.04 e Debian 12:
+* Para a versão Ubunut 22.04, Ubuntu 24.04 e Debian 12:
 
 ```
 deb http://apt.riversoft.com.br/riversoft_repo/debian/ noble main
