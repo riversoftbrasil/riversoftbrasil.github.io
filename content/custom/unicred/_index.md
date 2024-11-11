@@ -232,7 +232,7 @@ $ stcpclient-config init
 
 | Parâmetros       |  Descrição      | 
 | -------------    | :-------------: | 
-| Número de série  |  35E5D251704B491ABB4D67D51180B502C239  | 
+| Número de série  |  30C421CE1F4BD4B16A1D98F98C38C6B85BBD0  | 
 | Sistema operacional   | 0-Linux                  |    
 | Nome do Perfil        | O0055UNICRED            |   
 | OID (Odette ID)       | **Fornecido pela {{< param cliente >}}**  |   

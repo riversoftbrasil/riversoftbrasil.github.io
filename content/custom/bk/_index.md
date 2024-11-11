@@ -26,7 +26,7 @@ Com o objetivo de aumentar a segurança, automatizar e padronizar o processo de 
 
 A transferência de arquivos (transmissão e/ou recepção) entre os parceiros e o servidor {{< param cliente >}} será realizada através da aplicação cliente do STCP do {{< param cliente >}}, disponível para as plataformas Windows (STCP OFTP Client) e Linux (STCP Gemini Client). Esse software será disponibilizado para os parceiros sem custos de licenciamento e suporte. 
 
-Uma caixa postal (Usuário) será criada no servidor STCP da {{< param cliente >}} e através do software cliente os arquivos serão transferidos de modo seguro entre o {{< param cliente >}} e os seus parceiros. 
+Uma caixa postal (Usuário) será criada no servidor STCP do {{< param cliente >}} e através do software cliente os arquivos serão transferidos de modo seguro entre o {{< param cliente >}} e os seus parceiros. 
 
 Todo o processo envolvendo essa transferência de arquivos ocorre diretamente entre o {{< param cliente >}} e os seus parceiros. Nenhuma informação será trafegada, administrada, coletada e/ou armazenada pela Riversoft. 
 
@@ -46,9 +46,7 @@ Essas bibliotecas são dependências (pré-requisitos) para que o STCP Gemini Cl
 
 A instalação do STCP Gemini Client será realizada através do repositório oficial da Riversoft, de acordo com a distribuição Linux utilizada.
 
-## Sistemas Operacionais Linux
-
-*CentOS, Red Hat Enterprise Linux, Oracle Linux e Amazon Linux*
+## Instalação: CentOS, Red Hat Enterprise Linux, Oracle Linux e Amazon Linux
 
 ### Instalação das dependências
 
@@ -147,7 +145,7 @@ $ yum install stcpgemini-client.x86_64
 
 Confirme as informações exibidas na tela para concluir a instalação e siga para a seção Configuração do STCP Gemini Client.
 
-## Ubuntu e Debian
+## Instalação: Ubuntu e Debian
 
 ### Instalação das dependências
 
@@ -193,7 +191,7 @@ deb http://apt.riversoft.com.br/riversoft_repo/debian/ bionic main
 deb http://apt.riversoft.com.br/riversoft_repo/debian/ focal main
 ```
 
-* Para a versão Ubuntu 24.04 e Debian 12:
+* Para a versão o Ubuntu 22.04, Ubuntu 24.04 e Debian 12:
 
 ```
 deb http://apt.riversoft.com.br/riversoft_repo/debian/ noble main
@@ -232,12 +230,27 @@ $ stcpclient-config init
 
 ![](img/image-04.png)
 
+| Parâmetros       |  Descrição      | 
+| -------------    | :-------------: | 
+| Número de série  |  EFAE3D69C99F498DB3352637BB26DFF495D3  | 
+| Sistema operacional   | 0-Linux                  |    
+| Nome do Perfil        | O0055BK            |   
+| OID (Odette ID)       | **Fornecido pelo {{< param cliente >}}**  |   
+| Senha OID (Odette ID) | **Fornecido pelo {{< param cliente >}}**  |   
+| Endereço IP           | stcp.burgerking.com.br    |   
+| Porta                 |         443                  |   
+| Comunicação segura (TLS) |         Sim               |   
+| Certificado de arquivo   |      Deixar em branco     |   
+| Certificado de diretório |      Deixar em branco     |   
+| Backup arquivos transmitidos |         Não               |   
+| Nome longo para arquivos     |         Sim               |   
+
 ## Execução
 
 Para executar a aplicação, através do terminal, utilize a linha de comando abaixo:
 
 ```bash
-$ stcpclient -p O0055BRADESCO -r 1 /usr/local/stcpclient/configs/stcpclient.config.json
+$ stcpclient -p O0055BK -r 1 /usr/local/stcpclient/configs/stcpclient.config.json
 ```
 
 Após a execução do STCP Gemini Client, assim que a conexão com servidor do BRADESCO for estabelecida com sucesso, os arquivos serão enviados e/ou recebidos automaticamente:
@@ -249,7 +262,7 @@ Após a execução do STCP Gemini Client, assim que a conexão com servidor do B
 Os arquivos que serão enviados para o {{< param cliente >}} deverão ser disponibilizados na pasta SAIDA da aplicação.
 
 ```
-/usr/local/stcpclient/data/STCPClt/O0055BRADESCO/SAIDA
+/usr/local/stcpclient/data/STCPClt/O0055BK/SAIDA
 ```
 
 Em seguida, execute o STCP Gemini Client conforme descrito acima.
@@ -262,7 +275,7 @@ Os arquivos enviados com sucesso serão removidos automaticamente da pasta de SA
 Ao executar o STCP Gemini Client, os arquivos que forem recebidos do {{< param cliente >}} ficarão disponíveis na pasta ENTRADA da aplicação.
 
 ```
-/usr/local/stcpclient/data/STCPClt/O0055BRADESCO/ENTRADA
+/usr/local/stcpclient/data/STCPClt/O0055BK/ENTRADA
 ```
 
 ### Modo de execução através do Cron
@@ -272,7 +285,7 @@ Ao executar o STCP Gemini Client, os arquivos que forem recebidos do {{< param c
 ```bash
 $ sudo cat /etc/crontab
 
-0 0 * * * /bin/bash -l -c "PATH=\"$PATH:/usr/local/bin\"; stcpclient -p O0055BRADESCO -r 1 /usr/local/stcpclient/configs/stcpclient.config.json"
+0 0 * * * /bin/bash -l -c "PATH=\"$PATH:/usr/local/bin\"; stcpclient -p O0055BK -r 1 /usr/local/stcpclient/configs/stcpclient.config.json"
 ```
 
 ## Logs 

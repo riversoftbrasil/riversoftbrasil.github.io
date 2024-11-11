@@ -191,7 +191,7 @@ deb http://apt.riversoft.com.br/riversoft_repo/debian/ bionic main
 deb http://apt.riversoft.com.br/riversoft_repo/debian/ focal main
 ```
 
-* Para a versão Ubuntu 24.04 e Debian 12:
+* Para a versão Ubuntu 22.04, Ubuntu 24.04 e Debian 12:
 
 ```
 deb http://apt.riversoft.com.br/riversoft_repo/debian/ noble main
@@ -232,14 +232,14 @@ $ stcpclient-config init
 
 | Parâmetros       |  Descrição      | 
 | -------------    | :-------------: | 
-| Número de série  |  **Fornecido pela {{< param cliente >}}**  | 
+| Número de série  |  6728FA4939014373BE1268E899982C87DEEC  | 
 | Sistema operacional   | 0-Linux                  |    
 | Nome do Perfil        | O0055ACCORHOTELS            |   
 | OID (Odette ID)       | **Fornecido pela {{< param cliente >}}**  |   
 | Senha OID (Odette ID) | **Fornecido pela {{< param cliente >}}**  |   
 | Endereço IP           | stcpaccor.accor.com.br       |   
 | Porta                 |         443                  |   
-| Comunicação segura (TLS) |         Não               |   
+| Comunicação segura (TLS) |         Sim               |   
 | Certificado de arquivo   |      Deixar em branco     |   
 | Certificado de diretório |      Deixar em branco     |   
 | Backup arquivos transmitidos |         Não               |   
@@ -253,7 +253,7 @@ Para executar a aplicação, através do terminal, utilize a linha de comando ab
 $ stcpclient -p O0055ACCORHOTELS -r 1 /usr/local/stcpclient/configs/stcpclient.config.json
 ```
 
-Após a execução do STCP Gemini Client, assim que a conexão com servidor do BRADESCO for estabelecida com sucesso, os arquivos serão enviados e/ou recebidos automaticamente:
+Após a execução do STCP Gemini Client, assim que a conexão com servidor da {{< param cliente >}} for estabelecida com sucesso, os arquivos serão enviados e/ou recebidos automaticamente:
 
 ![](img/image-05.png)
 
