@@ -38,7 +38,7 @@ Esta seção tem como objetivo descrever os passos iniciais para instalação e 
 
 ### Requisitos
 
-O STCP Gemini Client está homologado para as distribuições CentOS (versões 7 e 8), Red Hat Enterprise Linux (versões 7 e 8), Amazon Linux, Oracle Linux (versões 7, 8 e 9), Debian (versão 9, 10 e 11) e Ubuntu (versões 18.04 e 20.04) 
+O STCP Gemini Client está homologado para as distribuições CentOS (versões 7 e 8), Red Hat Enterprise Linux (versões 7 e 8), Amazon Linux, Oracle Linux (versões 7, 8 e 9), Debian (versão 9, 10, 11 e 12) e Ubuntu (versões 18.04, 20.04, 22.04 e 24.04). 
 
 Por questões de segurança, o STCP Gemini Client utiliza versões mais recentes das bibliotecas OPENSSL, LIBSSH e PCRE2. 
 
@@ -46,9 +46,7 @@ Essas bibliotecas são dependências (pré-requisitos) para que o STCP Gemini Cl
 
 A instalação do STCP Gemini Client será realizada através do repositório oficial da Riversoft, de acordo com a distribuição Linux utilizada.
 
-## Sistemas Operacionais Linux
-
-*CentOS, Red Hat Enterprise Linux, Oracle Linux e Amazon Linux*
+## Instalação: CentOS, Red Hat Enterprise Linux, Oracle Linux e Amazon Linux
 
 ### Instalação das dependências
 
@@ -145,9 +143,9 @@ Após a configuração do repositório, utilize o comando padrão do YUM para in
 $ yum install stcpgemini-client.x86_64
 ```
 
-Confirme as informações exibidas na tela para concluir a instalação e siga para a seção Configuração do STCP Gemini Client.
+Confirme as informações exibidas na tela para concluir a instalação e siga para a seção de Configuração do STCP Gemini Client.
 
-## Ubuntu e Debian
+## Instalação: Ubuntu e Debian
 
 ### Instalação das dependências
 
@@ -193,7 +191,7 @@ deb http://apt.riversoft.com.br/riversoft_repo/debian/ bionic main
 deb http://apt.riversoft.com.br/riversoft_repo/debian/ focal main
 ```
 
-* Para a versão Ubuntu 24.04 e Debian 12:
+* Para a versão Ubuntu 22.04, Ubuntu 24.04 e Debian 12:
 
 ```
 deb http://apt.riversoft.com.br/riversoft_repo/debian/ noble main
