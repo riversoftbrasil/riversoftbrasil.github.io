@@ -8,30 +8,30 @@ cascade:
 sidebar:
   exclude: false
 weight: 1
-lastmod: 2024-05-27
+lastmod: 2024-10-15
 ---
 
 Tudo o que você precisa saber para sua jornada nas soluções Riversoft.
 
 ### Windows
 {{< cards >}}
-  {{< card link="/stcpserver" title="STCP OFTP Server" icon="cog" >}}
-  {{< card link="/stcpclient" title="STCP OFTP Client" icon="desktop-computer" >}}
-  {{< card link="/stcpwebadmin" title="STCP OFTP Web Admin" icon="cloud" >}}
-  {{< card link="/stcpchangepassword" title="STCP Change Password" icon="shield-exclamation" >}}
+  {{< card link="/stcp" title="STCP OFTP Server" icon="cog" >}}
+  {{< card link="/stcpclt" title="STCP OFTP Client" icon="desktop-computer" >}}
+  {{< card link="/stcpadmin" title="STCP OFTP Web Admin" icon="cloud" >}}
+  {{< card link="/stcppswd" title="STCP Change Password" icon="shield-exclamation" >}}
   {{< card link="/stcpren" title="STCP Rename" icon="color-swatch" >}}
   {{< card link="/stcpsigner" title="STCP Signer" icon="finger-print" >}}
 {{< /cards >}}
 
 ### Linux
 {{< cards >}}
-  {{< card link="/stcpgeminiserver" title="STCP Gemini Server" icon="lightning-bolt" >}}
-  {{< card link="/stcpgeminiclient" title="STCP Gemini Client" icon="terminal" >}}
+  {{< card link="/sgs" title="STCP Gemini Server" icon="lightning-bolt" >}}
+  {{< card link="/sgl" title="STCP Gemini Client" icon="terminal" >}}
 {{< /cards >}}
 
 ### Multiplataforma
 {{< cards >}}
-  {{< card link="/stcpdirectlink" title="STCP Directlink" icon="code" >}}
+  {{< card link="/dirl" title="STCP Directlink" icon="code" >}}
 {{< /cards >}}
 
 ### Guias passo a passo
