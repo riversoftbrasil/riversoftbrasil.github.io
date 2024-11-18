@@ -416,8 +416,6 @@ Exemplo: SRSVM-T02.
 
 {{< icon "chevron-right" >}}Em Tipo de Dados, escolha a opção Códigos de Eventos e clique no botão.
 
-![](./imagem2/img103.png)
-
 {{< icon "chevron-right" >}}Selecione o arquivo encontrado e clique no botão.
 
 ![](./imagem2/img103.png)
@@ -530,13 +528,13 @@ Exemplo: SRSVM-T02.
 
 ![](./imagem2/img121.png)
 
-{{< icon "chevron-right" >}}Selecione os arquivos que deseja remover e clique no botão.
+{{< icon "chevron-right" >}}Selecione os arquivos que deseja remover e salve.
 
-![](./imagem2/img122.png)
+<!-- ![](./imagem2/img122.png) -->
 
 {{< icon "chevron-right" >}}Quando o processo de limpeza for concluído, será mostrada a confirmação.
 
-![](./imagem2/img123.png)
+<!-- ![](./imagem2/img123.png) -->
 
 ### Recuperar transferência de Usuários (Caixa Postal)
 
@@ -563,13 +561,13 @@ Exemplo: SRSVM-T02.
 
 ![](./imagem2/img125.png)
 
-{{< icon "chevron-right" >}}Selecione o arquivo e clique no botão.
+{{< icon "chevron-right" >}}Selecione o arquivo.
 
-![](./imagem2/img126.png)
+<!-- ![](./imagem2/img126.png) -->
 
 {{< icon "chevron-right" >}}Quando o processo de recuperação for concluído, será mostrada a confirmação.
 
-![](./imagem2/img127.png)
+<!-- ![](./imagem2/img127.png) -->
 
 ### Resetar senha de Usuários (Caixa Postal)
 
@@ -598,13 +596,13 @@ Exemplo: SRSVM-T02.
 ----------
 <br>
 
-{{< icon "chevron-right" >}}Clique no botão para buscar o agendamento.
+{{< icon "chevron-right" >}}Clique na lupa para buscar o agendamento.
 
 ![](./imagem2/img131.png)
 
 {{< icon "chevron-right" >}}Clique sobre o nome do agendamento para executá-lo.
 
-![](/imagem2/img132.png)
+<!-- ![](./imagem2/img132.png) -->
 
 {{< icon "chevron-right" >}}Será aberta uma nova janela informando o resultado da execução do agendamento.
 
@@ -612,7 +610,7 @@ Exemplo: SRSVM-T02.
   Obs.: se o agendamento estiver desabilitado, não será possível executá-lo.
 {{< /callout >}}
 
-![](./imagem2/img133.png)
+<!-- ![](./imagem2/img133.png) -->
 
 ### Alterar estado de agendamento do STCP OFTP Server
 
@@ -633,17 +631,17 @@ Exemplo: SRSVM-T02.
 ----------
 <br>
 
-{{< icon "chevron-right" >}}Clique no botão para buscar o agendamento.
+{{< icon "chevron-right" >}}Clique na lupa para buscar o agendamento.
 
 ![](./imagem2/img135.png)
 
 {{< icon "chevron-right" >}}Clique sobre o nome do agendamento para alterar seu estado.
 
-![](./imagem2/img136.png)
+<!-- ![](./imagem2/img136.png) -->
 
 {{< icon "chevron-right" >}}O estado do agendamento é mostrado no lado direito da janela.
 
-![](./imagem2/img137.png)
+<!-- ![](./imagem2/img137.png) -->
 
 ### Monitorar eventos do servidor
 
