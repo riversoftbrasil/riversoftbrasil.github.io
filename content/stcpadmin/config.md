@@ -653,7 +653,8 @@ Exemplo: SRSVM-T02.
  A monitoração do servidor permite visualizar, em tempo real, todos os eventos¹ da sessão atual do serviço do STCP OFTP. Esta página é atualizada de tempos em tempos.
 {{< /callout >}}
 
-![](./imagem2/img139.png)
+![](./imagem2/img139_1.png)
+![](./imagem2/img139_2.png)
 
 > ¹ Início/fim do serviço STCP OFTP, Início/Fim de conexões entrantes/saintes, Início e Término da agenda, Início e Término de transmissão e recepção de arquivos, Erros do sistema/transferência, dentre outros.
 
@@ -688,7 +689,7 @@ Obs.: esta funcionalidade só está disponível para caixas postais que estejam 
 ----------
 <br>
 
-{{< icon "chevron-right" >}}Clique no botão para realizar a busca.
+{{< icon "chevron-right" >}}Clique na lupa para realizar a busca.
 
 ![](./imagem2/img143.png)
 
@@ -699,6 +700,35 @@ Obs.: esta funcionalidade só está disponível para caixas postais que estejam 
 {{< icon "chevron-right" >}}Será aberta uma nova janela mostrando o resultado da conexão do usuário.
 
 ![](./imagem2/img145.png)
+
+### Cancelar conexão com usuários (Caixa Postal)
+
+{{< icon "chevron-right" >}}Para cancelar uma conexão com uma caixa postal do STCP OFTP Server, acesse **Monitoração → Usuários (Caixa Postal) → Cancelar Conexão**.
+
+{{< callout type="info" >}}
+Obs.: esta funcionalidade só está disponível para caixas postais que estejam com a conexão automática habilitada.
+{{< /callout >}}
+
+![](./imagem2/img150.png)
+
+{{< icon "chevron-right" >}}Preencha os campos:
+
+| Campo      | Descrição |
+| :-----------: | :-----------: |
+| Identificação do usuário | Nome da caixa postal. Caso queira ver todas as caixas postais, deixe este campo em branco. |
+| Descrição do usuário   | Descrição da caixa postal. Use este campos para filtrar as caixas postais pela descrição. |
+----------
+<br>
+
+{{< icon "chevron-right" >}}Clique na lupa para realizar a busca.
+
+{{< icon "chevron-right" >}}Clique sobre o  nome da caixa postal para cancelar a conexão.
+
+![](./imagem2/img151.png)
+
+{{< icon "chevron-right" >}}Será aberta uma nova janela mostrando o resultado do cancelamento da conexão do usuário.
+
+<!-- ![](./imagem2/img145.png) -->
 
 ### Alterar estado de usuários (Caixa Postal)
 
@@ -719,11 +749,11 @@ Obs.: este procedimento permite que uma caixa postal seja bloqueada/desbloqueada
 ----------
 <br>
 
-{{< icon "chevron-right" >}}Clique no botão para realizar a busca.
+{{< icon "chevron-right" >}}Clique na lupa realizar a busca.
 
 ![](./imagem2/img147.png)
 
-{{< icon "chevron-right" >}}Clique sobre o noem da caixa postal para alterar seu estado.
+{{< icon "chevron-right" >}}Clique sobre o nome da caixa postal para alterar seu estado.
 
 ![](./imagem2/img148.png)
 
