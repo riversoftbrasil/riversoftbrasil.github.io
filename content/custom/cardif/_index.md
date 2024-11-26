@@ -23,10 +23,10 @@ cliente: Accor
 
 Antes de iniciar a instalação, verifique os requisitos para instalação e utilização do Riversoft STCP OFTP Client abaixo:
 
-*	Processador de 1 GHz ou superior de 32 bits (x86) ou 64 bits (x64)
-*	512 MB de RAM (32 bits) ou 1 GB de RAM (64 bits)
-*	30 MB de espaço disponível em disco rígido para o aplicativo
-*	Sistema operacional Windows 10/11/2012/2016/2019/2022
+* Processador de 2 gigahertz (GHz)
+* 2 gigabytes (GB) de RAM
+* 100 megabytes (MB) de espaço disponível em disco rígido para o aplicativo 1
+* Sistema operacional Windows 10/11/2012/2016/2019/2022 2
 
 a)	Execute o arquivo no local em que foi salvo para iniciar a instalação e clique no botão Avançar.
 
