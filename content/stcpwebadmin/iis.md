@@ -88,4 +88,4 @@ Neste procedimento a instalação do STCP OFTP Web Admin foi realizada no diret�
 
 Se todos os pré-requisitos foram atendidos e os passos deste procedimento seguidos corretamente, a janela do STCP OFTP Web Admin deverá ser exibida.
 
-![](./imagem/img15.png)
+![](./imagem/web-admin-02.png)
