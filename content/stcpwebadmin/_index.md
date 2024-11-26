@@ -22,7 +22,7 @@ O STCP OFTP Web Admin é uma ferramenta com acesso através do browser (HTTP) qu
 # Características Gerais
 
 * Ferramenta para supervisão e monitoração das transferências;
-* Acesso através do browser (HTTP);
+* Acesso através do browser (HTTP/HTTPS);
 * Visão diferenciada por operador;
 * Consulta de transferências;
 * Monitoração remota do serviço;
