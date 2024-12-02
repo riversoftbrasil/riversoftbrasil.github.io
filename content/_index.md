@@ -75,15 +75,15 @@ Aprenda sobre como implantar, configurar e gerenciar as soluções Riversoft.
         title="STCP Gemini Client"
         icon="terminal"
         subtitle="Aplicação cliente utilizada para transferência de arquivos seguro e multiprotocolo para aplicações de e-business e troca de informações corporativas, baseado na especificação OFTP."
-        link="/sgl"
+        link="/stcpgeminiclient"
     >}}
 
      {{< card
         title="STCP Gemini Server"
         icon="lightning-bolt"
         subtitle="Aplicação servidora utilizada para transferência de arquivos seguro e multiprotocolo para aplicações de e-business e troca de informações corporativas, baseado na especificação OFTP."
-        badge="EM BREVE"
-        link="/sgs"
+        tag="EM BREVE"
+        link="/stcpgeminiserver"
     >}}
 
 {{< /cards >}}
