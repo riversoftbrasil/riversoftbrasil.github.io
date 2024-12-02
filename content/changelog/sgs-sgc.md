@@ -1,8 +1,6 @@
 ---
 toc: false
-layout: notas
-sidebar:
-  exclude: true
+breadcrumbs: false
 ---
 
 ## STCP Gemini Server e STCP Gemini Client

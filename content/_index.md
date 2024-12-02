@@ -1,7 +1,8 @@
 ---
 title: Changelog
 toc: false
-layout: default
+cascade:
+  type: default
 ---
 {{< cards cols="1" >}}
 
