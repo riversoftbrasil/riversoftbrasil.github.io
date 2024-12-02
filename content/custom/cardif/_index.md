@@ -14,7 +14,7 @@ next:
 slug: 
 draft: false
 lastmod: 2024-08-05
-cliente: Accor
+cliente: Cardif
 ---
 
 ![](img/logo.png)
