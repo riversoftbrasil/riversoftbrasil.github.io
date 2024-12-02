@@ -1,53 +1,18 @@
 ---
-title: 
+title: Changelog
 toc: false
 layout: default
 ---
+{{< cards cols="1" >}}
 
-<div class="mt-6"></div>
-{{< feature-card
-    title="STCP OFTP Server e STCP OFTP Client"
-    icon="cog"
-    subtitle="Confira as informações sobre os novos recursos, correções e atualizações mais recentes lançadas para os produtos."
-    link="stw"
->}}
+  {{< card link="stw" icon="cog" title="STCP OFTP Server e STCP OFTP Client" subtitle="Confira as informações sobre os novos recursos, correções e atualizações mais recentes lançadas para os produtos." >}}
 
-<div class="mt-6"></div>
+  {{< card link="sgs-sgc" icon="terminal" title="STCP Gemini Server e STCP Gemini Client" subtitle="Confira as informações sobre os novos recursos, correções e atualizações mais recentes lançadas para os produtos." >}}
+  
+  {{< card link="dirl" icon="code" title="STCP Directlink" subtitle="Confira as informações sobre os novos recursos, correções e atualizações mais recentes lançadas para os produtos." >}}
 
-{{< feature-card
-    title="STCP Gemini Server e STCP Gemini Client"
-    icon="terminal"
-    subtitle="Confira as informações sobre os novos recursos, correções e atualizações mais recentes lançadas para os produtos."
-    link="sgs-sgc"
->}}
+  {{< card link="stcpren-go" icon="color-swatch" title="STCP Gemini Rename" subtitle="Confira as informações sobre os novos recursos, correções e atualizações mais recentes lançadas para os produtos." >}}
 
-<div class="mt-6"></div>
+  {{< card link="stwadm" icon="cloud" title="STCP OFTP Web Admin" subtitle="Confira as informações sobre os novos recursos, correções e atualizações mais recentes lançadas para os produtos.">}}
 
-{{< feature-card
-    title="STCP Gemini Rename"
-    icon="terminal"
-    subtitle="Confira as informações sobre os novos recursos, correções e atualizações mais recentes lançadas para os produtos."
-    link="stcpren-go"
->}}
-
-<div class="mt-6"></div>
-
-{{< feature-card
-    title="STCP OFTP Web Admin"
-    icon="cloud"
-    subtitle="Confira as informações sobre os novos recursos, correções e atualizações mais recentes lançadas para os produtos."
-    link="stwadm"
->}}
-
-<div class="mt-6"></div>
-
-{{< feature-card
-    title="STCP Directlink"
-    icon="code"
-    subtitle="Confira as informações sobre os novos recursos, correções e atualizações mais recentes lançadas para os produtos."
-    link="dirl"
->}}
-
-
-<!-- {{< hextra/feature-grid >}} -->
-<!-- {{< /hextra/feature-grid >}} -->
+{{< /cards >}}
