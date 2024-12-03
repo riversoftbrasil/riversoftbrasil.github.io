@@ -1,0 +1,11 @@
+accor:
+  customer: "Accor Hotels"
+  profile: "O0055ACCORHOTELS"
+  url: "stcpaccor.accor.com.br"
+  port: "443"
+
+bradesco:
+  customer: "Bradesco"
+  profile: "O0055BRADESCO"
+  url: "rvsweb.bradesco.com.br"
+  port: "6002"
