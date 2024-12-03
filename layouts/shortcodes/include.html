@@ -1,0 +1,15 @@
+{{ $file := .Get 0 }} <!-- Primeiro argumento: o arquivo -->
+{{ $param := .Get 1 }} <!-- Segundo argumento: o parâmetro adicional -->
+{{ $content := readFile $file }} <!-- Lê o conteúdo do arquivo Markdown -->
+
+<!-- Pega o parâmetro "cliente" do Front Matter -->
+<!-- {{/* $dynamicValue := .Page.Params.cliente */}} -->
+
+<!-- Concatena o prefixo com o valor dinâmico -->
+<!-- {{/* $finalValue := printf "%s%s" $param $dynamicValue */}} -->
+
+<!-- Substitui as variáveis no conteúdo do template -->
+{{ $content = $content | replaceRE `{{ cliente }}` .Page.Params.c_customer }}
+{{ $content = $content | replaceRE `{{ url }}` .Page.Params.c_url }}
+{{ $content = $content | markdownify }}
+{{ $content }}
