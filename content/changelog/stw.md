@@ -4,6 +4,11 @@ breadcrumbs: false
 ---
 ## STCP OFTP Server e STCP OFTP Client
 
+#### {{< icon "clock" >}} &nbsp;  Versão 5.3.18.0 (lançada em novembro de 2024)
+
+- Implementação do suporte para o uso de proxies HTTP (Basic, NTLM, Digest, None) e SOCKS (SOCKS4 e SOCKS5) em conexões que utilizem o protocolo SFTP.
+- Implementação do suporte para definir o endereço da interface de rede local utilizada em conexões de saída pelos protocolos SFTP e FTP.
+
 #### {{< icon "clock" >}} &nbsp;  Versão 5.3.16.0 (lançada em agosto de 2024)
 
 - Implementação da opção na biblioteca de log ODBC para gravar os dados de auditoria da tabela TBLTRANSFERS tanto no banco de dados quanto em um arquivo texto (JSON).
@@ -96,7 +101,7 @@ breadcrumbs: false
 - Implementação dos parâmetros para sincronização da execução de comandos externos para os tipos de arquivos.
 - Melhorias na gravação de log do processo de varredura do STCPRen quando o diretório está sem acesso.
 - Melhoria na exibição de mensagem de confirmação do EERP.
-- Aumentar número de caracteres dos campos DirRegEx e FileRegEx no configurador do STCPREN.
+- Aumento do número de caracteres dos campos DirRegEx e FileRegEx no configurador do STCPREN.
 - Atualização das bibliotecas de segurança SSL/TLS (Openssl).
 - Atualização das bibliotecas da interface de comunicação do protocolo OFTP.
 
