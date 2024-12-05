@@ -1,8 +1,8 @@
-A transferência de arquivos (transmissão e/ou recepção) entre os parceiros e o servidor {{ customer }} será realizada através da aplicação cliente do STCP da {{ customer }}, disponível para as plataformas Windows (STCP OFTP Client) e Linux (STCP Gemini Client). Esse software será disponibilizado para os parceiros sem custos de licenciamento e suporte. 
+A transferência de arquivos (transmissão e/ou recepção) entre os parceiros e o servidor {{ customer }} será realizada através da aplicação cliente do STCP {{ customer }}, disponível para as plataformas Windows (STCP OFTP Client) e Linux (STCP Gemini Client). Esse software será disponibilizado para os parceiros sem custos de licenciamento e suporte. 
 
-Uma caixa postal (Usuário) será criada no servidor STCP da {{ customer }} e através do software cliente os arquivos serão transferidos de modo seguro entre o {{ customer }} e os seus parceiros. 
+Uma caixa postal (Usuário) será criada no servidor STCP {{ customer }} e através do software cliente os arquivos serão transferidos de modo seguro entre {{ customer }} e os seus parceiros. 
 
-Todo o processo envolvendo essa transferência de arquivos ocorre diretamente entre a {{ customer }} e os seus parceiros. Nenhuma informação será trafegada, administrada, coletada e/ou armazenada pela Riversoft. 
+Todo o processo envolvendo essa transferência de arquivos ocorre diretamente entre {{ customer }} e os seus parceiros. Nenhuma informação será trafegada, administrada, coletada e/ou armazenada pela Riversoft. 
 
 O STCP Gemini Client é uma aplicação cliente utilizada para transferência de arquivos seguro e multiprotocolo para aplicações de e-business e troca de informações corporativas, baseado na especificação OFTP (ODETTE File Transfer Protocol).
 
@@ -12,9 +12,9 @@ Esta seção tem como objetivo descrever os passos iniciais para instalação e 
 
 ### Requisitos
 
-O STCP Gemini Client está homologado para as distribuições CentOS (versões 7 e 8), Red Hat Enterprise Linux (versões 7 e 8), Amazon Linux, Oracle Linux (versões 7, 8 e 9), Debian (versão 9, 10, 11 e 12) e Ubuntu (versões 18.04, 20.04, 22.04 e 24.04).
+O STCP Gemini Clientestá homologado para as distribuições CentOS (versões 7 e 8), RedHat Enterprise Linux (versões 7, 8 e 9), Amazon Linux (versões 1, 2 e 2023), Oracle Linux (versões 7, 8 e 9), Rocky Linux (versões 8 e 9), Debian (versão 9, 10, 11 e 12) e Ubuntu (versões 18.04, 20.04, 22.04 e 24.04).
 
-Por questões de segurança, o STCP Gemini Client utiliza versões mais recentes das bibliotecas OPENSSL, LIBSSH e PCRE2. 
+Por questões de segurança, o STCP Gemini Client utiliza versões mais recentes das bibliotecas **openssl**, **libssh**, **pcre2** e **libargon2**. 
 
 Essas bibliotecas são dependências (pré-requisitos) para que o STCP Gemini Client possa ser implantado corretamente e deverão estar instaladas no servidor em que o software será implantado.
 
@@ -24,12 +24,10 @@ A instalação do STCP Gemini Client será realizada através do repositório of
 
 ### Instalação das dependências
 
-![](img/image-01.png)
-
 As dependências para o STCP Gemini Client podem ser instaladas através do repositório EPEL, assim como, através dos seus respectivos pacotes RPM e conforme padrão e práticas adotadas por cada organização.
 
-``` bash
-$ yum install epel-release
+```bash
+$ yum install -y epel-release
 ```
 
 {{< callout type="info" >}}
@@ -42,175 +40,162 @@ No Amazon Linux o acesso ao EPEL pode ser habilitado através do comando:
 amazon-linux-extras enable epel
 ```
 
+{{< callout type="info" >}}
+Nota: O EPEL (Extra Packages for Enterprise Linux) é um repositório utilizado por administradores de sistemas Linux que necessitam instalar no servidor, pacotes mais recentes e versões atualizadas de bibliotecas, visto que esses pacotes mais novos não são imediatamente adicionados aos repositórios oficiais.
+{{< /callout >}}
+
+Para o Amazon Linux 1 e 2 o acesso ao EPEL pode ser habilitado através dos comandos:
+
+```bash
+# Amazon Linux 1
+
+$ yum update -y
+$ yum install -y epel-release
+
+# Amazon Linux 2
+
+$ yum update -y
+$ amazon-linux-extras install epel -y
+```
+
+{{< callout type="warning" >}}
+**Nota:** A instalação do EPEL não é necessária para o Amazon Linux 2023.
+{{< /callout >}}
+
 No Oracle Linux, de acordo com a versão utilizada, o acesso ao EPEL pode ser habilitado através do comando abaixo. Para mais informações consulte a documentação da Oracle (https://yum.oracle.com/).
 
-{{< tabs items="release-el7,release-el8,release-el9" >}}
-
-  {{< tab >}}
-  ```
-  yum install Oracle-epel-release-el7.x86_64
-  ```
-  {{< /tab >}}
-  {{< tab >}}
-  ```
-  yum install Oracle-epel-release-el8.x86_64
-  ```{{< /tab >}}
-  {{< tab >}}
-  ```
-  yum install Oracle-epel-release-el9.x86_64
-  ```{{< /tab >}}
-{{< /tabs >}}
+```bash
+$ yum install Oracle-epel-release-el7.x86_64
+$ yum install Oracle-epel-release-el8.x86_64
+$ yum install Oracle-epel-release-el9.x86_64 
+```
 
 Mais informações sobre como configurar o EPEL, podem ser obtidas através do link abaixo ou na documentação da distribuição utilizada.
 
+```
 https://fedoraproject.org/wiki/EPEL
+```
 
 ### Instalação do STCP Gemini Client
 
-Para instalar o STCP Gemini Client será necessária a configuração do repositório oficial da Riversoft no servidor.
+Para instalar o STCP Gemini Client será necessária a configuração do repositório oficial da Riversoft no servidor conforme a distribuição Linux utilizada.
 
 Para isso, utilizando o terminal, execute os passos a seguir:
 
 ```bash
-$ vi /etc/yum.repos.d/riversoft.repo
+# RHEL 7, Oracle Linux 7, Amazon Linux 1, 2 e CentOS 7
+
+$ curl https://repo.riversoft.com.br/configs/riversoft-centos-7.repo -- output /etc/yum.repos.d/riversoft-release.repo
 ```
-
-Este comando criará um arquivo chamado riversoft-release.repo. Insira nele os seguintes dados:
-
-* Para as versões CentOS 7, Red Hat Enterprise Linux 7, Oracle Linux 7 e Amazon Linux:
-
-```
-[Riversoft] 
-name=Riversoft Packages for Enterprise Linux 7 - $basearch 
-baseurl=http://repoyum.riversoft.com.br/riversoft_repo/prod/centos/7/$basearch
-enabled=1 
-gpgcheck=1 
-```
-
-* Para as versões CentOS 8, Red Hat Enterprise Linux 8, Oracle Linux 8 e Oracle Linux 9:
-  
-```
-[Riversoft] 
-name=Riversoft Packages for Enterprise Linux 8 - $basearch 
-baseurl=http://repoyum.riversoft.com.br/riversoft_repo/prod/centos/8/$basearch
-enabled=1 
-gpgcheck=1
-```
-
-O arquivo de configuração do repositório oficial da Riversoft também poderá ser obtido utilizando o comando abaixo:
-
-* Para as versões CentOS 7, Red Hat Enterprise Linux 7, Oracle Linux 7 e Amazon Linux:
 
 ```bash
-$ curl https://www.riversoft.com.br/yum/centos-7.repo --output /etc/yum.repos.d/riversoft-release.repo -k
+# RHEL 8, Oracle Linux 8, Rocky Linux 8 e CentOS 8
+$ curl https://repo.riversoft.com.br/configs/riversoft-redhat-8.repo -- output /etc/yum.repos.d/riversoft-release.repo
 ```
 
-* Para as versões CentOS 8, Red Hat Enterprise Linux 8, Oracle Linux 8 e Oracle Linux 9:
-
 ```bash
-$ curl https://www.riversoft.com.br/yum/centos-8.repo --output /etc/yum.repos.d/riversoft-release.repo -k
+# RHEL 9, Oracle Linux 9, Rocky Linux 9 e Amazon Linux 2023
+
+$ curl https://repo.riversoft.com.br/configs/riversoft-redhat-9.repo -- output /etc/yum.repos.d/riversoft-release.repo
 ```
 
 Após a configuração do repositório, utilize o comando padrão do YUM para instalar o STCP Gemini Client.
 
 ```bash
-$ yum install stcpgemini-client.x86_64
+$ yum install -y stcpgemini-client.x86_64
 ```
 
-Confirme as informações exibidas na tela para concluir a instalação e siga para a seção Configuração do STCP Gemini Client.
+Confirme as informações exibidas na tela para concluir a instalação e siga para o passo [Configuração](#configuração). 
+
+Este comando criará um arquivo chamado riversoft-release.repo. Insira nele os seguintes dados:
 
 ## Instalação: Ubuntu e Debian
 
 ### Instalação das dependências
 
-A instalação das dependências para o STCP Gemini Client pode ser realizada através do gerenciados de pacotes APT, assim como, através dos seus respectivos pacotes RPM e conforme padrão e práticas adotadas por cada organização.
-
-![](img/image-02.png)
+A instalação das dependênciaspara o STCP Gemini Client pode ser realizada através do gerenciados de pacotes APT, assim como, através dos
+seus respectivos pacotes RPM e conforme padrão e práticas adotadas por cada organização.
 
 Utilizando o terminal, execute o passo a seguir:
 
 ```bash
-$ apt-get update
-$ apt-get install pcre2-utils
+$ apt update
+$ apt install -y pcre2-utils gnupg2 libargon2*
 ```
 
 ### Instalação do STCP Gemini Client
 
-Para instalar o STCP Gemini Client será necessária a configuração do repositório oficial e da chave pública de assinatura de pacotes da Riversoft.
+O próximo passo será configurar o repositório oficial da Riversoft no servidor conforme a distribuição Linux utilizada.
 
 Utilizando o terminal, execute os passos a seguir:
 
 ```bash
-$ apt-get install gnupg2
-$ wget -O - -q http://apt.riversoft.com.br/riversoft_repo/apt.riversoft.pub | apt-key add -
+# Ubuntu 18.04
+$ curl https://repo.riversoft.com.br/configs/riversoft-apt-repobionic.list > /etc/apt/sources.list.d/apt-riversoft.list
 ```
-
-O próximo passo será criar o arquivo de configuração de acesso ao repositório oficial dos pacotes da Riversoft.
 
 ```bash
-$ vi /etc/apt/sources.list.d/apt-riversoft.list
-``` 
-
-Este comando criará um arquivo chamado apt-riversoft.list, insira nele os seguintes dados:
-
-* Para a versão Ubuntu 18.04 (bionic):
-  
-```
-deb http://apt.riversoft.com.br/riversoft_repo/debian/ bionic main
+# Ubuntu 20.04 e Debian 9, 10 e 11
+$ curl https://repo.riversoft.com.br/configs/riversoft-apt-repofocal.list > /etc/apt/sources.list.d/apt-riversoft.list
 ```
 
-* Para a versão Ubuntu 20.04 (focal) e Debian:
-
+```bash
+# Ubuntu 22.04
+$ curl https://repo.riversoft.com.br/configs/riversoft-apt-repojammy.list > /etc/apt/sources.list.d/apt-riversoft.list
 ```
-deb http://apt.riversoft.com.br/riversoft_repo/debian/ focal main
+
+```bash
+# Ubuntu 24.04 e Debian 12
+$ curl https://repo.riversoft.com.br/configs/riversoft-apt-reponoble.list > /etc/apt/sources.list.d/apt-riversoft.list
 ```
 
-* Para a versão Ubuntu 22.04, Ubuntu 24.04 e Debian 12:
+Antes de instalar o STCP Gemini Client será necessário incluir a **chave pública GPG**, para que o sistema possa verificar a autenticidade dos pacotes do repositório oficial da Riversoft.
 
+Utilizando o terminal, execute os passos a seguir:
+
+```bash
+# Ubuntu 18.04, 20.04 e Debian 9, 10 e 11
+$ curl https://repo.riversoft.com.br/certs/riversoft.asc | gpg --dearmor >> /etc/apt/trusted.gpg.d/riversoft.gpg
 ```
-deb http://apt.riversoft.com.br/riversoft_repo/debian/ noble main
+
+```bash
+# Ubuntu 22.04, 24.04 e Debian 12
+$ curl https://repo.riversoft.com.br/certs/riversoft.asc | gpg --dearmor >> /usr/share/keyrings/riversoft-key.gpg
 ```
 
 Após a configuração do repositório, utilize os comandos padrão do APT para instalar o STCP Gemini Client.
 
 ```bash
-$ apt-get update
-$ apt-get install stcpgemini-client
+$ apt update
+$ apt install stcpgemini-client
 ```
 
-Confirme as informações exibidas na tela para concluir a instalação e siga para os passo abaixo de **Configuração** do STCP Gemini Client. 
+Confirme as informações exibidas na tela para concluir a instalação e siga para o passo  de **Configuração** logo abaixo.  
 
 ## Configuração
 
-Toda a configuração da aplicação será realizada através do STCP Gemini Client Config. Não é necessária a utilização do super-usuário (root) para a configuração. 
-
-![](img/image-03.png)
+Toda a configuração da aplicação será realizada através do STCP Gemini ClientConfig. Não é necessária a utilização do super-usuário (root) para a configuração. 
 
 Siga os passos abaixo para criar o arquivo de configuração da aplicação:
 
 ```bash
 $ cd /usr/local/stcpclient/configs/
-```
-
-```bash
 $ cp example-stcpclient.config.json stcpclient.config.json
 ```
 
-Execute o configurador do STCP Gemini Client e siga os passos exibidos na tela para concluir a configuração (consulte tabela abaixo com os dados para preenchimento).
+Execute o configurador do STCP Gemini Client e siga os passos exibidos na tela para concluir a configuração.
 
 ```bash
 $ stcpclient-config init
 ```
 
-![](img/image-04.png)
-
 | Parâmetros       |  Descrição      | 
 | -------------    | :-------------: | 
-| Número de série  |  6728FA4939014373BE1268E899982C87DEEC  | 
+| Número de série  |  **Fornecido por {{ customer }}**   | 
 | Sistema operacional   | 0-Linux                  |    
 | Nome do Perfil        | {{ profile }}            |   
-| OID (Odette ID)       | **Fornecido pela {{ customer }}**  |   
-| Senha OID (Odette ID) | **Fornecido pela {{ customer }}**  |   
+| OID (Odette ID)       | **Fornecido por {{ customer }}**  |   
+| Senha OID (Odette ID) | **Fornecido por {{ customer }}**  |   
 | Endereço IP           | {{ url }}       |   
 | Porta                 |         {{ port }}                   |   
 | Comunicação segura (TLS) |         Sim               |   
@@ -227,7 +212,7 @@ Para executar a aplicação, através do terminal, utilize a linha de comando ab
 $ stcpclient -p {{ profile }} -r 1 /usr/local/stcpclient/configs/stcpclient.config.json
 ```
 
-Após a execução do STCP Gemini Client, assim que a conexão com servidor da {{ customer }} for estabelecida com sucesso, os arquivos serão enviados e/ou recebidos automaticamente:
+Após a execução do STCP Gemini Client, assim que a conexão com servidor {{ customer }} for estabelecida com sucesso, os arquivos serão enviados e/ou recebidos automaticamente:
 
 ![](img/image-05.png)
 
@@ -235,18 +220,18 @@ Após a execução do STCP Gemini Client, assim que a conexão com servidor da {
 
 Os arquivos que serão enviados para a {{ customer }} deverão ser disponibilizados na pasta SAIDA da aplicação.
 
-```
+```bash
 /usr/local/stcpclient/data/STCPClt/{{ profile }}/SAIDA
 ```
 
-Em seguida, execute o STCP Gemini Client conforme descrito acima na seção de Execução.
+Em seguida, execute o STCP Gemini Client conforme descrito acima na seção de [Execução](#execução).
 
 {{< callout type="info" >}}
 **Nota:** Todos os arquivos que estiverem na pasta SAIDA serão enviados. 
 Os arquivos enviados com sucesso serão removidos automaticamente da pasta de SAIDA.
 {{< /callout >}}
 
-Ao executar o STCP Gemini Client, os arquivos que forem recebidos do {{ customer }} ficarão disponíveis na pasta ENTRADA da aplicação.
+Ao executar o STCP Gemini Client, os arquivos que forem recebidos na caixa {{ customer }} ficarão disponíveis na pasta ENTRADA da aplicação.
 
 ```
 /usr/local/stcpclient/data/STCPClt/{{ profile }}/ENTRADA
@@ -264,11 +249,11 @@ $ sudo cat /etc/crontab
 
 ## Logs 
 
-Todo o processo de conexão e transferência de arquivos do STCP Gemini Client é registrado em arquivos de log. 
+Todo o processo de conexão e transferência de arquivos do STCP Gemini Client é registrado em arquivos de log.
 
-A aplicação cria um conjunto de arquivos de texto diário contendo as informações de cada conexão, envio e recepção de arquivos. 
+A aplicação cria um conjunto de arquivos de texto diário contendo as informações de cada conexão, envio e recepção de arquivos.
 
-Através dos arquivos de log é possível auditar todos os eventos de comunicação e ocorrências de sucesso e/ou falhas no processo de transferência.
+Através dos arquivos de log é possível auditar todosos eventos de comunicação e ocorrências de sucesso e/ou falhas no processo de transferência
 
 ![](img/image-06.png)
 
