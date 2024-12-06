@@ -1,6 +1,9 @@
 ---
 toc: false
 breadcrumbs: false
+# aliases:
+#   - /changelog/dirl/
+# slug: "dirl"
 ---
 ## STCP Directlink
 
