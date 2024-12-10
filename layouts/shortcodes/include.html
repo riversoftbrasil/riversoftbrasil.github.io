@@ -17,6 +17,7 @@
 {{ $content = $content | replaceRE `{{ profile }}` $d.profile }}
 {{ $content = $content | replaceRE `{{ url }}` $d.url }}
 {{ $content = $content | replaceRE `{{ port }}` $d.port }}
+{{ $content = $content | replaceRE `{{ tls }}` $d.tls }}
 
 <!-- Renderiza o markdown -->
 {{ $content = $content | markdownify }}
