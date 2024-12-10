@@ -3,15 +3,69 @@ accor:
   profile: "O0055ACCORHOTELS"
   url: "stcpaccor.accor.com.br"
   port: "443"
+  tls: "Sim"
 
 bradesco:
   customer: "Bradesco"
   profile: "O0055BRADESCO"
   url: "rvsweb.bradesco.com.br"
   port: "6002"
+  tls: "Sim"
 
 bk:
   customer: "Burger King"
   profile: "O0055BK"
-  url: "stcp.bk.com.br"
-  port: "9999"
+  url: "stcp.burguerking.com.br"
+  port: "4443"
+  tls: "Sim"
+
+
+edenred:
+  customer: "Edenred"
+  profile: "O0055TICKET"
+  url: "stcp.ticket.com.br"
+  port: "443"
+  tls: "Sim"
+
+e-sales:
+  customer: "ESALES"
+  profile: "O0055ESALES"
+  url: "oftp.theke.com.br"
+  port: "443"
+  tls: "Sim"
+
+
+odontoprev:
+  customer: "OdontoPrev"
+  profile: "O0055ODONTOPREV"
+  url: "**Fornecido pela OdontoPrev**"
+  port: "**Fornecido pela OdontoPrev**" 
+  tls: "Sim"
+
+sicredi:
+  customer: "Sicredi"
+  profile: "O0055SICREDI"
+  url: "**Fornecido pela SICREDI**"
+  port: "**Fornecido pela SICREDI**"
+  tls: "**Verificar com a SICREDI**"
+
+sky:
+  customer: "SKY"
+  profile: "O0055SKY"
+  url: "stcp.sky.com.br"
+  port: "443"
+  tls: "Sim"
+
+sodexo:
+  customer: "Sodexo"
+  profile: "O0055SODEXO"
+  url: "stcp.sodexo.com.br"
+  port: "443"
+  tls: "Sim"
+
+unicred:
+  customer: "Unicred"
+  profile: "O0055UNICRED"
+  url: "**Fornecido pela Unicred**"
+  port: "**Fornecido pela Unicred**" 
+  tls: "Sim"

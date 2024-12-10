@@ -207,7 +207,7 @@ $ stcpclient-config init
 | Senha OID (Odette ID) | **Fornecido por {{ customer }}**  |   
 | Endereço IP           | {{ url }}       |   
 | Porta                 |         {{ port }}                   |   
-| Comunicação segura (TLS) |         Sim               |   
+| Comunicação segura (TLS) |         {{ tls }}               |   
 | Certificado de arquivo   |      Deixar em branco     |   
 | Certificado de diretório |      Deixar em branco     |   
 | Backup arquivos transmitidos |         Não               |   
@@ -274,5 +274,3 @@ Os arquivos de log são armazenados na pasta LOG.
 
 ![](../img/image-07.png)
 
-Para mais detalhes consulte a documentação do produto:
-[STCP Gemini Client](/stcpgeminiclient/)
