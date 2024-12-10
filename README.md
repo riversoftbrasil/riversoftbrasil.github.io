@@ -1,6 +1,6 @@
 # Documentação Riversoft STCP
 
-![](static/images/home.png)
+![](static/images/home.png)!
 
 ## Visão Geral
 
