@@ -10,8 +10,8 @@ bradesco:
   url: "rvsweb.bradesco.com.br"
   port: "6002"
 
-edenred:
-  customer: "Edenred"
-  profile: "O0055TICKET"
-  url: "stcp.ticket.com.br"
-  port: "443"
+bk:
+  customer: "Burger King"
+  profile: "O0055BK"
+  url: "stcp.bk.com.br"
+  port: "9999"
