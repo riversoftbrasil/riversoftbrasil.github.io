@@ -1,3 +1,7 @@
+![](../img/logo.png)
+
+<br>
+
 A transferência de arquivos (transmissão e/ou recepção) entre os parceiros e o servidor {{ customer }} será realizada através da aplicação cliente do STCP {{ customer }}, disponível para as plataformas Windows (STCP OFTP Client) e Linux (STCP Gemini Client). Esse software será disponibilizado para os parceiros sem custos de licenciamento e suporte. 
 
 Uma caixa postal (Usuário) será criada no servidor STCP {{ customer }} e através do software cliente os arquivos serão transferidos de modo seguro entre {{ customer }} e os seus parceiros. 
@@ -24,6 +28,8 @@ A instalação do STCP Gemini Client será realizada através do repositório of
 
 ### Instalação das dependências
 
+![](../img/image-01.png) 
+
 As dependências para o STCP Gemini Client podem ser instaladas através do repositório EPEL, assim como, através dos seus respectivos pacotes RPM e conforme padrão e práticas adotadas por cada organização.
 
 ```bash
@@ -39,10 +45,6 @@ No Amazon Linux o acesso ao EPEL pode ser habilitado através do comando:
 ```bash
 amazon-linux-extras enable epel
 ```
-
-{{< callout type="info" >}}
-Nota: O EPEL (Extra Packages for Enterprise Linux) é um repositório utilizado por administradores de sistemas Linux que necessitam instalar no servidor, pacotes mais recentes e versões atualizadas de bibliotecas, visto que esses pacotes mais novos não são imediatamente adicionados aos repositórios oficiais.
-{{< /callout >}}
 
 Para o Amazon Linux 1 e 2 o acesso ao EPEL pode ser habilitado através dos comandos:
 
@@ -116,6 +118,8 @@ Este comando criará um arquivo chamado riversoft-release.repo. Insira nele os s
 A instalação das dependênciaspara o STCP Gemini Client pode ser realizada através do gerenciados de pacotes APT, assim como, através dos
 seus respectivos pacotes RPM e conforme padrão e práticas adotadas por cada organização.
 
+![](../img/image-02.png) 
+
 Utilizando o terminal, execute o passo a seguir:
 
 ```bash
@@ -176,6 +180,8 @@ Confirme as informações exibidas na tela para concluir a instalação e siga p
 
 Toda a configuração da aplicação será realizada através do STCP Gemini ClientConfig. Não é necessária a utilização do super-usuário (root) para a configuração. 
 
+![](../img/image-03.png) 
+
 Siga os passos abaixo para criar o arquivo de configuração da aplicação:
 
 ```bash
@@ -188,6 +194,9 @@ Execute o configurador do STCP Gemini Client e siga os passos exibidos na tela p
 ```bash
 $ stcpclient-config init
 ```
+
+![](../img/image-04.png) 
+
 
 | Parâmetros       |  Descrição      | 
 | -------------    | :-------------: | 
@@ -214,7 +223,7 @@ $ stcpclient -p {{ profile }} -r 1 /usr/local/stcpclient/configs/stcpclient.conf
 
 Após a execução do STCP Gemini Client, assim que a conexão com servidor {{ customer }} for estabelecida com sucesso, os arquivos serão enviados e/ou recebidos automaticamente:
 
-![](img/image-05.png)
+![](../img/image-05.png)
 
 ### Como enviar e receber arquivos
 
@@ -253,9 +262,9 @@ Todo o processo de conexão e transferência de arquivos do STCP Gemini Client �
 
 A aplicação cria um conjunto de arquivos de texto diário contendo as informações de cada conexão, envio e recepção de arquivos.
 
-Através dos arquivos de log é possível auditar todosos eventos de comunicação e ocorrências de sucesso e/ou falhas no processo de transferência
+Através dos arquivos de log é possível auditar todosos eventos de comunicação e ocorrências de sucesso e/ou falhas no processo de transferência.
 
-![](img/image-06.png)
+![](../img/image-06.png)
 
 Os arquivos de log são armazenados na pasta LOG.
 
@@ -263,7 +272,7 @@ Os arquivos de log são armazenados na pasta LOG.
 /usr/local/stcpclient/logs
 ```
 
-![](img/image-07.png)
+![](../img/image-07.png)
 
 Para mais detalhes consulte a documentação do produto:
 [STCP Gemini Client](/stcpgeminiclient/)
