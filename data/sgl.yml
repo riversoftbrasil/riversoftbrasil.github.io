@@ -9,6 +9,7 @@ bradesco:
   customer: "Bradesco"
   profile: "O0055BRADESCO"
   url: "rvsweb.bradesco.com.br"
+  ip: "rvsweb.bradesco.com.br"
   port: "6002"
   tls: "Sim"
 
@@ -34,6 +35,13 @@ e-sales:
   port: "443"
   tls: "Sim"
 
+  itau:
+  customer: "Itaú"
+  profile: "O0055ITAU"
+  url: "stcpsrv.itau-unibanco.com.br"
+  ip: "stcpsrv.itau-unibanco.com.br"
+  port: "443"
+  tls: "Sim"
 
 odontoprev:
   customer: "OdontoPrev"

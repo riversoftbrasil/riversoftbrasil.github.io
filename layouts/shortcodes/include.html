@@ -16,6 +16,7 @@
 {{ $content = $content | replaceRE `{{ customer }}` $d.customer }}
 {{ $content = $content | replaceRE `{{ profile }}` $d.profile }}
 {{ $content = $content | replaceRE `{{ url }}` $d.url }}
+{{ $content = $content | replaceRE `{{ ip }}` $d.ip }}
 {{ $content = $content | replaceRE `{{ port }}` $d.port }}
 {{ $content = $content | replaceRE `{{ tls }}` $d.tls }}
 
