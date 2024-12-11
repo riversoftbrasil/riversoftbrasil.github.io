@@ -35,7 +35,7 @@ e-sales:
   port: "443"
   tls: "Sim"
 
-  itau:
+itau:
   customer: "Itaú"
   profile: "O0055ITAU"
   url: "stcpsrv.itau-unibanco.com.br"
