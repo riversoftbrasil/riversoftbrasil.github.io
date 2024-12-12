@@ -767,7 +767,7 @@ TLS  | Configura a comunicação segura com criptografia e certificação digita
 AUTH TLS| Habilita o processo de autenticação criptografado, garantindo a segurança na troca de senha.
 AUTH SSL| Habilita o envio de um comando explícito para o servidor FTP a fim de utilizar a segurança SSL.
 Tamanho máximo do buffer| Preencha este campo com o tamanho máximo dos blocos de dados que serão transferidos. O intervalo válido é de 1 até 65535.
-FTP Passivo | XXXXXXXXXXXXXXXX.
+<!-- FTP Passivo | Modo de conexão com um servidor FTP que permite que o cliente inicie a transferência de dados. -->
 ------------------
 
 {{< icon "chevron-right" >}}Na guia **Proxy**, configure as seguintes opções:
@@ -783,6 +783,17 @@ Proxy Type | Parâmetro utilizado para gerenciar as configurações do Firewall 
 Usuário    | Preencha este campo com o nome do usuário autorizado a utilizar o serviço de Proxy.
 Senha      |  Preencha este campo com a senha do usuário autorizado a utilizar o serviço de Proxy.
 Confirmar  | Preencha este campo com a senha informada no campo Senha para validação.
+
+Configuração de Proxy Type utilizando o protocolo FTP:
+
+| Configuração         | Descrição                                                                                                       |
+|----------------------|-----------------------------------------------------------------------------------------------------------------|
+| **SITE site**        | Indica um proxy configurado diretamente com um site ou endereço específico. Não há informações claras sobre autenticação. |
+| **USER user@site**   | Um método de proxy que exige autenticação baseada em nome de usuário com o formato `user@site`.                 |
+| **USER with login**  | Proxy que requer um nome de usuário simples (não no formato `user@site`) e autenticação com senha.              |
+| **USER/PASS/ACCT**   | Proxy que usa autenticação mais complexa, incluindo nome de usuário (USER), senha (PASS) e possivelmente um identificador adicional (ACCT - Account). |
+| **OPEN site**        | Um proxy aberto, sem autenticação necessária. Qualquer conexão pode ser estabelecida, desde que o endereço do site esteja configurado. |
+| **firewall@site**    | Indica uma configuração que conecta a um proxy através de um firewall, utilizando um endereço no formato `firewall@site`. |
 
 {{< icon "chevron-right" >}}Na guia **TLS**, configure as seguintes opções:
 
@@ -841,6 +852,17 @@ Proxy Type | Parâmetro utilizado para gerenciar as configurações do Firewall 
 Usuário    | Preencha este campo com o nome do usuário autorizado a utilizar o serviço de Proxy.
 Senha      | Preencha este campo com a senha do usuário autorizado a utilizar o serviço de Proxy.
 Confirmar  | Preencha este campo com a senha informada no campo Senha para validação.
+
+Configuração de Proxy Type utilizando o protocolo SFTP:
+
+| Tipo de Proxy      | Configuração | Descrição                                                                                     |
+|--------------------|--------------|---------------------------------------------------------------------------------------------|
+| **HTTP Proxy**     | **Basic**    | Usa autenticação básica (usuário e senha) baseada no protocolo HTTP. Envia credenciais codificadas em Base64, sendo inseguro sem HTTPS. |
+|                    | **NTLM**     | Método de autenticação mais seguro, usado principalmente em ambientes Windows. Funciona com o protocolo de autenticação da Microsoft. |
+|                    | **Digest**   | Alternativa mais segura à autenticação básica. Usa hashing para transmitir as credenciais, protegendo-as contra interceptações simples. |
+|                    | **None**     | Proxy sem autenticação. Aberto a qualquer conexão, desde que o endereço seja configurado corretamente. |
+| **SOCKS Proxy**    | **SOCKS4**   | Funciona na camada de transporte (TCP). Não suporta DNS remoto ou UDP. Não requer autenticação, sendo aberto para qualquer usuário com acesso ao endereço e porta. |
+|                    | **SOCKS5**   | Versão aprimorada do SOCKS4. Suporte para DNS remoto e UDP. Suporta autenticação (usuário e senha), mas também pode ser usado sem autenticação, dependendo das configurações. |
 
 {{< icon "chevron-right" >}}Na guia **TLS**, configure as seguintes opções.
 
