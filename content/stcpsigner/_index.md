@@ -11,6 +11,7 @@ next:
 # draft: false
 lastmod: 2024-05-27
 ---
+## Introdução
 O STCP Signer é um módulo utilizado para garantir a integridade, autenticidade, confidencialidade e inviolabilidade de um arquivo através da tecnologia de assinatura digital e da criptografia.
 
 ![](img/sign-01.png "O desenho ilustra a comunicação entre um remetente e um destinatário")

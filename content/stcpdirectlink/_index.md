@@ -13,7 +13,7 @@ next: /stcpdirectlink/01-install
 draft: false
 lastmod: 2024-09-09
 ---
-## O que é o STCP Directlink?
+## Introdução
 
 O STCP Directlink é uma aplicação que, ao ser integrada aos produtos <a href="/stcpserver/" target="_blank">STCP OFTP Server (Windows)</a> {{< icon "arrow-top-right-on-square" >}} ou <a href="/stcpgeminiserver/" target="_blank">STCP Gemini Server (Linux)</a> {{< icon "arrow-top-right-on-square" >}}, oferece uma solução simples e robusta para transferência segura de arquivos (Download e Upload) através dos protocolos <a href="/utils/protocols/#httphttps" target="_blank">HTTPS</a> e <a href="/utils/protocols/#sftp" target="_blank">SFTP</a>.
 
