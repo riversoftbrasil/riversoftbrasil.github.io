@@ -5,7 +5,7 @@ cascade:
   type: docs
 sidebar:
   exclude: false
-weight: 2
+weight: 3
 prev: /stcpserver/01-install-srv
 next: /stcpserver/03-util
 slug: config

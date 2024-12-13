@@ -5,12 +5,12 @@ cascade:
   type: docs
 sidebar:
   exclude: false
-weight: 1
+weight: 2
 prev: /stcpserver
 next: /stcpserver/02-config
-# slug:
+slug: instalacao
 draft: false
-lastmod: 2024-04-04
+lastmod: 2024-12-13
 ---
 ## Distribuição dos pacotes
 

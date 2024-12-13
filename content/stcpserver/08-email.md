@@ -31,7 +31,7 @@ Tal procedimento pode ser realizado através do script _STCPEMAILEVT.VBS_, exist
 
 {{< icon "chevron-right" >}}Edite o arquivo _STCPEMAILEVT.VBS_ e preencha as informações conforme a imagem.
 
-![](img/img-01.png)
+![](img/email-01.png)
 
 {{< callout type="info" >}}
 Como padrão para este documento, utilizaremos o utilitário OpenSSL para realização do processo da geração e configuração do certificado digital. O OpenSSL está localizado na Pasta Program do diretório de instalação do STCP OFTP Server (Ex: C:\STCPODT\Program)
@@ -40,7 +40,7 @@ Como padrão para este documento, utilizaremos o utilitário OpenSSL para realiz
 
 {{< icon "chevron-right" >}}Além das configurações _strMailFrom_,_strMailTo_ também deverão ser configurados os parâmetros referentes ao servidor SMTP.
 
-![](img/img-02.png)
+![](img/email-02.png)
 
 {{< icon "chevron-right" >}}Salve o arquivo.
 
@@ -49,7 +49,7 @@ Como padrão para este documento, utilizaremos o utilitário OpenSSL para realiz
 ```
 cscript C:\STCPODT\Program\STCPEMAILEVT.VBS NOME-SERVIDOR MSG1 MSG2
 ```
-![](img/img-03.png)
+![](img/email-03.png)
 
 Após a configuração e testes do script VBS, uma alteração nas Propriedades de Log do STCP será necessária, habilitando a execução de um comando externo sempre ocorrer eventos que contenham algum erro (Nível de log = 1) e informando a linha de comando abaixo no parâmetro **Comando externo**.
 
@@ -61,7 +61,7 @@ cscript //B C:\STCPODT\Program\STCPEMAILEVT.VBS NOME-SERVIDOR "
 Nota: Observe que logo após o nome do servidor será necessário inserir uma aspas duplas (abre aspas).
 {{< /callout >}}
 
-![](img/img-04.png)
+![](img/email-04.png)
 
 Após a execução destes procedimentos, clique no botão OK para salvar as alterações e [reinicie o serviço do Riversoft STCP OFTP Server](/stcpserver/03-util/#serviço-do-stcp-oftp-server) para que as estas sejam ativadas.
 
@@ -75,7 +75,7 @@ Tal procedimento pode ser realizado através do script **stcpemail.vbs**, existe
 
 {{< icon "chevron-right" >}}Edite o arquivo *stcpemail.vbs* e preencha os parâmetros referentes ao servidor SMTP:
 
-![](img/img-05.png)
+![](img/email-05.png)
 
 {{< icon "chevron-right" >}}Salve o arquivo.
 
@@ -84,7 +84,7 @@ Tal procedimento pode ser realizado através do script **stcpemail.vbs**, existe
 ```vb
 cscript //B C:\STCPODT\Program\ stcpemail.vbs de@dominio.com.br para@dominio.com.br nome-arquivo-teste
 ```
-![](img/img-06.png)
+![](img/email-06.png)
 
 {{< icon "chevron-right" >}}Acesse o STCP OFTP Server Config (Ex: D:\STCPODT\Program\Riversoft STCP OFTP Server Config) e na guia *Usuários*, selecione o usuário desejado e clique no botão *Propriedades*.
 
@@ -100,7 +100,7 @@ cscript //B C:\STCPODT\Program\stcpemail.vbs “de@dominio.com.br” para@domini
 Nota: Na linha de comando utilizamos a variável interna do STCP, **$LFNAME**, que nos contém o nome completo do arquivo local. A relação completa das variáveis internas do STCP OFTP Server pode ser obtida no item “Definição das variáveis internas do STCP OFTP Server”, no link: [variáveis internas do STCP](/utils/variables/).
 {{< /callout >}}
 
-![](img/img-07.png)
+![](img/email-07.png)
 
 {{< icon "chevron-right" >}}Clique no botão **OK** para salvar as alterações.
 
