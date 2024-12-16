@@ -10,7 +10,7 @@ sidebar:
 weight: 3
 prev: /02-config-chgpsw
 next: /stcpren
-draft:
+slug: css
 lastmod: 2024-05-27
 ---
 ## Imagem de fundo e CSS
@@ -112,7 +112,7 @@ O padrão de cores das bordas e cor de fundo do título do site padrão do STCP 
 #tituloLogin
 #frmLogin
 ```
-{{< icon "chevron-right" >}}Nas classes _#conteudo_ e _#frmLogin_ as alterações devem ser realizadas no parâmetro **border**, alterando o valor **#XXXXXX**pela cor desejada.
+{{< icon "chevron-right" >}}Nas classes _#conteudo_ e _#frmLogin_ as alterações devem ser realizadas no parâmetro **border**, alterando o valor **#XXXXXX** pela cor desejada.
 
 {{< icon "chevron-right" >}}Já na classe _#tituloLogin_ a alteração deverá ser realizada no parâmetro **background-color**, alterando o valor **#XXXXXX** pela cor desejada.
 

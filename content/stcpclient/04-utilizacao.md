@@ -9,7 +9,7 @@ sidebar:
 weight: 3
 prev: /stcpclient/02-config/
 next: /stcpclient/04-debug/
-# slug:
+slug: utilizacao
 draft: false
 lastmod: 2024-04-15
 ---

@@ -10,6 +10,7 @@ weight: 6
 prev: /stcpclient/05-update/
 next: 
 draft: false
+slug: notificacao-email
 lastmod: 2024-10-01
 ---
 ## Introdução

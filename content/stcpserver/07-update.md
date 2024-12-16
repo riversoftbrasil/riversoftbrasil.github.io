@@ -11,6 +11,7 @@ weight: 6
 prev: /stcpserver/05-debug
 next: /stcpserver/04-console
 draft: false
+slug: update
 lastmod: 2024-10-02
 ---
 

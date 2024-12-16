@@ -10,6 +10,7 @@ weight: 1
 prev: /stcpclient/
 next: /stcpclient/02-config/
 draft: false
+slug: instalacao
 lastmod: 2024-04-04
 ---
 ## Distribuição dos pacotes

@@ -6,10 +6,10 @@ cascade:
   type: docs
 sidebar:
   exclude: false
-weight: 1
+weight: 2
 prev: /stcpwebadmin
 next:
-# draft: false
+slug: instalacao
 lastmod: 2024-09-13
 ---
 # Distribuição dos pacotes

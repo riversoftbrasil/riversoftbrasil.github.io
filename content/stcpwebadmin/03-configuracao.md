@@ -6,10 +6,10 @@ cascade:
   type: docs
 sidebar:
   exclude: false
-weight: 2
+weight: 3
 prev:
 next:
-draft: false
+slug: configuracao
 lastmod: 2024-10-10
 ---
 # Configuração inicial

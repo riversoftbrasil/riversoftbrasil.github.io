@@ -9,6 +9,7 @@ weight: 3
 prev: /stcpserver/02-config
 next: /stcpserver/05-debug
 draft: false
+slug: utilizacao
 lastmod: 2024-05-10
 ---
 ## Utilização

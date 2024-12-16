@@ -8,7 +8,7 @@ sidebar:
 weight: 3
 prev: /stcpserver/01-install-srv
 next: /stcpserver/03-util
-slug: config
+slug: configuracao
 draft: false
 lastmod: 2024-09-23
 ---

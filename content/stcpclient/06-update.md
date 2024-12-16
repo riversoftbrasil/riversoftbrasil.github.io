@@ -11,6 +11,7 @@ weight: 5
 prev: 04-debug/
 next: 06-email/
 draft: false
+slug: update
 lastmod: 2024-10-02
 ---
 

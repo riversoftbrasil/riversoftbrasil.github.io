@@ -9,8 +9,9 @@ sidebar:
   exclude: false
 weight: 2
 prev: /01-install-chgpsw
-next: /03-css
+next: /04-css
 draft: false
+slug: configuracao
 lastmod: 2024-05-27
 ---
 ## Configuração no IIS

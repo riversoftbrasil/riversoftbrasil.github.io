@@ -9,8 +9,9 @@ sidebar:
   exclude: false
 weight: 1
 prev: /stcpchangepassword
-next: /02-config-chgpsw
+next: /03-configuracao
 draft: false
+slug: instalacao
 lastmod: 2024-05-27
 ---
 O pacote de instalação será distribuído através de um link pela Equipe de Sustentação da Riversoft.

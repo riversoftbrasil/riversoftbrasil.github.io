@@ -10,6 +10,7 @@ weight: 6
 prev: /stcpserver/06-update
 next: /stcpserver/07-email
 draft: false
+slug: stcpconsole
 lastmod: 2024-10-01
 ---
 ## O que é?

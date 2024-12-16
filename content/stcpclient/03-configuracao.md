@@ -10,6 +10,7 @@ weight: 2
 prev: /stcpclient/01-install-clt/
 next: /stcpclient/03-util/
 draft: false
+slug: configuracao
 lastmod: 2024-09-23
 ---
 ## Configurador
