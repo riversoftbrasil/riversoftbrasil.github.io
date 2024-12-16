@@ -50,12 +50,12 @@ odontoprev:
   port: "**Fornecido pela OdontoPrev**" 
   tls: "Sim"
 
-sicredi:
-  customer: "Sicredi"
-  profile: "O0055SICREDI"
-  url: "**Fornecido pela SICREDI**"
-  port: "**Fornecido pela SICREDI**"
-  tls: "**Verificar com a SICREDI**"
+# sicredi:
+#   customer: "Sicredi"
+#   profile: "O0055SICREDI"
+#   url: "**Fornecido pela SICREDI**"
+#   port: "**Fornecido pela SICREDI**"
+#   tls: "**Verificar com a SICREDI**"
 
 sky:
   customer: "SKY"
