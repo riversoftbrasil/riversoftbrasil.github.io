@@ -8,8 +8,8 @@ cascade:
 sidebar:
   exclude: false
 weight: 5
-prev: /stcpclient/04-debug/
-next: /stcpclient/06-email/
+prev: 04-debug/
+next: 06-email/
 draft: false
 lastmod: 2024-10-02
 ---

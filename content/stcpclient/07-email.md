@@ -85,7 +85,7 @@ Para realizar a validação das configurações realizadas no item anterior **(C
 cscript C:/STCPCLT/Program/stcp-notifica.vbs TESTE
 ```
 
-![](img/img-01.png)
+![](img/email-01.png)
 
 Caso nenhuma mensagem de erro seja apresentada, verifique se um e-mail de teste foi recebido nos endereços de e-mails configurados.
 
@@ -104,7 +104,7 @@ Após as configurações e testes do script serem realizados, acesse o _STCP OFT
 cscript //B C:\STCPCLT\Program\stcp-notifica.vbs TRANSF
 ```
 
-![](img/img-02.png)
+![](img/email-02.png)
 
 ## Notificação envio de arquivos (por arquivo)
 
@@ -118,7 +118,7 @@ Na janela _Propriedades do Perfil_, guia _Tipos de arquivos_, selecione o tipo d
 cscript //B C:\STCPCLT\Program\stcp-notifica.vbs TX $OFNAME
 ```
 
-![](img/img-03.png)
+![](img/email-03.png)
 
 {{< callout type="info" >}}
  NOTA: O parâmetro **$OFNAME** refere-se a uma variável interna do STCP OFTP que retorna o nome do arquivo enviado com sucesso.
@@ -135,7 +135,7 @@ Na janela _Propriedades do Perfil_, guia _Tipos de arquivos_, selecione o tipo d
 cscript //B C:\STCPCLT\Program\stcp-notifica.vbs RX $OFNAME
 ```
 
-![](img/img-04.png)
+![](img/email-04.png)
 
 {{< callout type="info" >}}
 NOTA: O parâmetro **$OFNAME** refere-se a uma variável interna do STCP OFTP que retorna o nome do arquivo recebido com sucesso.
@@ -151,7 +151,7 @@ Após as configurações e testes do script serem realizados, acesse o _STCP OFT
 cscript //B C:\STCPCLT\Program\stcp-notifica.vbs ERRO
 ```
 
-![](img/img-05.png)
+![](img/email-05.png)
 
 
 
