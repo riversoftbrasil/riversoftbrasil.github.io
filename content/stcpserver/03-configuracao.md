@@ -784,7 +784,7 @@ Usuário    | Preencha este campo com o nome do usuário autorizado a utilizar o
 Senha      |  Preencha este campo com a senha do usuário autorizado a utilizar o serviço de Proxy.
 Confirmar  | Preencha este campo com a senha informada no campo Senha para validação.
 
-Configuração de Proxy Type utilizando o protocolo FTP:
+<!-- Configuração de Proxy Type utilizando o protocolo FTP:
 
 | Configuração         | Descrição                                                                                                       |
 |----------------------|-----------------------------------------------------------------------------------------------------------------|
@@ -793,7 +793,7 @@ Configuração de Proxy Type utilizando o protocolo FTP:
 | **USER with login**  | Proxy que requer um nome de usuário simples (não no formato `user@site`) e autenticação com senha.              |
 | **USER/PASS/ACCT**   | Proxy que usa autenticação mais complexa, incluindo nome de usuário (USER), senha (PASS) e possivelmente um identificador adicional (ACCT - Account). |
 | **OPEN site**        | Um proxy aberto, sem autenticação necessária. Qualquer conexão pode ser estabelecida, desde que o endereço do site esteja configurado. |
-| **firewall@site**    | Indica uma configuração que conecta a um proxy através de um firewall, utilizando um endereço no formato `firewall@site`. |
+| **firewall@site**    | Indica uma configuração que conecta a um proxy através de um firewall, utilizando um endereço no formato `firewall@site`. | -->
 
 {{< icon "chevron-right" >}}Na guia **TLS**, configure as seguintes opções:
 
@@ -853,7 +853,7 @@ Usuário    | Preencha este campo com o nome do usuário autorizado a utilizar o
 Senha      | Preencha este campo com a senha do usuário autorizado a utilizar o serviço de Proxy.
 Confirmar  | Preencha este campo com a senha informada no campo Senha para validação.
 
-Configuração de Proxy Type utilizando o protocolo SFTP:
+<!-- Configuração de Proxy Type utilizando o protocolo SFTP:
 
 | Tipo de Proxy      | Configuração | Descrição                                                                                     |
 |--------------------|--------------|---------------------------------------------------------------------------------------------|
@@ -862,7 +862,7 @@ Configuração de Proxy Type utilizando o protocolo SFTP:
 |                    | **Digest**   | Alternativa mais segura à autenticação básica. Usa hashing para transmitir as credenciais, protegendo-as contra interceptações simples. |
 |                    | **None**     | Proxy sem autenticação. Aberto a qualquer conexão, desde que o endereço seja configurado corretamente. |
 | **SOCKS Proxy**    | **SOCKS4**   | Funciona na camada de transporte (TCP). Não suporta DNS remoto ou UDP. Não requer autenticação, sendo aberto para qualquer usuário com acesso ao endereço e porta. |
-|                    | **SOCKS5**   | Versão aprimorada do SOCKS4. Suporte para DNS remoto e UDP. Suporta autenticação (usuário e senha), mas também pode ser usado sem autenticação, dependendo das configurações. |
+|                    | **SOCKS5**   | Versão aprimorada do SOCKS4. Suporte para DNS remoto e UDP. Suporta autenticação (usuário e senha), mas também pode ser usado sem autenticação, dependendo das configurações. | -->
 
 {{< icon "chevron-right" >}}Na guia **TLS**, configure as seguintes opções.
 
