@@ -8,7 +8,6 @@ sidebar:
   exclude: false
 prev: /protocols
 next: /events
-slug: seguranca-stcp
 draft: false
 lastmod: 2024-08-15
 ---
