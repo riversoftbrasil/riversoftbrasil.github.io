@@ -3,13 +3,16 @@ linkTitle: Instalação
 title: Instalação
 toc: true
 layout: docs
+cascade: 
+  type: docs
 sidebar:
   exclude: false
-weight: 1
+weight: 2
 prev: /stcpren
 next:
-# slug: instalacao-stcpren
+slug: instalacao
 ---
+
 Por padrão, o configurador do STCP Rename vem integrado na pasta *Program* do *STCP OFTP Server/Client*. Para acessá-lo e fazer as devidas configurações, adicionar novas regras e roteamentos, procure pela aplicação *Riversoft STCP OFTP Rename Config* conforme a imagem abaixo:
 
 {{< filetree/container >}}

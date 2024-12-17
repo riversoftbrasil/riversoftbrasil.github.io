@@ -9,7 +9,7 @@ sidebar:
 weight: 3
 prev: /stcpdirectlink/02-configuration
 next: /stcpdirectlink/04-portal/
-slug: como-executar
+slug: execucao
 draft: false
 lastmod: 2024-01-26
 ---

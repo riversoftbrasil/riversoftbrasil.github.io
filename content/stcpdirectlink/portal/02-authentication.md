@@ -8,7 +8,7 @@ sidebar:
 weight: 2
 prev: /stcpdirectlink/04-portal/
 next: /upload/
-slug: autenticacao-portal
+slug: autenticacao
 draft: false
 lastmod: 2024-02-23
 ---

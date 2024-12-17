@@ -10,7 +10,7 @@ sidebar:
 weight: 1
 prev: /stcpdirectlink/04-portal/
 next: 
-slug: 
+slug: arquivo-configuracao
 draft: false
 lastmod: 2024-07-12
 ---

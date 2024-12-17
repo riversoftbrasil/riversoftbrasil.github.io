@@ -10,6 +10,7 @@ weight: 2
 prev: /stcpdirectlink/01-install/
 next: /stcpdirectlink/03-run
 draft: false
+slug: configuracao
 lastmod: 2024-10-01
 ---
 # Configuração

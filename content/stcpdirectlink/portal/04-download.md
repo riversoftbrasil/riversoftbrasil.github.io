@@ -8,7 +8,7 @@ sidebar:
 weight: 4
 prev: /upload
 next: /05-api
-slug: download-arquivos
+slug: recepcao-arquivos
 draft: false
 lastmod: 2024-03-05
 ---

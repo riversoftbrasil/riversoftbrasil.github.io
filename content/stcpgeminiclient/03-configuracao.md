@@ -1,23 +1,24 @@
 ---
 linkTitle: Configuração
-title: Configurar o Gemini Client
+title: Configuração do Gemini Client
 layout: docs
 toc: true
 cascade:
   type: docs
 sidebar:
   exclude: false
-weight: 2
+weight: 3
 prev: /01-install-sgc/
 next: /03-exec-sgc/
-draft:
+slug: configuracao
 lastmod: 2024-06-21
 ---
+
 Toda a configuração da aplicação será realizada através do *STCP Gemini Client Config*. Não é necessária a utilização do super-usuário (root) para a configuração.
 
 ![](img/sgc-02.png)
 
-## Arquivo de configuração
+## Arquivo JSON
 
 Siga os passos abaixo para criar o arquivo de configuração da aplicação.
 

@@ -1,12 +1,15 @@
 ---
 linkTitle: Utilização
 layout: docs
+cascade:
+  type: docs
 sidebar:
   exclude: false
 weight: 3
 prev:
 next:
 draft: false
+slug: utilizacao
 lastmod: 2024-04-15
 ---
 ## Gerar um par de chaves

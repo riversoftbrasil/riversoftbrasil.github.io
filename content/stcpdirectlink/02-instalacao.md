@@ -10,6 +10,7 @@ weight: 1
 prev: /stcpdirectlink/
 next: /stcpdirectlink/01-install/requirements
 draft: false
+slug: instalacao
 lastmod: 2024-09-30
 ---
 ## Distribuição dos pacotes para instalação

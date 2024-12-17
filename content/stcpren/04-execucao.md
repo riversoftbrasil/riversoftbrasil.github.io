@@ -7,7 +7,7 @@ cascade:
   type: docs
 sidebar:
   exclude: false
-weight: 3
+weight: 4
 prev:
 next:
 draft: false

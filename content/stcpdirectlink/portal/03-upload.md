@@ -8,7 +8,7 @@ sidebar:
 weight: 3
 prev: /authentication/
 next: /download
-slug: upload-arquivos
+slug: enviar-arquivos
 draft: false
 lastmod: 2024-02-23
 ---

@@ -1,16 +1,16 @@
 ---
 linkTitle: Instalação
-title: Instalação Gemini Client
+# title: Instalação Gemini Client
 layout: docs
 toc: true
 cascade:
   type: docs
 sidebar:
   exclude: false
-weight: 1
+weight: 2
 prev: /stcpgeminiclient
 next: /02-config-sgc/
-draft:
+slug: instalacao
 lastmod: 2024-06-21
 ---
 ## Requisitos
@@ -123,4 +123,4 @@ $ apt-get update
 $ apt-get install stcpgemini-client
 ```
 
-Confirme as informações exibidas na tela para concluir a instalação e logo após siga a seção de [Configuração](/stcpgeminiclient/02-config-sgc/)
+Confirme as informações exibidas na tela para concluir a instalação e logo após siga a seção de [Configuração](/stcpgeminiclient/configuracao)

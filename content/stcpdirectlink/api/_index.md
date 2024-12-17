@@ -8,7 +8,6 @@ sidebar:
 weight: 5
 prev: /04-portal
 next: /01-authentication
-slug: api-rest
 draft: false
 lastmod: 2024-03-05
 ---

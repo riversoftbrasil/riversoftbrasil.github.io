@@ -6,10 +6,10 @@ cascade:
   type: docs
 sidebar:
   exclude: false
-weight: 5
+weight: 6
 prev:
 next:
-slug: msgs-stcpren
+slug: mensagens
 draft: false
 lastmod: 2024-05-21
 ---

@@ -1,12 +1,15 @@
 ---
 linkTitle: Instalação
 layout: docs
+cascade:
+  type: docs
 sidebar:
   exclude: false
 weight: 2
 prev:
 next:
 draft: false
+slug: instalacao
 lastmod: 2024-04-15
 ---
 # Distribuição do executável

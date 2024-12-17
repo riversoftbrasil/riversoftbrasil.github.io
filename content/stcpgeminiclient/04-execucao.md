@@ -1,5 +1,5 @@
 ---
-linkTitle: Modo de execução
+linkTitle: Execução
 title: Execução e Utilização
 layout: docs
 toc: true
@@ -7,10 +7,10 @@ cascade:
   type: docs
 sidebar:
   exclude: false
-weight: 3
+weight: 4
 prev: /02-config-sgc/
 next: /04-log-sgc/
-draft:
+slug: execucao
 lastmod: 2024-06-21
 ---
 Para executar a aplicação, através do terminal, utilize a linha de comando abaixo.
