@@ -5,5 +5,6 @@ toc: false
 sidebar:
     exclude: true
 brand: accor
+slug: xil4poj2fa8
 ---
 {{< include "static/templates/template.md" >}}

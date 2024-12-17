@@ -5,5 +5,6 @@ toc: false
 sidebar:
     exclude: true
 brand: sky
+slug: m7kp4v2xqlj
 ---
 {{< include "static/templates/template.md" >}}

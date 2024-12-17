@@ -48,7 +48,7 @@ odontoprev:
   profile: "O0055ODONTOPREV"
   url: "**Fornecido pela OdontoPrev**"
   port: "**Fornecido pela OdontoPrev**" 
-  tls: "Sim"
+  tls: "**Avaliar uso de TLS com a OdontoPrev**"
 
 # sicredi:
 #   customer: "Sicredi"
