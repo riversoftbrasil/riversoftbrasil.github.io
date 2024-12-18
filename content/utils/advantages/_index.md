@@ -103,7 +103,7 @@ Está aplicação só está disponível para STCP Gemini Server.
 Ferramenta com acesso pelo navegador (HTTPS), é possível controlar os processos de transferência de arquivos e supervisionar os servidores STCP.
 
 {{< callout type="info" >}}
-Esta aplicação só está disponível para STCP Gemini Server.
+Esta aplicação só está disponível para o STCP Gemini Server.
 {{< /callout >}}
 
 ### Funcionalidades
