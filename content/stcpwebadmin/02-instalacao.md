@@ -7,7 +7,7 @@ cascade:
 sidebar:
   exclude: false
 weight: 2
-prev: /stcpwebadmin
+prev: stcpwebadmin/01-introducao
 next:
 slug: instalacao
 lastmod: 2024-09-13

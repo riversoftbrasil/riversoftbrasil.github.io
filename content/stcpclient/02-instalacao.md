@@ -7,7 +7,7 @@ cascade:
 sidebar:
   exclude: false
 weight: 1
-prev: /stcpclient/
+prev: /stcpclient/01-introducao
 next: /stcpclient/02-config/
 draft: false
 slug: instalacao

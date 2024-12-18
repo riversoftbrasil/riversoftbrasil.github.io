@@ -6,7 +6,7 @@ cascade:
 sidebar:
   exclude: false
 weight: 2
-prev:
+prev: stcpsigner/01-introducao
 next:
 draft: false
 slug: instalacao

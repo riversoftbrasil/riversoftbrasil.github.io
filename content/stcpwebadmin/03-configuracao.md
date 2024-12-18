@@ -1,5 +1,5 @@
 ---
-linkTitle: Configurações gerais
+linkTitle: Configuração
 layout: docs
 toc: true
 cascade:

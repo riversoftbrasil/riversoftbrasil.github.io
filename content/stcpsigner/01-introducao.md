@@ -6,7 +6,7 @@ cascade:
 sidebar:
   exclude: false
 weight: 1
-prev:
+prev: /docs
 next:
 slug: introducao
 lastmod: 2024-05-27

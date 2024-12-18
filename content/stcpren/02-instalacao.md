@@ -8,7 +8,7 @@ cascade:
 sidebar:
   exclude: false
 weight: 2
-prev: /stcpren
+prev: /stcpren/01-introducao
 next:
 slug: instalacao
 ---

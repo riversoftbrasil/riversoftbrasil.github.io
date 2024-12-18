@@ -6,8 +6,8 @@ cascade:
 sidebar:
   exclude: false
 weight: 2
-prev: /stcpserver
-next: /stcpserver/02-config
+prev: /stcpserver/01-introducao
+next: /stcpserver/02-configuracao
 slug: instalacao
 draft: false
 lastmod: 2024-12-13

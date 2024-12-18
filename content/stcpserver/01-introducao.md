@@ -6,7 +6,7 @@ cascade:
 sidebar:
   exclude: false
 weight: 1
-prev: /stcpclient
+prev: /docs
 next: /01-install-srv
 slug: introducao
 lastmod: 2024-12-13
