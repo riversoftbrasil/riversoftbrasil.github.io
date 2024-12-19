@@ -11,7 +11,7 @@ sidebar:
 weight: 3
 prev:
 next:
-slug: use-apigeminiserver
+slug: utilizacao-api
 draft:
 lastmod: 2024-06-21
 ---

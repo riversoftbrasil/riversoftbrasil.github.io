@@ -1,6 +1,6 @@
 ---
 linkTitle: Portal
-title: 
+title: Portal STCP Gemini 
 layout: docs
 toc: true
 cascade:
@@ -9,8 +9,8 @@ sidebar:
   exclude: false
 weight: 
 prev: 
-next: 
-draft: 
+next: stcpgeminiserver/api
+slug: portal-gemini 
 lastmod: 2024-08-01
 ---
 

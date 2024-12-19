@@ -7,10 +7,10 @@ toc: true
 cascade:
   type: docs
 sidebar:
-  exclude: true
+  exclude: false
 weight: 1
-prev:
-next:
+prev: stcpgeminiserver/introducao
+next: stcpgeminiserver/implantacao/01-instalacao
 draft:
 lastmod: 2024-06-14
 ---

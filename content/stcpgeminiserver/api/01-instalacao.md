@@ -1,7 +1,7 @@
 ---
 linkTitle: Instalação
 title: Instalação
-excludeSearch: true
+excludeSearch: false
 layout: docs
 toc: true
 cascade:
@@ -11,9 +11,9 @@ sidebar:
 weight: 1
 prev:
 next:
-slug:
+slug: instalacao
 draft:
-lastmod:
+lastmod: 2024-12-01
 ---
 Após [configurar o repositório](/stcpgeminiserver/implantacao/sgs-install/#configuração-do-repositório-yum-riversoft), instale o STCP Gemini API executando o comando abaixo:
 

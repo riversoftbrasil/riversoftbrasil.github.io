@@ -11,7 +11,7 @@ sidebar:
 weight: 2
 prev:
 next:
-draft:
+slug: configuracao
 lastmod: 2024-06-13
 ---
 ## Criação do arquivo de configuração

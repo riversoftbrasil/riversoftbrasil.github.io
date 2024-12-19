@@ -11,7 +11,7 @@ sidebar:
 weight: 2
 prev:
 next:
-slug:
+slug: configuracao
 draft:
 lastmod:
 ---

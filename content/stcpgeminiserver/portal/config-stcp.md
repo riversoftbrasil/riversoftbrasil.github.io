@@ -6,11 +6,11 @@ toc: true
 cascade:
   type: docs
 sidebar:
-  exclude: true
+  exclude: false
 weight: 
-prev: 
+prev: stcpgeminiserver/api
 next: 
-draft: 
+slug: configurador-stcp 
 lastmod: 2024-09-01
 ---
 # Funcionalidades do Portal

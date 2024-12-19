@@ -6,11 +6,11 @@ toc: true
 cascade:
   type: docs
 sidebar:
-  exclude: true
+  exclude: false
 weight: 
 prev: 
 next: 
-draft: 
+slug: configurador-admin 
 lastmod: 2024-08-01
 ---
 

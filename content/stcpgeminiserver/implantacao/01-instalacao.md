@@ -9,9 +9,9 @@ cascade:
 sidebar:
   exclude: false
 weight: 1
-prev:
+prev: stcpgeminiserver/implantacao
 next:
-draft:
+slug: instalacao
 lastmod: 2024-06-13
 ---
 ## Requisitos de Software
