@@ -36,7 +36,7 @@ Tudo o que você precisa saber para sua jornada nas soluções Riversoft.
 
 ### Guias passo a passo
 {{< cards >}}
-  {{< card link="/404" title="Automação" icon="cube" >}}
+  {{< card link="/404" title="Automação " icon="cube" tag= "Em breve" tagType="info">}}
   {{< card link="../utils/conection/" title="Conectividade" icon="link" >}}
 {{< /cards >}}
 
@@ -47,7 +47,7 @@ Tudo o que você precisa saber para sua jornada nas soluções Riversoft.
   {{< card link="../utils/database/" title="Banco de dados" icon="database" >}}
   {{< card link="../utils/events/" title="Códigos de Erros e Eventos" icon="x-circle" >}}
   {{< card link="../utils/protocols/" title="Protocolos de Rede" icon="wifi" >}}
-  {{< card link="../utils/requirements/" title="Requisitos de Software e Hardware" icon="queue-list" >}}
+  {{< card link="../utils/requirements/" title="Requisitos de Software e Hardware" icon="numbered-list" >}}
   {{< card link="/security" title="Segurança" icon="shield-check" >}}
   {{< card link="../utils/advantages/" title="Uso e vantagens do STCP" icon="rocket-launch" >}}
   {{< card link="../utils/variables/" title="Variáveis internas" icon="variable" >}}
