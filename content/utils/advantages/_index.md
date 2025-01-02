@@ -8,8 +8,8 @@ cascade:
 sidebar:
   exclude: false
 weight: 15
-prev: /conection
-next: /variables
+prev: conection/
+next: variables/
 draft: false
 lastmod: 2024-08-27
 ---

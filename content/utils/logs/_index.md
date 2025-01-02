@@ -8,7 +8,7 @@ sidebar:
   exclude: false
 weight: 1
 prev: /docs
-next: /database
+next: database/
 draft: false
 lastmod: 2024-05-07
 ---

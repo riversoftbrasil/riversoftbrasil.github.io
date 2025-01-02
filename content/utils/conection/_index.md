@@ -7,8 +7,8 @@ cascade:
 sidebar:
   exclude: false
 weight: 14
-prev: /console
-next: /advantages
+prev: requirements/
+next: advantages/
 draft: false
 lastmod: 2024-05-23
 ---

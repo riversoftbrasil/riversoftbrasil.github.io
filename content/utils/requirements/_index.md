@@ -7,8 +7,8 @@ cascade:
 sidebar:
   exclude: false
 weight: 11
-prev: /protocols
-next: /conection
+prev: protocols/
+next: conection/
 draft: false
 lastmod: 2024-08-02
 ---

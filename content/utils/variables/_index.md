@@ -8,8 +8,8 @@ cascade:
 sidebar:
   exclude: false
 weight: 16
-prev: /advantages
-next:
+prev: advantages/
+next: security/
 draft: false
 lastmod: 2024-05-10
 ---

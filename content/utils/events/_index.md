@@ -7,8 +7,8 @@ cascade:
 sidebar:
   exclude: false
 weight: 8
-prev: /database
-next: /protocols
+prev: database/
+next: protocols/
 draft: false
 lastmod: 2024-08-26
 ---
