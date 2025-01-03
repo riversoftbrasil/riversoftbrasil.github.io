@@ -48,7 +48,7 @@ Entre alguns dos recursos disponíveis no STCP Directlink estão:
 - Link seguro para compartilhamento de arquivos
 - Portal Web para **upload** e **download** de arquivos
 
-> [!TIP]
+> [!TIP]  
 > Clique [aqui](https://docs.aws.amazon.com/pt_br/AmazonS3/latest/userguide/Welcome.html) para mais informações sobre o Amazon Simple Storage Service (S3).
 
 > [!TIP]  
