@@ -23,16 +23,14 @@ Acesse o STCP OFTP Client Config (Iniciar – Todos os programas – Riversoft S
 
 Após a alteração, disponibilize um arquivo de teste na pasta SAIDA do perfil, que apresenta o erro, e inicie uma nova conexão. O arquivo de debug será gerado no diretório **DEBUG** (Ex. C:\STCPCLT\Debug).
 
-{{< callout type="info" >}}
-  NOTA: Uma vez gerado o erro, você pode voltar o nível de debug para o seu valor padrão (0).
-{{< /callout >}}
+> [!IMPORTANT] Nota
+> Uma vez gerado o erro, você pode voltar o nível de debug para o seu valor padrão (0).
 
 ![](img/img-01.png)
 
 Para cada tentativa de conexão será criado um novo arquivo de depuração no diretório **DEBUG** com a seguinte sintaxe:
 
 ```{filename="Arquivo de debug"}
-
 ODTDEB.<Protocolo>.<Usuario>.YYYYMMDDhhmmssnnn
 ```
 

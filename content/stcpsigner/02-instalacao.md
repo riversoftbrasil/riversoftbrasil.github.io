@@ -28,9 +28,9 @@ Exemplo:
 
 ![](img/sign-07.png)
 
-{{< callout type="info" >}}
-  Veja na seção de [Execução](/stcpsigner/exec/) cada comando disponível.
-{{< /callout >}}
+> [!NOTE] Nota: 
+> Veja na seção de [Execução](/stcpsigner/exec/) cada comando disponível.
+
 
 
 

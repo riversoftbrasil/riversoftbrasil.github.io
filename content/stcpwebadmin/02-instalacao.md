@@ -109,8 +109,8 @@ include_path = ".;<disco>:\php\includes
 session.save_path = "<disco>:\php\sessiondata"
 session.use_cookies = 1
 ```
-{{< callout type="info" >}}
-Obs: O caracter “;” (ponto e vírgula) no início da linha indica um comentário. Para os parâmetros acima o caracter deve ser removido.
-{{< /callout >}}
+
+> [!NOTE] Nota: 
+> Obs: O caracter “;” (ponto e vírgula) no início da linha indica um comentário. Para os parâmetros acima o caracter deve ser removido.
 
 

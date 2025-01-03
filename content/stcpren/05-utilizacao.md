@@ -28,9 +28,8 @@ Modo | Linha de Comando
 **Varredura de um diretório específico**| Stcpren_3_2.exe –rules [nome do arquivo de regras] -scan [nome do diretório]
 **Varredura de uma lista de diretórios**| Stcpren_3_2.exe –rules [nome do arquivo de regras] -dirlist [nome do arquivo de lista]
 
-{{< callout type="info" >}}
-Quando o modo de varredura é utilizado, a opção **-subdir** habilita a procura nos subdiretórios.
-{{< /callout >}}
+> [!NOTE] Nota: 
+> Quando o modo de varredura é utilizado, a opção **-subdir** habilita a procura nos subdiretórios.
 
 ### Formação do novo nome do diretório e do arquivo
 

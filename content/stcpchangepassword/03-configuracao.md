@@ -299,9 +299,8 @@ STCPClient-appl-PTB.PDF" />
 ...
 ```
 
-{{< callout type="info" >}}
-  Os procedimentos acima demonstram as configurações dos parâmetros para o idioma **Português**. Caso necessário, estes deverão ser realizadas também para os idiomas Inglês e Espanhol.
-{{< /callout >}}
+> [!NOTE] Info
+>  Os procedimentos acima demonstram as configurações dos parâmetros para o idioma **Português**. Caso necessário, estes deverão ser realizadas também para os idiomas Inglês e Espanhol.
 
 <br>
 

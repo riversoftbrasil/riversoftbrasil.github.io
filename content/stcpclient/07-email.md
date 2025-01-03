@@ -24,9 +24,9 @@ O envio das notificações por email é realizado através do script **stcp-noti
 
 `(Ex. C:\STCPCLT\Program)`
 
-{{< callout type="info" >}}
-  O link para download do script é disponibilizado pela Equipe de Sustentação da Riversoft.
-{{< /callout >}}
+> [!NOTE]  
+> O link para download do script é disponibilizado pela Equipe de Sustentação da Riversoft.
+
 
 ## Configuração do script VBS
 
@@ -121,9 +121,9 @@ cscript //B C:\STCPCLT\Program\stcp-notifica.vbs TX $OFNAME
 
 ![](img/email-03.png)
 
-{{< callout type="info" >}}
- NOTA: O parâmetro **$OFNAME** refere-se a uma variável interna do STCP OFTP que retorna o nome do arquivo enviado com sucesso.
-{{< /callout >}}
+> [!NOTE] Nota
+> O parâmetro **$OFNAME** refere-se a uma variável interna do STCP OFTP que retorna o nome do arquivo enviado com sucesso.
+
 
 
 ## Notificação recebimento de arquivos (por arquivo)
@@ -138,9 +138,8 @@ cscript //B C:\STCPCLT\Program\stcp-notifica.vbs RX $OFNAME
 
 ![](img/email-04.png)
 
-{{< callout type="info" >}}
-NOTA: O parâmetro **$OFNAME** refere-se a uma variável interna do STCP OFTP que retorna o nome do arquivo recebido com sucesso.
-{{< /callout >}}
+> [!NOTE] Nota
+> O parâmetro **$OFNAME** refere-se a uma variável interna do STCP OFTP que retorna o nome do arquivo recebido com sucesso.
 
 ## Notificação de erro
 

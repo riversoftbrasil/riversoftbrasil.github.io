@@ -477,15 +477,14 @@ Suponha que o arquivo **documento.txt** esteja localizado na seguinte estrutura 
 /home/usuario/documentos/documento.txt
 ```
 
-{{< callout type="info" >}}
-  Um **caminho absoluto** é especificado desde o diretório raiz do sistema de arquivos. No Linux, o diretório raiz é representado por `/`.
-{{< /callout >}}
+> [!TIP]  
+> Um **caminho absoluto** é especificado desde o diretório raiz do sistema de arquivos. No Linux, o diretório raiz é representado por `/`.
 
 Nesse exemplo, `/` é o diretório raiz do sistema de arquivos.
 
-{{< callout type="info" >}}
- Um **caminho relativo** é especificado em relação ao diretório atual em que você está trabalhando.
-{{< /callout >}}
+> [!TIP]  
+> Um **caminho relativo** é especificado em relação ao diretório atual em que você está trabalhando.
+
 
 Por exemplo, se você estiver no diretório `/home/usuario/`, o caminho relativo para o **documento.txt** será:
 

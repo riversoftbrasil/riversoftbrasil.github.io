@@ -16,9 +16,9 @@ lastmod: 2024-08-01
 
 Esta seção tem como objetivo descrever os passos de instalação e configurações iniciais do STCP Portal Gemini. Outras configurações podem ser realizadas conforme as necessidades específicas do ambiente e/ou funcionalidades utilizadas.
 
-{{< callout type="info" >}}
-O Portal Gemini necessita do STCP Gemini API Rest para se comunicar com o STCP Gemini Server.
-{{< /callout >}}
+> [!NOTE] Nota: 
+> O Portal Gemini necessita do STCP Gemini API Rest para se comunicar com o STCP Gemini Server.
+
 
 ## Instalação
 
@@ -27,9 +27,9 @@ O Portal Gemini necessita do STCP Gemini API Rest para se comunicar com o STCP G
 * Instalação e configuração do STCP Gemini API. [Ver documentação](/stcpgeminiserver/api); 
 * Navegadores Chrome (Ver 80 ou superior), Firefox (ver 81 ou superior) ou Safari (MacOS, Ver 14 ou superior);
 
-{{< callout type="info" >}}
-Os passos referentes à instalação dos pré-requisitos listados não serão abordados neste procedimento. Em caso de dúvidas, consulte o administrador de redes responsável.
-{{< /callout >}}
+> [!NOTE] Nota:
+> Os passos referentes à instalação dos pré-requisitos listados não serão abordados nesta seção. Em caso de dúvidas, consulte o administrador de redes responsável.
+
 
 ## Configurações do STCP Gemini Portal
 
@@ -57,9 +57,8 @@ O STCP Gemini Portal pode ser utilizado de duas maneiras:
 
 ### Configurando o STCPGeminiPortal no Apache 
 
-{{< callout type="info" >}}
-O intuito desse material não é abordar a instalação do Apache.
-{{< /callout >}}
+> [!IMPORTANT] Importante
+> O intuito dessa seção não é abordar a instalação do Apache.
 
 * Instale o STCP Gemini Portal executando o seguinte comando:
 
@@ -85,7 +84,7 @@ $ yum install stpcgemini-portal
 
 * Na barra de pesquisa de seu navegador, digite o ip do seu servidor.
 
-{{< callout type="info" >}}
-Por padrão, o Apache é executado na porta 80, se desejar mudar a porta ou fazer um *virtual host* consulte a documentação do Apache.
-{{< /callout >}}
+> [!NOTE] Nota:
+> Por padrão, o Apache é executado na porta 80, se desejar mudar a porta ou fazer um *virtual host* consulte a documentação do Apache.
+
 

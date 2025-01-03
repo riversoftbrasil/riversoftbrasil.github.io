@@ -68,9 +68,9 @@ Para configurar a instância criada no STCP Gemini Portal, deve-se inserir seu n
 }
 ```
 
-{{< callout type="info" >}}
-**AVISO:** Para iniciar o serviço do STCP Gemini Server é necessário ter uma instância configurada através do STCPGemini Portal.
-{{< /callout >}}
+> [!Warning] Atenção: 
+> Para iniciar o serviço do STCP Gemini Server é necessário ter uma instância configurada através do STCPGemini Portal.
+
 
 ## Start do serviço
 
@@ -85,9 +85,8 @@ Para verificar o status do serviço, execute o comando abaixo e verifique se pos
 $ systemctl status stcpgemini-server
 ```
 
-{{< callout type="info" >}}
-**AVISO:** Caso encontre algum problema no processo de implantação, entre em contato com a equipe Riversoft.
-{{< /callout >}}
+> [!WARNING] Atenção
+> Caso encontre algum problema no processo de implantação, entre em contato com a equipe Riversoft.
 
 ## Extra
 

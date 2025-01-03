@@ -62,9 +62,9 @@ Esta requisição deve ser utilizada para obter o token de autorização
 | *password* <span style="color:red;">*</span>      | senha do usuário na plataforma |
 
 
-{{< callout type="info" >}}
- O campo body, deve ser formatado em query string como exemplo: grant_type=*password&username*=`usuario`&password=`senha`
-{{< /callout >}}
+> [!NOTE]  
+> O campo body, deve ser formatado em query string como exemplo: grant_type=*password&username*=`usuario`&password=`senha`
+
 
 ### Responses
 

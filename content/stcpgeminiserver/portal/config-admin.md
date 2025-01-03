@@ -287,10 +287,9 @@ Clique em **Pesquisar** para visualizar as informações dos eventos do sistema.
 ![](img-admin/image-57.png "Filtros de pesquisa")
 ![](img-admin/image-61.png "Filtros de pesquisa")
 
-{{< callout type="info" >}}
-**DICA:** Caso nenhum usuário seja informado, todos os eventos de todos os usuários quem cumpram
-os filtros restantes serão apresentados.
-{{< /callout >}}
+> [!TIP] Dica: 
+> Caso nenhum usuário seja informado, todos os eventos de todos os usuários quem cumpram os filtros restantes serão apresentados.
+
 
 Após inserir as informações desejadas clique em **Pesquisar**. Ao fazer isto uma sequência de eventos serão apresentados em sua tela, caso deseje visualizá-los em uma ferramenta de planilhas clique em **Exportar**:
 

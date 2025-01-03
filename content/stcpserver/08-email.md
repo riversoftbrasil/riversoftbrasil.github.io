@@ -34,9 +34,8 @@ Tal procedimento pode ser realizado através do script _STCPEMAILEVT.VBS_, exist
 
 ![](img/email-01.png)
 
-{{< callout type="info" >}}
-Como padrão para este documento, utilizaremos o utilitário OpenSSL para realização do processo da geração e configuração do certificado digital. O OpenSSL está localizado na Pasta Program do diretório de instalação do STCP OFTP Server (Ex: C:\STCPODT\Program)
-{{< /callout >}}
+> [!NOTE] Nota
+> Como padrão para este documento, utilizaremos o utilitário OpenSSL para realização do processo da geração e configuração do certificado digital. O OpenSSL está localizado na Pasta Program do diretório de instalação do STCP OFTP Server (Ex: C:\STCPODT\Program)
 
 
 {{< icon "chevron-right" >}}Além das configurações _strMailFrom_,_strMailTo_ também deverão ser configurados os parâmetros referentes ao servidor SMTP.
@@ -64,7 +63,7 @@ Nota: Observe que logo após o nome do servidor será necessário inserir uma as
 
 ![](img/email-04.png)
 
-Após a execução destes procedimentos, clique no botão OK para salvar as alterações e [reinicie o serviço do Riversoft STCP OFTP Server](/stcpserver/03-util/#serviço-do-stcp-oftp-server) para que as estas sejam ativadas.
+Após a execução destes procedimentos, clique no botão OK para salvar as alterações e [reinicie o serviço do Riversoft STCP OFTP Server](/stcpserver/utilizacao/#serviço-do-stcp-oftp-server) para que as estas sejam ativadas.
 
 Uma vez realizadas as configurações com êxito, um e-mail será encaminhado para os destinatários informados no script sempre que um erro ocorrer no processo de transferência de arquivos.
 
@@ -97,9 +96,8 @@ cscript //B C:\STCPODT\Program\ stcpemail.vbs de@dominio.com.br para@dominio.com
 cscript //B C:\STCPODT\Program\stcpemail.vbs “de@dominio.com.br” para@dominio.com.br $LFNAME
 ```
 
-{{< callout type="info" >}}
-Nota: Na linha de comando utilizamos a variável interna do STCP, **$LFNAME**, que nos contém o nome completo do arquivo local. A relação completa das variáveis internas do STCP OFTP Server pode ser obtida no item “Definição das variáveis internas do STCP OFTP Server”, no link: [variáveis internas do STCP](/utils/variables/).
-{{< /callout >}}
+> [!NOTE] Nota: 
+> Na linha de comando utilizamos a variável interna do STCP, **$LFNAME**, que nos contém o nome completo do arquivo local. A relação completa das variáveis internas do STCP OFTP Server pode ser obtida no item “Definição das variáveis internas do STCP OFTP Server”, no link: [variáveis internas do STCP](/utils/variables/).
 
 ![](img/email-07.png)
 

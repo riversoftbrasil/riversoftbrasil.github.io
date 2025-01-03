@@ -63,22 +63,18 @@ remover visões, monitorar usuários e eventos, etc.
 | Porta       | Campo com a porta IP usada pelo servidor. |
 | Comunicação segura | Esta opção habilita ou inibe a utilização de criptografia na comunicação com o servidor. <br>**Nativa (Básica):** configura a comunicação segura com criptografia com nível de segurança básico. <br>**Nativa (Média):** configura a comunicação segura com criptografia com nível de segurança médio. <br> **Nativa (Alta):** configura a comunicação segura com criptografia com nível de segurança alto. <br> **SSL3:** configura a comunicação segura com criptografia e certificação digital, com a utilização da padronização definida na RFC2246 (TLS1/SSL3). O TLS1/SSL3 é comumente encontrado nos servidores de sites seguros (HTTPS) e oferece o maior grau de segurança atualmente disponível. |
 
-{{< callout type="info" >}}
-Antes de habilitar uma destas opções de comunicação, confirme se o servidor com quem você deseja se comunicar suporta esta característica.
-{{< /callout >}}
+> [!WARNING] Aviso: 
+> Antes de habilitar uma destas opções de comunicação, confirme se o servidor com quem você deseja se comunicar suporta esta característica.
 
 | Parâmetro      | Descrição |
 | ----------- | ----------- |
 | Compatibilidade | Esta opção possibilita compatibilizar o servidor com diferentes produtos atualmente existentes no mercado. <br>**RFC2204:** esta opção de compatibilidade permite a comunicação do servidor com outros produtos que seguem a recomendação RFC2204. <br>**RFC1006/1086:** esta opção de compatibilidade permite a comunicação do servidor através de gateways de comunicação TCP-IP/X.25, que seguem a recomendação RFC1006/1086. <br>**RVS\*:** esta opção de compatibilidade permite que a comunicação do servidor com o produto RVS*.<br>**X.25/Router:** esta opção de compatibilidade permite a comunicação do servidor através de roteadores com suporte a comunicação X.25 através de socket.|
 
+> [!WARNING] Aviso: 
+> Obs.: a opção Compatibilidade não deve ser habilitada quando o servidor RVS* for uma versão do mainframe (grande porte).
 
-{{< callout type="info" >}}
-Obs.: a opção Compatibilidade não deve ser habilitada quando o servidor RVS* for uma versão do mainframe (grande porte).
-{{< /callout >}}
-
-{{< callout type="warning" >}}
-  *As marcas citadas acima são propriedade dos seus respectivos donos.
-{{< /callout >}}
+> [!WARNING] Aviso: 
+> *As marcas citadas são propriedade dos seus respectivos donos.
 
 | Parâmetro      | Descrição |
 | ----------- | ----------- |
@@ -107,9 +103,8 @@ comunicar suporta esta característica.
 | Nativa (Alta)       | Configura a comunicação segura com criptografia com nível de segurança alto. |
 
 
-{{< callout type="info" >}}
-Obs.: o arquivo da chave privativa deve estar no formato PKCS#12 e os certificados no formato DER ou PEM.
-{{< /callout >}}
+> [!NOTE] Nota: 
+> Obs.: o arquivo da chave privativa deve estar no formato PKCS#12 e os certificados no formato DER ou PEM.
 
 | Parâmetro      | Descrição |
 | ----------- | ----------- |
@@ -117,9 +112,8 @@ Obs.: o arquivo da chave privativa deve estar no formato PKCS#12 e os certificad
 | Arquivo   | Preencha este campo com o nome do arquivo (caminho completo) onde se encontra instalado o certificado digital (X509) contendo a chave pública que assina o certificado apresentado pelo servidor. |
 | Diretório | Preencha este campo com o nome do diretório (caminho completo) onde se encontram instalados os certificados digitais (X509) contendo a chave pública que assina o certificado apresentado pelo servidor.|
 
-{{< callout type="info" >}}
-Obs.: o arquivo da chave privativa deve estar no formato PKCS#12 e os certificados no formato DER ou PEM.
-{{< /callout >}}
+> [!NOTE] Nota: 
+> Obs.: o arquivo da chave privativa deve estar no formato PKCS#12 e os certificados no formato DER ou PEM.
 
 
 | Parâmetro   | Descrição |
@@ -144,9 +138,8 @@ Obs.: o arquivo da chave privativa deve estar no formato PKCS#12 e os certificad
 
 Toda vez que um servidor é adicionado na aplicação, uma visão default é adicionada com ele. Para visualizar esta visão, basta expandir o ícone do servidor e a visão será exibida (veja imagem acima), se a visão estiver selecionada, suas informações serão exibidas na lista ao lado.
 
-{{< callout type="info" >}}
-Obs.: esta visão pode ser editada de acordo com as necessidades do usuário.
-{{< /callout >}}
+> [!NOTE] Nota:
+> Obs.: esta visão pode ser editada de acordo com as necessidades do usuário.
 
 ### Como adicionar uma visão
 
@@ -178,9 +171,9 @@ A tela para edição dos dados do servidor é exibida. O campo onde se define o 
 
 ![](img/console-10.png)
 
-{{< callout type="info" >}}
-Obs.: para ter mais detalhes sobre a definição dos campos, ver seção [**Adicionar Servidor**](#adicionar-um-servidor)
-{{< /callout >}}
+> [!NOTE] Nota:
+> Obs.: para ter mais detalhes sobre a definição dos campos, ver seção [**Adicionar Servidor**](#adicionar-um-servidor)
+
 
 ### Como visualizar os dados de um servidor
 
@@ -202,10 +195,8 @@ A tela para edição dos dados da visão é exibida. O campo onde se define o no
 
 ![](img/console-14.png)
 
-{{< callout type="info" >}}
-Obs.: para ter mais detalhes sobre a definição dos campos, ver seção [**Adicionar Visão**](#como-adicionar-uma-visão).
-{{< /callout >}}
-
+> [!NOTE] Nota: 
+> Obs.: para ter mais detalhes sobre a definição dos campos, ver seção [**Adicionar Visão**](#como-adicionar-uma-visão).
 
 ### Como visualizar os dados de uma visão
 
@@ -334,9 +325,9 @@ Após informar o nome do usuário para conexão no parâmetro **Usuário**, cliq
 
 Após informar o nome do usuário para conexão no parâmetro **Usuário** e clicar sobre o botão **OK** para que seja estabelecida a conexão, é exibida a lista de monitoração. No topo da lista, ficam as mensagens de retorno da conexão com o usuário.
 
-{{< callout type="info" >}}
-Obs.: a conexão automática deve estar habilitada no usuário para que se tenha sucesso nessa operação.
-{{< /callout >}}
+> [!NOTE] Nota: 
+> Obs.: a conexão automática deve estar habilitada no usuário para que se tenha sucesso nessa operação.
+
 
 ## Glossário
 

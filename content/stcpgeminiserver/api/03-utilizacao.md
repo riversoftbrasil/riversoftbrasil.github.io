@@ -122,10 +122,9 @@ Corpo: grant_type=password&username=[usuario]&password=[senha]
 
 Atualmente a resposta da requisição de um token conta com 2 parâmetros adicionais: **operator** e **scope**.
 
-{{< callout type="info" >}}
-NOTA: **Scope** representa o escopo de permissões que aquele token possui. Já o **operator** são as informações do
-operador que fez a requisição, sem a informação da senha.
-{{< /callout >}}
+> [!NOTE] Informação: 
+> **Scope** representa o escopo de permissões que aquele token possui. Já o **operator** são as informações do operador que fez a requisição, sem a informação da senha.
+
 
 ```
 Request POST /oauth/token HTTP/1.1 Host: 1.2.3.4:5678 Content-Type: application/x-wwwform-urlencoded
@@ -147,10 +146,10 @@ grant_type=password&username=teste&password=teste123
 **access_token**: Token que deverá ser utilizado nas futuras requisições da API.
 <br>**Expiration**: Tempo de vida em segundos, após isso uma nova token deverá ser requisitada. Novos parâmetros podem ser inseridos futuramente.
 
-{{< callout type="info" >}}
-NOTA: Caso o pedido falhe e o usuário não consiga ser autenticado, ou estejam faltando cabeçalhos no request, o serviço
+> [!NOTE] Nota: 
+> Caso o pedido falhe e o usuário não consiga ser autenticado, ou estejam faltando cabeçalhos no request, o serviço
 retornará um Status Code 401 e a seguinte resposta:
-{{< /callout >}}
+
 
 ```
 { "error": "[tipo de erro]" }

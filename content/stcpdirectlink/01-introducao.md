@@ -17,9 +17,8 @@ lastmod: 2024-12-17
 
 O STCP Directlink é uma aplicação que, ao ser integrada aos produtos <a href="/stcpserver/" target="_blank">STCP OFTP Server (Windows)</a> {{< icon "arrow-top-right-on-square" >}} ou <a href="/stcpgeminiserver/" target="_blank">STCP Gemini Server (Linux)</a> {{< icon "arrow-top-right-on-square" >}}, oferece uma solução simples e robusta para transferência segura de arquivos (Download e Upload) através dos protocolos <a href="/utils/protocols/#httphttps" target="_blank">HTTPS</a> e <a href="/utils/protocols/#sftp" target="_blank">SFTP</a>.
 
-{{< callout type="info" >}}
-  Disponível nas versões para Windows e Linux.
-{{< /callout >}}
+> [!IMPORTANT] Disponível nas versões para Windows e Linux.
+
 
 ## Por que usar?
 
@@ -27,15 +26,15 @@ Todo o processo de transferência, através do STCP Directlink, pode ser totalme
 
 Com o Riversoft® STCPDirectLink é possível realizar o **upload** de um arquivo e **notificar através de email ou sms (celular)** um contato para receber o **link seguro** para download.
 
-{{< callout type="info" >}}
-  O **link seguro** para **download** identifica qual a **conta de email** ou **número do celular** está vinculado ao arquivo e só permite o **download** com a utilização de um **código de segurança**.
-{{< /callout >}}
+> [!NOTE] Nota: 
+> O **link seguro** para **download** identifica qual a **conta de email** ou **número do celular** está vinculado ao arquivo e só permite o **download** com a utilização de um **código de segurança**.
 
-{{< callout type="warning" >}}
-O código de segurança é encaminhado somente para o **email** ou **celular** vinculado ao arquivo e tem um **tempo de vida**.
-{{< /callout >}}
 
-Para possibilitar a integração de forma ágil, o STCP DirectLink disponibiliza uma [API](/stcpdirectlink/05-api/) (Application Program Interface) no padrão [RestFull](https://restfulapi.net/) através do protocolo **HTTPS**.
+> [!WARNING] Atenção
+> O código de segurança é encaminhado somente para o **email** ou **celular** vinculado ao arquivo e tem um **tempo de vida**.
+
+
+Para possibilitar a integração de forma ágil, o STCP DirectLink disponibiliza uma [API](/stcpdirectlink/api/) (Application Program Interface) no padrão [RestFull](https://restfulapi.net/) através do protocolo **HTTPS**.
 
 ## Recursos
 Entre alguns dos recursos disponíveis no STCP Directlink estão:
@@ -49,13 +48,12 @@ Entre alguns dos recursos disponíveis no STCP Directlink estão:
 - Link seguro para compartilhamento de arquivos
 - Portal Web para **upload** e **download** de arquivos
 
-{{< callout type="info">}}
-Clique [aqui](https://docs.aws.amazon.com/pt_br/AmazonS3/latest/userguide/Welcome.html) para mais informações sobre o **Amazon Simple Storage Service (S3)**.
-{{< /callout >}}
+> [!TIP]
+> Clique [aqui](https://docs.aws.amazon.com/pt_br/AmazonS3/latest/userguide/Welcome.html) para mais informações sobre o Amazon Simple Storage Service (S3).
 
-{{< callout type="info" >}}
-  Clique [aqui](https://azure.microsoft.com/pt-br/products/storage/blobs) para mais informações sobre o **Armazenamento de Blobs do Azure**.
-{{< /callout >}}
+> [!TIP]  
+> Clique [aqui](https://azure.microsoft.com/pt-br/products/storage/blobs) para mais informações sobre o Armazenamento de Blobs do Azure.
+
 
 ## Segurança e Privacidade
 

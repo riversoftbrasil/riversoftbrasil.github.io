@@ -20,9 +20,8 @@ O STCP Change Password é um portal para alteração de senha da caixa postal do
 
 Nesta seção veremos os passos necessários para instalação e configuração do site de troca de senha, do serviço **STCP OFTP Server Enterprise**.
 
-{{< callout type="info" >}}
-O STCP OFTP Change Password deverá ser configurado em um site ou diretório virtual no IIS utilizando SSL (HTTPS) e .Net Framework 2 ou superior.
-{{< /callout >}}
+> [!NOTE] Info
+> O STCP OFTP Change Password deverá ser configurado em um site ou diretório virtual no IIS utilizando SSL (HTTPS) e .Net Framework 2 ou superior.
 
 
 

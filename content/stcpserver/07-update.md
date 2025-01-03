@@ -45,9 +45,8 @@ A estrutura de pastas (Exemplo abaixo **D:\STCPODT\work\NOME-USUARIO**), configu
 
 ![](img/upd-10.png)
 
-{{< callout type="info" >}}
-  Dependendo das configurações atuais do ambiente em questão, outros arquivos como: regras de roteamento, script VBS, arquivos de lote, dentre outros, deverão ser copiados dos seus respectivos diretórios para o novo servidor.
-{{< /callout >}}
+> [!NOTE] Nota: 
+> Dependendo das configurações atuais do ambiente em questão, outros arquivos como: regras de roteamento, script VBS, arquivos de lote, dentre outros, deverão ser copiados dos seus respectivos diretórios para o novo servidor.
 
 ---
 ## Serviço

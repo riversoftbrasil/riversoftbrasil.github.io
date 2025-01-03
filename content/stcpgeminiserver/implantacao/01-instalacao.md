@@ -18,11 +18,9 @@ lastmod: 2024-06-13
 
 Verifique os requisitos para instalação na seção <a href="/utils/requirements/#stcp-gemini-server" target="_blank">Requisitos STCP Gemini Server</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;
 
-{{< callout type="info" >}}
-O espaço necessário para armazenamento dos arquivos transferidos dependerá do volume e política
-de retenção de dados adotada e os passos referentes à instalação dos pré-requisitos listados não serão abordados neste
-procedimento. Em caso de dúvidas, consulte o administrador de redes responsável.
-{{< /callout >}}
+> [!NOTE] Informação: 
+> O espaço necessário para armazenamento dos arquivos transferidos dependerá do volume e política de retenção de dados adotada e os passos referentes à instalação dos pré-requisitos listados não serão abordados neste procedimento. Em caso de dúvidas, consulte o administrador de redes responsável.
+
 
 ## Configuração do repositório YUM Riversoft
 

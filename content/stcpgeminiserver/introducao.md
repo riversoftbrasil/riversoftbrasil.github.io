@@ -17,7 +17,8 @@ O STCP Gemini Server é uma aplicação servidora utilizada para transferência 
 
 Nesta seção veremos os passos de instalação e configurações do STCP Gemini Server. Outras configurações podem ser realizadas conforme as necessidades específicas do ambiente e/ou funcionalidades utilizadas.
 
-> NOTA: Todo o procedimento foi baseado na distribuição Linux CentOS 7.0.
+> [!NOTE] Nota: 
+> Todo o procedimento foi baseado na distribuição Linux CentOS 7.0.
 
 ## Uso e Vantagens
 
@@ -54,9 +55,8 @@ Nesta seção veremos os passos de instalação e configurações do STCP Gemini
 
 API para integração de aplicações, facilitando o processo de administração e supervisão.
 
-{{< callout type="info" >}}
-Está aplicação só está disponível para STCP Gemini Server.
-{{< /callout >}}
+> [!NOTE] Nota:
+> Está aplicação só está disponível para STCP Gemini Server.
 
 ### Funcionalidades
 
@@ -85,9 +85,9 @@ Está aplicação só está disponível para STCP Gemini Server.
 
 Ferramenta com acesso pelo navegador (HTTPS), é possível controlar os processos de transferência de arquivos e supervisionar os servidores STCP.
 
-{{< callout type="info" >}}
-Esta aplicação só está disponível para o STCP Gemini Server.
-{{< /callout >}}
+> [!NOTE] Nota: 
+> Esta aplicação só está disponível para o STCP Gemini Server.
+
 
 ### Funcionalidades
 

@@ -70,9 +70,8 @@ Nesta guia, você poderá adicionar, remover ou modificar os parâmetros das int
 
 > O STCP OFTP Server oferece a capacidade de configurar múltiplas interfaces de redes com diferentes protocolos de comunicação, como TCP/IP, além da opção de implementar medidas de segurança adicionais através de protocolos como SFTP, HTTPS e TLS.
 
-{{< callout type="info" >}}
-  As configurações de Redes somente serão utilizadas para as conexões entrantes (inbound).
-{{< /callout >}}
+> [!NOTE] Aviso: 
+> As configurações de Redes somente serão utilizadas para as conexões entrantes (inbound).
 
 {{< icon "chevron-right" >}}Selecione um serviço de rede e clique em **OK**.
 
@@ -104,9 +103,8 @@ A geração da CSR é divida em duas etapas:
 Como padrão, utilizaremos o utilitário **OpenSSL** para realização do processo de geração e configuração do certificado digital.
 {{< /callout >}}
 
-{{< callout type="info" >}}
-O procedimento de geração de CSR, pode ser realizado por outro software de servidor (IIS, IBM Webshepere, iPlanet, Keytool, entre outros), conforme a infraestrutura utilizada.
-{{< /callout >}}
+> [!NOTE] Nota: 
+> O procedimento de geração de CSR, pode ser realizado por outro software de servidor (IIS, IBM Webshepere, iPlanet, Keytool, entre outros), conforme a infraestrutura utilizada.
 
 #### Geração do Par de Chaves
 
@@ -126,8 +124,6 @@ Em seguida, para gerar a requisição (CSR), utilize a linha de comando e digite
 ```
 openssl req -new -key C:\STCPODT\Keys\chaveprivada.key > C:\STCPODT\Keys\solicitacao.csr -config C:\STCPODT\Program\openssl.cnf
 ```
-
-<!-- ![](./imagem/img3.png) -->
 
 #### Solicitação do certificado 
 A CSR, gerada no passo anterior, deverá ser encaminhada para a entidade certificadora conforme procedimentos fornecidos por essa. Para maiores dúvidas referente ao envio da CSR entre em contato com seu agente de contas junto à entidade certificadora.
@@ -275,9 +271,8 @@ X.25/Router | Esta opção de compatibilidade permite a comunicação do STCP OF
 XFB*/SSL   | Habilita a compatibilidade do STCP com o XFB em conexões seguras SSL.
 Compressão GZIP| Esta opção assinalada habilita a utilização da compressão GZIP onthe-fly (durante a transferência).  <br> Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica.
 
-{{< callout type="info" >}}
-  \*As marcas citadas são propriedade dos seus respectivos donos.
-{{< /callout >}}
+> [!WARNING] Aviso: 
+> *As marcas citadas são propriedade dos seus respectivos donos.
 
 {{< icon "chevron-right" >}}Na guia **Odette**, configure as seguintes opções para o protocolo **OFTP: TCP/IP_1**.
 
@@ -343,9 +338,8 @@ X.25/Router | Esta opção de compatibilidade permite a comunicação do STCP OF
 XFB*/SSL   | Habilita a compatibilidade do STCP com o XFB em conexões seguras SSL.
 Compressão GZIP| Esta opção assinalada habilita a utilização da compressão GZIP onthe-fly (durante a transferência).  <br> Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica.
 
-{{< callout type="info" >}}
-  \*As marcas citadas são propriedade dos seus respectivos donos.
-{{< /callout >}}
+> [!WARNING] Aviso: 
+> *As marcas citadas são propriedade dos seus respectivos donos.
 
 {{< icon "chevron-right" >}}Na guia **TLS**, configure as seguintes opções:
 
@@ -412,9 +406,8 @@ XFB*/SSL   | Habilita a compatibilidade do STCP com o XFB em conexões seguras S
 Compressão GZIP| Esta opção assinalada habilita a utilização da compressão GZIP onthe-fly (durante a transferência).  <br> Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica.
 ----
 
-{{< callout type="info" >}}
-  \*As marcas citadas são propriedade dos seus respectivos donos.
-{{< /callout >}}
+> [!WARNING] Aviso: 
+> *As marcas citadas são propriedade dos seus respectivos donos.
 
 {{< icon "chevron-right" >}}Na guia **SSH/SFTP**, configure as seguintes opções:
 
@@ -509,9 +502,8 @@ XFB*/SSL   | Habilita a compatibilidade do STCP com o XFB em conexões seguras S
 Compressão GZIP| Esta opção assinalada habilita a utilização da compressão GZIP onthe-fly (durante a transferência).  <br> Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica.
 ----
 
-{{< callout type="info" >}}
-  \*As marcas citadas são propriedade dos seus respectivos donos.
-{{< /callout >}}
+> [!WARNING] Aviso: 
+> *As marcas citadas são propriedade dos seus respectivos donos.
 
 {{< icon "chevron-right" >}}Na guia **TLS**, configure as seguintes opções:
 
@@ -578,9 +570,8 @@ XFB*/SSL   | Habilita a compatibilidade do STCP com o XFB em conexões seguras S
 Compressão GZIP| Esta opção assinalada habilita a utilização da compressão GZIP onthe-fly (durante a transferência).  <br> Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica.
 ----
 
-{{< callout type="info" >}}
-  \*As marcas citadas são propriedade dos seus respectivos donos.
-{{< /callout >}}
+> [!WARNING] Aviso: 
+> *As marcas citadas são propriedade dos seus respectivos donos.
 
 {{< icon "chevron-right" >}}Na guia **TLS**, configure as seguintes opções:
 
@@ -623,9 +614,9 @@ Na guia **Usuários**, você poderá adicionar, remover, modificar ou copiar os 
 
 ![](img/usuarios.png)
 
-{{< callout type="info" >}}
-  Para um novo usuário adicionado, automaticamente, será criada uma estrutura de subdiretórios [(veja a estrutura de diretórios)](./#estrutura-dos-diretórios) para o envio e recepção dos arquivos, dentro do **Diretório de Dados** que foi previamente configurado na guia **Geral**.
-{{< /callout >}}
+> [!WARNING] Aviso: 
+> Para um novo usuário adicionado, automaticamente, será criada uma estrutura de subdiretórios [(veja a estrutura de diretórios)](./#estrutura-dos-diretórios) para o envio e recepção dos arquivos, dentro do **Diretório de Dados** que foi previamente configurado na guia **Geral**.
+
 
 <br>
 
@@ -677,13 +668,11 @@ Selecione a opção de **Protocolo** desejada e clique em **Configurar**.
 | Blob – Azure  |        Configura o STCP OFTP Server para utilizar o protocolo de comunicação Blob, da Microsoft.        |
 ---
 
-{{< callout type="info">}}
-Clique [aqui](https://docs.aws.amazon.com/pt_br/AmazonS3/latest/userguide/Welcome.html) para mais informações sobre o **Amazon Simple Storage Service (S3)**.
-{{< /callout >}}
+> [!TIP] Dica: 
+> Clique [aqui](https://docs.aws.amazon.com/pt_br/AmazonS3/latest/userguide/Welcome.html) para mais informações sobre o **Amazon Simple Storage Service (S3)**.
 
-{{< callout type="info" >}}
-  Clique [aqui](https://azure.microsoft.com/pt-br/products/storage/blobs) para mais informações sobre o **Armazenamento de Blobs do Azure**.
-{{< /callout >}}
+> [!TIP] Dica: 
+> Clique [aqui](https://azure.microsoft.com/pt-br/products/storage/blobs) para mais informações sobre o **Armazenamento de Blobs do Azure**.
 
 #### Protocolo OFTP
 

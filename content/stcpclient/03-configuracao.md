@@ -53,9 +53,8 @@ O programa de configuração pode ser acessado também na pasta **Program** da a
 | Número de série*       |                                                              Preencha este campo com o número de série que foi disponibilizado por email.                                                            |
 
 
-{{< callout type="warning" >}}
-  *O preenchimento deste campo é obrigatório.
-{{< /callout >}}
+> [!WARNING] Atenção
+> *O preenchimento deste campo é obrigatório.
 
 ## Configurar Perfil
 
@@ -64,9 +63,8 @@ um usuário do serviço <a href="/stcpserver/" target="_blank">STCP OFTP Server<
 
 {{< icon "chevron-right" >}}Clique no botão **Adicionar**
 
-{{< callout type="info" >}}
-Para um novo Perfil adicionado, automaticamente, será criada uma estrutura de subdiretórios (vide exemplo abaixo) para o envio e recepção dos arquivos, dentro do Diretório de Dados que foi previamente configurado na guia Geral (tópico anterior).
-{{< /callout >}}
+> [!NOTE] Informação
+> Para um novo Perfil adicionado, automaticamente, será criada uma estrutura de subdiretórios (exemplo abaixo) para o envio e recepção dos arquivos, dentro do Diretório de Dados que foi previamente configurado na guia Geral (tópico anterior).
 
 {{< filetree/container >}}
   {{< filetree/folder name="<NOME DO PERFIL>" state="open" >}}
@@ -206,9 +204,8 @@ selecionada anteriormente.
 | XFB\*/SSL          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    Habilita a compatibilidade do STCP com o XFB em conexões seguras SSL.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | Compressão GZIP    |                                                                                                                                                                                                                                                                                                                                                                                                                                                        Esta opção assinalada habilita a utilização da compressão GZIP onthe-fly (durante a transferência). <br> Obs.: Antes de habilitar esta opção confirme se o servidor com quem você deseja se comunicar suporta esta característica.                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 
-{{< callout type="info" >}}
-  \*As marcas citadas são propriedade dos seus respectivos donos.
-{{< /callout >}}
+> [!CAUTION] Atenção
+> \*As marcas citadas são propriedade dos seus respectivos donos.
 
 {{< icon "chevron-right" >}}Na guia **TLS(Openssl)**, configure os seguintes campos para o protocolo OFTP - TCP/IP.
 
@@ -267,9 +264,8 @@ A associação entre um **Tipo de arquivo** e o arquivo propriamente dito pode s
 | 3    |              O nome do arquivo e os valores definidos em uma expressão regular.              |
 ---
 
-{{< callout type="info" >}}
-Obs.: Para informações mais detalhadas sobre expressão regular (RegEx), acesse o site [Rubular](https://rubular.com/).
-{{< /callout >}}
+> [!TIP] Dica
+> Obs.: Para informações mais detalhadas sobre expressão regular (RegEx), acesse: [Rubular](https://rubular.com/)
 
 A tabela abaixo demonstra a associação do nome do arquivo com o tipo específico:
 
@@ -514,20 +510,14 @@ Clique no botão **Lê Configuração Proxy do IE** para obter as informações 
 
 ![](img/clt-proxy-03.png)
 
-{{< callout type="info" >}}
-Autenticação Basic é comumente utilizada com servidores Squid, Wingate e outros.
-Autenticação NTLM é comumente utilizada com servidores ISA, MS-Proxy.
-{{< /callout >}}
-
-**Notas:**
-{{< callout type="info" >}}
-  Algumas configurações de autenticação requerem a informação do servidor de
-  domínio (quando aplicável) no seguinte padrão: (Nomedodomínio) \ (Usuário do
-  domínio).
-{{< /callout >}}
+> [!NOTE] Informação
+> Autenticação Basic é comumente utilizada com servidores Squid, Wingate e outros.
+> Autenticação NTLM é comumente utilizada com servidores ISA, MS-Proxy.
 
 
-{{< callout type="info" >}}
-  Nos casos em que houver alteração da senha do usuário do domínio, a senha do
-  STCP OFTP Client também deverá ser alterada.
-{{< /callout >}}
+**_Notas:_**
+> [!IMPORTANT]  
+> Algumas configurações de autenticação requerem a informação do servidor de domínio (quando aplicável) no seguinte padrão: (Nomedodomínio) \ (Usuário do domínio).
+
+> [!IMPORTANT] Importante: 
+> Nos casos em que houver alteração da senha do usuário do domínio, a senha do STCP OFTP Client também deverá ser alterada.

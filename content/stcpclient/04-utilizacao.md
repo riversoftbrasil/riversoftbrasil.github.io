@@ -133,12 +133,9 @@ No campo **Programa/script** informe a linha de comando utilizada para executar 
 C:\STCPCLT\program\stcpclt.exe "C:\STCPCLT\CTCP.INI" -p PERFIL-TESTE -r 5 -t 30 -m B
 ```
 
-{{< callout type="info" >}}
-  Para obter a linha de comando utilizada, clique com o botão direito do mouse
-  no atalho do STCP OFTP Client, que foi criado na área de trabalho no momento
-  da instalação e configuração do software. Na guia **Atalho**, copie o conteúdo
-  do campo **Destino**
-{{< /callout >}}
+> [!TIP] Dica  
+> Para obter a linha de comando utilizada, clique com o botão direito do mouse no atalho do STCP OFTP Client, que foi criado na área de trabalho no momento da instalação e configuração do software. Na guia **Atalho**, copie o conteúdo do campo **Destino**
+
 
 Ao ser apresentada a mensagem abaixo clique no botão **Sim**.
 

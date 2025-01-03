@@ -32,9 +32,8 @@ Para realizar o login será necessário selecionar um EntryPoint na caixa de sel
 
 Caso não haja nenhum Entrypoint cadastrado ou mais de uma opção, consulte o administrador da rede e verifique qual utilizar.
 
-{{< callout type="info" >}}
-O EntryPoint é essencial para logar no sistema!
-{{< /callout >}}
+> [!NOTE] Nota: 
+> O EntryPoint é essencial para logar no sistema!
 
 ## Login
 
@@ -43,9 +42,9 @@ Durante o primeiro login utilize o operador **stcpadmin** e a senha **Admin**.
 ![](img/image-03.png "Usuário e Senha")
 
 
-{{< callout type="info" >}}
-O operador stcpadmin possui permissões de acesso e configuração a todas as entidadoes do portal, contudo ao logar com outros operadores o acesso às funcionalidades descritas neste documento poderá estar disponível ou indisponível.
-{{< /callout >}}
+> [!NOTE]
+> O operador stcpadmin possui permissões de acesso e configuração a todas as entidadoes do portal, contudo ao logar com outros operadores o acesso às funcionalidades descritas neste documento poderá estar disponível ou indisponível.
+
 
 Ao fazer isso a listagem dos módulos será exibida, sendo eles: Configurador STCP, Admin, e Painel de Controle.
 
@@ -55,9 +54,9 @@ Ao fazer isso a listagem dos módulos será exibida, sendo eles: Configurador ST
 
 O módulo Configurador STCP permite ao operador manipular: Configuração de instâncias, serviços de rede, usuários (caixas postais), agendamentos, tipos de arquivos para transferência.
 
-{{< callout type="info" >}}
-A instância é uma peça chave, por isso não será possível acessar os menus Usuários, Serviços e Agendamentos antes de se selecionar ou criar uma Instância.
-{{< /callout >}}
+> [!NOTE] Nota: 
+> A instância é uma peça chave, por isso não será possível acessar os menus Usuários, Serviços e Agendamentos antes de se selecionar ou criar uma Instância.
+
 
 Para estabelecer uma conexão são necessários ao menos:
 
@@ -83,10 +82,8 @@ O cadastro de uma nova instância é realizado clicando em "+ Adicionar" no cant
 
 ![](img/image-05.png "Adicionar instância")
 
-{{< callout type="info" >}}
-Para facilitar a compreensão e definição dos campos e atributos, o cadastro é dividido em seções e subseções como mostrado nas imagens a seguir:
-{{< /callout >}}
-
+> [!IMPORTANT] Nota: 
+> Para facilitar a compreensão e definição dos campos e atributos, o cadastro é dividido em seções e subseções como mostrado nas imagens a seguir:
 
 #### Seção Geral
 
@@ -183,9 +180,9 @@ qual será o tipo de autenticação, como pode ser observado na tabela a seguir:
 | Confirmar                   | Confirmação da senha do banco de dados.                          |                          |
 
 
-{{< callout type="info" >}}
-**Nesta subseção todos os parâmetros são obrigatórios!**
-{{< /callout >}}
+> [!CAUTION] Atenção
+> Nesta subseção todos os parâmetros são obrigatórios!
+
 
 **Políticas de senhas:** Também podem ser alteradas as **Políticas de senha**, sua utilização não é obrigatória, porém recomenda-se aplicá-las por questões de segurança. Segue uma tabela explicativa dos campos desta subseção e suas especificações:
 
@@ -230,9 +227,8 @@ qual será o tipo de autenticação, como pode ser observado na tabela abaixo:
 | Confirmar | Confirmação da senha do banco de dados.                           |                             |
 
 
-{{< callout type="info" >}}
-**Nesta subseção todos os campos são obrigatórios.**
-{{< /callout >}}
+> [!CAUTION] Atenção
+> Nesta subseção todos os parâmetros são obrigatórios!
 
 {{< callout type="warning" >}}
 O banco de dados utilizado para os Logs não precisa ser o mesmo definido na autenticação.
@@ -282,11 +278,8 @@ da tela. Para executar uma dessas ações, clique neste ícone a função **Copi
 
 ![](img/image-21.png "Copiar instâncias")
 
-{{< callout type="info" >}}
-Ao selecionar a função copiar você será direcionado a uma tela semelhante a de edição, nela já
-constarão as informações da instância copiada exceto o nome. Modifique os campos que julgar
-necessário, digite o nome da nova instância e salve-a.
-{{< /callout >}}
+> [!IMPORTANT] Nota: 
+> Ao selecionar a função copiar você será direcionado a uma tela semelhante a de edição, nela já constarão as informações da instância copiada exceto o nome. Modifique os campos que julgar necessário, digite o nome da nova instância e salve-a.
 
 ### Remover Instâncias
 
@@ -350,15 +343,9 @@ Nesta seção serão descritas as **Informações** do tipo de arquivo criado, e
 | Remover timestamp           | Habilita/Desabilita a remoção de timestamp do arquivo transmitido                                                                                               | Chave selecionável                        |
 | Backup                      | Habilita/Desabilita Backup dos arquivos transmitidos                                                                                                            | Chave selecionável                        |
 
-**NOTAS**:
+> [!NOTE] Notas: 
 > Somente utilize a opção Remover CRLF quando o formato do registro for Fixo ou Variável.
 > Ao escolher um formato de registro Fixo será necessário informar o Tamanho do registro.
-
-<!-- {{< callout type="info" >}}
-**NOTAS:**
-* Somente utilize a opção Remover CRLF quando o formato do registro for Fixo ou Variável.
-* Ao escolher um formato de registro **Fixo** será necessário informar o **Tamanho do registro**. 
-{{< /callout >}} -->
 
 **OFTP2:** Nesta subseção configuram-se os parâmetros dos arquivos que utilizam o protocolo OFTP 2 na comunicação com foco na segurança dos arquivos que serão transmitidos. Segue a tabela com os parâmetros e suas funcionalidades:
 
@@ -419,9 +406,8 @@ campos que devem ser configurados:
 
 Finalmente, para adicionar o novo Tipo de Arquivo à Instância e concluir o cadastro, clique em **Salvar**.
 
-{{< callout type="info" >}}
-Os tipos de arquivos são mostrados separadamente de acordo com a Instância em que foram criados.
-{{< /callout >}}
+> [!NOTE] Nota: 
+> Os tipos de arquivos são mostrados separadamente de acordo com a Instância em que foram criados.
 
 ### Editar Tipos de Arquivo
 
@@ -431,9 +417,9 @@ Para editar um tipo de arquivo de uma instância, clique no ícone de edição c
 
 Após acessar a edição, altere os atributos desejados e salve as alterações.
 
-{{< callout type="info" >}}
-Não é possível alterar o nome de um tipo de arquivo definido como Padrão.
-{{< /callout >}}
+> [!WARNING] Atenção: 
+> Não é possível alterar o nome de um tipo de arquivo definido como Padrão.
+
 
 ### Copiar Tipos de Arquivo
 
@@ -441,9 +427,8 @@ Para copiar um tipo de arquivo de uma instância, acesse o menu de seleção cli
 
 ![](img/image-35.png "Editar tipo de arquivo da Instância")
 
-{{< callout type="info" >}}
-Ao clicar em **Copiar**, os campos do Tipo de Aquivo ficarão desabilitados.
-{{< /callout >}}
+> [!NOTE] Nota:
+> Ao clicar em **Copiar**, os campos do Tipo de Aquivo ficarão desabilitados.
 
 ### Remover Tipos de Arquivo
 
@@ -476,10 +461,8 @@ Ao fazer isso, será apresentada a tela para criar uma nova:
 
 ![](img/image-40.png)
 
-{{< callout type="info" >}}
-A divisão do formulário entre Seções e Subseções continuará sendo utilizada da mesma forma
-que durante o cadastro de Instâncias.
-{{< /callout >}}
+> [!NOTE] Nota: 
+> A divisão do formulário entre Seções e Subseções continuará sendo utilizada da mesma forma que durante o cadastro de Instâncias.
 
 #### Aba Geral
 
@@ -489,10 +472,9 @@ A primeira subseção a ser preenchida é a **Identificação**.
 
 ![](img/image-41.png "Identificação da nova Rede")
 
-{{< callout type="info" >}}
-As Redes podem ser do tipo OFTP, Supervisão (Gemini e DirectLink), API (DirectLink) sendo que a primeira é utilizada durante transferências de arquivos entre usuários, autenticação das Instâncias, etc, e a segunda para visualizar
-logs do sistema no console do Portal.
-{{< /callout >}}
+> [!NOTE] Nota: 
+> As Redes podem ser do tipo OFTP, Supervisão (Gemini e DirectLink), API (DirectLink) sendo que a primeira é utilizada durante transferências de arquivos entre usuários, autenticação das Instâncias, etc, e a segunda para visualizar logs do sistema no console do Portal.
+
 
 Siga a tabela abaixo para facilitar a inserção de dados:
 
@@ -503,13 +485,11 @@ Siga a tabela abaixo para facilitar a inserção de dados:
 | Nome        | Nome da Rede                                   | Auto atribuído pelo sistema |
 | Descrição   | Descrição da Rede                              |                       |
 
-{{< callout type="info" >}}
-**AVISOS:**
-* Caso uma Rede seja bloqueada nenhuma conexão poderá ser inicializada por ela.
-* O nome da Rede é automaticamente atribuído pelo sistema, seguindo o padrão:
-   * Redes do tipo OFTP: TCPIP_<Numero_da _rede>
-   * Redes do tipo SUPERVISÃO: TCPIP_SUP_<Numero_da_rede>
-{{< /callout >}}
+> [!WARNING] Avisos:
+> Caso uma Rede seja bloqueada nenhuma conexão poderá ser inicializada por ela.
+> O nome da Rede é automaticamente atribuído pelo sistema, seguindo o padrão:
+> - Redes do tipo OFTP: TCPIP_<Numero_da _rede>
+> - Redes do tipo SUPERVISÃO: TCPIP_SUP_<Numero_da_rede>
 
 #### Aba Comunicação
 
@@ -524,10 +504,8 @@ Na aba de **Comunicação** as subseções a serem preenchidas são: **Interface
 | Porta IP   | Porta IP habilitada na Interface local para comunicação com a Rede. Parâmetro obrigatório       | Numerais              |
 | Nível de debug | Informa o nível de detalhamento em que os logs serão capturados na Interface Local         |                       |
 
-{{< callout type="info" >}}
-**DICA:** Para que o sistema busque qualquerInterface Local disponível, preencha o campo Endereço IP
-com o valor "0.0.0.0"
-{{< /callout >}}
+> [!TIP] Dica: 
+> Para que o sistema busque qualquer Interface Local disponível, preencha o campo Endereço IP com o valor "0.0.0.0"
 
 ![](img/image-44.png)
 
@@ -586,9 +564,8 @@ A terceira seção a ser preenchida varia a depender do tipo de Rede escolhida, 
 | Tempo de inatividade| Tempo, em segundos, em que a Rede permanecerá inativa e aceitará reabrir a transmissão caso haja interrupção.  | Numerais                                    |
 | Nível de debug      | Informa o nível de detalhamento em que os logs da Rede serão listados pelo sistema no Console Info e arquivos de log. | Numerais                                    |
 
-{{< callout type="info" >}}
-**AVISO:** Em uma transferência, o emissor poderá enviar o número de pacotes de dados informados para o parâmetro créditos antes de o receptor confirmar que está apto para receber a transmissão e que os dados serão recebidos com sucesso.
-{{< /callout >}}
+> [!WARNING] Aviso: 
+> Em uma transferência, o emissor poderá enviar o número de pacotes de dados informados para o parâmetro créditos antes de o receptor confirmar que está apto para receber a transmissão e que os dados serão recebidos com sucesso.
 
 Para concluir o processo de cadastro da Rede, clique em **Salvar** como mostrado na imagem a seguir.
 
@@ -600,9 +577,8 @@ Para editar uma Rede, acesse a lista de Redes em: **Redes** e depois **Editar**,
 
 Após acessar a edição, altere os campos desejados e salve as alterações.
 
-{{< callout type="info" >}}
-**AVISO:** O campo **Nome** da Rede não pode ser alterado!
-{{< /callout >}}
+> [!CAUTION] Aviso: 
+> O campo **Nome** da Rede não pode ser alterado!
 
 ### Copiar Redes
 
@@ -630,9 +606,8 @@ O STCP Gemini Portal permite criar novos Usuários acessando o menu lateral em *
 
 ![](img/image-50.png "Adicionar imagem")
 
-{{< callout type="info" >}}
-Para facilitar a compreensão e definição dos campos e atributos, o cadastro é dividido em seções e subseções como mostrado na imagem a seguir:
-{{< /callout >}}
+> [!NOTE] Nota:
+> Para facilitar a compreensão e definição dos campos e atributos, o cadastro é dividido em seções e subseções como mostrado na imagem a seguir:
 
 #### Seção Geral
 
@@ -653,9 +628,8 @@ A primeira seção a ser preenchida é a de identificação. Segue uma tabela de
 | Confirmar (Obrigatório) | Confirmação da senha definida anteriormente.                   | Mesmo valor inserido para a senha |
 
 
-{{< callout type="info" >}}
-Ao criar a senha do usuário, deve-se seguir as políticas de senha definidas na criação de Instâncias. Pode-se visualizar abaixo que as políticas estão sendo seguidas nos campos **Senha** e **Confirmar**.
-{{< /callout >}}
+> [!NOTE] Nota: 
+> Ao criar a senha do usuário, deve-se seguir as políticas de senha definidas na criação de Instâncias. Pode-se visualizar abaixo que as políticas estão sendo seguidas nos campos **Senha** e **Confirmar**.
 
 #### Seção Características 
 
@@ -674,13 +648,11 @@ salvos na pasta BACKUP do sistema.                                             |
 necessidade de ser alterada.     | Chave selecionável             |
 | Transmissão otimizada | Permite que usuário envie arquivos de sua pasta Saída ao receber uma conexão     | Chave selecionável             |
 
-{{< callout type="info" >}}
-Só é possível adicionar um tipo de arquivo previamente criado.
-{{< /callout >}}
+> [!WARNING] Aviso: 
+> Só é possível adicionar um tipo de arquivo previamente criado.
 
-{{< callout type="warning" >}}
-Os tipos de arquivo do usuário possuem prioridade em relação aos da instância, ou seja, as tratativas definidas na instância só ocorrerão caso não haja nenhuma tratativa definida para o usuário utilizado na transferência.
-{{< /callout >}}
+> [!WARNING] Aviso: 
+> Os tipos de arquivo do usuário possuem prioridade em relação aos da instância, ou seja, as tratativas definidas na instância só ocorrerão caso não haja nenhuma tratativa definida para o usuário utilizado na transferência.
 
 #### Seção Controles 
 
@@ -724,11 +696,10 @@ As últimas subseções de cadastro dos Usuários são responsáveis pelas confi
 | Tamanho máximo                | Define o tamanho máximo dos arquivos enviados em pacotes de 1024 Bytes.       | Numerais            |
 | Enviar ID local do arquivo no campo Userdata | Esta opção permite que o ID local do arquivo seja enviado no campo Userdata. |                     |
 
-{{< callout type="info" >}}
-**Cálculo do tamanhos mínimo e máximo dos arquivos:**
+> [!NOTE] Nota: 
+> Cálculo do tamanhos mínimo e máximo dos arquivos: <br>
+> A definição dos tamanhos de arquivos e a análise dos arquivos transmitidos e recebidos são realizadas a partir de pacotes de **1024 Bytes**. Configurando o campo "Tamanho mínimo:" com um valor x , o sistema realizará o seguinte cálculo:
 
-A definição dos tamanhos de arquivos e a análise dos arquivos transmitidos e recebidos são realizadas a partir de pacotes de **1024 Bytes**. Configurando o campo "Tamanho mínimo:" com um valor x , o sistema realizará o seguinte cálculo:
-{{< /callout >}}
 
 | Campo             | Descrição                                                                                                                |
 |-------------------|--------------------------------------------------------------------------------------------------------------------------|
@@ -736,9 +707,8 @@ A definição dos tamanhos de arquivos e a análise dos arquivos transmitidos e 
 | Valor múltiplo de 1024 Bytes | O sistema irá considerar o valor exatamente como está no campo "Tamanho Mínimo".                                |
 | Valor não múltiplo de 1024 Bytes | O sistema irá pegar o valor do cálculo valor/1024 = (valor arredondado para o próximo número inteiro acima do número decimal * 1024), e este será o valor do tamanho mínimo considerado pelo sistema. |
 
-{{< callout type="info" >}}
-Ou seja, definindo o **Tamanho mínimo** como **1 Byte**, o sistema irá fazer o cálculo de **1/1024 = 0,00097** aproximadamente. Esse número será arredondado para 1 (número inteiro mais próximo acima do número decimal) e porfim, irá multiplicá-lo por 1024 (1*1024), logo, o **tamanho mínimo** deverá ser 1024 Bytes.
-{{< /callout >}}
+> [!NOTE] Nota: 
+> Ou seja, definindo o **Tamanho mínimo** como **1 Byte**, o sistema irá fazer o cálculo de **1/1024 = 0,00097** aproximadamente. Esse número será arredondado para 1 (número inteiro mais próximo acima do número decimal) e porfim, irá multiplicá-lo por 1024 (1*1024), logo, o **tamanho mínimo** deverá ser 1024 Bytes.
 
 * Exemplos de Configurações dos Arquivos: 
 
@@ -786,9 +756,8 @@ A próxima seção caso a opção OFTP seja habilitada é a OFTP, dividida nas s
 | Confirmar       | Confirmação da senha definida anteriormente                         | Deve-se inserir a mesma senha definida anteriormente. |
 | Userdata        | Dados extra associados à identificação Odette informada.            |                                               |
 
-{{< callout type="info" >}}
-Preencha o campo **Userdata** somente se for requerido pelo servidor.
-{{< /callout >}}
+> [!NOTE] Aviso: 
+> Preencha o campo **Userdata** somente se for requerido pelo servidor.
 
 ![](img/image-57.png "Subseção Opções")
 
@@ -807,9 +776,8 @@ Preencha o campo **Userdata** somente se for requerido pelo servidor.
 | Nível de Debug            | Nível dos debugs obtidos no Usuário e mostrados nos logs do sistema.                                        | Numerais                                            |
 | Nome longo para arquivos            |    Chave utilizada para permitir que arquivos com mais de 26 caracteres com até 128 caracteres possam ser transferidos                                  | Chave selecionável                                            |
 
-{{< callout type="info" >}}
-Em uma transferência o emissor poderá enviar o número de pacotes de dados informados para o parâmetro créditos antes de o receptor confirmar que está apto para receber a transmissão e que os dados serão recebidos com sucesso.
-{{< /callout >}}
+> [!NOTE] Nota: 
+> Em uma transferência o emissor poderá enviar o número de pacotes de dados informados para o parâmetro créditos antes de o receptor confirmar que está apto para receber a transmissão e que os dados serão recebidos com sucesso.
 
 ![](img/image-58.png "Subseção Comunicação")
 
@@ -1148,9 +1116,8 @@ especificidades:
 
 Esta seção é dividida nas subseções **Executar comando externo** e **Aguardar término da execução do comando**.
 
-{{< callout type="info" >}}
-Obs.: Para está seção ser habilitada para cadastro, a chave **Executar comando externo** na subseção Agenda deve estar habilitada.
-{{< /callout >}}
+> [!IMPORTANT] Aviso: 
+> Obs.: Para está seção ser habilitada para cadastro, a chave **Executar comando externo** na subseção Agenda deve estar habilitada.
 
 | Campo                          | Descrição                                                                                                        |
 |--------------------------------|------------------------------------------------------------------------------------------------------------------|
