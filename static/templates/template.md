@@ -36,9 +36,8 @@ As dependências para o STCP Gemini Client podem ser instaladas através do repo
 $ yum install -y epel-release
 ```
 
-{{< callout type="info" >}}
-**Nota:** O EPEL (Extra Packages for Enterprise Linux) é um repositório utilizado por administradores de sistemas Linux que necessitam instalar no servidor, pacotes mais recentes e versões atualizadas de bibliotecas, visto que esses pacotes mais novos não são imediatamente adicionados aos repositórios oficiais.
-{{< /callout >}}
+> [!NOTE] Nota: 
+> O EPEL (Extra Packages for Enterprise Linux) é um repositório utilizado por administradores de sistemas Linux que necessitam instalar no servidor, pacotes mais recentes e versões atualizadas de bibliotecas, visto que esses pacotes mais novos não são imediatamente adicionados aos repositórios oficiais.
 
 No Amazon Linux o acesso ao EPEL pode ser habilitado através do comando:
 
@@ -235,10 +234,8 @@ Os arquivos que serão enviados para a {{ customer }} deverão ser disponibiliza
 
 Em seguida, execute o STCP Gemini Client conforme descrito acima na seção de [Execução](#execução).
 
-{{< callout type="info" >}}
-**Nota:** Todos os arquivos que estiverem na pasta SAIDA serão enviados. 
-Os arquivos enviados com sucesso serão removidos automaticamente da pasta de SAIDA.
-{{< /callout >}}
+> [!NOTE] Nota: 
+> Todos os arquivos que estiverem na pasta SAIDA serão enviados. Os arquivos enviados com sucesso serão removidos automaticamente da pasta de **SAIDA**.
 
 Ao executar o STCP Gemini Client, os arquivos que forem recebidos na caixa {{ customer }} ficarão disponíveis na pasta ENTRADA da aplicação.
 

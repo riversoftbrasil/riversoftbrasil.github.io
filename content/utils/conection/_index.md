@@ -32,9 +32,8 @@ Nos parâmetros IP-SERVIDOR-DESTINO e PORTA deverão ser informados o IP e Porta
 
 ![](img/telnet-01.png)
 
-{{< callout type="info" >}}
-Obs.: Antes de realizar o teste com o Telnet, verifique se o mesmo encontra-se instalado em seu sistema operacional. Em caso de dúvidas consulte o seu administrador de rede.
-{{< /callout >}}
+> [!NOTE] Aviso
+> Obs.: Antes de realizar o teste com o Telnet, verifique se o mesmo encontra-se instalado em seu sistema operacional. Em caso de dúvidas consulte o seu administrador de rede.
 
 Caso a conexão seja estabelecida com sucesso, a tela abaixo deverá ser exibida. Observe que para haver sucesso no teste de conectividade, a mensagem **ODETTE FTP READY** deverá ser exibida conforme a imagem de exemplo abaixo.
 
@@ -48,10 +47,8 @@ A mensagem de erro poderá variar conforme o problema existente na conectividade
 
 ![](img/telnet-03.png)
 
-{{< callout type="info" >}}
-Obs.: Em caso de dúvidas na execução deste processo, consulte o seu administrador de rede.
-{{< /callout >}}
-
+> [!CAUTION] Atenção
+> Em caso de dúvidas na execução deste processo, consulte o seu administrador de rede.
 
 ## OpenSSL
 
@@ -90,7 +87,6 @@ Caso o teste retorne falha na conexão, por favor, verifique com a área de infr
 
 A mensagem de erro poderá variar conforme o problema existente na conectividade.
 
-{{< callout type="info" >}}
-Obs.: Em caso de dúvidas na execução deste processo, consulte o seu administrador de rede.
-{{< /callout >}}
+> [!CAUTION] Atenção
+> Em caso de dúvidas na execução deste processo, consulte o seu administrador de rede.
 

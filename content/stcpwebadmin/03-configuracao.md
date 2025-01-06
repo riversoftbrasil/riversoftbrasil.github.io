@@ -73,9 +73,9 @@ Sybase.
 {{% /details %}}
 
 
-{{< callout type="info" >}}
-Obs.: As configurações acima podem ser feitas em uma mesma base de dados, ou seja, não é necessário o uso de bases de dados distintas para o funcionamento do STCP OFTP Web Admin.
-{{< /callout >}}
+> [!NOTE] Aviso
+> Obs.: As configurações acima podem ser feitas em uma mesma base de dados, ou seja, não é necessário o uso de bases de dados distintas para o funcionamento do STCP OFTP Web Admin.
+
 
 Verifique nas seção <a href="/stcpwebadmin/iis/">Configuração no IIS</a>, as configurações e procedimentos necessários no IIS para realizar o acesso ao STCP OFTP Web Admin
 
@@ -87,9 +87,8 @@ Verifique nas seção <a href="/stcpwebadmin/iis/">Configuração no IIS</a>, as
 
 {{< icon "chevron-right" >}}Digite **stcpadmin** no campo operador e **teste** em senha.
 
-{{< callout type="info" >}}
-Obs.: para o primeiro login na ferramenta, qualquer nome de operador e senha serão aceitos, já que não existe nenhum operador cadastrado.
-{{< /callout >}}
+> [!NOTE] Aviso
+> Obs.: para o primeiro login na ferramenta, qualquer nome de operador e senha serão aceitos, já que não existe nenhum operador cadastrado.
 
 ![](./imagem2/img66.png)
 
@@ -103,9 +102,9 @@ Obs.: para o primeiro login na ferramenta, qualquer nome de operador e senha ser
 
 {{< icon "chevron-right" >}}Cadastre o administrador do sistema.
 
-{{< callout type="info" >}}
-Obs.: o administrador do sistema deverá ser obrigatoriamente o **stcpadmin**. Este operador não terá restrições de acesso e poderá gerenciar todos os outros operadores.
-{{< /callout >}}
+> [!NOTE] Aviso
+> Obs.: o administrador do sistema deverá ser obrigatoriamente o **stcpadmin**. Este operador não terá restrições de acesso e poderá gerenciar todos os outros operadores.
+
 
 ![](./imagem2/img68.png)
 
@@ -123,9 +122,8 @@ Obs.: o administrador do sistema deverá ser obrigatoriamente o **stcpadmin**. E
 
 ![](./imagem2/img70.png)
 
-{{< callout type="info" >}}
-Obs.: para associar todos os servidores a todos os usuários, utilize \ . Para especificar os usuários relacionados ao servidor, basta separar com uma barra invertida \ . Exemplo: **SERV001\USER001**.
-{{< /callout >}}
+> [!TIP] Dica
+> Obs.: para associar todos os servidores a todos os usuários, utilize \ . Para especificar os usuários relacionados ao servidor, basta separar com uma barra invertida \ . Exemplo: **SERV001\USER001**.
 
 {{< icon "chevron-right" >}}Selecione os operadores e as permissões que farão parte do grupo.
 
@@ -159,9 +157,8 @@ Obs.: para associar todos os servidores a todos os usuários, utilize \ . Para e
 
 {{< icon "chevron-right" >}}Adicione as informações do servidor.
 
-{{< callout type="info" >}}
-Obs.: este servidor refere-se ao servidor de monitoração definido no STCP OFTP Server.
-{{< /callout >}}
+> [!NOTE]
+> Obs.: este servidor refere-se ao servidor de monitoração definido no STCP OFTP Server.
 
 ![](./imagem2/img75.png)
 
@@ -494,9 +491,8 @@ Exemplo: SRSVM-T02.
 
 {{< icon "chevron-right" >}}Para modificar a senha do operador do STCP OFTP Web Admin, acesse **Manutenção → Modificar senha**.
 
-{{< callout type="info" >}}
-  Obs.: este procedimento modifica a senha do operador que está logado na ferramenta.
-{{< /callout >}}
+> [!NOTE]
+> Obs.: este procedimento modifica a senha do operador que está logado na ferramenta.
 
 ![](./imagem2/img118.png)
 
@@ -540,9 +536,8 @@ Exemplo: SRSVM-T02.
 
 {{< icon "chevron-right" >}}Para recuperar uma transferência de uma caixa postal do STCP OFTP Server, acesse **Manutenção → Usuários (Caixa Postal) → Recuperar transferência**.
 
-{{< callout type="info" >}}
-  Obs.: este procedimento recupera uma transferência do diretório **Backup** e coloca no diretório **Saída** da caixa postal.
-{{< /callout >}}
+> [!NOTE] Aviso
+> Obs.: este procedimento recupera uma transferência do diretório **Backup** e coloca no diretório **Saída** da caixa postal.
 
 ![](./imagem2/img124.png)
 
@@ -606,9 +601,8 @@ Exemplo: SRSVM-T02.
 
 {{< icon "chevron-right" >}}Será aberta uma nova janela informando o resultado da execução do agendamento.
 
-{{< callout type="info" >}}
-  Obs.: se o agendamento estiver desabilitado, não será possível executá-lo.
-{{< /callout >}}
+> [!NOTE] Aviso
+> Obs.: se o agendamento estiver desabilitado, não será possível executá-lo.
 
 <!-- ![](./imagem2/img133.png) -->
 
@@ -616,9 +610,9 @@ Exemplo: SRSVM-T02.
 
 {{< icon "chevron-right" >}}Para alterar o estado de um agendamento do STCP OFTP Server, acesse **Monitoração → Agendamentos → Alterar estado**.
 
-{{< callout type="info" >}}
-  Obs.: este procedimento permite que um agendamento seja bloqueado/desbloqueado.
-{{< /callout >}}
+> [!NOTE] Aviso
+> Obs.: este procedimento permite que um agendamento seja bloqueado/desbloqueado.
+
 
 ![](./imagem2/img134.png)
 
@@ -649,9 +643,8 @@ Exemplo: SRSVM-T02.
 
 ![](./imagem2/img138.png)
 
-{{< callout type="info" >}}
- A monitoração do servidor permite visualizar, em tempo real, todos os eventos¹ da sessão atual do serviço do STCP OFTP. Esta página é atualizada de tempos em tempos.
-{{< /callout >}}
+> [!NOTE]
+> A monitoração do servidor permite visualizar, em tempo real, todos os eventos[1] da sessão atual do serviço do STCP OFTP. Esta página é atualizada de tempos em tempos.
 
 ![](./imagem2/img139_1.png)
 ![](./imagem2/img139_2.png)
@@ -664,9 +657,8 @@ Exemplo: SRSVM-T02.
 
 ![](./imagem2/img140.png)
 
-{{< callout type="info" >}}
- As transferências são monitoradas em tempo real e a página é atualizada de tempos em tempos.
-{{< /callout >}}
+> [!NOTE] Aviso
+> As transferências são monitoradas em tempo real e a página é atualizada de tempos em tempos.
 
 ![](./imagem2/img141.png)
 
@@ -674,9 +666,8 @@ Exemplo: SRSVM-T02.
 
 {{< icon "chevron-right" >}}Para iniciar uma conexão com uma caixa postal do STCP OFTP Server, acesse **Monitoração → Usuários (Caixa Postal) → Iniciar Conexão**.
 
-{{< callout type="info" >}}
-Obs.: esta funcionalidade só está disponível para caixas postais que estejam com a conexão automática habilitada.
-{{< /callout >}}
+> [!NOTE] Aviso
+> Obs.: esta funcionalidade só está disponível para caixas postais que estejam com a conexão automática habilitada.
 
 ![](./imagem2/img142.png)
 
@@ -705,9 +696,8 @@ Obs.: esta funcionalidade só está disponível para caixas postais que estejam 
 
 {{< icon "chevron-right" >}}Para cancelar uma conexão com uma caixa postal do STCP OFTP Server, acesse **Monitoração → Usuários (Caixa Postal) → Cancelar Conexão**.
 
-{{< callout type="info" >}}
-Obs.: esta funcionalidade só está disponível para caixas postais que estejam com a conexão automática habilitada.
-{{< /callout >}}
+> [!NOTE] Aviso
+> Obs.: esta funcionalidade só está disponível para caixas postais que estejam com a conexão automática habilitada.
 
 ![](./imagem2/img150.png)
 
@@ -734,9 +724,8 @@ Obs.: esta funcionalidade só está disponível para caixas postais que estejam 
 
 {{< icon "chevron-right" >}}Para alterar o estado de uma caixa postal do STCP OFTP Server, acesse **Monitoração → Usuários (Caixa Postal) → Alterar estado**.
 
-{{< callout type="info" >}}
-Obs.: este procedimento permite que uma caixa postal seja bloqueada/desbloqueada.
-{{< /callout >}}
+> [!NOTE] Aviso
+> Obs.: este procedimento permite que uma caixa postal seja bloqueada/desbloqueada.
 
 ![](./imagem2/img146.png)
 

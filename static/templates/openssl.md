@@ -48,8 +48,7 @@ Caso o teste retorne falha na conexão, por favor, verifique com a área de infr
 
 A mensagem de erro poderá variar conforme o problema existente na conectividade.
 
-{{< callout type="info" >}}
-Obs.: Em caso de dúvidas na execução deste processo, consulte o seu administrador de rede.
-{{< /callout >}}
+> [!CAUTION] Atenção
+> Em caso de dúvidas na execução deste processo, consulte o seu administrador de rede.
 
 {{% /steps %}}

@@ -71,9 +71,8 @@ Ambos podem ser utilizados por diferentes aplicações para:
 
 API para integração de aplicações, facilitando o processo de administração e supervisão.
 
-{{< callout type="info" >}}
-Está aplicação só está disponível para STCP Gemini Server.
-{{< /callout >}}
+> [!NOTE] Aviso
+> Está aplicação só está disponível para STCP Gemini Server.
 
 ### Funcionalidades
 
@@ -102,9 +101,8 @@ Está aplicação só está disponível para STCP Gemini Server.
 
 Ferramenta com acesso pelo navegador (HTTPS), é possível controlar os processos de transferência de arquivos e supervisionar os servidores STCP.
 
-{{< callout type="info" >}}
-Esta aplicação só está disponível para o STCP Gemini Server.
-{{< /callout >}}
+> [!NOTE] Aviso
+> Esta aplicação só está disponível para o STCP Gemini Server.
 
 ### Funcionalidades
 

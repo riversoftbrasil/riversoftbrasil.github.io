@@ -16,9 +16,8 @@ lastmod: 2024-09-13
 
 Esta seção tem por objetivo descrever os passos necessários para configuração do STCP OFTP Web Admin no IIS.
 
-{{< callout type="info" >}}  
-Para maiores detalhes sobre as versões do IIS e da sua respectiva data de suporte acesse: <a href="https://learn.microsoft.com/pt-br/lifecycle/products/internet-information-services-iis" target="_blank">IIS (Serviços de Informações da Internet)</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;
-{{< /callout >}}
+> [!NOTE] 
+> Para maiores detalhes sobre as versões do IIS e da sua respectiva data de suporte acesse: <a href="https://learn.microsoft.com/pt-br/lifecycle/products/internet-information-services-iis" target="_blank">IIS (Serviços de Informações da Internet)</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;
 
 Para realização destes procedimentos os seguintes pré-requisitos são necessários:
 
