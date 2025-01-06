@@ -59,9 +59,8 @@ $ yum update -y
 $ amazon-linux-extras install epel -y
 ```
 
-{{< callout type="warning" >}}
-**Nota:** A instalação do EPEL não é necessária para o Amazon Linux 2023.
-{{< /callout >}}
+> [!NOTE] Nota: 
+> A instalação do EPEL não é necessária para o Amazon Linux 2023.
 
 No Oracle Linux, de acordo com a versão utilizada, o acesso ao EPEL pode ser habilitado através do comando abaixo. Para mais informações consulte a documentação da Oracle (https://yum.oracle.com/).
 

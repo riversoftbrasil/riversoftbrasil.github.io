@@ -45,10 +45,8 @@ Esta requisição deve ser utilizada para obter o token de autorização
 
 ### Parameters
 
-{{< callout type="warning" >}}
-<span style="color:red;">*</span> Parâmetro obrigatório
-{{< /callout >}}
-
+> [!WARNING] Atenção
+> <span style="color:red;">*</span> Parâmetro obrigatório
 
 ### Header
 

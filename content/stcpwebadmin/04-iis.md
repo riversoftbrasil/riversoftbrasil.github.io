@@ -61,9 +61,9 @@ Neste procedimento a instalação do STCP OFTP Web Admin foi realizada no diret�
 
 ![](./imagem/img8.png)
 
-{{< callout type="warning" >}}
- Verique com o administrador de rede quais as configurações corretas para a etapa anterior.
-{{< /callout >}}
+> [!WARNING] Aviso:
+> Verique com o administrador de rede quais as configurações corretas para a etapa anterior.
+
 
 {{< icon "chevron-right" >}}O novo site será exibido no painel **Conexões**, da janela do Gerenciador de Serviços de Informações da Internet (IIS).
 

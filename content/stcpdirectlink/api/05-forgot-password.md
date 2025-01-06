@@ -42,9 +42,8 @@ https://your-domain/directlink/v1/auth/forget
 
 ### Parameters
 
-{{< callout type="warning" >}}
-<span style="color:red;">*</span> Parâmetro obrigatório
-{{< /callout >}}
+> [!WARNING] Atenção
+> <span style="color:red;">*</span> Parâmetro obrigatório
 
 #### Query
 

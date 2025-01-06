@@ -24,9 +24,8 @@ O Serviço Web Admin permite que o Operador realize as funções de Consulta dos
 
 Além das funções descritas anteriormente há outras disponíveis, como Iniciar Conexões, e todas serão descritas a seguir.
 
-{{< callout type="warning" >}}
-  **AVISO:** Para que os recursos abordados por este manual funcionem corretamente é **NECESSÁRIO** que haja pelo menos um nó de monitoração criado e atribuído a um Serviço de **Monitoração da Instância**. Estas configurações podem ser consultadas nos Manuais dos Configuradores Web Admin e STCP.
-{{< /callout >}}
+> [!WARNING] Aviso
+> Para que os recursos abordados por este manual funcionem corretamente é **NECESSÁRIO** que haja pelo menos um nó de monitoração criado e atribuído a um Serviço de **Monitoração da Instância**. Estas configurações podem ser consultadas nos Manuais dos Configuradores Web Admin e STCP.
 
 ## Menu Consulta
 

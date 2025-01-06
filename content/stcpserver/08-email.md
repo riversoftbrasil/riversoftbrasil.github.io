@@ -57,9 +57,9 @@ Após a configuração e testes do script VBS, uma alteração nas Propriedades 
 cscript //B C:\STCPODT\Program\STCPEMAILEVT.VBS NOME-SERVIDOR "
 ```
 
-{{< callout type="warning" >}}
-Nota: Observe que logo após o nome do servidor será necessário inserir uma aspas duplas (abre aspas).
-{{< /callout >}}
+> [!NOTE] Nota:
+> Observe que logo após o nome do servidor será necessário inserir uma aspas duplas (abre aspas).
+
 
 ![](img/email-04.png)
 

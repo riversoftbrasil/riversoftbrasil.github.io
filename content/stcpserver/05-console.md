@@ -80,10 +80,9 @@ remover visões, monitorar usuários e eventos, etc.
 | ----------- | ----------- |
 | Compressão GZIP | Esta opção habilita ou inibe a utilização da compressão GZIP on-the-fly (durante a transferência).|
 
-{{< callout type="warning" >}}
-Obs: antes de habilitar a opção Compressão GZIP, confirme se o servidor com quem você deseja se
-comunicar suporta esta característica.
-{{< /callout >}}
+> [!WARNING] Aviso
+> Obs: antes de habilitar a opção Compressão GZIP, confirme se o servidor com quem você deseja se comunicar suporta esta característica.
+
 
 {{< icon "chevron-right" >}}Na guia **SSL3(Openssl)**, preencha os parâmetros:
 
@@ -273,10 +272,9 @@ Quando a monitoração de eventos é ativada, alguns botões são habilitados pe
 | Limpar mensagens | Esta função permite apagar as mensagens da lista de monitoração. Para fazer uso desta funcionalidade basta clicar sobre o botão **Limpar Mensagens**. |
 | Definir filtro de eventos | Esta função permite definir um filtro de eventos mais externo que será usado somente durante esta monitoração. Primeiro, as mensagens de eventos são comparadas com o filtro de eventos definido na visão, e em seguida, são comparadas com este filtro. Este filtro permite também, que seja definida a quantidade de mensagens a ser exibida no parâmetro **Nº. de linhas**. |
 
-{{< callout type="info">}}
-Obs.: quando se define o filtro de eventos, a aplicação passa a ter como parâmetro de quantidade de
-mensagens o que for definido no parâmetro “Nº. de linhas” do filtro de eventos e não da visão.
-{{< /callout >}}
+> [!WARNING] Aviso
+> Obs.: quando se define o filtro de eventos, a aplicação passa a ter como parâmetro de quantidade de mensagens o que for definido no parâmetro **Nº. de linhas** do filtro de eventos e não da visão.
+
 
 {{< icon "chevron-right" >}}Para fazer uso desta funcionalidade, clique sobre o botão **Filtro de Eventos**. Será exibida a tela onde o usuário deve definir o filtro e a quantidade de mensagens de eventos, em seguida, clique no botão **OK** para que a monitoração seja atualizada com as novas informações.
 

@@ -230,9 +230,8 @@ qual será o tipo de autenticação, como pode ser observado na tabela abaixo:
 > [!CAUTION] Atenção
 > Nesta subseção todos os parâmetros são obrigatórios!
 
-{{< callout type="warning" >}}
-O banco de dados utilizado para os Logs não precisa ser o mesmo definido na autenticação.
-{{< /callout >}}
+> [!WARNING] Aviso
+> O banco de dados utilizado para os Logs não precisa ser o mesmo definido na autenticação.
 
 **Nível de log das mensagens de eventos:** No cadastro dos logs também há essa subseção, onde são definidos quais logs serão gravados no banco de dados, quais serão mostrados no próprio Console Log do sistema e os comandos externos a serem executados.
 
@@ -267,9 +266,8 @@ Caso precise editar algum parâmetro de uma instância já criada, acesse a list
 Já na página de edição, altere os atributos desejados e salve as modificações ao final. Em caso de dúvidas leia
 a descrição dos campos novamente no tópico de Adicionar Instâncias
 
-{{< callout type="warning" >}}
-O campo **Nome:** da Instância não pode ser alterado!
-{{< /callout >}}
+> [!WARNING] Aviso
+> O campo **Nome:** da Instância não pode ser alterado!
 
 ### Copiar Instâncias
 
@@ -441,9 +439,8 @@ Clique em **Sim** ao ser questionado.
 
 ![](img/image-37.png "Confirmar exclusão")
 
-{{< callout type="warning" >}}
-Obs.: Não é possível remover o Tipo de Arquivo padrão da Instância.
-{{< /callout >}}
+> [!WARNING] Aviso
+> Obs.: Não é possível remover o Tipo de Arquivo padrão da Instância.
 
 ## Configurações de Redes
 
@@ -528,9 +525,9 @@ Na aba de **Comunicação** as subseções a serem preenchidas são: **Interface
 | Senha     | Senha da chave TLS que será verificada na comunicação da Rede.                                       | Quaisquer valores exceto espaço    |
 | Confirmar | Confirmação da senha da chave TLS                                                                    | Mesmo valor inserido como Senha    |
 
-{{< callout type="warning" >}}
-**AVISO:** Os campos Chave e certificado são obrigatórios caso a chave TLS esteja habilitada.
-{{< /callout >}}
+> [!WARNING] Aviso
+> Os campos Chave e certificado são obrigatórios caso a chave TLS esteja habilitada.
+
 
 **TLS- Certificados CA (Autoridades)**
 
@@ -852,9 +849,9 @@ Abaixo temos cada uma e suas respectivas tabelas explicativas:
 | Confirmar       | Confirmação da senha definida anteriormente                               | Deve-se inserir a mesma senha definida anteriormente. |
 | Userdata        | Dados extra associados à identificação Odette informada.                  |                                              |
 
-{{< callout type="warning" >}}
-Preencha o campo Userdata somente se for requerido pelo servidor.
-{{< /callout >}}
+> [!WARNING] Aviso
+> Preencha o campo Userdata somente se for requerido pelo servidor.
+
 
 **Autenticação de chave pública**
 
@@ -869,9 +866,9 @@ A próxima subseção a ser cadastrada é a *Autenticação de Chave Pública* q
 | Senha           | Senha definida para a Chave, caso ela tenha sido definida.            |                                             |
 | Confirmar       | Confirmar a Senha inserida anteriormente.                             | Deve-se inserir a mesma senha definida anteriormente. |
 
-{{< callout type="warning" >}}
-A Autenticação pela Chave não é obrigatória, o Usuário pode escolher se irá conectar-se pela Chave Pública ou pelo SFTP ID e Senha.
-{{< /callout >}}
+> [!WARNING] Aviso
+> A Autenticação pela Chave não é obrigatória, o Usuário pode escolher se irá conectar-se pela Chave Pública ou pelo SFTP ID e Senha.
+
 
 **Opções**
 
@@ -910,9 +907,8 @@ A Autenticação pela Chave não é obrigatória, o Usuário pode escolher se ir
 |--------------|-----------------------------------------------------------------------|-------------------------------|
 | FingerPrint  | Código para verificação da conexão do Usuário com o Servidor SFTP.    | Caracteres do Código FingerPrint |
 
-{{< callout type="warning" >}}
-A Autenticação pelo FingerPrint não é obrigatória
-{{< /callout >}}
+> [!WARNING] Aviso
+> A Autenticação pelo FingerPrint não é obrigatória
 
 **Controle de Download/Upload**
 
@@ -994,9 +990,8 @@ Ao acessar a tela de Tipos de Arquivo, clique em **+ Adicionar** e cadastre os c
 
 ![](img/image-85.png)
 
-{{< callout type="warning" >}}
-É importante destacar que os tipos de arquivo só ficam disponíveis para o usuário que os criou.
-{{< /callout >}}
+> [!WARNING] Aviso
+> É importante destacar que os tipos de arquivo só ficam disponíveis para o usuário que os criou.
 
 ### Editar Tipos de Arquivo de Usuário
 

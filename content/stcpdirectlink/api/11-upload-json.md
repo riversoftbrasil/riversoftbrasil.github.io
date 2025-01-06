@@ -42,9 +42,8 @@ https://your-domain/directlink/v1/upload
 
 ### Parameters
 
-{{< callout type="warning" >}}
-<span style="color:red;">*</span> Parâmetro obrigatório
-{{< /callout >}}
+> [!WARNING] Atenção
+> <span style="color:red;">*</span> Parâmetro obrigatório
 
 #### Header
 
@@ -242,9 +241,8 @@ https://your-domain/directlink/v1/upload
 
 ### Parameters
 
-{{< callout type="warning" >}}
-<span style="color:red;">*</span> Parâmetro obrigatório
-{{< /callout >}}
+> [!WARNING] Atenção
+> <span style="color:red;">*</span> Parâmetro obrigatório
 
 #### Header
 

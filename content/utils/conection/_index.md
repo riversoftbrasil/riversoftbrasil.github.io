@@ -26,9 +26,8 @@ Quando a conexão é estabelecida através de uma porta de comunicação sem o u
 telnet <IP-SERVIDOR-DESTINO> <PORTA>
 ```
 
-{{< callout type="warning" >}}
-Nos parâmetros IP-SERVIDOR-DESTINO e PORTA deverão ser informados o IP e Porta respectivos ao servidor do parceiro, no qual a conexão será realizada.
-{{< /callout >}}
+> [!WARNING] Aviso: 
+> Nos parâmetros IP-SERVIDOR-DESTINO e PORTA deverão ser informados o IP e Porta respectivos ao servidor do parceiro, no qual a conexão será realizada.
 
 ![](img/telnet-01.png)
 
@@ -64,9 +63,8 @@ Quando a conexão é estabelecida através de uma porta de comunicação segura 
 
 {{< icon "chevron-right" >}}No diretório C:/Temp execute o comando openssl.exe.
 
-{{< callout type="warning" >}}
-Nos parâmetros IP-SERVIDOR-DESTINO e PORTA deverão ser informados o IP e Porta respectivos ao servidor do parceiro, no qual a conexão será realizada.
-{{< /callout >}}
+> [!WARNING] Aviso: 
+> Nos parâmetros IP-SERVIDOR-DESTINO e PORTA deverão ser informados o IP e Porta respectivos ao servidor do parceiro, no qual a conexão será realizada.
 
 {{< icon "chevron-right" >}}Após acesso ao OpenSSL, execute a linha de comando abaixo:
 

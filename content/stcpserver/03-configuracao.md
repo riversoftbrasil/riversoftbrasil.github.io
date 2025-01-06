@@ -55,9 +55,8 @@ Diretório de dados| Preencha este campo com o diretório, onde a estrutura de s
 Número de série*| Preencha este campo com o número de série que é disponibilizado. <br>
 ----
 
-{{< callout type="warning" >}}
- *Obs.: O preenchimento deste campo é obrigatório.
-{{< /callout >}}
+> [!WARNING] Atenção
+> <span style="color:red;">*</span> Parâmetro obrigatório
 
 ## Redes
 
@@ -99,9 +98,9 @@ A geração da CSR é divida em duas etapas:
 * Geração do par de chaves (que deve ser gerada no tamanho de 2048 bits)
 * Geração da CSR
 
-{{< callout type="warning" >}}
-Como padrão, utilizaremos o utilitário **OpenSSL** para realização do processo de geração e configuração do certificado digital.
-{{< /callout >}}
+> [!WARNING] Aviso
+> Como padrão, utilizaremos o utilitário **OpenSSL** para realização do processo de geração e configuração do certificado digital.
+
 
 > [!NOTE] Nota: 
 > O procedimento de geração de CSR, pode ser realizado por outro software de servidor (IIS, IBM Webshepere, iPlanet, Keytool, entre outros), conforme a infraestrutura utilizada.
@@ -136,9 +135,8 @@ Uma vez Aprovado e Emitido, o contato técnico responsável do processo de certi
 
 Para maiores dúvidas referente ao processo de instalação e configuração entre em contato com o seu agente de suporte (CA) e/ou com a sua equipe de segurança.
 
-{{< callout type="warning" >}}
-Este procedimento não tem como objetivo descrever o processo de instalação e configuração do certificado adquirido e sim os passos necessários para utilização desse certificado junto ao Riversoft STCP OFTP Server e Riversoft STCP OFTP Client.
-{{< /callout >}}
+> [!WARNING] Aviso
+> Este procedimento não tem como objetivo descrever o processo de instalação e configuração do certificado adquirido e sim os passos necessários para utilização desse certificado junto ao Riversoft STCP OFTP Server e Riversoft STCP OFTP Client.
 
 #### Configurar Certificado
 
@@ -906,9 +904,9 @@ Outros| As opções definidas neste grupo serão utilizadas localmente pelo STCP
 Tempo máximo de inatividade| Preencha este campo com o tempo máximo de inatividade de comunicação entre o STCP OFTP Server e o computador remoto.
 Nível de debug* | Preencha este campo com o nível de detalhamento das informações que serão gravadas no arquivo de depuração. Para obter no mesmo arquivo de depuração a informação dos diferentes níveis, preencha este campo com a soma dos níveis desejados. <br> Para acessar as informações detalhadas sobre o debug acesse a página de <a href="/utils/debug" target="_blank">Debug</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;
 
-{{< callout type="warning">}}
-*Somente habilite esta opção quando for solicitado por uma equipe especializada.
-{{< /callout >}}
+> [!WARNING] Aviso
+> *Somente habilite esta opção quando for solicitado por uma equipe especializada.
+
 
 ### FTP
 

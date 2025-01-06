@@ -139,9 +139,8 @@ Clique em **OK**.
 Para obter as informações detalhadas sobre o nível de Debug acesse a seção <a href="/utils/debug" target="_blank">Debug</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;
 
 
-{{< callout type="warning" >}}
-Obs.: Somente habilite esta opção quando for solicitado por uma equipe especializada.
-{{< /callout >}}
+> [!CAUTION] Atenção
+> Somente habilite esta opção quando for solicitado por uma equipe especializada.
 
 Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alterar as configurações.
 
@@ -169,9 +168,8 @@ Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alt
 | Intervalo entre tentativas            |                                                                                                                                  Preencha este campo com o intervalo mínimo (segundos) de espera para a realização de uma nova tentativa de conexão.                                                                                                                                   |
 | Solicitar usuário e senha             |                                                                                                                                                        Esta opção assinalada irá solicitar usuário e senha ao executar o STCP.                                                                                                                                                         |
 ---
-{{< callout type="warning">}}
-  Não habilite esta opção se você não tiver absoluta certeza de que o parceiro remoto é um STCP OFTP Client e que esteja também com esta característica habilitada.
-{{< /callout >}}
+> [!WARNING] Atenção
+> Não habilite esta opção se você não tiver absoluta certeza de que o parceiro remoto é um STCP OFTP Client e que esteja também com esta característica habilitada.
 
 {{< icon "chevron-right" >}}Ainda na guia **Geral**, clique no botão **Configurar** para configurar a opção de protocolo
 selecionada anteriormente.
@@ -441,9 +439,8 @@ de sucesso (Return code 0), o processo é finalizado com sucesso.
 | 7               |                                        Os eventos de início e término da unidade de processamento (threads).                                        |
 | 8               |                                                      Os eventos de início e término da agenda.                                                      |
 
-{{< callout type="warning" >}}
- Obs.: Os eventos associados a um nível inferior ou igual ao selecionado serão processados.
-{{< /callout >}}
+> [!WARNING] Atenção
+> Obs.: Os eventos associados a um nível inferior ou igual ao selecionado serão processados.
 
 Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alterar as configurações.
 
@@ -466,9 +463,9 @@ Clique em **OK** para concluir o processo de configuração.
 
 ![](img/clt-config-43.png)
 
-{{< callout type="warning" >}}
-Obs: A opção *Chave* é a chave gerada pelo administrador da aplicação servidora (STCP OFTP Server).
-{{< /callout >}}
+> [!WARNING] Atenção
+> Obs: A opção *Chave* é a chave gerada pelo administrador da aplicação servidora (STCP OFTP Server).
+
 
 ## Configuração de Certificado 
 
