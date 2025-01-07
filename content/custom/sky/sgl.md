@@ -7,4 +7,4 @@ sidebar:
 brand: sky
 slug: m7kp4v2xqlj
 ---
-{{< include "static/templates/template.md" >}}
+{{< include "static/templates/sgl.md" >}}

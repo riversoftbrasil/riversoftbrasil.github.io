@@ -6,4 +6,4 @@ sidebar:
     exclude: true
 brand: unicred
 ---
-{{< include "static/templates/template.md" >}}
+{{< include "static/templates/sgl.md" >}}

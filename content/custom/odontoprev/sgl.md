@@ -7,4 +7,4 @@ sidebar:
 brand: odontoprev
 slug: f9tx2ql8zvk
 ---
-{{< include "static/templates/template.md" >}}
+{{< include "static/templates/sgl.md" >}}

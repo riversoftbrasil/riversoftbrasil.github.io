@@ -7,4 +7,4 @@ sidebar:
 brand: accor
 slug: xil4poj2fa8
 ---
-{{< include "static/templates/template.md" >}}
+{{< include "static/templates/sgl.md" >}}

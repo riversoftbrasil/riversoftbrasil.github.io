@@ -7,4 +7,4 @@ sidebar:
 brand: e-sales
 slug: z3k2nx7fav4
 ---
-{{< include "static/templates/template.md" >}}
+{{< include "static/templates/sgl.md" >}}

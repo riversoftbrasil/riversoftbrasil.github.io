@@ -7,4 +7,4 @@ sidebar:
 brand: edenred
 slug: t7x9lbq1oj5
 ---
-{{< include "static/templates/template.md" >}}
+{{< include "static/templates/sgl.md" >}}
