@@ -7,4 +7,4 @@ sidebar:
 brand: sodexo
 slug: a3vn9tx8pl2
 ---
-{{< include "static/templates/template.md" >}}
+{{< include "static/templates/sgl.md" >}}
