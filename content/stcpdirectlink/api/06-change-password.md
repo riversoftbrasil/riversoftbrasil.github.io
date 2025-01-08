@@ -46,7 +46,7 @@ https://your-domain/directlink/v1/auth/change
 
 |   Parâmetro    | Descrição | |
 | ----------- | ----------- | -------- |
-| *k* <span style="color:red;">*</span>   | Token de alteração de senha retornado na resposta das funções: *[Primeiro acesso](/stcpdirectlink/05-api/first-acess/)* ou *[Esqueceu a senha](stcpdirectlink/05-api/forgot-password/)*|
+| *k* <span style="color:red;">*</span>   | Token de alteração de senha retornado na resposta das funções: *[Primeiro acesso](/stcpdirectlink/api/primeiro-acesso/)* ou *[Esqueceu a senha](/stcpdirectlink/api/recuperar-senha/)*|
 | p | Pin (código de segurança) que será enviado para o email do usuário que está cadastrado na plataforma |
 | z | Nova senha |
 

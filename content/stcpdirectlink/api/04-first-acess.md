@@ -8,7 +8,7 @@ sidebar:
 weight: 4
 prev: /logout
 next: /forgot-password
-slug: first-acess
+slug: primeiro-acesso
 draft: false
 lastmod: 2024-06-19
 ---
