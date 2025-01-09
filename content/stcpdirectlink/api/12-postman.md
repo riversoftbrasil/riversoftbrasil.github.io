@@ -14,7 +14,7 @@ lastmod: 2024-02-23
 ---
 ## Requisições de exemplo utilizando o Postman
 
-Exemplos das chamadas e parâmetros da API STCP DirectLink.
+Exemplos das chamadas e parâmetros da API do STCP DirectLink.
 
 Para simplificar o processo de desenvolvimento e testes de acesso a API, disponibilizamos o link abaixo contendo exemplos das chamadas para o Postman.
 
