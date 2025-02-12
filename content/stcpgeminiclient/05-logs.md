@@ -24,7 +24,7 @@ Através dos arquivos de log é possível auditar todos os eventos de comunicaç
 
 Os arquivos de log são armazenados na pasta *LOG*.
 
-```
+```sh
 /usr/local/stcpclient/logs
 ```
 

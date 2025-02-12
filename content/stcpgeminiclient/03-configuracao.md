@@ -18,17 +18,15 @@ Toda a configuração da aplicação será realizada através do *STCP Gemini Cl
 
 ![](img/sgc-02.png)
 
-## Arquivo JSON
-
 Siga os passos abaixo para criar o arquivo de configuração da aplicação.
 
-```
+```sh
 $ cd /usr/local/stcpclient/configs/
 $ cp example-stcpclient.config.json stcpclient.config.json
 ```
 Execute o configurador do STCP Gemini Client e siga os passos exibidos na tela para concluir a configuração.
 
-```
+```sh
 $ stcpclient-config init
 ```
 

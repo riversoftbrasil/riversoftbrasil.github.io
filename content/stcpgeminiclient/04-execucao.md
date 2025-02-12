@@ -13,11 +13,11 @@ next: /04-log-sgc/
 slug: execucao
 lastmod: 2024-06-21
 ---
+
 Para executar a aplicação, através do terminal, utilize a linha de comando abaixo.
 
-```
-$ stcpclient -p O0055NOMEPERFIL -r 1
-/usr/local/stcpclient/configs/stcpclient.config.json
+```sh
+$ stcpclient -p O0055NOMEPERFIL -r 1 /usr/local/stcpclient/configs/stcpclient.config.json
 ```
 
 Após a execução do STCP Gemini Client, assim que a conexão com servidor for estabelecida com sucesso, os arquivos serão enviados e/ou
@@ -35,9 +35,8 @@ Os arquivos que serão **enviados** deverão ser disponibilizados na pasta *SAID
 
 Em seguida, execute o STCP Gemini Client conforme descrito acima.
 
-> **Nota:** Todos os arquivos que estiverem na pasta SAIDA serão enviados.
-Os arquivos enviados com sucesso serão removidos automaticamente da pasta de SAIDA.
-
+> [!TIP] Nota
+> Todos os arquivos que estiverem na pasta SAIDA serão enviados. Os arquivos enviados com sucesso serão removidos automaticamente da pasta de SAIDA.
 
 Ao executar o STCP Gemini Client, os arquivos que forem **recebidos** ficarão disponíveis na pasta *ENTRADA* da aplicação.
 
@@ -49,8 +48,8 @@ Ao executar o STCP Gemini Client, os arquivos que forem **recebidos** ficarão d
 
 É possível automatizar a execução do STCP Gemini Client utilizando ferramentas de agendamento que permitem controlar tarefas a serem executadas em tempos pré-configurados, como por exemplo, o Cron.
 
-```
-$ sudo cat /etc/crontab
-0 0 * * * /bin/bash -l -c "PATH=\"$PATH:/usr/local/bin\"; stcpclient -p
-O0055NOMEPERFIL -r 1 /usr/local/stcpclient/configs/stcpclient.config.json”
+```sh
+$ sudocat /etc/crontab 
+ 
+0 0 * * * /bin/bash -l -c "PATH=\"$PATH:/usr/local/bin\"; stcpclient -p O0055NOMEPERFIL -r 1 /usr/local/stcpclient/configs/stcpclient.config.json” 
 ```
