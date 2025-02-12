@@ -10,7 +10,6 @@ prev: /docs
 next: /01-install-srv
 slug: introducao
 brand: stw
-lastmod: 2024-12-13
 ---
 
 ## O que é o STCP OFTP Server
