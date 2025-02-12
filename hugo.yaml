@@ -90,6 +90,8 @@ params:
     displayPoweredBy: false
     width: normal
 
+  # Parse Git commit
+  enableGitInfo: true
   displayUpdatedDate: true
   dateFormat: "January 2, 2006"
 
