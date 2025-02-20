@@ -16,7 +16,7 @@ Esta seção tem como objetivo descrever os passos iniciais para instalação e 
 
 ### Requisitos
 
-O STCP Gemini Clientestá homologado para as distribuições CentOS (versões 7 e 8), RedHat Enterprise Linux (versões 7, 8 e 9), Amazon Linux (versões 1, 2 e 2023), Oracle Linux (versões 7, 8 e 9), Rocky Linux (versões 8 e 9), Debian (versão 9, 10, 11 e 12) e Ubuntu (versões 18.04, 20.04, 22.04 e 24.04).
+O STCP Gemini Clientestá homologado para as distribuições RedHat Enterprise Linux (versões 7, 8 e 9), Amazon Linux (versões 2 e 2023), Oracle Linux (versões 7, 8 e 9), Rocky Linux (versões 8 e 9), Debian (versão 11 e 12) e Ubuntu (versões 18.04, 20.04, 22.04 e 24.04).
 
 Por questões de segurança, o STCP Gemini Client utiliza versões mais recentes das bibliotecas **openssl**, **libssh**, **pcre2** e **libargon2**. 
 
@@ -24,7 +24,7 @@ Essas bibliotecas são dependências (pré-requisitos) para que o STCP Gemini Cl
 
 A instalação do STCP Gemini Client será realizada através do repositório oficial da Riversoft, de acordo com a distribuição Linux utilizada.
 
-## Instalação: CentOS, Red Hat Enterprise Linux, Oracle Linux e Amazon Linux
+## Instalação: Red Hat Enterprise Linux, Oracle Linux e Amazon Linux
 
 ### Instalação das dependências
 
@@ -48,11 +48,6 @@ amazon-linux-extras enable epel
 Para o Amazon Linux 1 e 2 o acesso ao EPEL pode ser habilitado através dos comandos:
 
 ```bash
-# Amazon Linux 1
-
-$ yum update -y
-$ yum install -y epel-release
-
 # Amazon Linux 2
 
 $ yum update -y
@@ -83,13 +78,13 @@ Para instalar o STCP Gemini Client será necessária a configuração do reposit
 Para isso, utilizando o terminal, execute os passos a seguir:
 
 ```bash
-# RHEL 7, Oracle Linux 7, Amazon Linux 1, 2 e CentOS 7
+# RHEL 7, Oracle Linux 7 e Amazon Linux 2 
 
 $ curl https://repo.riversoft.com.br/configs/riversoft-centos-7.repo -- output /etc/yum.repos.d/riversoft-release.repo
 ```
 
 ```bash
-# RHEL 8, Oracle Linux 8, Rocky Linux 8 e CentOS 8
+# RHEL 8, Oracle Linux 8 e Rocky Linux 8 
 $ curl https://repo.riversoft.com.br/configs/riversoft-redhat-8.repo -- output /etc/yum.repos.d/riversoft-release.repo
 ```
 
@@ -137,7 +132,7 @@ $ curl https://repo.riversoft.com.br/configs/riversoft-apt-repobionic.list > /et
 ```
 
 ```bash
-# Ubuntu 20.04 e Debian 9, 10 e 11
+# Ubuntu 20.04 e Debian 11
 $ curl https://repo.riversoft.com.br/configs/riversoft-apt-repofocal.list > /etc/apt/sources.list.d/apt-riversoft.list
 ```
 
@@ -156,7 +151,7 @@ Antes de instalar o STCP Gemini Client será necessário incluir a **chave públ
 Utilizando o terminal, execute os passos a seguir:
 
 ```bash
-# Ubuntu 18.04, 20.04 e Debian 9, 10 e 11
+# Ubuntu 18.04, 20.04 e Debian 11
 $ curl https://repo.riversoft.com.br/certs/riversoft.asc | gpg --dearmor >> /etc/apt/trusted.gpg.d/riversoft.gpg
 ```
 
