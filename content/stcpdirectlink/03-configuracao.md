@@ -22,7 +22,7 @@ A aplicação irá utilizar o arquivo de configuração ***config.json*** existe
 ## Requisitos
 
 - Editor de texto (Ex: [VSCode](https://code.visualstudio.com/), [Notepad++](https://notepad-plus-plus.org/downloads/));
-- Informações do relay de email;
+- Informações do relay de e-mail;
 - Informações da interface de rede;
 - Informações do banco de dados.
 
@@ -250,26 +250,26 @@ Abaixo, temos as tabelas com as respectivas explicações de cada parâmetro:
  uploadMaxFileSize                     | Tamanho máximo do arquivo
  uploadValidateJSON                    | Habilita validação estrutural e se o arquivo é do tipo JSON
 
-### Parâmetros de email
+### Parâmetros de e-mail
 
  Parâmetros                            | Descrição
  ---------                             | -------------
- emailEnable                           | Habilita o serviço de envio do email
- emailServerAddress                    | Endereço ip ou nome do servidor de email
- emailServerPort                       | Porta do serviço de email
- emailAuthUser                         | Usuário para autenticação no serviço de email
- emailAuthPswd                         | Senha para autenticação no serviço de email
- emailFormatMimeFrom                   | Formata o campo From do email no padrão mime
- emailAuthType                         | Tipo de autenticação do serviço de email (ex.: plain - login)
- emailTemplatesPath                    | Diretório de templates de emails e assuntos
- emailSendFrom                         | Endereço de email que gera a notificação
- emailReplyTo                          | Endereço de email para retorno de resposta da notificação
+ emailEnable                           | Habilita o serviço de envio do e-mail
+ emailServerAddress                    | Endereço ip ou nome do servidor de e-mail
+ emailServerPort                       | Porta do serviço de e-mail
+ emailAuthUser                         | Usuário para autenticação no serviço de e-mail
+ emailAuthPswd                         | Senha para autenticação no serviço de e-mail
+ emailFormatMimeFrom                   | Formata o campo From do e-mail no padrão mime
+ emailAuthType                         | Tipo de autenticação do serviço de e-mail (ex.: plain - login)
+ emailTemplatesPath                    | Diretório de templates de e-mails e assuntos
+ emailSendFrom                         | Endereço de e-mail que gera a notificação
+ emailReplyTo                          | Endereço de e-mail para retorno de resposta da notificação
  emailFormatMimeFrom                   | String de formatação MIME do campo **From:** (ex: From: `<emailfrom>` -- From: `<user>` via STCPDirectLink `<emailfrom>`)
  emailSendConfirmationEnable           | Habilita o envio da notificação de confirmação do download (ex: true ou false)
  emailSendConfirmationToSenderEnable   | Habilita o envio da notificação de confirmação do download para quem enviou o arquivo (ex: true ou false)
- emailSendRetryMaximum                 | Quantidade máximo de tentativas de envio do email
- emailSendRetryWaitSeconds             | Tempo de espera para uma nova tentativa de envio do email
- emailCheckValidMXDisable              | Habilita/Desabilita a validação do dominio de email no registro MX do servidor de DNS
+ emailSendRetryMaximum                 | Quantidade máximo de tentativas de envio do e-mail
+ emailSendRetryWaitSeconds             | Tempo de espera para uma nova tentativa de envio do e-mail
+ emailCheckValidMXDisable              | Habilita/Desabilita a validação do dominio de e-mail no registro MX do servidor de DNS
 
 ### Parâmetros de SMS
 
@@ -297,9 +297,9 @@ Abaixo, temos as tabelas com as respectivas explicações de cada parâmetro:
  routePath                             | Array contendo o(s) caminho(s) do(s) diretório(s) para roteamento (ex: ["dir1","dir2"])
  routeCopyFileEnable                   | Habilita a copia do arquivo processado (ex: true ou false)
  routeCopyPath                         | Caminho do diretório de copia
- routeDirectLinkEnable                 | Habilita o DirectLink (envio de email de notificação para download) (ex: true ou false)
+ routeDirectLinkEnable                 | Habilita o DirectLink (envio de e-mail de notificação para download) (ex: true ou false)
  routeDirectLinkTableIndex             | Campo da tabela de distribuição que será utilizado no DirectLink como caixa postal (ex: origin ou destination)
- routeDirectLinkUrl                    | Url do directlink que deve ser utilizada na mensagem do SecureEmail (link do email seguro)
+ routeDirectLinkUrl                    | Url do directlink que deve ser utilizada na mensagem do SecureEmail (link do e-mail seguro)
  routeMoveFileEnable                   | Habilita o move do arquivo processado (ex: true ou false)
  routeMovePath                         | Caminho do diretório de move
  routeRemoveFile                       | Remove o arquivo processado (ex: true ou false)

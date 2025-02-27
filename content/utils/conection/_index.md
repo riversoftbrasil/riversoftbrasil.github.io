@@ -1,5 +1,5 @@
 ---
-linkTitle: Teste de conectividade
+linkTitle: Testes de conectividade
 layout: docs
 toc: true
 cascade:
@@ -10,8 +10,9 @@ weight: 14
 prev: requirements/
 next: advantages/
 draft: false
-lastmod: 2024-05-23
+lastmod: 2025-02-01
 ---
+
 ## Telnet
 
 Em alguns casos, para que seja possível a identificação de problemas relacionados à conexão e a troca de arquivos, utilizando o STCP OFTP Server/Client, se faz necessário à realização de testes de conectividade entre as partes envolvidas no processo de transferência.

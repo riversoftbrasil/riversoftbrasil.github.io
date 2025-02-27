@@ -617,11 +617,11 @@ A primeira seção a ser preenchida é a de identificação. Segue uma tabela de
 
 | Campo             | Descrição                                                            | Valores Permitidos                |
 |-------------------|----------------------------------------------------------------------|-----------------------------------|
-| Desabilitado      | Bloqueia o usuário de realizar conexões e transferir arquivos.        | Chave selecionável                |
-| Nome (Obrigatório)| Nome do Usuário a ser cadastrado.                                     | Quaisquer valores exceto espaço   |
+| Desabilitado      | Bloqueia o usuário de realizar conexões e transferir arquivos.       | Chave selecionável                |
+| Nome (Obrigatório)| Nome do Usuário a ser cadastrado.                                    | Quaisquer valores exceto espaço   |
 | Descrição         | Descrição do usuário que está sendo criado.                          |                                   |
-| E-mail            | E-mail válido do usuário                                              | Email no formato nome@email.com   |
-| Senha (Obrigatório) | Senha para o usuário                                                |                                   |
+| E-mail            | E-mail válido do usuário                                             | E-mail no formato nome@email.com   |
+| Senha (Obrigatório) | Senha para o usuário                                               |                                   |
 | Confirmar (Obrigatório) | Confirmação da senha definida anteriormente.                   | Mesmo valor inserido para a senha |
 
 

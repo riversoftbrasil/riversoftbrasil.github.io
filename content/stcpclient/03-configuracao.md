@@ -6,7 +6,7 @@ cascade:
   type: docs
 sidebar:
   exclude: false
-weight: 2
+weight: 3
 prev: /stcpclient/01-install-clt/
 next: /stcpclient/03-util/
 draft: false
@@ -50,7 +50,7 @@ O programa de configuração pode ser acessado também na pasta **Program** da a
 | Descrição             |                                                       Este campo informa a descrição do serviço do STCP OFTP Client. <br> Obs.: Para a versão STCP OFTP Client, este parâmetro não pode ser modificado.                                                       |
 | Diretório de controle | Este campo informa o nome do diretório de instalação do STCP OFTP Client, onde serão armazenadas as configurações dos Perfis, logs e arquivos de depuração da comunicação. <br> Obs.: Para a versão STCP OFTP Client, este parâmetro não pode ser modificado. |
 | Diretório de dados    |                    Preencha este campo com o diretório onde a estrutura de subdiretórios para envio e recepção dos arquivos de cada Perfil deverá ser criada. <br> Obs.: Esta configuração deve ser alterada antes da criação dos Perfis.                     |
-| Número de série*       |                                                              Preencha este campo com o número de série que foi disponibilizado por email.                                                            |
+| Número de série*       |                                                              Preencha este campo com o número de série que foi disponibilizado por e-mail.                                                            |
 
 
 > [!WARNING] Atenção
@@ -136,7 +136,7 @@ Clique em **OK**.
 | Nível de debug                        |      Preencha este campo com o nível de detalhamento das informações que serão gravadas no arquivo de depuração. Para obter no mesmo arquivo de depuração a informação dos diferentes níveis, preencha este campo com a soma dos níveis desejados.  |
 ---
 
-Para obter as informações detalhadas sobre o nível de Debug acesse a seção <a href="/utils/debug" target="_blank">Debug</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;
+Para obter as informações detalhadas sobre o nível de Debug acesse a seção [Debug](/stcpclient/debug/)
 
 
 > [!CAUTION] Atenção

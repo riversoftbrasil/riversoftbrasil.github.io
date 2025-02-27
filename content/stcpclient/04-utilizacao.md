@@ -6,7 +6,7 @@ cascade:
   type: docs
 sidebar:
   exclude: false
-weight: 3
+weight: 4
 prev: /stcpclient/02-config/
 next: /stcpclient/04-debug/
 slug: utilizacao

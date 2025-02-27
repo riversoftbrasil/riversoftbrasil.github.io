@@ -51,7 +51,7 @@ https://your-domain/directlink/v1/upload
 | *file* <span style="color:red;">*</span>  | File | Nome do arquivo |
 | *d*  |  | Usuário de destino registrado na plataforma |
 | *c*  |  | Número de celular de destino do link para download |
-| *m*  |  | Email de destino do link para download |
+| *m*  |  | E-mail de destino do link para download |
 | *i*  |  | Mensagem de notificação do link para download |
 
 
@@ -247,7 +247,7 @@ https://your-domain/directlink/v1/upload
 | *file* <span style="color:red;">*</span>  | File | Nome do arquivo |
 | *d*  |  | Usuário de destino registrado na plataforma |
 | *c*  |  | Número de celular de destino do link para download |
-| *m*  |  | Email de destino do link para download |
+| *m*  |  | E-mail de destino do link para download |
 | *i*  |  | Mensagem de notificação do link para download |
 
 #### Header

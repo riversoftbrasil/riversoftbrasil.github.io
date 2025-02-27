@@ -12,7 +12,7 @@ draft: false
 lastmod: 2024-03-05
 ---
 
-## STCP DirectLink - API REST
+## API REST do STCP DirectLink 
 
 A utilização de API REST *(Representational State Transfer)* tem crescido amplamente e sua utilização por diferentes sistemas e provedores de serviços (SaaS) abre imensas oportunidades de integração.
 

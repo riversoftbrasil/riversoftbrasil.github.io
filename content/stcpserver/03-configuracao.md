@@ -10,15 +10,17 @@ prev: /stcpserver/01-install-srv
 next: /stcpserver/03-util
 slug: configuracao
 draft: false
-lastmod: 2024-09-23
+lastmod: 2025-01-05
 ---
 ## Configurador
 
 O programa de configuração do STCP OFTP Server foi instalado na pasta selecionada durante o processo de instalação e pode ser acessado através do menu **Iniciar**. Caso você não tenha alterado a pasta padrão, execute os seguintes passos:
 
-{{< icon "chevron-right" >}} No menu **Iniciar**, **Todos os Programas**, selecione **Riversoft STCP OFTP Client**.
+{{< icon "chevron-right" >}} No menu **Iniciar**, **Todos os Programas**, selecione **Riversoft STCP Server Client**.
 
-{{< icon "chevron-right" >}} Clique no programa **Riversoft STCP OFTP Client Config**.
+![](img/server-config.png)
+
+{{< icon "chevron-right" >}} Clique no programa **Riversoft STCP OFTP Server Config**.
 
 O programa de configuração pode ser acessado também na pasta **Program** da aplicação, conforme exemplo de estrutura abaixo:
 
@@ -42,6 +44,9 @@ Na guia **Geral** preencha os campos com as informações descritas abaixo.
 
 ![](img/guia-geral.png)
 
+> [!WARNING] Atenção
+> <span style="color:red;">*</span> Parâmetros obrigatórios
+
 Campos | Descrição
 :----  | :----
 Nome   | Este campo informa o nome do serviço do STCP OFTP Server.
@@ -55,8 +60,6 @@ Diretório de dados| Preencha este campo com o diretório, onde a estrutura de s
 Número de série*| Preencha este campo com o número de série que é disponibilizado. <br>
 ----
 
-> [!WARNING] Atenção
-> <span style="color:red;">*</span> Parâmetro obrigatório
 
 ## Redes
 
@@ -83,142 +86,68 @@ Monitor – TCP/IP | Habilita a rede para supervisão do STCP através do protoc
 Monitor Directlink - TCP/IP | Habilita a rede para supervisão do Directlink através do protocolo TCP/IP.
 ----
 
-### Certificado digital emitido por uma autoridade certificadora (CA)
+### Configurar uma porta TLS
 
-Veremos abaixo os procedimentos necessários para configuração do Riversoft STCP OFTP Server utilizando certificado emitido por uma **Autoridade Certificadora**.
+{{< icon "chevron-right" >}}Acesse o configurador da aplicação: **Riversoft STCP OFTP Server Config**.
 
-#### Geração da CSR
+{{< icon "chevron-right" >}}Acesse a guia **Redes** para adicionar as interfaces que ficarão disponíveis para o serviço de transferência e adicione uma interface do serviço de transferência.
 
-A CSR, cuja sigla significa *Certificate Signing Request*, é um arquivo de texto, gerado pelo servidor web, contendo as informações para a solicitação do seu certificado junto à entidade certificadora escolhida e usada para gerar um certificado assinado digitalmente.
+![](img/guia-redes.png)
 
-A CSR conterá informações importantes da companhia e deve ser preenchida conforme instruções já encaminhadas pela entidade certificadora contratada.
+{{< icon "chevron-right" >}}Clique em **Adicionar** e selecione o protocolo **OFTP – TCP/IP**.
 
-A geração da CSR é divida em duas etapas:
+{{< icon "chevron-right" >}}Clique em **OK** para entrar nas configurações.
 
-* Geração do par de chaves (que deve ser gerada no tamanho de 2048 bits)
-* Geração da CSR
+![](img/protocolo-oftp.png)
 
-> [!WARNING] Aviso
-> Como padrão, utilizaremos o utilitário **OpenSSL** para realização do processo de geração e configuração do certificado digital.
+{{< icon "chevron-right" >}}Clique na guia **TCP/IP** e configure os parâmetros apresentados.
 
+![](img/tcp-ip-redes.png)
 
-> [!NOTE] Nota: 
-> O procedimento de geração de CSR, pode ser realizado por outro software de servidor (IIS, IBM Webshepere, iPlanet, Keytool, entre outros), conforme a infraestrutura utilizada.
+{{< icon "chevron-right" >}}Clique na guia **TLS**, configure os parâmetros apresentados abaixo e pressione o botão **OK** para finalizar.
 
-#### Geração do Par de Chaves
+![](img/redes-guia-tls.png)
 
-Acesse a pasta **Program** do diretório de instalação do Riversoft STCP OFTP Server (Ex. C:\STCPODT\Program) e em seguida, para gerar o par de chaves, digite a linha de comando:
+### Chave privativa e certificado 
 
-```
-openssl genrsa -des3 > C:\STCPODT\Keys\chaveprivada.key 2048
-```
-<!-- Após digitar a linha de comando, o sistema solicitará que informe uma senha para proteger o par de chaves que será criado no diretório *C:\STCPODT\Keys*. -->
+Os seguintes procedimentos devem ser executados para a geração da chave privativa e do certificado digital a serem utilizados na comunicação TLS.
 
-![](img/openssl-chavepriv.png "Linha de comando")
-![](img/openssl-chavepriv-dir.png "Arquivo salvo no diretório")
+{{< icon "chevron-right" >}}No prompt de comando, execute a aplicação **openssl.exe** (Ex.: C:\STCPODT\Program\openssl.exe) para iniciar o processo de geração do par de chaves assimétricas (privada/pública).
 
-#### Geração da CSR (Certificate Signing Request)
+![](img/openssl.png)
 
-Em seguida, para gerar a requisição (CSR), utilize a linha de comando e digite as informações solicitadas.
-```
-openssl req -new -key C:\STCPODT\Keys\chaveprivada.key > C:\STCPODT\Keys\solicitacao.csr -config C:\STCPODT\Program\openssl.cnf
+{{< icon "chevron-right" >}}Utilize o comando abaixo para gerar a chave privativa que será utilizada para criptografia da conexão.
+
+```pshell
+genrsa -out[unidade_disco][diretorio_instalação_stcp]\keys\[nome_da_chave].key 1024
 ```
 
-#### Solicitação do certificado 
-A CSR, gerada no passo anterior, deverá ser encaminhada para a entidade certificadora conforme procedimentos fornecidos por essa. Para maiores dúvidas referente ao envio da CSR entre em contato com seu agente de contas junto à entidade certificadora.
+Exemplo:
 
-Faça uma cópia de segurança de sua chave privada e do CSR, e guarde-as em local seguro. **Nenhuma cópia de sua chave privada deverá ser distribuída e/ou solicitada por terceiros.**
-
-#### Instalação e Configuração do certificado 
-
-Uma vez Aprovado e Emitido, o contato técnico responsável do processo de certificação digital, receberá da entidade certificadora todas as informações pertinentes à instalação e configuração do certificado.
-
-Para maiores dúvidas referente ao processo de instalação e configuração entre em contato com o seu agente de suporte (CA) e/ou com a sua equipe de segurança.
-
-> [!WARNING] Aviso
-> Este procedimento não tem como objetivo descrever o processo de instalação e configuração do certificado adquirido e sim os passos necessários para utilização desse certificado junto ao Riversoft STCP OFTP Server e Riversoft STCP OFTP Client.
-
-#### Configurar Certificado
-
-Para que seja possível configurar o STCP OFTP Server Enterprise/Lite, a fim de utilizar o certificado digital emitido por uma Autoridade Certificadora, será necessário possuir às **chaves pública e privada** e realizar os procedimentos descritos abaixo.
-
-* Chave pública
-
-Faça uma cópia da chave pública do certificado (arquivo .cer), encaminhado pela entidade certificadora, para a pasta Certs do diretório de instalação do STCP OFTP Server Enterprise/Lite (Ex. C:\STCPODT\Certs).
-
-> NOTA: Em alguns casos o administrador precisa realizar a exportação da chave pública (*.cer) do Certificado.   Para isso, é possível utilizar o snap-in Certificados do Console de Gerenciamento Microsoft (MMC).
-
-Para mais detalhes consulte: (https://technet.microsoft.com/pt-br/library/cc730988.aspx)
-
-* Chave Privativa
-
-A chave privativa (arquivo .key ou .pem) do certificado deverá ser copiada para a pasta Keys do diretório de instalação do STCP OFTP Server Enterprise/Lite (Ex. C:\STCPODT\Key).
-
-> NOTA: Em alguns casos, onde o arquivo do certificado está no formato PFX, o processo de conversão para o formato PEM será necessário. É possível realizar a conversão usando o OpenSSL, disponível na pasta Program, do diretório de instalação do STCP OFTP Server/Lite (Ex. C:\STCPODT\Program).
-<!-- Para mais detalhes consulte: (https://www.openssl.org/docs/apps/pkcs12.html) -->
-
-```{filename="Chave Privativa"}
-
-openssl pkcs12 -in C:\TEMP\empresateste.com.br.pfx -out C:\TEMP\private-key.pem -nodes
+```pshell
+genrsa –out c:\stcpodt\keys\stcp_abcde.key 1024
 ```
-![](img/cert-01.png)
 
-#### Geração do hash do certificado para uso no STCP OFTP Client
+![](img/openssl-chave-priv.png)
 
-Anterior ao processo de configuração do certificado no STCP OFTP Client, será necessária obter uma cópia da cadeia de certificados, a partir do certificado assinado e enviado pela entidade certificadora e realizar o renomeio de cada certificado dessa hierarquia para o seu hash correspondente.
+{{< icon "chevron-right" >}}O próximo passo é gerar o Certificado Digital associado à chave gerada anteriormente. Para isso, utilize o comando abaixo.
 
-{{< icon "chevron-right" >}}Faça uma cópia do certificado, encaminhado pela certificadora, para um diretório temporário do servidor onde o STCP OFTP Server está instalado (Ex. C:\TEMP).
-
-{{< icon "chevron-right" >}}Acesse o diretório temporário e clique com o botão direito do mouse no certificado (Ex. empresateste_certificate.cer) e selecione **Abrir**.
-
-{{< icon "chevron-right" >}}Na guia Caminho de Certificação selecione o certificado raíz (Ex. VeriSign Trial Secure Server Root CA – G2) e clique no botão Exibir Certificado.
-
-![](img/cert-04.png)
-
-{{< icon "chevron-right" >}}Uma nova janela será exibida, contendo as informações do certificado selecionado (neste exemplo serão exibidas as informações do certificado raiz _VeriSign Trial Secure Server Root CA – G2)_
-
-{{< icon "chevron-right" >}}Selecione a guia **Detalhes** e clique no botão **Copiar para Arquivo** para iniciar o Assistente para Exportação de Certificados
-
-![](img/cert-05.png)
-
-{{< icon "chevron-right" >}}Para continuar, clique em **Avançar**
-
-{{< icon "chevron-right" >}}No formato do arquivo de exportação selecione *X.509 codificado na base 64 (*.cer)* e clique no botão **Avançar**
-
-![](img/cert-06.png)
-
-{{< icon "chevron-right" >}}Informe o caminho e nome do arquivo a ser exportado (Ex. C:\TEMP\root_certificate.cer)
-
-{{< icon "chevron-right" >}}Para finalizar, clique no botão **Concluir**
-
-![](img/cert-07.png)
-
-{{< icon "chevron-right" >}}Repita os passos para exportar os demais certificados existentes na hierarquia de certificados, o certificado raiz (G2) e o intermediário (G3).
-
-![](img/cert-08.png)
-
-> NOTA: Neste exemplo serão gerados mais dois arquivos no diretório temporário (Ex. root_certificate.cer e intermediate_certificate.cer).
-
-{{< icon "chevron-right" >}}Acesse a pasta *Program* do diretório de instalação do Riversoft STCP OFTP Server (Ex. C:\STCPODT\Program) e em seguida, para gerar o _hash_, digite a linha de comando:
-
+```pshell
+req –new –x509 –key [unidade_disco][diretório_instalação_stcp]\keys\[nome_da_chave].key –out [unidade_disco][diretório_instalação_stcp]\certs\[nome_do_certificado].cer –days 1825 –config ./openssl.cnf
 ```
-openssl x509 –noout –hash -in C:\TEMP\root_certificate.cer
+
+Exemplo:
+
+```pshell
+req –new –x509 –key c:\stcpodt\keys\stcp_interprint.key –out c:\stcpodt\certs\stcp_abcde.cer –days 1825 –config ./openssl.cnf
 ```
-<!-- ![](./imagem/img13.png) -->
+{{< icon "chevron-right" >}}Preencha as informações solicitadas para concluir o processo de geração do Certificado Digital.
 
-{{< icon "chevron-right" >}}Uma vez obtido o _hash_ do arquivo indicado, renomeie esse arquivo para o seu _hash_ correspondente e mais a extensão .**0** (Ex. _root_certificate.cer para F877295a.0_)
+![](img/openssl-cert.png)
 
-![](img/cert-09.png)
+### Configuração da Rede
 
-{{< icon "chevron-right" >}}Repita os passos descritos acima, para renomeio dos demais arquivos exportados *(Ex. _root_certificate.cer e intermediate_certificate.cer_)*
-
-<!-- ![](./imagem/img15.png) -->
-
-{{< icon "chevron-right" >}}Copie os arquivos renomeados para a pasta Certs do diretório de instalação do STCP OFTP Client *(Ex. C:\STCPCLT\Certs)*
-
-#### Configuração da Rede
-
-{{< icon "chevron-right" >}}No menu, *Iniciar > Todos os programas > Riversoft STCP OFTP Server*, acesse o **STCP OFTP Server Config**.
+{{< icon "chevron-right" >}}Novamente acesse o **STCP OFTP Server Config**.
 
 {{< icon "chevron-right" >}}Na guia Redes selecione a rede desejada e clique no botão Propriedades.
 
@@ -226,7 +155,7 @@ openssl x509 –noout –hash -in C:\TEMP\root_certificate.cer
 
 {{< icon "chevron-right" >}}Na janela Propriedades da rede, selecione a guia *TLS* e no grupo *Chave privativa*, informe os parâmetros *Chave e Certificado*.
 
-> NOTA: Caso o certificado tenha sido instalado em um servidor Microsoft IIS, previamente será necessária a exportação do certificado para um arquivo PFX e a conversão desse arquivo para o formato PEM através do utilitário OpenSSL¹.
+> NOTA: Caso o certificado tenha sido instalado em um servidor Microsoft IIS, previamente será necessária a exportação do certificado para um arquivo PFX e a conversão desse arquivo para o formato PEM através do utilitário OpenSSL.
 
 ![](img/cert-03.png)
 
@@ -255,6 +184,9 @@ Desabilitar| Esta opção assinalada desabilita a interface de rede.
 
 ![](img/tcp_ip-configs.png)
 
+> [!WARNING] Aviso: 
+> *As marcas citadas são propriedade dos seus respectivos donos.
+
 Campos     | Descrição
 :----      | :----
 Endereço IP| Preencha este campo com o endereço TCP/IP ou nome (DNS) da interface local para a qual o serviço STCP OFTP Server deve ser disponibilizado. <br> Obs.: Utilize o endereço 0.0.0.0 para habilitar o serviço sobre todas as interfaces de rede.
@@ -269,8 +201,6 @@ X.25/Router | Esta opção de compatibilidade permite a comunicação do STCP OF
 XFB*/SSL   | Habilita a compatibilidade do STCP com o XFB em conexões seguras SSL.
 Compressão GZIP| Esta opção assinalada habilita a utilização da compressão GZIP onthe-fly (durante a transferência).  <br> Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica.
 
-> [!WARNING] Aviso: 
-> *As marcas citadas são propriedade dos seus respectivos donos.
 
 {{< icon "chevron-right" >}}Na guia **Odette**, configure as seguintes opções para o protocolo **OFTP: TCP/IP_1**.
 
@@ -432,7 +362,7 @@ Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alt
 
 ### Rede de Monitoração - TCP/IP
 
-Na rede de monitoração, temos o [STCP Console](/stcpserver/04-console/), uma rede (Ex. **TCPIP_MON_1**) utilizando o protocolo _Monitor – TCP/IP_ deverá estar previamente criada e configurada, na guia _Redes_, do STCP OFTP Server.
+Na rede de monitoração, temos o [STCP Console](/stcpserver/stcpconsole/), uma rede (Ex. **TCPIP_MON_1**) utilizando o protocolo _Monitor – TCP/IP_ deverá estar previamente criada e configurada, na guia _Redes_, do STCP OFTP Server.
 
 Por padrão da aplicação, para este tipo de rede é utilizada a porta 33050, que poderá ser alterada conforme especificações e/ou características da infraestrutura utilizada.
 
@@ -451,7 +381,6 @@ Por padrão da aplicação, para este tipo de rede é utilizada a porta 33050, q
 {{< icon "chevron-right" >}}Selecione a guia _Monitor_ e preencha os campos abaixo:
 
 ```{filename="Usuário de monitoração"}
-
 Usuário: stcpmon
 Senha: stcpmon
 Confirmar: stcpmon
@@ -613,7 +542,7 @@ Na guia **Usuários**, você poderá adicionar, remover, modificar ou copiar os 
 ![](img/usuarios.png)
 
 > [!WARNING] Aviso: 
-> Para um novo usuário adicionado, automaticamente, será criada uma estrutura de subdiretórios [(veja a estrutura de diretórios)](./#estrutura-dos-diretórios) para o envio e recepção dos arquivos, dentro do **Diretório de Dados** que foi previamente configurado na guia **Geral**.
+> Para um novo usuário adicionado, automaticamente, será criada uma estrutura de subdiretórios [(veja a estrutura de diretórios)](/stcpserver/instalacao/#estrutura-dos-diretórios) para o envio e recepção dos arquivos, dentro do **Diretório de Dados** que foi previamente configurado na guia **Geral**.
 
 
 <br>
@@ -643,7 +572,7 @@ Campos    | Descrição
 :---      | :---
 Descrição | Preencha este campo com a descrição de sua livre escolha.
 Alterar senha| Esta opção permite alterar a senha do Usuário criado.
-Email     | Este email deve estar associado à Caixa Postal e serve para o sistema de notificação.
+Email     | Este e-mail deve estar associado à Caixa Postal e serve para o sistema de notificação.
 Máximo de sessões| Este campo informa a quantidade máxima de sessões simultâneas de transferência que podem ser ativadas.
 Bloquear usuário| Esta opção assinalada bloqueia temporariamente este usuário de realizar as operações de transferência.
 Backup arquivos transmitidos| Esta opção assinalada habilita temporariamente este usuário a mover os arquivos transmitidos com sucesso para o subdiretório de backup. <br> Obs.: Os arquivos movidos para o diretório de backup contêm uma extensão no final do nome com a seguinte característica: YYYYMMDDhhmmss, onde YYYY é o ano, MM é o mês, DD é o dia, hh é a hora, mm são os segundos do término da transferência.
@@ -677,6 +606,9 @@ Selecione a opção de **Protocolo** desejada e clique em **Configurar**.
 {{< icon "chevron-right" >}}Configure as seguintes opções na guia **TCP/IP**.
 
 ![](img/oftp-usuario.png)
+
+> [!WARNING] Aviso: 
+> *As marcas citadas são propriedade dos seus respectivos donos.
 
 Campos     | Descrição
 :---       | :---
@@ -902,7 +834,7 @@ Tempo máximo de espera de pacote (T2)| Tempo máximo para detectar erros na rec
 Número máximo de retransmissões| Número máximo de retransmissões utilizando o controle do regime de comunicação de lógica especial.
 Outros| As opções definidas neste grupo serão utilizadas localmente pelo STCP OFTP Server para controlar o tempo de inatividade e a geração do arquivo de depuração da comunicação.
 Tempo máximo de inatividade| Preencha este campo com o tempo máximo de inatividade de comunicação entre o STCP OFTP Server e o computador remoto.
-Nível de debug* | Preencha este campo com o nível de detalhamento das informações que serão gravadas no arquivo de depuração. Para obter no mesmo arquivo de depuração a informação dos diferentes níveis, preencha este campo com a soma dos níveis desejados. <br> Para acessar as informações detalhadas sobre o debug acesse a página de <a href="/utils/debug" target="_blank">Debug</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;
+Nível de debug* | Preencha este campo com o nível de detalhamento das informações que serão gravadas no arquivo de depuração. Para obter no mesmo arquivo de depuração a informação dos diferentes níveis, preencha este campo com a soma dos níveis desejados. <br> Para acessar as informações detalhadas sobre o debug acesse a página de [Debug](/stcpserver/debug)
 
 > [!WARNING] Aviso
 > *Somente habilite esta opção quando for solicitado por uma equipe especializada.
@@ -957,7 +889,7 @@ Userdata | Preencha este campo com os dados extras associados à identificação
 Modo de transferência | Esta opção permite selecionar o modo de transferência que será utilizado para comunicação com o servidor, são eles: **Both** (transmissão e recepção de arquivos), **Sender** (somente transmissão de arquivos) e **Receiver** (somente recepção de arquivos).
 Tamanho máximo do buffer | Preencha este campo com o tamanho máximo dos blocos de dados que serão transferidos. O intervalo válido é de 1 até 65535.
 Tempo máximo de inatividade | Preencha este campo com o tempo máximo de inatividade de comunicação entre o STCP OFTP Server e o servidor remoto.
-Nível de Debug | Preencha este campo com o nível de detalhamento das informações que serão gravadas no arquivo de depuração. Para obter no mesmo arquivo de depuração a informação dos diferentes níveis, preencha este campo com a soma dos níveis desejados. <br> Obs.: Veja a <a href="/debug" target="_blank"> tabela dos níveis de debug </a> {{< icon "arrow-top-right-on-square" >}} na configuração dos usuários.
+Nível de Debug | Preencha este campo com o nível de detalhamento das informações que serão gravadas no arquivo de depuração. Para obter no mesmo arquivo de depuração a informação dos diferentes níveis, preencha este campo com a soma dos níveis desejados. <br> Obs.: Veja a <a href="/stcpserver/debug/"> tabela dos níveis de debug </a> na configuração dos usuários.
 
 ### AzBlob
 
@@ -974,7 +906,7 @@ Userdata | Preencha este campo com os dados extras associados à identificação
 Modo de transferência | Esta opção permite selecionar o modo de transferência que será utilizado para comunicação com o servidor, são eles: **Both** (transmissão e recepção de arquivos), **Sender** (somente transmissão de arquivos) e **Receiver** (somente recepção de arquivos).
 Tamanho máximo do buffer | Preencha este campo com o tamanho máximo dos blocos de dados que serão transferidos. O intervalo válido é de 1 até 65535.
 Tempo máximo de inatividade | Preencha este campo com o tempo máximo de inatividade de comunicação entre o STCP OFTP Server e o servidor remoto.
-Nível de Debug | Preencha este campo com o nível de detalhamento das informações que serão gravadas no arquivo de depuração. Para obter no mesmo arquivo de depuração a informação dos diferentes níveis, preencha este campo com a soma dos níveis desejados. <br> Obs.: Veja a <a href="/debug" target="_blank"> tabela dos níveis de debug </a> {{< icon "arrow-top-right-on-square" >}} na configuração dos usuários.
+Nível de Debug | Preencha este campo com o nível de detalhamento das informações que serão gravadas no arquivo de depuração. Para obter no mesmo arquivo de depuração a informação dos diferentes níveis, preencha este campo com a soma dos níveis desejados. <br> Obs.: Obs.: Veja a <a href="/stcpserver/debug/"> tabela dos níveis de debug </a> na configuração dos usuários.
 
 ### Avançadas I
 
@@ -1160,7 +1092,7 @@ Você poderá adicionar, remover, modificar ou copiar os parâmetros de configur
 
 {{< icon "chevron-right" >}}Clique em **Adicionar**.
 
-![](img/agendamento.png)
+![](img/agendamento-2.png)
 
 {{< icon "chevron-right" >}}Na guia **Geral**, preencha os campos com as informações descritas abaixo.
 
@@ -1199,106 +1131,6 @@ Limpar         | Clique em Limpar para desabilitar a data de início e de térmi
 
 Pressione o botão **OK** para gravar as alterações ou **Cancelar** para retornar sem gravar as alterações.
 
-## Ativar logs em formato JSON
-
-> [!NOTE] Nota
-> Funcionalidade disponível a paritr da versão **5.3.16.0** do STCP OFTP Server Enterprise.
-
-Quando o parâmetro AuditTxtEnabled é ativado (AuditTxtEnabled=1), o STCP, além de registrar os logs de transferência e auditoria no banco de dados, criará um arquivo de texto diário em formato JSON com esses registros.
-
-Esse arquivo pode ser facilmente consumido por aplicações de monitoramento já em uso, aprimorando a observabilidade e contribuindo para a melhoria contínua da infraestrutura e a segurança dos processos de transferência de arquivos.
-
-Além disso, esse tipo de integração, também nos permite detectar, diagnosticar e resolver problemas de forma proativa, oferecendo visibilidade completa sobre a integridade e o desempenho do ambiente STCP.
-
-O arquivo de texto (JSON) será criado no diretório de log configurado (Ex. C:\STCPODT\Log) e com a nomenclatura: audit-YYYYMMDD.log.txt. Cada entrada no arquivo contém informações detalhadas sobre os eventos, incluindo data, tipo de evento, usuário, status da transmissão,
-nome do arquivo, e outros detalhes relevantes.
-
-``` md
-# Exemplo de caminho e nomenclatura do arquivo:
-
-C:\STCPODT\Log\audit-YYYYMMDD.log.txt
-
-Onde:
-YYYY: Ano em quatro dígitos.
-MM: Mês em dois dígitos.
-DD: Dia em dois dígitos.
-```
-
-### Configuração
-
-O procedimento para ativar a geração de logs de transferência e auditoria em arquivo texto (JSON) é bastante simples. Siga os passos abaixo para ativar a funcionalidade.
-
-1. Parar o [Serviço](/stcpserver/utilizacao/#serviço-do-stcp-oftp-server) do STCP OFTP Server Enterprise. 
-2. Abra o arquivo de configuração CTCP.INI (Ex. C:\STCPODT\CTCP.INI).
-3. Na seção *[Log]*, adicione ou edite o parâmetro:
-
-```ini
-[Log]
-AuditTxtEnabled=1
-```
-
-4. Salve as alterações no arquivo.
-5. Inicie o serviço STCP OFTP Server Enterprise.
-
-### Estrutura do arquivo texto (JSON)
-
-A estrutura do arquivo criado segue o modelo descrito abaixo, contendo informações
-detalhadas sobre os eventos de transferência e auditoria:
-
-| **CHAVE**   | **TIPO**  | **COMENTÁRIOS**                                                                                      |
-|-------------|-----------|----------------------------------------------------------------------------------------------------|
-| **DATE**    | STRING    | Data e hora da ocorrência                                                                          |
-| **EVENT**   | INTEGER   | Código da operação realizada:                                                                      |
-|             |           | 0 – Início de sessão entrante                                                                      |
-|             |           | 1 – Fim de sessão entrante                                                                         |
-|             |           | 2 – Início de sessão de saída                                                                      |
-|             |           | 3 – Fim de sessão de saída                                                                         |
-|             |           | 4 – Início de transmissão do arquivo                                                              |
-|             |           | 5 – Fim de transmissão do arquivo                                                                 |
-|             |           | 6 – Início de recepção do arquivo                                                                 |
-|             |           | 7 – Fim de recepção do arquivo                                                                     |
-|             |           | 8 – Roteamento de arquivo (STCPREN)                                                               |
-| **USER**    | STRING    | Nome do usuário (caixa postal) ou Módulo                                                           |
-| **NETWORK** | STRING    | Rede/Função utilizada pelo STCP                                                                    |
-| **PROC_ID** | INTEGER   | Código do processo                                                                                 |
-| **THREAD_ID**| INTEGER  | Código do processo executado (Thread)                                                              |
-
-
-<br>
-
-| **Chave**             | **Tipo**    | **Comentários**                                                                                  |
-|-----------------------|-------------|--------------------------------------------------------------------------------------------------|
-| **RESULT**            | INTEGER     | Código de retorno do processo (Return Code): 0 - Sucesso                                                      |
-| **FILE_LENGTH**       | INTEGER     | Tamanho do arquivo (bytes)                                                                       |
-| **FILE_NAME**         | STRING      | Nome do arquivo                                                                                  |
-| **MSG**               | STRING      | Mensagem do sistema                                                                              |
-| **INFO**              | STRING      | Informações do sistema                                                                           |
-| **FILE_RECORD_TYPE**  | STRING      | Formato do registro (RECFM)                                                                      |
-| **FILE_RECORD_LENGTH**| INTEGER     | Quantidade de caracteres (bytes) que compõem o registro Fixo ou Variável (LRECL)                 |
-| **FILE_DATE**         | STRING      | Data do arquivo                                                                                  |
-| **FILE_TIME**         | STRING      | Hora do arquivo                                                                                  |
-
-### Exemplo do arquivo texto (JSON) 
-
-```json {filename="audit-20250110.log.txt"}
- {
- "date": "20250110153542581",
- "event": 0,
- "user": "02USER",
- "network": "TCPIP_1",
- "proc_id": 10084,
- "thread_id": 8752,
- "result": 0,
- "file_length": 0,
- "file_name": "",
- "msg": "Inicio de sessao remota",
- "info": "[TCP-oSSL] R:192.168.0.35:63271 L:192.168.0.100:6619",
- "file_record_type": "",
- "file_record_length": 0,
- "file_date": "",
- "file_time": ""
-}
-```
 
 ## Avançadas
 

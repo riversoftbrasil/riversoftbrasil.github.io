@@ -11,12 +11,12 @@ weight:
 prev: 
 next: 
 slug: configurador-admin 
-lastmod: 2024-08-01
+lastmod: 2025-01-20
 ---
 
-Nesta seção vamos detalhar as possibilidades de configuração do módulo Serviço Web Admin no Portal Gemini.
-
 ## Módulo Serviço Web Admin
+
+Nesta seção vamos detalhar as possibilidades de configuração do módulo Serviço Web Admin no Portal Gemini.
 
 O Serviço Web Admin permite que o Operador realize as funções de Consulta dos cadastros no sistema como: Instâncias, Usuários, Transferência de Arquivos, tenha acesso a Relatórios de: Eventos, Frequência e Transferências, faça **Monitoração** de: Agendamentos, Instâncias e Usuários, além de possibilitar Manutenção de: Instâncias, Agendamentos, Operadores e Usuários.
 

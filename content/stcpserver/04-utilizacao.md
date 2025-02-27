@@ -5,7 +5,7 @@ cascade:
   type: docs
 sidebar:
   exclude: false
-weight: 3
+weight: 4
 prev: /stcpserver/02-config
 next: /stcpserver/05-debug
 draft: false

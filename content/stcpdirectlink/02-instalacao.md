@@ -26,7 +26,7 @@ Exemplo:
 
 - Sistema operacional (Windows ou Linux);
 - Interface de rede para o serviço **http/https**;
-- Relay de email para o serviço de notificação;
+- Relay de e-mail para o serviço de notificação;
 - Banco de dados para registro de log (**MySQL**, **MariaDB** ou **SQLServer**);
 - Chave e certificado digital para comunicação TLS yab.
 
@@ -108,11 +108,11 @@ static                        | Páginas estáticas da aplicação
 static/css                    | Configurações dos estilos de página
 static/images                 | Imagens utilizadas pela aplicação
 static/portal                 | Aplicação do portal de transferência (flutter)
-templates                     | Modelos de notificações de email/sms/páginas de erros
-templates/riversoft/email     | Modelos de notificações de email (padrão riversoft)
-templates/riversoft/email/ptb | Modelos de notificações de email (padrão riversoft) em português
-templates/riversoft/email/esp | Modelos de notificações de email (padrão riversoft) em espanhol
-templates/riversoft/email/enu | Modelos de notificações de email (padrão riversoft) em ingles
+templates                     | Modelos de notificações de e-mail/sms/páginas de erros
+templates/riversoft/email     | Modelos de notificações de e-mail (padrão riversoft)
+templates/riversoft/email/ptb | Modelos de notificações de e-mail (padrão riversoft) em português
+templates/riversoft/email/esp | Modelos de notificações de e-mail (padrão riversoft) em espanhol
+templates/riversoft/email/enu | Modelos de notificações de e-mail (padrão riversoft) em ingles
 templates/riversoft/page      | Modelos de notificações de páginas de erros (padrão riversoft)
 templates/riversoft/page/ptb  | Modelos de notificações de páginas de erros (padrão riversoft) em português
 templates/riversoft/page/esp  | Modelos de notificações de páginas de erros (padrão riversoft) em espanhol

@@ -25,6 +25,8 @@ $ yum install stcpgemini-api
 
 Tendo em mãos as credenciais necessárias para acesso ao Sistema Gerenciador de Banco de Dados (SGBD), crie as bases de Configuração (Ex: STCPCFG_DB) e Registro de Logs (Ex: STCPLOG_DB).
 
+Confira quais bancos de dados homologados o STCP pode conectar-se <a href="/utils/database/" target="_blank">aqui.</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;
+
 > DICA: O comando para criação dos databases é:
 
 ```sql

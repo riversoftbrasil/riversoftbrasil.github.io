@@ -10,7 +10,7 @@ sidebar:
   exclude: false
 weight: 3
 prev:
-next:
+next: /stcpgeminiserver/portal/config-admin/
 slug: utilizacao-api
 draft:
 lastmod: 2024-06-21
