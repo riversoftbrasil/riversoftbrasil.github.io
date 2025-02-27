@@ -6,7 +6,7 @@ cascade:
   type: docs
 sidebar:
   exclude: false
-weight: 6
+weight: 5
 prev: /stcpserver/06-update
 next: /stcpserver/07-email
 draft: false

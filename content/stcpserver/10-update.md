@@ -7,7 +7,7 @@ cascade:
   type: docs
 sidebar:
   exclude: false
-weight: 6
+weight: 10
 prev: /stcpserver/05-debug
 next: /stcpserver/04-console
 draft: false
@@ -101,4 +101,4 @@ Certifique-se de que o campo _Tipo_, do painel _Autenticação_, esteja com o va
 
 ![](img/upd-20.png)
 
-{{< icon "chevron-right" >}}Clique no botão _OK_ para fechar o STCP OFTP Server Config. O próximo passo é a criação do <a href="/stcpserver/03-util/#serviço-do-stcp-oftp-server">serviço do STCP OFTP Server no Windows</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;
+{{< icon "chevron-right" >}}Clique no botão _OK_ para fechar o STCP OFTP Server Config. O próximo passo é a criação do <a href="/stcpserver/utilizacao/#serviço-do-stcp-oftp-server">serviço do STCP OFTP Server no Windows</a>
