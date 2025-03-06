@@ -5,6 +5,14 @@ breadcrumbs: false
 
 ## STCP Gemini Server e STCP Gemini Client
 
+#### {{< icon "clock" >}} &nbsp;  Versão 6.6.18 (lançada em março de 2025)
+
+- Correção para o problema que ocorria quando a descrição da instância, rede, usuário ou agenda, excedia 255 caracteres, causando a  interrupção da leitura dos dados sem retornar erro.
+- Correção do problema na instalação dos serviços no systemctl, nas versões: Oracle 9, RedHat 9 e Rocky 9.
+- Correção do erro de execução quando utilizado aspas nos parâmetros do comando externo.
+- Melhoria no tratamento do tamanho máximo do arquivo na transmissão.
+- Correção do problema ao criar referência de arquivo sem timestamp.
+
 #### {{< icon "clock" >}} &nbsp;  Versão 6.6.16 (lançada em outubro de 2024)
 
 - Correção no tratamento de controle da referência do arquivo na recepção.
