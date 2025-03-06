@@ -12,7 +12,6 @@ prev:
 next:
 draft: false
 slug: configuracao
-lastmod: 2024-05-23
 ---
 A configuração das regras de validação do nome de arquivo e as ações executadas pelo STCPRen podem ser criadas com o auxílio do programa *STCPRenCfg.EXE* ou de um editor de texto, por exemplo, *NOTEPAD.EXE*.
 

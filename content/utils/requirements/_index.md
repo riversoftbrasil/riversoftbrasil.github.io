@@ -10,7 +10,6 @@ weight: 11
 prev: protocols/
 next: conection/
 draft: false
-lastmod: 2024-08-02
 ---
 ## STCP OFTP Server
 

@@ -10,7 +10,6 @@ prev: /01-authentication
 next: /logout
 slug: login
 draft: false
-lastmod: 2024-09-23
 ---
 
 ## Login

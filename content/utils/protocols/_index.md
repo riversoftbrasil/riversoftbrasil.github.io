@@ -10,7 +10,6 @@ weight: 10
 prev: events/
 next: requirements/
 draft: false
-lastmod: 2024-05-20
 ---
 ## OFTP
 

@@ -11,7 +11,6 @@ prev: /stcpserver/04-console
 next: 
 draft: false
 slug: notifcacao-email
-lastmod: 2024-10-01
 ---
 
 ## Notificação e-mail através de Scripts VBS

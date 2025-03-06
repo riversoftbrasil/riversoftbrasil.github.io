@@ -10,7 +10,6 @@ weight: 3
 prev:
 next:
 slug: configuracao
-lastmod: 2024-10-10
 ---
 # Configuração inicial
 

@@ -11,7 +11,6 @@ prev:
 next:
 draft: false
 slug: mensagens
-lastmod: 2024-02-27
 ---
 # Mensagens dos sistema
 

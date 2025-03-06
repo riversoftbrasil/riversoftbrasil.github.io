@@ -11,7 +11,6 @@ weight: 3
 prev: /02-config-chgpsw
 next: /stcpren
 slug: css
-lastmod: 2024-05-27
 ---
 ## Imagem de fundo e CSS
 

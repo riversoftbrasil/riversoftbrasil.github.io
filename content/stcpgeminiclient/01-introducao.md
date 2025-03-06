@@ -10,7 +10,6 @@ weight: 1
 prev: /docs
 next:
 slug: introducao
-lastmod: 2025-02-01
 ---
 
 ## Introdução

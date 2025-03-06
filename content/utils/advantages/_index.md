@@ -11,7 +11,6 @@ weight: 15
 prev: conection/
 next: variables/
 draft: false
-lastmod: 2024-08-27
 ---
 ## STCP OFTP Client e Server
 

@@ -10,7 +10,6 @@ prev: /05-api
 next: /login
 slug: token-oauth2
 draft: false
-lastmod: 2024-09-23
 ---
 
 ## Token de autorização

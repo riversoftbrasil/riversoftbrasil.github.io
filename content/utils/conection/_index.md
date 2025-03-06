@@ -10,7 +10,6 @@ weight: 14
 prev: requirements/
 next: advantages/
 draft: false
-lastmod: 2025-02-01
 ---
 
 ## Telnet

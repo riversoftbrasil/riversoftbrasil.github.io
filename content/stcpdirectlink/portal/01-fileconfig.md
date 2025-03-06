@@ -12,7 +12,6 @@ prev: /stcpdirectlink/04-portal/
 next: 
 slug: arquivo-configuracao
 draft: false
-lastmod: 2024-07-12
 ---
 
 A configuração do portal do STCP DirectLink é realizada através de um arquivo no formato json (ex.: example-config.json) localizado no diretório ***static/portal/assets/configs***.

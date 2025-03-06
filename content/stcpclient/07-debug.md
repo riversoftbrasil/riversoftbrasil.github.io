@@ -11,7 +11,6 @@ prev: /stcpclient/03-util/
 next: /stcpclient/05-update/
 draft: false
 slug: debug
-lastmod: 2024-10-02
 ---
 ## Habilitar ou Alterar o nível de Debug
 

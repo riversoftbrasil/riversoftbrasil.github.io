@@ -11,7 +11,6 @@ prev: /docs/
 next: /stcpdirectlink/01-install
 slug: introducao
 draft: false
-lastmod: 2024-12-17
 ---
 ## O que é o STCP Directlink
 

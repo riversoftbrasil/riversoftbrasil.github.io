@@ -11,7 +11,6 @@ prev: /logs
 next: /docs
 draft: false
 slug: variaveis-internas
-lastmod: 2025-02-01
 ---
 
 ## Variáveis internas do STCP OFTP Server

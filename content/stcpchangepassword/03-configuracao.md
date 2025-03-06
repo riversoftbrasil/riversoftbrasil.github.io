@@ -12,7 +12,6 @@ prev: /01-install-chgpsw
 next: /04-css
 draft: false
 slug: configuracao
-lastmod: 2024-05-27
 ---
 ## Configuração no IIS
 

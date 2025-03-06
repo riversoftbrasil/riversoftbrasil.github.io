@@ -11,7 +11,6 @@ weight:
 prev: stcpgeminiserver/api
 next: 
 slug: configurador-stcp 
-lastmod: 2024-09-01
 ---
 # Funcionalidades do Portal
 

@@ -13,7 +13,6 @@ prev:
 next: /stcpgeminiserver/portal/config-admin/
 slug: utilizacao-api
 draft:
-lastmod: 2024-06-21
 ---
 ## Inicialização da API como aplicação
 

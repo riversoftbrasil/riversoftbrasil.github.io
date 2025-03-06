@@ -11,7 +11,6 @@ weight:
 prev: /docs
 next:
 draft:
-lastmod: 2024-08-27
 ---
 
 # Variáveis internas do Gemini Server

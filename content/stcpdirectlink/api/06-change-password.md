@@ -10,7 +10,6 @@ prev: /forgot-password
 next: /list-download
 slug: alterar-senha
 draft: false
-lastmod: 2024-09-23
 ---
 
 ## Alteração de senha

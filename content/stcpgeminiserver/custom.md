@@ -11,7 +11,6 @@ weight:
 prev:
 next:
 draft: false
-lastmod: 2024-07-29
 ---
 
 Estamos trabalhando nesta documentação para fornecer o conteúdo mais atualizado e preciso possível. A versão completa estará disponível em breve. 

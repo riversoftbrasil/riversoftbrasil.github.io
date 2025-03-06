@@ -10,7 +10,6 @@ weight: 1
 prev: /docs
 next: database/
 draft: false
-lastmod: 2024-05-07
 ---
 # Arquivos de Log da Aplicação
 

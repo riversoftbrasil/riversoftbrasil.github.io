@@ -10,7 +10,6 @@ prev: /09-download
 next: /upload-json
 slug: upload-multipart
 draft: false
-lastmod: 2024-09-23
 ---
 
 ## Upload de arquivo multipart (basic)

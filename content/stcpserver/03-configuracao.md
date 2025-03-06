@@ -10,7 +10,6 @@ prev: /stcpserver/01-install-srv
 next: /stcpserver/03-util
 slug: configuracao
 draft: false
-lastmod: 2025-01-05
 ---
 ## Configurador
 

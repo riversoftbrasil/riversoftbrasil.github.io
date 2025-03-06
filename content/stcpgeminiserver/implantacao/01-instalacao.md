@@ -12,7 +12,6 @@ weight: 1
 prev: stcpgeminiserver/implantacao
 next:
 slug: instalacao
-lastmod: 2024-06-13
 ---
 ## Requisitos de Software
 

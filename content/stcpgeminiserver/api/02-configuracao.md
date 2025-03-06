@@ -13,7 +13,6 @@ prev:
 next:
 slug: configuracao
 draft:
-lastmod:
 ---
 Concluída a instalação, será necessário criar um arquivo de configuração seguindo os passos:
 * Acesse a pasta de configurações em /usr/local/stcpgemini-api/configs

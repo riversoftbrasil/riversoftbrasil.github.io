@@ -11,7 +11,6 @@ weight: 16
 prev: advantages/
 next: security/
 draft: false
-lastmod: 2024-05-10
 ---
 ## STCP OFTP Server
 

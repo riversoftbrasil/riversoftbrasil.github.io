@@ -11,7 +11,6 @@ weight: 1
 prev: /docs
 next:
 draft:
-lastmod: 2024-08-27
 ---
 O STCP Gemini Server é uma aplicação servidora utilizada para transferência de arquivos seguro e multiprotocolo para aplicações de e-business e troca de informações corporativas, baseado na especificação OFTP.
 

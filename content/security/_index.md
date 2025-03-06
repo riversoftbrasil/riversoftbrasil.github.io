@@ -9,7 +9,6 @@ sidebar:
 prev: /protocols
 next: /events
 draft: false
-lastmod: 2024-08-15
 ---
 ## Protocolo OFTP
 

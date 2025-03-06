@@ -10,7 +10,6 @@ prev: /stcpserver/01-introducao
 next: /stcpserver/02-configuracao
 slug: instalacao
 draft: false
-lastmod: 2024-12-13
 ---
 ## Distribuição dos pacotes
 

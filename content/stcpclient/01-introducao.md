@@ -11,7 +11,6 @@ prev: /docs
 next: /02-instalacao
 slug: introducao
 brand: stw
-lastmod: 2024-12-16
 ---
 ## O que é o STCP OFTP Client
 

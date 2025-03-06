@@ -7,10 +7,9 @@ sidebar:
   exclude: false
 weight: 13
 prev: /upload-json
-# next:
+next: /stcpchangepassword/introducao/
 slug: exemplos-postman
 draft: false
-lastmod: 2024-02-23
 ---
 ## Requisições de exemplo utilizando o Postman
 

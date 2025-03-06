@@ -11,7 +11,6 @@ weight: 2
 prev: /stcpgeminiclient
 next: /02-config-sgc/
 slug: instalacao
-lastmod: 2024-06-21
 ---
 ## Requisitos
 

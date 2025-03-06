@@ -8,7 +8,6 @@ cascade:
 sidebar:
   exclude: false
 weight: 1
-lastmod: 2025-02-01
 ---
 
 Tudo o que você precisa saber para sua jornada nas soluções Riversoft.

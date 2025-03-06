@@ -11,7 +11,6 @@ weight:
 prev: 
 next: 
 slug: configurador-admin 
-lastmod: 2025-01-20
 ---
 
 ## Módulo Serviço Web Admin

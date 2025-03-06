@@ -11,7 +11,6 @@ prev:
 next: 
 draft: false
 slug: mensagens-e-codigos-de-erros
-lastmod: 2025-02-01
 ---
 
 ## Códigos de eventos gerados no arquivo de mensagens

@@ -11,7 +11,6 @@ prev:
 next: 
 draft: false
 slug: logs
-lastmod: 2025-02-01
 ---
 
 # Arquivos de Log da Aplicação

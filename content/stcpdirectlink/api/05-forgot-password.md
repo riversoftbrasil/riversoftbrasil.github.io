@@ -10,7 +10,6 @@ prev: /first-acess
 next: /change-password
 slug: recuperar-senha
 draft: false
-lastmod: 2024-09-23
 ---
 
 ## Esqueceu a senha

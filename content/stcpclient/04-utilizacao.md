@@ -11,7 +11,6 @@ prev: /stcpclient/02-config/
 next: /stcpclient/04-debug/
 slug: utilizacao
 draft: false
-lastmod: 2024-04-15
 ---
 ## Subdiretórios
 

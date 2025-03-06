@@ -10,7 +10,6 @@ prev: /logout
 next: /forgot-password
 slug: primeiro-acesso
 draft: false
-lastmod: 2024-06-19
 ---
 
 ## Primeiro Acesso

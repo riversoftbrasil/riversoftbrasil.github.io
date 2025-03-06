@@ -11,7 +11,6 @@ prev: /stcpserver/04-console
 next: 
 draft: false
 slug: logs
-lastmod: 2025-02-01
 ---
 
 ## Arquivos de logs

@@ -11,7 +11,6 @@ prev:
 next:
 slug: mensagens
 draft: false
-lastmod: 2024-05-21
 ---
 ## Códigos de Eventos
 

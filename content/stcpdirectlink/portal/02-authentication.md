@@ -10,7 +10,6 @@ prev: /stcpdirectlink/04-portal/
 next: /upload/
 slug: autenticacao
 draft: false
-lastmod: 2024-02-23
 ---
 
 ## Autenticação
