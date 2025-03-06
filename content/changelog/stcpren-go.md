@@ -5,6 +5,17 @@ breadcrumbs: false
 
 ## STCP Gemini Rename
 
+#### {{< icon "clock" >}} &nbsp;  Versão 2.0.1 (lançada em março de 2025)
+
+-  Implementação do acesso ao banco de dados para utilização de regras de roteamento.
+-  Implementação da leitura dos parâmetros da instância a partir do arquivo JSON local.
+-  Melhoria na estrutura da gravação de log local em arquivo texto.
+-  Implementação de gravação do log em arquivo texto, conforme utilizado no Windows.
+-  Implementação de funções de acesso às configurações no banco de dados.
+-  Implementação dos tipos de configuração para a entidade STCPREN (ROUTINGS).
+-  Implementação do arquivo de criação da tabela "ROUTINGS" no banco de dados.
+-  Implementação da opção para geração do arquivo de regras, localmente, com as informações gravadas no banco de dados.
+
 #### {{< icon "clock" >}} &nbsp;  Versão 1.0.7 (lançada em outubro de 2024)
 
 - Correção do problema ao processar parâmetros com aspas duplas e simples, garantindo o parsing correto na linha de comando.
