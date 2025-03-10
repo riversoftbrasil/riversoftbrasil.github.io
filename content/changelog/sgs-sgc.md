@@ -1,6 +1,7 @@
 ---
 toc: false
 breadcrumbs: false
+slug: stcpgemini-linux
 ---
 
 ## STCP Gemini Server e STCP Gemini Client

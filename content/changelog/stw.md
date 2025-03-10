@@ -1,6 +1,7 @@
 ---
 toc: false
 breadcrumbs: false
+slug: stcp-windows
 ---
 ## STCP OFTP Server e STCP OFTP Client
 
