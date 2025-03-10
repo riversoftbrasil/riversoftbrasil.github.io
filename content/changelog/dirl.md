@@ -21,6 +21,21 @@ breadcrumbs: false
 - Correção do problema da chave com senha na interface da API.
 - Correção do problema de exibição do certificado no handshake TLS ao testar a conectividade da rede de supervisão.
 
+### {{< icon "clock" >}} &nbsp;  Versão 6.9.5 (lançada em agosto de 2024)
+
+- Correção do problema na mensagem de log do serviço API (HTTP/HTTPS), que não exibia o tipo de conexão.
+- Melhorias na formatação da string do argon2id para garantir a compatibilidade com o STCP Gemini.
+
+### {{< icon "clock" >}} &nbsp;  Versão 6.9.3 (lançada em junho de 2024)
+
+- Correção do problema no filtro de transferência SFTP utilizando um arquivo externo (whitelist e blacklist).
+- Correção do problema na exibição do código de erro para a mensagem "Bloqueado pelo filtro".
+- Melhorias na função para mascarar informações sensíveis nos logs.
+- Melhoria na estrutura das mensagens de logs de eventos (structured log messages).
+- Melhoria no algoritmo de derivação seguindo a recomendação do OWASP, na geração do Token de validação.
+- Implementação de parâmetros para o controle autenticação LDAP.
+- Implementação do suporte ao protocolo de autenticação SSO SAML2.
+
 ### {{< icon "clock" >}} &nbsp;  Versão 6.5.16 (lançada em abril de 2024)
 
 - Correção do problema que gerava erro de validação no upload de arquivo (API) quando era utilizado mais de um e-mail e com espaços em branco.
