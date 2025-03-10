@@ -7,9 +7,6 @@ slug: directlink
 ---
 ## STCP Directlink
 
-### {{< icon "clock" >}} &nbsp;  Versão 7.0.3 (lançada em março de 2025)
-
-
 ### {{< icon "clock" >}} &nbsp;  Versão 6.9.10 (lançada em outubro de 2024)
 
 - Correção do problema ao processar parâmetros com aspas duplas e simples, garantindo o parsing correto na linha de comando.
