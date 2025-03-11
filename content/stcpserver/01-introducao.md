@@ -35,29 +35,6 @@ O STCP OFTP Server oferece as seguintes características:
 * Número ilimitado de sessões de transferência (Versão Enterprise) ou até 10 (dez) sessões de transferência (Versão Lite);
 * Número ilimitado de usuários (Versão Enterprise) ou até 10 (dez) usuários (Versão Lite).
 
-## Requisitos de software e hardware
-
-Confira os requisitos de software e hardware da aplicação: 
-
-- Processador de 2 gigahertz (GHz);
-- 2 gigabytes (GB) de RAM;
-- 150 megabytes (MB) de espaço disponível em disco rígido para o aplicativo; <sup>1</sup>
-- Sistema operacional Windows 10/11/2012/2016/2019/2022; <sup>2</sup>
-- Banco de dados (SQL Server, MySQL, MariaDB, Oracle); <sup>3</sup>
-- Driver ODBC para conexão com o Banco de Dados.
-
-
-{{< callout type="" >}}
-  <sup>1</sup> O espaço disponível para os arquivos transferidos dependerá do volume e política de armazenamento de dados adotada.
-{{< /callout >}}
-
-{{< callout type="" >}}
-  <sup>2</sup> Server with Desktop Experience.
-{{< /callout >}}
-
-{{< callout type="" >}}
-  <sup>3</sup> Para versão STCP OFTP Server Enterprise.
-{{< /callout >}}
 
 
 

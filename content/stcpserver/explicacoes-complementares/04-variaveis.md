@@ -6,9 +6,9 @@ cascade:
   type: docs
 sidebar:
   exclude: false
-weight: 11
-prev: /logs
-next: /docs
+weight: 4
+prev: 
+next:
 draft: false
 slug: variaveis-internas
 ---
