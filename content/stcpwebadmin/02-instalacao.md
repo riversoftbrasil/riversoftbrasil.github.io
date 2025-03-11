@@ -56,19 +56,19 @@ ALTER TABLE TBLOPERADORES ADD (LOGINFAILS NUMBER(3,0) DEFAULT 0 NOT NULL);
 
 Os seguintes procedimentos devem ser executados para configuração do driver ODBC de acesso ao Banco de Dados.
 
-{{< icon "chevron-right" >}}Acesse a ferramenta de configuração do ODBC.
+{{< icon "arrow-right-circle" >}}Acesse a ferramenta de configuração do ODBC.
 
 ![](imagem/web-admin-07.png "")
 
-{{< icon "chevron-right" >}}Selecione a guia **DSN de Sistema** para adicionar a fonte de dados e clique em **Adicionar**.
+{{< icon "arrow-right-circle" >}}Selecione a guia **DSN de Sistema** para adicionar a fonte de dados e clique em **Adicionar**.
 
 ![](imagem/web-admin-08.png)
 
-{{< icon "chevron-right" >}}Selecione o driver na lista e clique em **Concluir**.
+{{< icon "arrow-right-circle" >}}Selecione o driver na lista e clique em **Concluir**.
 
 ![](imagem/web-admin-09.png)
 
-{{< icon "chevron-right" >}}Na guia **Geral**, configure as opções conforme informadas e clique no botão **OK** para salvar.
+{{< icon "arrow-right-circle" >}}Na guia **Geral**, configure as opções conforme informadas e clique no botão **OK** para salvar.
 
 <!-- Na guia **Geral**, configure as opções conforme informadas (para Oracle8) e clique no botão **OK** para salvar. -->
 
@@ -82,13 +82,13 @@ Clique no botão **OK** para finalizar a configuração da fonte de dados ODBC.
 
 Faça o download da última versão do processador de scripts PHP do site www.php.net e execute os passos seguintes:
 
-{{< icon "chevron-right" >}}Extraia o arquivo do PHP no diretório **<disco>:\php**.
+{{< icon "arrow-right-circle" >}}Extraia o arquivo do PHP no diretório **<disco>:\php**.
 
-{{< icon "chevron-right" >}}Crie o diretório de controle de sessão **\<disco>:\php\sessiondata**.
+{{< icon "arrow-right-circle" >}}Crie o diretório de controle de sessão **\<disco>:\php\sessiondata**.
 
-{{< icon "chevron-right" >}}Copie o arquivo **PHP-IIS.INI** do diretório **\<disco>:\STCPWEB_ADMIN\conf** para o diretório **\<disco>:\php** com o nome **PHP.INI**
+{{< icon "arrow-right-circle" >}}Copie o arquivo **PHP-IIS.INI** do diretório **\<disco>:\STCPWEB_ADMIN\conf** para o diretório **\<disco>:\php** com o nome **PHP.INI**
 
-{{< icon "chevron-right" >}}Altere o arquivo **PHP.INI** com os parâmetros abaixo e salve o arquivo.
+{{< icon "arrow-right-circle" >}}Altere o arquivo **PHP.INI** com os parâmetros abaixo e salve o arquivo.
 
 ![](./imagem2/img22.png)
 

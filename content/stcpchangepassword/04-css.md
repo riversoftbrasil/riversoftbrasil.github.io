@@ -111,9 +111,9 @@ O padrão de cores das bordas e cor de fundo do título do site padrão do STCP 
 #tituloLogin
 #frmLogin
 ```
-{{< icon "chevron-right" >}}Nas classes _#conteudo_ e _#frmLogin_ as alterações devem ser realizadas no parâmetro **border**, alterando o valor **#XXXXXX** pela cor desejada.
+{{< icon "arrow-right-circle" >}}Nas classes _#conteudo_ e _#frmLogin_ as alterações devem ser realizadas no parâmetro **border**, alterando o valor **#XXXXXX** pela cor desejada.
 
-{{< icon "chevron-right" >}}Já na classe _#tituloLogin_ a alteração deverá ser realizada no parâmetro **background-color**, alterando o valor **#XXXXXX** pela cor desejada.
+{{< icon "arrow-right-circle" >}}Já na classe _#tituloLogin_ a alteração deverá ser realizada no parâmetro **background-color**, alterando o valor **#XXXXXX** pela cor desejada.
 
 ![](img/chgpsw-09.png)
 

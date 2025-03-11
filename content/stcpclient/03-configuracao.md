@@ -16,9 +16,9 @@ slug: configuracao
 
 O programa de configuração do STCP OFTP Client foi instalado na pasta selecionada durante o processo de instalação e pode ser acessado através do menu **Iniciar**. Caso você não tenha alterado a pasta padrão, execute os seguintes passos:
 
-{{< icon "chevron-right" >}}&nbsp; No menu **Iniciar**, **Todos os Programas**, selecione **Riversoft STCP OFTP Client**.
+{{< icon "arrow-right-circle" >}}&nbsp; No menu **Iniciar**, **Todos os Programas**, selecione **Riversoft STCP OFTP Client**.
 
-{{< icon "chevron-right" >}} &nbsp; Clique no programa **Riversoft STCP OFTP Client Config**.
+{{< icon "arrow-right-circle" >}} &nbsp; Clique no programa **Riversoft STCP OFTP Client Config**.
 
 O programa de configuração pode ser acessado também na pasta **Program** da aplicação, conforme exemplo de estrutura abaixo:
 
@@ -39,17 +39,17 @@ O programa de configuração pode ser acessado também na pasta **Program** da a
 
 ## Informações gerais
 
-{{< icon "chevron-right" >}}Na guia Geral, preencha os campos com as informações descritas abaixo:
+{{< icon "arrow-right-circle" >}}Na guia Geral, preencha os campos com as informações descritas abaixo:
 
 ![](img/clt-guia-geral.png)
 
-| Campos                |                                                                                                                        Descrição                                                                                                                         |
-| :-------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Nome                  |                                                          Este campo informa o nome do serviço do STCP OFTP Client. <br> Obs.: Para a versão STCP OFTP Client, este parâmetro não pode ser modificado                                                          |
-| Descrição             |                                                       Este campo informa a descrição do serviço do STCP OFTP Client. <br> Obs.: Para a versão STCP OFTP Client, este parâmetro não pode ser modificado.                                                       |
+| Campos                | Descrição                                                                                                                                                                                                                                                     |
+| :-------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Nome                  | Este campo informa o nome do serviço do STCP OFTP Client. <br> Obs.: Para a versão STCP OFTP Client, este parâmetro não pode ser modificado                                                                                                                   |
+| Descrição             | Este campo informa a descrição do serviço do STCP OFTP Client. <br> Obs.: Para a versão STCP OFTP Client, este parâmetro não pode ser modificado.                                                                                                             |
 | Diretório de controle | Este campo informa o nome do diretório de instalação do STCP OFTP Client, onde serão armazenadas as configurações dos Perfis, logs e arquivos de depuração da comunicação. <br> Obs.: Para a versão STCP OFTP Client, este parâmetro não pode ser modificado. |
-| Diretório de dados    |                    Preencha este campo com o diretório onde a estrutura de subdiretórios para envio e recepção dos arquivos de cada Perfil deverá ser criada. <br> Obs.: Esta configuração deve ser alterada antes da criação dos Perfis.                     |
-| Número de série*       |                                                              Preencha este campo com o número de série que foi disponibilizado por e-mail.                                                            |
+| Diretório de dados    | Preencha este campo com o diretório onde a estrutura de subdiretórios para envio e recepção dos arquivos de cada Perfil deverá ser criada. <br> Obs.: Esta configuração deve ser alterada antes da criação dos Perfis.                                        |
+| Número de série*      | Preencha este campo com o número de série que foi disponibilizado por e-mail.                                                                                                                                                                                 |
 
 
 > [!WARNING] Atenção
@@ -60,7 +60,7 @@ O programa de configuração pode ser acessado também na pasta **Program** da a
 Na guia **Perfis** você poderá adicionar, remover ou modificar os parâmetros de configuração de
 um usuário do serviço <a href="/stcpserver/" target="_blank">STCP OFTP Server</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;
 
-{{< icon "chevron-right" >}}Clique no botão **Adicionar**
+{{< icon "arrow-right-circle" >}}Clique no botão **Adicionar**
 
 > [!NOTE] Informação
 > Para um novo Perfil adicionado, automaticamente, será criada uma estrutura de subdiretórios (exemplo abaixo) para o envio e recepção dos arquivos, dentro do Diretório de Dados que foi previamente configurado na guia Geral (tópico anterior).
@@ -93,7 +93,7 @@ um usuário do serviço <a href="/stcpserver/" target="_blank">STCP OFTP Server<
 {{< /filetree/container >}}
 
 
-{{< icon "chevron-right" >}}Preencha os campos **Nome** e **Descrição**.
+{{< icon "arrow-right-circle" >}}Preencha os campos **Nome** e **Descrição**.
 
 ![](img/clt-config-01.png)
 
@@ -104,35 +104,35 @@ Clique em **OK**.
 <br>
 
 
-| Campos    |                                                                                                             Descrição                                                                                                              |
-| :-------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Campos    | Descrição                                                                                                                                                                                                                              |
+| :-------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Nome      | Preencha este campo com o nome desejado para este Perfil, que pode ser: a identificação ODETTE (OID) do parceiro, o nome da aplicação, a sua identificação ODETTE (OID) ou outra qualquer. <br>Obs.: Não utilize caracteres especiais. |
-| Descrição |                                                                                          Preencha este campo com a descrição que desejar.                                                                                          |
+| Descrição | Preencha este campo com a descrição que desejar.                                                                                                                                                                                       |
 <br>
 
-{{< icon "chevron-right" >}}Na guia **Odette**, preencha os seguintes campos:
+{{< icon "arrow-right-circle" >}}Na guia **Odette**, preencha os seguintes campos:
 
 ![](img/clt-config-02.png)
 
-| Campos                                |                                                                                                                        Descrição                                                                                                                        |
-| :------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| OID (Odette ID)                       |                                                          Preencha este campo com a identificação Odette associada a este Perfil. Este campo poderá ter no máximo 25 (vinte e cinco) caracteres                                                          |
-| Senha                                 |                                                                 Preencha este campo com a senha associada à identificação Odette. Este campo poderá ter no máximo 8 (oito) caracteres.                                                                  |
-| Confirmar                             |                                                                                        Preencha este campo com a senha informada no campo Senha para validação.                                                                                         |
-| Userdata                              |                                                 Preencha este campo com os dados extras associados à identificação Odette informada. <br> Obs.: Preencha este campo somente se for requerido pelo servidor.                                                  |
-| Características                       | As opções definidas neste grupo serão utilizadas pelo STCP OFTP Server na comunicação com o servidor Odette. <br> Obs.: Não modifique estas características sem ler atentamente o que significa cada uma delas e ter certeza de que realmente deseja fazê-lo. |
-| Modo de transferência                 |   Esta opção permite selecionar o modo de transferência que será utilizado para comunicação com o servidor, são eles: <br> **Both:** transmissão e recepção de arquivos <br> **Sender:** somente transmissão de arquivos <br> **Receiver:** somente recepção de arquivos    |
-| Créditos                              |                                              Preencha este campo com a quantidade de blocos de dados que serão transferidos até aguardar uma nova autorização para envio. O intervalo válido é de 1 até 99                                               |
-| Tamanho máximo do buffer              |                                                                Preencha este campo com o tamanho máximo dos blocos de dados que serão transferidos. O intervalo válido é de 1 até 65535.                                                                |
-| Compressão                            |                                                                               Esta opção assinalada habilita a compressão dos dados (padrão Odette) de uma transferência.                                                                               |
-| Restart                               |                      Esta opção assinalada habilita o controle de recuperação automática na interrupção de uma transferência. Com esta opção habilitada, o STCP OFTP Server irá recuperar a transferência do ponto de interrupção.                      |
-| Special Logic                         |  Esta opção assinalada habilita o controle de regime de comunicação lógica especial. Somente deve ser habilitado para comunicação através do protocolo PAD ou SERIAL. Obs.: Não habilite esta opção quando não for utilizado o Protocolo PAD ou SERIAL.  |
-| Tempo máximo de espera de pacote (T1) |                                                                                                     Tempo máximo para detectar timeout de processo                                                                                                      |
-| Tempo máximo de espera de caracter    |                                                                                        Tempo máximo para detectar erros na recepção dos caracteres individuais.                                                                                         |
-| Número máximo de retransmissões       |                                                                           Número máximo de retransmissões utilizando o controle do regime de comunicação de lógica especial.                                                                            |
-| Outros                                |                                       As opções definidas neste grupo serão utilizadas localmente pelo STCP OFTP Client para controlar o tempo de inatividade e a geração do arquivo de depuração da comunicação.                                       |
-| Tempo máximo de inatividade           |                                                               Preencha este campo com o tempo máximo de inatividade de comunicação entre o STCP OFTP Client Server e o computador remoto                                                                |
-| Nível de debug                        |      Preencha este campo com o nível de detalhamento das informações que serão gravadas no arquivo de depuração. Para obter no mesmo arquivo de depuração a informação dos diferentes níveis, preencha este campo com a soma dos níveis desejados.  |
+| Campos                                | Descrição                                                                                                                                                                                                                                                              |
+| :------------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| OID (Odette ID)                       | Preencha este campo com a identificação Odette associada a este Perfil. Este campo poderá ter no máximo 25 (vinte e cinco) caracteres                                                                                                                                  |
+| Senha                                 | Preencha este campo com a senha associada à identificação Odette. Este campo poderá ter no máximo 8 (oito) caracteres.                                                                                                                                                 |
+| Confirmar                             | Preencha este campo com a senha informada no campo Senha para validação.                                                                                                                                                                                               |
+| Userdata                              | Preencha este campo com os dados extras associados à identificação Odette informada. <br> Obs.: Preencha este campo somente se for requerido pelo servidor.                                                                                                            |
+| Características                       | As opções definidas neste grupo serão utilizadas pelo STCP OFTP Server na comunicação com o servidor Odette. <br> Obs.: Não modifique estas características sem ler atentamente o que significa cada uma delas e ter certeza de que realmente deseja fazê-lo.          |
+| Modo de transferência                 | Esta opção permite selecionar o modo de transferência que será utilizado para comunicação com o servidor, são eles: <br> **Both:** transmissão e recepção de arquivos <br> **Sender:** somente transmissão de arquivos <br> **Receiver:** somente recepção de arquivos |
+| Créditos                              | Preencha este campo com a quantidade de blocos de dados que serão transferidos até aguardar uma nova autorização para envio. O intervalo válido é de 1 até 99                                                                                                          |
+| Tamanho máximo do buffer              | Preencha este campo com o tamanho máximo dos blocos de dados que serão transferidos. O intervalo válido é de 1 até 65535.                                                                                                                                              |
+| Compressão                            | Esta opção assinalada habilita a compressão dos dados (padrão Odette) de uma transferência.                                                                                                                                                                            |
+| Restart                               | Esta opção assinalada habilita o controle de recuperação automática na interrupção de uma transferência. Com esta opção habilitada, o STCP OFTP Server irá recuperar a transferência do ponto de interrupção.                                                          |
+| Special Logic                         | Esta opção assinalada habilita o controle de regime de comunicação lógica especial. Somente deve ser habilitado para comunicação através do protocolo PAD ou SERIAL. Obs.: Não habilite esta opção quando não for utilizado o Protocolo PAD ou SERIAL.                 |
+| Tempo máximo de espera de pacote (T1) | Tempo máximo para detectar timeout de processo                                                                                                                                                                                                                         |
+| Tempo máximo de espera de caracter    | Tempo máximo para detectar erros na recepção dos caracteres individuais.                                                                                                                                                                                               |
+| Número máximo de retransmissões       | Número máximo de retransmissões utilizando o controle do regime de comunicação de lógica especial.                                                                                                                                                                     |
+| Outros                                | As opções definidas neste grupo serão utilizadas localmente pelo STCP OFTP Client para controlar o tempo de inatividade e a geração do arquivo de depuração da comunicação.                                                                                            |
+| Tempo máximo de inatividade           | Preencha este campo com o tempo máximo de inatividade de comunicação entre o STCP OFTP Client Server e o computador remoto                                                                                                                                             |
+| Nível de debug                        | Preencha este campo com o nível de detalhamento das informações que serão gravadas no arquivo de depuração. Para obter no mesmo arquivo de depuração a informação dos diferentes níveis, preencha este campo com a soma dos níveis desejados.                          |
 ---
 
 Para obter as informações detalhadas sobre o nível de Debug acesse a seção [Debug](/stcpclient/debug/)
@@ -145,32 +145,32 @@ Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alt
 
 ## Propriedades do Perfil
 
-{{< icon "chevron-right" >}}Com o perfil já criado, selecione-o e clique no botão **Propriedades**
+{{< icon "arrow-right-circle" >}}Com o perfil já criado, selecione-o e clique no botão **Propriedades**
 
 ![](img/clt-config-06.png)
 
-{{< icon "chevron-right" >}}Na guia **Geral**, configure os seguintes campos.
+{{< icon "arrow-right-circle" >}}Na guia **Geral**, configure os seguintes campos.
 
 ![](img/clt-config-07.png)
 
-| Campos                                |                                                                                                                                                                                       Descrição                                                                                                                                                                                        |
-| :------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Descrição                             |                                                                                                                                                                    Preencha este campo com a descrição que desejar.                                                                                                                                                                    |
-| Email                                 |                                                                                                                                                 Este email deve estar associado à Caixa Postal e serve para o sistema de notificação.                                                                                                                                                  |
-| Máximo de sessões                     |                                                                                                                                         Este campo informa a quantidade máxima de sessões simultâneas de transferência que podem ser ativadas.                                                                                                                                         |
-| Bloquear usuário                      |                                                                                                                                          Esta opção assinalada habilita temporariamente este Perfil a realizar as operações de transferência.                                                                                                                                          |
-| Backup arquivos transmitidos          | Esta opção assinalada habilita temporariamente este Perfil a mover os arquivos transmitidos com sucesso para o subdiretório de backup. <br> Obs.: Os arquivos movidos para o diretório de backup contêm uma extensão no final do nome com a seguinte característica: YYYYMMDDhhmmss, onde YYYY é o ano, MM é o mês, DD é o dia, hh é a hora, mm são os segundos do término da transferência |
-| Nome longo para arquivos  {{< icon "exclamation-triangle" >}}             |                                        Esta opção assinalada habilita temporariamente este Perfil a transferir arquivos com nome maior que 26 (vinte e seis) posições.                                         |
-| Protocolo                             |                                                                                                                                           Este campo seleciona o tipo de protocolo de comunicação que este Perfil irá utilizar para conexão.                                                                                                                                           |
-| Adicionar atalho na área de desktop   |                                                                                                         Esta opção assinalada habilita a criação do ícone na área de trabalho (desktop) com o atalho para executar o STCP OFTP Client e realizar a operação de transferência.                                                                                                          |
-| Número de tentativas de transferência |                                                                                                                                     Preencha este campo com o número máximo de tentativas de conexão que este Perfil irá executar em caso de falha                                                                                                                                     |
-| Intervalo entre tentativas            |                                                                                                                                  Preencha este campo com o intervalo mínimo (segundos) de espera para a realização de uma nova tentativa de conexão.                                                                                                                                   |
-| Solicitar usuário e senha             |                                                                                                                                                        Esta opção assinalada irá solicitar usuário e senha ao executar o STCP.                                                                                                                                                         |
+| Campos                                                        | Descrição                                                                                                                                                                                                                                                                                                                                                                                   |
+| :------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Descrição                                                     | Preencha este campo com a descrição que desejar.                                                                                                                                                                                                                                                                                                                                            |
+| Email                                                         | Este email deve estar associado à Caixa Postal e serve para o sistema de notificação.                                                                                                                                                                                                                                                                                                       |
+| Máximo de sessões                                             | Este campo informa a quantidade máxima de sessões simultâneas de transferência que podem ser ativadas.                                                                                                                                                                                                                                                                                      |
+| Bloquear usuário                                              | Esta opção assinalada habilita temporariamente este Perfil a realizar as operações de transferência.                                                                                                                                                                                                                                                                                        |
+| Backup arquivos transmitidos                                  | Esta opção assinalada habilita temporariamente este Perfil a mover os arquivos transmitidos com sucesso para o subdiretório de backup. <br> Obs.: Os arquivos movidos para o diretório de backup contêm uma extensão no final do nome com a seguinte característica: YYYYMMDDhhmmss, onde YYYY é o ano, MM é o mês, DD é o dia, hh é a hora, mm são os segundos do término da transferência |
+| Nome longo para arquivos  {{< icon "exclamation-triangle" >}} | Esta opção assinalada habilita temporariamente este Perfil a transferir arquivos com nome maior que 26 (vinte e seis) posições.                                                                                                                                                                                                                                                             |
+| Protocolo                                                     | Este campo seleciona o tipo de protocolo de comunicação que este Perfil irá utilizar para conexão.                                                                                                                                                                                                                                                                                          |
+| Adicionar atalho na área de desktop                           | Esta opção assinalada habilita a criação do ícone na área de trabalho (desktop) com o atalho para executar o STCP OFTP Client e realizar a operação de transferência.                                                                                                                                                                                                                       |
+| Número de tentativas de transferência                         | Preencha este campo com o número máximo de tentativas de conexão que este Perfil irá executar em caso de falha                                                                                                                                                                                                                                                                              |
+| Intervalo entre tentativas                                    | Preencha este campo com o intervalo mínimo (segundos) de espera para a realização de uma nova tentativa de conexão.                                                                                                                                                                                                                                                                         |
+| Solicitar usuário e senha                                     | Esta opção assinalada irá solicitar usuário e senha ao executar o STCP.                                                                                                                                                                                                                                                                                                                     |
 ---
 > [!WARNING] Atenção
 > Não habilite esta opção se você não tiver absoluta certeza de que o parceiro remoto é um STCP OFTP Client e que esteja também com esta característica habilitada.
 
-{{< icon "chevron-right" >}}Ainda na guia **Geral**, clique no botão **Configurar** para configurar a opção de protocolo
+{{< icon "arrow-right-circle" >}}Ainda na guia **Geral**, clique no botão **Configurar** para configurar a opção de protocolo
 selecionada anteriormente.
 
 ![](img/clt-config-08.png)
@@ -182,29 +182,29 @@ selecionada anteriormente.
 
 ### Protocolo OFTP - TCP/IP
 
-{{< icon "chevron-right" >}}Se o protocolo selecionado foi **OFTP – TCP/IP**, configure as seguintes opções na guia **TCP/IP**.
+{{< icon "arrow-right-circle" >}}Se o protocolo selecionado foi **OFTP – TCP/IP**, configure as seguintes opções na guia **TCP/IP**.
 
 ![](img/clt-config-09.png)
 
-| Campos             |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  Descrição                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| :----------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Endereço IP        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             Preencha este campo com o endereço TCP/IP ou nome (DNS) do servidor STCP OFTP Server                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| Porta IP           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     Preencha este campo com a porta TCP/IP do servidor STCP OFTP Server.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| Endereço IP        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         Preencha este campo com o endereço TCP/IP ou nome (DNS) da Interface local STCP OFTP Client.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| Porta IP           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Preencha este campo com a porta TCP/IP da Interface local STCP OFTP Client.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Campos             | Descrição                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| :----------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Endereço IP        | Preencha este campo com o endereço TCP/IP ou nome (DNS) do servidor STCP OFTP Server                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| Porta IP           | Preencha este campo com a porta TCP/IP do servidor STCP OFTP Server.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| Endereço IP        | Preencha este campo com o endereço TCP/IP ou nome (DNS) da Interface local STCP OFTP Client.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Porta IP           | Preencha este campo com a porta TCP/IP da Interface local STCP OFTP Client.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | Comunicação segura | Grava as informações de mudanças do estado do protocolo. <br> **Nativa (Básica):** Configura a comunicação segura com criptografia com nível de segurança básico. <br> `Obs.:` Antes de habilitar esta opção confirme se o servidor com quem você deseja se comunicar suporta esta característica. <br> <br> **Nativa (Média):** Configura a comunicação segura com criptografia com nível de segurança médio. <br> `Obs.:` Antes de habilitar esta opção confirme se o servidor com quem você deseja se comunicar suporta esta característica. <br> <br>  **Nativa (Alta):** Configura a comunicação segura com criptografia com nível de segurança alto. <br> `Obs.:` Antes de habilitar esta opção confirme se o servidor com quem você deseja se comunicar suporta esta característica. <br> <br> **TLS(Openssl):** Configura a comunicação segura com criptografia e certificação digital, com a utilização da padronização definida na RFC2246 (TLS1/SSL3). O TLS é comumente encontrado nos servidores de sites seguros (HTTPS) e oferece o maior grau de segurança atualmente disponível. <br> `Obs.:` Antes de habilitar esta opção confirme se o servidor com quem você deseja se comunicar suporta esta característica. |
-| Compatibilidade    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             Esta opção possibilita compatibilizar o STCP OFTP Client com diferentes produtos que existem atualmente no mercado.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| RFC2204            |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        Esta opção de compatibilidade permite a comunicação do STCP OFTP Client com outros produtos que seguem a recomendação RFC2204.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| RFC1006/RFC1086    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       Esta opção de compatibilidade permite a comunicação do STCP OFTP Client através de gateways de comunicação TCP-IP/X.25, que seguem a recomendação RFC1006/1086.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| RVS\*              |                                                                                                                                                                                                                                                                                                                                                                                                                                   Esta opção de compatibilidade permite a comunicação do STCP OFTP Client com o produto RVS*. <br> Obs.: Esta opção não deve ser habilitada quando o servidor RVS* for uma versão do mainframe (grande porte). donos.                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| X25/Router         |                                                                                                                                                                                                                                                                                                                                                                                                                                                        Esta opção de compatibilidade permite a comunicação do STCP OFTP Client através de roteadores, com suporte à comunicação X.25 através de socket. Obs.: Consulte a Riversoft sobre esta configuração se você estiver em dúvida                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| XFB\*/SSL          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    Habilita a compatibilidade do STCP com o XFB em conexões seguras SSL.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| Compressão GZIP    |                                                                                                                                                                                                                                                                                                                                                                                                                                                        Esta opção assinalada habilita a utilização da compressão GZIP onthe-fly (durante a transferência). <br> Obs.: Antes de habilitar esta opção confirme se o servidor com quem você deseja se comunicar suporta esta característica.                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Compatibilidade    | Esta opção possibilita compatibilizar o STCP OFTP Client com diferentes produtos que existem atualmente no mercado.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| RFC2204            | Esta opção de compatibilidade permite a comunicação do STCP OFTP Client com outros produtos que seguem a recomendação RFC2204.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| RFC1006/RFC1086    | Esta opção de compatibilidade permite a comunicação do STCP OFTP Client através de gateways de comunicação TCP-IP/X.25, que seguem a recomendação RFC1006/1086.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| RVS\*              | Esta opção de compatibilidade permite a comunicação do STCP OFTP Client com o produto RVS*. <br> Obs.: Esta opção não deve ser habilitada quando o servidor RVS* for uma versão do mainframe (grande porte). donos.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| X25/Router         | Esta opção de compatibilidade permite a comunicação do STCP OFTP Client através de roteadores, com suporte à comunicação X.25 através de socket. Obs.: Consulte a Riversoft sobre esta configuração se você estiver em dúvida                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| XFB\*/SSL          | Habilita a compatibilidade do STCP com o XFB em conexões seguras SSL.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| Compressão GZIP    | Esta opção assinalada habilita a utilização da compressão GZIP onthe-fly (durante a transferência). <br> Obs.: Antes de habilitar esta opção confirme se o servidor com quem você deseja se comunicar suporta esta característica.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 
 > [!CAUTION] Atenção
 > \*As marcas citadas são propriedade dos seus respectivos donos.
 
-{{< icon "chevron-right" >}}Na guia **TLS(Openssl)**, configure os seguintes campos para o protocolo OFTP - TCP/IP.
+{{< icon "arrow-right-circle" >}}Na guia **TLS(Openssl)**, configure os seguintes campos para o protocolo OFTP - TCP/IP.
 
 ![](img/clt-config-10.png)
 
@@ -220,31 +220,31 @@ selecionada anteriormente.
 | Debug       |                                                            Esta opção permite gerar um arquivo de depuração na pasta Debug do diretório de instalação do STCP.                                                            |
 ----
 
-{{< icon "chevron-right" >}}Na guia **Proxy**, configure as seguintes opções para o protocolo **OFTP – TCP/IP**.
+{{< icon "arrow-right-circle" >}}Na guia **Proxy**, configure as seguintes opções para o protocolo **OFTP – TCP/IP**.
 
 ![](img/clt-config-11.png)
 
-| Campos                      |                                                                                        Descrição                                                                                         |
-| :-------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Habilitar                   |                                                            Esta opção assinalada habilita a utilização de um servidor Proxy.                                                             |
-| SOCKS4                      |                                            Esta opção habilita a utilização de um servidor Proxy em conformidade com a especificação SOCKS4.                                             |
+| Campos                      | Descrição                                                                                                                                                                                     |
+| :-------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Habilitar                   | Esta opção assinalada habilita a utilização de um servidor Proxy.                                                                                                                             |
+| SOCKS4                      | Esta opção habilita a utilização de um servidor Proxy em conformidade com a especificação SOCKS4.                                                                                             |
 | SOCKS5                      | Esta opção habilita a utilização de um servidor Proxy em conformidade com a recomendação RFC1928 (SOCKS5) e RFC1929. <br> Obs.: O processo de autenticação utilizado é o definido na RFC1929. |
-| HTTP                        |              Esta opção habilita a utilização de um servidor Proxy em conformidade com a recomendação RFC2817 (HTTP). <br> Obs.: O processo de autenticação utilizado é o Basic.              |
-| Endereço IP                 |                                                     Preencha este campo com o endereço TCP/IP ou nome (DNS) do servidor STCP Proxy.                                                      |
-| Porta IP                    |                                                                Preencha este campo com a porta TCP/IP do servidor Proxy.                                                                 |
-| Basic                       |                                                     Marque esta opção se o seu servidor Proxy suporta o modo de autenticação Basic.                                                      |
-| NTLM                        |           Marque esta opção se o seu servidor Proxy suporta o modo de autenticação NTLM. Caso você utilize servidores Proxy da Microsoft, esta deve ser a opção preferencial.            |
-| Usuário                     |                                                   Preencha este campo com o nome do usuário autorizado a utilizar o serviço de Proxy.                                                    |
-| Senha                       |                                                         Preencha este campo com a senha informada no campo Senha para validação.                                                         |
-| Confirmar                   |                                                         Preencha este campo com a senha informada no campo Senha para validação.                                                         |
-| Lê configuração Proxy do IE |                  Pressione este botão para ler as configurações de Proxy configuradas no Internet Explorer. <br> Obs.: As informações de autenticação não serão lidas do IE.                  |
+| HTTP                        | Esta opção habilita a utilização de um servidor Proxy em conformidade com a recomendação RFC2817 (HTTP). <br> Obs.: O processo de autenticação utilizado é o Basic.                           |
+| Endereço IP                 | Preencha este campo com o endereço TCP/IP ou nome (DNS) do servidor STCP Proxy.                                                                                                               |
+| Porta IP                    | Preencha este campo com a porta TCP/IP do servidor Proxy.                                                                                                                                     |
+| Basic                       | Marque esta opção se o seu servidor Proxy suporta o modo de autenticação Basic.                                                                                                               |
+| NTLM                        | Marque esta opção se o seu servidor Proxy suporta o modo de autenticação NTLM. Caso você utilize servidores Proxy da Microsoft, esta deve ser a opção preferencial.                           |
+| Usuário                     | Preencha este campo com o nome do usuário autorizado a utilizar o serviço de Proxy.                                                                                                           |
+| Senha                       | Preencha este campo com a senha informada no campo Senha para validação.                                                                                                                      |
+| Confirmar                   | Preencha este campo com a senha informada no campo Senha para validação.                                                                                                                      |
+| Lê configuração Proxy do IE | Pressione este botão para ler as configurações de Proxy configuradas no Internet Explorer. <br> Obs.: As informações de autenticação não serão lidas do IE.                                   |
 --------
 
 Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alterar as configurações.
 
 ### Tipos de Arquivos
 
-{{< icon "chevron-right" >}}Vá para a guia **Tipos de Arquivos**
+{{< icon "arrow-right-circle" >}}Vá para a guia **Tipos de Arquivos**
 
 ![](img/clt-config-30.png)
 
@@ -266,13 +266,13 @@ A associação entre um **Tipo de arquivo** e o arquivo propriamente dito pode s
 
 A tabela abaixo demonstra a associação do nome do arquivo com o tipo específico:
 
-| Nome Tipo | Tipo | Prefixo | Sufixo | Regex |    Nome Arquivo     |         Associação          |
-| :-------- | :--: | :-----: | :----: | :---: | :-----------------: | :-------------------------: |
-| TEST.0    |  1   |    -    |   -    |   -   |  TEST.0 e TEST.TXT  |  TEST.0: Sim TEST.TXT: Não  |
-| TEST.1    |  2   |  TEST   |   -    |   -   | TEST.TXT e TXT.TEST | TEST.TXT: Sim TXT.TEST: Não |
-| TEST.2    |  2   |    -    |  TEST  |   -   | TXT.TEST e TXT.TXT  | TXT.TEST: Sim TXT.TXT: Não  |
-| TEST.3    |  3   |    -    |   -    |  T.T  |  TXT.TXT e TXTTXT   |  TXT.TXT: Sim TXTTXT: Não   |
-| Default   |  -   |    -    |   -    |   -   |       TXTTXT        |             Sim             |
+| Nome Tipo | Tipo  | Prefixo | Sufixo | Regex |    Nome Arquivo     |         Associação          |
+| :-------- | :---: | :-----: | :----: | :---: | :-----------------: | :-------------------------: |
+| TEST.0    |   1   |    -    |   -    |   -   |  TEST.0 e TEST.TXT  |  TEST.0: Sim TEST.TXT: Não  |
+| TEST.1    |   2   |  TEST   |   -    |   -   | TEST.TXT e TXT.TEST | TEST.TXT: Sim TXT.TEST: Não |
+| TEST.2    |   2   |    -    |  TEST  |   -   | TXT.TEST e TXT.TXT  | TXT.TEST: Sim TXT.TXT: Não  |
+| TEST.3    |   3   |    -    |   -    |  T.T  |  TXT.TXT e TXTTXT   |  TXT.TXT: Sim TXTTXT: Não   |
+| Default   |   -   |    -    |   -    |   -   |       TXTTXT        |             Sim             |
 
 Nesta nova tela, preencha o campo com o **Nome do novo tipo de arquivo**. 
 Clique em **OK** para salvar as configurações.
@@ -284,7 +284,7 @@ Clique em **OK** para salvar as configurações.
 | Nome do novo tipo de arquivo | Preencha este campo com o nome desejado para o novo tipo. Obs.: Não utilize caracteres especiais ou espaços em branco. |
 -------
 
-{{< icon "chevron-right" >}}Na guia **Geral**, preencha e configure os seguintes campos.
+{{< icon "arrow-right-circle" >}}Na guia **Geral**, preencha e configure os seguintes campos.
 
 ![](img/clt-config-32.png)
 
@@ -315,7 +315,7 @@ Clique em **OK** para salvar as configurações.
 | EERP libera                    |                                       Esta opção permite habilitar ou inibir o tratamento do arquivo recebido somente após o envio do Odette EERP (End to End Response). Obs.: Somente utilize esta opção se o servidor suportar esta característica.                                        |
 ----------------
 
-{{< icon "chevron-right" >}}Na guia **Avançadas**, selecione as seguintes propriedades do tipo de arquivo.
+{{< icon "arrow-right-circle" >}}Na guia **Avançadas**, selecione as seguintes propriedades do tipo de arquivo.
 
 ![](img/clt-config-33.png)
 
@@ -354,7 +354,7 @@ de sucesso (Return code 0), o processo é finalizado com sucesso.
 
 ### Avançadas I
 
-{{< icon "chevron-right" >}}Na guia **Avançadas I**, nas **Propriedades do Perfil**, preencha os seguintes campos de configuração.
+{{< icon "arrow-right-circle" >}}Na guia **Avançadas I**, nas **Propriedades do Perfil**, preencha os seguintes campos de configuração.
 
 ![](img/clt-config-38.png)
 
@@ -368,7 +368,7 @@ de sucesso (Return code 0), o processo é finalizado com sucesso.
 
 ### Avançadas II
 
-{{< icon "chevron-right" >}}Na guia **Avançadas II**, nas **Propriedades do Perfil**, preencha os seguintes campos de configuração.
+{{< icon "arrow-right-circle" >}}Na guia **Avançadas II**, nas **Propriedades do Perfil**, preencha os seguintes campos de configuração.
 
 ![](img/clt-config-39.png)
 
@@ -386,27 +386,27 @@ de sucesso (Return code 0), o processo é finalizado com sucesso.
 
 ## Guia Avançadas
 
-{{< icon "chevron-right" >}}Na guia **Avançadas**, configure os seguintes campos:
+{{< icon "arrow-right-circle" >}}Na guia **Avançadas**, configure os seguintes campos:
 
 ![](img/clt-config-03.png)
 
-| Campos                                  |                                                                                                                                  Descrição                                                                                                                                   |
-| :-------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Máximo de sessões                       |                                               Este campo informa a quantidade máxima de sessões simultâneas de transferência que podem ser ativadas pelo serviço. <br> Obs.: Limitado a 1 (uma) sessão na versão STCP OFTP Client.                                                |
+| Campos                                  | Descrição                                                                                                                                                                                                                                                                    |
+| :-------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Máximo de sessões                       | Este campo informa a quantidade máxima de sessões simultâneas de transferência que podem ser ativadas pelo serviço. <br> Obs.: Limitado a 1 (uma) sessão na versão STCP OFTP Client.                                                                                         |
 | Check point                             | Preencha este campo com o múltiplo da quantidade de dadosrecebidos para que o STCP OFTP Client force uma gravação física do arquivo. No caso de uma interrupção da transferência, a sua recuperação ocorrerá a partir da última posição de check point corretamente gravada. |
-| Habilitar                               |                                                                                                                     Habilita o controle de lock externo.                                                                                                                     |
-| Tempo máximo de lock                    |                                                                                                               Tempo máximo que o arquivo permanece bloqueado.                                                                                                                |
-| Tempo de espera para uma nova tentativa |                                                                                                         Tempo de espera para nova tentativa de processar o arquivo.                                                                                                          |
-| Máximo de tentativas                    |                                                                                                                 Número de tentativas de processar o arquivo.                                                                                                                 |
-| Controle de Atualização                 |                                                                                                Este campo habilita o controle de atualização automática do STCP OFTP Client.                                                                                                 |
+| Habilitar                               | Habilita o controle de lock externo.                                                                                                                                                                                                                                         |
+| Tempo máximo de lock                    | Tempo máximo que o arquivo permanece bloqueado.                                                                                                                                                                                                                              |
+| Tempo de espera para uma nova tentativa | Tempo de espera para nova tentativa de processar o arquivo.                                                                                                                                                                                                                  |
+| Máximo de tentativas                    | Número de tentativas de processar o arquivo.                                                                                                                                                                                                                                 |
+| Controle de Atualização                 | Este campo habilita o controle de atualização automática do STCP OFTP Client.                                                                                                                                                                                                |
 
 ### Log
 
-{{< icon "chevron-right" >}}Clique no botão **Log** para continuar a configuração.
+{{< icon "arrow-right-circle" >}}Clique no botão **Log** para continuar a configuração.
 
 ![](img/clt-config-04.png)
 
-{{< icon "chevron-right" >}}Na guia **Geral**, Preencha os seguintes campos.
+{{< icon "arrow-right-circle" >}}Na guia **Geral**, Preencha os seguintes campos.
 
 ![](img/clt-config-05.png)
 
@@ -426,17 +426,17 @@ de sucesso (Return code 0), o processo é finalizado com sucesso.
 
 **Tabela com a descrição do Nível do evento:**
 
-| Nível do Evento |                                                                      Descrição                                                                      |
-| :-------------- | :------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 0               |                                                    Os eventos de início e término da aplicação.                                                     |
-| 1               |                                                        Os eventos que contenham algum erro.                                                         |
-| 2               |                                     Os eventos de término da operação de cancelamento de espera de uma conexão.                                     |
-| 3               |                                            Os eventos de início e término de cancelamento das conexões.                                             |
+| Nível do Evento | Descrição                                                                                                                                           |
+| :-------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0               | Os eventos de início e término da aplicação.                                                                                                        |
+| 1               | Os eventos que contenham algum erro.                                                                                                                |
+| 2               | Os eventos de término da operação de cancelamento de espera de uma conexão.                                                                         |
+| 3               | Os eventos de início e término de cancelamento das conexões.                                                                                        |
 | 4               | Os eventos de início e término de conexão com sucesso, início e término de sessão, início e término de transmissão ou início e término de recepção. |
-| 5               |                                                                    Não definido.                                                                    |
-| 6               |                                                                    Não definido.                                                                    |
-| 7               |                                        Os eventos de início e término da unidade de processamento (threads).                                        |
-| 8               |                                                      Os eventos de início e término da agenda.                                                      |
+| 5               | Não definido.                                                                                                                                       |
+| 6               | Não definido.                                                                                                                                       |
+| 7               | Os eventos de início e término da unidade de processamento (threads).                                                                               |
+| 8               | Os eventos de início e término da agenda.                                                                                                           |
 
 > [!WARNING] Atenção
 > Obs.: Os eventos associados a um nível inferior ou igual ao selecionado serão processados.
@@ -445,20 +445,20 @@ Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alt
 
 ## Comunicação TLS (Openssl)
 
-{{< icon "chevron-right" >}}Na guia **Perfis**, selecione o perfil desejado e clique no botão **Propriedades**.
+{{< icon "arrow-right-circle" >}}Na guia **Perfis**, selecione o perfil desejado e clique no botão **Propriedades**.
 
 ![](img/clt-config-40.png)
 
-{{< icon "chevron-right" >}}Na guia **Geral**, pressione o botão **Configurar**.
+{{< icon "arrow-right-circle" >}}Na guia **Geral**, pressione o botão **Configurar**.
 
 ![](img/clt-config-41.png)
 
-{{< icon "chevron-right" >}}Na guia **TCP/IP**, marque a opção **Comunicação Segura** e em seguida, selecione **TLS**.
+{{< icon "arrow-right-circle" >}}Na guia **TCP/IP**, marque a opção **Comunicação Segura** e em seguida, selecione **TLS**.
 Clique em **OK** para concluir o processo de configuração.
 
 ![](img/clt-config-42.png)
 
-{{< icon "chevron-right" >}}Caso a comunicação entre o STCP OFTP Server Enterprise/Lite e o STCP OFTP Client que está sendo configurado exija autenticação, o **Certificado Digital** deverá ser informado na guia **TLS(Openssl)** no campo **Arquivo** da opção **Certificados CA (Autoridades)**.
+{{< icon "arrow-right-circle" >}}Caso a comunicação entre o STCP OFTP Server Enterprise/Lite e o STCP OFTP Client que está sendo configurado exija autenticação, o **Certificado Digital** deverá ser informado na guia **TLS(Openssl)** no campo **Arquivo** da opção **Certificados CA (Autoridades)**.
 
 ![](img/clt-config-43.png)
 
@@ -468,39 +468,39 @@ Clique em **OK** para concluir o processo de configuração.
 
 ## Configuração de Certificado 
 
-{{< icon "chevron-right" >}}No menu, *Iniciar > Todos os programas > Riversoft STCP OFTP Client*, acesse o *STCP OFTP Client Config*.
+{{< icon "arrow-right-circle" >}}No menu, *Iniciar > Todos os programas > Riversoft STCP OFTP Client*, acesse o *STCP OFTP Client Config*.
 
-{{< icon "chevron-right" >}}Na guia Perfis selecione o perfil desejado e clique no botão **Propriedades**
+{{< icon "arrow-right-circle" >}}Na guia Perfis selecione o perfil desejado e clique no botão **Propriedades**
 
 ![](img/cert-01.png)
 
-{{< icon "chevron-right" >}}Na janela Propriedades do perfil, na guia **Geral**, clique no botão **Configurar** e selecione a guia **TLS (Openssl)**
+{{< icon "arrow-right-circle" >}}Na janela Propriedades do perfil, na guia **Geral**, clique no botão **Configurar** e selecione a guia **TLS (Openssl)**
 
-{{< icon "chevron-right" >}}No grupo Certificados CA (Autoridades) informe o parâmetro Diretório.
+{{< icon "arrow-right-circle" >}}No grupo Certificados CA (Autoridades) informe o parâmetro Diretório.
 
 ![](img/cert-02.png)
 
-PARAMÊTROS | DESCRIÇÃO
-:---       | :---
-Diretório  | Preencha este campo com o nome do diretório (caminho completo) onde se encontram instalados os certificados digitais (X509) contendo a chave pública que assina o certificado apresentado pelo servidor.
+| PARAMÊTROS | DESCRIÇÃO                                                                                                                                                                                                |
+| :--------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Diretório  | Preencha este campo com o nome do diretório (caminho completo) onde se encontram instalados os certificados digitais (X509) contendo a chave pública que assina o certificado apresentado pelo servidor. |
 
-{{< icon "chevron-right" >}}Pressione o botão OK para salvar e sair do *STCP OFTP Client Config*
+{{< icon "arrow-right-circle" >}}Pressione o botão OK para salvar e sair do *STCP OFTP Client Config*
 
-{{< icon "chevron-right" >}}Realize os testes de conexão ao *STCP OFTP Server* através do *STCP OFTP Client*
+{{< icon "arrow-right-circle" >}}Realize os testes de conexão ao *STCP OFTP Server* através do *STCP OFTP Client*
 
 ## Configurar um servidor proxy para conexão
 
-{{< icon "chevron-right" >}}Acesse o *Riversoft STCP OFTP Client Config*: *(Iniciar -> Todos os programas -> Riversoft STCP OFTP Client)*
+{{< icon "arrow-right-circle" >}}Acesse o *Riversoft STCP OFTP Client Config*: *(Iniciar -> Todos os programas -> Riversoft STCP OFTP Client)*
 
-{{< icon "chevron-right" >}}Selecione o perfil desejado na guia **Perfis** e clique em **Propriedades**.
+{{< icon "arrow-right-circle" >}}Selecione o perfil desejado na guia **Perfis** e clique em **Propriedades**.
 
 ![](img/clt-proxy-01.png)
 
-{{< icon "chevron-right" >}}Na guia **Geral**, clique no botão **Configurar**.
+{{< icon "arrow-right-circle" >}}Na guia **Geral**, clique no botão **Configurar**.
 
 ![](img/clt-proxy-02.png)
 
-{{< icon "chevron-right" >}}Na guia **Proxy**
+{{< icon "arrow-right-circle" >}}Na guia **Proxy**
 
 Clique no botão **Lê Configuração Proxy do IE** para obter as informações do navegador Internet Explorer. Caso o servidor Proxy utilize autenticação, preencha-as.
 

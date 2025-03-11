@@ -101,15 +101,15 @@ Alguns dos algoritmos mais atuais usados com TLS:
 * Um modo de operação que oferece autenticação adicional e integridade dos dados, frequentemente usado com AES (AES-GCM).
 
 
-| **Algoritmo**       | **Uso**                                | **Tamanho de Chave** | **Segurança**                    | **Comentário**                                  |
-|---------------------|----------------------------------------|----------------------|----------------------------------|------------------------------------------------|
-| AES-128             | Cifra de dados                         | 128 bits             | Alta                             | Boa combinação de segurança e desempenho       |
-| AES-256             | Cifra de dados                         | 256 bits             | Muito Alta                       | Recomendado para segurança de longo prazo      |
-| ChaCha20            | Cifra de dados                         | 256 bits             | Muito Alta                       | Alternativa rápida ao AES, especialmente em hardware limitado |
-| ECDHE               | Acordo de chaves                       | 256 bits (EC curve)  | Muito Alta                       | Melhor eficiência comparado ao RSA             |
-| RSA                 | Troca de chaves, assinatura digital    | 2048/4096 bits        | Alta                             | Usado historicamente, mas gradualmente substituído por ECDHE  |
-| SHA-256/384/512     | Função de hash para integridade        | 256/384/512 bits     | Alta/Muito Alta                  | Proporciona integridade dos dados              |
-| GCM (AES-GCM)       | Autenticação de dados, integridade     | Variável (depende do AES) | Alta                        | Oferece criptografia autenticada               |
+| **Algoritmo**   | **Uso**                             | **Tamanho de Chave**      | **Segurança**   | **Comentário**                                                |
+| --------------- | ----------------------------------- | ------------------------- | --------------- | ------------------------------------------------------------- |
+| AES-128         | Cifra de dados                      | 128 bits                  | Alta            | Boa combinação de segurança e desempenho                      |
+| AES-256         | Cifra de dados                      | 256 bits                  | Muito Alta      | Recomendado para segurança de longo prazo                     |
+| ChaCha20        | Cifra de dados                      | 256 bits                  | Muito Alta      | Alternativa rápida ao AES, especialmente em hardware limitado |
+| ECDHE           | Acordo de chaves                    | 256 bits (EC curve)       | Muito Alta      | Melhor eficiência comparado ao RSA                            |
+| RSA             | Troca de chaves, assinatura digital | 2048/4096 bits            | Alta            | Usado historicamente, mas gradualmente substituído por ECDHE  |
+| SHA-256/384/512 | Função de hash para integridade     | 256/384/512 bits          | Alta/Muito Alta | Proporciona integridade dos dados                             |
+| GCM (AES-GCM)   | Autenticação de dados, integridade  | Variável (depende do AES) | Alta            | Oferece criptografia autenticada                              |
 
 ### Certificado digital emitido por uma autoridade certificadora (CA)
 
@@ -195,54 +195,54 @@ openssl pkcs12 -in C:\TEMP\empresateste.com.br.pfx -out C:\TEMP\private-key.pem 
 
 Anterior ao processo de configuração do certificado no STCP OFTP Client, será necessária obter uma cópia da cadeia de certificados, a partir do certificado assinado e enviado pela entidade certificadora e realizar o renomeio de cada certificado dessa hierarquia para o seu hash correspondente.
 
-{{< icon "chevron-right" >}}Faça uma cópia do certificado, encaminhado pela certificadora, para um diretório temporário do servidor onde o STCP OFTP Server está instalado (Ex. C:\TEMP).
+{{< icon "arrow-right-circle" >}}Faça uma cópia do certificado, encaminhado pela certificadora, para um diretório temporário do servidor onde o STCP OFTP Server está instalado (Ex. C:\TEMP).
 
-{{< icon "chevron-right" >}}Acesse o diretório temporário e clique com o botão direito do mouse no certificado (Ex. empresateste_certificate.cer) e selecione **Abrir**.
+{{< icon "arrow-right-circle" >}}Acesse o diretório temporário e clique com o botão direito do mouse no certificado (Ex. empresateste_certificate.cer) e selecione **Abrir**.
 
-{{< icon "chevron-right" >}}Na guia Caminho de Certificação selecione o certificado raíz (Ex. VeriSign Trial Secure Server Root CA – G2) e clique no botão Exibir Certificado.
+{{< icon "arrow-right-circle" >}}Na guia Caminho de Certificação selecione o certificado raíz (Ex. VeriSign Trial Secure Server Root CA – G2) e clique no botão Exibir Certificado.
 
 ![](img/cert-04.png)
 
-{{< icon "chevron-right" >}}Uma nova janela será exibida, contendo as informações do certificado selecionado (neste exemplo serão exibidas as informações do certificado raiz _VeriSign Trial Secure Server Root CA – G2)_
+{{< icon "arrow-right-circle" >}}Uma nova janela será exibida, contendo as informações do certificado selecionado (neste exemplo serão exibidas as informações do certificado raiz _VeriSign Trial Secure Server Root CA – G2)_
 
-{{< icon "chevron-right" >}}Selecione a guia **Detalhes** e clique no botão **Copiar para Arquivo** para iniciar o Assistente para Exportação de Certificados
+{{< icon "arrow-right-circle" >}}Selecione a guia **Detalhes** e clique no botão **Copiar para Arquivo** para iniciar o Assistente para Exportação de Certificados
 
 ![](img/cert-05.png)
 
-{{< icon "chevron-right" >}}Para continuar, clique em **Avançar**
+{{< icon "arrow-right-circle" >}}Para continuar, clique em **Avançar**
 
-{{< icon "chevron-right" >}}No formato do arquivo de exportação selecione *X.509 codificado na base 64 (*.cer)* e clique no botão **Avançar**
+{{< icon "arrow-right-circle" >}}No formato do arquivo de exportação selecione *X.509 codificado na base 64 (*.cer)* e clique no botão **Avançar**
 
 ![](img/cert-06.png)
 
-{{< icon "chevron-right" >}}Informe o caminho e nome do arquivo a ser exportado (Ex. C:\TEMP\root_certificate.cer)
+{{< icon "arrow-right-circle" >}}Informe o caminho e nome do arquivo a ser exportado (Ex. C:\TEMP\root_certificate.cer)
 
-{{< icon "chevron-right" >}}Para finalizar, clique no botão **Concluir**
+{{< icon "arrow-right-circle" >}}Para finalizar, clique no botão **Concluir**
 
 ![](img/cert-07.png)
 
-{{< icon "chevron-right" >}}Repita os passos para exportar os demais certificados existentes na hierarquia de certificados, o certificado raiz (G2) e o intermediário (G3).
+{{< icon "arrow-right-circle" >}}Repita os passos para exportar os demais certificados existentes na hierarquia de certificados, o certificado raiz (G2) e o intermediário (G3).
 
 ![](img/cert-08.png)
 
 > NOTA: Neste exemplo serão gerados mais dois arquivos no diretório temporário (Ex. root_certificate.cer e intermediate_certificate.cer).
 
-{{< icon "chevron-right" >}}Acesse a pasta *Program* do diretório de instalação do Riversoft STCP OFTP Server (Ex. C:\STCPODT\Program) e em seguida, para gerar o _hash_, digite a linha de comando:
+{{< icon "arrow-right-circle" >}}Acesse a pasta *Program* do diretório de instalação do Riversoft STCP OFTP Server (Ex. C:\STCPODT\Program) e em seguida, para gerar o _hash_, digite a linha de comando:
 
 ```
 openssl x509 –noout –hash -in C:\TEMP\root_certificate.cer
 ```
 <!-- ![](./imagem/img13.png) -->
 
-{{< icon "chevron-right" >}}Uma vez obtido o _hash_ do arquivo indicado, renomeie esse arquivo para o seu _hash_ correspondente e mais a extensão .**0** (Ex. _root_certificate.cer para F877295a.0_)
+{{< icon "arrow-right-circle" >}}Uma vez obtido o _hash_ do arquivo indicado, renomeie esse arquivo para o seu _hash_ correspondente e mais a extensão .**0** (Ex. _root_certificate.cer para F877295a.0_)
 
 ![](img/cert-09.png)
 
-{{< icon "chevron-right" >}}Repita os passos descritos acima, para renomeio dos demais arquivos exportados *(Ex. _root_certificate.cer e intermediate_certificate.cer_)*
+{{< icon "arrow-right-circle" >}}Repita os passos descritos acima, para renomeio dos demais arquivos exportados *(Ex. _root_certificate.cer e intermediate_certificate.cer_)*
 
 <!-- ![](./imagem/img15.png) -->
 
-{{< icon "chevron-right" >}}Copie os arquivos renomeados para a pasta Certs do diretório de instalação do STCP OFTP Client *(Ex. C:\STCPCLT\Certs)*
+{{< icon "arrow-right-circle" >}}Copie os arquivos renomeados para a pasta Certs do diretório de instalação do STCP OFTP Client *(Ex. C:\STCPCLT\Certs)*
 
 ## Referência
 
