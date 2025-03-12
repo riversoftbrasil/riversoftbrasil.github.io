@@ -11,11 +11,10 @@ prev: /docs/
 next: /stcpdirectlink/01-install
 slug: introducao
 draft: false
-lastmod: 2024-12-17
 ---
-## O que é o STCP Directlink?
+## O que é o STCP Directlink
 
-O STCP Directlink é uma aplicação que, ao ser integrada aos produtos <a href="/stcpserver/" target="_blank">STCP OFTP Server (Windows)</a> {{< icon "arrow-top-right-on-square" >}} ou <a href="/stcpgeminiserver/" target="_blank">STCP Gemini Server (Linux)</a> {{< icon "arrow-top-right-on-square" >}}, oferece uma solução simples e robusta para transferência segura de arquivos (Download e Upload) através dos protocolos <a href="/utils/protocols/#httphttps" target="_blank">HTTPS</a> e <a href="/utils/protocols/#sftp" target="_blank">SFTP</a>.
+O STCP Directlink é uma aplicação que, ao ser integrada aos produtos <a href="/stcpserver/" target="_blank">STCP OFTP Server (Windows)</a> {{< icon "arrow-top-right-on-square" >}} ou <a href="/stcpgeminiserver/" target="_blank">STCP Gemini Server (Linux)</a> {{< icon "arrow-top-right-on-square" >}}, oferece uma solução simples e robusta para transferência segura de arquivos (Download e Upload) através dos protocolos <a href="/security/#protocolo-httphttps" target="_blank">HTTPS</a> e <a href="/security/#protocolo-sftp" target="_blank">SFTP</a>.
 
 > [!IMPORTANT] Disponível nas versões para Windows e Linux.
 
@@ -24,14 +23,14 @@ O STCP Directlink é uma aplicação que, ao ser integrada aos produtos <a href=
 
 Todo o processo de transferência, através do STCP Directlink, pode ser totalmente rastreado, com as informações de usuário, data e hora em que os eventos ocorreram, filtro de arquivos, filtro de horário, roteamento e muito mais.
 
-Com o Riversoft® STCPDirectLink é possível realizar o **upload** de um arquivo e **notificar através de email ou sms (celular)** um contato para receber o **link seguro** para download.
+Com o Riversoft® STCPDirectLink é possível realizar o **upload** de um arquivo e **notificar através de e-mail ou sms (celular)** um contato para receber o **link seguro** para download.
 
 > [!NOTE] Nota: 
-> O **link seguro** para **download** identifica qual a **conta de email** ou **número do celular** está vinculado ao arquivo e só permite o **download** com a utilização de um **código de segurança**.
+> O **link seguro** para **download** identifica qual a **conta de e-mail** ou **número do celular** está vinculado ao arquivo e só permite o **download** com a utilização de um **código de segurança**.
 
 
 > [!WARNING] Atenção
-> O código de segurança é encaminhado somente para o **email** ou **celular** vinculado ao arquivo e tem um **tempo de vida**.
+> O código de segurança é encaminhado somente para o **e-mail** ou **celular** vinculado ao arquivo e tem um **tempo de vida**.
 
 
 Para possibilitar a integração de forma ágil, o STCP DirectLink disponibiliza uma [API](/stcpdirectlink/api/) (Application Program Interface) no padrão [RestFull](https://restfulapi.net/) através do protocolo **HTTPS**.

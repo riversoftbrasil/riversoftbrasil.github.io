@@ -12,7 +12,6 @@ weight: 1
 prev: stcpgeminiserver/introducao
 next: stcpgeminiserver/implantacao/01-instalacao
 draft:
-lastmod: 2024-06-14
 ---
 Esta seção tem como objetivo descrever os passos de instalação e configurações iniciais do STCP Gemini Server, para implantação. Outras configurações podem ser realizadas conforme as necessidades específicas do ambiente e/ou funcionalidades utilizadas.
 

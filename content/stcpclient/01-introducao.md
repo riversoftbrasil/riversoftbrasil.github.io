@@ -11,11 +11,10 @@ prev: /docs
 next: /02-instalacao
 slug: introducao
 brand: stw
-lastmod: 2024-12-16
 ---
 ## O que é o STCP OFTP Client
 
-O STCP OFTP Client é um cliente de transferência de arquivos seguro e multiprotocolo para aplicações de **e-business** e troca de informações corporativas, baseado na especificação <a href="/utils/protocols/#oftp" target="_blank">OFTP (ODETTE File Transfer Protocol)</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;
+O STCP OFTP Client é um cliente de transferência de arquivos seguro e multiprotocolo para aplicações de **e-business** e troca de informações corporativas, baseado na especificação <a href="/security/#protocolo-oftp" target="_blank">OFTP (ODETTE File Transfer Protocol)</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;
 
 {{< advantages-stcp "static/templates/advantages-stcp.md" >}}
 

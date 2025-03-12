@@ -10,7 +10,6 @@ prev: stcpsigner/01-introducao
 next:
 draft: false
 slug: instalacao
-lastmod: 2024-04-15
 ---
 # Distribuição do executável
 

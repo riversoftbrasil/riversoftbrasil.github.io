@@ -12,7 +12,6 @@ prev: /stcpdirectlink/04-portal/
 next: 
 slug: arquivo-configuracao
 draft: false
-lastmod: 2024-07-12
 ---
 
 A configuração do portal do STCP DirectLink é realizada através de um arquivo no formato json (ex.: example-config.json) localizado no diretório ***static/portal/assets/configs***.
@@ -74,12 +73,12 @@ primaryColor                          | Cor primaria (default: 0xFF0d1e32)
 background                            | Imagem de fundo (default: nenhuma)
 debugShowBanner                       | Modo de debug (true|false) (default: false)
 userEnabled                           | Mostra o campo de usuário no formulário de upload (true|false) (default: true)
-emailEnabled                          | Mostra o campo de email no formulário de upload (true|false) (default: false)
-emailSenderEnabled                    | Mostra o campo de email do remetente para notificação de retirada do arquivo no formulário de upload (true|false) (default: false)
+emailEnabled                          | Mostra o campo de e-mail no formulário de upload (true|false) (default: false)
+emailSenderEnabled                    | Mostra o campo de e-mail do remetente para notificação de retirada do arquivo no formulário de upload (true|false) (default: false)
 smsEnabled                            | Mostra o campo de telefone no formulário de upload (true|false) (default: false)
 darkThemeEnabled                      | Habilita/desabilita modo escuro (true|false) (default:false)
 inactivityTimerMinutes                | Define o tempo máximo de inatividade para logout em minutos (default: 30)
-emailSupport                          | Define o email de suporte
+emailSupport                          | Define o e-mail de suporte
 loginSSO                              | Habilita/desabilita login SSO google (true|false) (default: false)
 pinlen                                | Define o tamanho do pin de segurança (default: 6)
 privacyLaunchUrl                      | Define a URL das informações de privacidade em cada lingua suportada pela aplicação (default: https://www.riversoft.com.br/politicadeprivacidade)

@@ -1,5 +1,5 @@
 ---
-linkTitle: Teste de conectividade
+linkTitle: Testes de conectividade
 layout: docs
 toc: true
 cascade:
@@ -10,17 +10,17 @@ weight: 14
 prev: requirements/
 next: advantages/
 draft: false
-lastmod: 2024-05-23
 ---
+
 ## Telnet
 
 Em alguns casos, para que seja possível a identificação de problemas relacionados à conexão e a troca de arquivos, utilizando o STCP OFTP Server/Client, se faz necessário à realização de testes de conectividade entre as partes envolvidas no processo de transferência.
 
 Quando a conexão é estabelecida através de uma porta de comunicação sem o uso de certificado de segurança (TLS), siga os passos descritos abaixo:
 
-{{< icon "chevron-right" >}}Acesse o prompt de comando do Windows *(a execução deverá ser sem as credenciais de Administrador)*.
+{{< icon "arrow-right-circle" >}}Acesse o prompt de comando do Windows *(a execução deverá ser sem as credenciais de Administrador)*.
 
-{{< icon "chevron-right" >}}Execute o comando abaixo e pressione `ENTER`
+{{< icon "arrow-right-circle" >}}Execute o comando abaixo e pressione `ENTER`
 
 ```
 telnet <IP-SERVIDOR-DESTINO> <PORTA>
@@ -55,18 +55,18 @@ Em alguns casos, para que seja possível a identificação de problemas relacion
 
 Quando a conexão é estabelecida através de uma porta de comunicação segura (TLS), siga os passos descritos abaixo:
 
-{{< icon "chevron-right" >}}Efetue o download da ferramenta OpenSSL através do link: [Download Openssl](http://www.riversoft.com.br/produtos/pub/stcp-openssl.zip)
+{{< icon "arrow-right-circle" >}}Efetue o download da ferramenta OpenSSL através do link: [Download Openssl](http://www.riversoft.com.br/produtos/pub/stcp-openssl.zip)
 
-{{< icon "chevron-right" >}}Copie o arquivo openssl.exe para o diretório `C:/Temp` (ou outro de sua preferencia).
+{{< icon "arrow-right-circle" >}}Copie o arquivo openssl.exe para o diretório `C:/Temp` (ou outro de sua preferencia).
 
-{{< icon "chevron-right" >}}Acesse o prompt de comando do Windows *(a execução deverá ser sem as credenciais de Administrador)*.
+{{< icon "arrow-right-circle" >}}Acesse o prompt de comando do Windows *(a execução deverá ser sem as credenciais de Administrador)*.
 
-{{< icon "chevron-right" >}}No diretório C:/Temp execute o comando openssl.exe.
+{{< icon "arrow-right-circle" >}}No diretório C:/Temp execute o comando openssl.exe.
 
 > [!WARNING] Aviso: 
 > Nos parâmetros IP-SERVIDOR-DESTINO e PORTA deverão ser informados o IP e Porta respectivos ao servidor do parceiro, no qual a conexão será realizada.
 
-{{< icon "chevron-right" >}}Após acesso ao OpenSSL, execute a linha de comando abaixo:
+{{< icon "arrow-right-circle" >}}Após acesso ao OpenSSL, execute a linha de comando abaixo:
 
 ```
 s_client -host <IP-SERVIDOR-DESTINO> -port <PORTA> –debug

@@ -6,12 +6,13 @@ cascade:
   type: docs
 sidebar:
   exclude: false
-weight: 8
-prev: database/
-next: protocols/
+weight: 6
+prev: 
+next: 
 draft: false
-lastmod: 2024-08-26
+slug: mensagens-e-codigos-de-erros
 ---
+
 ## Códigos de eventos gerados no arquivo de mensagens
 
 Mensagem | Descrição
@@ -866,5 +867,3 @@ Código| Descrição
 | 23909   | Erro de autenticação (FingerPrint).                                                                               |
 | 23910   | Recepção de arquivo com erro.                                                                                     |
 | 23911   | Erro de acesso ao caminho especificado nos diretórios de download e upload.                                       |
-
-

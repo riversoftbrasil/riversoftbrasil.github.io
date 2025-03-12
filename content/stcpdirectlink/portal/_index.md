@@ -10,7 +10,6 @@ weight: 4
 prev: /03-run
 next: stcpdirectlink/04-portal/fileconfig/
 draft: false
-lastmod: 2024-10-07
 ---
 
 ## Portal Web

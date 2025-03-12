@@ -11,7 +11,6 @@ weight:
 prev: 
 next: stcpgeminiserver/api
 slug: portal-gemini 
-lastmod: 2024-08-01
 ---
 
 Esta seção tem como objetivo descrever os passos de instalação e configurações iniciais do STCP Portal Gemini. Outras configurações podem ser realizadas conforme as necessidades específicas do ambiente e/ou funcionalidades utilizadas.

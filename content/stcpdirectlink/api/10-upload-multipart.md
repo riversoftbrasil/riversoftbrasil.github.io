@@ -10,7 +10,6 @@ prev: /09-download
 next: /upload-json
 slug: upload-multipart
 draft: false
-lastmod: 2024-09-23
 ---
 
 ## Upload de arquivo multipart (basic)
@@ -51,7 +50,7 @@ https://your-domain/directlink/v1/upload
 | *file* <span style="color:red;">*</span>  | File | Nome do arquivo |
 | *d*  |  | Usuário de destino registrado na plataforma |
 | *c*  |  | Número de celular de destino do link para download |
-| *m*  |  | Email de destino do link para download |
+| *m*  |  | E-mail de destino do link para download |
 | *i*  |  | Mensagem de notificação do link para download |
 
 
@@ -247,7 +246,7 @@ https://your-domain/directlink/v1/upload
 | *file* <span style="color:red;">*</span>  | File | Nome do arquivo |
 | *d*  |  | Usuário de destino registrado na plataforma |
 | *c*  |  | Número de celular de destino do link para download |
-| *m*  |  | Email de destino do link para download |
+| *m*  |  | E-mail de destino do link para download |
 | *i*  |  | Mensagem de notificação do link para download |
 
 #### Header

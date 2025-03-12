@@ -9,7 +9,6 @@ weight: 3
 prev: logs/
 next: events/
 draft: false
-lastmod: 2024-05-07
 ---
 ## Banco de dados homologados
 

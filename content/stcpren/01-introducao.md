@@ -10,7 +10,6 @@ weight: 1
 prev: /docs
 next: /stcpren/install
 slug: introducao
-lastmod: 2024-05-21
 ---
 
 ## O que é o STCPRen?

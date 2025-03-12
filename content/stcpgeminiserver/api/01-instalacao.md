@@ -13,7 +13,6 @@ prev:
 next:
 slug: instalacao
 draft:
-lastmod: 2024-12-01
 ---
 Após [configurar o repositório](/stcpgeminiserver/implantacao/sgs-install/#configuração-do-repositório-yum-riversoft), instale o STCP Gemini API executando o comando abaixo:
 
@@ -24,6 +23,8 @@ $ yum install stcpgemini-api
 ## Criação das bases de dados
 
 Tendo em mãos as credenciais necessárias para acesso ao Sistema Gerenciador de Banco de Dados (SGBD), crie as bases de Configuração (Ex: STCPCFG_DB) e Registro de Logs (Ex: STCPLOG_DB).
+
+Confira quais bancos de dados homologados o STCP pode conectar-se <a href="/utils/database/" target="_blank">aqui.</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;
 
 > DICA: O comando para criação dos databases é:
 

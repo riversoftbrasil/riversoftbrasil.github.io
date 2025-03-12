@@ -11,7 +11,6 @@ prev: /stcpdirectlink/02-configuration
 next: /stcpdirectlink/04-portal/
 slug: execucao
 draft: false
-lastmod: 2024-01-26
 ---
 ## Linha de comando
 

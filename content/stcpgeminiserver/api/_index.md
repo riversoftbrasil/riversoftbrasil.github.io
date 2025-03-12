@@ -12,7 +12,6 @@ weight: 2
 prev:
 next:
 draft:
-lastmod: 2024-06-14
 ---
 O STCP Gemini API é um novo serviço utilizando a arquitetura Rest do módulo STCP Gemini que permite ao usuário gerenciar as
 configurações do STCP Server a partir de requisições HTTP. Sua função é facilitar o gerenciamento das caixas postais e permitir que sejam manipuladas através da integração com soluções dos clientes.

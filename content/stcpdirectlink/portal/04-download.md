@@ -10,7 +10,6 @@ prev: /upload
 next: /05-api
 slug: recepcao-arquivos
 draft: false
-lastmod: 2024-03-05
 ---
 
 ## Download (Receber)

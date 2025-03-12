@@ -9,7 +9,6 @@ sidebar:
 prev: /protocols
 next: /events
 draft: false
-lastmod: 2024-08-15
 ---
 ## Protocolo OFTP
 
@@ -19,7 +18,7 @@ No **OFTP (Odette File Transfer Protocol)**, temos um protocolo robusto e seguro
 
 **Confirmação de Recebimento:** Um dos diferenciais do OFTP é a capacidade de confirmar a recepção dos arquivos transferidos. Isso garante que as partes envolvidas tenham certeza de que os dados foram entregues e recebidos corretamente, reduzindo o risco de perda de informações e aumentando a confiança no processo.
 
-**Transmissão Segura de Arquivos Grandes:** OFTP foi projetado para lidar eficientemente com a transferência de arquivos de grande volume. Com sua capacidade de retomar transferências interrompidas e assegurar que os dados cheguem ao destino completo e sem erros, o protocolo é ideal para indústrias onde o compartilhamento de grandes volumes de dados é comum.
+**Transmissão Segura de Arquivos Grandes:** OFTP foi projetado para lidar eficientemente com a transferência de arquivos de grande volume. Com sua capacidade de retomar transferências interrompidas e assegurar que os dados cheguem ao destino completo e sem erros, o protocolo é ideal para o compartilhamento de grandes volumes de dados.
 
 **Compatibilidade e Flexibilidade:** O OFTP é amplamente compatível com diversos sistemas e plataformas, facilitando a integração entre diferentes parceiros comerciais. Isso permite que as empresas mantenham seus dados seguros sem a necessidade de grandes mudanças em sua infraestrutura tecnológica.
 
@@ -51,6 +50,27 @@ Aqui estão algumas das principais vantagens do SFTP:
 
 O SFTP é uma solução **segura**, **confiável** e **fácil** de usar para a transferência de arquivos, especialmente em contextos onde a proteção de dados sensíveis é uma prioridade.
 
+## Protocolo TCP/IP
+
+Trata-se do acrônimo de dois protocolos combinados. São eles o TCP (Transmission Control Protocol — Protocolo de Controle de Transmissão) e IP (Internet Protocol — Protocolo de Internet).
+
+Juntos, são os responsáveis pela base de envio e recebimento de dados por toda a internet. Essa pilha de protocolos é dividida em 4 camadas:
+
+* **Aplicação:** usada para enviar e receber dados de outros programas pela internet. Nessa camada estão os protocolos HTTP, FTP e SMTP;
+* **Transporte:** responsável por transportar os arquivos dos pacotes recebidos da camada de aplicação. Eles são organizados e transformados em outros menores, que serão enviados à rede;
+* **Rede:** os arquivos empacotados na camada de transporte são recebidos e anexados ao IP da máquina que envia e recebe os dados. Em seguida, eles são enviados pela internet;
+* **Interface:** é a camada que executa o recebimento ou o envio de arquivos na web.
+
+## Protocolo HTTP/HTTPS
+
+O protocolo HTTP (Hypertext Transfer Protocol — Protocolo de Transferência de Hipertexto) é usado para navegação em sites da internet. Funciona como uma conexão entre o cliente (browser) e o servidor (site ou domínio).
+
+O navegador envia um pedido de acesso a uma página, e o servidor retorna uma resposta de permissão de acesso. Junto com ela são enviados também os arquivos da página que o usuário deseja acessar.
+
+Já o HTTPS (Hyper Text Transfer Secure — Protocolo de Transferência de Hipertexto Seguro) funciona exatamente como o HTTP, porém, existe uma camada de proteção a mais. Isso significa que os sites que utilizam esse protocolo são de acesso seguro.
+
+O protocolo HTTPS é comumente usado por sites com sistemas de pagamentos. Esse tipo de site depende de proteção que garanta a integridade dos dados, informações de conta e cartão de créditos dos usuários. A segurança é feita por meio de uma certificação digital, que cria uma criptografia para impedir ameaças e ataques virtuais.
+
 ## Criptografia TLS
 
 Alguns dos algoritmos mais atuais usados com TLS:
@@ -81,71 +101,151 @@ Alguns dos algoritmos mais atuais usados com TLS:
 * Um modo de operação que oferece autenticação adicional e integridade dos dados, frequentemente usado com AES (AES-GCM).
 
 
-| **Algoritmo**       | **Uso**                                | **Tamanho de Chave** | **Segurança**                    | **Comentário**                                  |
-|---------------------|----------------------------------------|----------------------|----------------------------------|------------------------------------------------|
-| AES-128             | Cifra de dados                         | 128 bits             | Alta                             | Boa combinação de segurança e desempenho       |
-| AES-256             | Cifra de dados                         | 256 bits             | Muito Alta                       | Recomendado para segurança de longo prazo      |
-| ChaCha20            | Cifra de dados                         | 256 bits             | Muito Alta                       | Alternativa rápida ao AES, especialmente em hardware limitado |
-| ECDHE               | Acordo de chaves                       | 256 bits (EC curve)  | Muito Alta                       | Melhor eficiência comparado ao RSA             |
-| RSA                 | Troca de chaves, assinatura digital    | 2048/4096 bits        | Alta                             | Usado historicamente, mas gradualmente substituído por ECDHE  |
-| SHA-256/384/512     | Função de hash para integridade        | 256/384/512 bits     | Alta/Muito Alta                  | Proporciona integridade dos dados              |
-| GCM (AES-GCM)       | Autenticação de dados, integridade     | Variável (depende do AES) | Alta                        | Oferece criptografia autenticada               |
+| **Algoritmo**   | **Uso**                             | **Tamanho de Chave**      | **Segurança**   | **Comentário**                                                |
+| --------------- | ----------------------------------- | ------------------------- | --------------- | ------------------------------------------------------------- |
+| AES-128         | Cifra de dados                      | 128 bits                  | Alta            | Boa combinação de segurança e desempenho                      |
+| AES-256         | Cifra de dados                      | 256 bits                  | Muito Alta      | Recomendado para segurança de longo prazo                     |
+| ChaCha20        | Cifra de dados                      | 256 bits                  | Muito Alta      | Alternativa rápida ao AES, especialmente em hardware limitado |
+| ECDHE           | Acordo de chaves                    | 256 bits (EC curve)       | Muito Alta      | Melhor eficiência comparado ao RSA                            |
+| RSA             | Troca de chaves, assinatura digital | 2048/4096 bits            | Alta            | Usado historicamente, mas gradualmente substituído por ECDHE  |
+| SHA-256/384/512 | Função de hash para integridade     | 256/384/512 bits          | Alta/Muito Alta | Proporciona integridade dos dados                             |
+| GCM (AES-GCM)   | Autenticação de dados, integridade  | Variável (depende do AES) | Alta            | Oferece criptografia autenticada                              |
 
-## Configurar porta TLS
+### Certificado digital emitido por uma autoridade certificadora (CA)
 
-{{< icon "chevron-right" >}}Para acessar o configurador do STCP OFTP Server, acesse o **Riversoft STCP OFTP Server Config**.
+Veremos abaixo os procedimentos necessários para configuração do Riversoft STCP OFTP Server utilizando certificado emitido por uma **Autoridade Certificadora**.
 
-{{< icon "chevron-right" >}}Acesse a guia **Redes** para adicionar as interfaces que ficarão disponíveis para o serviço de transferência e adicione uma interface do serviço de transferência.
+#### Geração da CSR
 
-![](img/guia-redes.png)
+A CSR, cuja sigla significa *Certificate Signing Request*, é um arquivo de texto, gerado pelo servidor web, contendo as informações para a solicitação do seu certificado junto à entidade certificadora escolhida e usada para gerar um certificado assinado digitalmente.
 
-{{< icon "chevron-right" >}}Clique em **Adicionar** e selecione o protocolo **OFTP – TCP/IP**.
+A CSR conterá informações importantes da companhia e deve ser preenchida conforme instruções já encaminhadas pela entidade certificadora contratada.
 
-{{< icon "chevron-right" >}}Clique em **OK** para entrar nas configurações.
+A geração da CSR é divida em duas etapas:
 
-![](img/protocolo-oftp.png)
+* Geração do par de chaves (que deve ser gerada no tamanho de 2048 bits)
+* Geração da CSR
 
-{{< icon "chevron-right" >}}Clique na guia **TCP/IP** e configure os parâmetros apresentados.
+> [!WARNING] Aviso
+> Como padrão, utilizaremos o utilitário **OpenSSL** para realização do processo de geração e configuração do certificado digital.
 
-![](img/tcp-ip-redes.png)
 
-{{< icon "chevron-right" >}}Clique na guia **TLS**, configure os parâmetros apresentados abaixo e pressione o botão **OK** para finalizar.
+> [!NOTE] Nota: 
+> O procedimento de geração de CSR, pode ser realizado por outro software de servidor (IIS, IBM Webshepere, iPlanet, Keytool, entre outros), conforme a infraestrutura utilizada.
 
-![](img/redes-guia-tls.png)
+#### Geração do Par de Chaves
 
-### Chave privativa e Certificado 
+Acesse a pasta **Program** do diretório de instalação do Riversoft STCP OFTP Server (Ex. C:\STCPODT\Program) e em seguida, para gerar o par de chaves, digite a linha de comando:
 
-Os seguintes procedimentos devem ser executados para a geração da chave privativa e do certificado digital a serem utilizados na comunicação TLS.
+```
+openssl genrsa -des3 > C:\STCPODT\Keys\chaveprivada.key 2048
+```
+<!-- Após digitar a linha de comando, o sistema solicitará que informe uma senha para proteger o par de chaves que será criado no diretório *C:\STCPODT\Keys*. -->
 
-{{< icon "chevron-right" >}}No prompt de comando, execute a aplicação **openssl.exe** (Ex.: C:\STCPODT\Program\openssl.exe) para iniciar o processo de geração do par de chaves assimétricas (privada/pública).
+![](img/openssl-chavepriv.png "Linha de comando")
+![](img/openssl-chavepriv-dir.png "Arquivo salvo no diretório")
 
-![](img/openssl.png)
+#### Geração da CSR (Certificate Signing Request)
 
-{{< icon "chevron-right" >}}Utilize o comando abaixo para gerar a chave privativa que será utilizada para criptografia da conexão.
-
-```pshell
-genrsa -out[unidade_disco][diretorio_instalação_stcp]\keys\[nome_da_chave].key 1024
+Em seguida, para gerar a requisição (CSR), utilize a linha de comando e digite as informações solicitadas.
+```
+openssl req -new -key C:\STCPODT\Keys\chaveprivada.key > C:\STCPODT\Keys\solicitacao.csr -config C:\STCPODT\Program\openssl.cnf
 ```
 
-Exemplo:
+#### Solicitação do certificado 
+A CSR, gerada no passo anterior, deverá ser encaminhada para a entidade certificadora conforme procedimentos fornecidos por essa. Para maiores dúvidas referente ao envio da CSR entre em contato com seu agente de contas junto à entidade certificadora.
 
-```pshell
-genrsa –out c:\stcpodt\keys\stcp_abcde.key 1024
+Faça uma cópia de segurança de sua chave privada e do CSR, e guarde-as em local seguro. **Nenhuma cópia de sua chave privada deverá ser distribuída e/ou solicitada por terceiros.**
+
+#### Instalação e Configuração do certificado 
+
+Uma vez Aprovado e Emitido, o contato técnico responsável do processo de certificação digital, receberá da entidade certificadora todas as informações pertinentes à instalação e configuração do certificado.
+
+Para maiores dúvidas referente ao processo de instalação e configuração entre em contato com o seu agente de suporte (CA) e/ou com a sua equipe de segurança.
+
+> [!WARNING] Aviso
+> Este procedimento não tem como objetivo descrever o processo de instalação e configuração do certificado adquirido e sim os passos necessários para utilização desse certificado junto ao Riversoft STCP OFTP Server e Riversoft STCP OFTP Client.
+
+#### Configurar Certificado
+
+Para que seja possível configurar o STCP OFTP Server Enterprise/Lite, a fim de utilizar o certificado digital emitido por uma Autoridade Certificadora, será necessário possuir às **chaves pública e privada** e realizar os procedimentos descritos abaixo.
+
+* Chave pública
+
+Faça uma cópia da chave pública do certificado (arquivo .cer), encaminhado pela entidade certificadora, para a pasta Certs do diretório de instalação do STCP OFTP Server Enterprise/Lite (Ex. C:\STCPODT\Certs).
+
+> NOTA: Em alguns casos o administrador precisa realizar a exportação da chave pública (*.cer) do Certificado.   Para isso, é possível utilizar o snap-in Certificados do Console de Gerenciamento Microsoft (MMC).
+
+Para mais detalhes consulte: (https://technet.microsoft.com/pt-br/library/cc730988.aspx)
+
+* Chave Privativa
+
+A chave privativa (arquivo .key ou .pem) do certificado deverá ser copiada para a pasta Keys do diretório de instalação do STCP OFTP Server Enterprise/Lite (Ex. C:\STCPODT\Key).
+
+> NOTA: Em alguns casos, onde o arquivo do certificado está no formato PFX, o processo de conversão para o formato PEM será necessário. É possível realizar a conversão usando o OpenSSL, disponível na pasta Program, do diretório de instalação do STCP OFTP Server/Lite (Ex. C:\STCPODT\Program).
+<!-- Para mais detalhes consulte: (https://www.openssl.org/docs/apps/pkcs12.html) -->
+
+```{filename="Chave Privativa"}
+
+openssl pkcs12 -in C:\TEMP\empresateste.com.br.pfx -out C:\TEMP\private-key.pem -nodes
 ```
+![](img/cert-01.png)
 
-![](img/openssl-chave-priv.png)
+#### Geração do hash do certificado para uso no STCP OFTP Client
 
-{{< icon "chevron-right" >}}O próximo passo é gerar o Certificado Digital associado à chave gerada anteriormente. Para isso, utilize o comando abaixo.
+Anterior ao processo de configuração do certificado no STCP OFTP Client, será necessária obter uma cópia da cadeia de certificados, a partir do certificado assinado e enviado pela entidade certificadora e realizar o renomeio de cada certificado dessa hierarquia para o seu hash correspondente.
 
-```pshell
-req –new –x509 –key [unidade_disco][diretório_instalação_stcp]\keys\[nome_da_chave].key –out [unidade_disco][diretório_instalação_stcp]\certs\[nome_do_certificado].cer –days 1825 –config ./openssl.cnf
+{{< icon "arrow-right-circle" >}}Faça uma cópia do certificado, encaminhado pela certificadora, para um diretório temporário do servidor onde o STCP OFTP Server está instalado (Ex. C:\TEMP).
+
+{{< icon "arrow-right-circle" >}}Acesse o diretório temporário e clique com o botão direito do mouse no certificado (Ex. empresateste_certificate.cer) e selecione **Abrir**.
+
+{{< icon "arrow-right-circle" >}}Na guia Caminho de Certificação selecione o certificado raíz (Ex. VeriSign Trial Secure Server Root CA – G2) e clique no botão Exibir Certificado.
+
+![](img/cert-04.png)
+
+{{< icon "arrow-right-circle" >}}Uma nova janela será exibida, contendo as informações do certificado selecionado (neste exemplo serão exibidas as informações do certificado raiz _VeriSign Trial Secure Server Root CA – G2)_
+
+{{< icon "arrow-right-circle" >}}Selecione a guia **Detalhes** e clique no botão **Copiar para Arquivo** para iniciar o Assistente para Exportação de Certificados
+
+![](img/cert-05.png)
+
+{{< icon "arrow-right-circle" >}}Para continuar, clique em **Avançar**
+
+{{< icon "arrow-right-circle" >}}No formato do arquivo de exportação selecione *X.509 codificado na base 64 (*.cer)* e clique no botão **Avançar**
+
+![](img/cert-06.png)
+
+{{< icon "arrow-right-circle" >}}Informe o caminho e nome do arquivo a ser exportado (Ex. C:\TEMP\root_certificate.cer)
+
+{{< icon "arrow-right-circle" >}}Para finalizar, clique no botão **Concluir**
+
+![](img/cert-07.png)
+
+{{< icon "arrow-right-circle" >}}Repita os passos para exportar os demais certificados existentes na hierarquia de certificados, o certificado raiz (G2) e o intermediário (G3).
+
+![](img/cert-08.png)
+
+> NOTA: Neste exemplo serão gerados mais dois arquivos no diretório temporário (Ex. root_certificate.cer e intermediate_certificate.cer).
+
+{{< icon "arrow-right-circle" >}}Acesse a pasta *Program* do diretório de instalação do Riversoft STCP OFTP Server (Ex. C:\STCPODT\Program) e em seguida, para gerar o _hash_, digite a linha de comando:
+
 ```
-
-Exemplo:
-
-```pshell
-req –new –x509 –key c:\stcpodt\keys\stcp_interprint.key –out c:\stcpodt\certs\stcp_abcde.cer –days 1825 –config ./openssl.cnf
+openssl x509 –noout –hash -in C:\TEMP\root_certificate.cer
 ```
-{{< icon "chevron-right" >}}Preencha as informações solicitadas para concluir o processo de geração do Certificado Digital.
+<!-- ![](./imagem/img13.png) -->
 
-![](img/openssl-cert.png)
+{{< icon "arrow-right-circle" >}}Uma vez obtido o _hash_ do arquivo indicado, renomeie esse arquivo para o seu _hash_ correspondente e mais a extensão .**0** (Ex. _root_certificate.cer para F877295a.0_)
+
+![](img/cert-09.png)
+
+{{< icon "arrow-right-circle" >}}Repita os passos descritos acima, para renomeio dos demais arquivos exportados *(Ex. _root_certificate.cer e intermediate_certificate.cer_)*
+
+<!-- ![](./imagem/img15.png) -->
+
+{{< icon "arrow-right-circle" >}}Copie os arquivos renomeados para a pasta Certs do diretório de instalação do STCP OFTP Client *(Ex. C:\STCPCLT\Certs)*
+
+## Referência
+
+{{< callout="">}}
+<a href="https://www.opservices.com.br/protocolos-de-rede/" target="_blank">Protocolos de rede</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;
+{{< /callout >}}

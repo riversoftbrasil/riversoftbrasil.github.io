@@ -10,7 +10,6 @@ prev: /login
 next: /first-acess
 slug: logout
 draft: false
-lastmod: 2024-06-19
 ---
 
 ## Logout (basic)

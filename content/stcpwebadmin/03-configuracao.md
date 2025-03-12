@@ -10,7 +10,6 @@ weight: 3
 prev:
 next:
 slug: configuracao
-lastmod: 2024-10-10
 ---
 # Configuração inicial
 
@@ -81,11 +80,11 @@ Verifique nas seção <a href="/stcpwebadmin/iis/">Configuração no IIS</a>, as
 
 ## Acesso ao STCP OFTP Web Admin
 
-{{< icon "chevron-right" >}}Pelo seu navegador, entre com o endereço do STCP OFTP Web Admin.
+{{< icon "arrow-right-circle" >}}Pelo seu navegador, entre com o endereço do STCP OFTP Web Admin.
 
 ![](./imagem2/img65.png)
 
-{{< icon "chevron-right" >}}Digite **stcpadmin** no campo operador e **teste** em senha.
+{{< icon "arrow-right-circle" >}}Digite **stcpadmin** no campo operador e **teste** em senha.
 
 > [!NOTE] Aviso
 > Obs.: para o primeiro login na ferramenta, qualquer nome de operador e senha serão aceitos, já que não existe nenhum operador cadastrado.
@@ -94,13 +93,13 @@ Verifique nas seção <a href="/stcpwebadmin/iis/">Configuração no IIS</a>, as
 
 ## Cadastro de Administrador do sistema
 
-{{< icon "chevron-right" >}}Acesse **Manutenção → Cadastro → Operadores**.
+{{< icon "arrow-right-circle" >}}Acesse **Manutenção → Cadastro → Operadores**.
 
-{{< icon "chevron-right" >}}Clique no botão **+**.
+{{< icon "arrow-right-circle" >}}Clique no botão **+**.
 
 ![](./imagem2/img67.png)
 
-{{< icon "chevron-right" >}}Cadastre o administrador do sistema.
+{{< icon "arrow-right-circle" >}}Cadastre o administrador do sistema.
 
 > [!NOTE] Aviso
 > Obs.: o administrador do sistema deverá ser obrigatoriamente o **stcpadmin**. Este operador não terá restrições de acesso e poderá gerenciar todos os outros operadores.
@@ -108,24 +107,24 @@ Verifique nas seção <a href="/stcpwebadmin/iis/">Configuração no IIS</a>, as
 
 ![](./imagem2/img68.png)
 
-{{< icon "chevron-right" >}}Clique no botão para salvar as informações do administrador do sistema.
+{{< icon "arrow-right-circle" >}}Clique no botão para salvar as informações do administrador do sistema.
 
-{{< icon "chevron-right" >}}Clique em **Sair** para acessar o sistema com o novo nome de operador e a nova senha.
+{{< icon "arrow-right-circle" >}}Clique em **Sair** para acessar o sistema com o novo nome de operador e a nova senha.
 
 ![](./imagem2/img69.png)
 
 ## Criação de Grupos
 
-{{< icon "chevron-right" >}}Adicione grupos acessando **Manutenção → Cadastro → Grupos**.
+{{< icon "arrow-right-circle" >}}Adicione grupos acessando **Manutenção → Cadastro → Grupos**.
 
-{{< icon "chevron-right" >}}Clique no botão **+**.
+{{< icon "arrow-right-circle" >}}Clique no botão **+**.
 
 ![](./imagem2/img70.png)
 
 > [!TIP] Dica
 > Obs.: para associar todos os servidores a todos os usuários, utilize \ . Para especificar os usuários relacionados ao servidor, basta separar com uma barra invertida \ . Exemplo: **SERV001\USER001**.
 
-{{< icon "chevron-right" >}}Selecione os operadores e as permissões que farão parte do grupo.
+{{< icon "arrow-right-circle" >}}Selecione os operadores e as permissões que farão parte do grupo.
 
 ![](./imagem2/img71.png "Preencha os campos: nome, descrição e servidor/usuário")
 
@@ -133,15 +132,15 @@ Verifique nas seção <a href="/stcpwebadmin/iis/">Configuração no IIS</a>, as
 
 ## Cadastro de Operadores
 
-{{< icon "chevron-right" >}}Agora cadastre os operadores que farão parte dos grupos criados.
+{{< icon "arrow-right-circle" >}}Agora cadastre os operadores que farão parte dos grupos criados.
 
-{{< icon "chevron-right" >}}Acesse **Manutenção → Cadastro → Operadores**.
+{{< icon "arrow-right-circle" >}}Acesse **Manutenção → Cadastro → Operadores**.
 
-{{< icon "chevron-right" >}}Clique no botão **+**.
+{{< icon "arrow-right-circle" >}}Clique no botão **+**.
 
 ![](./imagem2/img72.png)
 
-{{< icon "chevron-right" >}}Adicione os operadores, incluindo-os nos grupos adequados.
+{{< icon "arrow-right-circle" >}}Adicione os operadores, incluindo-os nos grupos adequados.
 
 ![](./imagem2/img73.png)
 
@@ -149,13 +148,13 @@ Verifique nas seção <a href="/stcpwebadmin/iis/">Configuração no IIS</a>, as
 
 ## Cadastro dos Servidores
 
-{{< icon "chevron-right" >}}Adicione grupos acessando **Manutenção → Cadastro → Servidores**.
+{{< icon "arrow-right-circle" >}}Adicione grupos acessando **Manutenção → Cadastro → Servidores**.
 
-{{< icon "chevron-right" >}}Clique no botão **+**.
+{{< icon "arrow-right-circle" >}}Clique no botão **+**.
 
 ![](./imagem2/img74.png)
 
-{{< icon "chevron-right" >}}Adicione as informações do servidor.
+{{< icon "arrow-right-circle" >}}Adicione as informações do servidor.
 
 > [!NOTE]
 > Obs.: este servidor refere-se ao servidor de monitoração definido no STCP OFTP Server.
@@ -168,13 +167,13 @@ Verifique nas seção <a href="/stcpwebadmin/iis/">Configuração no IIS</a>, as
 
 ### Consulta aos Agendamentos
 
-{{< icon "chevron-right" >}}Esta funcionalidade permite ao usuário consultar os agendamentos na ferramenta **STCP OFTP Server Enterprise**.
+{{< icon "arrow-right-circle" >}}Esta funcionalidade permite ao usuário consultar os agendamentos na ferramenta **STCP OFTP Server Enterprise**.
 
-{{< icon "chevron-right" >}}Acesse **Consultas → Cadastro → Agendamentos**.
+{{< icon "arrow-right-circle" >}}Acesse **Consultas → Cadastro → Agendamentos**.
 
-{{< icon "chevron-right" >}}Informe o nome completo do agendamento no campo **Nome do Agendamento**. Para filtrar os dados da pesquisa, informe também a descrição do agendamento.
+{{< icon "arrow-right-circle" >}}Informe o nome completo do agendamento no campo **Nome do Agendamento**. Para filtrar os dados da pesquisa, informe também a descrição do agendamento.
 
-{{< icon "chevron-right" >}}Ou clique no botão para visualizar todos os agendamentos.
+{{< icon "arrow-right-circle" >}}Ou clique no botão para visualizar todos os agendamentos.
 
 ![](./imagem2/img76.png)
 
@@ -182,9 +181,9 @@ Verifique nas seção <a href="/stcpwebadmin/iis/">Configuração no IIS</a>, as
 
 Esta funcionalidade permite ao usuário consultar os **Códigos de erros**.
 
-{{< icon "chevron-right" >}}Acesse **Consultas → Cadastro → Códigos de erros**.
+{{< icon "arrow-right-circle" >}}Acesse **Consultas → Cadastro → Códigos de erros**.
 
-{{< icon "chevron-right" >}}Informe o **Código de erro**. Para filtrar os dados da pesquisa, informe também
+{{< icon "arrow-right-circle" >}}Informe o **Código de erro**. Para filtrar os dados da pesquisa, informe também
 a descrição do erro.
 
 ![](./imagem2/img77.png "Ou clique na lupa para visualizar todos os códigos de erros conforme imagem abaixo")
@@ -195,11 +194,11 @@ a descrição do erro.
 
 Esta funcionalidade permite ao usuário consultar os **Códigos de eventos**.
 
-{{< icon "chevron-right" >}}Acesse **Consultas → Cadastro → Códigos de eventos**.
+{{< icon "arrow-right-circle" >}}Acesse **Consultas → Cadastro → Códigos de eventos**.
 
-{{< icon "chevron-right" >}}Informe o “Código do evento”. Para filtrar os dados da pesquisa, informe também a descrição do evento.
+{{< icon "arrow-right-circle" >}}Informe o “Código do evento”. Para filtrar os dados da pesquisa, informe também a descrição do evento.
 
-{{< icon "chevron-right" >}}Ou clique na lupa para visualizar todos os códigos de eventos.
+{{< icon "arrow-right-circle" >}}Ou clique na lupa para visualizar todos os códigos de eventos.
 
 ![](./imagem2/img78.png)
 
@@ -207,11 +206,11 @@ Esta funcionalidade permite ao usuário consultar os **Códigos de eventos**.
 
 Esta funcionalidade permite ao usuário **Consultar os Grupos**.
 
-{{< icon "chevron-right" >}}Acesse **Consultas → Cadastro → Grupos**.
+{{< icon "arrow-right-circle" >}}Acesse **Consultas → Cadastro → Grupos**.
 
-{{< icon "chevron-right" >}}Informe o **Grupo**. Para filtrar os dados da pesquisa, informe também a descrição do grupo.
+{{< icon "arrow-right-circle" >}}Informe o **Grupo**. Para filtrar os dados da pesquisa, informe também a descrição do grupo.
 
-{{< icon "chevron-right" >}}Ou clique na lupa para visualizar todos os grupos cadastrados.
+{{< icon "arrow-right-circle" >}}Ou clique na lupa para visualizar todos os grupos cadastrados.
 
 ![](./imagem2/img79.png)
 
@@ -219,12 +218,12 @@ Esta funcionalidade permite ao usuário **Consultar os Grupos**.
 
 Esta funcionalidade permite ao usuário consultar os **Operadores**.
 
-{{< icon "chevron-right" >}}Acesse **Consultas → Cadastro → Operadores**.
+{{< icon "arrow-right-circle" >}}Acesse **Consultas → Cadastro → Operadores**.
 
-{{< icon "chevron-right" >}}Informe o **Operador**. Para filtrar os dados da pesquisa, informe também a
+{{< icon "arrow-right-circle" >}}Informe o **Operador**. Para filtrar os dados da pesquisa, informe também a
 descrição do operador.
 
-{{< icon "chevron-right" >}}Ou clique na lupa para visualizar todos os operadores cadastrados.
+{{< icon "arrow-right-circle" >}}Ou clique na lupa para visualizar todos os operadores cadastrados.
 
 ![](./imagem2/img80.png)
 
@@ -232,11 +231,11 @@ descrição do operador.
 
 Esta funcionalidade permite ao usuário consultar os **Usuários cadastrados**.
 
-{{< icon "chevron-right" >}}Acesse **Consultas → Cadastro → Usuários**.
+{{< icon "arrow-right-circle" >}}Acesse **Consultas → Cadastro → Usuários**.
 
-{{< icon "chevron-right" >}}Informe a **Identificação do usuário**. Para filtrar os dados da pesquisa, informe também a **descrição do usuário**.
+{{< icon "arrow-right-circle" >}}Informe a **Identificação do usuário**. Para filtrar os dados da pesquisa, informe também a **descrição do usuário**.
 
-{{< icon "chevron-right" >}}Ou clique na lupa para visualizar todos os usuários cadastrados.
+{{< icon "arrow-right-circle" >}}Ou clique na lupa para visualizar todos os usuários cadastrados.
 
 ![](./imagem2/img81.png)
 
@@ -244,13 +243,13 @@ Esta funcionalidade permite ao usuário consultar os **Usuários cadastrados**.
 
 Esta funcionalidade permite ao usuário consultar o **Histórico das Transferências**.
 
-{{< icon "chevron-right" >}}Para consultar o histórico das transferências, acesse **Consultas → Transferências → Histórico**.
+{{< icon "arrow-right-circle" >}}Para consultar o histórico das transferências, acesse **Consultas → Transferências → Histórico**.
 
-{{< icon "chevron-right" >}}Informe a **Identificação do usuário** e o **Nome do arquivo**.
+{{< icon "arrow-right-circle" >}}Informe a **Identificação do usuário** e o **Nome do arquivo**.
 
-{{< icon "chevron-right" >}}Selecione o **Período considerado** e a **Situação** (Todas, Recebidas/OK, Enviadas/OK, Falha Rx ou Falha Tx).
+{{< icon "arrow-right-circle" >}}Selecione o **Período considerado** e a **Situação** (Todas, Recebidas/OK, Enviadas/OK, Falha Rx ou Falha Tx).
 
-{{< icon "chevron-right" >}}Ou clique na lupa para visualizar todo o histórico das transferências.
+{{< icon "arrow-right-circle" >}}Ou clique na lupa para visualizar todo o histórico das transferências.
 
 ![](./imagem2/img82.png)
 
@@ -258,13 +257,13 @@ Esta funcionalidade permite ao usuário consultar o **Histórico das Transferên
 
 Esta funcionalidade permite ao usuário consultar as **Transferências Pendentes**.
 
-{{< icon "chevron-right" >}}Acesse **Consultas → Transferências → Pendentes**.
+{{< icon "arrow-right-circle" >}}Acesse **Consultas → Transferências → Pendentes**.
 
-{{< icon "chevron-right" >}}Informe o **Usuário**. Para filtrar os dados da pesquisa, informe também a descrição do usuário.
+{{< icon "arrow-right-circle" >}}Informe o **Usuário**. Para filtrar os dados da pesquisa, informe também a descrição do usuário.
 
-{{< icon "chevron-right" >}}Selecione o **Período considerado** e a **Situação** (Pend envio, Pend conf, Pend restart ou Pend tratamento).
+{{< icon "arrow-right-circle" >}}Selecione o **Período considerado** e a **Situação** (Pend envio, Pend conf, Pend restart ou Pend tratamento).
 
-{{< icon "chevron-right" >}}Ou clique no botão para visualizar todas as transferências pendentes.
+{{< icon "arrow-right-circle" >}}Ou clique no botão para visualizar todas as transferências pendentes.
 
 ![](./imagem2/img83.png)
 
@@ -272,15 +271,15 @@ Esta funcionalidade permite ao usuário consultar as **Transferências Pendentes
 
 Esta funcionalidade permite ao usuário consultar o relatório de eventos de operadores organizados por Data/Hora ou pelo operador, em ordem crescente. Os eventos listados no relatório são referentes ao início/fim de sessão, alteração de parâmetros e demais ações realizadas pelos operadores no STCP OFTP Web Admin.
 
-{{< icon "chevron-right" >}}Acesse **Relatórios → Eventos → Operadores**.
+{{< icon "arrow-right-circle" >}}Acesse **Relatórios → Eventos → Operadores**.
 
-{{< icon "chevron-right" >}}Informe a **Identificação do Operador**. Para pesquisa avançada, digite no campo “Pesquisa Avançada” parte do texto do arquivo.
+{{< icon "arrow-right-circle" >}}Informe a **Identificação do Operador**. Para pesquisa avançada, digite no campo “Pesquisa Avançada” parte do texto do arquivo.
 
-{{< icon "chevron-right" >}}Selecione o **Período considerado**, e DataHora ou Operador em **Ordenado por**.
+{{< icon "arrow-right-circle" >}}Selecione o **Período considerado**, e DataHora ou Operador em **Ordenado por**.
 
 ![](./imagem2/img84.png)
 
-{{< icon "chevron-right" >}}Ou clique na lupa para visualizar todos os eventos.
+{{< icon "arrow-right-circle" >}}Ou clique na lupa para visualizar todos os eventos.
 
 ![](./imagem2/img85.png)
 
@@ -288,15 +287,15 @@ Esta funcionalidade permite ao usuário consultar o relatório de eventos de ope
 
 Esta funcionalidade permite ao usuário consultar o relatório de eventos do Sistema organizado por Data/Hora ou módulo, em ordem crescente. Os eventos listados no relatório podem ser: início/fim do serviço STCP OFTP, início/fim de conexões entrantes ou saintes, início e término da agenda, início e término de transmissão e recepção de arquivos, erros do sistema/transferência etc.
 
-{{< icon "chevron-right" >}}Acesse **Relatórios → Eventos → Sistema**.
+{{< icon "arrow-right-circle" >}}Acesse **Relatórios → Eventos → Sistema**.
 
-{{< icon "chevron-right" >}}Informe a **Identificação do Módulo**. Para pesquisa avançada, digite no campo “Pesquisa Avançada” o módulo do sistema onde ocorreu o evento. Exemplo: STCP, STCPMON, STCPCONF, etc.
+{{< icon "arrow-right-circle" >}}Informe a **Identificação do Módulo**. Para pesquisa avançada, digite no campo “Pesquisa Avançada” o módulo do sistema onde ocorreu o evento. Exemplo: STCP, STCPMON, STCPCONF, etc.
 
-{{< icon "chevron-right" >}}Selecione o **Período considerado**, e DataHora ou Módulo em **Ordenado por**.
+{{< icon "arrow-right-circle" >}}Selecione o **Período considerado**, e DataHora ou Módulo em **Ordenado por**.
 
 ![](./imagem2/img86.png)
 
-{{< icon "chevron-right" >}}Ou clique na lupa para visualizar todos os eventos conforme a imagem de exemplo abaixo: 
+{{< icon "arrow-right-circle" >}}Ou clique na lupa para visualizar todos os eventos conforme a imagem de exemplo abaixo: 
 
 ![](./imagem2/img87.png)
 
@@ -304,15 +303,15 @@ Esta funcionalidade permite ao usuário consultar o relatório de eventos do Sis
 
 Esta funcionalidade permite ao usuário consultar o relatório de eventos dos usuários organizados por Data/Hora ou usuário, em ordem crescente. Os eventos listados no relatório podem ser: início/fim de conexões entrantes ou saintes, início e término de transmissão e recepção de arquivos, erros na transferência do usuário, dentre outros.
 
-{{< icon "chevron-right" >}}Acesse **Relatórios → Eventos → Usuários (Caixa Postal)**.
+{{< icon "arrow-right-circle" >}}Acesse **Relatórios → Eventos → Usuários (Caixa Postal)**.
 
-{{< icon "chevron-right" >}}Informe a **Identificação do Usuário**. Para pesquisa avançada, digite no campo “**Pesquisa Avançada**” parte do texto do arquivo.
+{{< icon "arrow-right-circle" >}}Informe a **Identificação do Usuário**. Para pesquisa avançada, digite no campo “**Pesquisa Avançada**” parte do texto do arquivo.
 
-{{< icon "chevron-right" >}}Selecione o **Período considerado**, e DataHora ou Usuário em “Ordenado por”.
+{{< icon "arrow-right-circle" >}}Selecione o **Período considerado**, e DataHora ou Usuário em “Ordenado por”.
 
 ![](./imagem2/img88.png)
 
-{{< icon "chevron-right" >}}Ou clique na lupa para visualizar todos os eventos conforme a imagem de exemplo abaixo: 
+{{< icon "arrow-right-circle" >}}Ou clique na lupa para visualizar todos os eventos conforme a imagem de exemplo abaixo: 
 
 ![](./imagem2/img89.png)
 
@@ -320,15 +319,15 @@ Esta funcionalidade permite ao usuário consultar o relatório de eventos dos us
 
 Esta funcionalidade permite ao usuário consultar o relatório das transferências organizado por Data/Hora ou usuário, em ordem crescente.
 
-{{< icon "chevron-right" >}}Acesse **Relatórios** → **Transferências** → **Auditoria**.
+{{< icon "arrow-right-circle" >}}Acesse **Relatórios** → **Transferências** → **Auditoria**.
 
-{{< icon "chevron-right" >}}Informe a **Identificação do Usuário**. Para pesquisa avançada, digite no campo **Pesquisa Avançada** parte do texto do arquivo.
+{{< icon "arrow-right-circle" >}}Informe a **Identificação do Usuário**. Para pesquisa avançada, digite no campo **Pesquisa Avançada** parte do texto do arquivo.
 
-{{< icon "chevron-right" >}}Selecione o **Período considerado**, e DataHora ou Usuário em **Ordenado por**.
+{{< icon "arrow-right-circle" >}}Selecione o **Período considerado**, e DataHora ou Usuário em **Ordenado por**.
 
 ![](./imagem2/img90.png)
 
-{{< icon "chevron-right" >}}Ou clique na lupa para visualizar a auditoria de todas as transferências.
+{{< icon "arrow-right-circle" >}}Ou clique na lupa para visualizar a auditoria de todas as transferências.
 
 ![](./imagem2/img91.png)
 
@@ -336,15 +335,15 @@ Esta funcionalidade permite ao usuário consultar o relatório das transferênci
 
 Esta funcionalidade permite ao usuário consultar o relatório de estatística das transferências organizado por tipo.
 
-{{< icon "chevron-right" >}}Acesse **Relatórios → Transferências → Estatísticas**.
+{{< icon "arrow-right-circle" >}}Acesse **Relatórios → Transferências → Estatísticas**.
 
-{{< icon "chevron-right" >}}Informe a **Identificação do usuário**. Para filtrar os dados da pesquisa, informe o **Nome do arquivo**.
+{{< icon "arrow-right-circle" >}}Informe a **Identificação do usuário**. Para filtrar os dados da pesquisa, informe o **Nome do arquivo**.
 
-{{< icon "chevron-right" >}}Selecione o **Período considerado**, e o **Tipo** de relatório (consolidado, anual, mensal, semanal, dia da semana, Diário ou por hora).
+{{< icon "arrow-right-circle" >}}Selecione o **Período considerado**, e o **Tipo** de relatório (consolidado, anual, mensal, semanal, dia da semana, Diário ou por hora).
 
 ![](./imagem2/img92.png)
 
-{{< icon "chevron-right" >}}Ou clique na lupa para visualizar a estatística de todas as transferências.
+{{< icon "arrow-right-circle" >}}Ou clique na lupa para visualizar a estatística de todas as transferências.
 
 ![](./imagem2/img93.png)
 
@@ -354,19 +353,19 @@ Esta funcionalidade permite ao usuário visualizar o gráfico das transferência
 
 Acesse **Relatórios → Transferências → Gráficos**.
 
-{{< icon "chevron-right" >}}Informe a **Identificação do usuário**. Para filtrar os dados da pesquisa, informe o **Nome do arquivo**.
+{{< icon "arrow-right-circle" >}}Informe a **Identificação do usuário**. Para filtrar os dados da pesquisa, informe o **Nome do arquivo**.
 
-{{< icon "chevron-right" >}}Selecione o **Período considerado**, e o **Tipo** de relatório (consolidado, anual, mensal, semanal, dia da semana, Diário ou por hora).
+{{< icon "arrow-right-circle" >}}Selecione o **Período considerado**, e o **Tipo** de relatório (consolidado, anual, mensal, semanal, dia da semana, Diário ou por hora).
 
-{{< icon "chevron-right" >}}Escolha a forma como será apresentado o gráfico.
+{{< icon "arrow-right-circle" >}}Escolha a forma como será apresentado o gráfico.
 
-{{< icon "chevron-right" >}}Ou clique no botão para visualizar o gráfico de todas as transferências.
+{{< icon "arrow-right-circle" >}}Ou clique no botão para visualizar o gráfico de todas as transferências.
 
 ![](./imagem2/img94.png)
 
 ### Relatório – Roteamentos
 
-{{< icon "chevron-right" >}}Acesse **Relatórios → Roteamentos → Auditoria**.
+{{< icon "arrow-right-circle" >}}Acesse **Relatórios → Roteamentos → Auditoria**.
 A pesquisa pode ser feita informando a **Identificação da origem**, por exemplo, que é o nome de usuário.
 
 ```
@@ -375,7 +374,7 @@ Exemplo: O005RIVERSOFT.
 
 ![](./imagem2/img95.png)
 
-{{< icon "chevron-right" >}}Ou informe a **Identificação do destino**.
+{{< icon "arrow-right-circle" >}}Ou informe a **Identificação do destino**.
 
 ```
 Exemplo: SRSVM-T02.
@@ -383,223 +382,223 @@ Exemplo: SRSVM-T02.
 
 ![](./imagem2/img96.png)
 
-{{< icon "chevron-right" >}}Para visualizar todos os relatórios, clique na lupa.
+{{< icon "arrow-right-circle" >}}Para visualizar todos os relatórios, clique na lupa.
 
 ![](./imagem2/img97.png)
 
 ### Importação de códigos de erros
 
-{{< icon "chevron-right" >}}Para importar os códigos de erros de um arquivo xml para o banco de dados do STCP OFTP Web Admin, acesse **Manutenção → Banco de Dados → Importar Dados**.
+{{< icon "arrow-right-circle" >}}Para importar os códigos de erros de um arquivo xml para o banco de dados do STCP OFTP Web Admin, acesse **Manutenção → Banco de Dados → Importar Dados**.
 
 ![](./imagem2/img98.png)
 
-{{< icon "chevron-right" >}}Em **Tipo de Dados**, escolha a opção **Códigos de Erros** e clique no botão.
+{{< icon "arrow-right-circle" >}}Em **Tipo de Dados**, escolha a opção **Códigos de Erros** e clique no botão.
 
 ![](./imagem2/img99.png)
 
-{{< icon "chevron-right" >}}Selecione o arquivo encontrado e clique no botão.
+{{< icon "arrow-right-circle" >}}Selecione o arquivo encontrado e clique no botão.
 
 ![](./imagem2/img100.png)
 
-<!-- {{< icon "chevron-right" >}}Quando o processo de importação for concluído, será mostrada a confirmação.
+<!-- {{< icon "arrow-right-circle" >}}Quando o processo de importação for concluído, será mostrada a confirmação.
 
 ![](./imagem2/img101.png) -->
 
 ### Importação de códigos de eventos
 
-{{< icon "chevron-right" >}}Para importar os códigos de eventos de um arquivo xml para o banco de dados da STCP OFTP Web Admin, acesse **Manutenção → Banco de Dados → Importar Dados**.
+{{< icon "arrow-right-circle" >}}Para importar os códigos de eventos de um arquivo xml para o banco de dados da STCP OFTP Web Admin, acesse **Manutenção → Banco de Dados → Importar Dados**.
 
 ![](./imagem2/img98.png)
 
-{{< icon "chevron-right" >}}Em Tipo de Dados, escolha a opção Códigos de Eventos e clique no botão.
+{{< icon "arrow-right-circle" >}}Em Tipo de Dados, escolha a opção Códigos de Eventos e clique no botão.
 
-{{< icon "chevron-right" >}}Selecione o arquivo encontrado e clique no botão.
+{{< icon "arrow-right-circle" >}}Selecione o arquivo encontrado e clique no botão.
 
 ![](./imagem2/img103.png)
 
-{{< icon "chevron-right" >}}Quando o processo de importação for concluído, será mostrada a confirmação.
+{{< icon "arrow-right-circle" >}}Quando o processo de importação for concluído, será mostrada a confirmação.
 
 ![](./imagem2/img104.png)
 
 ### Exportação de códigos de erros
 
-{{< icon "chevron-right" >}}Para exportar os códigos de erros da base de dados do STCP OFTP Web Admin para um arquivo xml, acesse **Manutenção → Banco de Dados → Exportar Dados**.
+{{< icon "arrow-right-circle" >}}Para exportar os códigos de erros da base de dados do STCP OFTP Web Admin para um arquivo xml, acesse **Manutenção → Banco de Dados → Exportar Dados**.
 
 ![](./imagem2/img106.png)
 
-{{< icon "chevron-right" >}}Em **Tipo de Dados**, escolha a opção **Códigos de Erros** e clique no botão.
+{{< icon "arrow-right-circle" >}}Em **Tipo de Dados**, escolha a opção **Códigos de Erros** e clique no botão.
 
 ![](./imagem2/img107.png)
 
-{{< icon "chevron-right" >}}Para realizar a exportação dos dados, clique no botão.
+{{< icon "arrow-right-circle" >}}Para realizar a exportação dos dados, clique no botão.
 
 ![](./imagem2/img108.png)
 
-{{< icon "chevron-right" >}}Quando o processo de exportação for concluído, será mostrada a confirmação.
+{{< icon "arrow-right-circle" >}}Quando o processo de exportação for concluído, será mostrada a confirmação.
 
 ![](./imagem2/img109.png)
 
 ### Exportação de códigos de eventos
 
-{{< icon "chevron-right" >}}Para exportar os códigos de eventos da base de dados do STCP OFTP Web Admin para um arquivo xml, acesse **Manutenção → Banco de Dados → Exportar Dados**.
+{{< icon "arrow-right-circle" >}}Para exportar os códigos de eventos da base de dados do STCP OFTP Web Admin para um arquivo xml, acesse **Manutenção → Banco de Dados → Exportar Dados**.
 
 ![](./imagem2/img110.png)
 
-{{< icon "chevron-right" >}}Em Tipo de Dados, escolha a opção Códigos de Eventos e clique no botão.
+{{< icon "arrow-right-circle" >}}Em Tipo de Dados, escolha a opção Códigos de Eventos e clique no botão.
 
 ![](./imagem2/img111.png)
 
-{{< icon "chevron-right" >}}Para realizar a exportação dos dados, clique no botão.
+{{< icon "arrow-right-circle" >}}Para realizar a exportação dos dados, clique no botão.
 
 ![](./imagem2/img112.png)
 
-{{< icon "chevron-right" >}}Quando o processo de exportação for concluído, será mostrada a confirmação.
+{{< icon "arrow-right-circle" >}}Quando o processo de exportação for concluído, será mostrada a confirmação.
 
 ![](./imagem2/img113.png)
 
 ### Cadastro de códigos de erros
 
-{{< icon "chevron-right" >}}Para cadastrar um código de erro, acesse **Manutenção → Cadastro → Códigos de erros**.
+{{< icon "arrow-right-circle" >}}Para cadastrar um código de erro, acesse **Manutenção → Cadastro → Códigos de erros**.
 
-{{< icon "chevron-right" >}}Clique no botão **+**.
+{{< icon "arrow-right-circle" >}}Clique no botão **+**.
 
 ![](./imagem2/img114.png)
 
-{{< icon "chevron-right" >}}Preencha os campos: **código, descrição** e **procedimento**.
+{{< icon "arrow-right-circle" >}}Preencha os campos: **código, descrição** e **procedimento**.
 
-{{< icon "chevron-right" >}}Selecione a classificação do erro no campo **Classe**.
+{{< icon "arrow-right-circle" >}}Selecione a classificação do erro no campo **Classe**.
 
 ![](./imagem2/img115.png)
 
-{{< icon "chevron-right" >}}Clique no botão para salvar as informações do código de erro.
+{{< icon "arrow-right-circle" >}}Clique no botão para salvar as informações do código de erro.
 
 ### Cadastro de códigos de eventos
 
-{{< icon "chevron-right" >}}Para cadastrar um código de evento, acesse **Manutenção → Cadastro → Códigos de eventos**.
+{{< icon "arrow-right-circle" >}}Para cadastrar um código de evento, acesse **Manutenção → Cadastro → Códigos de eventos**.
 
-{{< icon "chevron-right" >}}Clique no botão.
+{{< icon "arrow-right-circle" >}}Clique no botão.
 
 ![](./imagem2/img116.png)
 
-{{< icon "chevron-right" >}}Preencha os campos: **código, descrição e procedimento**.
+{{< icon "arrow-right-circle" >}}Preencha os campos: **código, descrição e procedimento**.
 
 ![](./imagem2/img117.png)
 
-{{< icon "chevron-right" >}}Clique no botão para salvar as informações do código de evento.
+{{< icon "arrow-right-circle" >}}Clique no botão para salvar as informações do código de evento.
 
 ### Modificar senha de operador
 
-{{< icon "chevron-right" >}}Para modificar a senha do operador do STCP OFTP Web Admin, acesse **Manutenção → Modificar senha**.
+{{< icon "arrow-right-circle" >}}Para modificar a senha do operador do STCP OFTP Web Admin, acesse **Manutenção → Modificar senha**.
 
 > [!NOTE]
 > Obs.: este procedimento modifica a senha do operador que está logado na ferramenta.
 
 ![](./imagem2/img118.png)
 
-{{< icon "chevron-right" >}}Preencha os campos: **senha atual, nova senha** e **confirma**.
+{{< icon "arrow-right-circle" >}}Preencha os campos: **senha atual, nova senha** e **confirma**.
 
 ![](./imagem2/img119.png)
 
-{{< icon "chevron-right" >}}Clique no botão para salvar a nova senha.
+{{< icon "arrow-right-circle" >}}Clique no botão para salvar a nova senha.
 
 ### Limpeza de diretório de Usuários (Caixa Postal)
 
-{{< icon "chevron-right" >}}Para realizar a limpeza de diretório de uma caixa postal do STCP OFTP Server, acesse **Manutenção → Usuários (Caixa Postal) → Limpar diretório**.
+{{< icon "arrow-right-circle" >}}Para realizar a limpeza de diretório de uma caixa postal do STCP OFTP Server, acesse **Manutenção → Usuários (Caixa Postal) → Limpar diretório**.
 
 ![](./imagem2/img120.png)
 
-{{< icon "chevron-right" >}}Preencha os campos:
+{{< icon "arrow-right-circle" >}}Preencha os campos:
 
-| Campo      | Descrição |
-| :-----------: | :-----------: |
-| Identificação do usuário  | Nome da caixa postal.       |
-| Nome do arquivo   | Nome do arquivo que deseja buscar. Caso queira ver todos os arquivos, deixe este campo em branco. |
-| Período considerado   | Refere-se à data de criação do arquivo dentro do diretório especificado.        |
-| Diretório   | Selecione o diretório onde deseja fazer a limpeza. As opções disponíveis são: _backup, pendente de envio, pendente de confirmação, recebidos, pendente de restart_.     |
+|          Campo           |                                                                              Descrição                                                                              |
+| :----------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| Identificação do usuário |                                                                        Nome da caixa postal.                                                                        |
+|     Nome do arquivo      |                                  Nome do arquivo que deseja buscar. Caso queira ver todos os arquivos, deixe este campo em branco.                                  |
+|   Período considerado    |                                              Refere-se à data de criação do arquivo dentro do diretório especificado.                                               |
+|        Diretório         | Selecione o diretório onde deseja fazer a limpeza. As opções disponíveis são: _backup, pendente de envio, pendente de confirmação, recebidos, pendente de restart_. |
 ----------
 
 <br>
 
-{{< icon "chevron-right" >}}Clique no botão para realizar a pesquisa no diretório.
+{{< icon "arrow-right-circle" >}}Clique no botão para realizar a pesquisa no diretório.
 
 ![](./imagem2/img121.png)
 
-{{< icon "chevron-right" >}}Selecione os arquivos que deseja remover e salve.
+{{< icon "arrow-right-circle" >}}Selecione os arquivos que deseja remover e salve.
 
 <!-- ![](./imagem2/img122.png) -->
 
-{{< icon "chevron-right" >}}Quando o processo de limpeza for concluído, será mostrada a confirmação.
+{{< icon "arrow-right-circle" >}}Quando o processo de limpeza for concluído, será mostrada a confirmação.
 
 <!-- ![](./imagem2/img123.png) -->
 
 ### Recuperar transferência de Usuários (Caixa Postal)
 
-{{< icon "chevron-right" >}}Para recuperar uma transferência de uma caixa postal do STCP OFTP Server, acesse **Manutenção → Usuários (Caixa Postal) → Recuperar transferência**.
+{{< icon "arrow-right-circle" >}}Para recuperar uma transferência de uma caixa postal do STCP OFTP Server, acesse **Manutenção → Usuários (Caixa Postal) → Recuperar transferência**.
 
 > [!NOTE] Aviso
 > Obs.: este procedimento recupera uma transferência do diretório **Backup** e coloca no diretório **Saída** da caixa postal.
 
 ![](./imagem2/img124.png)
 
-{{< icon "chevron-right" >}}Preencha os campos:
+{{< icon "arrow-right-circle" >}}Preencha os campos:
 
-| Campo      | Descrição |
-| :-----------: | :-----------: |
-| Identificação do usuário  | Nome da caixa postal.       |
-| Nome do arquivo   | Nome completo do arquivo que deseja recuperar. |
-| Período considerado   | Refere-se à data de criação do arquivo dentro do diretório de backup.        |
+|          Campo           |                               Descrição                               |
+| :----------------------: | :-------------------------------------------------------------------: |
+| Identificação do usuário |                         Nome da caixa postal.                         |
+|     Nome do arquivo      |            Nome completo do arquivo que deseja recuperar.             |
+|   Período considerado    | Refere-se à data de criação do arquivo dentro do diretório de backup. |
 ----------
 
 <br>
 
-{{< icon "chevron-right" >}}Clique no botão para buscar o arquivo.
+{{< icon "arrow-right-circle" >}}Clique no botão para buscar o arquivo.
 
 ![](./imagem2/img125.png)
 
-{{< icon "chevron-right" >}}Selecione o arquivo.
+{{< icon "arrow-right-circle" >}}Selecione o arquivo.
 
 <!-- ![](./imagem2/img126.png) -->
 
-{{< icon "chevron-right" >}}Quando o processo de recuperação for concluído, será mostrada a confirmação.
+{{< icon "arrow-right-circle" >}}Quando o processo de recuperação for concluído, será mostrada a confirmação.
 
 <!-- ![](./imagem2/img127.png) -->
 
 ### Resetar senha de Usuários (Caixa Postal)
 
-{{< icon "chevron-right" >}}Para resetar a senha de uma caixa postal do STCP OFTP Server, acesse **Manutenção → Usuários (Caixa Postal) → Resetar senha**.
+{{< icon "arrow-right-circle" >}}Para resetar a senha de uma caixa postal do STCP OFTP Server, acesse **Manutenção → Usuários (Caixa Postal) → Resetar senha**.
 
 ![](./imagem2/img128.png)
 
-{{< icon "chevron-right" >}}Preencha os campos: **usuário (caixa postal), nova senha** e **confirma**.
+{{< icon "arrow-right-circle" >}}Preencha os campos: **usuário (caixa postal), nova senha** e **confirma**.
 
 ![](./imagem2/img129.png)
 
-{{< icon "chevron-right" >}}Clique no botão para salvar a nova senha da caixa postal.
+{{< icon "arrow-right-circle" >}}Clique no botão para salvar a nova senha da caixa postal.
 
 ### Executar agendamento do STCP OFTP Server
 
-{{< icon "chevron-right" >}}Para executar um agendamento do STCP OFTP Server, acesse **Monitoração → Agendamentos → Executar.**
+{{< icon "arrow-right-circle" >}}Para executar um agendamento do STCP OFTP Server, acesse **Monitoração → Agendamentos → Executar.**
 
 ![](./imagem2/img130.png)
 
-{{< icon "chevron-right" >}}Preencha os campos:
+{{< icon "arrow-right-circle" >}}Preencha os campos:
 
-| Campo      | Descrição |
-| :-----------: | :-----------: |
-| Agendamento | Nome do agendamento que deseja buscar. Caso queira ver todos os agendamentos, deixe este campo em branco.       |
-| Descrição   | Descrição do agendamento. Use este campo para filtrar os agendamentos pela descrição. |
+|    Campo    |                                                 Descrição                                                 |
+| :---------: | :-------------------------------------------------------------------------------------------------------: |
+| Agendamento | Nome do agendamento que deseja buscar. Caso queira ver todos os agendamentos, deixe este campo em branco. |
+|  Descrição  |           Descrição do agendamento. Use este campo para filtrar os agendamentos pela descrição.           |
 ----------
 <br>
 
-{{< icon "chevron-right" >}}Clique na lupa para buscar o agendamento.
+{{< icon "arrow-right-circle" >}}Clique na lupa para buscar o agendamento.
 
 ![](./imagem2/img131.png)
 
-{{< icon "chevron-right" >}}Clique sobre o nome do agendamento para executá-lo.
+{{< icon "arrow-right-circle" >}}Clique sobre o nome do agendamento para executá-lo.
 
 <!-- ![](./imagem2/img132.png) -->
 
-{{< icon "chevron-right" >}}Será aberta uma nova janela informando o resultado da execução do agendamento.
+{{< icon "arrow-right-circle" >}}Será aberta uma nova janela informando o resultado da execução do agendamento.
 
 > [!NOTE] Aviso
 > Obs.: se o agendamento estiver desabilitado, não será possível executá-lo.
@@ -608,7 +607,7 @@ Exemplo: SRSVM-T02.
 
 ### Alterar estado de agendamento do STCP OFTP Server
 
-{{< icon "chevron-right" >}}Para alterar o estado de um agendamento do STCP OFTP Server, acesse **Monitoração → Agendamentos → Alterar estado**.
+{{< icon "arrow-right-circle" >}}Para alterar o estado de um agendamento do STCP OFTP Server, acesse **Monitoração → Agendamentos → Alterar estado**.
 
 > [!NOTE] Aviso
 > Obs.: este procedimento permite que um agendamento seja bloqueado/desbloqueado.
@@ -616,30 +615,30 @@ Exemplo: SRSVM-T02.
 
 ![](./imagem2/img134.png)
 
-{{< icon "chevron-right" >}}Preencha os campos:
+{{< icon "arrow-right-circle" >}}Preencha os campos:
 
-| Campo      | Descrição |
-| :-----------: | :-----------: |
-| Agendamento | Nome do agendamento que deseja buscar. Caso queira ver todos os agendamentos, deixe este campo em branco.       |
-| Descrição   | Descrição do agendamento. Use este campo para filtrar os agendamentos pela descrição. |
+|    Campo    |                                                 Descrição                                                 |
+| :---------: | :-------------------------------------------------------------------------------------------------------: |
+| Agendamento | Nome do agendamento que deseja buscar. Caso queira ver todos os agendamentos, deixe este campo em branco. |
+|  Descrição  |           Descrição do agendamento. Use este campo para filtrar os agendamentos pela descrição.           |
 ----------
 <br>
 
-{{< icon "chevron-right" >}}Clique na lupa para buscar o agendamento.
+{{< icon "arrow-right-circle" >}}Clique na lupa para buscar o agendamento.
 
 ![](./imagem2/img135.png)
 
-{{< icon "chevron-right" >}}Clique sobre o nome do agendamento para alterar seu estado.
+{{< icon "arrow-right-circle" >}}Clique sobre o nome do agendamento para alterar seu estado.
 
 <!-- ![](./imagem2/img136.png) -->
 
-{{< icon "chevron-right" >}}O estado do agendamento é mostrado no lado direito da janela.
+{{< icon "arrow-right-circle" >}}O estado do agendamento é mostrado no lado direito da janela.
 
 <!-- ![](./imagem2/img137.png) -->
 
 ### Monitorar eventos do servidor
 
-{{< icon "chevron-right" >}}Para visualizar os eventos do servidor de monitoração do STCP OFTP Server, acesse **Monitoração → Servidor → Eventos**.
+{{< icon "arrow-right-circle" >}}Para visualizar os eventos do servidor de monitoração do STCP OFTP Server, acesse **Monitoração → Servidor → Eventos**.
 
 ![](./imagem2/img138.png)
 
@@ -653,7 +652,7 @@ Exemplo: SRSVM-T02.
 
 ### Monitorar transferências
 
-{{< icon "chevron-right" >}}Para monitorar as transferências em andamento, acesse **Monitoração → Servidor → Transferências em andamento.**
+{{< icon "arrow-right-circle" >}}Para monitorar as transferências em andamento, acesse **Monitoração → Servidor → Transferências em andamento.**
 
 ![](./imagem2/img140.png)
 
@@ -664,89 +663,89 @@ Exemplo: SRSVM-T02.
 
 ### Iniciar conexão com usuários (Caixa Postal)
 
-{{< icon "chevron-right" >}}Para iniciar uma conexão com uma caixa postal do STCP OFTP Server, acesse **Monitoração → Usuários (Caixa Postal) → Iniciar Conexão**.
+{{< icon "arrow-right-circle" >}}Para iniciar uma conexão com uma caixa postal do STCP OFTP Server, acesse **Monitoração → Usuários (Caixa Postal) → Iniciar Conexão**.
 
 > [!NOTE] Aviso
 > Obs.: esta funcionalidade só está disponível para caixas postais que estejam com a conexão automática habilitada.
 
 ![](./imagem2/img142.png)
 
-{{< icon "chevron-right" >}}Preencha os campos:
+{{< icon "arrow-right-circle" >}}Preencha os campos:
 
-| Campo      | Descrição |
-| :-----------: | :-----------: |
+|          Campo           |                                         Descrição                                          |
+| :----------------------: | :----------------------------------------------------------------------------------------: |
 | Identificação do usuário | Nome da caixa postal. Caso queira ver todas as caixas postais, deixe este campo em branco. |
-| Descrição do usuário   | Descrição da caixa postal. Use este campos para filtrar as caixas postais pela descrição. |
+|   Descrição do usuário   | Descrição da caixa postal. Use este campos para filtrar as caixas postais pela descrição.  |
 ----------
 <br>
 
-{{< icon "chevron-right" >}}Clique na lupa para realizar a busca.
+{{< icon "arrow-right-circle" >}}Clique na lupa para realizar a busca.
 
 ![](./imagem2/img143.png)
 
-{{< icon "chevron-right" >}}Clique sobre o  nome da caixa postal para iniciar a conexão.
+{{< icon "arrow-right-circle" >}}Clique sobre o  nome da caixa postal para iniciar a conexão.
 
 ![](./imagem2/img144.png)
 
-{{< icon "chevron-right" >}}Será aberta uma nova janela mostrando o resultado da conexão do usuário.
+{{< icon "arrow-right-circle" >}}Será aberta uma nova janela mostrando o resultado da conexão do usuário.
 
 ![](./imagem2/img145.png)
 
 ### Cancelar conexão com usuários (Caixa Postal)
 
-{{< icon "chevron-right" >}}Para cancelar uma conexão com uma caixa postal do STCP OFTP Server, acesse **Monitoração → Usuários (Caixa Postal) → Cancelar Conexão**.
+{{< icon "arrow-right-circle" >}}Para cancelar uma conexão com uma caixa postal do STCP OFTP Server, acesse **Monitoração → Usuários (Caixa Postal) → Cancelar Conexão**.
 
 > [!NOTE] Aviso
 > Obs.: esta funcionalidade só está disponível para caixas postais que estejam com a conexão automática habilitada.
 
 ![](./imagem2/img150.png)
 
-{{< icon "chevron-right" >}}Preencha os campos:
+{{< icon "arrow-right-circle" >}}Preencha os campos:
 
-| Campo      | Descrição |
-| :-----------: | :-----------: |
+|          Campo           |                                         Descrição                                          |
+| :----------------------: | :----------------------------------------------------------------------------------------: |
 | Identificação do usuário | Nome da caixa postal. Caso queira ver todas as caixas postais, deixe este campo em branco. |
-| Descrição do usuário   | Descrição da caixa postal. Use este campos para filtrar as caixas postais pela descrição. |
+|   Descrição do usuário   | Descrição da caixa postal. Use este campos para filtrar as caixas postais pela descrição.  |
 ----------
 <br>
 
-{{< icon "chevron-right" >}}Clique na lupa para realizar a busca.
+{{< icon "arrow-right-circle" >}}Clique na lupa para realizar a busca.
 
-{{< icon "chevron-right" >}}Clique sobre o  nome da caixa postal para cancelar a conexão.
+{{< icon "arrow-right-circle" >}}Clique sobre o  nome da caixa postal para cancelar a conexão.
 
 ![](./imagem2/img151.png)
 
-{{< icon "chevron-right" >}}Será aberta uma nova janela mostrando o resultado do cancelamento da conexão do usuário.
+{{< icon "arrow-right-circle" >}}Será aberta uma nova janela mostrando o resultado do cancelamento da conexão do usuário.
 
 <!-- ![](./imagem2/img145.png) -->
 
 ### Alterar estado de usuários (Caixa Postal)
 
-{{< icon "chevron-right" >}}Para alterar o estado de uma caixa postal do STCP OFTP Server, acesse **Monitoração → Usuários (Caixa Postal) → Alterar estado**.
+{{< icon "arrow-right-circle" >}}Para alterar o estado de uma caixa postal do STCP OFTP Server, acesse **Monitoração → Usuários (Caixa Postal) → Alterar estado**.
 
 > [!NOTE] Aviso
 > Obs.: este procedimento permite que uma caixa postal seja bloqueada/desbloqueada.
 
 ![](./imagem2/img146.png)
 
-{{< icon "chevron-right" >}}Preencha os campos:
+{{< icon "arrow-right-circle" >}}Preencha os campos:
 
-| Campo      | Descrição |
-| :-----------: | :-----------: |
+|          Campo           |                                                  Descrição                                                   |
+| :----------------------: | :----------------------------------------------------------------------------------------------------------: |
 | Identificação do usuário | Nome da caixa postal que deseja buscar. Caso queira ver todas as caixas postais, deixe este campo em branco. |
-| Descrição do usuário   | Descrição da caixa postal. Use este campos para filtrar as caixas postais pela descrição. |
+|   Descrição do usuário   |          Descrição da caixa postal. Use este campos para filtrar as caixas postais pela descrição.           |
 ----------
 <br>
 
-{{< icon "chevron-right" >}}Clique na lupa realizar a busca.
+{{< icon "arrow-right-circle" >}}Clique na lupa realizar a busca.
 
 ![](./imagem2/img147.png)
 
-{{< icon "chevron-right" >}}Clique sobre o nome da caixa postal para alterar seu estado.
+{{< icon "arrow-right-circle" >}}Clique sobre o nome da caixa postal para alterar seu estado.
 
 ![](./imagem2/img148.png)
 
-{{< icon "chevron-right" >}}O estado da caixa postal é mostrado no lado direito da janela.
+{{< icon "arrow-right-circle" >}}O estado da caixa postal é mostrado no lado direito da janela.
 
 ![](./imagem2/img149.png)
 

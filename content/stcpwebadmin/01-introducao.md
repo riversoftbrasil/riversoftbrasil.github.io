@@ -10,7 +10,6 @@ prev: /docs
 next:
 draft: false
 slug: introducao
-lastmod: 2024-05-06
 ---
 # Introdução
 

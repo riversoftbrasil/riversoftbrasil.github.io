@@ -12,7 +12,6 @@ prev: 04-debug/
 next: 06-email/
 draft: false
 slug: update
-lastmod: 2024-10-02
 ---
 
 ## Antes de iniciar
@@ -23,36 +22,36 @@ Ao atualizar o STCP OFTP Client, para que não seja necessária a reconfiguraç�
 
 ## Instalar a nova versão
 
-{{< icon "chevron-right" >}}Clique no botão **Avançar**.
+{{< icon "arrow-right-circle" >}}Clique no botão **Avançar**.
 
 ![](img/upd-02.png)
 
-{{< icon "chevron-right" >}}Esta é a tela de boas-vindas, clique no botão **Avançar** para continuar. Pressione **Voltar** para retornar à tela anterior ou **Cancelar** para interromper o processo de instalação.
+{{< icon "arrow-right-circle" >}}Esta é a tela de boas-vindas, clique no botão **Avançar** para continuar. Pressione **Voltar** para retornar à tela anterior ou **Cancelar** para interromper o processo de instalação.
 
 ![](img/upd-01.png)
 
-{{< icon "chevron-right" >}}Leia cuidadosamente o Contrato de Licença de Uso do Usuário Final e caso concorde com os termos propostos, marque a opção correspondente e pressione o botão **Avançar** para prosseguir com a instalação.
+{{< icon "arrow-right-circle" >}}Leia cuidadosamente o Contrato de Licença de Uso do Usuário Final e caso concorde com os termos propostos, marque a opção correspondente e pressione o botão **Avançar** para prosseguir com a instalação.
 
 ![](img/upd-03.png)
 
 Pressione **Voltar** para retornar à tela anterior ou **Cancelar** para interromper o processo de instalação.
 
 
-{{< icon "chevron-right" >}}Na tela **Informações do Cliente**, informe o Nome do usuário e Organização (Empresa).
+{{< icon "arrow-right-circle" >}}Na tela **Informações do Cliente**, informe o Nome do usuário e Organização (Empresa).
 
 Pressione **Voltar** para retornar à tela anterior ou **Cancelar** para cancelar todo o processo de instalação.
 
 ![](img/upd-04.png)
 
-{{< icon "chevron-right" >}}Na tela **Pasta de Destino**, clique em **Avançar** para instalar no diretório padrão ou **Alterar** para selecionar outro diretório ou criar um novo. Pressione **Voltar** para retornar à tela anterior ou **Cancelar** para interromper o processo de instalação.
+{{< icon "arrow-right-circle" >}}Na tela **Pasta de Destino**, clique em **Avançar** para instalar no diretório padrão ou **Alterar** para selecionar outro diretório ou criar um novo. Pressione **Voltar** para retornar à tela anterior ou **Cancelar** para interromper o processo de instalação.
 
 ![](img/upd-05.png)
 
-{{< icon "chevron-right" >}}Na tela **Pronto para Instalar o Programa**, clique em **Qualquer pessoa que utilizar este computador (todos os usuários)** ou **Somente para mim (Riversoft)** para instalar. Pressione **Voltar** para retornar à tela anterior ou **Cancelar** para interromper o processo de instalação.
+{{< icon "arrow-right-circle" >}}Na tela **Pronto para Instalar o Programa**, clique em **Qualquer pessoa que utilizar este computador (todos os usuários)** ou **Somente para mim (Riversoft)** para instalar. Pressione **Voltar** para retornar à tela anterior ou **Cancelar** para interromper o processo de instalação.
 
 ![](img/upd-06.png)
 
-{{< icon "chevron-right" >}}Na tela de conclusão do **Installshield**, clique no botão **Concluir** para finalizar a instalação.
+{{< icon "arrow-right-circle" >}}Na tela de conclusão do **Installshield**, clique no botão **Concluir** para finalizar a instalação.
 
 ![](img/upd-07.png)
 

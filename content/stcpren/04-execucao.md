@@ -12,7 +12,6 @@ prev:
 next:
 draft: false
 slug: execucao
-lastmod: 2024-02-28
 ---
 ### Linha de comando
 
