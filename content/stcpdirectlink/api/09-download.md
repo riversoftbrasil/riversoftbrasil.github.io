@@ -46,7 +46,7 @@ https://your-domain/directlink/v1/download/file
 
 |  Parâmetro  | Descrição | |
 | ----------- | ----------- | -------- |
-| *z* <span style="color:red;">*</span>  | String | Token de download obtido na requisição ou *[Lista de download(basic)](/stcpdirectlink/05-api/lista-arquivos-download/)* ou *[Lista de download(bearer)](/stcpdirectlink/05-api/lista-arquivos-download/#lista-de-arquivos-para-download-bearer)* |
+| *k* <span style="color:red;">*</span>  | String | Token de download obtido na requisição ou *[Lista de download(basic)](/stcpdirectlink/05-api/lista-arquivos-download/)* ou *[Lista de download(bearer)](/stcpdirectlink/05-api/lista-arquivos-download/#lista-de-arquivos-para-download-bearer)* |
 
 <br>
 
