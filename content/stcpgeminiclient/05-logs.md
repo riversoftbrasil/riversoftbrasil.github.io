@@ -11,7 +11,6 @@ weight: 5
 prev: /03-exec-sgc/
 next: /docs
 slug: arquivos-de-logs
-lastmod: 2024-06-21
 ---
 
 Todo o processo de conexão e transferência de arquivos do STCP Gemini Client é registrado em arquivos de log.

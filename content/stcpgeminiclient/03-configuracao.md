@@ -11,7 +11,6 @@ weight: 3
 prev: /01-install-sgc/
 next: /03-exec-sgc/
 slug: configuracao
-lastmod: 2024-06-21
 ---
 
 Toda a configuração da aplicação será realizada através do *STCP Gemini Client Config*. Não é necessária a utilização do super-usuário (root) para a configuração.
