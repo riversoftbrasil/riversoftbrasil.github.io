@@ -6,15 +6,14 @@ cascade:
   type: docs
 sidebar:
   exclude: false
-weight: 7
-prev: /stcpserver/04-console
+weight: 2
+prev: 
 next: 
 draft: false
-slug: notifcacao-email
-lastmod: 2024-10-01
+slug: notificacao-email
 ---
 
-## Notificação e-mail através de Scripts VBS
+## Scripts VBS
 
 ### Introdução
 
@@ -30,26 +29,26 @@ Conforme mencionado nesta seção, é possível configurar o STCP para enviar um
 
 Tal procedimento pode ser realizado através do script _STCPEMAILEVT.VBS_, existente na pasta *Program*, do diretório de instalação (Diretório de Controle) da aplicação (Ex C:\STCPODT\Program).
 
-{{< icon "chevron-right" >}}Edite o arquivo _STCPEMAILEVT.VBS_ e preencha as informações conforme a imagem.
+{{< icon "arrow-right-circle" >}}Edite o arquivo _STCPEMAILEVT.VBS_ e preencha as informações conforme a imagem.
 
-![](img/email-01.png)
+![](./img/email-01.png)
 
 > [!NOTE] Nota
 > Como padrão para este documento, utilizaremos o utilitário OpenSSL para realização do processo da geração e configuração do certificado digital. O OpenSSL está localizado na Pasta Program do diretório de instalação do STCP OFTP Server (Ex: C:\STCPODT\Program)
 
 
-{{< icon "chevron-right" >}}Além das configurações _strMailFrom_,_strMailTo_ também deverão ser configurados os parâmetros referentes ao servidor SMTP.
+{{< icon "arrow-right-circle" >}}Além das configurações _strMailFrom_,_strMailTo_ também deverão ser configurados os parâmetros referentes ao servidor SMTP.
 
-![](img/email-02.png)
+![](./img/email-02.png)
 
-{{< icon "chevron-right" >}}Salve o arquivo.
+{{< icon "arrow-right-circle" >}}Salve o arquivo.
 
-{{< icon "chevron-right" >}}Para realizar a validação do funcionamento do script e do servidor SMTP, acesse o "Prompt de Comando" e digite o comando abaixo. Caso nenhuma mensagem de erro seja apresentada, verifique se os e-mails foram recebidos nas contas indicadas.
+{{< icon "arrow-right-circle" >}}Para realizar a validação do funcionamento do script e do servidor SMTP, acesse o "Prompt de Comando" e digite o comando abaixo. Caso nenhuma mensagem de erro seja apresentada, verifique se os e-mails foram recebidos nas contas indicadas.
 
 ```
 cscript C:\STCPODT\Program\STCPEMAILEVT.VBS NOME-SERVIDOR MSG1 MSG2
 ```
-![](img/email-03.png)
+![](./img/email-03.png)
 
 Após a configuração e testes do script VBS, uma alteração nas Propriedades de Log do STCP será necessária, habilitando a execução de um comando externo sempre ocorrer eventos que contenham algum erro (Nível de log = 1) e informando a linha de comando abaixo no parâmetro **Comando externo**.
 
@@ -61,7 +60,7 @@ cscript //B C:\STCPODT\Program\STCPEMAILEVT.VBS NOME-SERVIDOR "
 > Observe que logo após o nome do servidor será necessário inserir uma aspas duplas (abre aspas).
 
 
-![](img/email-04.png)
+![](./img/email-04.png)
 
 Após a execução destes procedimentos, clique no botão OK para salvar as alterações e [reinicie o serviço do Riversoft STCP OFTP Server](/stcpserver/utilizacao/#serviço-do-stcp-oftp-server) para que as estas sejam ativadas.
 
@@ -73,24 +72,24 @@ Dentre várias outras possibilidades, além das notificações de erro apresenta
 
 Tal procedimento pode ser realizado através do script **stcpemail.vbs**, existente na pasta *Program*, do diretório de instalação (Diretório de Controle) da aplicação (Ex: C:\STCPODT\Program).
 
-{{< icon "chevron-right" >}}Edite o arquivo *stcpemail.vbs* e preencha os parâmetros referentes ao servidor SMTP:
+{{< icon "arrow-right-circle" >}}Edite o arquivo *stcpemail.vbs* e preencha os parâmetros referentes ao servidor SMTP:
 
-![](img/email-05.png)
+![](./img/email-05.png)
 
-{{< icon "chevron-right" >}}Salve o arquivo.
+{{< icon "arrow-right-circle" >}}Salve o arquivo.
 
-{{< icon "chevron-right" >}}Para realizar a validação do funcionamento do script e do servidor SMTP, acesse o *Prompt de Comando* e digite o comando abaixo. Caso nenhuma mensagem de erro seja apresentada, verifique se os e-mails foram recebidos nas contas indicadas.
+{{< icon "arrow-right-circle" >}}Para realizar a validação do funcionamento do script e do servidor SMTP, acesse o *Prompt de Comando* e digite o comando abaixo. Caso nenhuma mensagem de erro seja apresentada, verifique se os e-mails foram recebidos nas contas indicadas.
 
 ```vb
 cscript //B C:\STCPODT\Program\ stcpemail.vbs de@dominio.com.br para@dominio.com.br nome-arquivo-teste
 ```
-![](img/email-06.png)
+![](./img/email-06.png)
 
-{{< icon "chevron-right" >}}Acesse o STCP OFTP Server Config (Ex: D:\STCPODT\Program\Riversoft STCP OFTP Server Config) e na guia *Usuários*, selecione o usuário desejado e clique no botão *Propriedades*.
+{{< icon "arrow-right-circle" >}}Acesse o STCP OFTP Server Config (Ex: D:\STCPODT\Program\Riversoft STCP OFTP Server Config) e na guia *Usuários*, selecione o usuário desejado e clique no botão *Propriedades*.
 
-{{< icon "chevron-right" >}}Na janela de propriedades do usuário selecionado, na guia *Tipos de arquivos* selecione o tipo *default* ou o tipo de arquivo desejado e clique no botão *Propriedades*.
+{{< icon "arrow-right-circle" >}}Na janela de propriedades do usuário selecionado, na guia *Tipos de arquivos* selecione o tipo *default* ou o tipo de arquivo desejado e clique no botão *Propriedades*.
 
-{{< icon "chevron-right" >}}Na janela de propriedades do tipo de arquivo desejado, no grupo *Características da transmissão*, preencha o parâmetro *Executar comando externo* com a linha de comando abaixo:
+{{< icon "arrow-right-circle" >}}Na janela de propriedades do tipo de arquivo desejado, no grupo *Características da transmissão*, preencha o parâmetro *Executar comando externo* com a linha de comando abaixo:
 
 ```
 cscript //B C:\STCPODT\Program\stcpemail.vbs “de@dominio.com.br” para@dominio.com.br $LFNAME
@@ -99,8 +98,8 @@ cscript //B C:\STCPODT\Program\stcpemail.vbs “de@dominio.com.br” para@domini
 > [!NOTE] Nota: 
 > Na linha de comando utilizamos a variável interna do STCP, **$LFNAME**, que nos contém o nome completo do arquivo local. A relação completa das variáveis internas do STCP OFTP Server pode ser obtida no item “Definição das variáveis internas do STCP OFTP Server”, no link: [variáveis internas do STCP](/utils/variables/).
 
-![](img/email-07.png)
+![](./img/email-07.png)
 
-{{< icon "chevron-right" >}}Clique no botão **OK** para salvar as alterações.
+{{< icon "arrow-right-circle" >}}Clique no botão **OK** para salvar as alterações.
 
 Uma vez realizadas as configurações com êxito, um e-mail será encaminhado para o destinatário informado, sempre que um arquivo for transmitido com sucesso. O mesmo procedimento poderá ser utilizado para implantar notificações também na recepção de arquivos.

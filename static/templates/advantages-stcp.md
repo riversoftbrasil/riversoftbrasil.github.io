@@ -1,4 +1,4 @@
-## Onde usar, e quais as vantagens?
+## Casos de uso
 
 * Integração com parceiros para transferência de informações;
 * Integração de sistemas através de transferência de arquivos;
@@ -9,7 +9,7 @@
 * Integração com VANS (Embratel, Proceda, Interchange e outras);
 * Outras aplicações.
 
-### Vantagens
+## Vantagens e benefícios
 
 * Facilidade de integração com as aplicações existentes;
 * Automatização do processo de envio/recepção de arquivos;

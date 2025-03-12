@@ -10,12 +10,11 @@ prev: /docs
 next: /01-install-srv
 slug: introducao
 brand: stw
-lastmod: 2025-02-10 
 ---
 
-## O que é o STCP OFTP Server
+## Introdução
 
-O STCP OFTP Server é um servidor de transferência de arquivos **seguro** e **multiprotocolo** para aplicações de **e-business** e troca de informações corporativas, baseado na especificação <a href="/utils/protocols/#oftp" target="_blank">OFTP (ODETTE File Transfer Protocol)</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;
+O STCP OFTP Server é um servidor de transferência de arquivos **seguro** e **multiprotocolo** para aplicações de **e-business** e troca de informações corporativas, baseado na especificação <a href="/security/#protocolo-oftp" target="_blank">OFTP (ODETTE File Transfer Protocol)</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;
 
 {{< advantages-stcp "static/templates/advantages-stcp.md" >}}
 
@@ -23,7 +22,7 @@ O STCP OFTP Server é um servidor de transferência de arquivos **seguro** e **m
 
 O STCP OFTP Server oferece as seguintes características:
 
-* Protocolo de transferência <a href="/utils/protocols/#oftp" target="_blank">OFTP (ODETTE File Transfer Protocol)</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;
+* Protocolo de transferência OFTP (ODETTE File Transfer Protocol);
 * Autenticação através do protocolo *OFTP*;
 * Autenticação através de certificado digital X.509 (TLS);
 * Criptografia RSA, 3DES, DES, AES (TLS);
@@ -36,9 +35,6 @@ O STCP OFTP Server oferece as seguintes características:
 * Número ilimitado de sessões de transferência (Versão Enterprise) ou até 10 (dez) sessões de transferência (Versão Lite);
 * Número ilimitado de usuários (Versão Enterprise) ou até 10 (dez) usuários (Versão Lite).
 
-## Requisitos de software e hardware
-
-Confira os requisitos de software e hardware da aplicação na seção <a href="/utils/requirements/" target="_blank">Requisitos</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;
 
 
 

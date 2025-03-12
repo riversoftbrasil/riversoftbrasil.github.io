@@ -10,17 +10,41 @@ prev: /stcpserver/01-introducao
 next: /stcpserver/02-configuracao
 slug: instalacao
 draft: false
-lastmod: 2024-12-13
 ---
+
+## Requisitos para instalação
+
+Confira os requisitos de software e hardware da aplicação: 
+
+- Processador de 2 gigahertz (GHz);
+- 2 gigabytes (GB) de RAM;
+- 150 megabytes (MB) de espaço disponível em disco rígido para o aplicativo; <sup>1</sup>
+- Sistema operacional Windows 10/11/2012/2016/2019/2022; <sup>2</sup>
+- Banco de dados (SQL Server, MySQL, MariaDB, Oracle); <sup>3</sup>
+- Driver ODBC para conexão com o Banco de Dados.
+
+
+{{< callout type="" >}}
+  <sup>1</sup> O espaço disponível para os arquivos transferidos dependerá do volume e política de armazenamento de dados adotada.
+{{< /callout >}}
+
+{{< callout type="" >}}
+  <sup>2</sup> Server with Desktop Experience.
+{{< /callout >}}
+
+{{< callout type="" >}}
+  <sup>3</sup> Para versão STCP OFTP Server Enterprise.
+{{< /callout >}}
+
 ## Distribuição dos pacotes
 
 O pacote de instalação será distribuído através de um link, disponibilizado pela Equipe de Sustentação da Riversoft.
 
 Após extrair o zip com o arquivo executável, os seguintes passos devem ser executados:
 
-{{< icon "chevron-right" >}}Clique no executável para iniciar o processo de instalação.
+{{< icon "arrow-right-circle" >}}Clique no arquivo executável para iniciar o processo de instalação.
 
-{{< icon "chevron-right" >}}Esta é a tela de boas-vindas, clique em **Avançar** para continuar.
+{{< icon "arrow-right-circle" >}}Esta é a tela de boas-vindas, clique em **Avançar** para continuar.
 
 ![](img/install-srv-enterprise.png "Versão Enterprise")
 ![](img/install-srv-lite.png "Versão Lite")
@@ -28,13 +52,13 @@ Após extrair o zip com o arquivo executável, os seguintes passos devem ser exe
 
 Pressione **Voltar** para retornar à tela anterior ou **Cancelar** para interromper o processo de instalação.
 
-{{< icon "chevron-right" >}}Leia cuidadosamente o Contrato de Licença de Uso do Usuário Final e caso concorde com os termos propostos, marque a opção correspondente e pressione o botão **Avançar** para prosseguir com a instalação.
+{{< icon "arrow-right-circle" >}}Leia cuidadosamente o **Contrato de Licença de Uso do Usuário Final** e caso concorde com os termos propostos, marque a opção correspondente e pressione o botão **Avançar** para prosseguir com a instalação.
 
 Pressione **Voltar** para retornar à tela anterior ou **Cancelar** para interromper o processo de instalação.
 
 ![](img/install-srv-01.png)
 
-{{< icon "chevron-right" >}}Na tela **Informações do Cliente**, informe o Nome do usuário e Empresa.
+{{< icon "arrow-right-circle" >}}Na tela **Informações do cliente**, informe o Nome do usuário e Empresa.
 
 Clique em **Avançar** para continuar a instalação.
 
@@ -42,21 +66,21 @@ Pressione **Voltar** para retornar à tela anterior ou **Cancelar** para cancela
 
 ![](img/install-srv-02.png)
 
-{{< icon "chevron-right" >}}Na tela **Pasta de Destino**, clique em **Avançar** para instalar no diretório padrão ou **Alterar** para selecionar outro diretório ou criar um novo.
+{{< icon "arrow-right-circle" >}}Na tela **Pasta de destino**, clique em **Avançar** para instalar no diretório padrão ou **Alterar** para selecionar outro diretório ou criar um novo.
 
 Pressione **Voltar** para retornar à tela anterior ou **Cancelar** para interromper o processo de instalação.
 
 ![](img/install-srv-03.png)
 
 
-{{< icon "chevron-right" >}}Na tela **Pronto para Instalar** o Programa, verifique se as configurações escolhidas estão corretas e clique em **Instalar** para continuar.
+{{< icon "arrow-right-circle" >}}Na tela **Pronto para instalar o programa**, verifique se as configurações escolhidas estão corretas e clique em **Instalar** para continuar.
 
 Pressione **Voltar** para retornar à tela anterior ou **Cancelar** para interromper o processo de instalação.
 
 ![](img/install-srv-04.png)
 
 
-{{< icon "chevron-right" >}}Na tela **Conclusão do Installshield**, clique em **Concluir** para finalizar a instalação.
+{{< icon "arrow-right-circle" >}}Por fim, clique em **Concluir** para finalizar a instalação.
 
 ![](img/install-srv-05.png)
 
@@ -67,7 +91,7 @@ Após a instalação da aplicação, a seguinte árvore de diretórios será cri
 {{< filetree/container >}}
   {{< filetree/folder name="STCPODT" >}}
 
-    {{< filetree/folder name="`<USUÁRIO>`" state="closed" >}}
+    {{< filetree/folder name="`<USUÁRIO>`" state="open" >}}
       {{< filetree/folder name="CONTROLE" state="closed" >}}
       {{< /filetree/folder >}}
 
@@ -177,4 +201,21 @@ Após a instalação da aplicação, a seguinte árvore de diretórios será cri
 
 {{< /filetree/container >}}
 
+Para cada **usuário** configurado no serviço, é criado um conjunto individual de subdiretórios para controle das transferências e integração com as aplicações externas, conforme mostra a tabela abaixo:
+
+| <Diretório de Dados>\       | Subdiretório de dados configurado.                                                                                       |
+| :-------------------------- | :----------------------------------------------------------------------------------------------------------------------- |
+| **<Diretório do Usuário>**\ | Subdiretório individual do usuário.                                                                                      |
+| **CONTROLE**                | Subdiretório de controle da aplicação.                                                                                   |
+| **ENTRADA**\                | Subdiretório onde os arquivos recebidos com sucesso serão disponibilizados.                                              |
+| **RESTART**                 | Subdiretório onde os arquivos que estão em processo de recepção são armazenados temporariamente.                         |
+| **FORMATO**                 | Subdiretório que contém as definições dos tipos de arquivos.                                                             |
+| **LOG**                     | Subdiretório onde serão armazenados os arquivos de eventos e registro das transferências.                                |
+| **SAIDA**\                  | Subdiretório onde os arquivos a serem enviados devem ser disponibilizados.                                               |
+| **BACKUP**                  | Subdiretório onde os arquivos enviados com sucesso serão armazenados se a opção de backup do usuário estiver habilitada. |
+| **PENDENTE**                | Subdiretório onde o arquivo de controle da transmissão será armazenado temporariamente.                                  |
+| **TEMP**                    | Subdiretório de uso geral.                                                                                               |
+
+
+Para **transmitir**, os arquivos devem ser disponibilizados no subdiretório **SAIDA** e os arquivos recebidos estarão no subdiretório **ENTRADA**.
 
