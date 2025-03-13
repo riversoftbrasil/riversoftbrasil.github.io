@@ -15,7 +15,7 @@ draft: false
 
 O programa de configuração do STCP OFTP Server foi instalado na pasta selecionada durante o processo de instalação e pode ser acessado através do menu **Iniciar**. Caso você não tenha alterado a pasta padrão, execute os seguintes passos:
 
-{{< icon "arrow-right-circle" >}} No menu **Iniciar**, **Todos os Programas**, selecione **Riversoft STCP Server Client**.
+{{< icon "arrow-right-circle" >}} No menu **Iniciar** pesquise por **Riversoft STCP OFTP Server Config**.
 
 ![](img/server-config.png)
 
@@ -39,12 +39,9 @@ O programa de configuração pode ser acessado também na pasta **Program** da a
 
 ## Informações gerais
 
-Na guia **Geral** preencha os campos com as informações descritas abaixo.
+Na guia **Geral** preencha os campos com as informações de identificação descritas abaixo.
 
 ![](img/guia-geral.png)
-
-> [!WARNING] Atenção
-> <span style="color:red;">*</span> Parâmetros obrigatórios
 
 | Campos                | Descrição                                                                                                                                                                                                                                                      |
 | :-------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -56,7 +53,10 @@ Na guia **Geral** preencha os campos com as informações descritas abaixo.
 | Confirmar             | Preencha este campo com a senha do usuário para ser validada.                                                                                                                                                                                                  |
 | Diretório de controle | Este campo informa o nome do diretório de instalação do STCP OFTP Server onde serão armazenadas as configurações dos usuários, logs e arquivos de depuração da comunicação. <br> Obs.: Para a versão STCP OFTP Server, este parâmetro não pode ser modificado. |
 | Diretório de dados    | Preencha este campo com o diretório, onde a estrutura de subdiretórios para envio e recepção dos arquivos de cada usuário deverá ser criada.  <br> Obs.: Esta configuração deve ser alterada antes da criação dos usuários.                                    |
-| Número de série*      | Preencha este campo com o número de série que é disponibilizado. <br>                                                                                                                                                                                          |
+| Número de série*      | Preencha este campo com o número de série que é disponibilizado pela Riversoft. <br>                                                                                                                                                                                          |
+
+> [!WARNING] Atenção
+> <span style="color:red;">*</span> Parâmetros obrigatórios
 ----
 
 
@@ -79,15 +79,15 @@ Nesta guia, você poderá adicionar, remover ou modificar os parâmetros das int
 | Protocolo                   | Descrição                                                                                                                                                                                                                                 |
 | :-------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | OFTP - TCP/IP               | Configura o STCP OFTP Server para utilizar o protocolo de comunicação TCP/IP.                                                                                                                                                             |
-| API DirectLink - HTTP/S     | Configura o STCP Server para comunicar com com a API do Directlink. <br>  <a href="/stcpdirectlink/api/" target="_blank">Acesse a seção de API do Directlink para mais informações</a> {{< icon "arrow-top-right-on-square" >}} &nbsp; |
-| SFTP DirectLink – TCP/IP    | Configura o STCP Server para se comunicar via protocolo SFTP com o Directlink.                                                                                                                                                            |
+| API DirectLink - HTTP/S     | Configura o STCP Server para comunicar com com a API do DirectLink. <br>  <a href="/stcpDirectLink/api/" target="_blank">Acesse a seção de API do DirectLink para mais informações</a> {{< icon "arrow-top-right-on-square" >}} &nbsp; |
+| SFTP DirectLink – TCP/IP    | Configura o STCP Server para se comunicar via protocolo SFTP com o DirectLink.                                                                                                                                                            |
 | Monitor – TCP/IP            | Habilita a rede para supervisão do STCP através do protocolo TCP/IP.                                                                                                                                                                      |
-| Monitor Directlink - TCP/IP | Habilita a rede para supervisão do Directlink através do protocolo TCP/IP.                                                                                                                                                                |
+| Monitor DirectLink - TCP/IP | Habilita a rede para supervisão do DirectLink através do protocolo TCP/IP.                                                                                                                                                                |
 ----
 
 ### Configurar uma porta TLS
 
-{{< icon "arrow-right-circle" >}}Acesse o configurador da aplicação: **Riversoft STCP OFTP Server Config**.
+{{< icon "arrow-right-circle" >}}Acesse o configurador do STCP Server: **Riversoft STCP OFTP Server Config**.
 
 {{< icon "arrow-right-circle" >}}Acesse a guia **Redes** para adicionar as interfaces que ficarão disponíveis para o serviço de transferência e adicione uma interface do serviço de transferência.
 
@@ -99,6 +99,10 @@ Nesta guia, você poderá adicionar, remover ou modificar os parâmetros das int
 
 ![](img/protocolo-oftp.png)
 
+{{< icon "arrow-right-circle" >}}Preencha as informações na guia **Geral** antes de prosseguir.
+
+![](img/guia-geral-porta-tls.png)
+
 {{< icon "arrow-right-circle" >}}Clique na guia **TCP/IP** e configure os parâmetros apresentados.
 
 ![](img/tcp-ip-redes.png)
@@ -107,7 +111,7 @@ Nesta guia, você poderá adicionar, remover ou modificar os parâmetros das int
 
 ![](img/tcp-odette-redes.png)
 
-{{< icon "arrow-right-circle" >}}Clique na guia **TLS**, configure os parâmetros apresentados abaixo e pressione o botão **OK** para finalizar.
+{{< icon "arrow-right-circle" >}}Agora, na guia **TLS**, configure os parâmetros apresentados abaixo e pressione o botão **OK** para finalizar.
 
 ![](img/redes-guia-tls.png)
 
@@ -121,13 +125,13 @@ Os seguintes procedimentos devem ser executados para a geração da chave privat
 
 {{< icon "arrow-right-circle" >}}Utilize o comando abaixo para gerar a chave privativa que será utilizada para criptografia da conexão.
 
-```pshell
+```shell
 genrsa -out[unidade_disco][diretorio_instalação_stcp]\keys\[nome_da_chave].key 1024
 ```
 
 Exemplo:
 
-```pshell
+```shell
 genrsa –out c:\stcpodt\keys\stcp_abcde.key 1024
 ```
 
@@ -135,7 +139,7 @@ genrsa –out c:\stcpodt\keys\stcp_abcde.key 1024
 
 {{< icon "arrow-right-circle" >}}O próximo passo é gerar o Certificado Digital associado à chave gerada anteriormente. Para isso, utilize o comando abaixo.
 
-```pshell
+```shell
 req –new –x509 –key [unidade_disco][diretório_instalação_stcp]\keys\[nome_da_chave].key –out [unidade_disco][diretório_instalação_stcp]\certs\[nome_do_certificado].cer –days 1825 –config ./openssl.cnf
 ```
 
@@ -224,7 +228,7 @@ req –new –x509 –key c:\stcpodt\keys\stcp_interprint.key –out c:\stcpodt\
 
 Em alguns casos, para se obter uma análise mais detalhada de problemas relacionados ao intercâmbio de arquivos, torna-se necessária a depuração dos processos de conexão e transferência, realizadas pelo *STCP OFTP Server*.
 
-Através da configuração do parâmetro *Nível de debug* é possível gerar um arquivo de depuração na pasta DEBUG (Ex. C:\STCPCLT\Debug) do diretório de instalação do STCP.
+Através da configuração do parâmetro *Nível de debug* é possível gerar um arquivo de depuração na pasta DEBUG (Ex. C:\STCPODT\Debug) do diretório de instalação do STCP.
 
 Acesse o STCP OFTP Server Config (Iniciar – Todos os programas – Riversoft STCP OFTP Server). Selecione o usuário desejado na guia Usuários e clique no botão Propriedades Na janela Propriedades do usuário, na guia do protocolo utilizado (Odette, SFTP, FTP, HTTP) altere o valor do campo "Nível de debug" para 63 (outros valores podem ser utilizados – vide Tabela abaixo). 
 
@@ -289,8 +293,49 @@ A tabela a seguir contém a relação entre o nível de detalhamento e as inform
 | Algoritmos                   | Preencha este campo com os nomes dos algoritmos suportados para assinatura digital, hashing e criptografia dos dados. <br> Obs.: Caso este campo não seja configurado, o protocolo TLS será selecionado automaticamente.                                                                                  |
 | Debug                        | Esta opção permite gerar um arquivo de depuração na pasta Debug do diretório de instalação do STCP.                                                                                                                                                                                                       |
 
-
 Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alterar as configurações.
+
+#### Configuração de Cipher Suites
+
+Para atender às necessidades de troca de informações com segurança através da internet, o STCP utiliza o protocolo TLS (Transport Layer Security), dando suporte à configuração de um conjunto de cifras (cipher suites) utilizados para garantir a autenticidade (Ex. Algoritmos RSA/ECDHE), confidencialidade (Ex. Algoritmos AES/AES128/AES256) e a integridade (Ex. Algoritmos SHA1/SHA256/SHA384).
+
+Os métodos e o conjunto de cifras utilizados devem ser definidos e ajustados com base nas políticas de segurança e preferências específicas da área de segurança de cada organização.
+
+> [!NOTE] Nota
+> A suíte de produtos Riversoft STCP está em constante atualização para cumprir com os mais recentes requisitos de segurança, assim como novas exigências no mercado de File-Transfer (EDI). Dessa forma, recomendamos também a atualização do produto.
+
+#### Atualização de bibliotecas
+
+a) Através do link enviado pela equipe de suporte da Riversoft, faça download do pacote de atualização do produto;
+b) Pare o serviço do STCP OFTP Server através do gerenciador de serviços do seu sistema operacional;
+c) Copie o conteúdo do arquivo compactado (ZIP) para a pasta Program do diretório de instalação do STCP OFTP Server (Ex. C:\STCPODT\Program), substituindo os arquivos atuais;
+d) Inicie ou reinicie o serviço do STCP OFTP Server através do gerenciador de serviços do sistema operacional;
+
+#### Configuração do Cipher Suítes
+
+a) Através do STCP OFTP Server Config (menu Iniciar – Todos os Programas – Riversoft STCP OFTP Server), na guia Redes, selecione a rede segura desejada (Ex. TCPIP_3) e clique no botão Propriedades;
+
+![](img/cipher-suites-01.png)
+
+b) Na janela Propriedades da rede, na guia SSL3/TLS (OpenSSL), será necessário alterar o parâmetro Algoritmos com o conjunto de cifras (cipher suite) escolhido (vide exemplo abaixo).
+
+**ECDHE-RSA-AES256-GCM-SHA384**
+
+![](img/cipher-suites-02.png)
+
+c) Reinicie o serviço do Riversoft STCP OFTP Server através do gerenciador de serviços do sistema operacional.
+
+#### Atualização da biblioteca apiossl.dll
+
+Em algumas situações, caso um cliente ou parceiro utilize uma versão do Riversoft STCP OFTP Client, anterior a 4.0.0-4061, o erro 10809 ou similar poderá ocorrer no momento da conexão.
+
+Nesse caso, também será necessária a atualização da biblioteca APIOSSL.DLL do lado dos clientes ou parceiros que utilizem o Riversoft STCP OFTP. Essa DLL está localizada na pasta Program do diretório de instalação do STCP OFTP Client (Ex. C:\STCPCLT\Program).
+
+a) Através do link enviado pela equipe de suporte da Riversoft, faça o download do pacote de atualização do produto;
+
+b) Copie o conteúdo do arquivo compactado (ZIP) para a pasta Program do diretório de instalação do STCP OFTP Client (Ex. C:\STCPCLT\Program), substituindo os arquivos atuais;
+
+c) Inicie uma nova conexão para validar a comunicação e troca de arquivos. 
 
 ### API DirectLink
 
@@ -349,8 +394,8 @@ Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alt
 | Campos                      | Descrição                                                                                                 |
 | :-------------------------- | :-------------------------------------------------------------------------------------------------------- |
 | URL de acesso               | Preencha este campo com a URL de requisição.                                                              |
-| Estáticas                   | Preencha este campo com o diretório (caminho completo) onde se encontram páginas estáticas do Directlink. |
-| Templates                   | Preencha este campo com o diretório (caminho completo) onde se encontram os templates do Directlink.      |
+| Estáticas                   | Preencha este campo com o diretório (caminho completo) onde se encontram páginas estáticas do DirectLink. |
+| Templates                   | Preencha este campo com o diretório (caminho completo) onde se encontram os templates do DirectLink.      |
 | Versão TLS                  | Preencha estes campos com a versão mínima e máxima escolhida do TLS.                                      |
 | Headers Customizados (json) | Preencha este campo com os headers customizados no formato json.                                          |
 | Log requisições HTTP/S      | Preencha este campo com o nome do arquivo (caminho completo) onde se encontra o log das requisções https. |
@@ -418,9 +463,9 @@ Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alt
 
 ### Rede de Monitoração - TCP/IP
 
-Na rede de monitoração, temos o [STCP Console](/stcpserver/utilizacao/#stcp-console), uma rede (Ex. **TCPIP_MON_1**) utilizando o protocolo _Monitor – TCP/IP_ deverá estar previamente criada e configurada, na guia _Redes_, do STCP OFTP Server.
+Na rede de monitoração, temos o [STCP Console](/stcpserver/guias/stcp-console/), uma rede (Ex: TCPIP_MON_1) utilizando o protocolo _Monitor – TCP/IP_ deverá estar previamente criada e configurada, na guia _Redes_, do STCP OFTP Server.
 
-Por padrão da aplicação, para este tipo de rede é utilizada a porta 33050, que poderá ser alterada conforme especificações e/ou características da infraestrutura utilizada.
+Por padrão da aplicação, para este tipo de rede é utilizada a porta **33050**, que poderá ser alterada conforme especificações e/ou características da infraestrutura utilizada.
 
 {{< icon "arrow-right-circle" >}}Acesse o STCP OFTP Server Config (Iniciar - Todos os programas - Riversoft STCP OFTP Server) e na guia _Redes_ clique no botão _Adicionar_ e selecione o protocolo _Monitor – TCP/IP_. Clique no botão _OK_ para confirmar.
 
@@ -430,11 +475,11 @@ Por padrão da aplicação, para este tipo de rede é utilizada a porta 33050, q
 
 ![](img/mon-02.png)
 
-{{< icon "arrow-right-circle" >}}Realize as configurações conforme imagem abaixo.
+{{< icon "arrow-right-circle" >}}Realize as suas configurações de TLS:
 
 ![](img/mon-03.png)
 
-{{< icon "arrow-right-circle" >}}Selecione a guia _Monitor_ e preencha os campos abaixo:
+{{< icon "arrow-right-circle" >}}Por fim, selecione a guia _Monitor_ e preencha os campos abaixo:
 
 ```{filename="Usuário de monitoração"}
 Usuário: stcpmon
@@ -452,74 +497,6 @@ Confirmar: stcpmon
 ![](img/mon-05.png)
 
 {{< icon "arrow-right-circle" >}}Após o reinício do serviço a rede de monitoração _TCPIP_MON_1_ já estará ativa.
-
-<!-- ### Monitor - TCP/IP
-
-{{< icon "arrow-right-circle" >}}Na guia **Geral**, configure as seguintes opções:
-
-![](img/monitor-01.png)
-
-| Campos      | Descrição                                                 |
-| :---------- | :-------------------------------------------------------- |
-| Nome        | Campo com o nome da interface de rede configurada.        |
-| Descrição   | Preencha este campo com a descrição da interface de rede. |
-| Desabilitar | Esta opção assinalada desabilita a interface de rede.     |
----
-
-{{< icon "arrow-right-circle" >}}Na guia **TCP/IP**, configure as seguintes opções:
-
-![](img/monitor-02.png)
-
-| Campos             | Descrição                                                                                                                                                                                                                                                                                                                                                                                             |
-| :----------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Endereço IP        | Preencha este campo com o endereço TCP/IP ou nome (DNS) da interface local para a qual o serviço STCP OFTP Server deve ser disponibilizado. <br> Obs.: Utilize o endereço 0.0.0.0 para habilitar o serviço sobre todas as interfaces de rede.                                                                                                                                                         |
-| Porta IP           | Preencha este campo com a porta IP da interface local para a qual o serviço STCP OFTP Server deve ser disponibilizado. <br> Obs.: A porta padrão do serviço OFTP é a 3305.                                                                                                                                                                                                                            |
-| Comunicação Segura | Esta opção assinalada habilita a utilização de criptografia na comunicação com o servidor STCP OFTP Server, você pode escolher entre a opção Nativa ou TLS. <br> Obs.: Antes de habilitar esta opção, leia atentamente o capítulo sobre Segurança.                                                                                                                                                    |
-| TLS                | Configura a comunicação segura com criptografia e certificação digital, com a utilização da padronização definida na RFC2246 (TLS). O TLS é comumente encontrado nos servidores de sites seguros (HTTPS) e oferece o maior grau de segurança atualmente disponível. <br> Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica. |
-| Compatibilidade    | Esta opção possibilita compatibilizar o STCP OFTP Server com diferentes produtos atualmente existentes no mercado.                                                                                                                                                                                                                                                                                    |
-| RFC2204            | Esta opção de compatibilidade permite a comunicação do STCP OFTP Server com outros produtos que seguem a recomendação RFC2204.                                                                                                                                                                                                                                                                        |
-| RFC1006/RFC1086    | Esta opção de compatibilidade permite a comunicação do STCP OFTP Server através de gateways de comunicação TCP-IP/X.25, que seguem a recomendação RFC1006/1086.                                                                                                                                                                                                                                       |
-| RVS*               | Esta opção de compatibilidade permite a comunicação do STCP OFTP Server com o produto RVS*. <br> Obs.: Esta opção não deve ser habilitada quando o servidor RVS* for uma versão do mainframe (grande porte).                                                                                                                                                                                          |
-| X.25/Router        | Esta opção de compatibilidade permite a comunicação do STCP OFTP Server através de roteadores com suporte à comunicação X.25 através de socket. <br> Obs.: Consulte a Riversoft sobre esta configuração se você estiver em dúvidas.                                                                                                                                                                   |
-| XFB*/SSL           | Habilita a compatibilidade do STCP com o XFB em conexões seguras SSL.                                                                                                                                                                                                                                                                                                                                 |
-| Compressão GZIP    | Esta opção assinalada habilita a utilização da compressão GZIP onthe-fly (durante a transferência).  <br> Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica.                                                                                                                                                                |
-----
-
-> [!WARNING] Aviso: 
-> *As marcas citadas são propriedade dos seus respectivos donos.
-
-{{< icon "arrow-right-circle" >}}Na guia **TLS**, configure as seguintes opções:
-
-![](img/monitor-03.png)
-
-| Campos                       | Descrição                                                                                                                                                                                                                                                                                                 |
-| :--------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Chave Privativa              | As opções deste grupo estão relacionadas às chaves pública e privada utilizadas pelo protocolo TLS para autenticação e criptografia dos dados. <br> Obs.: O arquivo da chave privativa deve estar no formato PKCS#12 e os certificados, no formato DER ou PEM.                                            |
-| Chave                        | Preencha este campo com o nome do arquivo (caminho completo) onde se encontra instalada a chave privativa.                                                                                                                                                                                                |
-| Certificado                  | Preencha este campo com o nome do arquivo (caminho completo) onde se encontra instalado o certificado digital (X509) associado à chave privativa.                                                                                                                                                         |
-| Senha                        | Preencha este campo com a senha que protege o arquivo de chave privativa.                                                                                                                                                                                                                                 |
-| Confirmar                    | Preencha este campo com a senha informada no campo senha para validação.                                                                                                                                                                                                                                  |
-| Certificados CA (Autoridade) | As opções deste grupo estão relacionadas aos certificados digitais das autoridades certificadoras (CA) que servirão para validar a autenticidade do certificado apresentado pelo servidor. <br> Obs.: O arquivo da chave privativa deve estar no formato PKCS#12 e os certificados no formato DER ou PEM. |
-| Arquivo                      | Preencha este campo com o nome do arquivo (caminho completo) onde se encontra instalado o certificado digital (X509) contendo a chave pública que assina o certificado apresentado pelo servidor.                                                                                                         |
-| Diretório                    | Preencha este campo com o nome do diretório (caminho completo) onde se encontram instalados os certificados digitais (X509) contendo a chave pública que assina o certificado apresentado pelo servidor.                                                                                                  |
-| Algoritmos                   | Preencha este campo com os nomes dos algoritmos suportados para assinatura digital, hashing e criptografia dos dados. <br> Obs.: Caso este campo não seja configurado, o protocolo TLS será selecionado automaticamente.                                                                                  |
-| Debug                        | Esta opção permite gerar um arquivo de depuração na pasta Debug do diretório de instalação do STCP.                                                                                                                                                                                                       |
-----
-
-{{< icon "arrow-right-circle" >}}Na guia **Monitor**, configure as seguintes opções:
-
-![](img/monitor-04.png)
-
-| Campos                   | Descrição                                                                                                                         |
-| :----------------------- | :-------------------------------------------------------------------------------------------------------------------------------- |
-| Usuário                  | Preencha este campo com o nome do usuário da rede de supervisão.                                                                  |
-| Senha                    | Preencha este campo com a senha do usuário que deve ser utilizada pelo rede de supervisão.                                        |
-| Confirmar                | Preencha este campo com a senha informada no campo senha para validação.                                                          |
-| Intervalo de requisições | Esta opção assinalada o tempo (em segundos) de intervalo entre as requisições feitas.                                             |
-| Executar comando externo | Esta opção habilita a execução de um comando externo dentro do STCP <br> Exemplo: ````notepad````Abrir bloco de notas no Windows. |
-----
-
-Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alterar as configurações. -->
 
 ### Rede de Monitoração - DirectLink
 
