@@ -59,7 +59,6 @@ Na guia **Geral** preencha os campos com as informações de identificação des
 > <span style="color:red;">*</span> Parâmetros obrigatórios
 ----
 
-
 ## Redes
 
 Nesta guia, você poderá adicionar, remover ou modificar os parâmetros das interfaces de redes controladas pelo serviço do STCP OFTP Server.
@@ -68,10 +67,9 @@ Nesta guia, você poderá adicionar, remover ou modificar os parâmetros das int
 
 ![](img/guia-redes.png)
 
-
 > O STCP OFTP Server oferece a capacidade de configurar múltiplas interfaces de redes com diferentes protocolos de comunicação, como TCP/IP, além da opção de implementar medidas de segurança adicionais através de protocolos como SFTP, HTTPS e TLS.
 
-> [!NOTE] Aviso: 
+> [!NOTE] Aviso:
 > As configurações de Redes somente serão utilizadas para as conexões entrantes (inbound).
 
 {{< icon "arrow-right-circle" >}}Selecione um serviço de rede e clique em **OK**.
@@ -79,11 +77,13 @@ Nesta guia, você poderá adicionar, remover ou modificar os parâmetros das int
 | Protocolo                   | Descrição                                                                                                                                                                                                                                 |
 | :-------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | OFTP - TCP/IP               | Configura o STCP OFTP Server para utilizar o protocolo de comunicação TCP/IP.                                                                                                                                                             |
-| API DirectLink - HTTP/S     | Configura o STCP Server para comunicar com com a API do DirectLink. <br>  <a href="/stcpDirectLink/api/" target="_blank">Acesse a seção de API do DirectLink para mais informações</a> {{< icon "arrow-top-right-on-square" >}} &nbsp; |
-| SFTP DirectLink – TCP/IP    | Configura o STCP Server para se comunicar via protocolo SFTP com o DirectLink.                                                                                                                                                            |
+| API DirectLink - HTTP/S*     | Configura o STCP Server para comunicar com com a API do DirectLink. |
+| SFTP DirectLink – TCP/IP    | Configura o STCP Server para se comunicar via protocolo SFTP com o DirectLink.                                                                                                                              |
 | Monitor – TCP/IP            | Habilita a rede para supervisão do STCP através do protocolo TCP/IP.                                                                                                                                                                      |
 | Monitor DirectLink - TCP/IP | Habilita a rede para supervisão do DirectLink através do protocolo TCP/IP.                                                                                                                                                                |
-----
+
+> [!NOTE] Nota:
+> <span style="color:red;">*</span> <a href="/stcpdirectlink/api/" target="_blank">Acesse a seção de API do DirectLink para mais informações</a> {{< icon "arrow-top-right-on-square" >}} &nbsp;
 
 ### Configurar uma porta TLS
 
@@ -115,7 +115,7 @@ Nesta guia, você poderá adicionar, remover ou modificar os parâmetros das int
 
 ![](img/redes-guia-tls.png)
 
-### Chave privativa e certificado 
+### Chave privativa e certificado
 
 Os seguintes procedimentos devem ser executados para a geração da chave privativa e do certificado digital a serem utilizados na comunicação TLS.
 
@@ -131,7 +131,7 @@ genrsa -out[unidade_disco][diretorio_instalação_stcp]\keys\[nome_da_chave].key
 
 Exemplo:
 
-```shell
+```bin
 genrsa –out c:\stcpodt\keys\stcp_abcde.key 1024
 ```
 
@@ -139,15 +139,16 @@ genrsa –out c:\stcpodt\keys\stcp_abcde.key 1024
 
 {{< icon "arrow-right-circle" >}}O próximo passo é gerar o Certificado Digital associado à chave gerada anteriormente. Para isso, utilize o comando abaixo.
 
-```shell
+```bin
 req –new –x509 –key [unidade_disco][diretório_instalação_stcp]\keys\[nome_da_chave].key –out [unidade_disco][diretório_instalação_stcp]\certs\[nome_do_certificado].cer –days 1825 –config ./openssl.cnf
 ```
 
 Exemplo:
 
-```pshell
+```bin
 req –new –x509 –key c:\stcpodt\keys\stcp_interprint.key –out c:\stcpodt\certs\stcp_abcde.cer –days 1825 –config ./openssl.cnf
 ```
+
 {{< icon "arrow-right-circle" >}}Preencha as informações solicitadas para concluir o processo de geração do Certificado Digital.
 
 ![](img/openssl-cert.png)
@@ -191,7 +192,7 @@ req –new –x509 –key c:\stcpodt\keys\stcp_interprint.key –out c:\stcpodt\
 
 ![](img/tcp_ip-configs.png)
 
-> [!WARNING] Aviso: 
+> [!WARNING] Aviso:
 > *As marcas citadas são propriedade dos seus respectivos donos.
 
 | Campos             | Descrição                                                                                                                                                                                                                                                                                                                                                                                                         |
@@ -208,7 +209,6 @@ req –new –x509 –key c:\stcpodt\keys\stcp_interprint.key –out c:\stcpodt\
 | XFB*/SSL           | Habilita a compatibilidade do STCP com o XFB em conexões seguras SSL.                                                                                                                                                                                                                                                                                                                                             |
 | Compressão GZIP    | Esta opção assinalada habilita a utilização da compressão GZIP onthe-fly (durante a transferência).  <br> Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica.                                                                                                                                                                            |
 
-
 {{< icon "arrow-right-circle" >}}Na guia **Odette**, configure as seguintes opções para o protocolo **OFTP: TCP/IP_1**.
 
 ![](img/odette.png)
@@ -223,20 +223,18 @@ req –new –x509 –key c:\stcpodt\keys\stcp_interprint.key –out c:\stcpodt\
 | Tempo máximo de inatividade | Preencha este campo com o tempo máximo de inatividade de comunicação entre o STCP OFTP Server e o computador remoto.                                                                                                                                                                                                            |
 | Nível de debug              | Preencha este campo com o nível de detalhamento das informações que serão gravadas no arquivo de depuração. Para obter no mesmo arquivo de depuração a informação dos diferentes níveis, preencha este campo com a soma dos níveis desejados. <br> Obs.: Veja na tabela abaixo os níveis de debug na configuração dos usuários. |
 
-
 #### Nível de Debug
 
 Em alguns casos, para se obter uma análise mais detalhada de problemas relacionados ao intercâmbio de arquivos, torna-se necessária a depuração dos processos de conexão e transferência, realizadas pelo *STCP OFTP Server*.
 
 Através da configuração do parâmetro *Nível de debug* é possível gerar um arquivo de depuração na pasta DEBUG (Ex. C:\STCPODT\Debug) do diretório de instalação do STCP.
 
-Acesse o STCP OFTP Server Config (Iniciar – Todos os programas – Riversoft STCP OFTP Server). Selecione o usuário desejado na guia Usuários e clique no botão Propriedades Na janela Propriedades do usuário, na guia do protocolo utilizado (Odette, SFTP, FTP, HTTP) altere o valor do campo "Nível de debug" para 63 (outros valores podem ser utilizados – vide Tabela abaixo). 
+Acesse o STCP OFTP Server Config (Iniciar – Todos os programas – Riversoft STCP OFTP Server). Selecione o usuário desejado na guia Usuários e clique no botão Propriedades Na janela Propriedades do usuário, na guia do protocolo utilizado (Odette, SFTP, FTP, HTTP) altere o valor do campo "Nível de debug" para 63 (outros valores podem ser utilizados – vide Tabela abaixo).
 
 Após a alteração, disponibilize um arquivo de teste na pasta SAIDA do usuário, que apresenta o erro, e inicie uma nova conexão. O arquivo de debug será gerado no diretório DEBUG (Ex. C:\STCPODT\Debug).
 
-> [!NOTE] Nota: 
+> [!NOTE] Nota:
 > Uma vez gerado o erro, você pode voltar o nível de debug para o seu valor padrão (0).
-
 
 ![](img/img-01.png)
 
@@ -274,7 +272,6 @@ A tabela a seguir contém a relação entre o nível de detalhamento e as inform
 
 > [!WARNING] Aviso
 > Somente habilite ou altere esta opção quando for solicitado por uma equipe especializada.
-
 
 {{< icon "arrow-right-circle" >}}Na guia **TLS**, configure as seguintes opções para o protocolo **OFTP – TCP/IP**.
 
@@ -320,7 +317,7 @@ a) Através do STCP OFTP Server Config (menu Iniciar – Todos os Programas – 
 
 ![](img/cipher-suites-01.png)
 
-b) Na janela Propriedades da rede, na guia SSL3/TLS (OpenSSL), será necessário alterar o parâmetro Algoritmos com o conjunto de cifras (cipher suite) escolhido (vide exemplo abaixo).
+b) Na janela Propriedades da rede, na guia TLS, será necessário alterar o parâmetro Algoritmos com o conjunto de cifras (cipher suite) escolhido (vide exemplo abaixo).
 
 **ECDHE-RSA-AES256-GCM-SHA384**
 
@@ -330,7 +327,7 @@ c) Reinicie o serviço do Riversoft STCP OFTP Server através do gerenciador de 
 
 #### Atualização da biblioteca apiossl.dll
 
-Em algumas situações, caso um cliente ou parceiro utilize uma versão do Riversoft STCP OFTP Client, anterior a 4.0.0-4061, o erro 10809 ou similar poderá ocorrer no momento da conexão.
+Em algumas situações, caso um cliente ou parceiro utilize uma versão do _Riversoft STCP OFTP Client_, anterior a 4.0.0, o erro **10809** ou similar poderá ocorrer no momento da conexão.
 
 Nesse caso, também será necessária a atualização da biblioteca APIOSSL.DLL do lado dos clientes ou parceiros que utilizem o Riversoft STCP OFTP. Essa DLL está localizada na pasta Program do diretório de instalação do STCP OFTP Client (Ex. C:\STCPCLT\Program).
 
@@ -338,7 +335,7 @@ a) Através do link enviado pela equipe de suporte da Riversoft, faça o downloa
 
 b) Copie o conteúdo do arquivo compactado (ZIP) para a pasta Program do diretório de instalação do STCP OFTP Client (Ex. C:\STCPCLT\Program), substituindo os arquivos atuais;
 
-c) Inicie uma nova conexão para validar a comunicação e troca de arquivos. 
+c) Inicie uma nova conexão para validar a comunicação e troca de arquivos.
 
 ### API DirectLink
 
@@ -370,7 +367,7 @@ c) Inicie uma nova conexão para validar a comunicação e troca de arquivos.
 | XFB*/SSL           | Habilita a compatibilidade do STCP com o XFB em conexões seguras SSL.                                                                                                                                                                                                                                                                                                                                             |
 | Compressão GZIP    | Esta opção assinalada habilita a utilização da compressão GZIP onthe-fly (durante a transferência).  <br> Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica.                                                                                                                                                                            |
 
-> [!WARNING] Aviso: 
+> [!WARNING] Aviso:
 > *As marcas citadas são propriedade dos seus respectivos donos.
 
 {{< icon "arrow-right-circle" >}}Na guia **TLS**, configure as seguintes opções:
@@ -389,6 +386,7 @@ c) Inicie uma nova conexão para validar a comunicação e troca de arquivos.
 | Diretório                    | Preencha este campo com o nome do diretório (caminho completo) onde se encontram instalados os certificados digitais (X509) contendo a chave pública que assina o certificado apresentado pelo servidor.                                                                                                  |
 | Algoritmos                   | Preencha este campo com os nomes dos algoritmos suportados para assinatura digital, hashing e criptografia dos dados. <br> Obs.: Caso este campo não seja configurado, o protocolo TLS será selecionado automaticamente.                                                                                  |
 | Debug                        | Esta opção permite gerar um arquivo de depuração na pasta Debug do diretório de instalação do STCP.                                                                                                                                                                                                       |
+
 ----
 {{< icon "arrow-right-circle" >}}Na guia **API**, configure as seguintes opções:
 
@@ -403,7 +401,6 @@ c) Inicie uma nova conexão para validar a comunicação e troca de arquivos.
 | Headers Customizados (json) | Preencha este campo com os headers customizados no formato json.                                          |
 | Log requisições HTTP/S      | Preencha este campo com o nome do arquivo (caminho completo) onde se encontra o log das requisções https. |
 
-
 Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alterar as configurações.
 
 ### SFTP DirectLink
@@ -417,6 +414,7 @@ Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alt
 | Nome        | Campo com o nome da interface de rede configurada.        |
 | Descrição   | Preencha este campo com a descrição da interface de rede. |
 | Desabilitar | Esta opção assinalada desabilita a interface de rede.     |
+
 -----
 
 {{< icon "arrow-right-circle" >}}Na guia **TCP/IP**, configure as seguintes opções:
@@ -436,9 +434,10 @@ Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alt
 | X.25/Router        | Esta opção de compatibilidade permite a comunicação do STCP OFTP Server através de roteadores com suporte à comunicação X.25 através de socket. <br> Obs.: Consulte a Riversoft sobre esta configuração se você estiver em dúvidas.                                                                                                                                                                   |
 | XFB*/SSL           | Habilita a compatibilidade do STCP com o XFB em conexões seguras SSL.                                                                                                                                                                                                                                                                                                                                 |
 | Compressão GZIP    | Esta opção assinalada habilita a utilização da compressão GZIP onthe-fly (durante a transferência).  <br> Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica.                                                                                                                                                                |
+
 ----
 
-> [!WARNING] Aviso: 
+> [!WARNING] Aviso:
 > *As marcas citadas são propriedade dos seus respectivos donos.
 
 {{< icon "arrow-right-circle" >}}Na guia **SSH/SFTP**, configure as seguintes opções:
@@ -460,21 +459,22 @@ Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alt
 | Permissão de arquivo  (padrão) | Preencha este campo com a permissão dos arquivos (Read, Write, Execute).                                         |
 | Tempo de inatividade           | Preencha este campo com o tempo (em segundos) de inatividade da conexão.                                         |
 | Nível de debug                 | Preencha este campo com o nível de detalhamento das informações que serão gravadas no arquivo de depuração.      |
+
 ----
 
 Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alterar as configurações.
 
-### Rede de Monitoração - TCP/IP
+### Monitor - TCP/IP
 
-Na rede de monitoração, temos o [STCP Console](/stcpserver/guias/stcp-console/), uma rede (Ex: TCPIP_MON_1) utilizando o protocolo _Monitor – TCP/IP_ deverá estar previamente criada e configurada, na guia _Redes_, do STCP OFTP Server.
+Na rede de monitoração, temos o [STCP Console](/stcpserver/guias/stcp-console/), com uma rede (Ex: TCPIP_MON_1) utilizando o protocolo *Monitor – TCP/IP* que deverá estar previamente criada e configurada, na guia *Redes*, do STCP OFTP Server.
 
 Por padrão da aplicação, para este tipo de rede é utilizada a porta **33050**, que poderá ser alterada conforme especificações e/ou características da infraestrutura utilizada.
 
-{{< icon "arrow-right-circle" >}}Acesse o STCP OFTP Server Config (Iniciar - Todos os programas - Riversoft STCP OFTP Server) e na guia _Redes_ clique no botão _Adicionar_ e selecione o protocolo _Monitor – TCP/IP_. Clique no botão _OK_ para confirmar.
+{{< icon "arrow-right-circle" >}}Acesse o STCP OFTP Server Config (Iniciar - Todos os programas - Riversoft STCP OFTP Server) e na guia *Redes* clique no botão *Adicionar* e selecione o protocolo *Monitor – TCP/IP*. Clique no botão *OK* para confirmar.
 
 ![](img/mon-01.png)
 
-{{< icon "arrow-right-circle" >}}Na janela _Propriedades da rede para Monitor_, preencha o campo descrição e selecione a guia _TCP/IP_.
+{{< icon "arrow-right-circle" >}}Na janela *Propriedades da rede para Monitor*, preencha o campo descrição e selecione a guia *TCP/IP*.
 
 ![](img/mon-02.png)
 
@@ -482,26 +482,27 @@ Por padrão da aplicação, para este tipo de rede é utilizada a porta **33050*
 
 ![](img/mon-03.png)
 
-{{< icon "arrow-right-circle" >}}Por fim, selecione a guia _Monitor_ e preencha os campos abaixo:
+{{< icon "arrow-right-circle" >}}Por fim, selecione a guia *Monitor* e preencha os campos abaixo:
 
 ```{filename="Usuário de monitoração"}
 Usuário: stcpmon
 Senha: stcpmon
 Confirmar: stcpmon
 ```
+
 ![](img/mon-04.png)
 
-{{< icon "arrow-right-circle" >}}Clique no botão _OK_ para salvar as alterações.
+{{< icon "arrow-right-circle" >}}Clique no botão *OK* para salvar as alterações.
 
-{{< icon "arrow-right-circle" >}}Clique no botão _OK_ novamente para finalizar o configurador.
+{{< icon "arrow-right-circle" >}}Clique no botão *OK* novamente para finalizar o configurador.
 
-{{< icon "arrow-right-circle" >}}Acesse o **STCP OFTP Server Manager** (_Iniciar - Todos os programas - Riversoft STCP OFTP Server_), selecione o serviço do _STCP OFTP Server_ e clique no botão _Reiniciar_.
+{{< icon "arrow-right-circle" >}}Acesse o **STCP OFTP Server Manager** (*Iniciar - Todos os programas - Riversoft STCP OFTP Server*), selecione o serviço do *STCP OFTP Server* e clique no botão *Reiniciar*.
 
 ![](img/mon-05.png)
 
-{{< icon "arrow-right-circle" >}}Após o reinício do serviço a rede de monitoração _TCPIP_MON_1_ já estará ativa.
+{{< icon "arrow-right-circle" >}}Após o reinício do serviço a rede de monitoração *TCPIP_MON_1* já estará ativa.
 
-### Rede de Monitoração - DirectLink
+### Monitor - DirectLink
 
 {{< icon "arrow-right-circle" >}}Na guia **Geral**, configure as seguintes opções:
 
@@ -512,6 +513,7 @@ Confirmar: stcpmon
 | Nome        | Campo com o nome da interface de rede configurada.        |
 | Descrição   | Preencha este campo com a descrição da interface de rede. |
 | Desabilitar | Esta opção assinalada desabilita a interface de rede.     |
+
 ---
 
 {{< icon "arrow-right-circle" >}}Na guia **TCP/IP**, configure as seguintes opções:
@@ -531,9 +533,10 @@ Confirmar: stcpmon
 | X.25/Router        | Esta opção de compatibilidade permite a comunicação do STCP OFTP Server através de roteadores com suporte à comunicação X.25 através de socket. <br> Obs.: Consulte a Riversoft sobre esta configuração se você estiver em dúvidas.                                                                                                                                                                   |
 | XFB*/SSL           | Habilita a compatibilidade do STCP com o XFB em conexões seguras SSL.                                                                                                                                                                                                                                                                                                                                 |
 | Compressão GZIP    | Esta opção assinalada habilita a utilização da compressão GZIP onthe-fly (durante a transferência).  <br> Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica.                                                                                                                                                                |
+
 ----
 
-> [!WARNING] Aviso: 
+> [!WARNING] Aviso:
 > *As marcas citadas são propriedade dos seus respectivos donos.
 
 {{< icon "arrow-right-circle" >}}Na guia **TLS**, configure as seguintes opções:
@@ -552,6 +555,7 @@ Confirmar: stcpmon
 | Diretório                    | Preencha este campo com o nome do diretório (caminho completo) onde se encontram instalados os certificados digitais (X509) contendo a chave pública que assina o certificado apresentado pelo servidor.                                                                                                  |
 | Algoritmos                   | Preencha este campo com os nomes dos algoritmos suportados para assinatura digital, hashing e criptografia dos dados. <br> Obs.: Caso este campo não seja configurado, o protocolo TLS será selecionado automaticamente.                                                                                  |
 | Debug                        | Esta opção permite gerar um arquivo de depuração na pasta Debug do diretório de instalação do STCP.                                                                                                                                                                                                       |
+
 ----
 
 {{< icon "arrow-right-circle" >}}Na guia **Monitor**, configure as seguintes opções:
@@ -565,6 +569,7 @@ Confirmar: stcpmon
 | Confirmar                | Preencha este campo com a senha informada no campo senha para validação.                       |
 | Intervalo de requisições | Esta opção assinalada o tempo (em segundos) de intervalo entre as requisições feitas.          |
 | Executar comando externo | Preencha este campo com o nome de um comando externo (programa ou bat) que deve ser executado. |
+
 ----
 
 Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alterar as configurações.
@@ -577,9 +582,8 @@ Na guia **Usuários**, você poderá adicionar, remover, modificar ou copiar os 
 
 ![](img/usuarios.png)
 
-> [!WARNING] Aviso: 
+> [!WARNING] Aviso:
 > Para um novo usuário adicionado, automaticamente, será criada uma estrutura de subdiretórios [(veja a estrutura de diretórios)](/stcpserver/instalacao/#estrutura-dos-diretórios) para o envio e recepção dos arquivos, dentro do **Diretório de Dados** que foi previamente configurado na guia **Geral**.
-
 
 <br>
 
@@ -629,12 +633,13 @@ Selecione a opção de **Protocolo** desejada e clique em **Configurar**.
 | SFTP – TCP/IP |               Configura o STCP OFTP Server para utilizar o protocolo de comunicação SFTP.               |
 | S3 – AWS      |            Configura o STCP OFTP Server para utilizar o protocolo de comunicação S3, da AWS.            |
 | Blob – Azure  |        Configura o STCP OFTP Server para utilizar o protocolo de comunicação Blob, da Microsoft.        |
+
 ---
 
-> [!TIP] Dica: 
+> [!TIP] Dica:
 > Clique [aqui](https://docs.aws.amazon.com/pt_br/AmazonS3/latest/userguide/Welcome.html) para mais informações sobre o **Amazon Simple Storage Service (S3)**.
 
-> [!TIP] Dica: 
+> [!TIP] Dica:
 > Clique [aqui](https://azure.microsoft.com/pt-br/products/storage/blobs) para mais informações sobre o **Armazenamento de Blobs do Azure**.
 
 #### Protocolo OFTP
@@ -643,7 +648,7 @@ Selecione a opção de **Protocolo** desejada e clique em **Configurar**.
 
 ![](img/oftp-usuario.png)
 
-> [!WARNING] Aviso: 
+> [!WARNING] Aviso:
 > *As marcas citadas são propriedade dos seus respectivos donos.
 
 | Campos             | Descrição                                                                                                                                                                                                                                                                                                                                                                                                         |
@@ -723,6 +728,7 @@ Na guia **Avançadas**, configure as seguintes opções.
 | AUTH SSL                 | Habilita o envio de um comando explícito para o servidor FTP a fim de utilizar a segurança SSL.                                                                                                                                                                                                                                                                                                                   |
 | Tamanho máximo do buffer | Preencha este campo com o tamanho máximo dos blocos de dados que serão transferidos. O intervalo válido é de 1 até 65535.                                                                                                                                                                                                                                                                                         |
 | FTP Passivo         | Modo de conexão com um servidor FTP que permite que o cliente inicie a transferência de dados.                                                                                                                                                                                                                                                                                                               |
+
 ------------------
 
 {{< icon "arrow-right-circle" >}}Na guia **Proxy**, configure as seguintes opções:
@@ -780,7 +786,7 @@ Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alt
 | :----------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Endereço IP              | Preencha este campo com o endereço TCP/IP ou nome (DNS) do servidor STCP OFTP Server.                                                                                                                                                                                                                                                                                                                             |
 | Porta IP                 | Preencha este campo com a porta TCP/IP do servidor STCP OFTP Server.                                                                                                                                                                                                                                                                                                                                              |
-| SSL3                     | Configura a comunicação segura com criptografia e certificação digital, com a utilização da padronização definida na RFC2246 (TLS1/SSL3). O TLS1/SSL3 é comumente encontrado nos servidores de sites seguros (HTTPS) e oferece o maior grau de segurança atualmente disponível. <br> Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica. |
+| TLS                     | Configura a comunicação segura com criptografia e certificação digital, com a utilização da padronização definida na RFC2246 (TLS1/SSL3). O TLS1/SSL3 é comumente encontrado nos servidores de sites seguros (HTTPS) e oferece o maior grau de segurança atualmente disponível. <br> Obs.: Antes de habilitar esta opção, confirme se o servidor com o qual você deseja se comunicar suporta esta característica. |
 | Tamanho máximo do buffer | Preencha este campo com o tamanho máximo dos blocos de dados que serão transferidos. O intervalo válido é de 1 até 65535.                                                                                                                                                                                                                                                                                         |
 
 {{< icon "arrow-right-circle" >}}Na guia **Proxy**, configure as seguintes opções.
@@ -822,7 +828,6 @@ Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alt
 | Diretório remoto     | Configura o diretório remoto para onde se deseja subir o arquivo.                                                          |
 | Diretório temporário | Configura o diretório temporário, que garante a integridade dos arquivos durante o upload.                                 |
 | Extensão temporária  | Configura uma extensão temporária para arquivo no servidor remoto (SFTP).                                                  |
-
 
 ### Odette
 
@@ -868,7 +873,7 @@ Nesta seção, configure as seguintes opções.
 | Modo de transferência       | Esta opção permite selecionar o modo de transferência que será utilizado para comunicação com o servidor, são eles: Both (transmissão e recepção de arquivos), Sender (somente transmissão de arquivos) e Receiver (somente recepção de arquivos).                                                                       |
 | Tamanho máximo do buffer    | Preencha este campo com o tamanho máximo dos blocos de dados que serão transferidos. O intervalo válido é de 1 até 65535                                                                                                                                                                                                 |
 | Tempo máximo de inatividade | Preencha este campo com o tempo máximo de inatividade de comunicação entre o STCP OFTP Server e o computador remoto.                                                                                                                                                                                                     |
-| Nível de Debug              | Preencha este campo com o nível de detalhamento das informações que serão gravadas no arquivo de depuração. Para obter no mesmo arquivo de depuração a informação dos diferentes níveis, preencha este campo com a soma dos níveis desejados. <br> Consulte a tabelas dos [Níveis de Debug](/stcpserver/configuracao/#nível-de-debug) |
+<!-- | Nível de Debug              | Preencha este campo com o nível de detalhamento das informações que serão gravadas no arquivo de depuração. Para obter no mesmo arquivo de depuração a informação dos diferentes níveis, preencha este campo com a soma dos níveis desejados. <br> Consulte a tabelas dos [Níveis de Debug](/stcpserver/configuracao/#nível-de-debug) | -->
 
 ### SFTP
 
@@ -885,7 +890,7 @@ Nesta seção, configure as seguintes opções.
 | Modo de transferência       | Esta opção permite selecionar o modo de transferência que será utilizado para comunicação com o servidor, são eles: Both (transmissão e recepção de arquivos), Sender (somente transmissão de arquivos) e Receiver (somente recepção de arquivos).                                                                  |
 | Tamanho máximo do buffer    | Preencha este campo com o tamanho máximo dos blocos de dados que serão transferidos. O intervalo válido é de 1 até 65535.                                                                                                                                                                                           |
 | Tempo máximo de inatividade | Preencha este campo com o tempo máximo de inatividade de comunicação entre o STCP OFTP Server e o computador remoto.                                                                                                                                                                                                |
-| Nível de Debug              | Preencha este campo com o nível de detalhamento das informações que serão gravadas no arquivo de depuração. Para obter no mesmo arquivo de depuração a informação dos diferentes níveis, preencha este campo com a soma dos níveis desejados. <br> Consulte a tabelas dos [Níveis de Debug](/stcpserver/configuracao/#nível-de-debug) |
+| Nível de Debug              | Preencha este campo com o nível de detalhamento das informações que serão gravadas no arquivo de depuração. Para obter no mesmo arquivo de depuração a informação dos diferentes níveis, preencha este campo com a soma dos níveis desejados. |
 
 ### S3
 
@@ -902,7 +907,7 @@ Nesta seção, configure as seguintes opções:
 | Modo de transferência                 | Esta opção permite selecionar o modo de transferência que será utilizado para comunicação com o servidor, são eles: **Both** (transmissão e recepção de arquivos), **Sender** (somente transmissão de arquivos) e **Receiver** (somente recepção de arquivos).                                                                                              |
 | Tamanho máximo do buffer              | Preencha este campo com o tamanho máximo dos blocos de dados que serão transferidos. O intervalo válido é de 1 até 65535.                                                                                                                                                                                                                                   |
 | Tempo máximo de inatividade           | Preencha este campo com o tempo máximo de inatividade de comunicação entre o STCP OFTP Server e o servidor remoto.                                                                                                                                                                                                                                          |
-| Nível de Debug                        | Preencha este campo com o nível de detalhamento das informações que serão gravadas no arquivo de depuração. Para obter no mesmo arquivo de depuração a informação dos diferentes níveis, preencha este campo com a soma dos níveis desejados. <br> Obs.: Veja a <a href="/stcpserver/debug/"> tabela dos níveis de debug </a> na configuração dos usuários. |
+| Nível de Debug                        | Preencha este campo com o nível de detalhamento das informações que serão gravadas no arquivo de depuração. Para obter no mesmo arquivo de depuração a informação dos diferentes níveis, preencha este campo com a soma dos níveis desejados. |
 
 ### AzBlob
 
@@ -919,7 +924,7 @@ Nesta seção, configure as seguintes opções:
 | Modo de transferência       | Esta opção permite selecionar o modo de transferência que será utilizado para comunicação com o servidor, são eles: **Both** (transmissão e recepção de arquivos), **Sender** (somente transmissão de arquivos) e **Receiver** (somente recepção de arquivos).                                                                                                    |
 | Tamanho máximo do buffer    | Preencha este campo com o tamanho máximo dos blocos de dados que serão transferidos. O intervalo válido é de 1 até 65535.                                                                                                                                                                                                                                         |
 | Tempo máximo de inatividade | Preencha este campo com o tempo máximo de inatividade de comunicação entre o STCP OFTP Server e o servidor remoto.                                                                                                                                                                                                                                                |
-| Nível de Debug              | Preencha este campo com o nível de detalhamento das informações que serão gravadas no arquivo de depuração. Para obter no mesmo arquivo de depuração a informação dos diferentes níveis, preencha este campo com a soma dos níveis desejados. <br> Obs.: Obs.: Veja a <a href="/stcpserver/debug/"> tabela dos níveis de debug </a> na configuração dos usuários. |
+| Nível de Debug              | Preencha este campo com o nível de detalhamento das informações que serão gravadas no arquivo de depuração. Para obter no mesmo arquivo de depuração a informação dos diferentes níveis, preencha este campo com a soma dos níveis desejados. |
 
 ### Avançadas I
 
@@ -1060,8 +1065,7 @@ A utilização do timestamp externo do arquivo tem o seguinte formato:
 
 | Campos                                 | Descrição                                                                                                                                                 |
 | :------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Marcar no arquivo recebido             | Esta opção permite habilitar/desabilitar a inserção da data e hora                                                                                        |
-| com data e hora local os atributos de: | local no arquivo recebido para os atributos correspondentes. <br> Obs.: A data e a hora do protocolo ODETTE serão utilizadas nos atributos desabilitados. |
+| Marcar no arquivo recebido com data e hora local os atributos de: | Esta opção permite habilitar/desabilitar a inserção da data e hora com data e hora local no arquivo recebido para os atributos correspondentes. <br> Obs.: A data e a hora do protocolo ODETTE serão utilizadas nos atributos desabilitados.  |
 | Ler o arquivo                          | Preencha este campo com o nome de um programa externo que será executado para realizar a leitura do arquivo.                                              |
 | Gravar o arquivo                       | Preencha este campo com o nome de um programa externo que será executado para realizar a gravação do arquivo.                                             |
 
@@ -1144,7 +1148,6 @@ Você poderá adicionar, remover, modificar ou copiar os parâmetros de configur
 
 Pressione o botão **OK** para gravar as alterações ou **Cancelar** para retornar sem gravar as alterações.
 
-
 ## Avançadas
 
 {{< icon "arrow-right-circle" >}}Preencha os campos com as informações descritas.
@@ -1202,7 +1205,6 @@ Pressione o botão **OK** para gravar as alterações ou **Cancelar** para retor
 
 > Obs.: Os eventos associados a um nível inferior ou igual ao selecionado serão processados.
 
-
 Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alterar as configurações.
 
 {{< icon "arrow-right-circle" >}}Clique em **Controle de Autenticação**
@@ -1222,11 +1224,11 @@ Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alt
 
 ![](img/avancadas-controle-autenticacao-sowindows.png)
 
-
 | Campos  | Descrição                        |
 | :------ | :------------------------------- |
 | Domínio | Domínio do sistema operacional.  |
 | Prefixo | Prefixo para mascarar o usuário. |
+
 -----
 
 {{< icon "arrow-right-circle" >}}Na guia **STCP**, habilite ou desabilite as seguintes opções.
@@ -1252,6 +1254,7 @@ Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alt
 | Campos                  | Descrição                                                             |
 | :---------------------- | --------------------------------------------------------------------- |
 | Arquivo de configuração | Parâmetro que informa as configurações para autenticação Securld/RSA. |
+
 ------
 
 {{< icon "arrow-right-circle" >}}Na guia **LDAP**, preencha o seguinte campo.
@@ -1277,7 +1280,3 @@ Após adicionar corretamente o Usuário, é necessário configurar os **Tipos de
 
 > [!WARNING] Observação
 > Ao pressionar o botão **OK**, somente as configurações da guia **Geral** e **Avançadas** serão gravadas.
-
-
-
-

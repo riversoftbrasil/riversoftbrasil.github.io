@@ -36,7 +36,7 @@ $OFDESTINATION| Variável que contém o destino do arquivo ODETTE.
 
 ## Definição do valor padrão do parâmetro
 
-Executar comando para:| Valor padrão do parâmetro.
+Executar comando para:| Valor padrão do parâmetro
 :---                  | :---
 **Início da conexão** | Nome do diretório de dados do usuário.
 **Fim da conexão**    | Nome do diretório de dados do usuário.

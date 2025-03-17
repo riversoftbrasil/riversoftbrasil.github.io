@@ -40,14 +40,13 @@ dir *.ini
 
 ## Migração Diretórios
 
-A estrutura de pastas (Exemplo abaixo **D:\STCPODT\work\NOME-USUARIO**), configurada no diretório de **Dados** do STCP OFTP, também deverá ser copiada do **servidor atual** para o **novo**. Cada usuário criado (guia Usuários) possui a sua própria estrutura de pastas.
+A estrutura de pastas (Como no exemplo abaixo: **D:\STCPODT\work\NOME-USUARIO**), configurada no diretório de **Dados** do STCP OFTP, também deverá ser copiada do **servidor atual** para o **novo**. Cada usuário criado (guia Usuários) possui a sua própria estrutura de pastas.
 
 ![](./img/upd-10.png)
 
 > [!NOTE] Nota: 
 > Dependendo das configurações atuais do ambiente em questão, outros arquivos como: regras de roteamento, script VBS, arquivos de lote, dentre outros, deverão ser copiados dos seus respectivos diretórios para o novo servidor.
 
----
 ## Serviço
 
 {{< icon "arrow-right-circle" >}}Acesse o Riversoft STCP OFTP Server Manager com privilégios de Administrador (_Ex: D:\STCPODT\Program\Riversoft STCP OFTP Server Manager_) e pare o serviço da aplicação.
@@ -100,4 +99,4 @@ Certifique-se de que o campo _Tipo_, do painel _Autenticação_, esteja com o va
 
 ![](./img/upd-20.png)
 
-{{< icon "arrow-right-circle" >}}Clique no botão _OK_ para fechar o STCP OFTP Server Config. O próximo passo é a criação do <a href="/stcpserver/utilizacao/#serviço-do-stcp-oftp-server">serviço do STCP OFTP Server no Windows</a>
+{{< icon "arrow-right-circle" >}}Clique no botão _OK_ para fechar o STCP OFTP Server Config. O próximo passo é a criação do serviço do STCP OFTP Server no Windows.

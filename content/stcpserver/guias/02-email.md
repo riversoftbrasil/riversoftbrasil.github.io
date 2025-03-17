@@ -62,7 +62,7 @@ cscript //B C:\STCPODT\Program\STCPEMAILEVT.VBS NOME-SERVIDOR "
 
 ![](./img/email-04.png)
 
-Após a execução destes procedimentos, clique no botão OK para salvar as alterações e [reinicie o serviço do Riversoft STCP OFTP Server](/stcpserver/utilizacao/#serviço-do-stcp-oftp-server) para que as estas sejam ativadas.
+Após a execução destes procedimentos, clique no botão OK para salvar as alterações e reinicie o serviço do Riversoft STCP OFTP Server para que as alterações sejam ativadas.
 
 Uma vez realizadas as configurações com êxito, um e-mail será encaminhado para os destinatários informados no script sempre que um erro ocorrer no processo de transferência de arquivos.
 
@@ -80,7 +80,7 @@ Tal procedimento pode ser realizado através do script **stcpemail.vbs**, existe
 
 {{< icon "arrow-right-circle" >}}Para realizar a validação do funcionamento do script e do servidor SMTP, acesse o *Prompt de Comando* e digite o comando abaixo. Caso nenhuma mensagem de erro seja apresentada, verifique se os e-mails foram recebidos nas contas indicadas.
 
-```vb
+```
 cscript //B C:\STCPODT\Program\ stcpemail.vbs de@dominio.com.br para@dominio.com.br nome-arquivo-teste
 ```
 ![](./img/email-06.png)

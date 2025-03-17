@@ -83,7 +83,7 @@ DD: Dia em dois dígitos.
 
 O procedimento para ativar a geração de logs de transferência e auditoria em arquivo texto (JSON) é bastante simples. Siga os passos abaixo para ativar a funcionalidade.
 
-1. Pare o [serviço](/stcpserver/utilizacao/#serviço-do-stcp-oftp-server) do STCP OFTP Server. 
+1. Pare o serviço do STCP OFTP Server. 
 2. Abra o arquivo de configuração CTCP.INI (Ex. C:\STCPODT\CTCP.INI).
 3. Na seção *[Log]*, adicione ou edite o parâmetro:
 
@@ -100,7 +100,7 @@ AuditTxtEnabled=1
 A estrutura do arquivo criado segue o modelo descrito abaixo, contendo informações
 detalhadas sobre os eventos de transferência e auditoria:
 
-| **CHAVE**   | **TIPO**  | **COMENTÁRIOS**                                                                                      |
+| **CHAVE**   | **TIPO**  | **DESCRIÇÃO**                                                                                      |
 |-------------|-----------|----------------------------------------------------------------------------------------------------|
 | **DATE**    | STRING    | Data e hora da ocorrência                                                                          |
 | **EVENT**   | INTEGER   | Código da operação realizada:                                                                      |
@@ -121,7 +121,7 @@ detalhadas sobre os eventos de transferência e auditoria:
 
 <br>
 
-| **Chave**             | **Tipo**    | **Comentários**                                                                                  |
+| **Chave**             | **Tipo**    | **Descrição**                                                                                  |
 |-----------------------|-------------|--------------------------------------------------------------------------------------------------|
 | **RESULT**            | INTEGER     | Código de retorno do processo (Return Code): 0 - Sucesso                                                      |
 | **FILE_LENGTH**       | INTEGER     | Tamanho do arquivo (bytes)                                                                       |
