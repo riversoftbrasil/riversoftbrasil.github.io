@@ -307,8 +307,11 @@ Os métodos e o conjunto de cifras utilizados devem ser definidos e ajustados co
 #### Atualização de bibliotecas
 
 a) Através do link enviado pela equipe de suporte da Riversoft, faça download do pacote de atualização do produto;
+
 b) Pare o serviço do STCP OFTP Server através do gerenciador de serviços do seu sistema operacional;
+
 c) Copie o conteúdo do arquivo compactado (ZIP) para a pasta Program do diretório de instalação do STCP OFTP Server (Ex. C:\STCPODT\Program), substituindo os arquivos atuais;
+
 d) Inicie ou reinicie o serviço do STCP OFTP Server através do gerenciador de serviços do sistema operacional;
 
 #### Configuração do Cipher Suítes
