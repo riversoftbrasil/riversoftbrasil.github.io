@@ -32,7 +32,9 @@ Aprenda sobre como implantar, configurar e gerenciar as soluções Riversoft.
         title="STCP OFTP Client"
         icon="desktop-computer"
         subtitle="Client é um cliente de transferência de arquivos seguro e multiprotocolo para aplicações de e-business e troca de informações corporativas, baseado na especificação OFTP."
-        link="/stcpclient"
+        tag="Em breve"
+        tagType="info"
+        link=""
     >}}
 
 
@@ -40,7 +42,9 @@ Aprenda sobre como implantar, configurar e gerenciar as soluções Riversoft.
         title="STCP Directlink"
         icon="code"
         subtitle="Aplicação integrada aos produtos STCP OFTP Server (Windows) ou STCP Gemini Server (Linux), com uma solução simples e robusta, através dos protocolos HTTPS e SFTP."
-        link="/stcpdirectlink"
+        tag="Em breve"
+        tagType="info"
+        link=""
     >}}
 
     {{< card
@@ -54,36 +58,45 @@ Aprenda sobre como implantar, configurar e gerenciar as soluções Riversoft.
         title="STCP Rename"
         icon="color-swatch"
         subtitle="Aplicação que possibilita o renomeio e cópia de arquivos, varredura em diretórios e execução de processo, baseado na configuração de regras de validação dos nomes destes arquivos."
-        link="/stcpren"
+        tag="Em breve"
+        tagType="info"
+        link=""
     >}}
 
     {{< card
         title="STCP Signer"
         icon="finger-print"
         subtitle="Módulo utilizado para garantir a integridade, autenticidade, confidencialidade e inviolabilidade de um arquivo através da tecnologia de assinatura digital e da criptografia."
-        link="/stcpsigner"
+        tag="Em breve"
+        tagType="info"
+        link=""
     >}}
 
     {{< card
         title="STCP OFTP Web Admin"
         icon="cloud"
-        subtitle="Ferramenta com acesso através do browser (HTTP) que possibilita a supervisão e monitoração das transferências de dados realizadas pelo software STCP OFTP Client/Server. "
-        link="/stcpwebadmin"
+        subtitle="Ferramenta com acesso através do browser (HTTP) que possibilita a supervisão e monitoração das transferências de dados realizadas pelo software STCP OFTP Client/Server."
+        tag="Em breve"
+        tagType="info"
+        link=""
     >}}
 
     {{< card
         title="STCP Gemini Client"
         icon="terminal"
         subtitle="Aplicação cliente utilizada para transferência de arquivos seguro e multiprotocolo para aplicações de e-business e troca de informações corporativas, baseado na especificação OFTP."
-        link="/stcpgeminiclient"
+        tag="Em breve"
+        tagType="info"
+        link=""
     >}}
 
      {{< card
         title="STCP Gemini Server"
         icon="lightning-bolt"
         subtitle="Aplicação servidora utilizada para transferência de arquivos seguro e multiprotocolo para aplicações de e-business e troca de informações corporativas, baseado na especificação OFTP."
-        tag=""
-        link="/stcpgeminiserver"
+        tag="Em breve"
+        tagType="info"
+        link=""
     >}}
 
 {{< /cards >}}
