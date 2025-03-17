@@ -6,10 +6,14 @@ sidebar:
 ---
 ## STCP OFTP Server e STCP OFTP Client
 
+#### {{< icon "clock" >}} &nbsp;  Versão 5.3.18.0 (lançada em novembro de 2024)
+
+- Implementação do suporte para o uso de proxies HTTP (Basic, NTLM, Digest, None) e SOCKS (SOCKS4 e SOCKS5) em conexões que utilizem o protocolo SFTP.
+- Implementação do suporte para definir o endereço da interface de rede local utilizada em conexões de saída pelos protocolos SFTP e FTP.
+
 #### {{< icon "clock" >}} &nbsp;  Versão 5.3.16.0 (lançada em agosto de 2024)
 
 - Implementação da opção na biblioteca de log ODBC para gravar os dados de auditoria da tabela TBLTRANSFERS tanto no banco de dados quanto em um arquivo texto (JSON).
-- Aumento do número máximo de entradas (1000) na lista de arquivos de configuração do STCPRenCfg.
 - Atualização das bibliotecas de segurança TLS (Openssl 3.3.1).
 
 #### {{< icon "clock" >}} &nbsp;  Versão 5.3.15.0 (lançada em maio de 2024)
@@ -59,8 +63,6 @@ sidebar:
 
 #### {{< icon "clock" >}} &nbsp;  Versão 5.3.6.1 (lançada em junho de 2022)
 
-- Aumento da quantidade máxima de regras de validação que podem ser criadas no STCPRenCfg.
-- Aumento do número máximo de caracteres no campo senha do recurso (guia Acesso) no STCPRenCfg.
 - Alteração das mensagens (labels) SSL para TLS.
 - Melhorias na exibição das informações de interfaces para conexão automática.
 
@@ -72,7 +74,6 @@ sidebar:
 - Correção do tratamento do uso de aspas simples na configuração de diretório do FTP, no configurador do STCP.
 - Correção do tratamento do separador de diretório na configuração do FTP, no configurador do STCP.
 - Correção do tratamento do modo ASCII/BINARY na interface do protocolo FTP.
-- Limite do número de caracteres permitidos nos campos DestinationUser e SourceUser do configurador do STCPREN.
 - Correção do problema em que o evento MSG0022 (tamanho excedido) não era registrado em log no envio dos arquivos com mais de 255 caracteres no nome.
 - Melhorias no tratamento de semáforas da interface de log ODBC (stcplogodbc.dll)
 
@@ -96,9 +97,7 @@ sidebar:
 - Aumento do número de caracteres nos campos senha da chave privada para SFTP e FTP.
 - Aumento do número máximo de caracteres nos campos FTP ID e SFTP ID.
 - Implementação dos parâmetros para sincronização da execução de comandos externos para os tipos de arquivos.
-- Melhorias na gravação de log do processo de varredura do STCPRen quando o diretório está sem acesso.
 - Melhoria na exibição de mensagem de confirmação do EERP.
-- Aumentar número de caracteres dos campos DirRegEx e FileRegEx no configurador do STCPREN.
 - Atualização das bibliotecas de segurança SSL/TLS (Openssl).
 - Atualização das bibliotecas da interface de comunicação do protocolo OFTP.
 
@@ -150,11 +149,9 @@ sidebar:
 #### {{< icon "clock" >}} &nbsp;  Versão 5.0.0.1 (lançada em fevereiro de 2017)
 
 - Melhorias no tratamento de problemas relacionados à insuficiência de recursos (sessões de transferências, threads, semáforas, memória e outros) que permite a realocação de recursos pelo STCP Server, a fim de manter a interface de conexão em LISTENING.
-- Melhorias no módulo STCP Rename para que as linhas em branco, existentes no arquivo externo de expressões regulares, não sejam interpretadas pela aplicação.
 - Implementação da funcionalidade de “whitelist” (@) e “blacklist” (!) na função de filtro de arquivos.
 - Melhorias no módulo para atualização automática de pacotes e bibliotecas utilizando o STCPUpdater.
 - Implementação do parâmetro Controle de Atualização para habilitar o processo atualização automática utilizando o STCPUpdater.
-- Melhorias no processo de compilação da expressão regular das regras do STCP Rename. A expressão regular não será compilada se a regra estiver desabilitada.
 
 #### {{< icon "clock" >}} &nbsp;  Versão 5.0.0.0 (lançada em dezembro de 2016)
 
@@ -164,7 +161,6 @@ sidebar:
 - Possibilidade de uso das tabelas de conversão tabela no módulo STCPFileConv.
 - Módulo para atualização automática de pacotes e bibliotecas utilizando o STCPUpdater.
 - Melhorias na função de filtro de arquivos onde a partir de agora o usuário pode indicar um arquivo externo com as expressões regulares desejadas para validação.
-- Melhorias na validação de arquivos e diretórios do módulo STCP Rename onde a partir de agora o usuário pode indicar um arquivo externo com as expressões regulares desejadas.
 - Correção de um problema relacionado ao parâmetro “Destino” que era modificado ao utilizar a função de cópia do usuário através do configurador.
 - Correção de um problema relacionado ao consumo elevado de memória.
 
