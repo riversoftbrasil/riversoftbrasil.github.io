@@ -1,5 +1,5 @@
 ---
-linkTitle: Utilização
+linkTitle: Execução
 layout: docs
 toc: true
 cascade:
@@ -12,58 +12,6 @@ next: /stcpclient/04-debug/
 slug: utilizacao
 draft: false
 ---
-## Subdiretórios
-
-O STCP OFTP Client cria um conjunto individual de subdiretórios para cada Perfil configurado no serviço para controle das transferências e integração com as aplicações externas.
-
-Veja:
-
-{{< filetree/container >}}
-  {{< filetree/folder name="STCPCLT" >}}
-    {{< filetree/folder name="`<NOME DO PERFIL>`" state="open" >}}
-
-    {{< filetree/folder name="CONTROLE" state="closed">}}
-    {{< /filetree/folder >}}
-
-    {{< filetree/folder name="ENTRADA" >}}
-      {{< filetree/folder name="RESTART" state="closed">}}
-      {{< /filetree/folder >}}
-    {{< /filetree/folder >}}
-
-    {{< filetree/folder name="LOG" state="closed">}}
-    {{< /filetree/folder >}}
-
-    {{< filetree/folder name="SAÍDA">}}
-
-      {{< filetree/folder name="BACKUP" state="closed">}}
-      {{< /filetree/folder >}}
-
-      {{< filetree/folder name="PENDENTE" state="closed">}}
-      {{< /filetree/folder >}}
-    {{< /filetree/folder >}}
-
-    {{< /filetree/folder >}}
-
-  {{< filetree/file name="`<NOME DO PERFIL>`.ini" >}}
-
-  {{< /filetree/folder >}}
-
-{{< /filetree/container >}}
-
-| <Diretório de Dados>\  | Subdiretório de dados configurado.                                                                                      |
-| :--------------------- | :---------------------------------------------------------------------------------------------------------------------- |
-| <Diretório do Perfil>\ | Subdiretório individual do Perfil.                                                                                      |
-| CONTROLE               | Subdiretório de controle da aplicação.                                                                                  |
-| ENTRADA\               | Subdiretório onde os arquivos recebidos com sucesso serão disponibilizados.                                             |
-| RESTART                | Subdiretório onde os arquivos que estão em processo de recepção são armazenados temporariamente.                        |
-| FORMATO                | Subdiretório que contém as definições dos tipos de arquivos.                                                            |
-| LOG                    | Subdiretório onde serão armazenados os arquivos de eventos e registro das transferências.                               |
-| SAIDA\                 | Subdiretório onde os arquivos a serem enviados devem ser disponibilizados.                                              |
-| BACKUP                 | Subdiretório onde os arquivos enviados com sucesso serão armazenados se a opção de backup do Perfil estiver habilitada. |
-| PENDENTE               | Subdiretório onde o arquivo de controle da transmissão será armazenado temporariamente.                                 |
-| TEMP                   | Subdiretório de uso geral.                                                                                              |
-
-Para transmitir, os arquivos devem ser disponibilizados no subdiretório **SAIDA** e os arquivos recebidos estarão no subdiretório **ENTRADA**.
 
 ## Linha de comando
 
