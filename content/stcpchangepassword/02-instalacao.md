@@ -1,19 +1,21 @@
 ---
 linkTitle: Instalação
-title: Passos para instalação
 layout: docs
 toc: true
 cascade:
   type: docs
 sidebar:
   exclude: false
-weight: 1
-prev: /stcpchangepassword
-next: /03-configuracao
+weight: 2
+prev: 
+next: 
 draft: false
 slug: instalacao
 ---
-O pacote de instalação será distribuído através de um link pela Equipe de Sustentação da Riversoft.
+
+## Passos para instalação
+
+O pacote de instalação será distribuído pela Riversoft.
 
 Após extrair o zip com o arquivo executável, siga os seguintes passos para prosseguir com a instalação do STCP Change Password:
 

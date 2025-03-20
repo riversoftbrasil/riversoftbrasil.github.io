@@ -7,14 +7,15 @@ cascade:
   type: docs
 sidebar:
   exclude: false
-weight: 3
-prev: /02-config-chgpsw
-next: /stcpren
+weight: 4
+prev: 
+next: 
 slug: css
 ---
+
 ## Imagem de fundo e CSS
 
-### Background (imagem de fundo)
+### Background 
 
 As imagens de fundo do site deverão ser criadas seguindo as dimensões declaradas abaixo e estar no formato JPEG. Tais imagens devem seguir o padrão de nomenclatura:
 
@@ -102,7 +103,7 @@ Veja a estrutura abaixo:
   {{< /filetree/folder >}}
 {{< /filetree/container >}}
 
-### Configurações CSS (cores das bordas e título)
+### Configurações no CSS 
 
 O padrão de cores das bordas e cor de fundo do título do site padrão do STCP OFTP Change Password, pode ser realizado através da alteração das classes:
 
@@ -121,33 +122,33 @@ Seguem abaixo os exemplos das classe do arquivo CSS:
 
 ```css {linenos=table,hl_lines=[2,15,28],linenostart=1,filename="css/STCPChangePassword.css"}
 #conteudo {
-    border:solid 1px #CDCDCD; /*cor box externo*/
-    background-repeat:no-repeat;
-    position:relative;
-    width:910px;
-    height:574px;
-    top:20px;
+    border: solid 1px #CDCDCD; /*cor box externo*/
+    background-repeat: no-repeat;
+    position: relative;
+    width: 910px;
+    height: 574px;
+    top: 20px;
 }
 
 #frmLogin {
-    position:relative;
-    text-align:left;
-    width:500px;
+    position: relative;
+    text-align: left;
+    width: 500px;
     top: 200px;
-    border:solid 1px #024780;  /*cor box interno*/
-    font:14px times new roman, roman, arial, verdana, helvetica;
-    margin:0 auto;
-    background-color:white;
+    border: solid 1px #024780;  /*cor box interno*/
+    font: 14px times new roman, roman, arial, verdana, helvetica;
+    margin: 0 auto;
+    background-color: white;
     padding-bottom: 10px;
 }
 
 #tituloLogin {
-    text-align:center;
-    margin-bottom:20px;
-    padding:2px;
-    font-size:16px;
-    font-weight:bold;
-    background-color:#024780; /*cor titulo box interno*/
-    color:White;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 2px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #024780; /*cor titulo box interno*/
+    color: white;
 }
 ```

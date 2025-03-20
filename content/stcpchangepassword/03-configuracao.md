@@ -7,13 +7,14 @@ cascade:
   type: docs
 sidebar:
   exclude: false
-weight: 2
-prev: /01-install-chgpsw
-next: /04-css
+weight: 3
+prev: 
+next: 
 draft: false
 slug: configuracao
 ---
-## Configuração no IIS
+
+## IIS
 
 {{< icon "arrow-right-circle" >}}Acesse a ferramenta de configuração do IIS (Internet Information Services) e crie um novo **diretório virtual** e/ou **site** para a configuração da aplicação.
 
@@ -25,28 +26,31 @@ slug: configuracao
 
 ![](img/iis-03.png)
 
-{{< icon "arrow-right-circle" >}}Configure as permissões conforme apresentado e clique no botão "**Avançar**".
+<!-- {{< icon "arrow-right-circle" >}}Configure as permissões conforme apresentado e clique no botão "**Avançar**".
 
-![](img/iis-06.png)
+![](img/iis-06.png) -->
 
-{{< icon "arrow-right-circle" >}}Clique no botão "**Concluir**" para finalizar a criação do diretório virtual.
+<!-- {{< icon "arrow-right-circle" >}}Clique no botão "**Concluir**" para finalizar a criação do diretório virtual.
 
-![](img/iis-07.png)
+![](img/iis-07.png) -->
 
-{{< icon "arrow-right-circle" >}}Nas propriedades do diretório virtual criado, selecione a aba **Documentos** e pressione o botão **Adicionar**.
+{{< icon "arrow-right-circle" >}}Nas propriedades do diretório virtual criado, selecione a aba **Documentos Padrão**. 
 
 ![](img/iis-08.png)
+
+{{< icon "arrow-right-circle" >}} Selecione a opção **Adicionar**.
+
+![](img/iis-11.png)
 
 {{< icon "arrow-right-circle" >}}Informe o nome da página inicial do site conforme a figura abaixo e pressione "**OK**". Remova as outras páginas utilizando o botão **Remover**.
 
 ![](img/iis-09.png)
 
-![](img/iis-10.png)
+<!-- ![](img/iis-10.png) -->
 
-{{< icon "arrow-right-circle" >}}Na aba "**ASP .NET**" configure a versão conforme a figura abaixo:
+<!-- {{< icon "arrow-right-circle" >}}Na aba "**ASP .NET**" configure a versão conforme a figura abaixo: -->
 
 {{< icon "arrow-right-circle" >}}Para finalizar o processo de configuração clique no botão "**OK**".
-
 
 ## Configuração do arquivo stcpmon.config
 
