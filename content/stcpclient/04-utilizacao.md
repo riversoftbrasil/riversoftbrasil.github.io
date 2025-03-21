@@ -7,8 +7,8 @@ cascade:
 sidebar:
   exclude: false
 weight: 4
-prev: /stcpclient/02-config/
-next: /stcpclient/04-debug/
+prev: 
+next: 
 slug: utilizacao
 draft: false
 ---

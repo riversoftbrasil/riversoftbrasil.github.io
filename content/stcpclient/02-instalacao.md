@@ -29,7 +29,7 @@ slug: instalacao
   <sup>2</sup> Server with Desktop Experience.
 {{< /callout >}}
 
-## Distribuição dos pacotes
+## Distribuição dos Pacotes
 
 O pacote de instalação será distribuído através de um link pela Equipe de Sustentação da Riversoft.
 
