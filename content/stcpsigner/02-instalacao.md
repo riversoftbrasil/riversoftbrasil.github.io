@@ -13,9 +13,9 @@ slug: instalacao
 ---
 # Distribuição do executável
 
-O pacote de instalação será distribuído através de um link pela Equipe de Sustentação da Riversoft.
+O pacote de instalação será distribuído através de um link pela Riversoft.
 
-Após extrair o zip com o arquivo executável, execute-o no terminal com os parâmteros desejados.
+Após extrair o zip com o arquivo executável, execute-o no terminal com os parâmetros desejados.
 
 Exemplo:
 
@@ -25,10 +25,9 @@ Exemplo:
   {{< filetree/file name="stcpsigner.exe" >}}
 {{< /filetree/container >}}
 
-![](img/sign-07.png)
+![](img/sign-07.png "Descrição dos parâmetros do stcpsigner")
 
-> [!NOTE] Nota: 
-> Veja na seção de [Execução](/stcpsigner/exec/) cada comando disponível.
+> [!TIP] Veja na próxima seção exemplos de comandos disponíveis.
 
 
 

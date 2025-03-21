@@ -11,6 +11,7 @@ next:
 slug: introducao
 ---
 ## Introdução
+
 O STCP Signer é um módulo utilizado para garantir a integridade, autenticidade, confidencialidade e inviolabilidade de um arquivo através da tecnologia de assinatura digital e da criptografia.
 
 ![](img/sign-01.png "O desenho ilustra a comunicação entre um remetente e um destinatário")
@@ -21,21 +22,21 @@ Um documento eletrônico assinado/criptografado com o STCP Signer poderá ser de
 
 ### Arquitetura
 
-O STCP Signer utiliza a interface Microsoft CRYPTOAPI para acesso aos dispositivos criptográficos(Token, Smartcard, etc) e de armazenamento dos certificados digitais.
+O STCP Signer utiliza a interface Microsoft CRYPTOAPI para acesso aos dispositivos criptográficos (Token, Smartcard, etc) e de armazenamento dos certificados digitais.
 
 ![](img/sign-02.png)
 
 ### Características Gerais
 
-* Assinatura digital com certificado digital X509
-* Criptografia com chaves RC2, DES, 3DES, AES (Somente Vista)
-* Compatível com **CRYPTOAPI (Microsoft)**
-* Compatível com a RFC2315/Carta Circular 3.123 do Banco Central do Brasil
-* Compatível com certificados ICP Brasil
-* Inclusão do certificado de assinatura no envelope PKCS#7
-* Inclusão da cadeia de certificados do assinante no envelope PKCS#7
-* Verificação da lista local ou remota de certificados revogados
-* Verificação do status do certificado online (OCSP) quando disponível
+* Assinatura digital com certificado digital X509;
+* Criptografia com chaves RC2, DES, 3DES, AES (Somente Vista);
+* Compatível com **CRYPTOAPI (Microsoft)**;
+* Compatível com a RFC2315/Carta Circular 3.123 do Banco Central do Brasil;
+* Compatível com certificados ICP Brasil;
+* Inclusão do certificado de assinatura no envelope PKCS#7;
+* Inclusão da cadeia de certificados do assinante no envelope PKCS#7;
+* Verificação da lista local ou remota de certificados revogados;
+* Verificação do status do certificado online (OCSP) quando disponível.
 
 ### Fluxo de Assinatura
 
@@ -74,6 +75,7 @@ O STCP Signer deve ser executado com os seguintes parâmetros para realizar o pr
 ```
 stcpsigner crypt –i <certificado-destinatário> -n < arquivo de entrada> -o <arquivo de saída>
 ```
+
 ### Fluxo de Decriptografia
 
 Os dados recebidos do remetente são decriptografados com a Chave Privativa correspondente do destinatário.

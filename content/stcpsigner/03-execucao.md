@@ -5,14 +5,14 @@ cascade:
   type: docs
 sidebar:
   exclude: false
-weight: 4
+weight: 3
 prev:
 next:
 draft: false
 slug: execucao
 ---
 
-## Linha de comando
+## Linha de comandos
 
 ```
 stcpsigner.exe cmd [opções]
@@ -101,3 +101,77 @@ CheckChainExcludeRootCacheOnly| Verifica CRL para a cadeia sem o certificado Roo
 -T        | Habilita validação do certificado pela data e hora contida no envelope PKCS#7.
 -O        | Habilita sobreposição do arquivo.
 -?        | Ajuda.
+
+## Gerar um par de chaves
+
+Para criar o par de chaves pública/privativa padrão RSA com 1024 bits de acesso exclusivo pelo administrador ou o system account:
+O `<nome do armazenamento>` é de livre escolha.
+
+```
+stcpsigner genkey -b Teste.Key -d 1024 -j system
+```
+
+## Gerar um certificado auto-assinado
+
+Para criar um certificado auto-assinado para o par de chaves pública/privativa:
+
+```
+stcpsigner gencertself -b Teste.Key -j system -h "CN=STCPSigner.Teste, O=EMPRESA, OU=EDI, C=BR,L=Sao Paulo"
+```
+
+## Exportar o certificado
+
+Para exportar o certificado do par de chaves pública/privativa para um arquivo do tipo PEM:
+
+```
+stcpsigner expcert -j system -i "STCPSigner.Teste" -o stcpsigner.cer -q pem
+```
+
+## Assinar um arquivo
+
+Para assinar um arquivo:
+
+```
+stcpsigner sign -j system -i "STCPSigner.Teste" -n <arquivo de entrada> -o <arquivo de saída>
+```
+
+## Verificar um arquivo assinado
+
+Para verificar um arquivo assinado:
+
+```
+stcpsigner verify -j system -i "STCPSigner.Teste" -n <arquivo de entrada> -o <arquivo de saída>
+```
+
+## Encriptar um arquivo
+
+Para encriptar um arquivo:
+
+```
+stcpsigner crypt -j system -i "STCPSigner.Teste" -n <arquivo de entrada> -o <arquivo de saída>
+```
+
+## Decriptar um arquivo
+
+Para decriptar um arquivo:
+
+```
+stcpsigner decrypt -j system -i "STCPSigner.Teste" -n <arquivo de entrada> -o <arquivo de saída>
+```
+
+## Remover a chave privativa
+
+Para remover a chave privativa:
+O <nome do armazenamento> é de livre escolha.
+
+```
+stcpsigner delkey -b "Teste.Key" -j system
+```
+
+## Remover o certificado
+
+Para remover o certificado:
+
+```
+stcpsigner delcert -i "STCPSigner.Teste" -j system
+```
