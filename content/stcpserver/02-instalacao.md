@@ -38,51 +38,70 @@ Confira os requisitos de software e hardware da aplicação:
 
 ## Distribuição dos pacotes
 
-O pacote de instalação será distribuído através de um link, disponibilizado pela Equipe de Sustentação da Riversoft.
+O pacote de instalação será distribuído através de um link, disponibilizado pela Riversoft.
 
-Após extrair o zip com o arquivo executável, os seguintes passos devem ser executados:
+Após descompactar o arquivo ZIP, procure pelo arquivo executável (.exe) na pasta extraída.
 
-{{< icon "arrow-right-circle" >}}Clique no arquivo executável para iniciar o processo de instalação.
+{{% steps %}}
 
-{{< icon "arrow-right-circle" >}}Esta é a tela de boas-vindas, clique em **Avançar** para continuar.
+### Execute o instalador
+
+Clique duas vezes no arquivo executável para iniciar o processo de instalação.
+
+Uma janela de boas-vindas será exibida. Leia as informações e clique em "Avançar" para prosseguir.
+
+> [!NOTE] Observação
+> A tela de boas-vindas pode variar dependendo da versão do produto (Enterprise, Lite ou Lite Plus), como mostrado nas imagens abaixo:
 
 ![](img/install-srv-enterprise.png "Versão Enterprise")
 ![](img/install-srv-lite.png "Versão Lite")
 ![](img/install-srv-lite-plus.png "Versão Lite Plus")
 
-Pressione **Voltar** para retornar à tela anterior ou **Cancelar** para interromper o processo de instalação.
+A partir deste ponto, o processo de instalação guiará você por etapas adicionais. 
 
-{{< icon "arrow-right-circle" >}}Leia cuidadosamente o **Contrato de Licença de Uso do Usuário Final** e caso concorde com os termos propostos, marque a opção correspondente e pressione o botão **Avançar** para prosseguir com a instalação.
+As próximas etapas incluem a seleção do local de instalação, a configuração de componentes adicionais e a aceitação dos termos de licença.
 
-Pressione **Voltar** para retornar à tela anterior ou **Cancelar** para interromper o processo de instalação.
+Pressione "Voltar" para retornar à tela anterior ou ""Cancelar"" para interromper o processo de instalação.
+
+### Contrato de licença
+
+Leia cuidadosamente o Contrato de Licença de Uso do Usuário Final e caso concorde com os termos propostos, marque a opção correspondente e pressione o botão "Avançar" para prosseguir com a instalação.
 
 ![](img/install-srv-01.png)
 
-{{< icon "arrow-right-circle" >}}Na tela **Informações do cliente**, informe o Nome do usuário e Empresa.
+Pressione "Voltar" para retornar à tela anterior ou ""Cancelar"" para interromper o processo de instalação.
 
-Clique em **Avançar** para continuar a instalação.
+### Identificação 
 
-Pressione **Voltar** para retornar à tela anterior ou **Cancelar** para cancelar todo o processo de instalação.
+Na tela "Informações do cliente", informe o Nome do usuário e Empresa.
 
 ![](img/install-srv-02.png)
 
-{{< icon "arrow-right-circle" >}}Na tela **Pasta de destino**, clique em **Avançar** para instalar no diretório padrão ou **Alterar** para selecionar outro diretório ou criar um novo.
+Após preencher os campos, clique em "Avançar" para prosseguir com a instalação.
 
-Pressione **Voltar** para retornar à tela anterior ou **Cancelar** para interromper o processo de instalação.
+Pressione "Voltar" para retornar à tela anterior ou "Cancelar" para cancelar todo o processo de instalação.
+
+### Diretório de instalação
+
+Na tela "Pasta de destino", clique em "Avançar" para instalar no diretório padrão ou "Alterar" para selecionar outro diretório ou criar um novo.
 
 ![](img/install-srv-03.png)
 
+Pressione "Voltar" para retornar à tela anterior ou "Cancelar" para interromper o processo de instalação.
 
-{{< icon "arrow-right-circle" >}}Na tela **Pronto para instalar o programa**, verifique se as configurações escolhidas estão corretas e clique em **Instalar** para continuar.
+### Confirmação de instalação
 
-Pressione **Voltar** para retornar à tela anterior ou **Cancelar** para interromper o processo de instalação.
+Antes de finalizar a instalação, verifique se as configurações escolhidas estão corretas e prossiga com a instalação. 
+
+Caso precise revisar ou alterar as configurações em telas anteriores, clique em "Voltar".
 
 ![](img/install-srv-04.png)
 
-
-{{< icon "arrow-right-circle" >}}Por fim, clique em **Concluir** para finalizar a instalação.
+Por fim, clique em "Concluir" para finalizar a instalação.
 
 ![](img/install-srv-05.png)
+
+{{% /steps %}}
 
 ## Estrutura dos diretórios
 
@@ -216,34 +235,50 @@ Para cada **usuário** configurado no serviço, é criado um conjunto individual
 | **PENDENTE**                | Subdiretório onde o arquivo de controle da transmissão será armazenado temporariamente.                                  |
 | **TEMP**                    | Subdiretório de uso geral.                                                                                               |
 
-
 Para **transmitir**, os arquivos devem ser disponibilizados no subdiretório **SAIDA** e os arquivos recebidos estarão no subdiretório **ENTRADA**.
 
 ## Serviço do STCP OFTP Server
 
-Para que sejá possível criar e iniciar o serviço do STCP OFTP Server, utilizaremos o **STCP OFTP Server Manager**.
+Para que seja possível criar e iniciar o serviço do STCP OFTP Server, utilizaremos o _STCP OFTP Server Manager_.
 
-O STCP OFTP Server Manager é um sistema gerenciador de serviços STCP, que é similar ao gerenciador de serviços do Windows, embora seja usado somente para manipular serviços da família de **produtos do STCP**.
+O STCP OFTP Server Manager é um sistema gerenciador de serviços STCP, que é similar ao gerenciador de serviços do Windows, embora seja usado somente para manipular serviços da família de _produtos do STCP_.
 
-Esse sistema permite que seja instalado/desinstalado o serviço do Riversoft STCP OFTP Server Enterprise (STCPSrv_1) ou Lite (STCPSrvLite_1).
+Esse sistema permite que seja instalado ou desinstalado o serviço do Riversoft STCP OFTP Server Enterprise (STCPSrv_1) ou Lite (STCPSrvLite_1).
 
-Também é permitido iniciar, parar e reiniciar um serviço, desde que se tenham as permissões apropriadas.
+Também é permitido iniciar, parar e reiniciar um serviço, desde que se tenham as permissões apropriadas. É recomendado que a aplicação seja iniciada como _administrador_
 
-{{< icon "arrow-right-circle" >}}Acesse o STCP OFTP Server Configuration Manager (**Iniciar - Todos os programas - Riversoft STCP OFTP Server**), selecione o serviço _Riversoft STCP OFTP Server Enterprise 1/Lite 1_ e clique no botão _Instalar serviço_.
+{{% steps %}}
+
+### Acesse o configurador
+
+Acesse o STCP OFTP Server Configuration Manager. O programa está localizado no menu Iniciar do Windows, em "Todos os Programas" -> "Riversoft STCP OFTP Server".
+
+No Configuration Manager, selecione o serviço desejado. As opções podem incluir "Riversoft STCP OFTP Server Enterprise 1" ou "Lite 1".
+
+Clique no botão "Instalar serviço".
 
 ![](img/service-01.png)
 
-{{< icon "arrow-right-circle" >}}Uma mensagem confirmando que o serviço foi instalado com sucesso será exibida. Clique em _OK_ para finalizar.
+### Confirmação 
+
+Uma mensagem confirmando que o serviço foi instalado com sucesso será exibida. 
 
 ![](img/service-02.png)
 
-{{< icon "arrow-right-circle" >}}Selecione o serviço recém-criado e clique no botão _Iniciar_.
+O serviço foi instalado e configurado com êxito. Clique em "OK" para finalizar o processo.
+
+### Iniciar serviço
+
+Selecione o serviço recém-criado e clique no botão _Iniciar_.
 
 ![](img/service-03.png)
 
-{{< icon "arrow-right-circle" >}}O serviço será iniciado e seu status alterado para _Iniciado_. Esse servico também pode ser criado e removido pelo prompt de comando (cmd) do sistema operacional.
+### Finalização
+
+O serviço será iniciado e seu status alterado para _Iniciado_. Esse serviço também pode ser criado e removido pelo prompt de comando (cmd) do sistema operacional, como por exemplo: 
 
 ![](img/service-04.png "Serviço iniciado no STCP OFTP Server Configuration Manager")
 <br>
 ![](img/service-05.png "Serviço iniciado no Windows")
 
+{{% /steps %}}

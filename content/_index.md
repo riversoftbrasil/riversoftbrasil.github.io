@@ -32,9 +32,9 @@ Aprenda sobre como implantar, configurar e gerenciar as soluções Riversoft.
         title="STCP OFTP Client"
         icon="desktop-computer"
         subtitle="Client é um cliente de transferência de arquivos seguro e multiprotocolo para aplicações de e-business e troca de informações corporativas, baseado na especificação OFTP."
-        tag="Em breve"
-        tagType="info"
-        link=""
+        tag=""
+        tagType=""
+        link="/stcpclient"
     >}}
 
 
@@ -58,18 +58,18 @@ Aprenda sobre como implantar, configurar e gerenciar as soluções Riversoft.
         title="STCP Rename"
         icon="color-swatch"
         subtitle="Aplicação que possibilita o renomeio e cópia de arquivos, varredura em diretórios e execução de processo, baseado na configuração de regras de validação dos nomes destes arquivos."
-        tag="Em breve"
-        tagType="info"
-        link=""
+        tag=""
+        tagType=""
+        link="/stcpren"
     >}}
 
     {{< card
         title="STCP Signer"
         icon="finger-print"
         subtitle="Módulo utilizado para garantir a integridade, autenticidade, confidencialidade e inviolabilidade de um arquivo através da tecnologia de assinatura digital e da criptografia."
-        tag="Em breve"
-        tagType="info"
-        link=""
+        tag=""
+        tagType=""
+        link="/stcpsigner"
     >}}
 
     {{< card
