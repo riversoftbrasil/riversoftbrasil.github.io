@@ -20,8 +20,3 @@ Nesta aba veremos os passos necessários para instalação e configuração do s
 
 > [!NOTE] Info
 > O STCP OFTP Change Password deverá ser configurado em um site ou diretório virtual no IIS utilizando SSL (HTTPS) e .Net Framework 2 ou superior.
-
-
-
-
-

@@ -1,6 +1,5 @@
 ---
 linkTitle: Configuração
-title: Configurações
 layout: docs
 toc: true
 cascade:
@@ -14,51 +13,19 @@ draft: false
 slug: configuracao
 ---
 
-## IIS
+## Configuração do arquivo stcpmon.config
 
-{{< icon "arrow-right-circle" >}}Acesse a ferramenta de configuração do IIS (Internet Information Services) e crie um novo **diretório virtual** e/ou **site** para a configuração da aplicação.
+{{% steps %}}
+
+### Renomear arquivo 
+
+O arquivo "exemplo.stcpmon.config" serve como um modelo para as configurações da aplicação. Para aplicar as configurações, você precisa renomeá-lo para "stcpmon.config" e salvá-lo no diretório de instalação da aplicação. 
 
 ![](img/iis-01.png)
 
-{{< icon "arrow-right-circle" >}}Informe o nome para o novo diretório virtual e o caminho físico, conforme figura abaixo e clique no botão **OK**.
+### Parâmetros
 
-![](img/iis-02.png)
-
-![](img/iis-03.png)
-
-<!-- {{< icon "arrow-right-circle" >}}Configure as permissões conforme apresentado e clique no botão "**Avançar**".
-
-![](img/iis-06.png) -->
-
-<!-- {{< icon "arrow-right-circle" >}}Clique no botão "**Concluir**" para finalizar a criação do diretório virtual.
-
-![](img/iis-07.png) -->
-
-{{< icon "arrow-right-circle" >}}Nas propriedades do diretório virtual criado, selecione a aba **Documentos Padrão**. 
-
-![](img/iis-08.png)
-
-{{< icon "arrow-right-circle" >}} Selecione a opção **Adicionar**.
-
-![](img/iis-11.png)
-
-{{< icon "arrow-right-circle" >}}Informe o nome da página inicial do site conforme a figura abaixo e pressione "**OK**". Remova as outras páginas utilizando o botão **Remover**.
-
-![](img/iis-09.png)
-
-<!-- ![](img/iis-10.png) -->
-
-<!-- {{< icon "arrow-right-circle" >}}Na aba "**ASP .NET**" configure a versão conforme a figura abaixo: -->
-
-{{< icon "arrow-right-circle" >}}Para finalizar o processo de configuração clique no botão "**OK**".
-
-## Configuração do arquivo stcpmon.config
-
-{{< icon "arrow-right-circle" >}}Vá até o diretório de instalação da aplicação e renomeie o arquivo **exemplo.stcpmon.config** para **stcpmon.config**.
-
-![](img/iis-04.png)
-
-{{< icon "arrow-right-circle" >}}Configure o arquivo **stcpmon.config** conforme informado abaixo:
+Configure o arquivo "stcpmon.config" com os parâmetros necessários, conforme especificado abaixo:
 
 
 ```xml {filename="stcpmon.config"}
@@ -71,8 +38,9 @@ slug: configuracao
 </configuration>
 ```
 
+### ConfigSections
 
-{{< icon "arrow-right-circle" >}}Na tag "**configSections**" configure os seguintes parâmetros:
+Na tag "configSections" configure os seguintes parâmetros:
 
 ```xml {filename="configSections"}
 <configSections>
@@ -90,25 +58,33 @@ requirePermission = "true"
 </configSections>
 ```
 
-{{< icon "arrow-right-circle" >}}Crie uma tag com o nome dado para o servidor, neste exemplo, chamamos **Server1** e configure suas características:
+### Crie uma nova Tag
+
+Crie uma tag com o nome dado para o servidor, neste exemplo, chamamos "Server1" e configure suas características:
 
 ```xml {filename="configSections"}
-< Server1 TCPRemoteAddress="172.20.30.213" TCPRemotePort="33050" TCPRfc2204="16" />
+<Server1 TCPRemoteAddress="172.20.30.213" TCPRemotePort="33050" TCPRfc2204="16" />
 
 TCPRemoteAddress = endereço ip do servidor de monitoração do STCP.
 TCPRemotePort = porta ip do servidor de monitoração do STCP.
 TCPRfc2204 = "16"
 ```
 
+{{% /steps %}}
+
 ## Configuração do arquivo web.config
 
-{{< icon "arrow-right-circle" >}}No diretório de instalação da aplicação STCP OFTP Change Password, renomeie o arquivo "**exemplo.web.config**" para "**web.config**" e abra o arquivo já renomeado.
+{{% steps %}}
 
-![](img/iis-05.png)
+### Renomear arquivo 
 
-{{< icon "arrow-right-circle" >}}Na seção **appSettings**, realize as configurações da imagem de validação (Captcha Image).
+No diretório de instalação da aplicação, renomeie o arquivo **exemplo.web.config** para **web.config** e abra o arquivo já renomeado.
 
-<!-- Configurações da imagem de validação (Captcha Image). -->
+![](img/iis-02.png)
+
+### Captcha Image 
+
+Na seção "appSettings", realize as configurações da imagem de validação (Captcha Image).
 
 ```xml {filename="web.config"}
 ...
@@ -129,10 +105,12 @@ TCPRfc2204 = "16"
 ...
 ```
 
-{{< icon "arrow-right-circle" >}}Configure na propriedade **value** o tipo de texto que deverá ser mostrado na imagem:
+### Texto da imagem
+
+Configure na propriedade "value" o tipo de texto que deverá ser mostrado na imagem:
 
 ```xml {filename="value"}
-< add key="STCPCaptcha:CharType" value="AlphaNum" />
+<add key="STCPCaptcha:CharType" value="AlphaNum" />
 
 "AlphaNum" = letras (maiúsculas ou minúsculas) e números.
 "Numeric" = apenas números.
@@ -143,18 +121,25 @@ TCPRfc2204 = "16"
 "AlphaUpperNum" = letras maiúsculas e números.
 ```
 
-{{< icon "arrow-right-circle" >}}Configure na propriedade **value** a quantidade de caracteres que deve ser mostrada na imagem:
+### Caracteres
+
+Configure na propriedade **value** a quantidade de caracteres que deve ser mostrada na imagem:
 
 ```xml {filename="value"}
-< add key="STCPCaptcha:Len" value="4" />
-```
-{{< icon "arrow-right-circle" >}}Para alterar o tipo de fonte da imagem, use a seguinte tag:
-
-```
-< add key="STCPCaptcha:FontFamily0" value="Comic Sans MS" />
+<add key="STCPCaptcha:Len" value="4" />
 ```
 
-{{< icon "arrow-right-circle" >}}Configurações da conexão com o servidor STCP
+### Tipo de fonte
+
+Para alterar o tipo de fonte da imagem, use a seguinte tag:
+
+```xml
+<add key="STCPCaptcha:FontFamily0" value="Comic Sans MS" />
+```
+
+### Conexão com servidor
+
+Configurações da conexão com o servidor STCP
 
 ```xml {filename="web.config"}
 ...
@@ -167,28 +152,30 @@ TCPRfc2204 = "16"
 ...
 ```
 
-{{< icon "arrow-right-circle" >}}Configure na propriedade **value** o nome do servidor informado no arquivo **stcpmon.config**.
+Configure na propriedade **value** o nome do servidor informado no arquivo **stcpmon.config**.
 
 ```xml {filename="web.config"}
-< add key="STCPMonitor:Connection" value="Server1" />
+<add key="STCPMonitor:Connection" value="Server1" />
 ```
 
-{{< icon "arrow-right-circle" >}}Configure na propriedade **value** o nome do usuário de monitoração do STCP:
+### Usuário de monitoração
+
+Configure na propriedade **value** o nome do usuário de monitoração do STCP:
 
 ```xml {filename="web.config"}
 <add key="STCPMonitor:Userid" value="stcpmon" />
 ```
 
-{{< icon "arrow-right-circle" >}}Configure na propriedade **value** a senha do usuário de monitoração do STCP.
+Configure na propriedade **value** a senha do usuário de monitoração do STCP.
 
 ```xml {filename="web.config"}
-< add key="STCPMonitor:Password" value="teste" />
+<add key="STCPMonitor:Password" value="teste" />
 ```
 
-{{< icon "arrow-right-circle" >}}Configure na propriedade **value** o valor **true** caso queira habilitar a comunicação através do protocolo TLS, caso contrário, utilize **false**.
+Configure na propriedade **value** o valor **true** caso queira habilitar a comunicação através do protocolo TLS, caso contrário, utilize **false**.
 
 ```xml {filename="web.config"}
-< add key="STCPMonitor:Security" value="false" />
+<add key="STCPMonitor:Security" value="false" />
 ```
 
 ### Idioma padrão
@@ -200,16 +187,17 @@ TCPRfc2204 = "16"
 ...
 ```
 
-{{< icon "arrow-right-circle" >}}O site do STCP OFTP Change Password pode ser exibido nos idiomas Português, Inglês e Espanhol. Configure na propriedade **value** o idioma padrão para o site.
+O site do STCP OFTP Change Password pode ser exibido nos idiomas Português, Inglês e Espanhol. Configure na propriedade **value** o idioma padrão para o site.
 
 ```xml {filename="web.config"}
 < add key="STCPChangePassword:DefaultLanguage" value="ptb" />
 
-"ptb" = Idioma Português.
-"enu" = Idioma Inglês.
-"esp" = Idioma Espanhol.
+"ptb" = Idioma Português
+"enu" = Idioma Inglês
+"esp" = Idioma Espanhol
 ```
-{{< icon "arrow-right-circle" >}}Configurações regionais.
+
+Configurações regionais:
 
 ```xml {filename="web.config"}
 ...
@@ -222,7 +210,7 @@ value="~/images/btn_esp.gif"/>
 ...
 ```
 
-{{< icon "arrow-right-circle" >}}Caso não deseje exibir o site em um determinado idioma, comente a linha desejada utilizando as tags abaixo:
+Caso não deseje exibir o site em um determinado idioma, comente a linha desejada utilizando as tags abaixo:
 
 ```
 <!- - e -->.
@@ -239,7 +227,55 @@ value="~/images/btn_enu.gif" />
 value="~/images/btn_esp.gif" /> -->
 ```
 
-### Configurações dos botões
+{{% /steps %}}
+
+## Configurações no IIS
+
+{{% steps %}}
+
+### Criar diretório virtual ou site
+
+Acesse a ferramenta de configuração do IIS (Internet Information Services) e crie um novo **diretório virtual** e/ou **site** para a configuração da aplicação.
+
+![](img/iis-03.png)
+
+### Personalização
+
+Informe o nome para o novo diretório virtual e o caminho físico, conforme figura abaixo e clique no botão **OK**.
+
+![](img/iis-04.png)
+
+![](img/iis-05.png)
+
+### Documento Padrão
+
+Nas propriedades do diretório virtual criado, selecione a aba **Documentos Padrão**. 
+
+![](img/iis-06.png)
+
+Selecione a opção **Adicionar**.
+
+![](img/iis-07.png)
+
+Informe o nome da página inicial do site conforme a figura abaixo e pressione **OK**.
+
+![](img/iis-08.png)
+
+### Finalizar
+
+Clique com o botão direito no diretório virtual recém-criado e selecione a opção "Converter
+para Aplicativo".
+
+![](img/iis-09.png)
+
+Para finalizar o processo de configuração clique no botão **OK**.
+
+Para validar a configuração, selecione o novo diretório virtual e selecione "Gerenciar Aplicativo" e "Procurar". O site do STCP OFTP Change Password deverá ser apresentado.
+
+
+{{% /steps %}}
+
+## Configurações dos botões
 
 ```xml {filename="web.config"}
 ...
@@ -260,7 +296,7 @@ value="~/images/cmdFinish_ptb_blue1.gif" />
 ...
 ```
 
-{{< icon "arrow-right-circle" >}}Configure na propriedade **value** o padrão de cores para os botões do site.
+Configure na propriedade **value** o padrão de cores para os botões do site.
 
 Exemplo:
 
@@ -281,7 +317,6 @@ Onde **PADRAO** pode ser substituído pelas cores:
 | orange2 | <span style="background-color:#F4AA2C; border-radius: 4px; padding: 4px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> |
 |   red   | <span style="background-color:#DA241B; border-radius: 4px; padding: 4px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> |
 
-
 Exemplo:
 
 ```xml {filename="web.config"}
@@ -289,7 +324,7 @@ Exemplo:
 value="~/images/cmdRefresh_ptb_blue1.gif" />
 ```
 
-### Instaladores e documentação
+## Instaladores e documentação
 
 ```xml {filename="web.config"}
 ...
