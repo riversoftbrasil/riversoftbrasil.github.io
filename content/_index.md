@@ -26,14 +26,16 @@ Aprenda sobre como implantar, configurar e gerenciar as soluções Riversoft.
         icon="cog"
         subtitle="Servidor de transferência de arquivos seguro e multiprotocolo para aplicações de e-business e troca de informações corporativas, baseado na especificação OFTP."
         link="/stcpserver"
+        tag="Em breve"
+        tagType="info"
     >}}
 
     {{< card
         title="STCP OFTP Client"
         icon="desktop-computer"
         subtitle="Client é um cliente de transferência de arquivos seguro e multiprotocolo para aplicações de e-business e troca de informações corporativas, baseado na especificação OFTP."
-        tag=""
-        tagType=""
+        tag="Em breve"
+        tagType="info"
         link="/stcpclient"
     >}}
 
@@ -44,7 +46,7 @@ Aprenda sobre como implantar, configurar e gerenciar as soluções Riversoft.
         subtitle="Aplicação integrada aos produtos STCP OFTP Server (Windows) ou STCP Gemini Server (Linux), com uma solução simples e robusta, através dos protocolos HTTPS e SFTP."
         tag="Em breve"
         tagType="info"
-        link=""
+        link="/stcpdirectlink"
     >}}
 
     {{< card
@@ -58,8 +60,8 @@ Aprenda sobre como implantar, configurar e gerenciar as soluções Riversoft.
         title="STCP Rename"
         icon="color-swatch"
         subtitle="Aplicação que possibilita o renomeio e cópia de arquivos, varredura em diretórios e execução de processo, baseado na configuração de regras de validação dos nomes destes arquivos."
-        tag=""
-        tagType=""
+        tag="Em breve"
+        tagType="info"
         link="/stcpren"
     >}}
 
@@ -67,8 +69,6 @@ Aprenda sobre como implantar, configurar e gerenciar as soluções Riversoft.
         title="STCP Signer"
         icon="finger-print"
         subtitle="Módulo utilizado para garantir a integridade, autenticidade, confidencialidade e inviolabilidade de um arquivo através da tecnologia de assinatura digital e da criptografia."
-        tag=""
-        tagType=""
         link="/stcpsigner"
     >}}
 
@@ -78,16 +78,14 @@ Aprenda sobre como implantar, configurar e gerenciar as soluções Riversoft.
         subtitle="Ferramenta com acesso através do browser (HTTP) que possibilita a supervisão e monitoração das transferências de dados realizadas pelo software STCP OFTP Client/Server."
         tag="Em breve"
         tagType="info"
-        link=""
+        link="/stcpwebadmin"
     >}}
 
     {{< card
         title="STCP Gemini Client"
         icon="terminal"
         subtitle="Aplicação cliente utilizada para transferência de arquivos seguro e multiprotocolo para aplicações de e-business e troca de informações corporativas, baseado na especificação OFTP."
-        tag="Em breve"
-        tagType="info"
-        link=""
+        link="/stcpgeminiclient"
     >}}
 
      {{< card
@@ -96,7 +94,7 @@ Aprenda sobre como implantar, configurar e gerenciar as soluções Riversoft.
         subtitle="Aplicação servidora utilizada para transferência de arquivos seguro e multiprotocolo para aplicações de e-business e troca de informações corporativas, baseado na especificação OFTP."
         tag="Em breve"
         tagType="info"
-        link=""
+        link="/stcpgeminiserver"
     >}}
 
 {{< /cards >}}

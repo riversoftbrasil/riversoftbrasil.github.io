@@ -5,5 +5,9 @@ toc: false
 sidebar:
     exclude: true
 ---
-<meta http-equiv="refresh" content="0;url=introducao" />
-<!-- Se você não foi redirecionado, <a href="/stcpserver/introducao">clique aqui</a> -->
+
+<!-- Redirect temporário -->
+<meta http-equiv="refresh" content="0;url=em-breve" />
+
+<!-- <meta http-equiv="refresh" content="0;url=introducao" /> -->
+<!-- Se você não foi redirecionado, <a href="/stcpdirectlink/introducao">clique aqui</a> -->

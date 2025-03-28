@@ -2,9 +2,7 @@
 linkTitle: 
 title: Em breve!
 layout: docs
-toc: false
-cascade:
-  type: blog
+toc: true
 sidebar:
   exclude: true
 weight: 

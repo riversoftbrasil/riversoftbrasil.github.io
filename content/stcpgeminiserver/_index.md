@@ -1,9 +1,13 @@
 ---
-linkTitle: STCP Gemini Server
+linkTitle: Em breve!
 breadcrumbs: false
 toc: false
 sidebar:
-    exclude: false
+    exclude: true
 ---
-<meta http-equiv="refresh" content="0;url=introducao" />
+
+<!-- Redirect temporário -->
+<meta http-equiv="refresh" content="0;url=em-breve" />
+
+<!-- <meta http-equiv="refresh" content="0;url=introducao" /> -->
 <!-- Se você não foi redirecionado, <a href="/stcpserver/introducao">clique aqui</a> -->
