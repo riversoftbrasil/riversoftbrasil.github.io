@@ -6,8 +6,8 @@ cascade:
 sidebar:
   exclude: false
 weight: 2
-prev: /stcpserver/01-introducao
-next: /stcpserver/02-configuracao
+prev: 
+next: 
 slug: instalacao
 draft: false
 ---
@@ -40,7 +40,7 @@ Confira os requisitos de software e hardware da aplicação:
 
 O pacote de instalação será distribuído através de um link, disponibilizado pela Riversoft.
 
-Após descompactar o arquivo ZIP, procure pelo arquivo executável (.exe) na pasta extraída.
+Após descompactar o arquivo ZIP, procure pelo arquivo executável na pasta extraída.
 
 {{% steps %}}
 
@@ -61,7 +61,7 @@ A partir deste ponto, o processo de instalação guiará você por etapas adicio
 
 As próximas etapas incluem a seleção do local de instalação, a configuração de componentes adicionais e a aceitação dos termos de licença.
 
-Pressione "Voltar" para retornar à tela anterior ou ""Cancelar"" para interromper o processo de instalação.
+Pressione "Voltar" para retornar à tela anterior ou "Cancelar" para interromper o processo de instalação.
 
 ### Contrato de licença
 
@@ -69,11 +69,11 @@ Leia cuidadosamente o Contrato de Licença de Uso do Usuário Final e caso conco
 
 ![](img/install-srv-01.png)
 
-Pressione "Voltar" para retornar à tela anterior ou ""Cancelar"" para interromper o processo de instalação.
+Pressione "Voltar" para retornar à tela anterior ou "Cancelar" para interromper o processo de instalação.
 
 ### Identificação 
 
-Na tela "Informações do cliente", informe o Nome do usuário e Empresa.
+Na tela "Informações do cliente", informe o Nome do usuário e a Organização.
 
 ![](img/install-srv-02.png)
 

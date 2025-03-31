@@ -6,8 +6,8 @@ cascade:
 sidebar:
   exclude: false
 weight: 1
-prev: /docs
-next: /01-install-srv
+prev: 
+next: 
 slug: introducao
 brand: stw
 ---

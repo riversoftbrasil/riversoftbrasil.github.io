@@ -292,7 +292,7 @@ A tabela a seguir contém a relação entre o nível de detalhamento e as inform
 
 Pressione o botão **OK** para prosseguir ou **Cancelar** para abandonar sem alterar as configurações.
 
-#### Configuração de Cipher Suites
+#### Cipher Suites
 
 Para atender às necessidades de troca de informações com segurança através da internet, o STCP utiliza o protocolo TLS (Transport Layer Security), dando suporte à configuração de um conjunto de cifras (cipher suites) utilizados para garantir a autenticidade (Ex. Algoritmos RSA/ECDHE), confidencialidade (Ex. Algoritmos AES/AES128/AES256) e a integridade (Ex. Algoritmos SHA1/SHA256/SHA384).
 
