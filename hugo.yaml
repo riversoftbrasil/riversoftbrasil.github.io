@@ -39,10 +39,10 @@ menu:
       identifier: initial
       pageRef: /
       weight: 1
-    - name: Docs
-      identifier: docs
-      weight: 2
-      pageRef: /docs
+    # - name: Docs
+    #   identifier: docs
+    #   weight: 2
+    #   pageRef: /docs
     - name: Segurança
       identifier: security
       pageRef: /security
