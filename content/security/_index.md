@@ -142,8 +142,7 @@ openssl genrsa -des3 > C:\STCPODT\Keys\chaveprivada.key 2048
 ```
 <!-- Após digitar a linha de comando, o sistema solicitará que informe uma senha para proteger o par de chaves que será criado no diretório *C:\STCPODT\Keys*. -->
 
-![](img/openssl-chavepriv.png "Linha de comando")
-![](img/openssl-chavepriv-dir.png "Arquivo salvo no diretório")
+![](img/openssl-chave-priv.png "Linha de comando")
 
 #### Geração da CSR (Certificate Signing Request)
 
