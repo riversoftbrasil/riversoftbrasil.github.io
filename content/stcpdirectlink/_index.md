@@ -6,7 +6,7 @@ sidebar:
     exclude: true
 ---
 
-<!-- Redirect temporário -->
+<!-- Redirect emporário -->
 <meta http-equiv="refresh" content="0;url=em-breve" />
 
 <!-- <meta http-equiv="refresh" content="0;url=introducao" /> -->

@@ -6,9 +6,9 @@ cascade:
   type: docs
 sidebar:
   exclude: false
-weight: 3
-prev: /stcpdirectlink/02-configuration
-next: /stcpdirectlink/04-portal/
+weight: 4
+prev: 
+next: 
 slug: execucao
 draft: false
 ---

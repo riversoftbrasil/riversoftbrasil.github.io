@@ -6,9 +6,9 @@ cascade:
   type: docs
 sidebar:
   exclude: false
-weight: 2
-prev: /stcpdirectlink/01-install/
-next: /stcpdirectlink/03-run
+weight: 3
+prev: 
+next: 
 draft: false
 slug: configuracao
 ---

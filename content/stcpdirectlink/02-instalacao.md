@@ -6,9 +6,9 @@ cascade:
   type: docs
 sidebar:
   exclude: false
-weight: 1
-prev: /stcpdirectlink/
-next: /stcpdirectlink/01-install/requirements
+weight: 2
+prev: 
+next: 
 draft: false
 slug: instalacao
 ---
