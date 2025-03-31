@@ -21,7 +21,7 @@ Nesta seção veremos os passos de instalação e configurações iniciais do *S
 ### Funcionalidades
 
 * Integração:
-  * Com parceiros para transferência de arquivos;;
+  * Com parceiros para transferência de arquivos;
   * De sistemas através de transferência de arquivos;
   * Com bancos para transferência de cobrança, pagamento, extratos e outros;
   * Com montadoras para transferência de ordens de embarque e produção;
