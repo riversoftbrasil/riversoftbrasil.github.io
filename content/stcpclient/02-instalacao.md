@@ -31,51 +31,63 @@ slug: instalacao
 
 ## Distribuição dos Pacotes
 
-O pacote de instalação será distribuído através de um link pela Equipe de Sustentação da Riversoft.
+O pacote de instalação será distribuído através de um link, disponibilizado pela Riversoft.
 
-Após extrair o zip com o executável, os seguintes passos devem ser executados:
+Após descompactar o arquivo ZIP, procure pelo arquivo executável na pasta extraída.
 
-{{< icon "arrow-right-circle" >}}Clique em **Avançar**
+{{% steps %}}
 
-![](img/clt-02.png)
+### Execute o instalador
 
-<br>
+Clique duas vezes no arquivo executável para iniciar o processo de instalação.
 
-{{< icon "arrow-right-circle" >}}Esta é a tela de boas-vindas, clique no botão **Avançar** para continuar.
-
-Pressione **Voltar** para retornar à tela anterior ou **Cancelar** para interromper o processo de instalação.
+Uma janela de boas-vindas será exibida. Leia as informações e clique em “Avançar” para prosseguir.
 
 ![](img/clt-01.png)
 
-{{< icon "arrow-right-circle" >}}Leia cuidadosamente o **Contrato de Licença de Uso do Usuário Final** e caso concorde com os termos propostos, marque a opção correspondente e pressione o botão **Avançar** para prosseguir com a instalação.
+![](img/clt-02.png)
 
-Pressione **Voltar** para retornar à tela anterior ou **Cancelar** para interromper o processo de instalação.
+Pressione "Voltar" para retornar à tela anterior ou "Cancelar" para interromper o processo de instalação.
+
+### Contrato de licença
+
+Leia cuidadosamente o Contrato de Licença de Uso do Usuário Final e caso concorde com os termos propostos, marque a opção correspondente e pressione o botão “Avançar” para prosseguir com a instalação.
 
 ![](img/clt-03.png)
 
-{{< icon "arrow-right-circle" >}}Na tela **Informações do Cliente**, informe o Nome do usuário e Organização (Empresa).
+Pressione "Voltar" para retornar à tela anterior ou "Cancelar" para interromper o processo de instalação.
 
-{{< icon "arrow-right-circle" >}}Clique no botão **Avançar** para continuar a instalação.
+### Identificação
 
-Pressione **Voltar** para retornar à tela anterior ou **Cancelar** para cancelar todo o processo de instalação.
+Na tela “Informações do cliente”, informe o Nome do usuário e a Organização.
 
 ![](img/clt-04.png)
 
-{{< icon "arrow-right-circle" >}}Na tela **Pasta de Destino**, clique em **Avançar** para instalar no diretório padrão ou **Alterar** para selecionar outro diretório ou criar um novo.
+Após preencher os campos, clique em “Avançar” para prosseguir com a instalação.
 
-Pressione **Voltar** para retornar à tela anterior ou **Cancelar** para interromper o processo de instalação.
+Pressione “Voltar” para retornar à tela anterior ou “Cancelar” para cancelar todo o processo de instalação.
+
+### Diretório 
+
+Na tela “Pasta de destino”, clique em “Avançar” para instalar no diretório padrão ou “Alterar” para selecionar outro diretório ou criar um novo.
 
 ![](img/clt-05.png)
 
-{{< icon "arrow-right-circle" >}}Na tela **Pronto para Instalar o Programa**, clique em **Qualquer pessoa que utilizar este computador (todos os usuários)** ou **Somente para mim (Riversoft)** para instalar.
+Pressione "Voltar" para retornar à tela anterior ou "Cancelar" para interromper o processo de instalação.
 
-Pressione **Voltar** para retornar à tela anterior ou **Cancelar** para interromper o processo de instalação.
+### Confirmação de Instalação
+
+Antes de finalizar a instalação, verifique se as configurações escolhidas estão corretas e prossiga com a instalação.
 
 ![](img/clt-06.png)
 
-{{< icon "arrow-right-circle" >}}Na tela de **Conclusão**, clique no botão **Concluir** para finalizar a instalação.
+Caso precise revisar ou alterar as configurações em telas anteriores, clique em “Voltar”.
+
+Por fim, clique em “Concluir” para finalizar a instalação.
 
 ![](img/clt-07.png)
+
+{{% /steps %}}
 
 ## Estrutura dos Diretórios
 
