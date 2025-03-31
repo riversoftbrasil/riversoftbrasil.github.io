@@ -10,6 +10,9 @@ sidebar:
 weight: 1
 ---
 
+<meta http-equiv="refresh" content="0;url=/" />
+<!-- Se você não foi redirecionado, <a href="/">clique aqui</a> -->
+
 Tudo o que você precisa saber para sua jornada nas soluções Riversoft.
 
 ### Windows

@@ -60,8 +60,8 @@ Aprenda sobre como implantar, configurar e gerenciar as soluções Riversoft.
         title="STCP Rename"
         icon="color-swatch"
         subtitle="Aplicação que possibilita o renomeio e cópia de arquivos, varredura em diretórios e execução de processo, baseado na configuração de regras de validação dos nomes destes arquivos."
-        tag="Em breve"
-        tagType="info"
+        tag=""
+        tagType=""
         link="/stcpren"
     >}}
 
