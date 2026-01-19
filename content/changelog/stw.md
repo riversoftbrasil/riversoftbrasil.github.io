@@ -5,6 +5,14 @@ slug: stcp-windows
 ---
 ## STCP OFTP Server e STCP OFTP Client
 
+#### {{< icon "clock" >}} &nbsp;  Versão 5.3.20.0 (lançada em dezembro de 2025)
+
+- Implementação da validação do Fingerprint da chave do servidor remoto em conexões que utilizem o protocolo SFTP (Client).
+- Implementação da possibilidade de configuração de cifras criptográficas utilizadas em conexões SFTP (Client).
+- Correção do problema no configurador do STCP que impedia a gravação correta da alteração do modo de autenticação da interface de rede SFTP (Senha ou Chave Pública).
+- Correção do problema no configurador do STCP que truncava o parâmetro TCPSSLCipher da configuração de rede quando o tamanho excedia 268 caracteres.
+- Melhoria no controle do consumo de memória ao utilizar o protocolo SFTP (Client), aumentando a estabilidade do serviço.
+
 #### {{< icon "clock" >}} &nbsp;  Versão 5.3.19.0 (lançada em julho de 2025)
 
 - Implementação do suporte para o uso de proxies HTTP (Basic, NTLM, Digest, None) e SOCKS (SOCKS4 e SOCKS5) em conexões que utilizem o protocolo SFTP.
