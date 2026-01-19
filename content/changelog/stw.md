@@ -5,7 +5,7 @@ slug: stcp-windows
 ---
 ## STCP OFTP Server e STCP OFTP Client
 
-#### {{< icon "clock" >}} &nbsp;  Versão 5.3.19.0 (lançada em julho de 2024)
+#### {{< icon "clock" >}} &nbsp;  Versão 5.3.19.0 (lançada em julho de 2025)
 
 - Implementação do suporte para o uso de proxies HTTP (Basic, NTLM, Digest, None) e SOCKS (SOCKS4 e SOCKS5) em conexões que utilizem o protocolo SFTP.
 - Implementação do suporte para definir o endereço da interface de rede local utilizada em conexões de saída pelos protocolos SFTP e FTP.
