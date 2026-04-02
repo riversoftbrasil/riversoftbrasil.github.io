@@ -5,6 +5,12 @@ slug: webadmin
 ---
 ## STCP OFTP Web Admin
 
+### {{< icon "clock" >}} &nbsp; Versão 5.3.0.0 (lançada em abril de 2026)
+
+- Ajustes no layout da consulta de Usuários (Caixa Postal), proporcionando melhor visualização das informações.
+- Ajustes no exibição da versão do cliente STCP no relatório de Utilização - Versão cliente.
+- Ajustes na exibição das mensagens de erro do STCP Directlink nos relatórios de Eventos e Usuários (Caixa Postal).
+
 ### {{< icon "clock" >}} &nbsp; Versão 5.2.6.1 (lançada em janeiro de 2022)
 
 - Correção da falha ao exportar dados dos relatórios Frequência de Conexão e Transferência.
