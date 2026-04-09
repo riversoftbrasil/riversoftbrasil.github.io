@@ -7,6 +7,114 @@ slug: directlink
 ---
 ## STCP Directlink
 
+### {{< icon "clock" >}} &nbsp;  Versão 8.1.4 (lançada em abril de 2026)
+
+- Correção do tratamento do SFTP Server para chaves que não utilizam o algoritmo RSA.
+- Correção do tratamento da formatação de diretórios no SFTP para operações de download.
+- Correção do tratamento da formatação do nome do arquivo remoto nas comunicações via SFTP, FTP e Object Storage.
+- Implementação das informações de recursos do Windows nas propriedades do arquivo executável.
+
+### {{< icon "clock" >}} &nbsp;  Versão 8.1.3 (lançada em março de 2026)
+
+- Correção do problema no timestamp das mensagens na console, que não apresentava a indicação de timezone.
+- Correção do problema na identificação do primeiro acesso para novos usuários.
+- Correção do comportamento do client FTP que removia o arquivo do servidor remoto mesmo com a opção de exclusão desabilitada.
+- Correção de falha no envio de arquivos via SFTP Client para o AWS Transfer.
+- Correção do problema em que a aplicação não era encerrada corretamente ao utilizar CTRL-C ou comando exit no modo console.
+- Correção de erro de memória ao executar o comando CTRL-C.
+- Implementação do módulo de comunicação FTP/FTPS.
+- Implementação da integração do módulo FTP/FTPS ao STCP DirectLink.
+- Implementação de integração com OpenTelemetry, com suporte a configuração de traces, métricas e logs na inicialização da aplicação.
+- Implementação de autenticação 2FA no protocolo SFTP.
+- Implementação de tratamento de MFA no serviço do SFTP Server.
+
+### {{< icon "clock" >}} &nbsp;  Versão 8.0.10 (lançada em dezembro de 2025)
+
+- Correção do comportamento de autenticação, passando a bloquear o acesso quando o domínio não estiver configurado no LDAP, evitando fallback indevido para autenticação via banco de dados.
+- Correção do problema de falha no login ao utilizar autenticação LDAP.
+
+### {{< icon "clock" >}} &nbsp;  Versão 8.0.9 (lançada em outubro de 2025)
+
+- Correção do problema que causava a interrupção da aplicação em cenários com múltiplas comunicações SFTP.
+- Correção do problema que causava a interrupção da aplicação no acesso simultâneo ao mapa de controle de transferência.
+- Correção do problema no envio do link por e-mail em transferências via portal (upload).
+- Implementação de opção para armazenamento dos eventos de debug em arquivo, em substituição à console ou ao Event Viewer.
+- Implementação de opção de configuração para habilitar ou desabilitar a verificação da existência do bucket na comunicação S3.
+- Implementação de opção de configuração para remoção do arquivo da pasta de entrada na recepção via API (upload) quando informado o usuário de destino no roteamento implícito.
+
+### {{< icon "clock" >}} &nbsp;  Versão 8.0.0 (lançada em junho de 2025)
+
+- Correção do problema de lock de sessão que retornava status “locked” mesmo com sessões disponíveis.
+- Correção do tratamento do modo de conexão no protocolo AS2.
+- Implementação de parâmetros de configuração de usuário para o protocolo AS2.
+- Implementação do tratamento de mensagens com codificação BER.
+- Implementação do suporte a MDN assíncrono, incluindo envio, recepção e tratamento de erros.
+- Implementação do tratamento do MIC em mensagens AS2 (recepção criptografada e comprimida).
+- Implementação do controle de algoritmos suportados para assinatura, criptografia e cálculo do MIC no AS2.
+- Implementação da validação de certificados TLS (client e server) nas conexões AS2.
+- Implementação da leitura das configurações do usuário no recebimento de mensagens AS2.
+- Implementação de parâmetros para definição das opções requeridas na recepção de documentos (assinatura, criptografia e compressão).
+- Implementação do envio de headers customizados por conexão e por tipo de arquivo no AS2.
+- Implementação do tratamento de endereço local e proxy na conexão de saída.
+- Implementação de eventos de notificação para início/fim de sessão, início/fim de recepção de documentos e eventos de log.
+- Implementação de logging de requisições HTTP/HTTPS com status de resposta.
+- Implementação de tratamento de timeout nas conexões client e server.
+- Implementação do suporte completo ao recebimento de arquivos no AS2, contemplando diferentes cenários de criptografia, assinatura e MDN.
+- Implementação da integração dos módulos AS2 Server e AS2 Client ao core principal.
+- Ajustes nas mensagens de log de erro do AS2 Server.
+- Alteração do parâmetro de assinatura de SIGN para SIGN_MULTIPART nas configurações de envio e obrigatoriedade de documentos.
+
+### {{< icon "clock" >}} &nbsp;  Versão 7.1.8 (lançada em maio de 2025)
+
+- Correção da mensagem de notificação de download do SecureLink, que informava incorretamente 0 dias para expiração.
+- Correção do tratamento de mensagens do tipo vídeo na interface do webhook do WhatsApp.
+- Correção do problema de formatação no comando de envio de dados para gravação na área do sandbox ou keystore quando o conteúdo não é texto.
+- Correção do envio de mensagens via WhatsApp no modo SecureLink com PIN.
+- Implementação de comando na interface de supervisão para upload de certificados e chaves.
+- Implementação de comando na interface de supervisão para listagem de certificados e chaves.
+- Implementação de comando na interface de supervisão para listagem das áreas do sandbox.
+- Implementação de comando na interface de supervisão para remoção de arquivos em áreas do sandbox.
+- Implementação de comando na interface de supervisão para remoção de certificados e chaves.
+- Implementação de comando na interface de supervisão para adição de arquivos em áreas do sandbox.
+- Implementação de parâmetro para configuração do diretório de armazenamento do keystore.
+- Implementação do tratamento de envio de localização via WhatsApp.
+- Implementação de mensagens de log para erros no envio de templates via webhook do WhatsApp.
+- Implementação do registro do nome do operador nos logs de operações no sandbox e keystore.
+- Implementação do registro do número de telefone/ID de origem nas mensagens enviadas via SMS/WhatsApp.
+- Implementação de logs para operações de adição e remoção de arquivos no sandbox de transferência.
+- Implementação de logs para operações de adição e remoção de arquivos no keystore.
+- Implementação da criação da área de keystore (certs/keys) no script de instalação.
+- Implementação de filtro por expressão regular na listagem do keystore.
+- Ajuste dos códigos de mensagens do SFTP de MSG0149 para MSG0180 e de MSG0151 para MSG0181.
+
+### {{< icon "clock" >}} &nbsp;  Versão 7.1.5 (lançada em abril de 2025)
+
+- Correção do problema na mensagem MSG0035, que apresentava um parâmetro extra em sua exibição.
+
+### {{< icon "clock" >}} &nbsp;  Versão 7.1.4 (lançada em abril de 2025)
+
+- Correção do problema que causava falha na inicialização da aplicação no Windows.
+- Correção do problema na criação de diretórios para sandboxes de transferência.
+- Correção do problema na exibição dos relatórios de upload e download.
+- Correção do problema de comunicação SFTP com proxies que utilizam caracteres especiais.
+- Correção no envio da informação de hash pelo cliente.
+- Implementação da criação automática de pastas no primeiro acesso.
+- Implementação de mensagem de erro para usuário de destino não encontrado.
+- Implementação do cálculo de hash dos arquivos para registro em log.
+- Implementação da alteração de senha exclusivamente via portal.
+- Implementação de página para download sem PIN integrada ao WhatsApp.
+- Implementação de cliente de transferência via WhatsApp.
+- Implementação de notificações de MFA e Link Seguro via WhatsApp utilizando as APIs Zendesk e META.
+- Melhoria na conexão para usuários configurados apenas como “sender”.
+- Melhorias no tratamento de transferências via SecureLink.
+- Atualização das bibliotecas de acesso ao banco de dados.
+- Definição de algoritmo padrão para autenticação de chaves, evitando erros de autenticação.
+- Ajustes na geração de mensagens de controle para conexões de saída.
+- Criação de parâmetro para configuração do diretório de LINK.
+- Criação de central de transferências via WhatsApp utilizando a API META.
+- Adição de campo para número de celular na configuração do usuário.
+- Implementação da configuração de endereço local na chamada do SFTP Client.
+
 ### {{< icon "clock" >}} &nbsp;  Versão 6.9.10 (lançada em outubro de 2024)
 
 - Correção do problema ao processar parâmetros com aspas duplas e simples, garantindo o parsing correto na linha de comando.
