@@ -10,6 +10,7 @@ slug: webadmin
 - Ajustes no layout da consulta de Usuários (Caixa Postal), proporcionando melhor visualização das informações.
 - Ajustes no exibição da versão do cliente STCP no relatório de Utilização - Versão cliente.
 - Ajustes na exibição das mensagens de erro do STCP Directlink nos relatórios de Eventos e Usuários (Caixa Postal).
+- Melhoria na performance das consultas ao banco de dados Oracle (conexão nativa OCI8)
 
 ### {{< icon "clock" >}} &nbsp; Versão 5.2.6.1 (lançada em janeiro de 2022)
 
