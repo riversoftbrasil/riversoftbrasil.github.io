@@ -55,7 +55,7 @@ params:
     logo:
       path: images/logo-river.png
       dark: images/logo-river-dark.png
-      # link: /
+      link: /
       width: 155
 
   footer:
