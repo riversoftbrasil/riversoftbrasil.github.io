@@ -10,5 +10,5 @@ layout: docs
 # slug: introducao
 # brand: stw
 ---
-<meta http-equiv="refresh" content="0;url=system" />
+<meta http-equiv="refresh" content="0;url=system/" />
 
