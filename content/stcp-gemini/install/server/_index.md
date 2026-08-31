@@ -4,7 +4,7 @@ title: "STCP Gemini Server"
 #   exclude: true
 cascade:
   type: docs
-weight: 50
+weight: 34
 ---
 <!-- <meta http-equiv="refresh" content="0;url=overview/" /> -->
 

@@ -3,6 +3,8 @@ title: "Eventos - Operadores"
 description: "Consulta aos logs de operadores"
 weight: 3
 toc: true
+cascade:
+  type: docs
 ---
 ## Descrição
 

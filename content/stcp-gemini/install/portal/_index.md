@@ -4,7 +4,7 @@ title: "STCP Gemini Portal"
 #   exclude: true
 cascade:
   type: docs
-weight: 40
+weight: 33
 ---
 
 ## O que é o STCP Gemini Portal?

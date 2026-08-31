@@ -3,6 +3,8 @@ title: "Visão Geral"
 description: ""
 weight: 1
 toc: false
+cascade:
+  type: docs
 ---
 {{< callout type="warning" >}}
 Esta documentação está **em desenvolvimento** e pode sofrer alterações à medida que endpoints, parâmetros e funcionalidades forem revisados ou adicionados.

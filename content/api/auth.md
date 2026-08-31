@@ -3,7 +3,8 @@ title: "Obter token oauth2"
 description: "Obtenção de Access Token via OAuth 2.0 Password Grant"
 weight: 2
 toc: true
-layout: docs
+cascade:
+  type: docs
 ---
 ### Descrição
 

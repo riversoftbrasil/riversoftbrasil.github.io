@@ -6,6 +6,10 @@ cascade:
 ---
 <!-- <meta http-equiv="refresh" content="0;url=overview/" /> -->
 
+{{< callout type="warning" >}}
+Esta documentação está **em desenvolvimento** e pode sofrer alterações à medida que conteúdos, configurações, recursos e funcionalidades da plataforma STCP Gemini forem revisados, atualizados ou adicionados.
+{{< /callout >}}
+
 ## Objetivo
 
 Esta seção apresenta a plataforma STCP Gemini e fornece uma visão geral de seus principais componentes, recursos e conceitos. Também orienta sobre os primeiros passos necessários para preparar, instalar e configurar a plataforma.

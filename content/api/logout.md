@@ -3,7 +3,8 @@ title: "Logout"
 description: ""
 weight: 4
 toc: true
-layout: docs
+cascade:
+  type: docs
 next: system
 ---
 ### Descrição

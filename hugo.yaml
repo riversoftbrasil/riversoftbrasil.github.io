@@ -48,16 +48,16 @@ menu:
       params:
         icon: globe-alt
   # sidebar:
-  #   - name: "Referência da API"
+  #   - name: "Referências da API"
   #     params:
   #       type: separator
-  #     weight: 1
-  #   - name: "Gemini APIv2"
-  #     pageRef: "/stcp-gemini/api-reference/"
-  #     weight: 2
-  #   - name: "Directlink APIv2"
+  #     weight: 100
+  #   - name: "STCP Gemini"
+  #     pageRef: "/api/overview/"
+  #     weight: 200
+  #   - name: "STCP Directlink"
   #     pageRef: "/about"
-  #     weight: 2
+  #     weight: 300
 
 params:
   navbar:
@@ -68,6 +68,8 @@ params:
       dark: images/logo-river-dark.png
       link: /
       width: 155
+  # page:
+  #   displayPagination: true
 
   footer:
     enable: true

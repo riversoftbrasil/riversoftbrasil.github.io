@@ -5,7 +5,7 @@ title: "STCP Gemini API"
 #   exclude: true
 cascade:
   type: docs
-weight: 30
+weight: 32
 ---
 <!-- <meta http-equiv="refresh" content="0;url=overview/" /> -->
 

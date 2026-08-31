@@ -2,7 +2,8 @@
 title: "Relatórios"
 description: "Endpoints de relatórios da API STCP Gemini"
 weight: 5
-layout: docs
+cascade:
+  type: docs
 # sidebar:
 #   exclude: true
 # prev: 
