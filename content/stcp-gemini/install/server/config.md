@@ -3,6 +3,8 @@ title: "Configuração"
 weight: 20
 toc: true
 layout: docs
+next: /stcp-gemini/install/server/execute/
+prev: /stcp-gemini/install/server/install/
 ---
 ## Criação do arquivo de configuração
  

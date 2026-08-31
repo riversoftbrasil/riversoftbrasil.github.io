@@ -3,6 +3,8 @@ title: "Segurança"
 weight: 20
 cascade:
   type: docs
+next: /stcp-gemini/install/requirements/
+
 ---
 
 ## Segurança da plataforma

@@ -5,6 +5,8 @@ title: "STCP Gemini Portal"
 cascade:
   type: docs
 weight: 33
+next: /stcp-gemini/install/portal/install/
+prev: /stcp-gemini/install/api/execute/
 ---
 
 ## O que é o STCP Gemini Portal?

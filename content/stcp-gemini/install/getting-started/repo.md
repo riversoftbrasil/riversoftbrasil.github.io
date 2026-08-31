@@ -3,6 +3,8 @@ title: "Repositório"
 description: ""
 weight: 20
 toc: true
+next: /stcp-gemini/install/api/
+
 ---
 
 ## Configuração do Repositório

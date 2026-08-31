@@ -5,6 +5,8 @@ title: "STCP Gemini Server"
 cascade:
   type: docs
 weight: 34
+next: /stcp-gemini/install/server/install/
+prev: /stcp-gemini/install/portal/access/
 ---
 <!-- <meta http-equiv="refresh" content="0;url=overview/" /> -->
 

@@ -1,8 +1,10 @@
 ---
 title: "Referência da API"
 weight: 40
-toc: true
-layout: docs
+cascade:
+  type: docs
+prev: /stcp-gemini/install/
+
 ---
 <!-- <meta http-equiv="refresh" content="0;url=overview/" /> -->
 

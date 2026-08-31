@@ -5,6 +5,8 @@ title: "Requisitos"
 cascade:
   type: docs
 weight: 30
+next: database
+prev: security
 ---
 <!-- <meta http-equiv="refresh" content="0;url=overview/" /> -->
 
@@ -45,5 +47,5 @@ O STCP Gemini Server é compatível com os seguintes sistemas de gerenciamento d
 
 Antes de iniciar a instalação do STCP Gemini Server, o banco de dados deve estar disponível e acessível a partir do servidor onde a aplicação será instalada.
 
-Consulte a seção **[Preparação do banco de dados](/stcp-gemini/server/database/)** para obter os scripts necessários à criação do banco de dados e das tabelas utilizadas pelo STCP Gemini Server.
+Consulte a seção **[Preparação do banco de dados](/stcp-gemini/install/getting-started/database/)** para obter os scripts necessários à criação do banco de dados e das tabelas utilizadas pelo STCP Gemini Server.
 

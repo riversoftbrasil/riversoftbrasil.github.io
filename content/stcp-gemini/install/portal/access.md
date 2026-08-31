@@ -3,6 +3,8 @@ title: "Primeiro Acesso"
 weight: 30
 toc: true
 layout: docs
+next: /stcp-gemini/install/server/
+prev: /stcp-gemini/install/portal/config/
 ---
 
 ## Primeiro acesso ao STCP Gemini Portal

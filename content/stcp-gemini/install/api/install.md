@@ -3,6 +3,8 @@ title: "Instalação"
 weight: 10
 toc: true
 layout: docs
+next: /stcp-gemini/install/api/config/
+prev: /stcp-gemini/install/api/
 ---
 ## Instalação do STCP Gemini API
 
@@ -17,7 +19,7 @@ dnf install -y stcpgemini-api
 Durante a instalação, o gerenciador de pacotes irá resolver e instalar automaticamente as dependências necessárias disponíveis nos repositórios configurados no sistema.
 
 {{< callout type="info" >}}
-Se o repositório Riversoft ainda não estiver configurado, consulte **[Configuração do repositório Riversoft](/stcp-gemini/getting-started/repo/)** antes de continuar.
+Se o repositório Riversoft ainda não estiver configurado, consulte **[Configuração do repositório Riversoft](/stcp-gemini/install/getting-started/repo/)** antes de continuar.
 {{< /callout >}}
 
 Após a conclusão, confirme se o pacote foi instalado corretamente:
@@ -40,4 +42,4 @@ Por padrão, os arquivos do STCP Gemini API são instalados no diretório:
 
 ## Próxima etapa
 
-Após validar a instalação, prossiga para **[Configuração inicial do STCP Gemini API](/stcp-gemini/api/config/)**.
+Após validar a instalação, prossiga para **[Configuração inicial do STCP Gemini API](/stcp-gemini/install/api/config/)**.

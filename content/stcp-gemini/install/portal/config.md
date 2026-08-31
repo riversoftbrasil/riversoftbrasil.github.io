@@ -3,6 +3,8 @@ title: "Configuração"
 weight: 20
 toc: true
 layout: docs
+next: /stcp-gemini/install/portal/access/
+prev: /stcp-gemini/install/portal/install/
 ---
 ## Criação do arquivo de configuração
  

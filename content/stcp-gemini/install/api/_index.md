@@ -6,6 +6,8 @@ title: "STCP Gemini API"
 cascade:
   type: docs
 weight: 32
+next: /stcp-gemini/install/api/install
+prev: /stcp-gemini/install/getting-started/repo/
 ---
 <!-- <meta http-equiv="refresh" content="0;url=overview/" /> -->
 
