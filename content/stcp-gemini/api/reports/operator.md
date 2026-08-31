@@ -4,24 +4,24 @@ description: "Consulta aos logs de operadores"
 weight: 3
 toc: true
 ---
-### Descrição
+## Descrição
 
 Este endpoint permite ao integrador consultar os **logs de atividades dos Operadores**.
 
-### HTTP request
+## HTTP request
 
 ```text
 GET /reports/v2/operators
 ```
 
-### Request Headers
+## Request Headers
 
 | **Chave** | **Valor** |
 |---|---|
 | `Authorization` | `Bearer <ACCESS_TOKEN>` |
 | `Accept` | `application/json` |
 
-### Query Parameters
+## Query Parameters
 
 | **Chave** | **Tipo** | **Descrição** |
 |---|---|---|
@@ -32,7 +32,7 @@ GET /reports/v2/operators
 | `limit` | `integer` | Número máximo de resultados a serem retornados por página. |
 | `index` | `integer` | Índice utilizado para controle da paginação dos resultados. |
 
-### Exemplo de Requisição
+## Exemplo de Requisição
 
 ```text
 GET /reports/v2/operators?msg=&operador=&start=1786503600000&end=1786589999000&limit=100&index=0
@@ -41,18 +41,18 @@ Authorization: Bearer <ACCESS_TOKEN>
 Accept: application/json
 ```
 
-### Estrutura da Resposta
+## Estrutura da Resposta
 
 A API retorna um objeto JSON contendo os registros encontrados e, quando aplicável, a referência para a próxima página de resultados.
 
-#### Objeto principal
+### Objeto principal
 
 | **Chave** | **Tipo** | **Descrição** |
 |---|---|---|
 | `data` | `array` | Lista de registros retornados pela consulta. |
 | `next` | `string` | URI para consulta da próxima página de resultados. Quando não houver próxima página, o valor poderá ser vazio. |
 
-#### Estrutura dos registros em `data`
+### Estrutura dos registros em `data`
 
 | **Chave** | **Tipo** | **Descrição** |
 |---|---|---|
@@ -62,7 +62,7 @@ A API retorna um objeto JSON contendo os registros encontrados e, quando aplicá
 | `MENSAGEM` | `string` | Detalhes do evento ou da operação executada. |
 | `DATAHORA` | `string` | Data e hora da ocorrência do evento. |
 
-### Exemplo de Resposta (Sucesso com Dados)
+## Exemplo de Resposta (Sucesso com Dados)
 
 ```json
 {
@@ -79,7 +79,7 @@ A API retorna um objeto JSON contendo os registros encontrados e, quando aplicá
 }
 ```
 
-### Exemplo de Resposta (Sem Dados)
+## Exemplo de Resposta (Sem Dados)
 
 ```json
 {
@@ -88,7 +88,7 @@ A API retorna um objeto JSON contendo os registros encontrados e, quando aplicá
 }
 ```
 
-### Paginação
+## Paginação
 
 Quando existirem mais resultados disponíveis, o campo `next` retornará a URI que deverá ser utilizada para consultar a próxima página.
 
@@ -98,7 +98,7 @@ Exemplo:
 /reports/v2/operators?end=1786579199000&index=47165&limit=100&msg=&operador=&start=1785553200000
 ```
 
-### Códigos de Status da Resposta
+## Códigos de Status da Resposta
 
 | **Código** | **Descrição** |
 |---|---|

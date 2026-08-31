@@ -4,24 +4,24 @@ description: "Consulta ao histórico de transferências"
 weight: 4
 toc: true
 ---
-### Descrição
+## Descrição
 
 Este endpoint permite ao integrador consultar o histórico de transferências.
 
-### HTTP request
+## HTTP request
 
 ```text
 GET /reports/v2/transfers
 ```
 
-### Request Headers
+## Request Headers
 
 | Chave | Valor |
 |---|---|
 | `Authorization` | `Bearer <ACCESS_TOKEN>` |
 | `Accept` | `application/json` |
 
-### Query Parameters
+## Query Parameters
 
 | Chave | Tipo | Descrição |
 |---|---|---|
@@ -35,7 +35,7 @@ GET /reports/v2/transfers
 | `start` | `integer` | Data e hora inicial da consulta, em Unix Timestamp (milissegundos). |
 | `end` | `integer` | Data e hora final da consulta, em Unix Timestamp (milissegundos). |
 
-### Exemplo de Requisição
+## Exemplo de Requisição
 
 ```text
 GET /reports/v2/transfers?instance=STCPGEMINI&events=5&events=7&limit=1000&start=1766188800000&end=1766275199000
@@ -44,16 +44,18 @@ Authorization: Bearer <ACCESS_TOKEN>
 Accept: application/json
 ```
 
-### Estrutura da Resposta
+## Estrutura da Resposta
 
 A API retorna um objeto JSON contendo os registros encontrados e, quando aplicável, a referência para a próxima página de resultados.
+
+### Objeto principal
 
 | **Chave** | **Tipo** | **Descrição** |
 |---|---|---|
 | `data` | `array` | Lista de registros retornados pela consulta. |
 | `next` | `string` | URI para consulta da próxima página de resultados. Quando não houver próxima página, o valor poderá ser vazio. |
 
-#### Estrutura dos registros em `data`
+### Estrutura dos registros em `data`
 
 | **Chave** | **Tipo** | **Descrição** |
 |---|---|---|
@@ -76,7 +78,7 @@ A API retorna um objeto JSON contendo os registros encontrados e, quando aplicá
 | `TIPOREC` | `string` | Formato do registro (RECFM). |
 | `DIAS` | `integer` | Número de dias desde a ocorrência. |
 
-### Exemplo de Resposta (Sucesso com Dados)
+## Exemplo de Resposta (Sucesso com Dados)
 
 ```json
 {
@@ -107,7 +109,7 @@ A API retorna um objeto JSON contendo os registros encontrados e, quando aplicá
 }
 ```
 
-### Exemplo de Resposta (Sem Dados)
+## Exemplo de Resposta (Sem Dados)
 
 ```json
 {
@@ -116,7 +118,7 @@ A API retorna um objeto JSON contendo os registros encontrados e, quando aplicá
 }
 ```
 
-### Paginação
+## Paginação
 
 Quando existirem mais resultados disponíveis, o campo `next` retornará a URI que deverá ser utilizada para consultar a próxima página.
 
@@ -126,7 +128,7 @@ Exemplo:
 /reports/v2/transfers?end=1786579199000&events=&index=4441011&limit=2&start=1704078000000
 ```
 
-### Códigos de Status da Resposta
+## Códigos de Status da Resposta
 
 | Código | Descrição |
 |---:|---|

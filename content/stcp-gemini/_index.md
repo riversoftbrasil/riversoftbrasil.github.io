@@ -1,5 +1,5 @@
 ---
-title: "Home"
+title: "STCP Gemini"
 cascade:
   type: docs
 ---

@@ -1,7 +1,7 @@
 ---
-title: "STCP Gemini API"
-# sidebar:
-#   exclude: true
+title: "Referência da API"
+sidebar:
+  exclude: false
 cascade:
   type: docs
 ---

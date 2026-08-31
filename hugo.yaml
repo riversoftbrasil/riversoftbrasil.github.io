@@ -47,6 +47,17 @@ menu:
       url: "https://www.riversoft.com.br/"
       params:
         icon: globe-alt
+  # sidebar:
+  #   - name: "Referência da API"
+  #     params:
+  #       type: separator
+  #     weight: 1
+  #   - name: "Gemini APIv2"
+  #     pageRef: "/stcp-gemini/api-reference/"
+  #     weight: 2
+  #   - name: "Directlink APIv2"
+  #     pageRef: "/about"
+  #     weight: 2
 
 params:
   navbar:
@@ -76,11 +87,8 @@ params:
     default: system
     displayToggle: true
   
-# defaultContentLanguage: pt-br
-# languages:
-#   pt-br:
-#     languageName: Português
-#     weight: 1
-#   es-es:
-#     languageName: Español
-#     weight: 2
+defaultContentLanguage: pt-br
+languages:
+  pt-br:
+    label: Português
+    weight: 1
