@@ -45,6 +45,7 @@ Em alto nível, a plataforma é formada pelos seguintes grupos de componentes:
 - **STCP Directlink** — disponibiliza serviços para transferência segura de arquivos.
 - **STCP Directlink API** — fornece APIs para operações de download, upload e integração com aplicações externas.
 - **STCP Directlink Portal** — disponibiliza uma interface web para download e upload seguro de arquivos.
+- **STCP Gemini Rename (STCPRen)** - componente utilizado para automação e gerenciamento de fluxos de arquivos.
 
 ## Integração e transferência de arquivos
 
@@ -134,4 +135,8 @@ O **STCP Directlink Portal** é a interface web destinada às operações de dow
 
 Ele complementa os serviços disponibilizados pelo STCP Directlink, permitindo que essas operações sejam realizadas por meio de uma interface web.
 
+### STCP Gemini Rename
 
+O **STCP Gemini Rename (STCPRen)** é o componente utilizado para automação e gerenciamento de fluxos de arquivos.
+
+Por meio de roteamentos e regras, permite identificar arquivos e executar automaticamente ações como renomeação, movimentação, cópia, backup, validação e execução de processos externos.
