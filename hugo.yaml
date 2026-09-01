@@ -16,6 +16,13 @@ markup:
 
 menu:
   main:
+    # - name: Changelog
+    #   pageRef: /changelog
+    #   weight: 1
+    - name: Search
+      weight: 4
+      params:
+        type: search
     - name: Website
       weight: 5
       url: "https://www.riversoft.com.br/"
