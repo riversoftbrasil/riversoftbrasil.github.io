@@ -51,8 +51,9 @@ Parâmetros disponíveis no arquivo `config.json`.
 | `name` | Nome de exibição do endpoint na interface do Portal. |
 | `address` | Endereço completo do endpoint do STCP Gemini API, no formato `esquema://host:porta` (ex.: `https://portal.example.com.br:33070`). |
 
-> [!NOTE]
-> O endereço informado em `address` deve apontar para o `host` e a `port` em que o STCP Gemini API está configurado para escutar (seção `general` do `config.json` da API).
+{{< callout type="info" >}} 
+O endereço informado em `address` deve apontar para o `host` e a `port` em que o STCP Gemini API está configurado para escutar (seção `general` do `config.json` da API).
+{{< /callout >}} 
  
 #### defaultLanguage
  

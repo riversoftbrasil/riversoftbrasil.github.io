@@ -8,11 +8,16 @@ prev: requirements
 ---
 ## Preparação do banco de dados
 
-Antes de iniciar a instalação da plataforma STCP Gemini, o banco de dados deve estar previamente criado, disponível e acessível no ambiente.
+Antes de iniciar a preparação do banco de dados, o sistema de gerenciamento de banco de dados (SGBD) deve estar instalado, configurado e acessível, com um usuário autorizado a executar os scripts de criação.
 
-A Riversoft disponibiliza os scripts necessários para criação e preparação das estruturas de banco de dados utilizadas pela plataforma, incluindo tabelas, relacionamentos, estruturas de configuração, dados iniciais e objetos destinados aos registros de log.
+A Riversoft disponibiliza os scripts necessários para criar os bancos de dados e as estruturas utilizadas pela plataforma STCP Gemini, incluindo tabelas, relacionamentos, dados iniciais de configuração e objetos destinados aos registros de log.
 
-Execute os scripts correspondentes ao SGBD utilizado no ambiente antes de prosseguir com a instalação dos componentes da plataforma.
+Execute os scripts correspondentes ao SGBD utilizado, na ordem indicada nesta seção. Antes de prosseguir com a instalação dos componentes da plataforma, confirme que os bancos e suas estruturas foram criados e estão acessíveis a partir dos servidores onde os componentes serão instalados.
+
+{{< callout type="warning" >}}
+A equipe de DBA da organização é responsável por disponibilizar o ambiente, revisar os scripts e executar os procedimentos conforme as políticas internas.
+{{< /callout >}}
+
 
 ## Download dos scripts
 
@@ -27,17 +32,19 @@ Cada pacote contém os scripts necessários para criação e preparação das es
 
 Os scripts devem ser executados por um usuário com permissões suficientes para criar e alterar as estruturas do banco de dados.
 
-> [!NOTE]
-> A administração do ambiente de banco de dados é de responsabilidade da equipe de DBA da organização, incluindo provisionamento, disponibilidade, segurança, backup, manutenção, atualização e controle de acesso.
+{{< callout type="info" >}}
+A administração do ambiente de banco de dados é de responsabilidade da equipe de DBA da organização, incluindo provisionamento, disponibilidade, segurança, backup, manutenção, atualização e controle de acesso.
+{{< /callout >}}
 
-> [!IMPORTANT]
-> Antes de executar os scripts, verifique se:
-> 
-> - o banco de dados correspondente ao ambiente está disponível;
-> - o SGBD utilizado é compatível com a plataforma STCP Gemini;
-> - o usuário utilizado possui as permissões necessárias;
-> - a conexão com o banco de dados está disponível;
-> - a execução está de acordo com as políticas de administração e segurança da organização.
+{{< callout type="important" >}} 
+Antes de executar os scripts, verifique se:
+ 
+- o banco de dados correspondente ao ambiente está disponível;
+- o SGBD utilizado é compatível com a plataforma STCP Gemini;
+- o usuário utilizado possui as permissões necessárias;
+- a conexão com o banco de dados está disponível;
+- a execução está de acordo com as políticas de administração e segurança da organização.
+{{< /callout >}}
 
 ## Execução dos scripts
 
@@ -54,10 +61,12 @@ A sequência de execução deve ser mantida, pois cada etapa prepara estruturas 
 
 O sufixo `<SGBD>` varia de acordo com o banco de dados utilizado no ambiente.
 
-> [!NOTE]
-> Os nomes de bancos de dados utilizados nos scripts são apenas referências e podem ser alterados conforme os padrões definidos pela organização.
-> 
-> Ao utilizar nomes diferentes dos sugeridos, certifique-se de atualizar todas as referências correspondentes nos scripts e nas configurações da plataforma STCP Gemini.
+{{< callout type="info" >}} 
+Os nomes de bancos de dados utilizados nos scripts são apenas referências e podem ser alterados conforme os padrões definidos pela organização.
+ 
+Ao utilizar nomes diferentes dos sugeridos, certifique-se de atualizar todas as referências correspondentes nos scripts e nas configurações da plataforma STCP Gemini.
+{{< /callout >}} 
+
 
 ### Exemplo de execução
 
@@ -68,10 +77,12 @@ Para Microsoft SQL Server, os scripts devem ser executados na seguinte ordem:
 3. `2-STCPGeminiCfgInit_SQLServer.sql`
 4. `3-STCPGeminiLog_SQLServer.sql`
 
-> [!WARNING]
-> Execute os scripts sequencialmente, utilizando uma ferramenta de administração compatível com o SGBD e um usuário com as permissões necessárias.
-> 
-> Prossiga para o próximo script somente após a conclusão bem-sucedida da etapa anterior. Caso ocorra algum erro, interrompa o processo e corrija a causa antes de continuar.
+{{< callout type="warning" >}} 
+Execute os scripts sequencialmente, utilizando uma ferramenta de administração compatível com o SGBD e um usuário com as permissões necessárias.
+ 
+Prossiga para o próximo script somente após a conclusão bem-sucedida da etapa anterior. Caso ocorra algum erro, interrompa o processo e corrija a causa antes de continuar.
+{{< /callout >}} 
+
 
 ## Validação da execução
 

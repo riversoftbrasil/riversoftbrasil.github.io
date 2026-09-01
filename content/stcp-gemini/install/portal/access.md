@@ -11,8 +11,9 @@ prev: /stcp-gemini/install/portal/config/
 
 Concluída a configuração, acesse o STCP Gemini Portal através do navegador, informando o IP/porta ou a URL em que o STCP Gemini API está em execução.
 
-> [!WARNING]
-> Altere a senha padrão imediatamente após o primeiro acesso, por questões de segurança.
+{{< callout type="warning" >}} 
+Altere a senha padrão imediatamente após o primeiro acesso, por questões de segurança.
+{{< /callout >}} 
 
 No primeiro acesso, utilize as credenciais padrão abaixo:
 
@@ -23,5 +24,6 @@ No primeiro acesso, utilize as credenciais padrão abaixo:
 
 Após efetuar o login, é necessário **criar uma instância** através do STCP Gemini Portal antes de prosseguir com a instalação do STCP Gemini Server, já que o Server exige uma instância previamente configurada para poder ser iniciado.
 
-> [!NOTE]
-> A criação e configuração detalhada de instâncias, usuários, serviços de rede, agendamentos e tipos de arquivo através do Portal está fora do escopo deste guia. Consulte a documentação de uso do STCP Gemini Portal.
+{{< callout type="info" >}} 
+A criação e configuração detalhada de instâncias, usuários, serviços de rede, agendamentos e tipos de arquivo através do Portal está fora do escopo deste guia.
+{{< /callout >}} 

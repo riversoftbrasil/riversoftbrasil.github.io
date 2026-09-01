@@ -61,11 +61,13 @@ Todos os repositórios utilizam validação de assinatura GPG (`gpgcheck=1`). A 
 https://repo.riversoft.com.br/certs/riversoft.asc
 ```
 
-> [!NOTE]
-> Recomenda-se utilizar os arquivos `.repo` disponibilizados em `/configs`, em vez de criar ou editar manualmente a configuração do repositório. Isso reduz o risco de inconsistências e facilita futuras alterações na estrutura dos repositórios da Riversoft.
+{{< callout type="info" >}} 
+Recomenda-se utilizar os arquivos `.repo` disponibilizados em `/configs`, em vez de criar ou editar manualmente a configuração do repositório. Isso reduz o risco de inconsistências e facilita futuras alterações na estrutura dos repositórios da Riversoft.
+{{< /callout >}} 
 
-> [!IMPORTANT]
-> Caso já exista uma configuração anterior do repositório Riversoft em `/etc/yum.repos.d/`, verifique e remova ou desabilite arquivos antigos antes de aplicar a nova configuração, evitando repositórios duplicados ou conflitos durante a instalação e atualização dos pacotes.
+{{< callout type="important" >}} 
+Caso já exista uma configuração anterior do repositório Riversoft em `/etc/yum.repos.d/`, verifique e remova ou desabilite arquivos antigos antes de aplicar a nova configuração, evitando repositórios duplicados ou conflitos durante a instalação e atualização dos pacotes.
+{{< /callout >}} 
 
 Após configurar o repositório, atualize os metadados do gerenciador de pacotes antes de prosseguir com a instalação dos componentes da plataforma:
 

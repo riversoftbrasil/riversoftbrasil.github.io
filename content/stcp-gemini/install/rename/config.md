@@ -102,8 +102,9 @@ Parâmetros disponíveis no arquivo `config.json`.
 | `cfgDbPswd` | Senha de acesso ao banco de dados. |
 | `cfgDbType` | Tipo do banco de dados utilizado (ex.: `mysql`). |
 
-> [!NOTE]
-> Os Roteamentos e Regras utilizados pelo STCP Gemini Rename são criados e mantidos através do STCP Gemini Portal. A configuração detalhada desses itens está fora do escopo deste guia de instalação.
+{{< callout type="info" >}} 
+Os Roteamentos e Regras utilizados pelo STCP Gemini Rename são criados e mantidos através do STCP Gemini Portal. A configuração detalhada desses itens está fora do escopo deste guia de instalação.
+{{< /callout >}} 
 
 ### lockProvider
 
@@ -130,8 +131,9 @@ Seção opcional, utilizada quando informações sensíveis da configuração s�
 | `kmsClientPrivateKey` / `kmsClientPrivateKeyPswd` | Chave privada e respectiva senha utilizadas na autenticação, quando aplicável. |
 | `kmsVaultId` | Identificador do cofre (*vault*) utilizado no provedor de KMS, quando aplicável. |
 
-> [!IMPORTANT]
-> Os parâmetros `cfgDbPswd`, `applConfigPassPhrase`, `License` e as credenciais de `kmsProvider` são dados sensíveis. Mantenha o arquivo `config.json` protegido, restringindo o acesso ao usuário/grupo definidos em `applUser`/`applGroup`.
+{{< callout type="important" >}} 
+Os parâmetros `cfgDbPswd`, `applConfigPassPhrase`, `License` e as credenciais de `kmsProvider` são dados sensíveis. Mantenha o arquivo `config.json` protegido, restringindo o acesso ao usuário/grupo definidos em `applUser`/`applGroup`.
+{{< /callout >}} 
 
 ## Próxima etapa
 

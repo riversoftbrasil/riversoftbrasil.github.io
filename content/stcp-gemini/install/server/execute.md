@@ -52,5 +52,6 @@ usage: STCPServer [options]
 | `-s` | Palavra-chave (*passphrase*) para criptografar as senhas do arquivo de configuração |
 | `-?` | Exibe a ajuda |
 
-> [!NOTE]
-> Em execuções via container, evite forçar o modo daemon (`-F`). Mantenha o processo em *foreground* para que o orquestrador (Docker, Kubernetes etc.) consiga monitorar corretamente o ciclo de vida do container.
+{{< callout type="info" >}} 
+Em execuções via container, evite forçar o modo daemon (`-F`). Mantenha o processo em *foreground* para que o orquestrador (Docker, Kubernetes etc.) consiga monitorar corretamente o ciclo de vida do container.
+{{< /callout >}} 

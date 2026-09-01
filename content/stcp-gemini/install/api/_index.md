@@ -23,8 +23,9 @@ O STCP Gemini API permite a manipulação de:
 - Agendamentos
 - Tipos de Arquivos
 
-> [!NOTE]
-> Por se tratar de um serviço que segue as metodologias REST, os métodos HTTP (`POST`, `GET`, `PUT` e `DELETE`) refletem os métodos CRUD (Create, Retrieve, Update e Delete) do módulo.
+{{< callout type="info" >}} 
+Por se tratar de um serviço que segue as metodologias REST, os métodos HTTP (`POST`, `GET`, `PUT` e `DELETE`) refletem os métodos `CRUD` (Create, Retrieve, Update e Delete) do módulo.
+{{< /callout >}} 
 
 ## Instalação
 

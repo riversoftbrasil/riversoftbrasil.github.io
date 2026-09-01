@@ -68,8 +68,9 @@ O valor configurado em `ApplName` deve ser mantido consistente entre o STCP Gemi
     }
 }
 ```
-> [!IMPORTANT]
-> Para iniciar o serviço do STCP Gemini Server é necessário ter uma instância previamente configurada através do STCP Gemini Portal.
+{{< callout type="important" >}} 
+Para iniciar o serviço do STCP Gemini Server é necessário ter uma instância previamente configurada através do STCP Gemini Portal.
+{{< /callout >}} 
  
 ## Parâmetros do arquivo de configuração
  

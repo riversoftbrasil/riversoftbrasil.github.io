@@ -12,8 +12,9 @@ prev: /stcp-gemini/install/server/execute/
 
 ## O que é o STCP Gemini Rename?
 
-> [!IMPORTANT]
-> O STCP Gemini Rename deve ser instalado no mesmo servidor ou na mesma imagem de container onde o STCP Gemini Server está instalado.
+{{< callout type="important" >}} 
+O STCP Gemini Rename deve ser instalado no mesmo servidor ou na mesma imagem de container onde o STCP Gemini Server está instalado.
+{{< /callout >}} 
 
 O **STCP Gemini Rename (STCPRen)** é o componente da plataforma STCP Gemini responsável pelo **roteamento e automação de operações com arquivos**.
 

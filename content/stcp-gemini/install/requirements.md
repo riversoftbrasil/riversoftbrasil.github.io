@@ -20,9 +20,9 @@ Antes de iniciar a instalação da plataforma STCP Gemini, certifique-se de que 
 - 4 GB de memória RAM ou superior
 - Mínimo de 200 MB de espaço livre em disco para a instalação do software
 
-> [!NOTE]
-> O espaço em disco necessário para arquivos, logs e dados operacionais deve ser dimensionado de acordo com o volume de processamento do ambiente.
-
+{{< callout type="info" >}} 
+O espaço em disco necessário para arquivos, logs e dados operacionais deve ser dimensionado de acordo com o volume de processamento do ambiente.
+{{< /callout >}} 
 
 ## Sistemas operacionais suportados
 
@@ -35,8 +35,10 @@ Antes de iniciar a instalação da plataforma STCP Gemini, certifique-se de que 
 | Amazon Linux | Amazon Linux 2023 |
 | Outras distribuições Linux | Mediante validação de compatibilidade |
 
-> [!NOTE]
-> Recomenda-se utilizar a versão mais recente disponível dentro de cada versão principal suportada, mantendo o sistema operacional atualizado com as correções de segurança e manutenção fornecidas pelo fabricante.
+{{< callout type="info" >}} 
+Recomenda-se utilizar a versão mais recente disponível dentro de cada versão principal suportada, mantendo o sistema operacional atualizado com as correções de segurança e manutenção fornecidas pelo fabricante.
+{{< /callout >}} 
+
 
 ## Bancos de dados suportados
 
@@ -49,7 +51,9 @@ A plataforma STCP Gemini é compatível com os seguintes sistemas de gerenciamen
 | MySQL | 8.4 LTS ou superior |
 | MariaDB | 10.11 ou superior |
 
+{{< callout type="warning" >}} 
 Antes de iniciar a instalação dos componentes da plataforma STCP Gemini, o banco de dados deve estar previamente disponível e acessível a partir dos servidores onde os componentes serão instalados.
+{{< /callout >}} 
 
 Consulte o item [**Banco de dados**](/stcp-gemini/install/getting-started/database/), da seção [**Preparação do ambiente**](/stcp-gemini/install/getting-started/) para obter as orientações e os scripts necessários à criação e preparação das estruturas de banco de dados utilizadas pela plataforma STCP Gemini.
 

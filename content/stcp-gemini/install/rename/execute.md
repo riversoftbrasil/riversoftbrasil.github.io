@@ -18,8 +18,9 @@ stcpren -db -config /usr/local/stcpren/configs/config.json -rules <NOME-REGRA> -
 
 A flag `-db` indica que a configuração de Roteamentos e Regras deve ser obtida a partir do banco de dados da plataforma (`cfgProvider` do tipo `stcpgeminidb`), conforme definido em `config.json`.
 
-> [!NOTE]
-> Os Roteamentos e Regras processados pelo STCP Gemini Rename são criados e mantidos através do STCP Gemini Portal. O detalhamento dessas opções está fora do escopo deste guia de instalação e será abordado no guia de uso do STCP Gemini Rename.
+{{< callout type="info" >}} 
+Os Roteamentos e Regras processados pelo STCP Gemini Rename são criados e mantidos através do STCP Gemini Portal. O detalhamento dessas opções está fora do escopo deste guia de instalação e será abordado no guia de uso do STCP Gemini Rename.
+{{< /callout >}} 
 
 ### Opções disponíveis
 
@@ -65,5 +66,6 @@ Para consultar a versão instalada, execute:
 stcpren -v
 ```
 
-> [!NOTE]
-> O STCP Gemini Rename (STCPRen) é executado sob demanda. Sua execução pode ser acionada por eventos configurados no STCP Gemini Portal, como início ou fim de conexão e recepção de arquivos no STCP Gemini Server ou STCP Directlink. Também é possível executar o STCPRen em horários ou intervalos definidos por meio de agendamentos.
+{{< callout type="info" >}} 
+O STCP Gemini Rename (STCPRen) é executado sob demanda. Sua execução pode ser acionada por eventos configurados no STCP Gemini Portal, como início ou fim de conexão e recepção de arquivos no STCP Gemini Server ou STCP Directlink. Também é possível executar o STCPRen em horários ou intervalos definidos por meio de agendamentos.
+{{< /callout >}} 

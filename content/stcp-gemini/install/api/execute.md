@@ -47,8 +47,10 @@ As opções disponíveis são:
 | `-init-db` | booleana | Inicializa a estrutura do banco de dados da API (tabelas e triggers). |
 | `-init-db-file` | booleana | Inicializa a estrutura do banco de dados da API em arquivos. |
  
-> [!WARNING]
-> É necessário escolher entre desabilitar a comunicação segura (`-ns`) **ou** habilitar TLS informando `-c` e `-k` juntos. Não combine `-ns` com `-c`/`-k` na mesma execução.
+{{< callout type="warning" >}} 
+É necessário escolher entre desabilitar a comunicação segura (`-ns`) **ou** habilitar TLS informando `-c` e `-k` juntos. Não combine `-ns` com `-c`/`-k` na mesma execução.
+{{< /callout >}} 
 
-> [!NOTE]
-> **Nota:** As flags `-init-db` e `-init-db-file` inicializam a estrutura das bases de dados e não devem ser utilizadas em conjunto com a execução normal da API — utilize-as apenas durante o processo de instalação/configuração inicial.
+{{< callout type="info" >}} 
+As flags `-init-db` e `-init-db-file` inicializam a estrutura das bases de dados e não devem ser utilizadas em conjunto com a execução normal da API — utilize-as apenas durante o processo de instalação/configuração inicial.
+{{< /callout >}} 

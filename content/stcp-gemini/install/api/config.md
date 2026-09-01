@@ -32,7 +32,7 @@ Segue abaixo um exemplo:
                         "password": "root",
                         "database_name": "GEMINI_DBConfig"
                 },
-                "log":
+                "log": {
                         "type_database": "mysql",
                         "host": "192.168.0.10",
                         "port": 3306,

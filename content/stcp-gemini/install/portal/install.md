@@ -10,8 +10,9 @@ prev: /stcp-gemini/install/portal/
 
 Antes de iniciar a instalação, certifique-se de que os requisitos da plataforma foram atendidos e que o repositório Riversoft está corretamente configurado no servidor.
 
-> [!WARNING]
-> Certifique-se de que o STCP Gemini API já esteja instalado e em execução antes de prosseguir.
+{{< callout type="warning" >}} 
+Certifique-se de que o STCP Gemini API já esteja instalado e em execução antes de prosseguir.
+{{< /callout >}} 
 
 Após concluir essas etapas, instale o pacote do STCP Gemini Portal utilizando o comando abaixo:
 
