@@ -1,6 +1,6 @@
 ---
 title: "Referência da API"
-weight: 40
+weight: 50
 cascade:
   type: docs
 prev: /stcp-gemini/
