@@ -1,6 +1,7 @@
 ---
 toc: false
 breadcrumbs: false
+excludeSearch: true
 ---
 
 ## STCP Gemini Rename

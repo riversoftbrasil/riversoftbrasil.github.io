@@ -2,6 +2,7 @@
 toc: false
 breadcrumbs: false
 slug: webadmin
+excludeSearch: true
 ---
 ## STCP OFTP Web Admin
 

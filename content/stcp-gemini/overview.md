@@ -1,8 +1,10 @@
 ---
 title: "Visão Geral"
 weight: 10
+# lastmod: 2026-09-01
 cascade:
   type: docs
+contextMenu: false
 ---
 <!-- <meta http-equiv="refresh" content="0;url=overview/" /> -->
 

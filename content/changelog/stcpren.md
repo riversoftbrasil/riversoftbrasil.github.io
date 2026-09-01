@@ -2,6 +2,7 @@
 toc: false
 breadcrumbs: false
 slug: stcprename
+excludeSearch: true
 ---
 
 ## STCP Rename

@@ -1,6 +1,7 @@
 ---
 toc: false
 breadcrumbs: false
+excludeSearch: true
 # aliases:
 #   - /changelog/dirl/
 slug: directlink
