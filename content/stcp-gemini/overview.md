@@ -31,27 +31,11 @@ Entre suas principais capacidades, destacam-se:
 
 O STCP Gemini possui uma arquitetura composta por diferentes serviços e componentes que trabalham de forma integrada para atender aos processos de transferência, administração, integração e disponibilização segura de arquivos.
 
-## Arquitetura da plataforma
-
-A plataforma STCP Gemini possui uma arquitetura modular, composta por serviços destinados à transferência de arquivos, administração, integração com aplicações externas e disponibilização segura de arquivos.
-
-Essa organização permite que os diferentes componentes da plataforma sejam utilizados de forma integrada, de acordo com as necessidades de cada ambiente.
-
-Em alto nível, a plataforma é formada pelos seguintes grupos de componentes:
-
-- **STCP Gemini Core** — concentra as funcionalidades e os serviços essenciais da plataforma.
-- **STCP Gemini API** — disponibiliza interfaces para gestão, supervisão, auditoria e integração com aplicações externas.
-- **STCP Gemini Portal** — fornece uma interface web para administração e supervisão do ambiente.
-- **STCP Directlink** — disponibiliza serviços para transferência segura de arquivos.
-- **STCP Directlink API** — fornece APIs para operações de download, upload e integração com aplicações externas.
-- **STCP Directlink Portal** — disponibiliza uma interface web para download e upload seguro de arquivos.
-- **STCP Gemini Rename (STCPRen)** - componente utilizado para automação e gerenciamento de fluxos de arquivos.
-
 ## Integração e transferência de arquivos
 
 A plataforma suporta diferentes protocolos e conectores, permitindo sua integração com ambientes corporativos, parceiros externos e serviços de armazenamento.
 
-### Protocolos em modo servidor
+### Conectores em modo servidor
 
 O STCP Gemini pode disponibilizar serviços de transferência utilizando:
 
@@ -59,7 +43,7 @@ O STCP Gemini pode disponibilizar serviços de transferência utilizando:
 - SFTP (SSH File Transfer Protocol)
 - AS2 (Applicability Statement 2)
 
-### Protocolos e conectores em modo cliente
+### Conectores em modo cliente
 
 Para conexões com sistemas e serviços externos, estão disponíveis:
 
@@ -137,6 +121,4 @@ Ele complementa os serviços disponibilizados pelo STCP Directlink, permitindo q
 
 ### STCP Gemini Rename
 
-O **STCP Gemini Rename (STCPRen)** é o componente utilizado para automação e gerenciamento de fluxos de arquivos.
-
-Por meio de roteamentos e regras, permite identificar arquivos e executar automaticamente ações como renomeação, movimentação, cópia, backup, validação e execução de processos externos.
+O **STCP Gemini Rename (STCPRen)** é o componente da plataforma STCP Gemini responsável pela automação e controle de fluxos de arquivos por meio de roteamentos e regras.
