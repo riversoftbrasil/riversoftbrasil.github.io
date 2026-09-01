@@ -51,5 +51,5 @@ A plataforma STCP Gemini é compatível com os seguintes sistemas de gerenciamen
 
 Antes de iniciar a instalação dos componentes da plataforma STCP Gemini, o banco de dados deve estar previamente disponível e acessível a partir dos servidores onde os componentes serão instalados.
 
-Consulte o item [**Banco de dados**](https://localhost:1313/stcp-gemini/install/getting-started/database/), da seção [**Preparação do ambiente**](https://localhost:1313/stcp-gemini/install/getting-started/) para obter as orientações e os scripts necessários à criação e preparação das estruturas de banco de dados utilizadas pela plataforma STCP Gemini.
+Consulte o item [**Banco de dados**](/stcp-gemini/install/getting-started/database/), da seção [**Preparação do ambiente**](/stcp-gemini/install/getting-started/) para obter as orientações e os scripts necessários à criação e preparação das estruturas de banco de dados utilizadas pela plataforma STCP Gemini.
 
