@@ -39,7 +39,7 @@ O valor configurado em `ApplName` deve ser mantido consistente entre o STCP Gemi
     "Description": "Configuration parameters STCP Gemini OFTP Server Linux",
     "Modules": {
         "STCPCore": {
-            "ApplName": "InstanciaTeste",
+            "ApplName": "INSTANCIATESTE",
             "ApplDescription": "",
             "ApplUser": "stcp",
             "ApplGroup": "stcp",
@@ -57,8 +57,8 @@ O valor configurado em `ApplName` deve ser mantido consistente entre o STCP Gemi
         },
         "STCPCfg": {
             "DLLName": "libstcpcfgmysql.so",
-            "DBName": "STCPCFG_DB",
-            "DBHost": "192.168.0.1",
+            "DBName": "GEMINI_DBConfig",
+            "DBHost": "192.168.0.10",
             "DBPort": "3306",
             "DBUser": "root",
             "DBPswd": "root",

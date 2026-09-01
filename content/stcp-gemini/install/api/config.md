@@ -25,17 +25,17 @@ Segue abaixo um exemplo:
 {
         "databases": {
                 "config": {
-                        "type_database": "mssql",
+                        "type_database": "mysql",
                         "host": "192.168.0.10",
-                        "port": 1433,
+                        "port": 3306,
                         "user": "root",
                         "password": "root",
                         "database_name": "GEMINI_DBConfig"
                 },
                 "log":
-                        "type_database": "mssql",
+                        "type_database": "mysql",
                         "host": "192.168.0.10",
-                        "port": 1433,
+                        "port": 3306,
                         "user": "root",
                         "password": "root",
                         "database_name": "GEMINI_DBLog"

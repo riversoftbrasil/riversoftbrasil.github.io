@@ -13,6 +13,6 @@ Explore as APIs disponibilizadas pela Riversoft para integração com a platafor
 Selecione uma API para consultar autenticação, endpoints, parâmetros, exemplos de requisição e respostas.
 
 {{< cards >}}
-  {{< card link="/api/overview/" title="STCP Gemini API" icon="tag" >}}
-  {{< card link="https://docs.stcpdirectlink.riversoft.com.br/stcp-directlink-api-rest" title="STCP Directlink API" icon="tag" >}}
+  {{< card link="/api/overview/" title="STCP Gemini API" icon="code" >}}
+  {{< card link="https://docs.stcpdirectlink.riversoft.com.br/stcp-directlink-api-rest" title="STCP Directlink API" icon="code" >}}
 {{< /cards >}}

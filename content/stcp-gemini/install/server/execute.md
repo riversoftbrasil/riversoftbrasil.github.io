@@ -3,7 +3,7 @@ title: "Modos de execução"
 weight: 30
 toc: true
 layout: docs
-next: /stcp-gemini/install/server/modules/
+next: /stcp-gemini/install/rename/
 prev: /stcp-gemini/install/server/config/
 ---
 ## Modo de execução do STCP Gemini Server
