@@ -12,11 +12,9 @@ prev: /stcp-gemini/install/portal/access/
 
 ## O que é o STCP Gemini Server? 
 
-O **STCP Gemini Server** é o componente da plataforma STCP Gemini responsável pela execução e gerenciamento dos processos de transferência de arquivos.
+O **STCP Gemini Server** é o componente da plataforma responsável pela execução e gerenciamento das transferências de arquivos utilizando o protocolo **OFTP**.
 
-O componente oferece suporte a diferentes modos de operação e protocolos, podendo atuar como **cliente e servidor OFTP**, além de operar como **cliente SFTP** para integração com parceiros, sistemas corporativos e serviços externos.
-
-Nesta seção estão disponíveis as informações necessárias para instalação e configuração do componente.
+Pode operar como **servidor e cliente OFTP**, além de atuar como **cliente SFTP** para integração com sistemas, parceiros e ambientes externos.
 
 ## Instalação
 

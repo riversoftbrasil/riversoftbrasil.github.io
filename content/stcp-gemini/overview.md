@@ -18,52 +18,44 @@ Esta seção apresenta a plataforma STCP Gemini e fornece uma visão geral de se
 
 ## O que é a plataforma STCP Gemini?
 
-O **STCP Gemini** é a plataforma de MFT (Managed File Transfer) da Riversoft, desenvolvida para realizar transferências e integrações de arquivos com alto nível de segurança, confiabilidade e desempenho.
+O **STCP Gemini** é a plataforma de **MFT (Managed File Transfer)** da Riversoft, desenvolvida para realizar transferências e integrações de arquivos com segurança, confiabilidade e alto desempenho.
 
-A plataforma foi projetada para atender ambientes corporativos e operações críticas que exigem controle, rastreabilidade e escalabilidade na movimentação de arquivos entre sistemas, organizações, clientes e parceiros.
+Projetada para ambientes corporativos e operações críticas, a plataforma oferece:
 
-Entre suas principais capacidades, destacam-se:
+* Auditoria e rastreabilidade de ponta a ponta
+* Transferências seguras e escaláveis
+* Automação de fluxos e processos
+* Integração com sistemas e aplicações externas
+* Suporte a múltiplos protocolos e serviços de armazenamento
+* Administração e supervisão centralizadas
 
-- Auditoria e rastreabilidade de ponta a ponta
-- Transferências seguras e escaláveis
-- Automação dos fluxos de transferência e processos
-- Integração com sistemas e aplicações externas
-- Suporte a múltiplos protocolos e serviços de armazenamento
-- Administração e supervisão centralizadas
+## Arquitetura da plataforma
 
-O STCP Gemini possui uma arquitetura composta por diferentes serviços e componentes que trabalham de forma integrada para atender aos processos de transferência, administração, integração e disponibilização segura de arquivos.
+O STCP Gemini possui uma **arquitetura baseada em microserviços**, composta por serviços especializados que atuam de forma integrada nas funções de transferência, processamento, integração e administração.
+
+Essa arquitetura proporciona flexibilidade e escalabilidade, mantendo a **configuração, supervisão e rastreabilidade das operações de forma centralizada**.
+
 
 ## Integração e transferência de arquivos
 
 A plataforma suporta diferentes protocolos e conectores, permitindo sua integração com ambientes corporativos, parceiros externos e serviços de armazenamento.
 
-### Conectores em modo servidor
+### Protocolos e Conectores
 
-O STCP Gemini pode disponibilizar serviços de transferência utilizando:
-
-- OFTP 2.0 (Odette File Transfer Protocol)
-- SFTP (SSH File Transfer Protocol)
-- AS2 (Applicability Statement 2)
-
-### Conectores em modo cliente
-
-Para conexões com sistemas e serviços externos, estão disponíveis:
-
-- OFTP 2.0 (Odette File Transfer Protocol)
-- SFTP (SSH File Transfer Protocol)
-- FTPS (File Transfer Protocol Secure)
-- FTP (File Transfer Protocol)
-- AS2 (Applicability Statement 2)
-- Amazon Simple Storage Service (Amazon S3)
-- Microsoft Azure Blob Storage
-- Google Cloud Storage
-- Oracle Cloud Object Storage
-- Outros conectores suportados pela plataforma
-
-Essa arquitetura permite integrar o STCP Gemini a diferentes tecnologias e fluxos de transferência, mantendo a administração e supervisão dos processos de forma centralizada.
+| Conector / Protocolo                      | Modo servidor | Modo cliente |
+| ----------------------------------------- | :-----------: | :----------: |
+| OFTP 2.0 (Odette File Transfer Protocol)  |       ✓       |       ✓      |
+| SFTP (SSH File Transfer Protocol)         |       ✓       |       ✓      |
+| AS2 (Applicability Statement 2)           |       ✓       |       ✓      |
+| FTPS (File Transfer Protocol Secure)      |       —       |       ✓      |
+| FTP (File Transfer Protocol)              |       —       |       ✓      |
+| Amazon Simple Storage Service (Amazon S3) |       —       |       ✓      |
+| Microsoft Azure Blob Storage              |       —       |       ✓      |
+| Google Cloud Storage                      |       —       |       ✓      |
+| Oracle Cloud Object Storage               |       —       |       ✓      |
 
 {{< callout type="info" >}}
-A disponibilidade de protocolos, conectores e funcionalidades pode variar de acordo com os componentes instalados e a versão da plataforma.
+Outros conectores podem estar disponíveis de acordo com a versão e a configuração da plataforma.
 {{< /callout >}}
 
 ## Componentes
@@ -72,9 +64,7 @@ A plataforma STCP Gemini é composta por diferentes componentes que atuam de for
 
 ### STCP Gemini Server
 
-O **STCP Gemini Server** é o núcleo da plataforma e concentra as funcionalidades e os serviços essenciais necessários ao funcionamento do ambiente.
-
-Ele é responsável por fornecer a base para os demais componentes e serviços do STCP Gemini.
+O **STCP Gemini Server** é o componente responsável pelas transferências de arquivos via OFTP, podendo operar como servidor e cliente OFTP, além de atuar como cliente SFTP.
 
 ### STCP Gemini API
 
