@@ -121,4 +121,4 @@ Ele complementa os serviços disponibilizados pelo STCP Directlink, permitindo q
 
 ### STCP Gemini Rename
 
-O **STCP Gemini Rename (STCPRen)** é o componente da plataforma STCP Gemini responsável pela automação e controle de fluxos de arquivos por meio de roteamentos e regras.
+O **STCP Gemini Rename (STCPRen)** é o componente responsável pelo roteamento e automação de operações com arquivos.

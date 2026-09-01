@@ -15,9 +15,12 @@ prev: /stcp-gemini/install/server/execute/
 > [!IMPORTANT]
 > O STCP Gemini Rename deve ser instalado no mesmo servidor ou na mesma imagem de container onde o STCP Gemini Server está instalado.
 
-O **STCP Gemini Rename (STCPRen)** é o componente da plataforma STCP Gemini responsável pela automação e controle de fluxos de arquivos.
+O **STCP Gemini Rename (STCPRen)** é o componente da plataforma STCP Gemini responsável pelo **roteamento e automação de operações com arquivos**.
 
-Por meio de roteamentos e regras, o STCPRen identifica e valida arquivos, executando automaticamente ações como renomeação, movimentação, cópia, backup e integração com processos externos.
+Por meio de **roteamentos e regras configuráveis**, o **STCP Gemini Rename (STCPRen)** identifica arquivos em uma origem, avalia os critérios definidos e determina as ações que serão aplicadas ao longo do fluxo até o destino correspondente.
+
+As regras podem considerar informações como **nome do arquivo, diretório, origem e conteúdo**, permitindo executar ações como **renomeação, cópia, movimentação, geração de backup, distribuição para múltiplos destinos e acionamento de processos externos**.
+
 
 ## Instalação
 

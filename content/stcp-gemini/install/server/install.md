@@ -42,9 +42,9 @@ Por padrão, os arquivos do STCP Gemini Server são instalados no diretório:
 
 ## Componente complementar
 
-Para utilizar os recursos de automação e controle de fluxos de arquivos, o **STCP Gemini Rename (STCPRen)** deve ser instalado no mesmo servidor ou na mesma imagem de container em que o **STCP Gemini Server** está instalado.
+Para utilizar os recursos de **roteamento e automação de operações com arquivos**, é necessário instalar o **STCP Gemini Rename (STCPRen)** no mesmo servidor ou na mesma imagem de container em que o **STCP Gemini Server** estiver instalado.
 
-Consulte a seção <a href="/stcp-gemini/install/rename/" target="_blank" rel="noopener noreferrer"><strong>STCP Gemini Rename</strong> ↗</a> para os procedimentos de instalação e configuração.
+Consulte a seção <a href="/stcp-gemini/install/rename/" target="_blank" rel="noopener noreferrer"><strong>STCP Gemini Rename</strong> ↗</a> para obter as instruções de instalação e configuração do componente.
 
 ## Próxima etapa
 

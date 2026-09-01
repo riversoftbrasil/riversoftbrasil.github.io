@@ -38,14 +38,14 @@ Antes de iniciar a instalação da plataforma STCP Gemini, certifique-se de que 
 
 ## Bancos de dados suportados
 
-O STCP Gemini Server é compatível com os seguintes sistemas de gerenciamento de banco de dados:
+A plataforma STCP Gemini é compatível com os seguintes sistemas de gerenciamento de banco de dados:
 
 - Microsoft SQL Server 2019 ou superior
 - Oracle Database 19c ou superior
 - MySQL 8.4 LTS ou superior
 - MariaDB 10.11 ou superior
 
-Antes de iniciar a instalação do STCP Gemini Server, o banco de dados deve estar disponível e acessível a partir do servidor onde a aplicação será instalada.
+Antes de iniciar a instalação dos componentes da plataforma STCP Gemini, o banco de dados deve estar previamente disponível e acessível a partir dos servidores onde os componentes serão instalados.
 
-Consulte a seção **[Preparação do banco de dados](/stcp-gemini/install/getting-started/database/)** para obter os scripts necessários à criação do banco de dados e das tabelas utilizadas pelo STCP Gemini Server.
+Consulte a seção [**Preparação do ambiente - Banco de dados**](https://localhost:1313/stcp-gemini/install/getting-started/database/) para obter as orientações e os scripts necessários à criação e preparação das estruturas de banco de dados utilizadas pela plataforma STCP Gemini.
 
